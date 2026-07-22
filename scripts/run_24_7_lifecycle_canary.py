@@ -3,22 +3,16 @@
 
 from __future__ import annotations
 
+import argparse
+import importlib.util
 import json
 import os
-import sys
+import re
 from pathlib import Path
 
 
 ROOT = Path(__file__).resolve().parents[1]
-sys.path.insert(0, str(ROOT))
-
-from checkers.verify_cover import verify  # noqa: E402
-
-
-ARTIFACT_ROOT = ROOT / "artifacts" / "24-7-lifecycle-canary"
-CHECKPOINT = ARTIFACT_ROOT / "checkpoint.json"
-PROGRESS = ARTIFACT_ROOT / "progress.json"
-WITNESS = ROOT / "sources" / "ljcr-c1264-41.txt"
+SAFE_RUN_ID = re.compile(r"^[a-z0-9][a-z0-9-]{0,63}$")
 
 
 def write_atomic(path: Path, payload: dict[str, object]) -> None:
@@ -29,9 +23,29 @@ def write_atomic(path: Path, payload: dict[str, object]) -> None:
 
 
 def main() -> None:
-    prior = json.loads(CHECKPOINT.read_text(encoding="utf-8")) if CHECKPOINT.is_file() else {"segments": 0}
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--checker", type=Path, required=True)
+    parser.add_argument("--witness", type=Path, required=True)
+    parser.add_argument("--run-id", required=True)
+    args = parser.parse_args()
+    if not SAFE_RUN_ID.fullmatch(args.run_id):
+        raise ValueError("run-id must contain only lowercase letters, digits, and hyphens")
+    checker = (ROOT / args.checker).resolve()
+    witness = (ROOT / args.witness).resolve()
+    checker.relative_to(ROOT)
+    witness.relative_to(ROOT)
+    module_spec = importlib.util.spec_from_file_location("c1264_direct_checker", checker)
+    if module_spec is None or module_spec.loader is None:
+        raise RuntimeError("unable to load direct checker")
+    checker_module = importlib.util.module_from_spec(module_spec)
+    module_spec.loader.exec_module(checker_module)
+
+    artifact_root = ROOT / "artifacts" / "lifecycle-canary" / args.run_id
+    checkpoint_path = artifact_root / "checkpoint.json"
+    progress_path = artifact_root / "progress.json"
+    prior = json.loads(checkpoint_path.read_text(encoding="utf-8")) if checkpoint_path.is_file() else {"segments": 0}
     segment = int(prior.get("segments", 0)) + 1
-    result = verify(WITNESS, v=12, k=6, t=4, expected_blocks=41)
+    result = checker_module.verify(witness, v=12, k=6, t=4, expected_blocks=41)
     if result.get("status") != "valid" or result.get("covered_t_sets") != 495:
         raise RuntimeError("direct C(12,6,4) witness check did not produce the declared control signal")
 
@@ -40,8 +54,8 @@ def main() -> None:
         "segments": segment,
         "last_result": result,
     }
-    write_atomic(CHECKPOINT, checkpoint)
-    artifact_bytes = CHECKPOINT.stat().st_size
+    write_atomic(checkpoint_path, checkpoint)
+    artifact_bytes = checkpoint_path.stat().st_size
     progress = {
         "completed_units": min(segment, 2),
         "total_units": 2,
@@ -50,7 +64,7 @@ def main() -> None:
         "decision_value_active": segment <= 2,
         "artifact_bytes": artifact_bytes,
     }
-    write_atomic(PROGRESS, progress)
+    write_atomic(progress_path, progress)
     print(json.dumps({"checkpoint": checkpoint, "progress": progress}, sort_keys=True))
 
 
