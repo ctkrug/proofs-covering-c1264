@@ -110,8 +110,8 @@ def build() -> dict[str, object]:
         Path("artifacts/pilot/link-root-0-secondary-partition.json"),
         Path("artifacts/pilot/link-root-1-secondary-partition.json"),
         Path("artifacts/pilot/link-root0-secondary0-tertiary-partition.json"),
-        Path(".venv/sat-audit-tools/cadical/build/cadical"),
-        Path(".venv/sat-audit-tools/drat-trim/drat-trim"),
+        Path("toolchains/drat-trim/drat-trim"),
+        Path("toolchains/drat-trim/PROVENANCE.md"),
         Path("requirements-pilot-lock.txt"),
     ]
     value = {
@@ -129,8 +129,9 @@ def build() -> dict[str, object]:
         "maximum_projected_proof_bytes": 20_000_000_000,
         "blocking_cnf": str(blocker),
         "catalog": str(catalog),
-        "solver": ".venv/sat-audit-tools/cadical/build/cadical",
-        "drat_trim": ".venv/sat-audit-tools/drat-trim/drat-trim",
+        "solver": "/usr/bin/cadical",
+        "solver_environment_gate": "live host /usr/bin/cadical SHA-256 7b73df0a6d9cf3c751a1948300e5baff8e82c4d39bcd88f0c063b5f5cfb8b33e; every result records the observed solver hash",
+        "drat_trim": "toolchains/drat-trim/drat-trim",
         "frontier_summary": "artifacts/pilot/link-campaign-summary.json",
         "portfolio_manifest_sha256": sha(snapshot_path),
         "portfolio_snapshot": {"path": str(SNAPSHOT), "sha256": sha(snapshot_path)},

@@ -3,13 +3,11 @@
   "catalog": "artifacts/discoveries/link-orbit-catalog-7.json",
   "claim_limit": "This tranche can add replayed local closures or validated link-orbit signals only; global exclusion still requires 47/47 and an independent frontier audit.",
   "cold_runs": true,
-  "drat_trim": ".venv/sat-audit-tools/drat-trim/drat-trim",
+  "drat_trim": "toolchains/drat-trim/drat-trim",
   "expected_leaf_count": 12,
   "frontier_summary": "artifacts/pilot/link-campaign-summary.json",
   "hypothesis": "The remaining never-measured leaves still offer the highest cheap certified-closure yield after the seven-orbit rebuild.",
   "input_sha256": {
-    ".venv/sat-audit-tools/cadical/build/cadical": "d2f7e3fc9577de8548125b11c7c37772df32438bf86ffdadb9f45a11e643dd64",
-    ".venv/sat-audit-tools/drat-trim/drat-trim": "f58f63b0f76945d4c4c9ff6e87afaf870f579e67c0f7cca589492df8fc7ebd47",
     "artifacts/discoveries/link-orbit-catalog-7-blocking.cnf": "d173df1b0b6cb781723d2a334fd756044ff6b3113a3f4cd3edec5eddb042e4fa",
     "artifacts/discoveries/link-orbit-catalog-7.json": "66c76abae4675acb74f624fdff8ec64a416d59c0bc2ef15fbe83ab70376effc1",
     "artifacts/pilot/link-campaign-summary.json": "1a9ff4abe35470308876496219ec6cf93d64e6b10ceafb942a3dd43b5dd3139f",
@@ -21,9 +19,11 @@
     "checkers/audit_cardinality_encoding_cnf.py": "d2f8f577d83e27ddcb364d72e0ef2f0f3daea44ffb2e790d646c9acef53f885e",
     "checkers/replay_drat.py": "8212d26af921b8a8cdf035bb6fd5469865a57200a7d8e30ffebf0da24fa7a4f3",
     "requirements-pilot-lock.txt": "f8c39296cf75ed89068b7b13bc38ba3dbc1d60e9cd3c7be326539025a293117a",
-    "scripts/build_active_sequential_tranche.py": "bdf56c700c196721c06c665fb4fc1c90afb1f85732cd7abd11ccd669780ca0bd",
+    "scripts/build_active_sequential_tranche.py": "783ee45aa89399e2277c19331943db13447ea69ee0b1d4a52a509855c2cdfcdd",
     "scripts/run_cardinality_encoding_benchmark.py": "84761553baa9928a69b96d22b55cb1b7302b9ab8e5178c233cc18f3ddbb65a91",
-    "scripts/run_sequential_frontier_sweep.py": "f9dd9b4e07ae3f242187a59e7a9c33de49596439c09e3cadc8df405b1d19a3d7"
+    "scripts/run_sequential_frontier_sweep.py": "f9dd9b4e07ae3f242187a59e7a9c33de49596439c09e3cadc8df405b1d19a3d7",
+    "toolchains/drat-trim/PROVENANCE.md": "312c1114b2fec0ca02267e29b14d4759baf90a799ec128f256f829fbd5382f39",
+    "toolchains/drat-trim/drat-trim": "92f0aa9575ed519d66a99b8b1b3dde6ece4618ae4c202a3a4b200265dda0aa7a"
   },
   "leaves": [
     {
@@ -224,6 +224,7 @@
   "schema_version": 3,
   "seconds_per_run": 60,
   "selection_basis": "Exactly the 12 audited open nodes with no prior sequential outcome; all 26 closures and nine measured open nodes are excluded.",
-  "solver": ".venv/sat-audit-tools/cadical/build/cadical",
+  "solver": "/usr/bin/cadical",
+  "solver_environment_gate": "live host /usr/bin/cadical SHA-256 7b73df0a6d9cf3c751a1948300e5baff8e82c4d39bcd88f0c063b5f5cfb8b33e; every result records the observed solver hash",
   "success_rule": "Retain only reconstructed-CNF, independently replayed UNSAT closures; preserve catalogue-expanding SAT link witnesses as structural signals, not global closures."
 }
