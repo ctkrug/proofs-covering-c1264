@@ -62,6 +62,53 @@ def direct_metrics(selected: set[int]) -> dict[str, int]:
     }
 
 
+def independent_counts(selected: set[int]) -> tuple[list[int], list[int], list[int]]:
+    quad_position = {quad: index for index, quad in enumerate(QUADS)}
+    pair_position = {pair: index for index, pair in enumerate(PAIRS)}
+    quad_counts = [0] * len(QUADS)
+    point_counts = [0] * len(POINTS)
+    pair_counts = [0] * len(PAIRS)
+    for index in selected:
+        block = BLOCKS[index]
+        for quad in itertools.combinations(block, 4):
+            quad_counts[quad_position[quad]] += 1
+        for point in block:
+            point_counts[point] += 1
+        for pair in itertools.combinations(block, 2):
+            pair_counts[pair_position[pair]] += 1
+    return quad_counts, point_counts, pair_counts
+
+
+def metrics_from_counts(
+    quad_counts: list[int], point_counts: list[int], pair_counts: list[int]
+) -> dict[str, int]:
+    return {
+        "uncovered_quadruples": sum(value == 0 for value in quad_counts),
+        "point_degree_deviation": sum(abs(value - 20) for value in point_counts),
+        "pair_deficit_below_9": sum(max(0, 9 - value) for value in pair_counts),
+        "pair_excess_above_10": sum(max(0, value - 10) for value in pair_counts),
+    }
+
+
+def independently_apply(
+    quad_counts: list[int],
+    point_counts: list[int],
+    pair_counts: list[int],
+    indices: tuple[int, ...],
+    direction: int,
+) -> None:
+    quad_position = {quad: index for index, quad in enumerate(QUADS)}
+    pair_position = {pair: index for index, pair in enumerate(PAIRS)}
+    for index in indices:
+        block = BLOCKS[index]
+        for quad in itertools.combinations(block, 4):
+            quad_counts[quad_position[quad]] += direction
+        for point in block:
+            point_counts[point] += direction
+        for pair in itertools.combinations(block, 2):
+            pair_counts[pair_position[pair]] += direction
+
+
 def uncovered(selected: set[int]) -> set[tuple[int, ...]]:
     concrete = [set(BLOCKS[index]) for index in selected]
     return {quad for quad in QUADS if not any(set(quad).issubset(block) for block in concrete)}
@@ -78,7 +125,8 @@ def audit_seed(result_path: Path) -> dict[str, object]:
     if digest(source_path) != result["source"]["sha256"]:
         raise ValueError("source hash mismatch")
     selected = load_blocks(source_path, 40)
-    if direct_metrics(selected) != result["initial_metrics"]:
+    quad_counts, point_counts, pair_counts = independent_counts(selected)
+    if metrics_from_counts(quad_counts, point_counts, pair_counts) != result["initial_metrics"]:
         raise ValueError("initial metric mismatch")
     chain = result["initial_chain_sha256"]
     trace_path = resolve(result["trace"]["path"])
@@ -101,18 +149,20 @@ def audit_seed(result_path: Path) -> dict[str, object]:
             raise ValueError("point-incidence signature not preserved")
         if two_block_decomposable(remove, add):
             raise ValueError("accepted trade decomposes into a legal two-block trade")
-        before_missing = uncovered(selected)
+        before_missing = {QUADS[index] for index, count in enumerate(quad_counts) if count == 0}
         target_quad = tuple(event["target_quad"])
         if target_quad not in before_missing:
             raise ValueError("recorded target was not uncovered before the move")
         if not any(set(target_quad).issubset(BLOCKS[index]) for index in add):
             raise ValueError("no added block contains the recorded target")
-        before = direct_metrics(selected)
+        before = metrics_from_counts(quad_counts, point_counts, pair_counts)
         if before != event["before_metrics"]:
             raise ValueError("before-move metric mismatch")
         selected.difference_update(remove)
         selected.update(add)
-        after = direct_metrics(selected)
+        independently_apply(quad_counts, point_counts, pair_counts, remove, -1)
+        independently_apply(quad_counts, point_counts, pair_counts, add, 1)
+        after = metrics_from_counts(quad_counts, point_counts, pair_counts)
         if after != event["after_metrics"]:
             raise ValueError("after-move metric mismatch")
         base = dict(event)
@@ -124,7 +174,7 @@ def audit_seed(result_path: Path) -> dict[str, object]:
             best_selected = set(selected)
     if accepted != result["accepted_moves"] or chain != result["final_chain_sha256"]:
         raise ValueError("final trace receipt mismatch")
-    if direct_metrics(selected) != result["final_metrics"]:
+    if metrics_from_counts(quad_counts, point_counts, pair_counts) != result["final_metrics"]:
         raise ValueError("final metric mismatch")
     if result["best_accept_count"] == 0:
         best_selected = load_blocks(source_path, 40)

@@ -255,7 +255,11 @@ def run_seed(
             )
             candidate_energy = energy(candidate_metrics)
             fraction = (scored - 1) / max(1, proposal_budget - 1)
-            temperature = 12_000.0 * ((100.0 / 12_000.0) ** fraction)
+            # The measured first-step barrier is roughly 100,000 energy units:
+            # random genuine three-block trades temporarily create at least ten
+            # extra uncovered quadruples.  This temperature admits a bounded
+            # number of such ejections instead of freezing at the warm start.
+            temperature = 50_000.0 * ((100.0 / 50_000.0) ** fraction)
             energy_delta = candidate_energy - current_energy
             accept = energy_delta <= 0 or rng.random() < math.exp(-energy_delta / temperature)
             if not accept:

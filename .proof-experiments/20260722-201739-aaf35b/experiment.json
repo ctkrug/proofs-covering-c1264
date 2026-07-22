@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "id": "20260722-201739-aaf35b",
+  "name": "audit-three-block-screen-v1",
+  "hypothesis": "The standalone checker replays every accepted trade, validates exact point incidence and indecomposability, recomputes candidate metrics, and passes positive/deletion controls.",
+  "expected_signal": "status=valid, seeds_audited=20, accepted_moves_replayed=17999, best_uncovered_quadruples=6.",
+  "command": [
+    "python3",
+    "checkers/audit_three_block_screen.py",
+    "artifacts/constructive/three-block-screen-20260722-v1/manifest.json",
+    "--output",
+    "artifacts/constructive/three-block-screen-20260722-v1/audit.json"
+  ],
+  "cwd": "/root/proof-factory/research/covering-c1264/workspace",
+  "seed": 0,
+  "timeout_seconds": 120,
+  "memory_limit_mb": 512,
+  "memory_limit_enforced": true,
+  "started_at": "2026-07-22T20:17:39.497329+00:00",
+  "finished_at": "2026-07-22T20:17:49.215536+00:00",
+  "duration_seconds": 9.718,
+  "returncode": 0,
+  "timed_out": false,
+  "python": "3.12.3",
+  "platform": "Linux-6.8.0-124-generic-x86_64-with-glibc2.39",
+  "git_commit": "2f6526f2bb4fd8510c939bd892a2faea2eb56e1d",
+  "source_urls": [
+    "https://ljcr.dmgordon.org/cover/show_cover.php?v=12&k=6&t=4"
+  ],
+  "input_artifacts": {
+    "/root/proof-factory/research/covering-c1264/workspace/checkers/audit_three_block_screen.py": "bd66c12ae2e17ec9d7a306f4dc0064a46e8d7971d9f6d9ebbf27da7e7902fd90",
+    "/root/proof-factory/research/covering-c1264/workspace/artifacts/constructive/three-block-screen-20260722-v1/manifest.json": "fcadc5332e655749432dae633a34c4f149efe55fcf157715fd26104a098112ab",
+    "/root/proof-factory/research/covering-c1264/workspace/artifacts/constructive/three-block-screen-20260722-v1/audit.json": "0d7decc6e2da2b8bb8b8338f043289e4de0e5388a237db008a29188978340d99"
+  },
+  "peak_child_memory_rusage": 19180,
+  "peak_child_memory_unit": "kilobytes",
+  "artifacts": {
+    "stdout.txt": "04aeec6e9bbf3b1bd5264e75ae294c0be5bb2100e049ba780ded2f2699dc90cc",
+    "stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  }
+}

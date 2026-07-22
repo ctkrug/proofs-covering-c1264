@@ -1,0 +1,71 @@
+{
+  "schema_version": 1,
+  "epoch": 4,
+  "attempt_id": "covering-c1264-20260722-three-block-screen-v1",
+  "recorded_at": "2026-07-22T20:20:27Z",
+  "phase": "technical-discriminator",
+  "outcome": "progress",
+  "strategy_id": "strategy-eadb381c69d1",
+  "strategy_fingerprint": "eadb381c69d1",
+  "claim_limit": "No 40-block cover was found and no 40-block family was excluded. The result demotes only this fixed six-defect warm-start basin under the recorded stochastic indecomposable three-block proposal and annealing policy.",
+  "hypothesis": "Twenty fixed-seed indecomposable three-block point-degree-preserving ejection searches improve the six-defect warm start to at most five uncovered quadruples, or find a 40-block cover.",
+  "result": {
+    "seeds": [126460, 126461, 126462, 126463, 126464, 126465, 126466, 126467, 126468, 126469, 126470, 126471, 126472, 126473, 126474, 126475, 126476, 126477, 126478, 126479],
+    "scored_proposals": 200000,
+    "accepted_moves": 17999,
+    "best_uncovered_quadruples": 6,
+    "best_candidate_sha256": "4321dea0f828f30bf5cb1d3c54b4a94349e9bc3f54bd25ea23dbac79ae030a07",
+    "producer_seconds": 90.76860419707373,
+    "producer_peak_child_kb": 92008,
+    "independent_audit_seconds": 9.718,
+    "mean_changed_quad_counters": 68.23252
+  },
+  "search_efficiency": {
+    "naive_addition_triples": 131054924,
+    "precomputed_block_pairs": 426426,
+    "pair_signature_classes": 72865,
+    "mechanism": "Choose an uncovered quadruple and one of its 28 containing blocks, then derive the remaining two additions through an exact aggregate point-incidence pair-signature bucket; score only nonzero incremental deltas.",
+    "measured_quad_counter_ratio": "495/68.23252 = 7.2546 mean reduction against a full four-set rescore",
+    "soundness": "The independent checker reconstructed all 17,999 accepted moves, verified exact point-incidence preservation and absence of a legal two-block subtrade, replayed the hash chains, and recomputed final candidates. Sampling remains non-exhaustive."
+  },
+  "evidence": {
+    "manifest": {
+      "path": "artifacts/constructive/three-block-screen-20260722-v1/manifest.json",
+      "sha256": "fcadc5332e655749432dae633a34c4f149efe55fcf157715fd26104a098112ab"
+    },
+    "audit": {
+      "path": "artifacts/constructive/three-block-screen-20260722-v1/audit.json",
+      "sha256": "0d7decc6e2da2b8bb8b8338f043289e4de0e5388a237db008a29188978340d99"
+    },
+    "producer_experiment": {
+      "path": ".proof-experiments/20260722-201455-25d88d/experiment.json",
+      "sha256": "09adc86a00a7c194481ceb95470f686f4c79e734d52c047d2b6c5dea49a182cc"
+    },
+    "audit_experiment": {
+      "path": ".proof-experiments/20260722-201739-aaf35b/experiment.json",
+      "sha256": "9992236378b39c3833b1a5198b2ed74f766ffbfd9287930f4081aa4c93cba725"
+    },
+    "producer": {
+      "path": "scripts/run_constructive_three_block_screen.py",
+      "sha256": "98b921d42995515921e0a4a5c9a643d2f52216842ceb7a0ad8a77ab32e020756"
+    },
+    "checker": {
+      "path": "checkers/audit_three_block_screen.py",
+      "sha256": "bd66c12ae2e17ec9d7a306f4dc0064a46e8d7971d9f6d9ebbf27da7e7902fd90"
+    }
+  },
+  "controls": {
+    "positive": "The pinned 41-block cover hash 395bc870e7eb9e84a472873db97de553afc34afdb666545824944e89047913e5 covered all 495 quadruples.",
+    "negative": "Deleting its lexicographically first block produced 10 uncovered quadruples.",
+    "regression": "The two route-specific unit tests passed. The full 57-test repository run had 43 passes, 2 pre-existing stale-count failures, and 12 environment/missing-artifact errors (chiefly absent pysat and a missing catalog-5 CNF); none involved the three-block producer or checker."
+  },
+  "route_decision": {
+    "decision": "redirect",
+    "reason": "The predeclared at-most-five signal failed in every seed despite 17,999 independently replayed basin-crossing moves. Repeating the same proposal distribution or increasing the same temperature is low-information.",
+    "reopen_condition": "A materially different state generator, such as temporary point-degree slack with a checked exact-degree projection, or an exhaustive direct three-block-neighborhood classifier that proves a new local structural fact.",
+    "next_objective": "Test temporary point-degree slack rather than another exact-degree three-block annealing tranche.",
+    "first_action": "Implement a bounded remove-three/add-three proposal that may deviate from degree 20 by at most two in L1 distance and requires exact-degree return within a fixed short ejection chain; screen the same 20 frozen seeds at 10,000 scored proposals with direct final validation.",
+    "stop_condition": "Stop this successor route unless it reaches at most five uncovered quadruples with exact final point degrees, or yields a separately checked structural classification."
+  },
+  "tool_disclosure": "GPT-5.6 Sol principal designed and audited the pass; a GPT-5.6 Terra delegate supplied advisory reconnaissance. Deterministic Python 3.12.3 generated and checked the screen. No SAT solver, CAS, or proof assistant was used in this epoch."
+}

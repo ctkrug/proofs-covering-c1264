@@ -1,0 +1,2673 @@
+{
+  "schema_version": 1,
+  "kind": "proof-factory-attempt-delta-manifest",
+  "attempt_id": "covering-c1264-20260722-202640-1e718a",
+  "created_at": "2026-07-22T20:26:52.356680+00:00",
+  "workspace": "/root/proof-factory/research/covering-c1264/workspace",
+  "mutable_projection_patterns": [
+    ".delegates/**",
+    ".git/**",
+    ".pytest_cache/**",
+    ".venv/**",
+    "CHECKPOINT.md",
+    "README.md",
+    "__pycache__/**",
+    "docs/DOSSIER.md",
+    "lab-archive/**",
+    "lab-queue/**",
+    "records/problem.json",
+    "records/research-state.json",
+    "venv/**"
+  ],
+  "claimed_evidence_paths": [
+    ".proof-experiments/20260722-201455-25d88d/experiment.json",
+    ".proof-experiments/20260722-201739-aaf35b/experiment.json",
+    "artifacts/constructive/repair-seed126442-30s/best-candidate.txt",
+    "artifacts/constructive/three-block-screen-20260722-v1/audit.json",
+    "artifacts/constructive/three-block-screen-20260722-v1/manifest.json",
+    "checkers/audit_three_block_screen.py",
+    "lab-runs/lab-covering-c1264-574a0e8c0206/segment-000002/20260722-131610-00ad66/experiment.json",
+    "records/labs/lab-covering-c1264-574a0e8c0206-completed-awaiting-review-segment-02.json",
+    "scripts/run_constructive_three_block_screen.py",
+    "sources/ljcr-c1264-41.txt",
+    "tests/test_constructive_three_block_screen.py"
+  ],
+  "artifact_count": 229,
+  "artifacts": [
+    {
+      "path": ".delegates/20260722-200017-7f3ded/experiment-verification/memo.md",
+      "role": "immutable_artifact",
+      "change": "added",
+      "claimed_evidence": false,
+      "after": {
+        "kind": "file",
+        "sha256": "78d87a3504b2c8f4f687032fd0fe2759e17d627c40f1160636e59b56b59d2949",
+        "size": 4329
+      }
+    },
+    {
+      "path": ".git/COMMIT_EDITMSG",
+      "role": "mutable_projection",
+      "change": "modified",
+      "claimed_evidence": false,
+      "before": {
+        "kind": "file",
+        "sha256": "18b8baa71443c021d374faaaafec1404f9b2184b0a91a2704b4add0a7581abe1",
+        "size": 44
+      },
+      "after": {
+        "kind": "file",
+        "sha256": "a4b04c478f0bc58ac3a2266172a2f73714312ce10570fbb00879657c46044c13",
+        "size": 81
+      }
+    },
+    {
+      "path": ".git/FETCH_HEAD",
+      "role": "mutable_projection",
+      "change": "modified",
+      "claimed_evidence": false,
+      "before": {
+        "kind": "file",
+        "sha256": "a2c4a5e4dad2d0cda6e501bc369f46532b010f7486ed42438f1501fdb458f074",
+        "size": 107
+      },
+      "after": {
+        "kind": "file",
+        "sha256": "f639bbe0d5a51af91f85380abcb22775c55a50e1cc83b7c59c2369ecd64ec866",
+        "size": 107
+      }
+    },
+    {
+      "path": ".git/ORIG_HEAD",
+      "role": "mutable_projection",
+      "change": "modified",
+      "claimed_evidence": false,
+      "before": {
+        "kind": "file",
+        "sha256": "4444be69969563da7e48451df96c4ea6cc01b7084b19bfbe0ffffd99a89447ef",
+        "size": 41
+      },
+      "after": {
+        "kind": "file",
+        "sha256": "023443e3e59013e71e209ed19a58cc557fe5c64da992d187c32f5a6eee06a70e",
+        "size": 41
+      }
+    },
+    {
+      "path": ".git/index",
+      "role": "mutable_projection",
+      "change": "modified",
+      "claimed_evidence": false,
+      "before": {
+        "kind": "file",
+        "sha256": "8258118df6e40cf4b22035df4c5b4d2e5feb250ed4d5f4d1263e41d9f702b86f",
+        "size": 283644
+      },
+      "after": {
+        "kind": "file",
+        "sha256": "6a586dbbb95e2ec74e6189ccaa956ca4d876e7ae163a54cb4fa99339d03d4bfe",
+        "size": 288974
+      }
+    },
+    {
+      "path": ".git/logs/HEAD",
+      "role": "immutable_artifact",
+      "change": "modified",
+      "claimed_evidence": false,
+      "before": {
+        "kind": "file",
+        "sha256": "9905c83267be3e8c4fb1d0fc96e8354e2e1d28708b03d9d798f9b88fa38a7856",
+        "size": 9118
+      },
+      "after": {
+        "kind": "file",
+        "sha256": "f1d1b3e3c7041f2c02d6b4e3ba207ed92edc25baa1616fdd03bba183d172a08e",
+        "size": 9494
+      }
+    },
+    {
+      "path": ".git/logs/refs/heads/main",
+      "role": "immutable_artifact",
+      "change": "modified",
+      "claimed_evidence": false,
+      "before": {
+        "kind": "file",
+        "sha256": "823295582d18d830822cfc0cc9e66fb7ee5c9b2b4b1cf41a5305ab600a4d0c30",
+        "size": 8251
+      },
+      "after": {
+        "kind": "file",
+        "sha256": "6d5b27134e7692ba1744e12d653dca48474fdf5b0f16719e46326f485e7f8157",
+        "size": 8627
+      }
+    },
+    {
+      "path": ".git/logs/refs/remotes/origin/main",
+      "role": "immutable_artifact",
+      "change": "modified",
+      "claimed_evidence": false,
+      "before": {
+        "kind": "file",
+        "sha256": "651aee9eadee3e70b3cb2d606029bc2e1856c09cee8bfd70279466e8bcca3af8",
+        "size": 5480
+      },
+      "after": {
+        "kind": "file",
+        "sha256": "25db04ac68f657cda34db653edbee3eb4166db7490380d7067e765396e5cbb79",
+        "size": 5782
+      }
+    },
+    {
+      "path": ".git/objects/04/b262d6142008684cd46409d131dbd59839ed2f",
+      "role": "immutable_artifact",
+      "change": "added",
+      "claimed_evidence": false,
+      "after": {
+        "kind": "file",
+        "sha256": "a6e77e4aea5b6171737b3cf0863cae62df591876f9780c8309ff096ff40ecf4c",
+        "size": 60
+      }
+    },
+    {
+      "path": ".git/objects/08/1f5755d37b580407d69e8c0bc2a24be4552679",
+      "role": "immutable_artifact",
+      "change": "added",
+      "claimed_evidence": false,
+      "after": {
+        "kind": "file",
+        "sha256": "5fa7db2983a3917c729ff703ba62a5b7e89d08ffcf7faa0250f34692fa5cb0e2",
+        "size": 536
+      }
+    },
+    {
+      "path": ".git/objects/0e/d48acaa31103ed1e735f9ed2e8b5b3a537ee0d",
+      "role": "immutable_artifact",
+      "change": "added",
+      "claimed_evidence": false,
+      "after": {
+        "kind": "file",
+        "sha256": "ef64365b96b088e96f9747e9ea53d5cddf95846196d07443234347d1aae9d9b9",
+        "size": 192
+      }
+    },
+    {
+      "path": ".git/objects/0f/baa997b4efe6ab73903bcd3707099aa7c39244",
+      "role": "immutable_artifact",
+      "change": "added",
+      "claimed_evidence": false,
+      "after": {
+        "kind": "file",
+        "sha256": "e468e2cc51c5673147519a0ceacd4e40be536b7376b1efa588c4f0685eb9e10c",
+        "size": 1093
+      }
+    },
+    {
+      "path": ".git/objects/10/f78393bc2e56f5b3616c6b29cddde5f027e5d0",
+      "role": "immutable_artifact",
+      "change": "added",
+      "claimed_evidence": false,
+      "after": {
+        "kind": "file",
+        "sha256": "948b97e71c47f500d44f208bbc7e6db9b7c5e166f4f22a151a05bad9a3900412",
+        "size": 104
+      }
+    },
+    {
+      "path": ".git/objects/1e/f75e9f55c852715bb5341231387a58d37ddcfd",
+      "role": "immutable_artifact",
+      "change": "added",
+      "claimed_evidence": false,
+      "after": {
+        "kind": "file",
+        "sha256": "5bb05df782a7d5f026b486679aa39b38abad0c1d33e9add59c2f1f62ad0dbf06",
+        "size": 178
+      }
+    },
+    {
+      "path": ".git/objects/21/f714c70657f110b700c5ec1b3d31b22c364626",
+      "role": "immutable_artifact",
+      "change": "added",
+      "claimed_evidence": false,
+      "after": {
+        "kind": "file",
+        "sha256": "aa7d89e38a92e1ecf5d66a7e79e901fc183af16ef01e1914f9158e561679a514",
+        "size": 1883
+      }
+    },
+    {
+      "path": ".git/objects/23/8f975b933a5cb908fc4943655ad10ff6197018",
+      "role": "immutable_artifact",
+      "change": "added",
+      "claimed_evidence": false,
+      "after": {
+        "kind": "file",
+        "sha256": "0bfb44a9abf78bc2bdc4ed16bd5f667f9708e1ada69b1725f7946af8aff4ae47",
+        "size": 58
+      }
+    },
+    {
+      "path": ".git/objects/25/435141433c8e17eed98fe99d93e25d23ec9581",
+      "role": "immutable_artifact",
+      "change": "added",
+      "claimed_evidence": false,
+      "after": {
+        "kind": "file",
+        "sha256": "f80d779d8db127241d8a205c7fd0144442a1f1465a99e6fd84f969cc66e72f2a",
+        "size": 56
+      }
+    },
+    {
+      "path": ".git/objects/25/be925439855ebccddd153606103ba0ac1df01d",
+      "role": "immutable_artifact",
+      "change": "added",
+      "claimed_evidence": false,
+      "after": {
+        "kind": "file",
+        "sha256": "d92c0d55750d23c15cfc1985d689aba3a91c36be5443fe6b9066cd3c598bcad2",
+        "size": 54
+      }
+    },
+    {
+      "path": ".git/objects/26/ea354ae20a2a4d6082b18eb26ed36396dd9a5d",
+      "role": "immutable_artifact",
+      "change": "added",
+      "claimed_evidence": false,
+      "after": {
+        "kind": "file",
+        "sha256": "2b3eae9d40bc7d143f1b4165479539966b915dcc962151f1a164ab419500333d",
+        "size": 2148
+      }
+    },
+    {
+      "path": ".git/objects/27/6fdab4eaa4bc3623f4091032aca8d5d6291be8",
+      "role": "immutable_artifact",
+      "change": "added",
+      "claimed_evidence": false,
+      "after": {
+        "kind": "file",
+        "sha256": "3f3534ec257b9bec7b38ef286fd02e0af4f45a6b3aecac8b5cd4ccc2ee920f45",
+        "size": 703
+      }
+    },
+    {
+      "path": ".git/objects/2f/6526f2bb4fd8510c939bd892a2faea2eb56e1d",
+      "role": "immutable_artifact",
+      "change": "added",
+      "claimed_evidence": false,
+      "after": {
+        "kind": "file",
+        "sha256": "782ceddc63b6f1161fa602d1eccc212c35be21a73a0f2dda39f9df1eaf2e0239",
+        "size": 202
+      }
+    },
+    {
+      "path": ".git/objects/33/95bfb2265c7388cd632ceed8d9d38763f60e87",
+      "role": "immutable_artifact",
+      "change": "added",
+      "claimed_evidence": false,
+      "after": {
+        "kind": "file",
+        "sha256": "11c8267e54d42d8ae70914ae4c96ac449f8576317f2501ece278701975ae1b61",
+        "size": 179
+      }
+    },
+    {
+      "path": ".git/objects/34/6de3b21811d656665aecc2a93f1468c83f70c6",
+      "role": "immutable_artifact",
+      "change": "added",
+      "claimed_evidence": false,
+      "after": {
+        "kind": "file",
+        "sha256": "ec4267911d049d54bc572446b34ecd299bb8b26031f7ee625bd2b83bd6aa244f",
+        "size": 1017
+      }
+    },
+    {
+      "path": ".git/objects/38/04750054d1fa357fc006aed606635461529093",
+      "role": "immutable_artifact",
+      "change": "added",
+      "claimed_evidence": false,
+      "after": {
+        "kind": "file",
+        "sha256": "a23777ce2af5da9fb01e4d54abf967a47b1d82ef67c0c28df88b24871c6cb578",
+        "size": 190
+      }
+    },
+    {
+      "path": ".git/objects/3b/4fac3f02b6c5b30d754ea3900a6d92f1de80e8",
+      "role": "immutable_artifact",
+      "change": "added",
+      "claimed_evidence": false,
+      "after": {
+        "kind": "file",
+        "sha256": "e76f457f73fc8d6178be7f29e220b23002663ea96d067f5c4b218695a4619d9b",
+        "size": 182
+      }
+    },
+    {
+      "path": ".git/objects/49/813258e90e174c2a54dfa622a5bccc78bd8c1d",
+      "role": "immutable_artifact",
+      "change": "added",
+      "claimed_evidence": false,
+      "after": {
+        "kind": "file",
+        "sha256": "9b4741075f96f82346d89e0a1ac7265c6b17b91f7ff7751b8dc9f52e9be750b7",
+        "size": 640
+      }
+    },
+    {
+      "path": ".git/objects/4b/1b17d47fbc6b8c7cb738de35dabdc6e7b11cf7",
+      "role": "immutable_artifact",
+      "change": "added",
+      "claimed_evidence": false,
+      "after": {
+        "kind": "file",
+        "sha256": "591d8f3ba1eacce778099a4653d08110ba480deb132ff80c7592c465a6a7647a",
+        "size": 174
+      }
+    },
+    {
+      "path": ".git/objects/4c/1b853742a65acdf9a047eba5a99cc8bb4b277f",
+      "role": "immutable_artifact",
+      "change": "added",
+      "claimed_evidence": false,
+      "after": {
+        "kind": "file",
+        "sha256": "6113e8b20655c29d1121016c15fc0fe48ae8a15281bf3e8e58f8911438588fe0",
+        "size": 1840
+      }
+    },
+    {
+      "path": ".git/objects/50/20805591c22719ac52c968098287030c7c7814",
+      "role": "immutable_artifact",
+      "change": "added",
+      "claimed_evidence": false,
+      "after": {
+        "kind": "file",
+        "sha256": "91fa07ce33bae1e9b47bd95865e5eb556d42813f5aea16bd59592a7e1d0e1ad9",
+        "size": 220
+      }
+    },
+    {
+      "path": ".git/objects/51/d88834a37b17cd2781a3405861f2fd85e8b1f0",
+      "role": "immutable_artifact",
+      "change": "added",
+      "claimed_evidence": false,
+      "after": {
+        "kind": "file",
+        "sha256": "5926cba4bc70a829ba5fc89a49c00d718acdb40147128c58b257d2a17c9ba9ce",
+        "size": 295
+      }
+    },
+    {
+      "path": ".git/objects/52/33584e0fbd134e40a14a6372055a80393925d7",
+      "role": "immutable_artifact",
+      "change": "added",
+      "claimed_evidence": false,
+      "after": {
+        "kind": "file",
+        "sha256": "319c767bfc95b2c0505b4824a2354b318e9b98f41148d0a2713ce06f581fe069",
+        "size": 160
+      }
+    },
+    {
+      "path": ".git/objects/53/db23cac2d4e7b265910758f4fa316588e21476",
+      "role": "immutable_artifact",
+      "change": "added",
+      "claimed_evidence": false,
+      "after": {
+        "kind": "file",
+        "sha256": "8da81031d63cf93aeeedaa01f59367591c77314755d5dee2fef866b8b6aa6046",
+        "size": 64
+      }
+    },
+    {
+      "path": ".git/objects/56/0d8418bea4bb219eb02f921b26833555eb1af7",
+      "role": "immutable_artifact",
+      "change": "added",
+      "claimed_evidence": false,
+      "after": {
+        "kind": "file",
+        "sha256": "77f0ff1ab3fa42b64689c54039d8a51f244861aa191f5855198946c49fc9dc61",
+        "size": 52
+      }
+    },
+    {
+      "path": ".git/objects/5e/a5a9e4f8408e8e56a39c8f2a3a59ae9dd910cc",
+      "role": "immutable_artifact",
+      "change": "added",
+      "claimed_evidence": false,
+      "after": {
+        "kind": "file",
+        "sha256": "c7254d0015f7718e7048e32334217511a97e9b03e60b4c3468a380e49ac5a050",
+        "size": 2784
+      }
+    },
+    {
+      "path": ".git/objects/5f/682dd82b3685a603e5fd70f8ab2ae3dde713ed",
+      "role": "immutable_artifact",
+      "change": "added",
+      "claimed_evidence": false,
+      "after": {
+        "kind": "file",
+        "sha256": "71ed93ba9b1c350d4d93513fb4998f911dd9c03c4b49bd3efe4757335ddeffb1",
+        "size": 460
+      }
+    },
+    {
+      "path": ".git/objects/60/88978c2fbc008a182153ce659b9525419710e9",
+      "role": "immutable_artifact",
+      "change": "added",
+      "claimed_evidence": false,
+      "after": {
+        "kind": "file",
+        "sha256": "54e7c1cf62cccfe8c5457e1f186b816df228c8fd5d44af2315c31c6f521280fa",
+        "size": 798
+      }
+    },
+    {
+      "path": ".git/objects/65/5ebe63597de4f28b53ce4600abb74d471bf65f",
+      "role": "immutable_artifact",
+      "change": "added",
+      "claimed_evidence": false,
+      "after": {
+        "kind": "file",
+        "sha256": "8547cb300a62cfc434f61a8628bf8226deb10532d9bed4c0d88f71a123a74e8e",
+        "size": 628
+      }
+    },
+    {
+      "path": ".git/objects/69/633d7a9ed21d51b840c8071b7710ef37e063ec",
+      "role": "immutable_artifact",
+      "change": "added",
+      "claimed_evidence": false,
+      "after": {
+        "kind": "file",
+        "sha256": "e82a6b4416ded711a37a3af749e949a45271a5fbada2d9283d6872caca3588df",
+        "size": 5822
+      }
+    },
+    {
+      "path": ".git/objects/71/c376154dbe2a0ca7cb4aa605c4b8c97bbbc129",
+      "role": "immutable_artifact",
+      "change": "added",
+      "claimed_evidence": false,
+      "after": {
+        "kind": "file",
+        "sha256": "df66d3616338da19a9f95dc21224e96aa5879f2dcaa70984fedd597ff3c977d3",
+        "size": 616
+      }
+    },
+    {
+      "path": ".git/objects/73/ac527cf91f512b242b1a103100719bfff4b8cb",
+      "role": "immutable_artifact",
+      "change": "added",
+      "claimed_evidence": false,
+      "after": {
+        "kind": "file",
+        "sha256": "7453759687da73064f2044635249c089ee9b4e45378b3a850550a776ca3a8fe2",
+        "size": 227
+      }
+    },
+    {
+      "path": ".git/objects/7c/25feb0255ccd8fb3c56a15861aac16522d412a",
+      "role": "immutable_artifact",
+      "change": "added",
+      "claimed_evidence": false,
+      "after": {
+        "kind": "file",
+        "sha256": "2abc5ac7bfbc6aa137f45ed325da8df5c749bc79aef1bfff4aae0d3a1f0cbbea",
+        "size": 628
+      }
+    },
+    {
+      "path": ".git/objects/7f/e7887b33eda290cd8b65415252d0db98be6633",
+      "role": "immutable_artifact",
+      "change": "added",
+      "claimed_evidence": false,
+      "after": {
+        "kind": "file",
+        "sha256": "40b329e2d1cfa2d880f7450b24580bc5f14cfe2b2b4c0f23e69fcf889ddf810e",
+        "size": 12703
+      }
+    },
+    {
+      "path": ".git/objects/80/5e6533041b1583a96cd3f93a5aa98fe16a4dec",
+      "role": "immutable_artifact",
+      "change": "added",
+      "claimed_evidence": false,
+      "after": {
+        "kind": "file",
+        "sha256": "766faf6bdecf7400afb59faecda356cb03d9d68410fc30b973937aa8c084cde6",
+        "size": 104
+      }
+    },
+    {
+      "path": ".git/objects/83/90ae64d8339715fd680490962ff874949ce134",
+      "role": "immutable_artifact",
+      "change": "added",
+      "claimed_evidence": false,
+      "after": {
+        "kind": "file",
+        "sha256": "c7638fb951d0ff5afda419a809975064534c1bd7061b87ef462bb189b0c9e574",
+        "size": 615
+      }
+    },
+    {
+      "path": ".git/objects/8e/017c39457b14d50c373cca0d4a6ae3b2a12064",
+      "role": "immutable_artifact",
+      "change": "added",
+      "claimed_evidence": false,
+      "after": {
+        "kind": "file",
+        "sha256": "75faa1246d4978de5dc7ed40135affdb4a64b27f2ee0bab45e1a4ef6287a6be4",
+        "size": 1130
+      }
+    },
+    {
+      "path": ".git/objects/8f/b71bfb172a00673f1f7c1ed1fcd0d876d8f7db",
+      "role": "immutable_artifact",
+      "change": "added",
+      "claimed_evidence": false,
+      "after": {
+        "kind": "file",
+        "sha256": "a13cb9444193e17c3bd330075643d230d101b1664a8a39463dc1b438a33b6a85",
+        "size": 121
+      }
+    },
+    {
+      "path": ".git/objects/93/50794f01c3ad9b6245f3d17ba910104e6f7eb1",
+      "role": "immutable_artifact",
+      "change": "added",
+      "claimed_evidence": false,
+      "after": {
+        "kind": "file",
+        "sha256": "5bbe4d394a8784738953570a76807875d053446d3959b3a3a2b12dcfabf70e3d",
+        "size": 1716
+      }
+    },
+    {
+      "path": ".git/objects/93/be3d9e27810882b6ea1e58e1c36f76550c619a",
+      "role": "immutable_artifact",
+      "change": "added",
+      "claimed_evidence": false,
+      "after": {
+        "kind": "file",
+        "sha256": "b6f6a700ba27ba77d3dc1ebb9314ec1faa148d19a024f19a1f90f9d8b0cdcd28",
+        "size": 1955
+      }
+    },
+    {
+      "path": ".git/objects/97/0a6067e31170814270eca40734138059d1aafe",
+      "role": "immutable_artifact",
+      "change": "added",
+      "claimed_evidence": false,
+      "after": {
+        "kind": "file",
+        "sha256": "a699791aab1aee5234fca315229c675aa70d4f479a15900ce3308898d04a0904",
+        "size": 2279
+      }
+    },
+    {
+      "path": ".git/objects/97/aabe7fc9478a906fcb005d3d469195d9abc201",
+      "role": "immutable_artifact",
+      "change": "added",
+      "claimed_evidence": false,
+      "after": {
+        "kind": "file",
+        "sha256": "d7640c61ec1a36a33c357a3485d0ac146305acad49e76ffe02117d7c173145e7",
+        "size": 536
+      }
+    },
+    {
+      "path": ".git/objects/99/0bfea59534c651cef0e4682ec91d2a728e01cf",
+      "role": "immutable_artifact",
+      "change": "added",
+      "claimed_evidence": false,
+      "after": {
+        "kind": "file",
+        "sha256": "42b40fed209e1e698bdbb57148b0e643c59d3b06bd3b84bf441f839989967e86",
+        "size": 238
+      }
+    },
+    {
+      "path": ".git/objects/9c/478fee38e4f85017171e840bc9f94b6d85f354",
+      "role": "immutable_artifact",
+      "change": "added",
+      "claimed_evidence": false,
+      "after": {
+        "kind": "file",
+        "sha256": "e9590a1d06a59042d8608d32a1d34b653592b2f87863820c8e461d5c0e08d7be",
+        "size": 222
+      }
+    },
+    {
+      "path": ".git/objects/9d/1e17c528e1d6080beef394aa75728bb723f929",
+      "role": "immutable_artifact",
+      "change": "added",
+      "claimed_evidence": false,
+      "after": {
+        "kind": "file",
+        "sha256": "9bb59fd5ee2c9e4b835d2ce2e77a9f09090937ae211175ea09e7842cdae18ce9",
+        "size": 285
+      }
+    },
+    {
+      "path": ".git/objects/a8/53c01fa2363e55c2ab588637b6c795f85d510d",
+      "role": "immutable_artifact",
+      "change": "added",
+      "claimed_evidence": false,
+      "after": {
+        "kind": "file",
+        "sha256": "5453e9aab8aa28e17c39062c10890cba50cba4939fcaba57cb160b0f7604070b",
+        "size": 282
+      }
+    },
+    {
+      "path": ".git/objects/a8/ed9954f1f379347cc99031c74c3a121b016927",
+      "role": "immutable_artifact",
+      "change": "added",
+      "claimed_evidence": false,
+      "after": {
+        "kind": "file",
+        "sha256": "2d066d3907ba7b52f58a6c61a70a2130fa20f520076c7ea181aad69627b54b71",
+        "size": 123
+      }
+    },
+    {
+      "path": ".git/objects/ab/12275c0bb664b2285b49e02d78160814b2ecd5",
+      "role": "immutable_artifact",
+      "change": "added",
+      "claimed_evidence": false,
+      "after": {
+        "kind": "file",
+        "sha256": "9915c5a31c1defd37552e56d34c70635bbb81f120168f005bcfc14d8e731d94f",
+        "size": 1067
+      }
+    },
+    {
+      "path": ".git/objects/b3/74c64b0daaccd099b763d334419f220c13fdcd",
+      "role": "immutable_artifact",
+      "change": "added",
+      "claimed_evidence": false,
+      "after": {
+        "kind": "file",
+        "sha256": "5a04e4ac11897b5fc2f588be5537a383250e39d74ad6d4b67c3e607f82b72260",
+        "size": 2150
+      }
+    },
+    {
+      "path": ".git/objects/b5/2ef20a613190f9cc0db7941562174f6f87e545",
+      "role": "immutable_artifact",
+      "change": "added",
+      "claimed_evidence": false,
+      "after": {
+        "kind": "file",
+        "sha256": "430bb18ce8bc0ffbd58a8b43c1ce1521ada4dbbeee5d6319cd9daaf6cbc1c413",
+        "size": 471
+      }
+    },
+    {
+      "path": ".git/objects/bb/3f3494a1e6dbcdaa8622ff651d025e9d9e42a9",
+      "role": "immutable_artifact",
+      "change": "added",
+      "claimed_evidence": false,
+      "after": {
+        "kind": "file",
+        "sha256": "ff2ef24887b8f805a563e5de2ac6d58aef5ffb235e491c7f215d58f6ba006102",
+        "size": 2148
+      }
+    },
+    {
+      "path": ".git/objects/cb/94fc1571db36f57da908b04d6ac68156d55760",
+      "role": "immutable_artifact",
+      "change": "added",
+      "claimed_evidence": false,
+      "after": {
+        "kind": "file",
+        "sha256": "2168edb1da5ef475559e7bd26860a54cc128e03b3781d733bf8798375730b8a1",
+        "size": 645
+      }
+    },
+    {
+      "path": ".git/objects/cd/af76d0f0fce7a0fc358e057b3519d44d3cc935",
+      "role": "immutable_artifact",
+      "change": "added",
+      "claimed_evidence": false,
+      "after": {
+        "kind": "file",
+        "sha256": "dc8ecb4e9a8da9a36b019ba7ede478052b518441133e6fc0b24eb1017ff17ced",
+        "size": 64
+      }
+    },
+    {
+      "path": ".git/objects/d3/02a7248157467a07faa85b1debd5690260f6a6",
+      "role": "immutable_artifact",
+      "change": "added",
+      "claimed_evidence": false,
+      "after": {
+        "kind": "file",
+        "sha256": "9b7e2bbd36fb74c91a966cf94c365cf5389b3ab8138cc48a4b417245c81ee89d",
+        "size": 2673
+      }
+    },
+    {
+      "path": ".git/objects/d3/aea654656dd101a2b6c3eaa50cdb317cf90539",
+      "role": "immutable_artifact",
+      "change": "added",
+      "claimed_evidence": false,
+      "after": {
+        "kind": "file",
+        "sha256": "b6ec66569711829f7c67bf24ce1d0e5120e0adf24769f7835d7b31a80b761f71",
+        "size": 642
+      }
+    },
+    {
+      "path": ".git/objects/d4/52c361e1491f0524e4254a65ade1a6926dbed4",
+      "role": "immutable_artifact",
+      "change": "added",
+      "claimed_evidence": false,
+      "after": {
+        "kind": "file",
+        "sha256": "bc0d58235381a7d0859ae073467a399e5443a2f5e0fc2532b683d69aeb801db5",
+        "size": 1726
+      }
+    },
+    {
+      "path": ".git/objects/d4/f4266448aaf633cff67969e81fe7c657af4ea2",
+      "role": "immutable_artifact",
+      "change": "added",
+      "claimed_evidence": false,
+      "after": {
+        "kind": "file",
+        "sha256": "30c65cdf95ddb5869b8ad54b93830ab6371532caf34792254ea724dd82f125cb",
+        "size": 473
+      }
+    },
+    {
+      "path": ".git/objects/db/d87abb03c57d6a57b8847f22d00e80a0025767",
+      "role": "immutable_artifact",
+      "change": "added",
+      "claimed_evidence": false,
+      "after": {
+        "kind": "file",
+        "sha256": "87850f50411854f3f277e723d57560a69ef2e23ee8d3d2fad029975f591d8ce6",
+        "size": 52
+      }
+    },
+    {
+      "path": ".git/objects/dc/2a35d1fe53cae64936eb5678d7e7f1a67468ad",
+      "role": "immutable_artifact",
+      "change": "added",
+      "claimed_evidence": false,
+      "after": {
+        "kind": "file",
+        "sha256": "3e7d34181bc039328027bd4fcc1e97a641d9253edd41010556af390938d0aee9",
+        "size": 159
+      }
+    },
+    {
+      "path": ".git/objects/dc/7ff6a2a7b55e2ae95e2809662d79bc5728f9f4",
+      "role": "immutable_artifact",
+      "change": "added",
+      "claimed_evidence": false,
+      "after": {
+        "kind": "file",
+        "sha256": "1b9a892921a1ab64d59a5f7c877f2f5b1df098f00bc3abd4cf2e27dfec74a553",
+        "size": 52
+      }
+    },
+    {
+      "path": ".git/objects/dc/e611cab7a06a4fc3749b7f9e61fa9142ec5a7d",
+      "role": "immutable_artifact",
+      "change": "added",
+      "claimed_evidence": false,
+      "after": {
+        "kind": "file",
+        "sha256": "85ae95504b226ea8facc17ea10823b41e9e6b53cee6f71783d4cbc4cd0d1584a",
+        "size": 52
+      }
+    },
+    {
+      "path": ".git/objects/e2/7b825cb5c6c53e11d525074573b16faa496ee1",
+      "role": "immutable_artifact",
+      "change": "added",
+      "claimed_evidence": false,
+      "after": {
+        "kind": "file",
+        "sha256": "4360e8ae3b9c2ea37d332e6ef556f36cbfa5b2d67713ab567232b5cec3acb814",
+        "size": 133
+      }
+    },
+    {
+      "path": ".git/objects/e3/1424936975c2ccff673398d75c5f623c761daf",
+      "role": "immutable_artifact",
+      "change": "added",
+      "claimed_evidence": false,
+      "after": {
+        "kind": "file",
+        "sha256": "129172289ac85c317d32fccb7f9cc73180bab5062e38099ac6ba1656bbf2c5d7",
+        "size": 784
+      }
+    },
+    {
+      "path": ".git/objects/e6/38ebdc271ccdf75f2292e796a5ddb1122711fa",
+      "role": "immutable_artifact",
+      "change": "added",
+      "claimed_evidence": false,
+      "after": {
+        "kind": "file",
+        "sha256": "0c6258f8a1970e4b6673d57224f69a19e7a39686068b875ebc59587ecdc7516e",
+        "size": 2151
+      }
+    },
+    {
+      "path": ".git/objects/e7/0d339882063e4d7778d2ec759e362ae6fa000d",
+      "role": "immutable_artifact",
+      "change": "added",
+      "claimed_evidence": false,
+      "after": {
+        "kind": "file",
+        "sha256": "ac63d98accea7df40ded1fdce6f15329a6e94dd04a471116daafc20d6601364f",
+        "size": 190
+      }
+    },
+    {
+      "path": ".git/objects/e9/06a0ba81c315a112403d1a8472f6188242ab01",
+      "role": "immutable_artifact",
+      "change": "added",
+      "claimed_evidence": false,
+      "after": {
+        "kind": "file",
+        "sha256": "b0baa4b191c8787f00f5fcd4ac7f071cd2db2d1081f2c1c830fdd1d20bf159fc",
+        "size": 3214
+      }
+    },
+    {
+      "path": ".git/objects/e9/4b1c81235aa0a437449074e0b0cc93fb8f57ca",
+      "role": "immutable_artifact",
+      "change": "added",
+      "claimed_evidence": false,
+      "after": {
+        "kind": "file",
+        "sha256": "c65d74c45d66a1f7794f6eb0d870a981efe7e675e7740f1a5a3efb1ccd4ad908",
+        "size": 471
+      }
+    },
+    {
+      "path": ".git/objects/eb/63a64ad70d36d4eb7c6020640563e1efe8c758",
+      "role": "immutable_artifact",
+      "change": "added",
+      "claimed_evidence": false,
+      "after": {
+        "kind": "file",
+        "sha256": "0583cae58bb1f52b7242765bdd5de20c366abe0c8b64fdcd494b51ab4c3648f1",
+        "size": 729
+      }
+    },
+    {
+      "path": ".git/objects/ec/2d86c6317aaeda3e182639422ef1ee3294ecb7",
+      "role": "immutable_artifact",
+      "change": "added",
+      "claimed_evidence": false,
+      "after": {
+        "kind": "file",
+        "sha256": "a4724f90d124d48d70e41b86224e259a62607904d6f3b50cae739336f82b6481",
+        "size": 105
+      }
+    },
+    {
+      "path": ".git/objects/ee/7f118f1314bf66bde9e4b182ecff0e9b65d7e6",
+      "role": "immutable_artifact",
+      "change": "added",
+      "claimed_evidence": false,
+      "after": {
+        "kind": "file",
+        "sha256": "7145faeacf810d8a942f3e0739b57f6ee11df456931e22b6b7e932c32d0a0794",
+        "size": 2781
+      }
+    },
+    {
+      "path": ".git/objects/f2/63eaf5845c6de8aedc39baa631cd9b80b15fa9",
+      "role": "immutable_artifact",
+      "change": "added",
+      "claimed_evidence": false,
+      "after": {
+        "kind": "file",
+        "sha256": "da161e300ca4438c18af394b072523e2f085bd7f9789e8efea04932a445164a0",
+        "size": 1017
+      }
+    },
+    {
+      "path": ".git/objects/f2/a93ba03ee58fec1b975fec821a0e6ca6bfd713",
+      "role": "immutable_artifact",
+      "change": "added",
+      "claimed_evidence": false,
+      "after": {
+        "kind": "file",
+        "sha256": "7d549c902ad75df5d89fc99193534c93973eee2b8b39d416a2bd2fe59f878f8e",
+        "size": 535
+      }
+    },
+    {
+      "path": ".git/objects/fa/99c1cd81b31969d0291f1fe29a7b1b761ccd10",
+      "role": "immutable_artifact",
+      "change": "added",
+      "claimed_evidence": false,
+      "after": {
+        "kind": "file",
+        "sha256": "4d3369f4ab53756386b015e55b52a9cf740d1593b3c424cad9dc41403628cc20",
+        "size": 1051
+      }
+    },
+    {
+      "path": ".git/objects/fb/bc04edc2b2482603bf50fcfc8b8045aec428c2",
+      "role": "immutable_artifact",
+      "change": "added",
+      "claimed_evidence": false,
+      "after": {
+        "kind": "file",
+        "sha256": "039aecfec392f7c7d766a18f0067e8cb176048d4b779bc36e513cbf8686758c8",
+        "size": 616
+      }
+    },
+    {
+      "path": ".git/objects/fe/03fd044c33956a958a2e50ea90da4341c6dd00",
+      "role": "immutable_artifact",
+      "change": "added",
+      "claimed_evidence": false,
+      "after": {
+        "kind": "file",
+        "sha256": "4bd6d5d99b98529dc814b9bd3c98a0bed6f4e6481bd17e4125c0cffe70749729",
+        "size": 81
+      }
+    },
+    {
+      "path": ".git/refs/heads/main",
+      "role": "immutable_artifact",
+      "change": "modified",
+      "claimed_evidence": false,
+      "before": {
+        "kind": "file",
+        "sha256": "023443e3e59013e71e209ed19a58cc557fe5c64da992d187c32f5a6eee06a70e",
+        "size": 41
+      },
+      "after": {
+        "kind": "file",
+        "sha256": "1027a679a8cc5474a0d2af824fb02a03a3d806cd1aca037cc24632568b1cb381",
+        "size": 41
+      }
+    },
+    {
+      "path": ".git/refs/remotes/origin/main",
+      "role": "immutable_artifact",
+      "change": "modified",
+      "claimed_evidence": false,
+      "before": {
+        "kind": "file",
+        "sha256": "023443e3e59013e71e209ed19a58cc557fe5c64da992d187c32f5a6eee06a70e",
+        "size": 41
+      },
+      "after": {
+        "kind": "file",
+        "sha256": "1027a679a8cc5474a0d2af824fb02a03a3d806cd1aca037cc24632568b1cb381",
+        "size": 41
+      }
+    },
+    {
+      "path": ".proof-experiments/20260722-201455-25d88d/experiment.json",
+      "role": "immutable_artifact",
+      "change": "added",
+      "claimed_evidence": true,
+      "after": {
+        "kind": "file",
+        "sha256": "09adc86a00a7c194481ceb95470f686f4c79e734d52c047d2b6c5dea49a182cc",
+        "size": 2498
+      }
+    },
+    {
+      "path": ".proof-experiments/20260722-201455-25d88d/stderr.txt",
+      "role": "immutable_artifact",
+      "change": "added",
+      "claimed_evidence": false,
+      "after": {
+        "kind": "file",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "size": 0
+      }
+    },
+    {
+      "path": ".proof-experiments/20260722-201455-25d88d/stdout.txt",
+      "role": "immutable_artifact",
+      "change": "added",
+      "claimed_evidence": false,
+      "after": {
+        "kind": "file",
+        "sha256": "9b5d04f47e7a6e33cda6621d46e03d2f2e84e76f9055e792e50101ab509854e7",
+        "size": 6371
+      }
+    },
+    {
+      "path": ".proof-experiments/20260722-201739-aaf35b/experiment.json",
+      "role": "immutable_artifact",
+      "change": "added",
+      "claimed_evidence": true,
+      "after": {
+        "kind": "file",
+        "sha256": "9992236378b39c3833b1a5198b2ed74f766ffbfd9287930f4081aa4c93cba725",
+        "size": 2083
+      }
+    },
+    {
+      "path": ".proof-experiments/20260722-201739-aaf35b/stderr.txt",
+      "role": "immutable_artifact",
+      "change": "added",
+      "claimed_evidence": false,
+      "after": {
+        "kind": "file",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "size": 0
+      }
+    },
+    {
+      "path": ".proof-experiments/20260722-201739-aaf35b/stdout.txt",
+      "role": "immutable_artifact",
+      "change": "added",
+      "claimed_evidence": false,
+      "after": {
+        "kind": "file",
+        "sha256": "04aeec6e9bbf3b1bd5264e75ae294c0be5bb2100e049ba780ded2f2699dc90cc",
+        "size": 6700
+      }
+    },
+    {
+      "path": "artifacts/classification/exhaustive-link-v1/certificate-index-32of47.json",
+      "role": "immutable_artifact",
+      "change": "added",
+      "claimed_evidence": false,
+      "after": {
+        "kind": "file",
+        "sha256": "670d5811675c08835d74b9312b3301d95de8425226ce36cd6365ac3791f37eee",
+        "size": 56955
+      }
+    },
+    {
+      "path": "artifacts/constructive/repair-seed126442-30s/best-candidate.txt",
+      "role": "immutable_artifact",
+      "change": "unchanged",
+      "claimed_evidence": true,
+      "before": {
+        "kind": "file",
+        "sha256": "4321dea0f828f30bf5cb1d3c54b4a94349e9bc3f54bd25ea23dbac79ae030a07",
+        "size": 540
+      },
+      "after": {
+        "kind": "file",
+        "sha256": "4321dea0f828f30bf5cb1d3c54b4a94349e9bc3f54bd25ea23dbac79ae030a07",
+        "size": 540
+      }
+    },
+    {
+      "path": "artifacts/constructive/three-block-screen-20260722-v1/audit.json",
+      "role": "immutable_artifact",
+      "change": "added",
+      "claimed_evidence": true,
+      "after": {
+        "kind": "file",
+        "sha256": "0d7decc6e2da2b8bb8b8338f043289e4de0e5388a237db008a29188978340d99",
+        "size": 8344
+      }
+    },
+    {
+      "path": "artifacts/constructive/three-block-screen-20260722-v1/manifest.json",
+      "role": "immutable_artifact",
+      "change": "added",
+      "claimed_evidence": true,
+      "after": {
+        "kind": "file",
+        "sha256": "fcadc5332e655749432dae633a34c4f149efe55fcf157715fd26104a098112ab",
+        "size": 7645
+      }
+    },
+    {
+      "path": "artifacts/constructive/three-block-screen-20260722-v1/seed-126460/accepted-trace.jsonl",
+      "role": "immutable_artifact",
+      "change": "added",
+      "claimed_evidence": false,
+      "after": {
+        "kind": "file",
+        "sha256": "917633b9468c67268f83260fff192a57a33027d40e0b63e1ffa18650963b3113",
+        "size": 423052
+      }
+    },
+    {
+      "path": "artifacts/constructive/three-block-screen-20260722-v1/seed-126460/best-candidate.txt",
+      "role": "immutable_artifact",
+      "change": "added",
+      "claimed_evidence": false,
+      "after": {
+        "kind": "file",
+        "sha256": "4321dea0f828f30bf5cb1d3c54b4a94349e9bc3f54bd25ea23dbac79ae030a07",
+        "size": 540
+      }
+    },
+    {
+      "path": "artifacts/constructive/three-block-screen-20260722-v1/seed-126460/result.json",
+      "role": "immutable_artifact",
+      "change": "added",
+      "claimed_evidence": false,
+      "after": {
+        "kind": "file",
+        "sha256": "0ed87db2792961e4136110fe2bb6c3d72276d98539bf77c1f0b3b80d734ab4a5",
+        "size": 1831
+      }
+    },
+    {
+      "path": "artifacts/constructive/three-block-screen-20260722-v1/seed-126461/accepted-trace.jsonl",
+      "role": "immutable_artifact",
+      "change": "added",
+      "claimed_evidence": false,
+      "after": {
+        "kind": "file",
+        "sha256": "588ef5f13b02d887961f9a944e8ce7956e59bf9c277add0aeacfaa4f416972f4",
+        "size": 421515
+      }
+    },
+    {
+      "path": "artifacts/constructive/three-block-screen-20260722-v1/seed-126461/best-candidate.txt",
+      "role": "immutable_artifact",
+      "change": "added",
+      "claimed_evidence": false,
+      "after": {
+        "kind": "file",
+        "sha256": "4321dea0f828f30bf5cb1d3c54b4a94349e9bc3f54bd25ea23dbac79ae030a07",
+        "size": 540
+      }
+    },
+    {
+      "path": "artifacts/constructive/three-block-screen-20260722-v1/seed-126461/result.json",
+      "role": "immutable_artifact",
+      "change": "added",
+      "claimed_evidence": false,
+      "after": {
+        "kind": "file",
+        "sha256": "3b1fae7cc94156bf7bcbbc80c55c186598409b9365c75b9074b3648c0b5f95ef",
+        "size": 1832
+      }
+    },
+    {
+      "path": "artifacts/constructive/three-block-screen-20260722-v1/seed-126462/accepted-trace.jsonl",
+      "role": "immutable_artifact",
+      "change": "added",
+      "claimed_evidence": false,
+      "after": {
+        "kind": "file",
+        "sha256": "1d83bb8f1cbb0d45a619cd0fb08b65c89c0d2eaf2d4a5aea9ef2c5e3c393c2b2",
+        "size": 372574
+      }
+    },
+    {
+      "path": "artifacts/constructive/three-block-screen-20260722-v1/seed-126462/best-candidate.txt",
+      "role": "immutable_artifact",
+      "change": "added",
+      "claimed_evidence": false,
+      "after": {
+        "kind": "file",
+        "sha256": "4321dea0f828f30bf5cb1d3c54b4a94349e9bc3f54bd25ea23dbac79ae030a07",
+        "size": 540
+      }
+    },
+    {
+      "path": "artifacts/constructive/three-block-screen-20260722-v1/seed-126462/result.json",
+      "role": "immutable_artifact",
+      "change": "added",
+      "claimed_evidence": false,
+      "after": {
+        "kind": "file",
+        "sha256": "155955d160d87d360687c759254550045f3907e07d7a47311d7af868fc17c518",
+        "size": 1833
+      }
+    },
+    {
+      "path": "artifacts/constructive/three-block-screen-20260722-v1/seed-126463/accepted-trace.jsonl",
+      "role": "immutable_artifact",
+      "change": "added",
+      "claimed_evidence": false,
+      "after": {
+        "kind": "file",
+        "sha256": "7eb2983672431d8f66b2a876c48a0fd82999db1d5b336aadf69d1153c47791cd",
+        "size": 377202
+      }
+    },
+    {
+      "path": "artifacts/constructive/three-block-screen-20260722-v1/seed-126463/best-candidate.txt",
+      "role": "immutable_artifact",
+      "change": "added",
+      "claimed_evidence": false,
+      "after": {
+        "kind": "file",
+        "sha256": "4321dea0f828f30bf5cb1d3c54b4a94349e9bc3f54bd25ea23dbac79ae030a07",
+        "size": 540
+      }
+    },
+    {
+      "path": "artifacts/constructive/three-block-screen-20260722-v1/seed-126463/result.json",
+      "role": "immutable_artifact",
+      "change": "added",
+      "claimed_evidence": false,
+      "after": {
+        "kind": "file",
+        "sha256": "2f1e3ca8ec00b23b72f7a2497ed5f234527446a613dad34ec4cf2b6361599612",
+        "size": 1833
+      }
+    },
+    {
+      "path": "artifacts/constructive/three-block-screen-20260722-v1/seed-126464/accepted-trace.jsonl",
+      "role": "immutable_artifact",
+      "change": "added",
+      "claimed_evidence": false,
+      "after": {
+        "kind": "file",
+        "sha256": "25970aef7f9b7a605001117c7ed58bd17a123a0f54dfe49883d40fa9d1d8a11c",
+        "size": 337017
+      }
+    },
+    {
+      "path": "artifacts/constructive/three-block-screen-20260722-v1/seed-126464/best-candidate.txt",
+      "role": "immutable_artifact",
+      "change": "added",
+      "claimed_evidence": false,
+      "after": {
+        "kind": "file",
+        "sha256": "4321dea0f828f30bf5cb1d3c54b4a94349e9bc3f54bd25ea23dbac79ae030a07",
+        "size": 540
+      }
+    },
+    {
+      "path": "artifacts/constructive/three-block-screen-20260722-v1/seed-126464/result.json",
+      "role": "immutable_artifact",
+      "change": "added",
+      "claimed_evidence": false,
+      "after": {
+        "kind": "file",
+        "sha256": "ed505d74948ea97a53493ffd3fee90cdd493a3d9018d19f14d5b3740cc07046f",
+        "size": 1833
+      }
+    },
+    {
+      "path": "artifacts/constructive/three-block-screen-20260722-v1/seed-126465/accepted-trace.jsonl",
+      "role": "immutable_artifact",
+      "change": "added",
+      "claimed_evidence": false,
+      "after": {
+        "kind": "file",
+        "sha256": "77ac165b92e1bb6dae4b30dfc66737a3d2a90c7254d6721aa316baf05a987a3e",
+        "size": 407013
+      }
+    },
+    {
+      "path": "artifacts/constructive/three-block-screen-20260722-v1/seed-126465/best-candidate.txt",
+      "role": "immutable_artifact",
+      "change": "added",
+      "claimed_evidence": false,
+      "after": {
+        "kind": "file",
+        "sha256": "4321dea0f828f30bf5cb1d3c54b4a94349e9bc3f54bd25ea23dbac79ae030a07",
+        "size": 540
+      }
+    },
+    {
+      "path": "artifacts/constructive/three-block-screen-20260722-v1/seed-126465/result.json",
+      "role": "immutable_artifact",
+      "change": "added",
+      "claimed_evidence": false,
+      "after": {
+        "kind": "file",
+        "sha256": "bee8b8527ec5e5ee1d5e03df10601c486316fb2cf1b574eb2fb17341e4b4bac8",
+        "size": 1833
+      }
+    },
+    {
+      "path": "artifacts/constructive/three-block-screen-20260722-v1/seed-126466/accepted-trace.jsonl",
+      "role": "immutable_artifact",
+      "change": "added",
+      "claimed_evidence": false,
+      "after": {
+        "kind": "file",
+        "sha256": "8f6947c96722259d83dc8cd836ae85a4ba66f2e7378b084e925f68c848fbdf60",
+        "size": 367070
+      }
+    },
+    {
+      "path": "artifacts/constructive/three-block-screen-20260722-v1/seed-126466/best-candidate.txt",
+      "role": "immutable_artifact",
+      "change": "added",
+      "claimed_evidence": false,
+      "after": {
+        "kind": "file",
+        "sha256": "4321dea0f828f30bf5cb1d3c54b4a94349e9bc3f54bd25ea23dbac79ae030a07",
+        "size": 540
+      }
+    },
+    {
+      "path": "artifacts/constructive/three-block-screen-20260722-v1/seed-126466/result.json",
+      "role": "immutable_artifact",
+      "change": "added",
+      "claimed_evidence": false,
+      "after": {
+        "kind": "file",
+        "sha256": "77f78a5220b6c53ead8acc491ed87f32c9001d85b818f5f35de120e4b151112b",
+        "size": 1833
+      }
+    },
+    {
+      "path": "artifacts/constructive/three-block-screen-20260722-v1/seed-126467/accepted-trace.jsonl",
+      "role": "immutable_artifact",
+      "change": "added",
+      "claimed_evidence": false,
+      "after": {
+        "kind": "file",
+        "sha256": "92af10269d8bd072a14d8796633990247b708a4a882cd7041e7158e78d85ae5b",
+        "size": 417356
+      }
+    },
+    {
+      "path": "artifacts/constructive/three-block-screen-20260722-v1/seed-126467/best-candidate.txt",
+      "role": "immutable_artifact",
+      "change": "added",
+      "claimed_evidence": false,
+      "after": {
+        "kind": "file",
+        "sha256": "4321dea0f828f30bf5cb1d3c54b4a94349e9bc3f54bd25ea23dbac79ae030a07",
+        "size": 540
+      }
+    },
+    {
+      "path": "artifacts/constructive/three-block-screen-20260722-v1/seed-126467/result.json",
+      "role": "immutable_artifact",
+      "change": "added",
+      "claimed_evidence": false,
+      "after": {
+        "kind": "file",
+        "sha256": "bbb9168ac6e4fcf13a3c847924f905e586c88d77182717d23baa9faa68250fa5",
+        "size": 1834
+      }
+    },
+    {
+      "path": "artifacts/constructive/three-block-screen-20260722-v1/seed-126468/accepted-trace.jsonl",
+      "role": "immutable_artifact",
+      "change": "added",
+      "claimed_evidence": false,
+      "after": {
+        "kind": "file",
+        "sha256": "efa05ec7b37df5ef9c6005a7a3dc0591debaa19b6f74374c0ca4cc703dc93fbf",
+        "size": 432922
+      }
+    },
+    {
+      "path": "artifacts/constructive/three-block-screen-20260722-v1/seed-126468/best-candidate.txt",
+      "role": "immutable_artifact",
+      "change": "added",
+      "claimed_evidence": false,
+      "after": {
+        "kind": "file",
+        "sha256": "4321dea0f828f30bf5cb1d3c54b4a94349e9bc3f54bd25ea23dbac79ae030a07",
+        "size": 540
+      }
+    },
+    {
+      "path": "artifacts/constructive/three-block-screen-20260722-v1/seed-126468/result.json",
+      "role": "immutable_artifact",
+      "change": "added",
+      "claimed_evidence": false,
+      "after": {
+        "kind": "file",
+        "sha256": "8cad7586a1f411451ba877b280f51fa24d408348d6f79a10ad96eacc2323947d",
+        "size": 1834
+      }
+    },
+    {
+      "path": "artifacts/constructive/three-block-screen-20260722-v1/seed-126469/accepted-trace.jsonl",
+      "role": "immutable_artifact",
+      "change": "added",
+      "claimed_evidence": false,
+      "after": {
+        "kind": "file",
+        "sha256": "01474392f3aed8df892deb3caaaa789cad0a137d387ca452a7cac912322403f9",
+        "size": 394142
+      }
+    },
+    {
+      "path": "artifacts/constructive/three-block-screen-20260722-v1/seed-126469/best-candidate.txt",
+      "role": "immutable_artifact",
+      "change": "added",
+      "claimed_evidence": false,
+      "after": {
+        "kind": "file",
+        "sha256": "4321dea0f828f30bf5cb1d3c54b4a94349e9bc3f54bd25ea23dbac79ae030a07",
+        "size": 540
+      }
+    },
+    {
+      "path": "artifacts/constructive/three-block-screen-20260722-v1/seed-126469/result.json",
+      "role": "immutable_artifact",
+      "change": "added",
+      "claimed_evidence": false,
+      "after": {
+        "kind": "file",
+        "sha256": "acd0c370abe4094391a1f71edf31672c2bb8247294646d737181c958560efc37",
+        "size": 1833
+      }
+    },
+    {
+      "path": "artifacts/constructive/three-block-screen-20260722-v1/seed-126470/accepted-trace.jsonl",
+      "role": "immutable_artifact",
+      "change": "added",
+      "claimed_evidence": false,
+      "after": {
+        "kind": "file",
+        "sha256": "c7131dd40f4dd05299b594cdef33d1e7a1355115e9123ff441a716010b095196",
+        "size": 428107
+      }
+    },
+    {
+      "path": "artifacts/constructive/three-block-screen-20260722-v1/seed-126470/best-candidate.txt",
+      "role": "immutable_artifact",
+      "change": "added",
+      "claimed_evidence": false,
+      "after": {
+        "kind": "file",
+        "sha256": "4321dea0f828f30bf5cb1d3c54b4a94349e9bc3f54bd25ea23dbac79ae030a07",
+        "size": 540
+      }
+    },
+    {
+      "path": "artifacts/constructive/three-block-screen-20260722-v1/seed-126470/result.json",
+      "role": "immutable_artifact",
+      "change": "added",
+      "claimed_evidence": false,
+      "after": {
+        "kind": "file",
+        "sha256": "28a7fc47741717809feaa72cb6766f4e173c55a6a003b7964d875f8533a740f5",
+        "size": 1834
+      }
+    },
+    {
+      "path": "artifacts/constructive/three-block-screen-20260722-v1/seed-126471/accepted-trace.jsonl",
+      "role": "immutable_artifact",
+      "change": "added",
+      "claimed_evidence": false,
+      "after": {
+        "kind": "file",
+        "sha256": "42a93c56c08ee0ac61fc5bf1995657125f82824b6f69c9b9b700e9f79e355640",
+        "size": 413960
+      }
+    },
+    {
+      "path": "artifacts/constructive/three-block-screen-20260722-v1/seed-126471/best-candidate.txt",
+      "role": "immutable_artifact",
+      "change": "added",
+      "claimed_evidence": false,
+      "after": {
+        "kind": "file",
+        "sha256": "4321dea0f828f30bf5cb1d3c54b4a94349e9bc3f54bd25ea23dbac79ae030a07",
+        "size": 540
+      }
+    },
+    {
+      "path": "artifacts/constructive/three-block-screen-20260722-v1/seed-126471/result.json",
+      "role": "immutable_artifact",
+      "change": "added",
+      "claimed_evidence": false,
+      "after": {
+        "kind": "file",
+        "sha256": "fb78a4440b02e65107b61cc319d6352d3be7e945b64635286f0939d43dd0dc8d",
+        "size": 1833
+      }
+    },
+    {
+      "path": "artifacts/constructive/three-block-screen-20260722-v1/seed-126472/accepted-trace.jsonl",
+      "role": "immutable_artifact",
+      "change": "added",
+      "claimed_evidence": false,
+      "after": {
+        "kind": "file",
+        "sha256": "775620ab991063b608371eef5524938f652da33f47ba3465c3ef1f39fc07b233",
+        "size": 387634
+      }
+    },
+    {
+      "path": "artifacts/constructive/three-block-screen-20260722-v1/seed-126472/best-candidate.txt",
+      "role": "immutable_artifact",
+      "change": "added",
+      "claimed_evidence": false,
+      "after": {
+        "kind": "file",
+        "sha256": "4321dea0f828f30bf5cb1d3c54b4a94349e9bc3f54bd25ea23dbac79ae030a07",
+        "size": 540
+      }
+    },
+    {
+      "path": "artifacts/constructive/three-block-screen-20260722-v1/seed-126472/result.json",
+      "role": "immutable_artifact",
+      "change": "added",
+      "claimed_evidence": false,
+      "after": {
+        "kind": "file",
+        "sha256": "c191903590c12c89aa7459eb92b502f687609f8316a74d4ccb7761508b9163f3",
+        "size": 1834
+      }
+    },
+    {
+      "path": "artifacts/constructive/three-block-screen-20260722-v1/seed-126473/accepted-trace.jsonl",
+      "role": "immutable_artifact",
+      "change": "added",
+      "claimed_evidence": false,
+      "after": {
+        "kind": "file",
+        "sha256": "ca9115d1a62e92718c95074272232ee6b4ebc14cae33467541fd49c4845298ba",
+        "size": 368552
+      }
+    },
+    {
+      "path": "artifacts/constructive/three-block-screen-20260722-v1/seed-126473/best-candidate.txt",
+      "role": "immutable_artifact",
+      "change": "added",
+      "claimed_evidence": false,
+      "after": {
+        "kind": "file",
+        "sha256": "4321dea0f828f30bf5cb1d3c54b4a94349e9bc3f54bd25ea23dbac79ae030a07",
+        "size": 540
+      }
+    },
+    {
+      "path": "artifacts/constructive/three-block-screen-20260722-v1/seed-126473/result.json",
+      "role": "immutable_artifact",
+      "change": "added",
+      "claimed_evidence": false,
+      "after": {
+        "kind": "file",
+        "sha256": "ab8f15340b51c4f4180fb826646f8e649e3b2512f079986d8420811646e84d10",
+        "size": 1834
+      }
+    },
+    {
+      "path": "artifacts/constructive/three-block-screen-20260722-v1/seed-126474/accepted-trace.jsonl",
+      "role": "immutable_artifact",
+      "change": "added",
+      "claimed_evidence": false,
+      "after": {
+        "kind": "file",
+        "sha256": "66344ff5e84fdf1f709523aca94b617c9c47cc255e51470b828fd11de886404a",
+        "size": 387418
+      }
+    },
+    {
+      "path": "artifacts/constructive/three-block-screen-20260722-v1/seed-126474/best-candidate.txt",
+      "role": "immutable_artifact",
+      "change": "added",
+      "claimed_evidence": false,
+      "after": {
+        "kind": "file",
+        "sha256": "4321dea0f828f30bf5cb1d3c54b4a94349e9bc3f54bd25ea23dbac79ae030a07",
+        "size": 540
+      }
+    },
+    {
+      "path": "artifacts/constructive/three-block-screen-20260722-v1/seed-126474/result.json",
+      "role": "immutable_artifact",
+      "change": "added",
+      "claimed_evidence": false,
+      "after": {
+        "kind": "file",
+        "sha256": "74e187c0922873c51471b9b06128b472fbfb15d22c42b93bd1989f4418af92d6",
+        "size": 1833
+      }
+    },
+    {
+      "path": "artifacts/constructive/three-block-screen-20260722-v1/seed-126475/accepted-trace.jsonl",
+      "role": "immutable_artifact",
+      "change": "added",
+      "claimed_evidence": false,
+      "after": {
+        "kind": "file",
+        "sha256": "bffe8327631d82e70d861e56fa40cc000d3892ef602ce9f7ea94baa8b0285de4",
+        "size": 415847
+      }
+    },
+    {
+      "path": "artifacts/constructive/three-block-screen-20260722-v1/seed-126475/best-candidate.txt",
+      "role": "immutable_artifact",
+      "change": "added",
+      "claimed_evidence": false,
+      "after": {
+        "kind": "file",
+        "sha256": "4321dea0f828f30bf5cb1d3c54b4a94349e9bc3f54bd25ea23dbac79ae030a07",
+        "size": 540
+      }
+    },
+    {
+      "path": "artifacts/constructive/three-block-screen-20260722-v1/seed-126475/result.json",
+      "role": "immutable_artifact",
+      "change": "added",
+      "claimed_evidence": false,
+      "after": {
+        "kind": "file",
+        "sha256": "ce6f6e5ed770ab7b0bcf05dccfd75da8e2a76666c7eb5b5b3b6f10ba7ea48ec7",
+        "size": 1833
+      }
+    },
+    {
+      "path": "artifacts/constructive/three-block-screen-20260722-v1/seed-126476/accepted-trace.jsonl",
+      "role": "immutable_artifact",
+      "change": "added",
+      "claimed_evidence": false,
+      "after": {
+        "kind": "file",
+        "sha256": "b303e001dbffceca45cf4b4c14c9d7afa65ac687ce4906e930b1cce3f20132d1",
+        "size": 370896
+      }
+    },
+    {
+      "path": "artifacts/constructive/three-block-screen-20260722-v1/seed-126476/best-candidate.txt",
+      "role": "immutable_artifact",
+      "change": "added",
+      "claimed_evidence": false,
+      "after": {
+        "kind": "file",
+        "sha256": "4321dea0f828f30bf5cb1d3c54b4a94349e9bc3f54bd25ea23dbac79ae030a07",
+        "size": 540
+      }
+    },
+    {
+      "path": "artifacts/constructive/three-block-screen-20260722-v1/seed-126476/result.json",
+      "role": "immutable_artifact",
+      "change": "added",
+      "claimed_evidence": false,
+      "after": {
+        "kind": "file",
+        "sha256": "b615063809dd60eeab1a7d3ce18c9eefed2569cb21a0b2cc39ca98515ef9e3de",
+        "size": 1834
+      }
+    },
+    {
+      "path": "artifacts/constructive/three-block-screen-20260722-v1/seed-126477/accepted-trace.jsonl",
+      "role": "immutable_artifact",
+      "change": "added",
+      "claimed_evidence": false,
+      "after": {
+        "kind": "file",
+        "sha256": "80a52f66aeb32ee693b80fa9acef9f1365ed9a3278881dabf76960c5f9607935",
+        "size": 429418
+      }
+    },
+    {
+      "path": "artifacts/constructive/three-block-screen-20260722-v1/seed-126477/best-candidate.txt",
+      "role": "immutable_artifact",
+      "change": "added",
+      "claimed_evidence": false,
+      "after": {
+        "kind": "file",
+        "sha256": "4321dea0f828f30bf5cb1d3c54b4a94349e9bc3f54bd25ea23dbac79ae030a07",
+        "size": 540
+      }
+    },
+    {
+      "path": "artifacts/constructive/three-block-screen-20260722-v1/seed-126477/result.json",
+      "role": "immutable_artifact",
+      "change": "added",
+      "claimed_evidence": false,
+      "after": {
+        "kind": "file",
+        "sha256": "2afddf9312f60540b4242cfae1cb2e7ab52fc701a304deb6404c768807450124",
+        "size": 1832
+      }
+    },
+    {
+      "path": "artifacts/constructive/three-block-screen-20260722-v1/seed-126478/accepted-trace.jsonl",
+      "role": "immutable_artifact",
+      "change": "added",
+      "claimed_evidence": false,
+      "after": {
+        "kind": "file",
+        "sha256": "1a219f1f879f98495e60a7697493eae172b6e331147a83db4556f900601c22c4",
+        "size": 385742
+      }
+    },
+    {
+      "path": "artifacts/constructive/three-block-screen-20260722-v1/seed-126478/best-candidate.txt",
+      "role": "immutable_artifact",
+      "change": "added",
+      "claimed_evidence": false,
+      "after": {
+        "kind": "file",
+        "sha256": "4321dea0f828f30bf5cb1d3c54b4a94349e9bc3f54bd25ea23dbac79ae030a07",
+        "size": 540
+      }
+    },
+    {
+      "path": "artifacts/constructive/three-block-screen-20260722-v1/seed-126478/result.json",
+      "role": "immutable_artifact",
+      "change": "added",
+      "claimed_evidence": false,
+      "after": {
+        "kind": "file",
+        "sha256": "b68f864f59818143926359107d91daa0e64767ee5cce86b105aa6f024fab6521",
+        "size": 1833
+      }
+    },
+    {
+      "path": "artifacts/constructive/three-block-screen-20260722-v1/seed-126479/accepted-trace.jsonl",
+      "role": "immutable_artifact",
+      "change": "added",
+      "claimed_evidence": false,
+      "after": {
+        "kind": "file",
+        "sha256": "b0d09f5f72c27109f77da56555b75370585dc210adadb226533d1500eff83e5d",
+        "size": 406352
+      }
+    },
+    {
+      "path": "artifacts/constructive/three-block-screen-20260722-v1/seed-126479/best-candidate.txt",
+      "role": "immutable_artifact",
+      "change": "added",
+      "claimed_evidence": false,
+      "after": {
+        "kind": "file",
+        "sha256": "4321dea0f828f30bf5cb1d3c54b4a94349e9bc3f54bd25ea23dbac79ae030a07",
+        "size": 540
+      }
+    },
+    {
+      "path": "artifacts/constructive/three-block-screen-20260722-v1/seed-126479/result.json",
+      "role": "immutable_artifact",
+      "change": "added",
+      "claimed_evidence": false,
+      "after": {
+        "kind": "file",
+        "sha256": "ed01fc94d1790081e0aa25aea8782e8340a22e7efe60bdd8140879066e7fe222",
+        "size": 1834
+      }
+    },
+    {
+      "path": "artifacts/experiments/sequential-three-case-review-v7-20260722/lab-efficiency-design.json",
+      "role": "immutable_artifact",
+      "change": "added",
+      "claimed_evidence": false,
+      "after": {
+        "kind": "file",
+        "sha256": "d25d138d4a56fefe25df515c8e1b2600828bdd7903d058c6b086fbfe4d7f46ee",
+        "size": 1459
+      }
+    },
+    {
+      "path": "artifacts/experiments/sequential-three-case-review-v7-20260722/manifest.json",
+      "role": "immutable_artifact",
+      "change": "added",
+      "claimed_evidence": false,
+      "after": {
+        "kind": "file",
+        "sha256": "bf6dd78a2283e7c51e8b39298445d2230e322f9bc0061cbc6fa6dc30231a43f8",
+        "size": 5023
+      }
+    },
+    {
+      "path": "artifacts/portfolio/frontier-manifest-32of47-seven-orbit-snapshot.json",
+      "role": "immutable_artifact",
+      "change": "added",
+      "claimed_evidence": false,
+      "after": {
+        "kind": "file",
+        "sha256": "269597df2a0053b8ba973ed56b147dd4ca576358e151b7ad11c36d6fa7d36323",
+        "size": 139656
+      }
+    },
+    {
+      "path": "artifacts/sequential-frontier-sweep/sequential-three-case-review-v7-20260722/checkpoint.json",
+      "role": "immutable_artifact",
+      "change": "added",
+      "claimed_evidence": false,
+      "after": {
+        "kind": "file",
+        "sha256": "a573fe2a3f5fdf5120f899dfa94d8d73424821caa52e848ce0b3f74e7384f35b",
+        "size": 4186
+      }
+    },
+    {
+      "path": "artifacts/sequential-frontier-sweep/sequential-three-case-review-v7-20260722/progress.json",
+      "role": "immutable_artifact",
+      "change": "added",
+      "claimed_evidence": false,
+      "after": {
+        "kind": "file",
+        "sha256": "f086ff4edaf4c6a3f0c497d0c9cc6c5cfa06fba3e8f601660f99a8c1b39cc57d",
+        "size": 183
+      }
+    },
+    {
+      "path": "artifacts/sequential-frontier-sweep/sequential-three-case-review-v7-20260722/s-r0-1/sequential/build.json",
+      "role": "immutable_artifact",
+      "change": "added",
+      "claimed_evidence": false,
+      "after": {
+        "kind": "file",
+        "sha256": "fc3bdfa0d780a0ccb6f43122ea93f64206d66d0a46b51f4c780ed7defc3928ca",
+        "size": 6581
+      }
+    },
+    {
+      "path": "artifacts/sequential-frontier-sweep/sequential-three-case-review-v7-20260722/s-r0-1/sequential/cnf-audit.json",
+      "role": "immutable_artifact",
+      "change": "added",
+      "claimed_evidence": false,
+      "after": {
+        "kind": "file",
+        "sha256": "c4a5ee475c71731621a84772d893796c0ab93d3f466a9c13199364ab3ac779e1",
+        "size": 749
+      }
+    },
+    {
+      "path": "artifacts/sequential-frontier-sweep/sequential-three-case-review-v7-20260722/s-r0-1/sequential/cnf-audit.log",
+      "role": "immutable_artifact",
+      "change": "added",
+      "claimed_evidence": false,
+      "after": {
+        "kind": "file",
+        "sha256": "4e192a3edb167d3803cf9dfec7ad315d4215dd94fe51e4cae8bd866cbcfe1f24",
+        "size": 723
+      }
+    },
+    {
+      "path": "artifacts/sequential-frontier-sweep/sequential-three-case-review-v7-20260722/s-r0-1/sequential/instance.cnf",
+      "role": "immutable_artifact",
+      "change": "added",
+      "claimed_evidence": false,
+      "after": {
+        "kind": "file",
+        "sha256": "146310f81d7337fd194228e0d26a956e27ef620084ee5569a4be2d57657ef8f9",
+        "size": 1586993
+      }
+    },
+    {
+      "path": "artifacts/sequential-frontier-sweep/sequential-three-case-review-v7-20260722/s-r0-1/sequential/result.json",
+      "role": "immutable_artifact",
+      "change": "added",
+      "claimed_evidence": false,
+      "after": {
+        "kind": "file",
+        "sha256": "e4860f812bba8f6ddaef802f24582eece27240205a792343d052556216b9f3d3",
+        "size": 875
+      }
+    },
+    {
+      "path": "artifacts/sequential-frontier-sweep/sequential-three-case-review-v7-20260722/s-r0-1/sequential/solver.log",
+      "role": "immutable_artifact",
+      "change": "added",
+      "claimed_evidence": false,
+      "after": {
+        "kind": "file",
+        "sha256": "f9be24ef7c2a59a617e2be79194b13b98f18202376584204106670e042e941f4",
+        "size": 25446
+      }
+    },
+    {
+      "path": "artifacts/sequential-frontier-sweep/sequential-three-case-review-v7-20260722/t-16/sequential/build.json",
+      "role": "immutable_artifact",
+      "change": "added",
+      "claimed_evidence": false,
+      "after": {
+        "kind": "file",
+        "sha256": "e844c5ca60e94b6461e5a689f8b413a46dcf8dcd959baca680099d8a1b1ce5bd",
+        "size": 6623
+      }
+    },
+    {
+      "path": "artifacts/sequential-frontier-sweep/sequential-three-case-review-v7-20260722/t-16/sequential/cnf-audit.json",
+      "role": "immutable_artifact",
+      "change": "added",
+      "claimed_evidence": false,
+      "after": {
+        "kind": "file",
+        "sha256": "dbd833a9bd108d5e49f76bd5de9fd911fe01cee7f66f3573c32a1ffebb9c65b7",
+        "size": 749
+      }
+    },
+    {
+      "path": "artifacts/sequential-frontier-sweep/sequential-three-case-review-v7-20260722/t-16/sequential/cnf-audit.log",
+      "role": "immutable_artifact",
+      "change": "added",
+      "claimed_evidence": false,
+      "after": {
+        "kind": "file",
+        "sha256": "2d6e3cdf58573f7fc6f92be17d2456487b2875eb91f781417f888149cee5af92",
+        "size": 723
+      }
+    },
+    {
+      "path": "artifacts/sequential-frontier-sweep/sequential-three-case-review-v7-20260722/t-16/sequential/instance.cnf",
+      "role": "immutable_artifact",
+      "change": "added",
+      "claimed_evidence": false,
+      "after": {
+        "kind": "file",
+        "sha256": "327a6f4f97b81e45cd494d56a5fc7093e4299bd9e7de97cc9a4d4a499767cabf",
+        "size": 1587339
+      }
+    },
+    {
+      "path": "artifacts/sequential-frontier-sweep/sequential-three-case-review-v7-20260722/t-16/sequential/result.json",
+      "role": "immutable_artifact",
+      "change": "added",
+      "claimed_evidence": false,
+      "after": {
+        "kind": "file",
+        "sha256": "cf57c4231cbed107ec604a7cac5018fd5fba58b84ecacbb30116995896ca0cab",
+        "size": 1186
+      }
+    },
+    {
+      "path": "artifacts/sequential-frontier-sweep/sequential-three-case-review-v7-20260722/t-16/sequential/solver.log",
+      "role": "immutable_artifact",
+      "change": "added",
+      "claimed_evidence": false,
+      "after": {
+        "kind": "file",
+        "sha256": "e860907dcc7d490aa754c78302081ff4e1026eb9661810fde8c5fd1cc90d624c",
+        "size": 283051
+      }
+    },
+    {
+      "path": "artifacts/sequential-frontier-sweep/sequential-three-case-review-v7-20260722/t-16/sequential/validation.json",
+      "role": "immutable_artifact",
+      "change": "added",
+      "claimed_evidence": false,
+      "after": {
+        "kind": "file",
+        "sha256": "b1a0719766e02edfa6f630ae3011c6ecf26081d556fcb99ded51f4b1dd67d853",
+        "size": 305
+      }
+    },
+    {
+      "path": "artifacts/sequential-frontier-sweep/sequential-three-case-review-v7-20260722/t-16/sequential/witness.txt",
+      "role": "immutable_artifact",
+      "change": "added",
+      "claimed_evidence": false,
+      "after": {
+        "kind": "file",
+        "sha256": "7dd3d5229bff88ccadf0e5168ca5a27194ecc26b582f60c61e6b39d94ada0fa7",
+        "size": 218
+      }
+    },
+    {
+      "path": "artifacts/sequential-frontier-sweep/sequential-three-case-review-v7-20260722/t-17/sequential/build.json",
+      "role": "immutable_artifact",
+      "change": "added",
+      "claimed_evidence": false,
+      "after": {
+        "kind": "file",
+        "sha256": "6700456cfba8a122cf8e45feead705dd1a15b1a451206799273b563babd1ea43",
+        "size": 6624
+      }
+    },
+    {
+      "path": "artifacts/sequential-frontier-sweep/sequential-three-case-review-v7-20260722/t-17/sequential/cnf-audit.json",
+      "role": "immutable_artifact",
+      "change": "added",
+      "claimed_evidence": false,
+      "after": {
+        "kind": "file",
+        "sha256": "a2bf9f46a58a466caaa00c6300459175600a9a6d660d1ce58fdab8effcc5abdf",
+        "size": 749
+      }
+    },
+    {
+      "path": "artifacts/sequential-frontier-sweep/sequential-three-case-review-v7-20260722/t-17/sequential/cnf-audit.log",
+      "role": "immutable_artifact",
+      "change": "added",
+      "claimed_evidence": false,
+      "after": {
+        "kind": "file",
+        "sha256": "575ff474901b5bcb9aac9e0a51dedbca586d215b4e68b07eee6531454200364d",
+        "size": 723
+      }
+    },
+    {
+      "path": "artifacts/sequential-frontier-sweep/sequential-three-case-review-v7-20260722/t-17/sequential/instance.cnf",
+      "role": "immutable_artifact",
+      "change": "added",
+      "claimed_evidence": false,
+      "after": {
+        "kind": "file",
+        "sha256": "bb17d043ab15f77a428cdc62890aae0f8f76677d56bf9b8e1d3e462e9e4a6dbb",
+        "size": 1587345
+      }
+    },
+    {
+      "path": "artifacts/sequential-frontier-sweep/sequential-three-case-review-v7-20260722/t-17/sequential/result.json",
+      "role": "immutable_artifact",
+      "change": "added",
+      "claimed_evidence": false,
+      "after": {
+        "kind": "file",
+        "sha256": "d939ee103709ab260f9a505889000eda7cc5bbe3a2bc55cf0b8d4c5a237a3701",
+        "size": 1186
+      }
+    },
+    {
+      "path": "artifacts/sequential-frontier-sweep/sequential-three-case-review-v7-20260722/t-17/sequential/solver.log",
+      "role": "immutable_artifact",
+      "change": "added",
+      "claimed_evidence": false,
+      "after": {
+        "kind": "file",
+        "sha256": "e9536a259fca63df3e096962a17eed3b63e03ade6cf85f042e9c378b633f1536",
+        "size": 286996
+      }
+    },
+    {
+      "path": "artifacts/sequential-frontier-sweep/sequential-three-case-review-v7-20260722/t-17/sequential/validation.json",
+      "role": "immutable_artifact",
+      "change": "added",
+      "claimed_evidence": false,
+      "after": {
+        "kind": "file",
+        "sha256": "afe427c782b1f7dc094af90c4d93734e62a19b2770637b9c4314ea5216566a08",
+        "size": 305
+      }
+    },
+    {
+      "path": "artifacts/sequential-frontier-sweep/sequential-three-case-review-v7-20260722/t-17/sequential/witness.txt",
+      "role": "immutable_artifact",
+      "change": "added",
+      "claimed_evidence": false,
+      "after": {
+        "kind": "file",
+        "sha256": "e2f8ebbfb6535e1fb187d1f5bd4d4dbc5be48d583b56b8da0018b8dcae8c5b97",
+        "size": 218
+      }
+    },
+    {
+      "path": "checkers/__pycache__/audit_exhaustive_link_phase.cpython-312.pyc",
+      "role": "mutable_projection",
+      "change": "added",
+      "claimed_evidence": false,
+      "after": {
+        "kind": "file",
+        "sha256": "f9ee02ab5b3b2c9ffbba6c019e79e0182764f68700b38e789a5a48e58a956176",
+        "size": 7709
+      }
+    },
+    {
+      "path": "checkers/__pycache__/audit_link_orbit_frontier.cpython-312.pyc",
+      "role": "mutable_projection",
+      "change": "added",
+      "claimed_evidence": false,
+      "after": {
+        "kind": "file",
+        "sha256": "367090c66caf8e9b9c10445cf9bd726f28c19fe8fabb36f1455473286e627f53",
+        "size": 8032
+      }
+    },
+    {
+      "path": "checkers/__pycache__/audit_link_root_partition.cpython-312.pyc",
+      "role": "mutable_projection",
+      "change": "added",
+      "claimed_evidence": false,
+      "after": {
+        "kind": "file",
+        "sha256": "f2ffc6ce2dfc23a9c9be57486eae767836811fe6362c54498fe8d375864c55bc",
+        "size": 5860
+      }
+    },
+    {
+      "path": "checkers/__pycache__/audit_secondary_root_partition.cpython-312.pyc",
+      "role": "mutable_projection",
+      "change": "added",
+      "claimed_evidence": false,
+      "after": {
+        "kind": "file",
+        "sha256": "2debcfb77ff4fc8aed6cde6496f3b559b551349fa5b4a46ae6b97757e2cc2110",
+        "size": 5036
+      }
+    },
+    {
+      "path": "checkers/__pycache__/audit_tertiary_root_partition.cpython-312.pyc",
+      "role": "mutable_projection",
+      "change": "added",
+      "claimed_evidence": false,
+      "after": {
+        "kind": "file",
+        "sha256": "5b65e6fc4815cccb0d9683b1b2f90ef517f84971d1f10754bcce08426ed8131c",
+        "size": 5809
+      }
+    },
+    {
+      "path": "checkers/__pycache__/audit_three_block_screen.cpython-312.pyc",
+      "role": "mutable_projection",
+      "change": "added",
+      "claimed_evidence": false,
+      "after": {
+        "kind": "file",
+        "sha256": "b47d957101fa3c78bc928cb282250a319f50c8d60d2d0426e5e98a2d9915a1bc",
+        "size": 20863
+      }
+    },
+    {
+      "path": "checkers/__pycache__/verify_certificate_portfolio.cpython-312.pyc",
+      "role": "mutable_projection",
+      "change": "modified",
+      "claimed_evidence": false,
+      "before": {
+        "kind": "file",
+        "sha256": "5cc3501ed7a20e5d02e4f7465a48f7a56f817a590bbdab7953a71e36c95ec29b",
+        "size": 10286
+      },
+      "after": {
+        "kind": "file",
+        "sha256": "5d3f0055ea834d3c93392a07b30e4811e55717ac355e182afaec68af81b701da",
+        "size": 10332
+      }
+    },
+    {
+      "path": "checkers/audit_three_block_screen.py",
+      "role": "immutable_artifact",
+      "change": "added",
+      "claimed_evidence": true,
+      "after": {
+        "kind": "file",
+        "sha256": "bd66c12ae2e17ec9d7a306f4dc0064a46e8d7971d9f6d9ebbf27da7e7902fd90",
+        "size": 12226
+      }
+    },
+    {
+      "path": "lab-archive/lab-covering-c1264-2eb7cfe6c4b5.json",
+      "role": "mutable_projection",
+      "change": "added",
+      "claimed_evidence": false,
+      "after": {
+        "kind": "file",
+        "sha256": "4d73044781c5fdff242a0b610691189de16edc872291ddf210a168b2b08ab627",
+        "size": 7528
+      }
+    },
+    {
+      "path": "lab-runs/lab-covering-c1264-2eb7cfe6c4b5/segment-000001/20260722-201139-bf044e/experiment.json",
+      "role": "immutable_artifact",
+      "change": "added",
+      "claimed_evidence": false,
+      "after": {
+        "kind": "file",
+        "sha256": "bef6c191ce19b82bac0c226386ad1d8ac624827c18bf1d7a028a05a433540e55",
+        "size": 2193
+      }
+    },
+    {
+      "path": "lab-runs/lab-covering-c1264-2eb7cfe6c4b5/segment-000001/20260722-201139-bf044e/stderr.txt",
+      "role": "immutable_artifact",
+      "change": "added",
+      "claimed_evidence": false,
+      "after": {
+        "kind": "file",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "size": 0
+      }
+    },
+    {
+      "path": "lab-runs/lab-covering-c1264-2eb7cfe6c4b5/segment-000001/20260722-201139-bf044e/stdout.txt",
+      "role": "immutable_artifact",
+      "change": "added",
+      "claimed_evidence": false,
+      "after": {
+        "kind": "file",
+        "sha256": "53fa01ce77d520ab7ad7e5944c4dfddc3284abe03067d2a443d0582bfd70583f",
+        "size": 47
+      }
+    },
+    {
+      "path": "lab-runs/lab-covering-c1264-574a0e8c0206/segment-000002/20260722-131610-00ad66/experiment.json",
+      "role": "immutable_artifact",
+      "change": "unchanged",
+      "claimed_evidence": true,
+      "before": {
+        "kind": "file",
+        "sha256": "88d15769136649388a0e7ad35d320f82173b759dd596c292d9b73982a62d0c03",
+        "size": 1962
+      },
+      "after": {
+        "kind": "file",
+        "sha256": "88d15769136649388a0e7ad35d320f82173b759dd596c292d9b73982a62d0c03",
+        "size": 1962
+      }
+    },
+    {
+      "path": "records/attempts/20260722-epoch-0004-three-block-screen-checkpoint.json",
+      "role": "immutable_artifact",
+      "change": "added",
+      "claimed_evidence": false,
+      "after": {
+        "kind": "file",
+        "sha256": "c6b5db6c72359bd13f9caa47ae5fd64ef92405d15df1c6a00a30699e07b406b4",
+        "size": 5105
+      }
+    },
+    {
+      "path": "records/labs/lab-covering-c1264-2eb7cfe6c4b5-completed-awaiting-review-segment-01.json",
+      "role": "immutable_artifact",
+      "change": "added",
+      "claimed_evidence": false,
+      "after": {
+        "kind": "file",
+        "sha256": "ad59289e88f4999a87c162175e30aee85528f2807025f98ac441b14063cc9a87",
+        "size": 7473
+      }
+    },
+    {
+      "path": "records/labs/lab-covering-c1264-2eb7cfe6c4b5-submitted-segment-01.json",
+      "role": "immutable_artifact",
+      "change": "added",
+      "claimed_evidence": false,
+      "after": {
+        "kind": "file",
+        "sha256": "6327bdc5bb39181b1525d6df63273ce95d954d898c584d26bda73e4d5213cd64",
+        "size": 3814
+      }
+    },
+    {
+      "path": "records/labs/lab-covering-c1264-574a0e8c0206-completed-awaiting-review-segment-02.json",
+      "role": "immutable_artifact",
+      "change": "unchanged",
+      "claimed_evidence": true,
+      "before": {
+        "kind": "file",
+        "sha256": "b9059f0cb1becfa1c8d09b9525dad38c65af62f52a27a1c35faf5d53d4cbf85a",
+        "size": 6920
+      },
+      "after": {
+        "kind": "file",
+        "sha256": "b9059f0cb1becfa1c8d09b9525dad38c65af62f52a27a1c35faf5d53d4cbf85a",
+        "size": 6920
+      }
+    },
+    {
+      "path": "records/research-state.json",
+      "role": "mutable_projection",
+      "change": "modified",
+      "claimed_evidence": false,
+      "before": {
+        "kind": "file",
+        "sha256": "105b1c6fb94729317b7b2b5eb24be9888be356e324ee1d8e589c81a65d2ceea6",
+        "size": 23825
+      },
+      "after": {
+        "kind": "file",
+        "sha256": "c967afe852633acfdf570ecdfe9cd9f8eb7aefe4d4b2163a5dd23c9a15d6099d",
+        "size": 27472
+      }
+    },
+    {
+      "path": "scripts/__pycache__/build_active_sequential_tranche.cpython-312.pyc",
+      "role": "mutable_projection",
+      "change": "added",
+      "claimed_evidence": false,
+      "after": {
+        "kind": "file",
+        "sha256": "80208ba3b7b4f048a2c8c2b812e21d0fe6d90c0e048b86d2cd04de09b7b20c8e",
+        "size": 11045
+      }
+    },
+    {
+      "path": "scripts/__pycache__/build_link_classification_receipt_index.cpython-312.pyc",
+      "role": "mutable_projection",
+      "change": "added",
+      "claimed_evidence": false,
+      "after": {
+        "kind": "file",
+        "sha256": "53b7e20a67a57835a4d7c201846aae3ef79364b7c7368d01bd30c57e34ee4ce1",
+        "size": 10049
+      }
+    },
+    {
+      "path": "scripts/__pycache__/build_sequential_frontier_sweep.cpython-312.pyc",
+      "role": "mutable_projection",
+      "change": "modified",
+      "claimed_evidence": false,
+      "before": {
+        "kind": "file",
+        "sha256": "74f9cd8a0b894f85105b4263904f12cf0cf09189cc9ca7b6da4b307b24179d53",
+        "size": 6722
+      },
+      "after": {
+        "kind": "file",
+        "sha256": "2dd28137f304591a0b1e86a64b7d7e1cbb1814d361ffa2b25382a1defac572ec",
+        "size": 8327
+      }
+    },
+    {
+      "path": "scripts/__pycache__/build_three_case_review_tranche.cpython-312.pyc",
+      "role": "mutable_projection",
+      "change": "added",
+      "claimed_evidence": false,
+      "after": {
+        "kind": "file",
+        "sha256": "b17f31860c9412b90d32dfe029e5ff7d45bdbb4809bc9b168a45f9bdfb08fefd",
+        "size": 10086
+      }
+    },
+    {
+      "path": "scripts/__pycache__/ingest_cardinality_tranche.cpython-312.pyc",
+      "role": "mutable_projection",
+      "change": "modified",
+      "claimed_evidence": false,
+      "before": {
+        "kind": "file",
+        "sha256": "3717b65c70a7b5125ce9d7012389e8c3da600f9a8c5638c7290e0efc8f4ec399",
+        "size": 10685
+      },
+      "after": {
+        "kind": "file",
+        "sha256": "57896b418b1a1d640c41568f58cdab08274d5ebbd5ecd604050a118d44c8adb0",
+        "size": 12248
+      }
+    },
+    {
+      "path": "scripts/__pycache__/minimize_link_residual_core_checkpointed.cpython-312.pyc",
+      "role": "mutable_projection",
+      "change": "added",
+      "claimed_evidence": false,
+      "after": {
+        "kind": "file",
+        "sha256": "bed83263d7b457d2b991dcf43ca51686f48696705e56606ebdb1220eafd1378d",
+        "size": 9987
+      }
+    },
+    {
+      "path": "scripts/__pycache__/plan_strategy_tournament.cpython-312.pyc",
+      "role": "mutable_projection",
+      "change": "modified",
+      "claimed_evidence": false,
+      "before": {
+        "kind": "file",
+        "sha256": "5a9a45f7ff36b89b2551adecb74f589f5e77bcdade0c056b55f55644d2ffa7a8",
+        "size": 8815
+      },
+      "after": {
+        "kind": "file",
+        "sha256": "6a500eb1b16ec389d3565e34fac08f9b57b7b7e4c8daddd734a1d497d7359f6b",
+        "size": 10106
+      }
+    },
+    {
+      "path": "scripts/__pycache__/profile_link_orbit_residual_structure.cpython-312.pyc",
+      "role": "mutable_projection",
+      "change": "modified",
+      "claimed_evidence": false,
+      "before": {
+        "kind": "file",
+        "sha256": "012b3311af0b507bc34d03a098afdee092731f3bf01cb0fe8da195638cf524d8",
+        "size": 7446
+      },
+      "after": {
+        "kind": "file",
+        "sha256": "0e5f412ecfc3e8dccf4cc7e064f083f8a7576d9e09047b3676b6651d6b1a2c1a",
+        "size": 10145
+      }
+    },
+    {
+      "path": "scripts/__pycache__/profile_link_residual_relaxations.cpython-312.pyc",
+      "role": "mutable_projection",
+      "change": "added",
+      "claimed_evidence": false,
+      "after": {
+        "kind": "file",
+        "sha256": "4a305cafe3a628b30a1b739bc305e800ef025de6693ebd19aa1f3bcdd25634a4",
+        "size": 13265
+      }
+    },
+    {
+      "path": "scripts/__pycache__/rebind_link_orbit_frontier.cpython-312.pyc",
+      "role": "mutable_projection",
+      "change": "added",
+      "claimed_evidence": false,
+      "after": {
+        "kind": "file",
+        "sha256": "7d23bf0109b9bbf57e927293bbf0122849e8726cedd413da12215c730e4b267f",
+        "size": 7822
+      }
+    },
+    {
+      "path": "scripts/__pycache__/run_constructive_three_block_screen.cpython-312.pyc",
+      "role": "mutable_projection",
+      "change": "added",
+      "claimed_evidence": false,
+      "after": {
+        "kind": "file",
+        "sha256": "07f1661d82b3b1cdcec3f6c67891b123953b7262052c3338a918f0040fa991fc",
+        "size": 26741
+      }
+    },
+    {
+      "path": "scripts/build_current_certificate_index.py",
+      "role": "immutable_artifact",
+      "change": "added",
+      "claimed_evidence": false,
+      "after": {
+        "kind": "file",
+        "sha256": "38c3b2a76056862ae043c819ce7abaa6e08af7840ccb488ae6ca29de0fe6aa26",
+        "size": 5260
+      }
+    },
+    {
+      "path": "scripts/build_three_case_review_tranche.py",
+      "role": "immutable_artifact",
+      "change": "added",
+      "claimed_evidence": false,
+      "after": {
+        "kind": "file",
+        "sha256": "17bdad9982d9852918fcf2f91e58d5e58d279db4d79cfc563bff8b13f0004799",
+        "size": 6989
+      }
+    },
+    {
+      "path": "scripts/run_constructive_three_block_screen.py",
+      "role": "immutable_artifact",
+      "change": "added",
+      "claimed_evidence": true,
+      "after": {
+        "kind": "file",
+        "sha256": "98b921d42995515921e0a4a5c9a643d2f52216842ceb7a0ad8a77ab32e020756",
+        "size": 17956
+      }
+    },
+    {
+      "path": "sources/ljcr-c1264-41.txt",
+      "role": "immutable_artifact",
+      "change": "unchanged",
+      "claimed_evidence": true,
+      "before": {
+        "kind": "file",
+        "sha256": "395bc870e7eb9e84a472873db97de553afc34afdb666545824944e89047913e5",
+        "size": 554
+      },
+      "after": {
+        "kind": "file",
+        "sha256": "395bc870e7eb9e84a472873db97de553afc34afdb666545824944e89047913e5",
+        "size": 554
+      }
+    },
+    {
+      "path": "tests/__pycache__/test_active_sequential_tranche.cpython-312.pyc",
+      "role": "mutable_projection",
+      "change": "added",
+      "claimed_evidence": false,
+      "after": {
+        "kind": "file",
+        "sha256": "09eae7233945dbf93d41f8fadd194b44c18938b125b9e2a02965f82af52bb7a4",
+        "size": 4238
+      }
+    },
+    {
+      "path": "tests/__pycache__/test_certificate_portfolio.cpython-312.pyc",
+      "role": "mutable_projection",
+      "change": "modified",
+      "claimed_evidence": false,
+      "before": {
+        "kind": "file",
+        "sha256": "0394af717f58d7be243960aac14e5b4ec8472dd47b13b64aa6083b309a83e1ee",
+        "size": 4190
+      },
+      "after": {
+        "kind": "file",
+        "sha256": "12fe7851a391b5dd86aa551849ba19dce41ed53f34dbb3391c27da03f89eb0c6",
+        "size": 4552
+      }
+    },
+    {
+      "path": "tests/__pycache__/test_checkpointed_core_minimizer.cpython-312.pyc",
+      "role": "mutable_projection",
+      "change": "added",
+      "claimed_evidence": false,
+      "after": {
+        "kind": "file",
+        "sha256": "05b78730300cc814a0b80afa7f6b71639ec8cb6e1bfbb672a2ddf881a2945d90",
+        "size": 2976
+      }
+    },
+    {
+      "path": "tests/__pycache__/test_constructive_three_block_screen.cpython-312.pyc",
+      "role": "mutable_projection",
+      "change": "added",
+      "claimed_evidence": false,
+      "after": {
+        "kind": "file",
+        "sha256": "a9ad0a8bc4fbc812e00dcbf640babae4e79f1805eaf090aa2cb1f3c6c1eece66",
+        "size": 5004
+      }
+    },
+    {
+      "path": "tests/__pycache__/test_exhaustive_link_phase.cpython-312.pyc",
+      "role": "mutable_projection",
+      "change": "added",
+      "claimed_evidence": false,
+      "after": {
+        "kind": "file",
+        "sha256": "43cc78a89903eebb6b05a7ccc0f170bb1be59a29944d651ac079b6ffae8fbd9c",
+        "size": 3550
+      }
+    },
+    {
+      "path": "tests/__pycache__/test_five_orbit_frontier.cpython-312.pyc",
+      "role": "mutable_projection",
+      "change": "added",
+      "claimed_evidence": false,
+      "after": {
+        "kind": "file",
+        "sha256": "67b8b03387183e627a1dcd53da361843f45bb4d0df69d997cc9050990407bbf7",
+        "size": 3242
+      }
+    },
+    {
+      "path": "tests/__pycache__/test_link_orbit_residual_structure.cpython-312.pyc",
+      "role": "mutable_projection",
+      "change": "modified",
+      "claimed_evidence": false,
+      "before": {
+        "kind": "file",
+        "sha256": "7624484408cc692f36247dd7020d0231c8a87a551edda15d9e3763f590e30f49",
+        "size": 2338
+      },
+      "after": {
+        "kind": "file",
+        "sha256": "444eeb643f2ff94c4ce6580bf655aebb183ddcedccb647afb030bd8b104c53fe",
+        "size": 2737
+      }
+    },
+    {
+      "path": "tests/__pycache__/test_link_residual_relaxations.cpython-312.pyc",
+      "role": "mutable_projection",
+      "change": "added",
+      "claimed_evidence": false,
+      "after": {
+        "kind": "file",
+        "sha256": "5b7a3213020ea01c176f6f46a183bab16920fe797b9525431b973c0fdfe96d6b",
+        "size": 2693
+      }
+    },
+    {
+      "path": "tests/__pycache__/test_post_tranche_classification.cpython-312.pyc",
+      "role": "mutable_projection",
+      "change": "added",
+      "claimed_evidence": false,
+      "after": {
+        "kind": "file",
+        "sha256": "b345dedc815aa0dc8a353a9ecf043458be4a8b7abd00159b65414b01ff7ed00f",
+        "size": 2648
+      }
+    },
+    {
+      "path": "tests/__pycache__/test_sequential_frontier_sweep.cpython-312.pyc",
+      "role": "mutable_projection",
+      "change": "modified",
+      "claimed_evidence": false,
+      "before": {
+        "kind": "file",
+        "sha256": "09d457837f8f8334086101ee0ce07b1f51983996aac1a0c9e8a33446d002b40a",
+        "size": 5230
+      },
+      "after": {
+        "kind": "file",
+        "sha256": "d1efe1344dfd7472dcabe8ee443ba171706967b8afcfb90ef53788502ff15b1c",
+        "size": 5707
+      }
+    },
+    {
+      "path": "tests/__pycache__/test_strategy_tournament.cpython-312.pyc",
+      "role": "mutable_projection",
+      "change": "modified",
+      "claimed_evidence": false,
+      "before": {
+        "kind": "file",
+        "sha256": "bf275b29b0eaa6fa33a5e569256a13d2c5a65c4b99995ac75cdfdc74c2007114",
+        "size": 4296
+      },
+      "after": {
+        "kind": "file",
+        "sha256": "1346b57c7825cee3349500533756fb7492384e9a35423dcb2dee420c9ef13ba0",
+        "size": 4293
+      }
+    },
+    {
+      "path": "tests/__pycache__/test_three_case_review_tranche.cpython-312.pyc",
+      "role": "mutable_projection",
+      "change": "added",
+      "claimed_evidence": false,
+      "after": {
+        "kind": "file",
+        "sha256": "bd9013211e4a1230bb499a8166b2dafb676ed9e0cb972fe4dd59a55063d0e8a5",
+        "size": 4162
+      }
+    },
+    {
+      "path": "tests/test_constructive_three_block_screen.py",
+      "role": "immutable_artifact",
+      "change": "added",
+      "claimed_evidence": true,
+      "after": {
+        "kind": "file",
+        "sha256": "7b5d17b964ec6862896338878e591397d88f476ae39fefbcee354b5cd520777d",
+        "size": 2259
+      }
+    },
+    {
+      "path": "tests/test_three_case_review_tranche.py",
+      "role": "immutable_artifact",
+      "change": "added",
+      "claimed_evidence": false,
+      "after": {
+        "kind": "file",
+        "sha256": "0318a2c372dc9676c07e98962ee4b849e3db9319e7b2895c3de827771253572e",
+        "size": 1788
+      }
+    }
+  ],
+  "content_sha256": "831b72e88ef5f874e1a6dc1a80aace51e6c3ce95c9e71b1c4f19b2b4ac60b652"
+}

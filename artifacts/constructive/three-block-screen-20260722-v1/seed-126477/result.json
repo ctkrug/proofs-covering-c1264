@@ -1,0 +1,49 @@
+{
+  "accepted_moves": 973,
+  "best_accept_count": 0,
+  "best_metrics": {
+    "pair_deficit_below_9": 12,
+    "pair_excess_above_10": 0,
+    "point_degree_deviation": 0,
+    "uncovered_quadruples": 6
+  },
+  "candidate": {
+    "blocks": 40,
+    "path": "artifacts/constructive/three-block-screen-20260722-v1/seed-126477/best-candidate.txt",
+    "sha256": "4321dea0f828f30bf5cb1d3c54b4a94349e9bc3f54bd25ea23dbac79ae030a07"
+  },
+  "claim_limit": "A zero-defect candidate requires independent direct verification; a negative seed is heuristic only.",
+  "elapsed_seconds": 3.744994933018461,
+  "final_chain_sha256": "387c379d06354ff1b33468470e6fcafbd3ac92fc1444d7afdb0bde43df80ff55",
+  "final_metrics": {
+    "pair_deficit_below_9": 16,
+    "pair_excess_above_10": 3,
+    "point_degree_deviation": 0,
+    "uncovered_quadruples": 53
+  },
+  "generation_attempts": 43728,
+  "initial_chain_sha256": "5d9bef73aaf6c6c82368cafb38d74cb00288e43994630cc577c11eb8fd7c9339",
+  "initial_metrics": {
+    "pair_deficit_below_9": 12,
+    "pair_excess_above_10": 0,
+    "point_degree_deviation": 0,
+    "uncovered_quadruples": 6
+  },
+  "mean_changed_pair_counters": 22.993,
+  "mean_changed_quad_counters": 68.2561,
+  "method": "targeted annealed indecomposable three-block point-degree-preserving trades",
+  "proposal_budget": 10000,
+  "schema_version": 1,
+  "scored_proposals": 10000,
+  "seconds_cap_including_seed_setup": 10.0,
+  "seed": 126477,
+  "source": {
+    "path": "artifacts/constructive/repair-seed126442-30s/best-candidate.txt",
+    "sha256": "4321dea0f828f30bf5cb1d3c54b4a94349e9bc3f54bd25ea23dbac79ae030a07"
+  },
+  "status": "NO_WITNESS",
+  "trace": {
+    "path": "artifacts/constructive/three-block-screen-20260722-v1/seed-126477/accepted-trace.jsonl",
+    "sha256": "80a52f66aeb32ee693b80fa9acef9f1365ed9a3278881dabf76960c5f9607935"
+  }
+}
