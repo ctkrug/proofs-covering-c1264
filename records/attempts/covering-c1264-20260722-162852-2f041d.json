@@ -1,0 +1,181 @@
+{
+  "id": "covering-c1264-20260722-162852-2f041d",
+  "problem_id": "covering-c1264",
+  "started_at": "2026-07-22T16:28:52.401653+00:00",
+  "finished_at": "2026-07-22T16:28:52.461352+00:00",
+  "duration_seconds": 0.1,
+  "lane": "hard",
+  "phase": "technical",
+  "model": "gpt-5.6-sol",
+  "effort": "high",
+  "orchestration": {
+    "architecture": "sol-principal-terra-delegates",
+    "principal_model": "gpt-5.6-sol",
+    "delegate_model": "gpt-5.6-terra",
+    "delegate_roles": [
+      "experiment-verification"
+    ],
+    "delegate_statuses": {
+      "experiment-verification": "error"
+    },
+    "delegate_admission": {
+      "event_kinds": [
+        "lab_completed"
+      ],
+      "selected_roles": [
+        "experiment-verification"
+      ],
+      "route_decision_event_kinds": [
+        "evidence_repaired",
+        "external_feedback",
+        "route_authorized",
+        "source_changed"
+      ]
+    }
+  },
+  "delegates": [
+    {
+      "role": "experiment-verification",
+      "model": "gpt-5.6-terra",
+      "effort": "high",
+      "status": "error",
+      "memo_path": ".delegates/20260722-162852-c5eb93/experiment-verification/memo.md",
+      "memo_sha256": "4e4f37f32c49d452ec9960626455c493d4372f2b081409f8ba4afd742437da00",
+      "usage": {},
+      "error": "[Errno 2] No such file or directory: 'codex'"
+    }
+  ],
+  "outcome": "error",
+  "approach": "Headless research pass",
+  "summary": "The pass did not produce a valid research result: FileNotFoundError: [Errno 2] No such file or directory: 'codex'",
+  "rationale": "Infrastructure or output-contract failure is not mathematical progress.",
+  "claims": [],
+  "evidence": [],
+  "evidence_files": [],
+  "next_steps": [
+    "Repair the failed pass and rerun."
+  ],
+  "citations": [
+    "https://ljcr.dmgordon.org/cover/show_cover.php?v=12&k=6&t=4"
+  ],
+  "techniques": [],
+  "experiments": [],
+  "transfer_insights": [],
+  "established_facts": [],
+  "ruled_out": [],
+  "open_leads": [],
+  "strategy_proposals": [],
+  "synthesis_candidates": [],
+  "strategy": {},
+  "continuation": {},
+  "candidate_profile": {},
+  "campaign_assessment": {},
+  "resolution_portfolio": {},
+  "search_efficiency": {
+    "naive_space": "not reached",
+    "reductions_considered": [
+      "not reached"
+    ],
+    "chosen_mechanism": "not reached",
+    "estimated_or_measured_savings": "not reached",
+    "soundness_guard": "no mathematical claim accepted"
+  },
+  "space_reduction": {
+    "ambient_space": "research epoch",
+    "represented_space_before": "not reached",
+    "eliminated_or_quotiented": "none",
+    "represented_space_after": "unchanged",
+    "reduction_factor": "none",
+    "measurement_status": "not_applicable",
+    "unit": "not applicable",
+    "coverage_scope": "no mathematical search completed",
+    "soundness_basis": "no claim accepted",
+    "remaining_unknown": "the full target",
+    "next_bulk_elimination": "repair the epoch before search"
+  },
+  "tactical_learning": {
+    "prediction": "produce a valid bounded epoch",
+    "observation": "output contract or infrastructure failure",
+    "surprise": "the epoch failed before evaluation",
+    "failure_signature": "FileNotFoundError: invalid epoch output",
+    "bottleneck_update": "repair the epoch failure before further research",
+    "reusable_assets": [],
+    "constraints_learned": [],
+    "route_decision": "hold",
+    "next_discriminator": "rerun the smallest valid output-contract control"
+  },
+  "prior_art_check": {
+    "nearest_method_ids": [
+      "not-applicable"
+    ],
+    "classification": "replication_control",
+    "exact_delta": "none; the epoch failed before comparison",
+    "duplicate_risk": "unknown",
+    "comparison_test": "repair and rerun the smallest output-contract control",
+    "decision": "stop",
+    "source_urls": [
+      "https://ljcr.dmgordon.org/cover/show_cover.php?v=12&k=6&t=4"
+    ]
+  },
+  "field_progress_assessment": {
+    "status": "not_met",
+    "gate_id": "none",
+    "contribution_class": "infrastructure failure",
+    "closest_prior_result": "previous valid epoch",
+    "measurable_improvement": "none",
+    "independent_validation": "not applicable",
+    "external_audience": "none",
+    "remains_unproved": "the full research target",
+    "route_recommendation": "hold and repair the epoch failure"
+  },
+  "lab_review": {
+    "decision": "none"
+  },
+  "hypothesis": "",
+  "discriminating_test": "",
+  "strategy_status": "active",
+  "research_mode": "unspecified",
+  "independent_checker": "not provided",
+  "blocker": "",
+  "reopen_condition": "",
+  "reopen_evidence": "",
+  "tool_disclosure": "Codex gpt-5.6-sol principal with gpt-5.6-terra delegates; run failed before a valid disclosure was returned.",
+  "policy_flags": [],
+  "contribution_gate": {
+    "schema_version": 1,
+    "passed": false,
+    "status": "not_requested",
+    "reasons": [],
+    "contribution_class": "unspecified",
+    "meaningful_delta": "",
+    "scholarly_question": "",
+    "external_recipient": "",
+    "independent_validation_types": []
+  },
+  "contribution_status": "research_attempt",
+  "review_status": "not a result claim",
+  "usage": {},
+  "json_repair": {
+    "attempted": false,
+    "used": false,
+    "model": null,
+    "effort": null,
+    "timeout_seconds": 180,
+    "usage": {},
+    "error": "",
+    "policy": "serialization-only; protected outcome and classification fields must remain unchanged"
+  },
+  "error": "[Errno 2] No such file or directory: 'codex'",
+  "artifact_hashes": {
+    ".delegates/20260722-162852-c5eb93/experiment-verification/memo.md": "4e4f37f32c49d452ec9960626455c493d4372f2b081409f8ba4afd742437da00"
+  },
+  "evidence_validation": {
+    "status": "valid",
+    "manifest": "evidence/covering-c1264-20260722-162852-2f041d/delta-manifest.json",
+    "manifest_sha256": "ef4492aa5f0081e2c97e2d02df0ccd7b1b76013f120ae6b31180c50e42b0e57e",
+    "receipt": "evidence/covering-c1264-20260722-162852-2f041d/evidence-receipt.json",
+    "artifact_count": 1,
+    "claimed_evidence_count": 0,
+    "errors": []
+  }
+}

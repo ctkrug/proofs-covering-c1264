@@ -10,8 +10,8 @@
     "A candidate is not a solution until independent and human review are recorded.",
     "Restating a known reduction, checking examples, or giving an unproved key lemma is not terminal success."
   ],
-  "epoch_count": 2,
-  "last_updated": "2026-07-22T15:12:54.586824+00:00",
+  "epoch_count": 3,
+  "last_updated": "2026-07-22T16:28:52.461352+00:00",
   "baseline_review": {
     "status": "complete",
     "reviewed_at": "2026-07-22T13:15:09.478653+00:00",
@@ -22,7 +22,7 @@
     "leads_recorded": 3,
     "requirement": "Repeat when the authoritative status changes materially or the baseline is explicitly invalidated."
   },
-  "synthesis_summary": "Attempt retained without durable claim projection because its evidence receipt did not validate: Proof replay is now portable, a fresh nontrivial inherited CNF proof replayed, and the missing 1,616-clause four-orbit blocker was exactly reconstructed. The matched encoding preflight passed: kmtotalizer has 20,160 fewer auxiliaries and 853 more clauses with an identical audited core. The full benchmark is running as lab job lab-covering-c1264-e9221dfd02b3; none of its live outputs is claimed here. The exact covering number remains open.",
+  "synthesis_summary": "The pass did not produce a valid research result: FileNotFoundError: [Errno 2] No such file or directory: 'codex'",
   "established_facts": [
     {
       "claim": "The preserved 41-block witness covers all 495 four-subsets.",
@@ -130,6 +130,23 @@
       "title": "Keep the perfect-matching and C2 wr S5 canonical link decomposition, catalog blockers, and residual checker, but substitute a structurally audited kmtotalizer only for exact link degrees.",
       "attempts": 0,
       "updated_at": "2026-07-22T13:15:09.478653+00:00"
+    },
+    {
+      "id": "strategy-0d0ea8626daf",
+      "family": "unspecified",
+      "fingerprint": "0d0ea8626daf",
+      "title": "Headless research pass",
+      "mechanism": "Headless research pass",
+      "status": "active",
+      "hypothesis": "",
+      "discriminating_test": "",
+      "blocker": "",
+      "reopen_condition": "",
+      "reopen_evidence": "",
+      "last_attempt_id": "covering-c1264-20260722-162852-2f041d",
+      "attempts": 1,
+      "parent_ids": [],
+      "updated_at": "2026-07-22T16:28:52.461352+00:00"
     }
   ],
   "open_leads": [
@@ -192,18 +209,19 @@
   ],
   "unresolved_questions": [],
   "next_session": {
-    "recommended_strategy_id": "strategy-253e0deb9593",
-    "objective": "Make proof replay portable, then determine whether kmtotalizer materially increases replayed closure on the inherited link frontier.",
-    "first_action": "Acquire the official DRAT-trim source at a pinned revision into a project-scoped toolchain and run checkers/replay_drat.py on a small known UNSAT CNF/proof pair.",
-    "stop_condition": "Stop or redirect if toolchain hashes/verdicts disagree, cardinality/non-cardinality audits fail, the matched encoding tranche closes fewer than 8/20 leaves, or proof growth projects above 30 GB.",
-    "source_attempt_id": "covering-c1264-20260722-131509-6394f5"
+    "recommended_strategy_id": "strategy-0d0ea8626daf",
+    "objective": "Repair the failed pass and rerun.",
+    "first_action": "Repair the failed pass and rerun.",
+    "stop_condition": "",
+    "source_attempt_id": "covering-c1264-20260722-162852-2f041d"
   },
   "recent_attempt_ids": [
     "covering-c1264-20260722-131509-6394f5",
-    "covering-c1264-20260722-151254-64a392"
+    "covering-c1264-20260722-151254-64a392",
+    "covering-c1264-20260722-162852-2f041d"
   ],
   "tactical_memory": {
-    "current_bottleneck": "Before testing the 47-node inherited link frontier, restore and control-test a pinned project-scoped proof checker; after that, propagation strength of the cardinality encoding is the main measured uncertainty.",
+    "current_bottleneck": "repair the epoch failure before further research",
     "failure_signatures": [
       {
         "id": "4d2fbff3c2cc",
@@ -212,6 +230,14 @@
         "last_strategy_id": "strategy-c1264-baseline-perfect-matching-audit-v1",
         "last_attempt_id": "covering-c1264-20260722-131509-6394f5",
         "updated_at": "2026-07-22T13:15:09.478653+00:00"
+      },
+      {
+        "id": "46be77344b9b",
+        "signature": "FileNotFoundError: invalid epoch output",
+        "count": 1,
+        "last_strategy_id": "strategy-0d0ea8626daf",
+        "last_attempt_id": "covering-c1264-20260722-162852-2f041d",
+        "updated_at": "2026-07-22T16:28:52.461352+00:00"
       }
     ],
     "reusable_assets": [
@@ -270,6 +296,16 @@
         "surprise": "The mathematical baseline matched prediction; the proof-replay toolchain recorded by older Mac pilot receipts is not portable to this checkout.",
         "next_discriminator": "Restore official pinned DRAT-trim, replay one small known UNSAT control and one existing leaf receipt, then dry-build/audit sequential and kmtotalizer link constraints before any matched solver tranche.",
         "updated_at": "2026-07-22T13:15:09.478653+00:00"
+      },
+      {
+        "attempt_id": "covering-c1264-20260722-162852-2f041d",
+        "strategy_id": "strategy-0d0ea8626daf",
+        "decision": "hold",
+        "prediction": "produce a valid bounded epoch",
+        "observation": "output contract or infrastructure failure",
+        "surprise": "the epoch failed before evaluation",
+        "next_discriminator": "rerun the smallest valid output-contract control",
+        "updated_at": "2026-07-22T16:28:52.461352+00:00"
       }
     ],
     "reduction_ledger": [
@@ -288,6 +324,22 @@
         "source_attempt_id": "covering-c1264-20260722-131509-6394f5",
         "strategy_id": "strategy-c1264-baseline-perfect-matching-audit-v1",
         "updated_at": "2026-07-22T13:15:09.478653+00:00"
+      },
+      {
+        "ambient_space": "research epoch",
+        "represented_space_before": "not reached",
+        "eliminated_or_quotiented": "none",
+        "represented_space_after": "unchanged",
+        "reduction_factor": "none",
+        "measurement_status": "not_applicable",
+        "unit": "not applicable",
+        "coverage_scope": "no mathematical search completed",
+        "soundness_basis": "no claim accepted",
+        "remaining_unknown": "the full target",
+        "next_bulk_elimination": "repair the epoch before search",
+        "source_attempt_id": "covering-c1264-20260722-162852-2f041d",
+        "strategy_id": "strategy-0d0ea8626daf",
+        "updated_at": "2026-07-22T16:28:52.461352+00:00"
       }
     ],
     "prior_art_decisions": [
@@ -310,6 +362,22 @@
           "https://www.tcs.hut.fi/Publications/info/bibdb.HUT-TCS-B10.shtml"
         ],
         "updated_at": "2026-07-22T13:15:09.478653+00:00"
+      },
+      {
+        "attempt_id": "covering-c1264-20260722-162852-2f041d",
+        "strategy_id": "strategy-0d0ea8626daf",
+        "nearest_method_ids": [
+          "not-applicable"
+        ],
+        "classification": "replication_control",
+        "exact_delta": "none; the epoch failed before comparison",
+        "duplicate_risk": "unknown",
+        "comparison_test": "repair and rerun the smallest output-contract control",
+        "decision": "stop",
+        "source_urls": [
+          "https://ljcr.dmgordon.org/cover/show_cover.php?v=12&k=6&t=4"
+        ],
+        "updated_at": "2026-07-22T16:28:52.461352+00:00"
       }
     ]
   }

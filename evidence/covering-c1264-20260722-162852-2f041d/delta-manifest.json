@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "kind": "proof-factory-attempt-delta-manifest",
+  "attempt_id": "covering-c1264-20260722-162852-2f041d",
+  "created_at": "2026-07-22T16:28:55.399466+00:00",
+  "workspace": "/root/proof-factory/research/covering-c1264/workspace",
+  "mutable_projection_patterns": [
+    ".delegates/**",
+    ".git/**",
+    ".pytest_cache/**",
+    ".venv/**",
+    "CHECKPOINT.md",
+    "README.md",
+    "__pycache__/**",
+    "docs/DOSSIER.md",
+    "lab-archive/**",
+    "lab-queue/**",
+    "records/problem.json",
+    "records/research-state.json",
+    "venv/**"
+  ],
+  "claimed_evidence_paths": [],
+  "artifact_count": 1,
+  "artifacts": [
+    {
+      "path": ".delegates/20260722-162852-c5eb93/experiment-verification/memo.md",
+      "role": "immutable_artifact",
+      "change": "added",
+      "claimed_evidence": false,
+      "after": {
+        "kind": "file",
+        "sha256": "4e4f37f32c49d452ec9960626455c493d4372f2b081409f8ba4afd742437da00",
+        "size": 102
+      }
+    }
+  ],
+  "content_sha256": "c6790402f6113daa4ddc9e87fcbfbb80cf1883d39608f09cf40a6921f7ce1c4c"
+}
