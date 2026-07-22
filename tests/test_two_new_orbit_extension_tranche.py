@@ -27,6 +27,8 @@ class TwoNewOrbitExtensionTests(unittest.TestCase):
     def test_dependency_runtime_is_explicit(self) -> None:
         selected = runner.dependency_python()
         self.assertTrue(selected.endswith("/python") or "python" in Path(selected).name)
+        if runner.WORKSPACE_PYTHON.exists():
+            self.assertEqual(selected, str(runner.WORKSPACE_PYTHON))
 
 
 if __name__ == "__main__":

@@ -10,7 +10,23 @@
     "path": "records/labs/lab-covering-c1264-d1b2473adc75-stopped-with-reason-segment-01.json",
     "sha256": "e84f5e6c0d4523dccb323f12266b9a5363f6536060571dbcc1b5a0f746da496a"
   },
-  "repair": "Select /root/proof-factory/.venv/bin/python when present for the residual runner and independent CNF checker; preserve the same two orbit witnesses and 300-second caps.",
+  "repair": "Select the campaign workspace .venv before the control-plane .venv for the residual runner and independent CNF checker; preserve the same two orbit witnesses and 300-second caps.",
+  "second_failed_retry": {
+    "archive": {
+      "path": "lab-archive/lab-covering-c1264-7c5632526cbc.json",
+      "sha256": "f73d2e0caae25e2880d08d9fe4b5d22f37c8270c742f4b36bda09b4fdb1f4cb1"
+    },
+    "job_id": "lab-covering-c1264-7c5632526cbc",
+    "reason": "The control-plane .venv also lacked PySAT; no CNF was constructed.",
+    "record": {
+      "path": "records/labs/lab-covering-c1264-7c5632526cbc-stopped-with-reason-segment-01.json",
+      "sha256": "bc29de7e9f4036a9d1c3bd5a0b9598795bfec97f8022ef3060acb3009efca514"
+    },
+    "stderr": {
+      "path": "lab-runs/lab-covering-c1264-7c5632526cbc/segment-000001/20260722-203339-aef407/stderr.txt",
+      "sha256": "7ac9670355b9c6b36e58e384804f199b1391bf0c890200ab02ad953a8e006d87"
+    }
+  },
   "schema_version": 1,
   "stderr": {
     "path": "lab-runs/lab-covering-c1264-d1b2473adc75/segment-000001/20260722-203028-35ee1a/stderr.txt",

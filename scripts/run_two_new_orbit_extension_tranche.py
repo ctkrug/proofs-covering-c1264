@@ -12,7 +12,8 @@ from pathlib import Path
 
 
 ROOT = Path(__file__).resolve().parents[1]
-PINNED_PYTHON = Path("/root/proof-factory/.venv/bin/python")
+WORKSPACE_PYTHON = ROOT / ".venv/bin/python"
+CONTROL_PLANE_PYTHON = Path("/root/proof-factory/.venv/bin/python")
 
 
 def sha(path: Path) -> str:
@@ -28,7 +29,11 @@ def write(path: Path, value: dict[str, object]) -> None:
 
 def dependency_python() -> str:
     """Use the lab's pinned scientific runtime when it is available."""
-    return str(PINNED_PYTHON) if PINNED_PYTHON.exists() else sys.executable
+    if WORKSPACE_PYTHON.exists():
+        return str(WORKSPACE_PYTHON)
+    if CONTROL_PLANE_PYTHON.exists():
+        return str(CONTROL_PLANE_PYTHON)
+    return sys.executable
 
 
 def main() -> None:
