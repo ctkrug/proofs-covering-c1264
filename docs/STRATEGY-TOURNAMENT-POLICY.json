@@ -19,7 +19,7 @@
     },
     {
       "id": "leaf_assignment",
-      "rule": "For each still-open leaf, assign only the most promising few retained methods using structural-class evidence, net-new closures per CPU-hour, proof storage, and replay reliability."
+      "rule": "After the frozen predecessor, run sequential at the existing 60-second cap over all and only the 44 currently open leaves. Then profile only the survivors and assign the most promising few retained methods using structural-class evidence, net-new closures per CPU-hour, proof storage, and replay reliability; do not uniformly increase the timeout."
     },
     {
       "id": "repeat",

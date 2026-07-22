@@ -1,0 +1,403 @@
+{
+  "blocking_cnf": "artifacts/pilot/link-orbit-catalog-4-blocking.cnf",
+  "catalog": "artifacts/pilot/link-orbit-catalog-4.json",
+  "claim_limit": "This tranche can add replayed local closures only. A global exclusion still requires 47/47 valid closures and independent frontier coverage validation.",
+  "cold_runs": true,
+  "drat_trim": "toolchains/drat-trim/drat-trim",
+  "frontier_summary": "artifacts/pilot/link-campaign-summary.json",
+  "hypothesis": "A uniform short-cap sequential pass over every currently open canonical node will cheaply harvest at least one net-new replay-verified closure and measure the hard tail without committing to a uniform timeout increase.",
+  "input_sha256": {
+    "artifacts/pilot/link-campaign-summary.json": "1a9ff4abe35470308876496219ec6cf93d64e6b10ceafb942a3dd43b5dd3139f",
+    "artifacts/pilot/link-orbit-catalog-4-blocking.cnf": "d68f1de5f99cf6e56480a3778dd270e8abca276d192fdf19b354375422d6cad4",
+    "artifacts/pilot/link-orbit-catalog-4.json": "cf67941262fde9726f16c850e44082fba6d44685b776ab29c7dcb68905a2e242",
+    "artifacts/pilot/link-root-0-secondary-partition.json": "90b7972db69594d535c635a7a3bdac50fd2f281cc52cf76460e4bcf229bb0af8",
+    "artifacts/pilot/link-root-1-secondary-partition.json": "cdbefde0d7b8bcb235742b74b22e38524c67c7409b1a0d8f4563b9c04428072b",
+    "artifacts/pilot/link-root0-secondary0-tertiary-partition.json": "5a9a341375b14e27a2e6e98fe44f9f73119e6a36290eb4aced4facbc6b825b5a",
+    "artifacts/portfolio/frontier-manifest-v1.json": "2badf458f03e9a400b034352a0ec9060cc962f6dec97b94b873995f26a0236a8",
+    "checkers/audit_cardinality_encoding_cnf.py": "d2f8f577d83e27ddcb364d72e0ef2f0f3daea44ffb2e790d646c9acef53f885e",
+    "checkers/replay_drat.py": "8212d26af921b8a8cdf035bb6fd5469865a57200a7d8e30ffebf0da24fa7a4f3",
+    "requirements-pilot-lock.txt": "f8c39296cf75ed89068b7b13bc38ba3dbc1d60e9cd3c7be326539025a293117a",
+    "scripts/analyze_link_orbit.py": "d1bc19c04930870178764d52755ffd68a1f64191956d97ee0fe7b098dd7c5405",
+    "scripts/build_sequential_frontier_sweep.py": "08a7130f8aa16faa718cbe8ccde1b23c23928a06c71624531bbbf9c041c91d49",
+    "scripts/find_next_link_orbit.py": "2b9e2f5e6aac03a6708da582e32134bb76c8efdd70c2060b312059c49e2aef61",
+    "scripts/profile_sequential_survivors.py": "8323fce87f5938ba56ce3426bdd06363f99e57aed70dde5bb6ae8f853db8caa3",
+    "scripts/run_cardinality_encoding_benchmark.py": "84761553baa9928a69b96d22b55cb1b7302b9ab8e5178c233cc18f3ddbb65a91",
+    "scripts/run_sequential_frontier_sweep.py": "46d9e2267d01469d2bf05cf4353a6f390b751f48bf09de30132a98280357ab13",
+    "toolchains/drat-trim/PROVENANCE.md": "312c1114b2fec0ca02267e29b14d4759baf90a799ec128f256f829fbd5382f39",
+    "toolchains/drat-trim/drat-trim": "92f0aa9575ed519d66a99b8b1b3dde6ece4618ae4c202a3a4b200265dda0aa7a"
+  },
+  "leaves": [
+    {
+      "id": "s-r0-1",
+      "inherited_result_sha256": "0edfb0e3139d0e28a2ce9f9b831f8fff6aa59409ddb29c58fa61f00c7ac2251e",
+      "kind": "secondary",
+      "root_index": 0,
+      "secondary_index": 1,
+      "tertiary_index": null
+    },
+    {
+      "id": "s-r0-2",
+      "inherited_result_sha256": "4d718f55e94c456fa55a1a4c9e5777e126c5e582e67097aca8fda8c9d59db4a9",
+      "kind": "secondary",
+      "root_index": 0,
+      "secondary_index": 2,
+      "tertiary_index": null
+    },
+    {
+      "id": "s-r0-3",
+      "inherited_result_sha256": "fc920e0c25180f59f820514baa566c7371951b51361028bce936b3fda0de56e8",
+      "kind": "secondary",
+      "root_index": 0,
+      "secondary_index": 3,
+      "tertiary_index": null
+    },
+    {
+      "id": "s-r0-4",
+      "inherited_result_sha256": "0d5433f5018804695d33acd2da291e36c9355824a618c1dd168bc5c4f909df0f",
+      "kind": "secondary",
+      "root_index": 0,
+      "secondary_index": 4,
+      "tertiary_index": null
+    },
+    {
+      "id": "s-r0-5",
+      "inherited_result_sha256": "de6498fd228fe6a9b0b2518be013878d48659395aba113be52a36cbd4c910625",
+      "kind": "secondary",
+      "root_index": 0,
+      "secondary_index": 5,
+      "tertiary_index": null
+    },
+    {
+      "id": "s-r1-0",
+      "inherited_result_sha256": "5a89dbc9ca79c6af6b30169865fc18049eccba6c7f7dd9471d3a697469093a5d",
+      "kind": "secondary",
+      "root_index": 1,
+      "secondary_index": 0,
+      "tertiary_index": null
+    },
+    {
+      "id": "s-r1-1",
+      "inherited_result_sha256": "5102c7021615d9dbc2a21465bba2da71142de52b020678e0af2a831a4426eeb4",
+      "kind": "secondary",
+      "root_index": 1,
+      "secondary_index": 1,
+      "tertiary_index": null
+    },
+    {
+      "id": "s-r1-2",
+      "inherited_result_sha256": "a32080d2927b0a95a595f3c8ca082e0d3e8747ca6bb1e65d5c805e83e2a4b86a",
+      "kind": "secondary",
+      "root_index": 1,
+      "secondary_index": 2,
+      "tertiary_index": null
+    },
+    {
+      "id": "s-r1-3",
+      "inherited_result_sha256": "373f2879beb9cf6fae6562bb4eb1b2ca8ec1d55dcb740f0261f4edd91751b4c0",
+      "kind": "secondary",
+      "root_index": 1,
+      "secondary_index": 3,
+      "tertiary_index": null
+    },
+    {
+      "id": "s-r1-4",
+      "inherited_result_sha256": "7be9efd96519384ddd6e19a2e56dd4021a66cefa884cae40d959bda76d7c6471",
+      "kind": "secondary",
+      "root_index": 1,
+      "secondary_index": 4,
+      "tertiary_index": null
+    },
+    {
+      "id": "s-r1-15",
+      "inherited_result_sha256": "7dc4b405ebd86cbb0440b18116e06f4fa5e5f1aad876a90692efc1e671559f44",
+      "kind": "secondary",
+      "root_index": 1,
+      "secondary_index": 15,
+      "tertiary_index": null
+    },
+    {
+      "id": "t-0",
+      "inherited_result_sha256": "7394664f196d00b52215c79a957d1c6a10792bbe40f193c23d55fed067a84191",
+      "kind": "tertiary",
+      "root_index": 0,
+      "secondary_index": 0,
+      "tertiary_index": 0
+    },
+    {
+      "id": "t-1",
+      "inherited_result_sha256": "c648d99d255875732b49c33514b4cf312127e3cfcdf7508421ea3bcf784d4220",
+      "kind": "tertiary",
+      "root_index": 0,
+      "secondary_index": 0,
+      "tertiary_index": 1
+    },
+    {
+      "id": "t-2",
+      "inherited_result_sha256": "a8bcd9bc0b77ff4b345504041f47f0aa29da1d33e46b8fdf70727590ed09fdd4",
+      "kind": "tertiary",
+      "root_index": 0,
+      "secondary_index": 0,
+      "tertiary_index": 2
+    },
+    {
+      "id": "t-3",
+      "inherited_result_sha256": "6098ad35988fbadcd267e72d92fb793c21bcccafa26076eb846879ea99470f76",
+      "kind": "tertiary",
+      "root_index": 0,
+      "secondary_index": 0,
+      "tertiary_index": 3
+    },
+    {
+      "id": "t-4",
+      "inherited_result_sha256": "045e10a68c0335fc1185ab59a2ea7566476c8e78d3ee0d6f10c9dd95e55e4e14",
+      "kind": "tertiary",
+      "root_index": 0,
+      "secondary_index": 0,
+      "tertiary_index": 4
+    },
+    {
+      "id": "t-5",
+      "inherited_result_sha256": "283d85e125e53a2254765e147fa57ca9a63d20493d411d05ac4cbcbf6c31746a",
+      "kind": "tertiary",
+      "root_index": 0,
+      "secondary_index": 0,
+      "tertiary_index": 5
+    },
+    {
+      "id": "t-6",
+      "inherited_result_sha256": "9305a18f7cc774936a24f5093b7de0ab919ef714ff4fdc30e10876b719e5a03b",
+      "kind": "tertiary",
+      "root_index": 0,
+      "secondary_index": 0,
+      "tertiary_index": 6
+    },
+    {
+      "id": "t-7",
+      "inherited_result_sha256": "c75b388e6faf671f888aa6d2a01c75e574e998e35f7ce4b117a362574f9ac6a4",
+      "kind": "tertiary",
+      "root_index": 0,
+      "secondary_index": 0,
+      "tertiary_index": 7
+    },
+    {
+      "id": "t-8",
+      "inherited_result_sha256": "59d30e0f1f2777dc80c4a4b354a99f2756a6fc55ed8b79e0fe5bde2c3a4a0d2b",
+      "kind": "tertiary",
+      "root_index": 0,
+      "secondary_index": 0,
+      "tertiary_index": 8
+    },
+    {
+      "id": "t-9",
+      "inherited_result_sha256": "bad5c05235ed5a828efb6c510e19891429b956adc0eac27ed7ea68dc631d4702",
+      "kind": "tertiary",
+      "root_index": 0,
+      "secondary_index": 0,
+      "tertiary_index": 9
+    },
+    {
+      "id": "t-10",
+      "inherited_result_sha256": "fd3ade9d5898c0f346252d1e6f6f67dcfaebbec4f1983885533ecbde91b08006",
+      "kind": "tertiary",
+      "root_index": 0,
+      "secondary_index": 0,
+      "tertiary_index": 10
+    },
+    {
+      "id": "t-11",
+      "inherited_result_sha256": "d790600c4d0c4ca11cedc46ea48536d7e8b7083ef033e13c8809139a2f332b7d",
+      "kind": "tertiary",
+      "root_index": 0,
+      "secondary_index": 0,
+      "tertiary_index": 11
+    },
+    {
+      "id": "t-12",
+      "inherited_result_sha256": "705f5eee214ce5d2805f7e1986d67c9912d9033412f364838a3e5fe5965c17e4",
+      "kind": "tertiary",
+      "root_index": 0,
+      "secondary_index": 0,
+      "tertiary_index": 12
+    },
+    {
+      "id": "t-13",
+      "inherited_result_sha256": "96d9d45248ef3f9ca96ab583ae93edb33ee4d65aaeee082447f29a3ce100ae36",
+      "kind": "tertiary",
+      "root_index": 0,
+      "secondary_index": 0,
+      "tertiary_index": 13
+    },
+    {
+      "id": "t-14",
+      "inherited_result_sha256": "4148bd4522f6642bb751d09b59aed0d7e21ae5976928dca6b38588461999e274",
+      "kind": "tertiary",
+      "root_index": 0,
+      "secondary_index": 0,
+      "tertiary_index": 14
+    },
+    {
+      "id": "t-15",
+      "inherited_result_sha256": "c7b1209fb9124d813277645948eed4a5f16f997e866d54106e829bd541cfa5be",
+      "kind": "tertiary",
+      "root_index": 0,
+      "secondary_index": 0,
+      "tertiary_index": 15
+    },
+    {
+      "id": "t-16",
+      "inherited_result_sha256": "2eccccad0f7ef41e5ccd88486c2f4f76fde373b62c811297ee314a640da0de66",
+      "kind": "tertiary",
+      "root_index": 0,
+      "secondary_index": 0,
+      "tertiary_index": 16
+    },
+    {
+      "id": "t-17",
+      "inherited_result_sha256": "07dd19e1b1ceb4cd4bd3fd8d6a0c3c7a9b4510628eeb27cb00ae9a712460b662",
+      "kind": "tertiary",
+      "root_index": 0,
+      "secondary_index": 0,
+      "tertiary_index": 17
+    },
+    {
+      "id": "t-18",
+      "inherited_result_sha256": "62347d53de2a8c0e166a4a0bad254422b7ff1f0d75836af76c2287a0c6dd4704",
+      "kind": "tertiary",
+      "root_index": 0,
+      "secondary_index": 0,
+      "tertiary_index": 18
+    },
+    {
+      "id": "t-19",
+      "inherited_result_sha256": "ee82129d9dc8bf75285f443d6d6fa8f01eb623eeff89c692ed2c8c356393c579",
+      "kind": "tertiary",
+      "root_index": 0,
+      "secondary_index": 0,
+      "tertiary_index": 19
+    },
+    {
+      "id": "t-20",
+      "inherited_result_sha256": "0cfabdb6fa780a98da726f679ab6f97536569af40e36445e63ebbc0035e7e5f0",
+      "kind": "tertiary",
+      "root_index": 0,
+      "secondary_index": 0,
+      "tertiary_index": 20
+    },
+    {
+      "id": "t-21",
+      "inherited_result_sha256": "ddca90e6822a3db17e4dd7dd2c237dd5baaf75c0029993ecea7dc6b2e6e893f3",
+      "kind": "tertiary",
+      "root_index": 0,
+      "secondary_index": 0,
+      "tertiary_index": 21
+    },
+    {
+      "id": "t-22",
+      "inherited_result_sha256": "061f0fdda72dc942660a38f67dd43f381bfa889fd4a1312994b265d1b06f5782",
+      "kind": "tertiary",
+      "root_index": 0,
+      "secondary_index": 0,
+      "tertiary_index": 22
+    },
+    {
+      "id": "t-23",
+      "inherited_result_sha256": "7e6cbcf4b49998ca1533d4524c2060a10b07a874f27d1d475a835efcbe611846",
+      "kind": "tertiary",
+      "root_index": 0,
+      "secondary_index": 0,
+      "tertiary_index": 23
+    },
+    {
+      "id": "t-24",
+      "inherited_result_sha256": "115535b982efecce294056f90dfcbb9f96413d2e4e21878ae67359d8057294b5",
+      "kind": "tertiary",
+      "root_index": 0,
+      "secondary_index": 0,
+      "tertiary_index": 24
+    },
+    {
+      "id": "t-25",
+      "inherited_result_sha256": "87460e3e215493c5c0c3aa1288853a204c3a0cd034672e883f5db9abab8bc48d",
+      "kind": "tertiary",
+      "root_index": 0,
+      "secondary_index": 0,
+      "tertiary_index": 25
+    },
+    {
+      "id": "t-26",
+      "inherited_result_sha256": "a9723060afe8611ea5d743b6225b793fb095e1a1c2f3adb64f11a1fec079efcc",
+      "kind": "tertiary",
+      "root_index": 0,
+      "secondary_index": 0,
+      "tertiary_index": 26
+    },
+    {
+      "id": "t-27",
+      "inherited_result_sha256": "43340c20a011abfc2b96b03005861a90cca08e5f0e26d16ac6d9e43bf87868cf",
+      "kind": "tertiary",
+      "root_index": 0,
+      "secondary_index": 0,
+      "tertiary_index": 27
+    },
+    {
+      "id": "t-28",
+      "inherited_result_sha256": "4ad6e3924be845fef10a537af0c056715d5d852439b5a3378f55722305aee402",
+      "kind": "tertiary",
+      "root_index": 0,
+      "secondary_index": 0,
+      "tertiary_index": 28
+    },
+    {
+      "id": "t-29",
+      "inherited_result_sha256": "bac5988b02557aac3faa9ad264c0ba6e7e6daf398241a9574d1c12622e6d826b",
+      "kind": "tertiary",
+      "root_index": 0,
+      "secondary_index": 0,
+      "tertiary_index": 29
+    },
+    {
+      "id": "t-30",
+      "inherited_result_sha256": "a37166a8614f8b254f2be0ef7c71f3e9ce96dfd78269a535daf334b0ccd3936a",
+      "kind": "tertiary",
+      "root_index": 0,
+      "secondary_index": 0,
+      "tertiary_index": 30
+    },
+    {
+      "id": "t-31",
+      "inherited_result_sha256": "931b397e4a3c500d0de193278ba9a9f372391863381aaed1a6625ac579caca81",
+      "kind": "tertiary",
+      "root_index": 0,
+      "secondary_index": 0,
+      "tertiary_index": 31
+    },
+    {
+      "id": "t-32",
+      "inherited_result_sha256": "36a52b2cef9bdf1ffdda3d9f46ced0c22c7fc5bbc0da992b116b31d262f7f266",
+      "kind": "tertiary",
+      "root_index": 0,
+      "secondary_index": 0,
+      "tertiary_index": 32
+    }
+  ],
+  "maximum_projected_proof_bytes": 20000000000,
+  "maximum_solver_cpu_seconds": 2640,
+  "method": "sequential",
+  "portfolio_manifest_sha256": "2badf458f03e9a400b034352a0ec9060cc962f6dec97b94b873995f26a0236a8",
+  "predecessor": {
+    "rule": "finish and review unchanged before this live-host sweep starts",
+    "run_id": "cardinality-encoding-20-leaf-20260722"
+  },
+  "preserved_certified_nodes": [
+    "s-r0-6",
+    "s-r1-5",
+    "s-r1-8"
+  ],
+  "run_id": "sequential-open-frontier-44-20260722",
+  "run_order": "all secondary nodes in canonical order, then all tertiary nodes in canonical order; no solver state is reused",
+  "schema_version": 1,
+  "seconds_per_run": 60,
+  "selection_basis": "All and only the 44 nodes still open after preserving three fresh sequential certificates; already certified nodes are excluded to avoid duplicate compute.",
+  "solver": "/usr/bin/cadical",
+  "success_rule": "Retain every net-new closure whose reconstructed CNF audit and DRAT replay pass; UNKNOWN is a measured survivor, not evidence of satisfiability."
+}

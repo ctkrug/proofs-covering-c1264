@@ -12,8 +12,8 @@
     "structural_reduction-02",
     "symmetry_representation-01"
   ],
-  "candidate_registry_sha256": "57d4f953db16bd6888d97c16956d5e8708aaf29374daa18ac000477fc77993af",
-  "coverage_matrix_sha256": "663a241bf5e5801ba045d4c8e8e31502d2fdac8471f63f6025b0d636da5e5711",
+  "candidate_registry_sha256": "4d98b207a0293a397fb55328639ce6d358463899f6371a30afb47d2ecebbee8c",
+  "coverage_matrix_sha256": "d214a0844482dc11939f78cd4989bda3edbbb8f7b81ebe88b95f470a87b0b816",
   "family_champions": {
     "constructive_local_search": "constructive_local_search-04",
     "constructive_metaheuristic": "constructive_metaheuristic-09",
@@ -30,6 +30,11 @@
     "initial_signal": "one-block repair improved to six uncovered quadruples with exact point degrees; four degree-preserving two-block tranches found no improvement, including two barrier-crossing runs with 35,000 accepted trades; exact-repair follow-up produced only UNKNOWN results, while earlier local CORE_UNSAT statuses remain unreplayed allocation signals",
     "next_gate": "demote exact-degree two-block repair for this basin; validate a larger neighborhood that temporarily permits degree slack or repairs at least three blocks before spending a longer tranche",
     "status": "active_measured_route"
+  },
+  "hard_tail_policy": {
+    "allocation": "assign alternative encodings, cubing, PB/CP-SAT, ILP, or longer method-specific budgets by survivor class",
+    "profile": "derive structural classes only for nodes still open after the short-cap sweep",
+    "prohibition": "do not apply a uniform timeout increase to every survivor"
   },
   "maximum_parallel_searches": 1,
   "method_scores": [
@@ -1433,10 +1438,22 @@
     "symmetry_representation-09",
     "symmetry_representation-10"
   ],
-  "plan_payload_sha256": "841f31616addf6e3db654841d0d1f14bd422bc762c3910081524fa3e81d9aec2",
-  "recompute_when": "frozen predecessor completes, a semantic gate changes, or a new independently validated matrix cell is recorded",
+  "plan_payload_sha256": "e031def5f465b408718f55973010c827ecf4358a41dace98e43c2d2e7bb16715",
+  "post_predecessor_sequential_sweep": {
+    "excluded_preserved_certificates": [
+      "s-r0-6",
+      "s-r1-5",
+      "s-r1-8"
+    ],
+    "instruction": "start only after the frozen predecessor is complete and reviewed; retain every net-new independently replayed closure",
+    "method": "sequential",
+    "run_id": "sequential-open-frontier-44-20260722",
+    "seconds_per_target": 60,
+    "target_count": 44
+  },
+  "recompute_when": "frozen predecessor completes, the 44-node harvest records a result, survivor classes change, a semantic gate changes, or a new independently validated matrix cell is recorded",
   "schema_version": 1,
-  "screening_manifest_sha256": "0d33bd5c224b370c5fc23344d4dfdb0c5393a9c58f87890c3fb1cf0650ff22be",
+  "screening_manifest_sha256": "07604d0c4ef47cd6a91900749a4969e3af2f8d07f73288602f5ea6927ab74744",
   "separate_local_workstation_constructive_searches": 2,
-  "stage": "parallel_constructive_sprint_and_finish_frozen_predecessor"
+  "stage": "finish_frozen_predecessor_then_short_cap_sequential_harvest"
 }

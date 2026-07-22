@@ -84,7 +84,7 @@ def build_plan() -> dict:
         })
     plan = {
         "schema_version": 1,
-        "stage": "parallel_constructive_sprint_and_finish_frozen_predecessor",
+        "stage": "finish_frozen_predecessor_then_short_cap_sequential_harvest",
         "candidate_registry_sha256": registry["registry_payload_sha256"],
         "screening_manifest_sha256": screening["screening_payload_sha256"],
         "coverage_matrix_sha256": matrix["matrix_payload_sha256"],
@@ -94,6 +94,19 @@ def build_plan() -> dict:
             "run_id": "cardinality-encoding-20-leaf-20260722",
             "instruction": "continue unchanged on the live host; do not launch other live-host tournament screens concurrently"
         }],
+        "post_predecessor_sequential_sweep": {
+            "run_id": "sequential-open-frontier-44-20260722",
+            "method": "sequential",
+            "target_count": 44,
+            "seconds_per_target": 60,
+            "excluded_preserved_certificates": ["s-r0-6", "s-r1-5", "s-r1-8"],
+            "instruction": "start only after the frozen predecessor is complete and reviewed; retain every net-new independently replayed closure"
+        },
+        "hard_tail_policy": {
+            "profile": "derive structural classes only for nodes still open after the short-cap sweep",
+            "allocation": "assign alternative encodings, cubing, PB/CP-SAT, ILP, or longer method-specific budgets by survivor class",
+            "prohibition": "do not apply a uniform timeout increase to every survivor"
+        },
         "next_semantic_validation_queue": validation_queue,
         "parked_family_variant_expansion_queue": expansion_queue,
         "family_champions": FAMILY_CHAMPIONS,
@@ -107,7 +120,7 @@ def build_plan() -> dict:
             "initial_signal": "one-block repair improved to six uncovered quadruples with exact point degrees; four degree-preserving two-block tranches found no improvement, including two barrier-crossing runs with 35,000 accepted trades; exact-repair follow-up produced only UNKNOWN results, while earlier local CORE_UNSAT statuses remain unreplayed allocation signals",
             "next_gate": "demote exact-degree two-block repair for this basin; validate a larger neighborhood that temporarily permits degree slack or repairs at least three blocks before spending a longer tranche"
         },
-        "recompute_when": "frozen predecessor completes, a semantic gate changes, or a new independently validated matrix cell is recorded"
+        "recompute_when": "frozen predecessor completes, the 44-node harvest records a result, survivor classes change, a semantic gate changes, or a new independently validated matrix cell is recorded"
     }
     plan["plan_payload_sha256"] = canonical_hash(plan)
     return plan
