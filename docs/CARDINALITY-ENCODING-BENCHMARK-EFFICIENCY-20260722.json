@@ -1,0 +1,17 @@
+{
+  "naive_cost": "The unresolved link search contains 47 canonical frontier nodes, each with 462 primary block variables; an unchanged 60-second solve of both encodings over all nodes would allocate up to 94 CPU-minutes before proof replay and would not first measure whether the encoding change helps.",
+  "opportunities_considered": [
+    "retain the exact C2 wr S5 canonical root, secondary, and tertiary quotient",
+    "stratify a fixed 20/47 route-discriminator sample rather than traverse all frontier nodes",
+    "byte-hash one common non-cardinality core so only the 11 degree equalities differ",
+    "use isolated auxiliary ranges and boundary-semantic checks for each point equality",
+    "run independent cold processes to avoid solver-state and learned-clause confounding",
+    "checkpoint after every solver run and replay every UNSAT proof immediately",
+    "directly validate and canonicalize every SAT link against the full four-orbit catalog",
+    "stop when observed proof sizes project beyond 30 GB"
+  ],
+  "chosen_reductions": "Use the already proved 3,840-element link stabilizer and 47-node canonical frontier, then test 20 fixed leaves (6 secondary and 14 tertiary) with a matched two-encoding cold design. Reuse clause generation, not solver state. The kmtotalizer form uses 20,020 degree auxiliaries versus 40,180 for sequential; both preserve the exact same primary-variable core.",
+  "expected_throughput_gain": "The discriminator uses at most 40 solver-minutes, 42.6% of an all-frontier paired pass. Kmtotalizer removes 20,160 auxiliaries (50.17% of the sequential auxiliaries) while adding 853 clauses; continuation requires at least 8/20 verified closures and an advantage of at least four over sequential.",
+  "soundness_basis": "Each leaf is bound to the inherited 47-node manifest by exact indices and result hashes. A separate checker reconstructs the 165 triple clauses, 1,616 catalog blockers, canonical units, and all point literal universes; it checks auxiliary confinement and 66 boundary assignments per CNF. Every UNSAT must have a DRAT proof replayed by pinned DRAT-trim. SAT is accepted only after direct exact-link validation and full-catalog canonicalization.",
+  "remains_uncompressed": "The sample is a route discriminator, not exhaustive coverage and not an orbit-weighted closure estimate. If the acceptance rule passes, the remaining 27 frontier nodes and any still-open sample leaves require a new separately reviewed tranche; if it fails, this encoding route stops unchanged."
+}

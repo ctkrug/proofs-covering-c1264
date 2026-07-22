@@ -1,0 +1,53 @@
+{
+  "blocked_link_images": 1616,
+  "blocking_cnf": {
+    "bytes": 156455,
+    "clauses": 1616,
+    "path": "artifacts/pilot/link-orbit-catalog-4-blocking.cnf",
+    "sha256": "d68f1de5f99cf6e56480a3778dd270e8abca276d192fdf19b354375422d6cad4"
+  },
+  "claim_limit": "Catalogs only supplied independently valid links and their complete orbits; it is not an exhaustive link classification.",
+  "group": "C2 wr S5",
+  "group_order": 3840,
+  "orbit_count": 4,
+  "orbits": [
+    {
+      "canonical_sha256": "8588c1d6bef8da17488984c28e222594e088ef1435d8737fafc28d01cd8f5148",
+      "orbit_size": 320,
+      "source": {
+        "path": "artifacts/controls/c1153-at-most-20-seqcounter-fix-first-exact-degrees-300s/witness.txt",
+        "sha256": "08282192a15dcca556d53632cbeae661076ab334d8dec4aca1e2a355486aa47f"
+      },
+      "stabilizer_order": 12
+    },
+    {
+      "canonical_sha256": "681764d1b0bf68ceff7809a7146d91a21a7504528ba71bbf73940daefa1c54a1",
+      "orbit_size": 16,
+      "source": {
+        "path": "artifacts/pilot/link-orbit-second-root-2-60s/witness.txt",
+        "sha256": "4a93a974c7ab16a5ede382c8c8bc725ed8694a0f7dd30a1abd6c0fea4300bc1d"
+      },
+      "stabilizer_order": 240
+    },
+    {
+      "canonical_sha256": "c31bde7d138db2072f1309f834814aa2e27722a9b1bf21e08e758b1acca93349",
+      "orbit_size": 960,
+      "source": {
+        "path": "artifacts/pilot/link-orbit-next-root-1-300s/witness.txt",
+        "sha256": "52a0eeb379ab87a640685b47f9bd7202b221738796e93a00c58f86a9ed8e1882"
+      },
+      "stabilizer_order": 4
+    },
+    {
+      "canonical_sha256": "67d803aa141d828b4f2911c4a9f8199b1f26f4141a96a0e3a31b78b773de3468",
+      "orbit_size": 320,
+      "source": {
+        "path": "artifacts/pilot/link-orbit-root1-secondary-8-60s/witness.txt",
+        "sha256": "bfa9f0c47dde379e49acd296ee973497cce13837fe363f3c03297e2ff12ed743"
+      },
+      "stabilizer_order": 12
+    }
+  ],
+  "schema_version": 1,
+  "status": "valid-orbit-catalog"
+}

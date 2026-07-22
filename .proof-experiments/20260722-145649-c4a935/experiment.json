@@ -1,0 +1,43 @@
+{
+  "schema_version": 1,
+  "id": "20260722-145649-c4a935",
+  "name": "audit-rebuilt-catalog4-blocker",
+  "hypothesis": "A separately structured orbit implementation accepts the reconstructed four-orbit catalog and blocker.",
+  "expected_signal": "status valid, orbit_count 4, blocked_link_images 1616, blocker SHA d68f1de5...",
+  "command": [
+    ".venv/bin/python",
+    "checkers/audit_link_orbit_catalog.py",
+    "artifacts/pilot/link-orbit-catalog-4.json",
+    "artifacts/pilot/link-orbit-catalog-4-blocking.cnf",
+    "--output",
+    "artifacts/controls/link-orbit-catalog-4-rebuild-20260722.audit.json"
+  ],
+  "cwd": "/root/proof-factory/research/covering-c1264/workspace",
+  "seed": 0,
+  "timeout_seconds": 120,
+  "memory_limit_mb": 256,
+  "memory_limit_enforced": true,
+  "started_at": "2026-07-22T14:56:49.190581+00:00",
+  "finished_at": "2026-07-22T14:56:50.409370+00:00",
+  "duration_seconds": 1.219,
+  "returncode": 0,
+  "timed_out": false,
+  "python": "3.12.3",
+  "platform": "Linux-6.8.0-124-generic-x86_64-with-glibc2.39",
+  "git_commit": "8ad072a72e81fe3a1e761d76d98f0de89a6cb7f8",
+  "source_urls": [
+    "https://ljcr.dmgordon.org/cover/show_cover.php?v=12&k=6&t=4"
+  ],
+  "input_artifacts": {
+    "/usr/bin/python3.12": "1643dacd9feaedc58f3cc581e4d22577dfe25c09b10282936186ccf0f2e61118",
+    "/root/proof-factory/research/covering-c1264/workspace/checkers/audit_link_orbit_catalog.py": "22616efffe978120aa659bbda6e96043b6d2e3860dd04c86b169fefea52c6e3d",
+    "/root/proof-factory/research/covering-c1264/workspace/artifacts/pilot/link-orbit-catalog-4.json": "cf67941262fde9726f16c850e44082fba6d44685b776ab29c7dcb68905a2e242",
+    "/root/proof-factory/research/covering-c1264/workspace/artifacts/pilot/link-orbit-catalog-4-blocking.cnf": "d68f1de5f99cf6e56480a3778dd270e8abca276d192fdf19b354375422d6cad4"
+  },
+  "peak_child_memory_rusage": 22400,
+  "peak_child_memory_unit": "kilobytes",
+  "artifacts": {
+    "stdout.txt": "fd5680009db9fac596f5bf00f8d570c5e7c8c74b3350d34e26d9efbdd0dd7aba",
+    "stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  }
+}

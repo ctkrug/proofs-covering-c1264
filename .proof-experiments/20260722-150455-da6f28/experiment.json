@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "id": "20260722-150455-da6f28",
+  "name": "cardinality-encoding-matched-preflight-v2",
+  "hypothesis": "The hash-finalized lab manifest preserves the matched sequential/kmtotalizer construction and all independent CNF controls.",
+  "expected_signal": "Both audits remain valid; core digests match; auxiliaries are 40180 versus 20020; kmtotalizer adds 853 clauses.",
+  "command": [
+    "python3",
+    "scripts/preflight_cardinality_encoding_benchmark.py",
+    "--manifest",
+    "artifacts/experiments/cardinality-encoding-20-leaf-20260722/manifest.json",
+    "--output",
+    "artifacts/controls/cardinality-encoding-preflight-final-20260722"
+  ],
+  "cwd": "/root/proof-factory/research/covering-c1264/workspace",
+  "seed": 0,
+  "timeout_seconds": 120,
+  "memory_limit_mb": 512,
+  "memory_limit_enforced": true,
+  "started_at": "2026-07-22T15:04:55.851534+00:00",
+  "finished_at": "2026-07-22T15:05:00.510339+00:00",
+  "duration_seconds": 4.659,
+  "returncode": 0,
+  "timed_out": false,
+  "python": "3.12.3",
+  "platform": "Linux-6.8.0-124-generic-x86_64-with-glibc2.39",
+  "git_commit": "8ad072a72e81fe3a1e761d76d98f0de89a6cb7f8",
+  "source_urls": [
+    "https://pysathq.github.io/docs/html/api/card.html"
+  ],
+  "input_artifacts": {
+    "/root/proof-factory/research/covering-c1264/workspace/scripts/preflight_cardinality_encoding_benchmark.py": "46cf1e0fc2430110c9e6e79a4351ed337685306a420addf1ae4f82b8df087438",
+    "/root/proof-factory/research/covering-c1264/workspace/artifacts/experiments/cardinality-encoding-20-leaf-20260722/manifest.json": "5d52e2f8f1831e918b23ea7752addf0e684ad267b6634ccd2a750f93bea11242"
+  },
+  "peak_child_memory_rusage": 51732,
+  "peak_child_memory_unit": "kilobytes",
+  "artifacts": {
+    "stdout.txt": "3b00b8dd5c936d5e832f6e207bc5670dc61556c21b5df22afe0a2d4a70f2499a",
+    "stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  }
+}

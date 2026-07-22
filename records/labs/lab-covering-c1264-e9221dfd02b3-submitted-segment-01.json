@@ -1,0 +1,81 @@
+{
+  "event": "submitted",
+  "schema_version": 2,
+  "id": "lab-covering-c1264-e9221dfd02b3",
+  "problem_id": "covering-c1264",
+  "name": "C(12,6,4) matched cardinality encoding benchmark",
+  "hypothesis": "On the fixed 20-leaf sample, kmtotalizer produces at least 8 replay-verified UNSAT closures and at least four more replay-verified closures than sequential under identical 60-second cold CaDiCaL caps.",
+  "expected_signal": "All non-cardinality core hashes and audits agree; every UNSAT proof replays; kmtotalizer closes at least 8/20 and at least four more leaves than sequential; projected proofs stay below 30 GB.",
+  "decision_value": "Determines whether the 50.17% auxiliary reduction materially improves certified closure on the inherited 47-node canonical link frontier before any scale-up.",
+  "efficiency_design": {
+    "naive_cost": "The unresolved link search contains 47 canonical frontier nodes, each with 462 primary block variables; an unchanged 60-second solve of both encodings over all nodes would allocate up to 94 CPU-minutes before proof replay and would not first measure whether the encoding change helps.",
+    "opportunities_considered": [
+      "retain the exact C2 wr S5 canonical root, secondary, and tertiary quotient",
+      "stratify a fixed 20/47 route-discriminator sample rather than traverse all frontier nodes",
+      "byte-hash one common non-cardinality core so only the 11 degree equalities differ",
+      "use isolated auxiliary ranges and boundary-semantic checks for each point equality",
+      "run independent cold processes to avoid solver-state and learned-clause confounding",
+      "checkpoint after every solver run and replay every UNSAT proof immediately",
+      "directly validate and canonicalize every SAT link against the full four-orbit catalog",
+      "stop when observed proof sizes project beyond 30 GB"
+    ],
+    "chosen_reductions": "Use the already proved 3,840-element link stabilizer and 47-node canonical frontier, then test 20 fixed leaves (6 secondary and 14 tertiary) with a matched two-encoding cold design. Reuse clause generation, not solver state. The kmtotalizer form uses 20,020 degree auxiliaries versus 40,180 for sequential; both preserve the exact same primary-variable core.",
+    "expected_throughput_gain": "The discriminator uses at most 40 solver-minutes, 42.6% of an all-frontier paired pass. Kmtotalizer removes 20,160 auxiliaries (50.17% of the sequential auxiliaries) while adding 853 clauses; continuation requires at least 8/20 verified closures and an advantage of at least four over sequential.",
+    "soundness_basis": "Each leaf is bound to the inherited 47-node manifest by exact indices and result hashes. A separate checker reconstructs the 165 triple clauses, 1,616 catalog blockers, canonical units, and all point literal universes; it checks auxiliary confinement and 66 boundary assignments per CNF. Every UNSAT must have a DRAT proof replayed by pinned DRAT-trim. SAT is accepted only after direct exact-link validation and full-catalog canonicalization.",
+    "remains_uncompressed": "The sample is a route discriminator, not exhaustive coverage and not an orbit-weighted closure estimate. If the acceptance rule passes, the remaining 27 frontier nodes and any still-open sample leaves require a new separately reviewed tranche; if it fails, this encoding route stops unchanged."
+  },
+  "source_urls": [
+    "https://ljcr.dmgordon.org/cover/show_cover.php?v=12&k=6&t=4"
+  ],
+  "command": [
+    "python3",
+    "scripts/run_cardinality_encoding_benchmark.py",
+    "--manifest",
+    "artifacts/experiments/cardinality-encoding-20-leaf-20260722/manifest.json",
+    "--run-id",
+    "cardinality-encoding-20-leaf-20260722",
+    "--checkpoint",
+    "artifacts/cardinality-encoding-benchmark/cardinality-encoding-20-leaf-20260722/checkpoint.json",
+    "--progress",
+    "artifacts/cardinality-encoding-benchmark/cardinality-encoding-20-leaf-20260722/progress.json",
+    "--units-per-invocation",
+    "10"
+  ],
+  "seed": 0,
+  "segment_seconds": 7200,
+  "memory_mb": 1024,
+  "max_segments": 4,
+  "segment": 1,
+  "pilot_segments": 1,
+  "review_every_segments": 1,
+  "checkpoint_path": "artifacts/cardinality-encoding-benchmark/cardinality-encoding-20-leaf-20260722/checkpoint.json",
+  "progress_path": "artifacts/cardinality-encoding-benchmark/cardinality-encoding-20-leaf-20260722/progress.json",
+  "continuation_thresholds": {
+    "min_throughput_per_second": 0.0005,
+    "max_artifact_growth_bytes": 30000000000,
+    "require_correctness_checks": true
+  },
+  "submitted_at": "2026-07-22T15:05:29.250619+00:00",
+  "workspace_git_commit": "8ad072a72e81fe3a1e761d76d98f0de89a6cb7f8",
+  "input_sha256": {
+    "artifacts/experiments/cardinality-encoding-20-leaf-20260722/manifest.json": "5d52e2f8f1831e918b23ea7752addf0e684ad267b6634ccd2a750f93bea11242",
+    "scripts/run_cardinality_encoding_benchmark.py": "84761553baa9928a69b96d22b55cb1b7302b9ab8e5178c233cc18f3ddbb65a91",
+    "checkers/audit_cardinality_encoding_cnf.py": "d2f8f577d83e27ddcb364d72e0ef2f0f3daea44ffb2e790d646c9acef53f885e",
+    "artifacts/pilot/link-orbit-catalog-4-blocking.cnf": "d68f1de5f99cf6e56480a3778dd270e8abca276d192fdf19b354375422d6cad4",
+    "toolchains/drat-trim/drat-trim": "92f0aa9575ed519d66a99b8b1b3dde6ece4618ae4c202a3a4b200265dda0aa7a"
+  },
+  "mutable_argv_paths": [
+    "artifacts/cardinality-encoding-benchmark/cardinality-encoding-20-leaf-20260722/checkpoint.json",
+    "artifacts/cardinality-encoding-benchmark/cardinality-encoding-20-leaf-20260722/progress.json"
+  ],
+  "mutable_argv_initial_sha256": {
+    "artifacts/cardinality-encoding-benchmark/cardinality-encoding-20-leaf-20260722/checkpoint.json": "absent",
+    "artifacts/cardinality-encoding-benchmark/cardinality-encoding-20-leaf-20260722/progress.json": "absent"
+  },
+  "progress_baseline": {
+    "completed_units": 0.0,
+    "reported_artifact_bytes": 0,
+    "artifact_bytes": 0
+  },
+  "spec_sha256": "9eb8e34da5ec04e3fa28e9faf28f9537873d7c82d4b8a23503f75fc69a25c322"
+}

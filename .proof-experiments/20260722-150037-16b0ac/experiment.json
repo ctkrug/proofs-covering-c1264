@@ -1,0 +1,42 @@
+{
+  "schema_version": 1,
+  "id": "20260722-150037-16b0ac",
+  "name": "cardinality-encoding-matched-preflight",
+  "hypothesis": "Sequential and kmtotalizer forms of the same rooted link leaf have an identical independently reconstructed non-cardinality core; all 11 isolated equality encodings pass b-1,b,b+1 boundary tests in two literal orders.",
+  "expected_signal": "Both audits are valid; core digests match; auxiliaries are 40180 versus 20020; kmtotalizer adds exactly 853 total clauses.",
+  "command": [
+    ".venv/bin/python",
+    "scripts/preflight_cardinality_encoding_benchmark.py",
+    "--manifest",
+    "artifacts/experiments/cardinality-encoding-20-leaf-20260722/manifest.json",
+    "--output",
+    "artifacts/controls/cardinality-encoding-preflight-20260722"
+  ],
+  "cwd": "/root/proof-factory/research/covering-c1264/workspace",
+  "seed": 0,
+  "timeout_seconds": 120,
+  "memory_limit_mb": 512,
+  "memory_limit_enforced": true,
+  "started_at": "2026-07-22T15:00:37.450682+00:00",
+  "finished_at": "2026-07-22T15:00:42.158750+00:00",
+  "duration_seconds": 4.708,
+  "returncode": 0,
+  "timed_out": false,
+  "python": "3.12.3",
+  "platform": "Linux-6.8.0-124-generic-x86_64-with-glibc2.39",
+  "git_commit": "8ad072a72e81fe3a1e761d76d98f0de89a6cb7f8",
+  "source_urls": [
+    "https://pysathq.github.io/docs/html/api/card.html"
+  ],
+  "input_artifacts": {
+    "/usr/bin/python3.12": "1643dacd9feaedc58f3cc581e4d22577dfe25c09b10282936186ccf0f2e61118",
+    "/root/proof-factory/research/covering-c1264/workspace/scripts/preflight_cardinality_encoding_benchmark.py": "46cf1e0fc2430110c9e6e79a4351ed337685306a420addf1ae4f82b8df087438",
+    "/root/proof-factory/research/covering-c1264/workspace/artifacts/experiments/cardinality-encoding-20-leaf-20260722/manifest.json": "d82cc3e5c2ae507985db1c8e2844824fd5dbdcb9f1a14bdbc5ae95f61ee3de2e"
+  },
+  "peak_child_memory_rusage": 52108,
+  "peak_child_memory_unit": "kilobytes",
+  "artifacts": {
+    "stdout.txt": "ed48b9d3b772b8a9b2454397ae0fc42ad9d45e27d1bd35ce1a767e9eeac87542",
+    "stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  }
+}

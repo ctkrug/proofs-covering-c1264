@@ -1,0 +1,29 @@
+{
+  "checked_at": "2026-07-22T14:45:44.042902+00:00",
+  "checker": {
+    "path": "toolchains/drat-trim/drat-trim",
+    "sha256": "92f0aa9575ed519d66a99b8b1b3dde6ece4618ae4c202a3a4b200265dda0aa7a"
+  },
+  "cnf": {
+    "path": "artifacts/pilot/link-orbit-third-root-2-60s/instance.cnf",
+    "sha256": "ac4d0bb2ca99f0b6af2780c5613d384cc4aac3613646148dc8d1f337248a955d"
+  },
+  "command": [
+    "toolchains/drat-trim/drat-trim",
+    "artifacts/pilot/link-orbit-third-root-2-60s/instance.cnf",
+    "artifacts/controls/link-orbit-third-root-2-replay-20260722/proof.drat"
+  ],
+  "exit_code": 0,
+  "log": {
+    "path": "artifacts/controls/link-orbit-third-root-2-replay-20260722/validation.json.log",
+    "sha256": "579ceb2291a3aad92bd71ebdd1a60686ecd0a26733f870eddb8e7a95bba6722c"
+  },
+  "proof": {
+    "path": "artifacts/controls/link-orbit-third-root-2-replay-20260722/proof.drat",
+    "sha256": "5a10ff5646caa8b77524309240ec2606513b6b7cd777822ca0201eed06383c36"
+  },
+  "schema_version": 1,
+  "seconds_cap": 120,
+  "status": "verified",
+  "verdict": "s VERIFIED"
+}

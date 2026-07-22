@@ -1,0 +1,49 @@
+{
+  "schema_version": 1,
+  "id": "20260722-145625-c29ea8",
+  "name": "rebuild-catalog4-blocker",
+  "hypothesis": "The four preserved valid link witnesses deterministically reproduce the missing 1,616-clause catalog-4 blocker with recorded SHA-256 d68f1de5f99cf6e56480a3778dd270e8abca276d192fdf19b354375422d6cad4.",
+  "expected_signal": "The output blocker has 1,616 clauses and exactly the catalog-recorded SHA-256; the independent catalog auditor accepts it.",
+  "command": [
+    ".venv/bin/python",
+    "scripts/build_link_orbit_catalog.py",
+    "artifacts/controls/c1153-at-most-20-seqcounter-fix-first-exact-degrees-300s/witness.txt",
+    "artifacts/pilot/link-orbit-second-root-2-60s/witness.txt",
+    "artifacts/pilot/link-orbit-next-root-1-300s/witness.txt",
+    "artifacts/pilot/link-orbit-root1-secondary-8-60s/witness.txt",
+    "--blocking-cnf",
+    "artifacts/pilot/link-orbit-catalog-4-blocking.cnf",
+    "--output",
+    "artifacts/controls/link-orbit-catalog-4-rebuild-20260722.json"
+  ],
+  "cwd": "/root/proof-factory/research/covering-c1264/workspace",
+  "seed": 0,
+  "timeout_seconds": 120,
+  "memory_limit_mb": 256,
+  "memory_limit_enforced": true,
+  "started_at": "2026-07-22T14:56:25.118211+00:00",
+  "finished_at": "2026-07-22T14:56:25.975795+00:00",
+  "duration_seconds": 0.858,
+  "returncode": 0,
+  "timed_out": false,
+  "python": "3.12.3",
+  "platform": "Linux-6.8.0-124-generic-x86_64-with-glibc2.39",
+  "git_commit": "8ad072a72e81fe3a1e761d76d98f0de89a6cb7f8",
+  "source_urls": [
+    "https://ljcr.dmgordon.org/cover/show_cover.php?v=12&k=6&t=4"
+  ],
+  "input_artifacts": {
+    "/usr/bin/python3.12": "1643dacd9feaedc58f3cc581e4d22577dfe25c09b10282936186ccf0f2e61118",
+    "/root/proof-factory/research/covering-c1264/workspace/scripts/build_link_orbit_catalog.py": "5f93ed3ad085e1b86572ce0062814e5d6b7fd7266a9257b0150e05ee65cfb1f9",
+    "/root/proof-factory/research/covering-c1264/workspace/artifacts/controls/c1153-at-most-20-seqcounter-fix-first-exact-degrees-300s/witness.txt": "08282192a15dcca556d53632cbeae661076ab334d8dec4aca1e2a355486aa47f",
+    "/root/proof-factory/research/covering-c1264/workspace/artifacts/pilot/link-orbit-second-root-2-60s/witness.txt": "4a93a974c7ab16a5ede382c8c8bc725ed8694a0f7dd30a1abd6c0fea4300bc1d",
+    "/root/proof-factory/research/covering-c1264/workspace/artifacts/pilot/link-orbit-next-root-1-300s/witness.txt": "52a0eeb379ab87a640685b47f9bd7202b221738796e93a00c58f86a9ed8e1882",
+    "/root/proof-factory/research/covering-c1264/workspace/artifacts/pilot/link-orbit-root1-secondary-8-60s/witness.txt": "bfa9f0c47dde379e49acd296ee973497cce13837fe363f3c03297e2ff12ed743"
+  },
+  "peak_child_memory_rusage": 21888,
+  "peak_child_memory_unit": "kilobytes",
+  "artifacts": {
+    "stdout.txt": "1ee2d38761e26e8a19bf878d221039ed79abb03488b658341f61e3921290737f",
+    "stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  }
+}
