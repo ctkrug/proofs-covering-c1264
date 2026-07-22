@@ -1,8 +1,8 @@
 {
   "schema_version": 2,
-  "id": "lab-covering-c1264-263259d8a84d",
+  "id": "lab-covering-c1264-263259d8a84d-retry01",
   "problem_id": "covering-c1264",
-  "name": "Audited five-orbit sequential harvest over 32 open nodes",
+  "name": "Registration retry: audited five-orbit sequential harvest over 32 open nodes",
   "hypothesis": "The ordered 60-second sequential sweep over exactly the 32 audited open five-orbit frontier nodes will earn at least one net-new independently replayed UNSAT closure before the first eight-node review gate.",
   "expected_signal": "Per leaf: immutable result receipt, reconstructed-CNF semantic audit, solver status, and DRAT replay for every UNSAT; segment summaries report net-new closures, proof bytes, runtime, and survivor classes.",
   "decision_value": "Continue sequential only while it earns replay-verified global closures at acceptable proof cost; redirect timeout clusters to structurally justified methods, and immediately validate any SAT witness directly.",
@@ -25,13 +25,13 @@
     "python3",
     "scripts/run_sequential_frontier_sweep.py",
     "--manifest",
-    "artifacts/experiments/sequential-open-frontier-32-v5-20260722/manifest.json",
+    "artifacts/experiments/sequential-open-frontier-32-v5-20260722-registration-retry-01/manifest.json",
     "--run-id",
-    "sequential-open-frontier-32-v5-20260722",
+    "sequential-open-frontier-32-v5-20260722-registration-retry-01",
     "--checkpoint",
-    "artifacts/sequential-frontier-sweep/sequential-open-frontier-32-v5-20260722/checkpoint.json",
+    "artifacts/sequential-frontier-sweep/sequential-open-frontier-32-v5-20260722-registration-retry-01/checkpoint.json",
     "--progress",
-    "artifacts/sequential-frontier-sweep/sequential-open-frontier-32-v5-20260722/progress.json",
+    "artifacts/sequential-frontier-sweep/sequential-open-frontier-32-v5-20260722-registration-retry-01/progress.json",
     "--units-per-invocation",
     "8"
   ],
@@ -42,18 +42,18 @@
   "segment": 1,
   "pilot_segments": 1,
   "review_every_segments": 1,
-  "checkpoint_path": "artifacts/sequential-frontier-sweep/sequential-open-frontier-32-v5-20260722/checkpoint.json",
-  "progress_path": "artifacts/sequential-frontier-sweep/sequential-open-frontier-32-v5-20260722/progress.json",
+  "checkpoint_path": "artifacts/sequential-frontier-sweep/sequential-open-frontier-32-v5-20260722-registration-retry-01/checkpoint.json",
+  "progress_path": "artifacts/sequential-frontier-sweep/sequential-open-frontier-32-v5-20260722-registration-retry-01/progress.json",
   "continuation_thresholds": {
     "min_throughput_per_second": 0.002,
     "max_artifact_growth_bytes": 10000000000,
     "require_correctness_checks": true
   },
-  "submitted_at": "2026-07-22T18:16:14.056612+00:00",
-  "workspace_git_commit": "8ac4fa372810784ab2182cbe58b0c503757c4599",
+  "submitted_at": "2026-07-22T19:01:24.909550+00:00",
+  "workspace_git_commit": "e78b60e8474bddd1c71b2fe48e2443ecdb630615",
   "input_sha256": {
-    "artifacts/experiments/sequential-open-frontier-32-v5-20260722/manifest.json": "65f3e3105d146fef368f1c36f491e11d605437876fbbbaa7cf8dfaea32c28a61",
-    "scripts/run_sequential_frontier_sweep.py": "81d8941d303d2ee94826b8ffef4e573183b48a92862c45ef90a930bc93d99dfb"
+    "artifacts/experiments/sequential-open-frontier-32-v5-20260722-registration-retry-01/manifest.json": "a294bb5d911b3666e35d1ba7988f2d81824aef1b2b12ff9d471b5c3d5ae36056",
+    "scripts/run_sequential_frontier_sweep.py": "f9dd9b4e07ae3f242187a59e7a9c33de49596439c09e3cadc8df405b1d19a3d7"
   },
-  "spec_sha256": "843a027bf6a742696f8907e56f53cef4f3d598d973561ef8aac91f3f9ae53c8a"
+  "spec_sha256": "f1178611b5f33aa0fdc645f146a8b32c1467ac8b343a270b3b8b2fec1e72ff7f"
 }

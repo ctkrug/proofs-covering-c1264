@@ -1,0 +1,60 @@
+{
+  "allowed_changes": {
+    "expected_leaf_count": {
+      "from": null,
+      "reason": "current runner preflight",
+      "to": 32
+    },
+    "input_sha256.artifacts/portfolio/frontier-manifest-v1.json": {
+      "from": "artifacts/portfolio/frontier-manifest-v1.json",
+      "reason": "retain the rejected job's audited 15/47 frontier binding despite later local ledger artifacts",
+      "sha256": "5012beb39fba59b842a588e27d413dd7b5ae533174cb2f49c5231c3c944369b2",
+      "to": "artifacts/experiments/sequential-open-frontier-32-v5-20260722-registration-retry-01/frozen-inputs/frontier-manifest-v1.json"
+    },
+    "input_sha256.scripts/build_sequential_frontier_sweep.py": {
+      "from": "aa1277e8eb4c7c73b9be05346936effa44be23509de6f512baaca61cb8ffe724",
+      "to": "99c8e183bc6b293f3f1c9573001949d84d66994c678ef1062460b92742d60349"
+    },
+    "input_sha256.scripts/run_sequential_frontier_sweep.py": {
+      "from": "81d8941d303d2ee94826b8ffef4e573183b48a92862c45ef90a930bc93d99dfb",
+      "reason": "registration-repaired checkout compatibility",
+      "to": "f9dd9b4e07ae3f242187a59e7a9c33de49596439c09e3cadc8df405b1d19a3d7"
+    },
+    "run_id": {
+      "from": "sequential-open-frontier-32-v5-20260722",
+      "to": "sequential-open-frontier-32-v5-20260722-registration-retry-01"
+    }
+  },
+  "base_commit": "8ac4fa372810784ab2182cbe58b0c503757c4599",
+  "base_manifest_path": "artifacts/experiments/sequential-open-frontier-32-v5-20260722/manifest.json",
+  "base_manifest_sha256": "65f3e3105d146fef368f1c36f491e11d605437876fbbbaa7cf8dfaea32c28a61",
+  "claim_limit": "This audit proves retry protocol identity, not a solver or mathematical result.",
+  "leaf_count": 32,
+  "ordered_leaf_list_sha256": "e92941a2707864f0b7e1f5139a25d7a9a4b5f6efa30afc9d72b1d35a5be3231c",
+  "ordered_leaf_records_sha256": "853af117864f96862ca7e76d84fc7f6b4cbbd04ada6c86a67b274ad4729ceb67",
+  "rejected_job_id": "lab-covering-c1264-263259d8a84d",
+  "retry_manifest_path": "artifacts/experiments/sequential-open-frontier-32-v5-20260722-registration-retry-01/manifest.json",
+  "retry_manifest_sha256": "a294bb5d911b3666e35d1ba7988f2d81824aef1b2b12ff9d471b5c3d5ae36056",
+  "schema_version": 1,
+  "status": "protocol_identical_immutable_input_retry",
+  "unchanged_protocol_fields": [
+    "blocking_cnf",
+    "catalog",
+    "cold_runs",
+    "drat_trim",
+    "frontier_summary",
+    "hypothesis",
+    "leaves",
+    "maximum_projected_proof_bytes",
+    "maximum_solver_cpu_seconds",
+    "method",
+    "portfolio_manifest_sha256",
+    "predecessor",
+    "preserved_certified_nodes",
+    "run_order",
+    "seconds_per_run",
+    "selection_basis",
+    "solver",
+    "success_rule"
+  ]
+}
