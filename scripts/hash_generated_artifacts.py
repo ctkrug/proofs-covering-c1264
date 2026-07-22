@@ -24,7 +24,7 @@ def main() -> None:
     payload = {
         "schema_version": 1,
         "files": sorted(rows, key=lambda row: row["path"]),
-        "policy": "Regenerable CNF/proof streams remain local and are Git-ignored; scripts, result receipts, hashes, witnesses, and validation logs are tracked.",
+        "policy": "Regenerable CNF/proof streams and raw solver/checker logs remain local and are Git-ignored; scripts, compact JSON receipts, hashes, witnesses, and validation summaries are tracked.",
     }
     temporary = OUTPUT.with_name(OUTPUT.name + ".tmp")
     temporary.write_text(json.dumps(payload, indent=2, sort_keys=True) + "\n", encoding="utf-8")

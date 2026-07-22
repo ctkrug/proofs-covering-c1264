@@ -1,0 +1,5478 @@
+{
+  "compression": "Each row stores its orbit exactly and binds the cumulative earlier-orbit prefix by count and SHA-256 rather than repeating the full prefix.",
+  "eligible_primary_variables": 435,
+  "primary_canonical_block": [
+    1,
+    2,
+    4,
+    6,
+    8
+  ],
+  "primary_root_index": 0,
+  "quaternary_root_count": 313,
+  "roots": [
+    {
+      "canonical_block": [
+        1,
+        2,
+        3,
+        6,
+        8
+      ],
+      "canonical_variable": 15,
+      "earlier_orbit_variable_count": 0,
+      "earlier_orbit_variables_sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+      "orbit_size": 1,
+      "orbit_variables": [
+        15
+      ],
+      "quaternary_index": 0
+    },
+    {
+      "canonical_block": [
+        1,
+        2,
+        3,
+        6,
+        9
+      ],
+      "canonical_variable": 16,
+      "earlier_orbit_variable_count": 1,
+      "earlier_orbit_variables_sha256": "238903180cc104ec2c5d8b3f20c5bc61b389ec0a967df8cc208cdc7cd454174f",
+      "orbit_size": 1,
+      "orbit_variables": [
+        16
+      ],
+      "quaternary_index": 1
+    },
+    {
+      "canonical_block": [
+        1,
+        2,
+        3,
+        6,
+        10
+      ],
+      "canonical_variable": 17,
+      "earlier_orbit_variable_count": 2,
+      "earlier_orbit_variables_sha256": "cdcf1a272d7e93add0e547a9553ec5eb7eb71c3cb1bb01db35c2eb1e31076c3a",
+      "orbit_size": 2,
+      "orbit_variables": [
+        17,
+        18
+      ],
+      "quaternary_index": 2
+    },
+    {
+      "canonical_block": [
+        1,
+        2,
+        3,
+        7,
+        8
+      ],
+      "canonical_variable": 19,
+      "earlier_orbit_variable_count": 4,
+      "earlier_orbit_variables_sha256": "bceaa7ee39f3731a93e7827216c925b28587e4484aa16d377b75b87976ddc6a2",
+      "orbit_size": 1,
+      "orbit_variables": [
+        19
+      ],
+      "quaternary_index": 3
+    },
+    {
+      "canonical_block": [
+        1,
+        2,
+        3,
+        7,
+        9
+      ],
+      "canonical_variable": 20,
+      "earlier_orbit_variable_count": 5,
+      "earlier_orbit_variables_sha256": "39c8c1646452321da9a046fcbe5ef0e034eadde2959438a896acaa59e01e51e8",
+      "orbit_size": 1,
+      "orbit_variables": [
+        20
+      ],
+      "quaternary_index": 4
+    },
+    {
+      "canonical_block": [
+        1,
+        2,
+        3,
+        7,
+        10
+      ],
+      "canonical_variable": 21,
+      "earlier_orbit_variable_count": 6,
+      "earlier_orbit_variables_sha256": "e5e5ee0a5944d045af632b8c0de0c75b38af5e70b22c255a31bc0c39e31355d2",
+      "orbit_size": 2,
+      "orbit_variables": [
+        21,
+        22
+      ],
+      "quaternary_index": 5
+    },
+    {
+      "canonical_block": [
+        1,
+        2,
+        3,
+        8,
+        9
+      ],
+      "canonical_variable": 23,
+      "earlier_orbit_variable_count": 8,
+      "earlier_orbit_variables_sha256": "b91cf21eb1256efb9d4fc373bc551ebe6e76ba26c10143910078b22319b0b75e",
+      "orbit_size": 1,
+      "orbit_variables": [
+        23
+      ],
+      "quaternary_index": 6
+    },
+    {
+      "canonical_block": [
+        1,
+        2,
+        3,
+        8,
+        10
+      ],
+      "canonical_variable": 24,
+      "earlier_orbit_variable_count": 9,
+      "earlier_orbit_variables_sha256": "d710226f78dde5a4f081a9e5d819b792c4ad2f5cf9619c2673bab9472b6562ee",
+      "orbit_size": 2,
+      "orbit_variables": [
+        24,
+        25
+      ],
+      "quaternary_index": 7
+    },
+    {
+      "canonical_block": [
+        1,
+        2,
+        3,
+        9,
+        10
+      ],
+      "canonical_variable": 26,
+      "earlier_orbit_variable_count": 11,
+      "earlier_orbit_variables_sha256": "1d5812f6f96f45ce816eed9b1b1c3b85a9c68604dd3ba9a92b336762c4f7831f",
+      "orbit_size": 2,
+      "orbit_variables": [
+        26,
+        27
+      ],
+      "quaternary_index": 8
+    },
+    {
+      "canonical_block": [
+        1,
+        2,
+        3,
+        10,
+        11
+      ],
+      "canonical_variable": 28,
+      "earlier_orbit_variable_count": 13,
+      "earlier_orbit_variables_sha256": "f9e33f9500afd9e1887b8d765331336ae28aa6ee8f3adec710a1890299809277",
+      "orbit_size": 1,
+      "orbit_variables": [
+        28
+      ],
+      "quaternary_index": 9
+    },
+    {
+      "canonical_block": [
+        1,
+        2,
+        4,
+        6,
+        7
+      ],
+      "canonical_variable": 35,
+      "earlier_orbit_variable_count": 14,
+      "earlier_orbit_variables_sha256": "f65f5c1f84c49cad2aec4bd8a53461b36e34f4a6733549cfa2edcc8c5e75ac81",
+      "orbit_size": 1,
+      "orbit_variables": [
+        35
+      ],
+      "quaternary_index": 10
+    },
+    {
+      "canonical_block": [
+        1,
+        2,
+        4,
+        6,
+        9
+      ],
+      "canonical_variable": 37,
+      "earlier_orbit_variable_count": 15,
+      "earlier_orbit_variables_sha256": "679ab7db136b06af492b20c9278a493f54beaf7b92e1a7a381e6ac8287c4fbae",
+      "orbit_size": 1,
+      "orbit_variables": [
+        37
+      ],
+      "quaternary_index": 11
+    },
+    {
+      "canonical_block": [
+        1,
+        2,
+        4,
+        6,
+        10
+      ],
+      "canonical_variable": 38,
+      "earlier_orbit_variable_count": 16,
+      "earlier_orbit_variables_sha256": "0c11e79fa104de50507f3cdfb4d50e3087927c9f53e8b2c8c57d66699912db06",
+      "orbit_size": 2,
+      "orbit_variables": [
+        38,
+        39
+      ],
+      "quaternary_index": 12
+    },
+    {
+      "canonical_block": [
+        1,
+        2,
+        4,
+        7,
+        8
+      ],
+      "canonical_variable": 40,
+      "earlier_orbit_variable_count": 18,
+      "earlier_orbit_variables_sha256": "ce67312c01b64d16ac242ae7a466dc2e0188169eb42547163f792b2bb08c445b",
+      "orbit_size": 1,
+      "orbit_variables": [
+        40
+      ],
+      "quaternary_index": 13
+    },
+    {
+      "canonical_block": [
+        1,
+        2,
+        4,
+        7,
+        9
+      ],
+      "canonical_variable": 41,
+      "earlier_orbit_variable_count": 19,
+      "earlier_orbit_variables_sha256": "e61fd8bae1faf4d946bd6059ed68391efe79841f67ea1dddc26de9f75ecc02a7",
+      "orbit_size": 1,
+      "orbit_variables": [
+        41
+      ],
+      "quaternary_index": 14
+    },
+    {
+      "canonical_block": [
+        1,
+        2,
+        4,
+        7,
+        10
+      ],
+      "canonical_variable": 42,
+      "earlier_orbit_variable_count": 20,
+      "earlier_orbit_variables_sha256": "bd133c756076edeabfdda6b5a8f0b24ab7cb9456f8a11268a676d451fed6ba05",
+      "orbit_size": 2,
+      "orbit_variables": [
+        42,
+        43
+      ],
+      "quaternary_index": 15
+    },
+    {
+      "canonical_block": [
+        1,
+        2,
+        4,
+        8,
+        9
+      ],
+      "canonical_variable": 44,
+      "earlier_orbit_variable_count": 22,
+      "earlier_orbit_variables_sha256": "331e8f7b094c6d0aa49a2292490ecc4de4d3da23062a03ff7033aa89cb28ad0c",
+      "orbit_size": 1,
+      "orbit_variables": [
+        44
+      ],
+      "quaternary_index": 16
+    },
+    {
+      "canonical_block": [
+        1,
+        2,
+        4,
+        8,
+        10
+      ],
+      "canonical_variable": 45,
+      "earlier_orbit_variable_count": 23,
+      "earlier_orbit_variables_sha256": "5d4ded4b9d78a0a94ab4a959dc3194332eaf330f1393ddd1d29846852047cf41",
+      "orbit_size": 2,
+      "orbit_variables": [
+        45,
+        46
+      ],
+      "quaternary_index": 17
+    },
+    {
+      "canonical_block": [
+        1,
+        2,
+        4,
+        9,
+        10
+      ],
+      "canonical_variable": 47,
+      "earlier_orbit_variable_count": 25,
+      "earlier_orbit_variables_sha256": "84333658871edb14a0a290cf0c71018dc74c099620866a5694e04b9dea98166f",
+      "orbit_size": 2,
+      "orbit_variables": [
+        47,
+        48
+      ],
+      "quaternary_index": 18
+    },
+    {
+      "canonical_block": [
+        1,
+        2,
+        4,
+        10,
+        11
+      ],
+      "canonical_variable": 49,
+      "earlier_orbit_variable_count": 27,
+      "earlier_orbit_variables_sha256": "9a57a54230b64c7e0c88ffdf924e2471595f718d443533afc31daa4218933d83",
+      "orbit_size": 1,
+      "orbit_variables": [
+        49
+      ],
+      "quaternary_index": 19
+    },
+    {
+      "canonical_block": [
+        1,
+        2,
+        5,
+        6,
+        7
+      ],
+      "canonical_variable": 50,
+      "earlier_orbit_variable_count": 28,
+      "earlier_orbit_variables_sha256": "d36c7c42b87b947b992d69fdd984e25f60fabca9fddbbf47538227ca139caa6a",
+      "orbit_size": 1,
+      "orbit_variables": [
+        50
+      ],
+      "quaternary_index": 20
+    },
+    {
+      "canonical_block": [
+        1,
+        2,
+        5,
+        6,
+        8
+      ],
+      "canonical_variable": 51,
+      "earlier_orbit_variable_count": 29,
+      "earlier_orbit_variables_sha256": "218f752a1d48fca903f1af2c4ef562a63b593e4857e0dea23556c2d0decfc870",
+      "orbit_size": 1,
+      "orbit_variables": [
+        51
+      ],
+      "quaternary_index": 21
+    },
+    {
+      "canonical_block": [
+        1,
+        2,
+        5,
+        6,
+        9
+      ],
+      "canonical_variable": 52,
+      "earlier_orbit_variable_count": 30,
+      "earlier_orbit_variables_sha256": "7918ec06ec2a4826fb77bc8b352a8007628a3eb5f4d2bbdf2f979676f9509e05",
+      "orbit_size": 1,
+      "orbit_variables": [
+        52
+      ],
+      "quaternary_index": 22
+    },
+    {
+      "canonical_block": [
+        1,
+        2,
+        5,
+        6,
+        10
+      ],
+      "canonical_variable": 53,
+      "earlier_orbit_variable_count": 31,
+      "earlier_orbit_variables_sha256": "6aed7f69dd6df1cb874f82bc65f4274f0016dbaa603ddff81a7ae0dd132b482d",
+      "orbit_size": 2,
+      "orbit_variables": [
+        53,
+        54
+      ],
+      "quaternary_index": 23
+    },
+    {
+      "canonical_block": [
+        1,
+        2,
+        5,
+        7,
+        8
+      ],
+      "canonical_variable": 55,
+      "earlier_orbit_variable_count": 33,
+      "earlier_orbit_variables_sha256": "113a0b0cea6af9bade38b6ee17b6a1a65daf08fbdd101a53fb8122e5efd06d8b",
+      "orbit_size": 1,
+      "orbit_variables": [
+        55
+      ],
+      "quaternary_index": 24
+    },
+    {
+      "canonical_block": [
+        1,
+        2,
+        5,
+        7,
+        9
+      ],
+      "canonical_variable": 56,
+      "earlier_orbit_variable_count": 34,
+      "earlier_orbit_variables_sha256": "dfa2b778982a000450ea79f7dd3f5131a310c1391387394b6cdd4a2ca427d316",
+      "orbit_size": 1,
+      "orbit_variables": [
+        56
+      ],
+      "quaternary_index": 25
+    },
+    {
+      "canonical_block": [
+        1,
+        2,
+        5,
+        7,
+        10
+      ],
+      "canonical_variable": 57,
+      "earlier_orbit_variable_count": 35,
+      "earlier_orbit_variables_sha256": "280e92d31909cd72ef92ffcc711e4947137493d20159224df7b9a3c4e3f0eb14",
+      "orbit_size": 2,
+      "orbit_variables": [
+        57,
+        58
+      ],
+      "quaternary_index": 26
+    },
+    {
+      "canonical_block": [
+        1,
+        2,
+        5,
+        8,
+        9
+      ],
+      "canonical_variable": 59,
+      "earlier_orbit_variable_count": 37,
+      "earlier_orbit_variables_sha256": "66515cb5928e8509ebc574cc7792a7e8ec6011b50906011689e3af5bd5bbdee1",
+      "orbit_size": 1,
+      "orbit_variables": [
+        59
+      ],
+      "quaternary_index": 27
+    },
+    {
+      "canonical_block": [
+        1,
+        2,
+        5,
+        8,
+        10
+      ],
+      "canonical_variable": 60,
+      "earlier_orbit_variable_count": 38,
+      "earlier_orbit_variables_sha256": "302e60cff335fe649008fbce59019cb06024ec56d623a66d8e013c9edd0e7872",
+      "orbit_size": 2,
+      "orbit_variables": [
+        60,
+        61
+      ],
+      "quaternary_index": 28
+    },
+    {
+      "canonical_block": [
+        1,
+        2,
+        5,
+        9,
+        10
+      ],
+      "canonical_variable": 62,
+      "earlier_orbit_variable_count": 40,
+      "earlier_orbit_variables_sha256": "0d6aa4aed9685da4b195d238b28a54ea5e252e518bfc92187448e7ddddb6c285",
+      "orbit_size": 2,
+      "orbit_variables": [
+        62,
+        63
+      ],
+      "quaternary_index": 29
+    },
+    {
+      "canonical_block": [
+        1,
+        2,
+        5,
+        10,
+        11
+      ],
+      "canonical_variable": 64,
+      "earlier_orbit_variable_count": 42,
+      "earlier_orbit_variables_sha256": "c63e4311ed082382d1e4f324619197d1a01b1eb43cc180b02f53edb5f3c1c802",
+      "orbit_size": 1,
+      "orbit_variables": [
+        64
+      ],
+      "quaternary_index": 30
+    },
+    {
+      "canonical_block": [
+        1,
+        2,
+        6,
+        7,
+        8
+      ],
+      "canonical_variable": 65,
+      "earlier_orbit_variable_count": 43,
+      "earlier_orbit_variables_sha256": "93d176cb4319a5bd13aa0e3d7fa914ebfad8b681d8bcf490053407174d52f455",
+      "orbit_size": 1,
+      "orbit_variables": [
+        65
+      ],
+      "quaternary_index": 31
+    },
+    {
+      "canonical_block": [
+        1,
+        2,
+        6,
+        7,
+        9
+      ],
+      "canonical_variable": 66,
+      "earlier_orbit_variable_count": 44,
+      "earlier_orbit_variables_sha256": "ccfe833f36bcaf85723999c8b6a0db5e0f5ab5362d456c5a1d0d3dd958ee8b4f",
+      "orbit_size": 1,
+      "orbit_variables": [
+        66
+      ],
+      "quaternary_index": 32
+    },
+    {
+      "canonical_block": [
+        1,
+        2,
+        6,
+        7,
+        10
+      ],
+      "canonical_variable": 67,
+      "earlier_orbit_variable_count": 45,
+      "earlier_orbit_variables_sha256": "89d74ed128b7b1b38bb0608a853ce60e6d4985687c372208bdd4a9b6726be0f4",
+      "orbit_size": 2,
+      "orbit_variables": [
+        67,
+        68
+      ],
+      "quaternary_index": 33
+    },
+    {
+      "canonical_block": [
+        1,
+        2,
+        6,
+        8,
+        9
+      ],
+      "canonical_variable": 69,
+      "earlier_orbit_variable_count": 47,
+      "earlier_orbit_variables_sha256": "e48220ecf744315d785a9e81eb5f3aa50c304690764ac60b256ab314cba2b0e1",
+      "orbit_size": 1,
+      "orbit_variables": [
+        69
+      ],
+      "quaternary_index": 34
+    },
+    {
+      "canonical_block": [
+        1,
+        2,
+        6,
+        8,
+        10
+      ],
+      "canonical_variable": 70,
+      "earlier_orbit_variable_count": 48,
+      "earlier_orbit_variables_sha256": "374392152c5fad4b02569124ff64574efea32ebf02efe437f42d3f97fdedea2a",
+      "orbit_size": 2,
+      "orbit_variables": [
+        70,
+        71
+      ],
+      "quaternary_index": 35
+    },
+    {
+      "canonical_block": [
+        1,
+        2,
+        6,
+        9,
+        10
+      ],
+      "canonical_variable": 72,
+      "earlier_orbit_variable_count": 50,
+      "earlier_orbit_variables_sha256": "f5013a59e6e90792ade57629ef4d7f007235f4773ba0a3af97c8dc2a82c37bbc",
+      "orbit_size": 2,
+      "orbit_variables": [
+        72,
+        73
+      ],
+      "quaternary_index": 36
+    },
+    {
+      "canonical_block": [
+        1,
+        2,
+        6,
+        10,
+        11
+      ],
+      "canonical_variable": 74,
+      "earlier_orbit_variable_count": 52,
+      "earlier_orbit_variables_sha256": "b5326ed15e123e01d3525a0fb1729582d45eb4a897d271a3c9274e8fc06062dc",
+      "orbit_size": 1,
+      "orbit_variables": [
+        74
+      ],
+      "quaternary_index": 37
+    },
+    {
+      "canonical_block": [
+        1,
+        2,
+        7,
+        8,
+        9
+      ],
+      "canonical_variable": 75,
+      "earlier_orbit_variable_count": 53,
+      "earlier_orbit_variables_sha256": "df6771921e1d8d3f4d6b498e6bda9be5c4555e1f99e6b1618add388f45b24c3d",
+      "orbit_size": 1,
+      "orbit_variables": [
+        75
+      ],
+      "quaternary_index": 38
+    },
+    {
+      "canonical_block": [
+        1,
+        2,
+        7,
+        8,
+        10
+      ],
+      "canonical_variable": 76,
+      "earlier_orbit_variable_count": 54,
+      "earlier_orbit_variables_sha256": "6590814c691b63102eb6117e48f35340f74867af3e19d726b721f9cc74771652",
+      "orbit_size": 2,
+      "orbit_variables": [
+        76,
+        77
+      ],
+      "quaternary_index": 39
+    },
+    {
+      "canonical_block": [
+        1,
+        2,
+        7,
+        9,
+        10
+      ],
+      "canonical_variable": 78,
+      "earlier_orbit_variable_count": 56,
+      "earlier_orbit_variables_sha256": "6640b83c4da0e2ef4327da9d472813c1823f0f51d886b45b28210937ead7d038",
+      "orbit_size": 2,
+      "orbit_variables": [
+        78,
+        79
+      ],
+      "quaternary_index": 40
+    },
+    {
+      "canonical_block": [
+        1,
+        2,
+        7,
+        10,
+        11
+      ],
+      "canonical_variable": 80,
+      "earlier_orbit_variable_count": 58,
+      "earlier_orbit_variables_sha256": "59b8f221246a4a5a0c17a1ea5a5290f899fb9c2c9ca619b9216c4e128c606fa8",
+      "orbit_size": 1,
+      "orbit_variables": [
+        80
+      ],
+      "quaternary_index": 41
+    },
+    {
+      "canonical_block": [
+        1,
+        2,
+        8,
+        9,
+        10
+      ],
+      "canonical_variable": 81,
+      "earlier_orbit_variable_count": 59,
+      "earlier_orbit_variables_sha256": "a3afae1059b26cb339404505f2478635309bdce0df69db0edc8779fb21d0dc9f",
+      "orbit_size": 2,
+      "orbit_variables": [
+        81,
+        82
+      ],
+      "quaternary_index": 42
+    },
+    {
+      "canonical_block": [
+        1,
+        2,
+        8,
+        10,
+        11
+      ],
+      "canonical_variable": 83,
+      "earlier_orbit_variable_count": 61,
+      "earlier_orbit_variables_sha256": "45b760858933d4cd45d9362f5a8a7e71ec5d7c514aa7ed5d623838855c8479ce",
+      "orbit_size": 1,
+      "orbit_variables": [
+        83
+      ],
+      "quaternary_index": 43
+    },
+    {
+      "canonical_block": [
+        1,
+        2,
+        9,
+        10,
+        11
+      ],
+      "canonical_variable": 84,
+      "earlier_orbit_variable_count": 62,
+      "earlier_orbit_variables_sha256": "f8743811cf14738833ec38639c86f1327d584a817baa09d06c5372df5bc5c485",
+      "orbit_size": 1,
+      "orbit_variables": [
+        84
+      ],
+      "quaternary_index": 44
+    },
+    {
+      "canonical_block": [
+        1,
+        3,
+        4,
+        6,
+        7
+      ],
+      "canonical_variable": 91,
+      "earlier_orbit_variable_count": 63,
+      "earlier_orbit_variables_sha256": "10fd802579d8c8e7ce26958e1f1214dfef1904974d18d5923d1e943d60118687",
+      "orbit_size": 1,
+      "orbit_variables": [
+        91
+      ],
+      "quaternary_index": 45
+    },
+    {
+      "canonical_block": [
+        1,
+        3,
+        4,
+        6,
+        8
+      ],
+      "canonical_variable": 92,
+      "earlier_orbit_variable_count": 64,
+      "earlier_orbit_variables_sha256": "713819aca2d74b81ca50c7acd5547c882c88ae4059a274af4b027d342d244de5",
+      "orbit_size": 1,
+      "orbit_variables": [
+        92
+      ],
+      "quaternary_index": 46
+    },
+    {
+      "canonical_block": [
+        1,
+        3,
+        4,
+        6,
+        9
+      ],
+      "canonical_variable": 93,
+      "earlier_orbit_variable_count": 65,
+      "earlier_orbit_variables_sha256": "7542dfe27c131b379449febeda62bfb83fd92ef650fcf5b4ce048776dc6aab02",
+      "orbit_size": 1,
+      "orbit_variables": [
+        93
+      ],
+      "quaternary_index": 47
+    },
+    {
+      "canonical_block": [
+        1,
+        3,
+        4,
+        6,
+        10
+      ],
+      "canonical_variable": 94,
+      "earlier_orbit_variable_count": 66,
+      "earlier_orbit_variables_sha256": "2d818f08c59984a2fb4162cb48f15691a6fc3d91de46d683a7f09d94852f40cb",
+      "orbit_size": 2,
+      "orbit_variables": [
+        94,
+        95
+      ],
+      "quaternary_index": 48
+    },
+    {
+      "canonical_block": [
+        1,
+        3,
+        4,
+        7,
+        8
+      ],
+      "canonical_variable": 96,
+      "earlier_orbit_variable_count": 68,
+      "earlier_orbit_variables_sha256": "db258168de568afa77586e04a2f5ea408b104cb4c20a6287007cb58396198f22",
+      "orbit_size": 1,
+      "orbit_variables": [
+        96
+      ],
+      "quaternary_index": 49
+    },
+    {
+      "canonical_block": [
+        1,
+        3,
+        4,
+        7,
+        9
+      ],
+      "canonical_variable": 97,
+      "earlier_orbit_variable_count": 69,
+      "earlier_orbit_variables_sha256": "998d49a0a6e3cd7a229cfc943f6450a06e0d927e4cf7c1f2c942db5b420fabe3",
+      "orbit_size": 1,
+      "orbit_variables": [
+        97
+      ],
+      "quaternary_index": 50
+    },
+    {
+      "canonical_block": [
+        1,
+        3,
+        4,
+        7,
+        10
+      ],
+      "canonical_variable": 98,
+      "earlier_orbit_variable_count": 70,
+      "earlier_orbit_variables_sha256": "006ad93028e6970bc36e8d63300ba4f134d359ec56818d6db441c68f54f1ca41",
+      "orbit_size": 2,
+      "orbit_variables": [
+        98,
+        99
+      ],
+      "quaternary_index": 51
+    },
+    {
+      "canonical_block": [
+        1,
+        3,
+        4,
+        8,
+        9
+      ],
+      "canonical_variable": 100,
+      "earlier_orbit_variable_count": 72,
+      "earlier_orbit_variables_sha256": "793a84bcd5e45416fbd17b99b36950e5bcbf02aee4191de75fcc7ac0cf7d8b62",
+      "orbit_size": 1,
+      "orbit_variables": [
+        100
+      ],
+      "quaternary_index": 52
+    },
+    {
+      "canonical_block": [
+        1,
+        3,
+        4,
+        8,
+        10
+      ],
+      "canonical_variable": 101,
+      "earlier_orbit_variable_count": 73,
+      "earlier_orbit_variables_sha256": "ca89503d7375377dc8e61e308fe6c05f922b1e562f0367a9e0d10aecf87e1080",
+      "orbit_size": 2,
+      "orbit_variables": [
+        101,
+        102
+      ],
+      "quaternary_index": 53
+    },
+    {
+      "canonical_block": [
+        1,
+        3,
+        4,
+        9,
+        10
+      ],
+      "canonical_variable": 103,
+      "earlier_orbit_variable_count": 75,
+      "earlier_orbit_variables_sha256": "3377278bd01d8acbcdbec0e9ae136c299829b7f260d04bd371faf4719dc9cebd",
+      "orbit_size": 2,
+      "orbit_variables": [
+        103,
+        104
+      ],
+      "quaternary_index": 54
+    },
+    {
+      "canonical_block": [
+        1,
+        3,
+        4,
+        10,
+        11
+      ],
+      "canonical_variable": 105,
+      "earlier_orbit_variable_count": 77,
+      "earlier_orbit_variables_sha256": "401c21f1b4009cd5383d05fff2ba0c6fd12dd955a9c51682c41eeb14a793d286",
+      "orbit_size": 1,
+      "orbit_variables": [
+        105
+      ],
+      "quaternary_index": 55
+    },
+    {
+      "canonical_block": [
+        1,
+        3,
+        5,
+        6,
+        7
+      ],
+      "canonical_variable": 106,
+      "earlier_orbit_variable_count": 78,
+      "earlier_orbit_variables_sha256": "a9086778cd8d350eba136f886451d2fee17033d002e991e53107d74124c2f01e",
+      "orbit_size": 1,
+      "orbit_variables": [
+        106
+      ],
+      "quaternary_index": 56
+    },
+    {
+      "canonical_block": [
+        1,
+        3,
+        5,
+        6,
+        8
+      ],
+      "canonical_variable": 107,
+      "earlier_orbit_variable_count": 79,
+      "earlier_orbit_variables_sha256": "86f7dbff7bd4daa17172396d7b6aff127ffa56abed07a6f5be6ac135616de2e0",
+      "orbit_size": 1,
+      "orbit_variables": [
+        107
+      ],
+      "quaternary_index": 57
+    },
+    {
+      "canonical_block": [
+        1,
+        3,
+        5,
+        6,
+        9
+      ],
+      "canonical_variable": 108,
+      "earlier_orbit_variable_count": 80,
+      "earlier_orbit_variables_sha256": "97feffe7e06bd767e47daccd2f30764cd7d26572835127da446abdf08cd7a2b0",
+      "orbit_size": 1,
+      "orbit_variables": [
+        108
+      ],
+      "quaternary_index": 58
+    },
+    {
+      "canonical_block": [
+        1,
+        3,
+        5,
+        6,
+        10
+      ],
+      "canonical_variable": 109,
+      "earlier_orbit_variable_count": 81,
+      "earlier_orbit_variables_sha256": "ada60faeb8758655158a204fe6e988f10eacc059b7125bb2b7015cacf2b8739d",
+      "orbit_size": 2,
+      "orbit_variables": [
+        109,
+        110
+      ],
+      "quaternary_index": 59
+    },
+    {
+      "canonical_block": [
+        1,
+        3,
+        5,
+        7,
+        8
+      ],
+      "canonical_variable": 111,
+      "earlier_orbit_variable_count": 83,
+      "earlier_orbit_variables_sha256": "15292dff52c12b7821e87351ba6915ad84b16d225f4c044f358704583745a6e3",
+      "orbit_size": 1,
+      "orbit_variables": [
+        111
+      ],
+      "quaternary_index": 60
+    },
+    {
+      "canonical_block": [
+        1,
+        3,
+        5,
+        7,
+        9
+      ],
+      "canonical_variable": 112,
+      "earlier_orbit_variable_count": 84,
+      "earlier_orbit_variables_sha256": "a5a3d255e29767e256d615dca0d35185c3cc13ac1033d610351d1c017bb1c92c",
+      "orbit_size": 1,
+      "orbit_variables": [
+        112
+      ],
+      "quaternary_index": 61
+    },
+    {
+      "canonical_block": [
+        1,
+        3,
+        5,
+        7,
+        10
+      ],
+      "canonical_variable": 113,
+      "earlier_orbit_variable_count": 85,
+      "earlier_orbit_variables_sha256": "935458d80313106ab06b28795e120a1a780de287e61699853bb81edfcd13254e",
+      "orbit_size": 2,
+      "orbit_variables": [
+        113,
+        114
+      ],
+      "quaternary_index": 62
+    },
+    {
+      "canonical_block": [
+        1,
+        3,
+        5,
+        8,
+        9
+      ],
+      "canonical_variable": 115,
+      "earlier_orbit_variable_count": 87,
+      "earlier_orbit_variables_sha256": "d60a29f15aa4778e8e89d8449ac03cbe1aa6af69742e20d97fb8b725168616e8",
+      "orbit_size": 1,
+      "orbit_variables": [
+        115
+      ],
+      "quaternary_index": 63
+    },
+    {
+      "canonical_block": [
+        1,
+        3,
+        5,
+        8,
+        10
+      ],
+      "canonical_variable": 116,
+      "earlier_orbit_variable_count": 88,
+      "earlier_orbit_variables_sha256": "fb4c01ca23e98eb93d12aabd1bb0d4bbe5b7dc83c9d7e2c964c9cb9ea631e1dd",
+      "orbit_size": 2,
+      "orbit_variables": [
+        116,
+        117
+      ],
+      "quaternary_index": 64
+    },
+    {
+      "canonical_block": [
+        1,
+        3,
+        5,
+        9,
+        10
+      ],
+      "canonical_variable": 118,
+      "earlier_orbit_variable_count": 90,
+      "earlier_orbit_variables_sha256": "1342a2225b70a6132beccf0098a2a4724fb410f0e028d25c93f3ded3335b5f45",
+      "orbit_size": 2,
+      "orbit_variables": [
+        118,
+        119
+      ],
+      "quaternary_index": 65
+    },
+    {
+      "canonical_block": [
+        1,
+        3,
+        5,
+        10,
+        11
+      ],
+      "canonical_variable": 120,
+      "earlier_orbit_variable_count": 92,
+      "earlier_orbit_variables_sha256": "eed82d6ecee71a1cedc0445ec78dff2958d91683b46faf4b467229bdbb26f4af",
+      "orbit_size": 1,
+      "orbit_variables": [
+        120
+      ],
+      "quaternary_index": 66
+    },
+    {
+      "canonical_block": [
+        1,
+        3,
+        6,
+        7,
+        8
+      ],
+      "canonical_variable": 121,
+      "earlier_orbit_variable_count": 93,
+      "earlier_orbit_variables_sha256": "28c90de2f43c8ae09cc3622adb86eac284ba6d4c8d6de5f05ac0c7a7e50f97f4",
+      "orbit_size": 1,
+      "orbit_variables": [
+        121
+      ],
+      "quaternary_index": 67
+    },
+    {
+      "canonical_block": [
+        1,
+        3,
+        6,
+        7,
+        9
+      ],
+      "canonical_variable": 122,
+      "earlier_orbit_variable_count": 94,
+      "earlier_orbit_variables_sha256": "d55e6978508b55ea655327f15e50f68fed580ed1ab957b302619974811d614cc",
+      "orbit_size": 1,
+      "orbit_variables": [
+        122
+      ],
+      "quaternary_index": 68
+    },
+    {
+      "canonical_block": [
+        1,
+        3,
+        6,
+        7,
+        10
+      ],
+      "canonical_variable": 123,
+      "earlier_orbit_variable_count": 95,
+      "earlier_orbit_variables_sha256": "24214f8a1f0c2381089881a0a2103f4a964f60de6527a66363c1855456409ddd",
+      "orbit_size": 2,
+      "orbit_variables": [
+        123,
+        124
+      ],
+      "quaternary_index": 69
+    },
+    {
+      "canonical_block": [
+        1,
+        3,
+        6,
+        8,
+        9
+      ],
+      "canonical_variable": 125,
+      "earlier_orbit_variable_count": 97,
+      "earlier_orbit_variables_sha256": "ae2fb16a5796f42f917f25974360521315f5530a67203a1998bae8f4844df23a",
+      "orbit_size": 1,
+      "orbit_variables": [
+        125
+      ],
+      "quaternary_index": 70
+    },
+    {
+      "canonical_block": [
+        1,
+        3,
+        6,
+        8,
+        10
+      ],
+      "canonical_variable": 126,
+      "earlier_orbit_variable_count": 98,
+      "earlier_orbit_variables_sha256": "4fae6b29cac285dc8c72021e53063b6336f702da4faf3fe45d61c3eed12a59ad",
+      "orbit_size": 2,
+      "orbit_variables": [
+        126,
+        127
+      ],
+      "quaternary_index": 71
+    },
+    {
+      "canonical_block": [
+        1,
+        3,
+        6,
+        9,
+        10
+      ],
+      "canonical_variable": 128,
+      "earlier_orbit_variable_count": 100,
+      "earlier_orbit_variables_sha256": "1cb639eebf8cef488fd8ec450e44f2a8ebc5032832d31d1dccb7540e60e334d1",
+      "orbit_size": 2,
+      "orbit_variables": [
+        128,
+        129
+      ],
+      "quaternary_index": 72
+    },
+    {
+      "canonical_block": [
+        1,
+        3,
+        6,
+        10,
+        11
+      ],
+      "canonical_variable": 130,
+      "earlier_orbit_variable_count": 102,
+      "earlier_orbit_variables_sha256": "49f03ad9ece7952a4a5673fa5ebc131f6ddd511afdb27124dddd0957debfea6f",
+      "orbit_size": 1,
+      "orbit_variables": [
+        130
+      ],
+      "quaternary_index": 73
+    },
+    {
+      "canonical_block": [
+        1,
+        3,
+        7,
+        8,
+        9
+      ],
+      "canonical_variable": 131,
+      "earlier_orbit_variable_count": 103,
+      "earlier_orbit_variables_sha256": "a7b76ce7f2a3e12bbd7f40e0caccda5b8c32cdf6496001b9c91a6f3182cd2055",
+      "orbit_size": 1,
+      "orbit_variables": [
+        131
+      ],
+      "quaternary_index": 74
+    },
+    {
+      "canonical_block": [
+        1,
+        3,
+        7,
+        8,
+        10
+      ],
+      "canonical_variable": 132,
+      "earlier_orbit_variable_count": 104,
+      "earlier_orbit_variables_sha256": "0833e4908e6576c4dacaaa1f8678c1d84b6aa6b9716085efa4739703ffeb4940",
+      "orbit_size": 2,
+      "orbit_variables": [
+        132,
+        133
+      ],
+      "quaternary_index": 75
+    },
+    {
+      "canonical_block": [
+        1,
+        3,
+        7,
+        9,
+        10
+      ],
+      "canonical_variable": 134,
+      "earlier_orbit_variable_count": 106,
+      "earlier_orbit_variables_sha256": "b4575bedbfcb494fcfdff59da64c1fbc53b939bcb9d59b3ab674cbdcf16de300",
+      "orbit_size": 2,
+      "orbit_variables": [
+        134,
+        135
+      ],
+      "quaternary_index": 76
+    },
+    {
+      "canonical_block": [
+        1,
+        3,
+        7,
+        10,
+        11
+      ],
+      "canonical_variable": 136,
+      "earlier_orbit_variable_count": 108,
+      "earlier_orbit_variables_sha256": "69e78e4242e87f37e8d605df8ca1524a728db0791bf9c4ab3709ab5bf0f4ebbd",
+      "orbit_size": 1,
+      "orbit_variables": [
+        136
+      ],
+      "quaternary_index": 77
+    },
+    {
+      "canonical_block": [
+        1,
+        3,
+        8,
+        9,
+        10
+      ],
+      "canonical_variable": 137,
+      "earlier_orbit_variable_count": 109,
+      "earlier_orbit_variables_sha256": "e076e79b2ef84a88c277041b34d2a49d5b63e431450c7a5ae01905ff51cdf6d5",
+      "orbit_size": 2,
+      "orbit_variables": [
+        137,
+        138
+      ],
+      "quaternary_index": 78
+    },
+    {
+      "canonical_block": [
+        1,
+        3,
+        8,
+        10,
+        11
+      ],
+      "canonical_variable": 139,
+      "earlier_orbit_variable_count": 111,
+      "earlier_orbit_variables_sha256": "b692fe3139e0dcd80ef530c6a69a24048a9f403be3740b7562a073e6d26e825e",
+      "orbit_size": 1,
+      "orbit_variables": [
+        139
+      ],
+      "quaternary_index": 79
+    },
+    {
+      "canonical_block": [
+        1,
+        3,
+        9,
+        10,
+        11
+      ],
+      "canonical_variable": 140,
+      "earlier_orbit_variable_count": 112,
+      "earlier_orbit_variables_sha256": "282abe84b241644d22690c1ce7d4323de213de84a92f73662d82abfb2db26599",
+      "orbit_size": 1,
+      "orbit_variables": [
+        140
+      ],
+      "quaternary_index": 80
+    },
+    {
+      "canonical_block": [
+        1,
+        4,
+        5,
+        6,
+        7
+      ],
+      "canonical_variable": 141,
+      "earlier_orbit_variable_count": 113,
+      "earlier_orbit_variables_sha256": "498b2e64bed57b71c7d643c37318a7c72e7d1bddc3c0657355f8bad174f07ca1",
+      "orbit_size": 1,
+      "orbit_variables": [
+        141
+      ],
+      "quaternary_index": 81
+    },
+    {
+      "canonical_block": [
+        1,
+        4,
+        5,
+        6,
+        8
+      ],
+      "canonical_variable": 142,
+      "earlier_orbit_variable_count": 114,
+      "earlier_orbit_variables_sha256": "9795cf8d61826524872b9942b9593304e5ef0484d3818d41ea939a16fa055c3e",
+      "orbit_size": 1,
+      "orbit_variables": [
+        142
+      ],
+      "quaternary_index": 82
+    },
+    {
+      "canonical_block": [
+        1,
+        4,
+        5,
+        6,
+        9
+      ],
+      "canonical_variable": 143,
+      "earlier_orbit_variable_count": 115,
+      "earlier_orbit_variables_sha256": "108ad9d88ca626040e65a0aa1f4a2a2970c2cc3f20a1e8703d01f23754854dbc",
+      "orbit_size": 1,
+      "orbit_variables": [
+        143
+      ],
+      "quaternary_index": 83
+    },
+    {
+      "canonical_block": [
+        1,
+        4,
+        5,
+        6,
+        10
+      ],
+      "canonical_variable": 144,
+      "earlier_orbit_variable_count": 116,
+      "earlier_orbit_variables_sha256": "296b276ac729b5751091f5254150ee773c0294882380e6e4c9fdcfffc13247f5",
+      "orbit_size": 2,
+      "orbit_variables": [
+        144,
+        145
+      ],
+      "quaternary_index": 84
+    },
+    {
+      "canonical_block": [
+        1,
+        4,
+        5,
+        7,
+        8
+      ],
+      "canonical_variable": 146,
+      "earlier_orbit_variable_count": 118,
+      "earlier_orbit_variables_sha256": "5a727f455cca2fc543493686f14e28c30a64383d194e5590a7eedab3a147aa53",
+      "orbit_size": 1,
+      "orbit_variables": [
+        146
+      ],
+      "quaternary_index": 85
+    },
+    {
+      "canonical_block": [
+        1,
+        4,
+        5,
+        7,
+        9
+      ],
+      "canonical_variable": 147,
+      "earlier_orbit_variable_count": 119,
+      "earlier_orbit_variables_sha256": "5264791340924be2fb0bc7e241b6c78b3b9efe3b725449acdad352353481c6cf",
+      "orbit_size": 1,
+      "orbit_variables": [
+        147
+      ],
+      "quaternary_index": 86
+    },
+    {
+      "canonical_block": [
+        1,
+        4,
+        5,
+        7,
+        10
+      ],
+      "canonical_variable": 148,
+      "earlier_orbit_variable_count": 120,
+      "earlier_orbit_variables_sha256": "c32ef5acdaff43a772397679fa8447eb7d96b7c9cee5fd9892c84048b9516ee6",
+      "orbit_size": 2,
+      "orbit_variables": [
+        148,
+        149
+      ],
+      "quaternary_index": 87
+    },
+    {
+      "canonical_block": [
+        1,
+        4,
+        5,
+        8,
+        9
+      ],
+      "canonical_variable": 150,
+      "earlier_orbit_variable_count": 122,
+      "earlier_orbit_variables_sha256": "3f2fcad4f3b334b9552726b0095a63020eb382f052f2ec6786a1c4facf6b536b",
+      "orbit_size": 1,
+      "orbit_variables": [
+        150
+      ],
+      "quaternary_index": 88
+    },
+    {
+      "canonical_block": [
+        1,
+        4,
+        5,
+        8,
+        10
+      ],
+      "canonical_variable": 151,
+      "earlier_orbit_variable_count": 123,
+      "earlier_orbit_variables_sha256": "8bcc15d6ce46046f75b423721f1662395be090f2a5332fdf531bd644848f37c9",
+      "orbit_size": 2,
+      "orbit_variables": [
+        151,
+        152
+      ],
+      "quaternary_index": 89
+    },
+    {
+      "canonical_block": [
+        1,
+        4,
+        5,
+        9,
+        10
+      ],
+      "canonical_variable": 153,
+      "earlier_orbit_variable_count": 125,
+      "earlier_orbit_variables_sha256": "2d81a8a92f43c26f5f57d6f03cb65c6cb806e6211ebe4e0d236b7d7a351a07a3",
+      "orbit_size": 2,
+      "orbit_variables": [
+        153,
+        154
+      ],
+      "quaternary_index": 90
+    },
+    {
+      "canonical_block": [
+        1,
+        4,
+        5,
+        10,
+        11
+      ],
+      "canonical_variable": 155,
+      "earlier_orbit_variable_count": 127,
+      "earlier_orbit_variables_sha256": "3dfc9e6711a4cf7968c6062f3ddef014f02fee93ef953c211a9b29fa5b772c00",
+      "orbit_size": 1,
+      "orbit_variables": [
+        155
+      ],
+      "quaternary_index": 91
+    },
+    {
+      "canonical_block": [
+        1,
+        4,
+        6,
+        7,
+        8
+      ],
+      "canonical_variable": 156,
+      "earlier_orbit_variable_count": 128,
+      "earlier_orbit_variables_sha256": "e5baf7f0dc7cc9331eb87f2254c77d01562143ce7cf02d0b516c382717ffc6ff",
+      "orbit_size": 1,
+      "orbit_variables": [
+        156
+      ],
+      "quaternary_index": 92
+    },
+    {
+      "canonical_block": [
+        1,
+        4,
+        6,
+        7,
+        9
+      ],
+      "canonical_variable": 157,
+      "earlier_orbit_variable_count": 129,
+      "earlier_orbit_variables_sha256": "77ab4b71166905f2632df8f9380b5b9c1e5b9923fa181c7c2e83f7653ac649ac",
+      "orbit_size": 1,
+      "orbit_variables": [
+        157
+      ],
+      "quaternary_index": 93
+    },
+    {
+      "canonical_block": [
+        1,
+        4,
+        6,
+        7,
+        10
+      ],
+      "canonical_variable": 158,
+      "earlier_orbit_variable_count": 130,
+      "earlier_orbit_variables_sha256": "fad929a862d86e535abbbe286fe40eb486f6315b132a0f24d94fb89f3aacd1a2",
+      "orbit_size": 2,
+      "orbit_variables": [
+        158,
+        159
+      ],
+      "quaternary_index": 94
+    },
+    {
+      "canonical_block": [
+        1,
+        4,
+        6,
+        8,
+        9
+      ],
+      "canonical_variable": 160,
+      "earlier_orbit_variable_count": 132,
+      "earlier_orbit_variables_sha256": "a7786928bb9b1ba8284db45dfbec0df2f2d4abbdaa465875fc00e856a24d12ae",
+      "orbit_size": 1,
+      "orbit_variables": [
+        160
+      ],
+      "quaternary_index": 95
+    },
+    {
+      "canonical_block": [
+        1,
+        4,
+        6,
+        8,
+        10
+      ],
+      "canonical_variable": 161,
+      "earlier_orbit_variable_count": 133,
+      "earlier_orbit_variables_sha256": "fca16b4063a6ea69679be225e1734e3b717f7af98ecc7e647d9a2131758cddff",
+      "orbit_size": 2,
+      "orbit_variables": [
+        161,
+        162
+      ],
+      "quaternary_index": 96
+    },
+    {
+      "canonical_block": [
+        1,
+        4,
+        6,
+        9,
+        10
+      ],
+      "canonical_variable": 163,
+      "earlier_orbit_variable_count": 135,
+      "earlier_orbit_variables_sha256": "ea23d5ca70468c950841a79ae7b5a571ca31284b6f320de67397f801a7ccf24e",
+      "orbit_size": 2,
+      "orbit_variables": [
+        163,
+        164
+      ],
+      "quaternary_index": 97
+    },
+    {
+      "canonical_block": [
+        1,
+        4,
+        6,
+        10,
+        11
+      ],
+      "canonical_variable": 165,
+      "earlier_orbit_variable_count": 137,
+      "earlier_orbit_variables_sha256": "b6caabf264346de3d9340bcfe64a12cf09695f7c4598dbeb4fba6314f27bad89",
+      "orbit_size": 1,
+      "orbit_variables": [
+        165
+      ],
+      "quaternary_index": 98
+    },
+    {
+      "canonical_block": [
+        1,
+        4,
+        7,
+        8,
+        9
+      ],
+      "canonical_variable": 166,
+      "earlier_orbit_variable_count": 138,
+      "earlier_orbit_variables_sha256": "6608507b9321c19c961f50246a15d962e337a9527c76dd78aff52260df27daf2",
+      "orbit_size": 1,
+      "orbit_variables": [
+        166
+      ],
+      "quaternary_index": 99
+    },
+    {
+      "canonical_block": [
+        1,
+        4,
+        7,
+        8,
+        10
+      ],
+      "canonical_variable": 167,
+      "earlier_orbit_variable_count": 139,
+      "earlier_orbit_variables_sha256": "e0422227e281a473ff8eb22cc76f6bfc71bddedda48c9ccd9f6e7d1ab537796e",
+      "orbit_size": 2,
+      "orbit_variables": [
+        167,
+        168
+      ],
+      "quaternary_index": 100
+    },
+    {
+      "canonical_block": [
+        1,
+        4,
+        7,
+        9,
+        10
+      ],
+      "canonical_variable": 169,
+      "earlier_orbit_variable_count": 141,
+      "earlier_orbit_variables_sha256": "49b209f6f79f8d0866784797ce4d80934560d99e7a0b86a5baeb602abe11aa1f",
+      "orbit_size": 2,
+      "orbit_variables": [
+        169,
+        170
+      ],
+      "quaternary_index": 101
+    },
+    {
+      "canonical_block": [
+        1,
+        4,
+        7,
+        10,
+        11
+      ],
+      "canonical_variable": 171,
+      "earlier_orbit_variable_count": 143,
+      "earlier_orbit_variables_sha256": "7c60c024531a96a64b2f9ffb2546eea11e94393de4926e320386c2efc7d700d6",
+      "orbit_size": 1,
+      "orbit_variables": [
+        171
+      ],
+      "quaternary_index": 102
+    },
+    {
+      "canonical_block": [
+        1,
+        4,
+        8,
+        9,
+        10
+      ],
+      "canonical_variable": 172,
+      "earlier_orbit_variable_count": 144,
+      "earlier_orbit_variables_sha256": "9efd4786fdd5d904b258452e0fa3e5bc625fca472622c70f6927c00b9a0a1f6e",
+      "orbit_size": 2,
+      "orbit_variables": [
+        172,
+        173
+      ],
+      "quaternary_index": 103
+    },
+    {
+      "canonical_block": [
+        1,
+        4,
+        8,
+        10,
+        11
+      ],
+      "canonical_variable": 174,
+      "earlier_orbit_variable_count": 146,
+      "earlier_orbit_variables_sha256": "d6dbd804e558a6db8d0a9722a16a81dda992f402ae949de664baccc69842f66f",
+      "orbit_size": 1,
+      "orbit_variables": [
+        174
+      ],
+      "quaternary_index": 104
+    },
+    {
+      "canonical_block": [
+        1,
+        4,
+        9,
+        10,
+        11
+      ],
+      "canonical_variable": 175,
+      "earlier_orbit_variable_count": 147,
+      "earlier_orbit_variables_sha256": "795edd74fd1745eb67a334a863dca9cd1a5f308b9cc0c6b0ce89f886f2509d48",
+      "orbit_size": 1,
+      "orbit_variables": [
+        175
+      ],
+      "quaternary_index": 105
+    },
+    {
+      "canonical_block": [
+        1,
+        5,
+        6,
+        7,
+        8
+      ],
+      "canonical_variable": 176,
+      "earlier_orbit_variable_count": 148,
+      "earlier_orbit_variables_sha256": "1ec1e932b824f67c1bf9b94ec2835eb71b68f03adfaa556382138affbb796a1b",
+      "orbit_size": 1,
+      "orbit_variables": [
+        176
+      ],
+      "quaternary_index": 106
+    },
+    {
+      "canonical_block": [
+        1,
+        5,
+        6,
+        7,
+        9
+      ],
+      "canonical_variable": 177,
+      "earlier_orbit_variable_count": 149,
+      "earlier_orbit_variables_sha256": "ced118334218f71d2e1cc1d7f6e73b14c2ea6f90e49882e42ce099a186866f7e",
+      "orbit_size": 1,
+      "orbit_variables": [
+        177
+      ],
+      "quaternary_index": 107
+    },
+    {
+      "canonical_block": [
+        1,
+        5,
+        6,
+        7,
+        10
+      ],
+      "canonical_variable": 178,
+      "earlier_orbit_variable_count": 150,
+      "earlier_orbit_variables_sha256": "66c92d5a2f7fe13160863402af13dd0ee342ae51922b8521b94b176886f6b4fb",
+      "orbit_size": 2,
+      "orbit_variables": [
+        178,
+        179
+      ],
+      "quaternary_index": 108
+    },
+    {
+      "canonical_block": [
+        1,
+        5,
+        6,
+        8,
+        9
+      ],
+      "canonical_variable": 180,
+      "earlier_orbit_variable_count": 152,
+      "earlier_orbit_variables_sha256": "bf3ab616153766ed4b111643e7654cdb901f40ac6de30b1882f9cf2b8e417665",
+      "orbit_size": 1,
+      "orbit_variables": [
+        180
+      ],
+      "quaternary_index": 109
+    },
+    {
+      "canonical_block": [
+        1,
+        5,
+        6,
+        8,
+        10
+      ],
+      "canonical_variable": 181,
+      "earlier_orbit_variable_count": 153,
+      "earlier_orbit_variables_sha256": "db5e7139802eea2384bb9bbea4eda81c79e535f18bebbede7f7773e470e4d09a",
+      "orbit_size": 2,
+      "orbit_variables": [
+        181,
+        182
+      ],
+      "quaternary_index": 110
+    },
+    {
+      "canonical_block": [
+        1,
+        5,
+        6,
+        9,
+        10
+      ],
+      "canonical_variable": 183,
+      "earlier_orbit_variable_count": 155,
+      "earlier_orbit_variables_sha256": "a6bc1b985c7648062a1aca9ec54cd8ba115ae71a277c43cbcbae048fd2f79bb8",
+      "orbit_size": 2,
+      "orbit_variables": [
+        183,
+        184
+      ],
+      "quaternary_index": 111
+    },
+    {
+      "canonical_block": [
+        1,
+        5,
+        6,
+        10,
+        11
+      ],
+      "canonical_variable": 185,
+      "earlier_orbit_variable_count": 157,
+      "earlier_orbit_variables_sha256": "d4c8bd5f19807b529c675a0422ef4a3e2d7f6ffbbddd4cdd56510de23368c789",
+      "orbit_size": 1,
+      "orbit_variables": [
+        185
+      ],
+      "quaternary_index": 112
+    },
+    {
+      "canonical_block": [
+        1,
+        5,
+        7,
+        8,
+        9
+      ],
+      "canonical_variable": 186,
+      "earlier_orbit_variable_count": 158,
+      "earlier_orbit_variables_sha256": "1f0b93caba9a494838c31310add9a39d273094811de00ba4d91a6b4f8e82bd02",
+      "orbit_size": 1,
+      "orbit_variables": [
+        186
+      ],
+      "quaternary_index": 113
+    },
+    {
+      "canonical_block": [
+        1,
+        5,
+        7,
+        8,
+        10
+      ],
+      "canonical_variable": 187,
+      "earlier_orbit_variable_count": 159,
+      "earlier_orbit_variables_sha256": "17399b6c7e8f8aee013c451b27d142b6aa4f2270a4610feaa00d963b198c3ec7",
+      "orbit_size": 2,
+      "orbit_variables": [
+        187,
+        188
+      ],
+      "quaternary_index": 114
+    },
+    {
+      "canonical_block": [
+        1,
+        5,
+        7,
+        9,
+        10
+      ],
+      "canonical_variable": 189,
+      "earlier_orbit_variable_count": 161,
+      "earlier_orbit_variables_sha256": "bd8c0d498e57d3e8a96f90d280a1f6a01890e53333d141e2fd0cc585eaf83445",
+      "orbit_size": 2,
+      "orbit_variables": [
+        189,
+        190
+      ],
+      "quaternary_index": 115
+    },
+    {
+      "canonical_block": [
+        1,
+        5,
+        7,
+        10,
+        11
+      ],
+      "canonical_variable": 191,
+      "earlier_orbit_variable_count": 163,
+      "earlier_orbit_variables_sha256": "49e457d83623442dd5b8c4f4126bc4d730ca9e768949c82c4e3134a31ac60eb3",
+      "orbit_size": 1,
+      "orbit_variables": [
+        191
+      ],
+      "quaternary_index": 116
+    },
+    {
+      "canonical_block": [
+        1,
+        5,
+        8,
+        9,
+        10
+      ],
+      "canonical_variable": 192,
+      "earlier_orbit_variable_count": 164,
+      "earlier_orbit_variables_sha256": "3dd487420f36adf4ee78aa51786745612bcb4cd84d31913c37356de5fd2bda37",
+      "orbit_size": 2,
+      "orbit_variables": [
+        192,
+        193
+      ],
+      "quaternary_index": 117
+    },
+    {
+      "canonical_block": [
+        1,
+        5,
+        8,
+        10,
+        11
+      ],
+      "canonical_variable": 194,
+      "earlier_orbit_variable_count": 166,
+      "earlier_orbit_variables_sha256": "1ef77bb564557c5479091dd97783c6b5092a952664d9aa02e1b6986c3b2b9c2f",
+      "orbit_size": 1,
+      "orbit_variables": [
+        194
+      ],
+      "quaternary_index": 118
+    },
+    {
+      "canonical_block": [
+        1,
+        5,
+        9,
+        10,
+        11
+      ],
+      "canonical_variable": 195,
+      "earlier_orbit_variable_count": 167,
+      "earlier_orbit_variables_sha256": "73fbc032e8c53fcf8adbbf50b0255fc324029dc8e0cf3f90b374188c04d23c94",
+      "orbit_size": 1,
+      "orbit_variables": [
+        195
+      ],
+      "quaternary_index": 119
+    },
+    {
+      "canonical_block": [
+        1,
+        6,
+        7,
+        8,
+        9
+      ],
+      "canonical_variable": 196,
+      "earlier_orbit_variable_count": 168,
+      "earlier_orbit_variables_sha256": "ac5417994a96c1258a9cf845eba92eee7ebb09614a624d3b01d25d5cbf8c9ce0",
+      "orbit_size": 1,
+      "orbit_variables": [
+        196
+      ],
+      "quaternary_index": 120
+    },
+    {
+      "canonical_block": [
+        1,
+        6,
+        7,
+        8,
+        10
+      ],
+      "canonical_variable": 197,
+      "earlier_orbit_variable_count": 169,
+      "earlier_orbit_variables_sha256": "2d3261dd859502670861224c94b7f91bb2caa92671bded487fcbafe456ca102e",
+      "orbit_size": 2,
+      "orbit_variables": [
+        197,
+        198
+      ],
+      "quaternary_index": 121
+    },
+    {
+      "canonical_block": [
+        1,
+        6,
+        7,
+        9,
+        10
+      ],
+      "canonical_variable": 199,
+      "earlier_orbit_variable_count": 171,
+      "earlier_orbit_variables_sha256": "68f386a23deadefa8f3601f70ad003496bc523bec99a9edb3d61c8df51695a5d",
+      "orbit_size": 2,
+      "orbit_variables": [
+        199,
+        200
+      ],
+      "quaternary_index": 122
+    },
+    {
+      "canonical_block": [
+        1,
+        6,
+        7,
+        10,
+        11
+      ],
+      "canonical_variable": 201,
+      "earlier_orbit_variable_count": 173,
+      "earlier_orbit_variables_sha256": "aba5dba8194fa8a63fc4492399754bbcd4a586dfb462b02cecf1d330d995da43",
+      "orbit_size": 1,
+      "orbit_variables": [
+        201
+      ],
+      "quaternary_index": 123
+    },
+    {
+      "canonical_block": [
+        1,
+        6,
+        8,
+        9,
+        10
+      ],
+      "canonical_variable": 202,
+      "earlier_orbit_variable_count": 174,
+      "earlier_orbit_variables_sha256": "b20371f321288a301150714e4738c63c2887e7d93491cb38b9f44179883bb0c2",
+      "orbit_size": 2,
+      "orbit_variables": [
+        202,
+        203
+      ],
+      "quaternary_index": 124
+    },
+    {
+      "canonical_block": [
+        1,
+        6,
+        8,
+        10,
+        11
+      ],
+      "canonical_variable": 204,
+      "earlier_orbit_variable_count": 176,
+      "earlier_orbit_variables_sha256": "306769e949b0cb97ffc6592b84d2d9231863780e6aea579713a54450b49f10e7",
+      "orbit_size": 1,
+      "orbit_variables": [
+        204
+      ],
+      "quaternary_index": 125
+    },
+    {
+      "canonical_block": [
+        1,
+        6,
+        9,
+        10,
+        11
+      ],
+      "canonical_variable": 205,
+      "earlier_orbit_variable_count": 177,
+      "earlier_orbit_variables_sha256": "26fcd57e4ceeed19b54632f95f79acc2b98e40650e135944f44ef18f08c53868",
+      "orbit_size": 1,
+      "orbit_variables": [
+        205
+      ],
+      "quaternary_index": 126
+    },
+    {
+      "canonical_block": [
+        1,
+        7,
+        8,
+        9,
+        10
+      ],
+      "canonical_variable": 206,
+      "earlier_orbit_variable_count": 178,
+      "earlier_orbit_variables_sha256": "c44103879b3bb9ae2c562c41a71400394ce2241cfc65c780e0e47909dcc6dfc3",
+      "orbit_size": 2,
+      "orbit_variables": [
+        206,
+        207
+      ],
+      "quaternary_index": 127
+    },
+    {
+      "canonical_block": [
+        1,
+        7,
+        8,
+        10,
+        11
+      ],
+      "canonical_variable": 208,
+      "earlier_orbit_variable_count": 180,
+      "earlier_orbit_variables_sha256": "e7f8e17c08286080eed57bf07fe4245269993284e7bf5001062e0fc7684d658d",
+      "orbit_size": 1,
+      "orbit_variables": [
+        208
+      ],
+      "quaternary_index": 128
+    },
+    {
+      "canonical_block": [
+        1,
+        7,
+        9,
+        10,
+        11
+      ],
+      "canonical_variable": 209,
+      "earlier_orbit_variable_count": 181,
+      "earlier_orbit_variables_sha256": "bc871a8f21ba3ef625c80166eee4186fb14940d5c8fa5054879ef5aba038327c",
+      "orbit_size": 1,
+      "orbit_variables": [
+        209
+      ],
+      "quaternary_index": 129
+    },
+    {
+      "canonical_block": [
+        1,
+        8,
+        9,
+        10,
+        11
+      ],
+      "canonical_variable": 210,
+      "earlier_orbit_variable_count": 182,
+      "earlier_orbit_variables_sha256": "d19eff6778887a08119de2be62aa3e2726ccdff498b4ab5fbaf43dc6d6b2af9d",
+      "orbit_size": 1,
+      "orbit_variables": [
+        210
+      ],
+      "quaternary_index": 130
+    },
+    {
+      "canonical_block": [
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "canonical_variable": 211,
+      "earlier_orbit_variable_count": 183,
+      "earlier_orbit_variables_sha256": "e0d0567e0f8a113deb0d9a164e8c8d89eca04fbae9d293147eb48d62c27ebd95",
+      "orbit_size": 1,
+      "orbit_variables": [
+        211
+      ],
+      "quaternary_index": 131
+    },
+    {
+      "canonical_block": [
+        2,
+        3,
+        4,
+        5,
+        7
+      ],
+      "canonical_variable": 212,
+      "earlier_orbit_variable_count": 184,
+      "earlier_orbit_variables_sha256": "0e5dfeaae2903e23aa39ce1f1949eb06049b9bba537b1a93d1789a19fb1704e8",
+      "orbit_size": 1,
+      "orbit_variables": [
+        212
+      ],
+      "quaternary_index": 132
+    },
+    {
+      "canonical_block": [
+        2,
+        3,
+        4,
+        5,
+        8
+      ],
+      "canonical_variable": 213,
+      "earlier_orbit_variable_count": 185,
+      "earlier_orbit_variables_sha256": "cab1c27ac987f136456ab759134d0ede3b05fb50d52ea0061c194ac434b57585",
+      "orbit_size": 1,
+      "orbit_variables": [
+        213
+      ],
+      "quaternary_index": 133
+    },
+    {
+      "canonical_block": [
+        2,
+        3,
+        4,
+        5,
+        9
+      ],
+      "canonical_variable": 214,
+      "earlier_orbit_variable_count": 186,
+      "earlier_orbit_variables_sha256": "aefb7eafd3800a57555b9d29b6c3029d5de320bdb48963c0025763b2efbdb607",
+      "orbit_size": 1,
+      "orbit_variables": [
+        214
+      ],
+      "quaternary_index": 134
+    },
+    {
+      "canonical_block": [
+        2,
+        3,
+        4,
+        5,
+        10
+      ],
+      "canonical_variable": 215,
+      "earlier_orbit_variable_count": 187,
+      "earlier_orbit_variables_sha256": "b33f49c2df6ba519fc7da10f914992d4854630eb599cf2b17bc7c1b019ff5da3",
+      "orbit_size": 2,
+      "orbit_variables": [
+        215,
+        216
+      ],
+      "quaternary_index": 135
+    },
+    {
+      "canonical_block": [
+        2,
+        3,
+        4,
+        6,
+        7
+      ],
+      "canonical_variable": 217,
+      "earlier_orbit_variable_count": 189,
+      "earlier_orbit_variables_sha256": "99a159f6249aa4b12c00afafca0032c674fc58381a6b960703eb0c42fb7618d5",
+      "orbit_size": 1,
+      "orbit_variables": [
+        217
+      ],
+      "quaternary_index": 136
+    },
+    {
+      "canonical_block": [
+        2,
+        3,
+        4,
+        6,
+        8
+      ],
+      "canonical_variable": 218,
+      "earlier_orbit_variable_count": 190,
+      "earlier_orbit_variables_sha256": "a27fcc479e2f5cee6ed047e8989978bbda84e42843815470fdedbe5a202021be",
+      "orbit_size": 1,
+      "orbit_variables": [
+        218
+      ],
+      "quaternary_index": 137
+    },
+    {
+      "canonical_block": [
+        2,
+        3,
+        4,
+        6,
+        9
+      ],
+      "canonical_variable": 219,
+      "earlier_orbit_variable_count": 191,
+      "earlier_orbit_variables_sha256": "a43fd4c5dda5c812e11ab3378c97c8b23cbc89a5fa6e18731d335d85063b9a4e",
+      "orbit_size": 1,
+      "orbit_variables": [
+        219
+      ],
+      "quaternary_index": 138
+    },
+    {
+      "canonical_block": [
+        2,
+        3,
+        4,
+        6,
+        10
+      ],
+      "canonical_variable": 220,
+      "earlier_orbit_variable_count": 192,
+      "earlier_orbit_variables_sha256": "a99b0eebf7bddfaf9063f144674327fb5ce9aaf99cf169c530ff79843f89fb56",
+      "orbit_size": 2,
+      "orbit_variables": [
+        220,
+        221
+      ],
+      "quaternary_index": 139
+    },
+    {
+      "canonical_block": [
+        2,
+        3,
+        4,
+        7,
+        8
+      ],
+      "canonical_variable": 222,
+      "earlier_orbit_variable_count": 194,
+      "earlier_orbit_variables_sha256": "17402c9c8b7dc4d64197b957513e60d92fe10042e303353f92a0e50cc376075e",
+      "orbit_size": 1,
+      "orbit_variables": [
+        222
+      ],
+      "quaternary_index": 140
+    },
+    {
+      "canonical_block": [
+        2,
+        3,
+        4,
+        7,
+        9
+      ],
+      "canonical_variable": 223,
+      "earlier_orbit_variable_count": 195,
+      "earlier_orbit_variables_sha256": "82d8768551f49be2994cda9adfd8b2ece0acd651425e6b7c666f7a65c9a0c66f",
+      "orbit_size": 1,
+      "orbit_variables": [
+        223
+      ],
+      "quaternary_index": 141
+    },
+    {
+      "canonical_block": [
+        2,
+        3,
+        4,
+        7,
+        10
+      ],
+      "canonical_variable": 224,
+      "earlier_orbit_variable_count": 196,
+      "earlier_orbit_variables_sha256": "132263ba52a25fb50c0a52c953b5df1c5942457e99c6cc25bdd5c642a4e5d7ac",
+      "orbit_size": 2,
+      "orbit_variables": [
+        224,
+        225
+      ],
+      "quaternary_index": 142
+    },
+    {
+      "canonical_block": [
+        2,
+        3,
+        4,
+        8,
+        9
+      ],
+      "canonical_variable": 226,
+      "earlier_orbit_variable_count": 198,
+      "earlier_orbit_variables_sha256": "4ac6cdff7f353a0b14789886970c4b8819c0db25f0e05a69379002e93776ec5d",
+      "orbit_size": 1,
+      "orbit_variables": [
+        226
+      ],
+      "quaternary_index": 143
+    },
+    {
+      "canonical_block": [
+        2,
+        3,
+        4,
+        8,
+        10
+      ],
+      "canonical_variable": 227,
+      "earlier_orbit_variable_count": 199,
+      "earlier_orbit_variables_sha256": "38f6a4c263e0e65d7d21750ab9cf9c935c71bfb4e2e6cc3a2c95720fb6ec4ea7",
+      "orbit_size": 2,
+      "orbit_variables": [
+        227,
+        228
+      ],
+      "quaternary_index": 144
+    },
+    {
+      "canonical_block": [
+        2,
+        3,
+        4,
+        9,
+        10
+      ],
+      "canonical_variable": 229,
+      "earlier_orbit_variable_count": 201,
+      "earlier_orbit_variables_sha256": "2de3a36fca0866ecf00934dee630fffc8e67a724c75975a0f0b826effd294a0f",
+      "orbit_size": 2,
+      "orbit_variables": [
+        229,
+        230
+      ],
+      "quaternary_index": 145
+    },
+    {
+      "canonical_block": [
+        2,
+        3,
+        4,
+        10,
+        11
+      ],
+      "canonical_variable": 231,
+      "earlier_orbit_variable_count": 203,
+      "earlier_orbit_variables_sha256": "ddfb91980ecb12e605c5e767bcb78caf5bf586e7adfc57fe768cfbe6c6ca2efc",
+      "orbit_size": 1,
+      "orbit_variables": [
+        231
+      ],
+      "quaternary_index": 146
+    },
+    {
+      "canonical_block": [
+        2,
+        3,
+        5,
+        6,
+        7
+      ],
+      "canonical_variable": 232,
+      "earlier_orbit_variable_count": 204,
+      "earlier_orbit_variables_sha256": "ec71078b0d026421a0dbece8366ea9828f889880ace0eb5b46d9107901977997",
+      "orbit_size": 1,
+      "orbit_variables": [
+        232
+      ],
+      "quaternary_index": 147
+    },
+    {
+      "canonical_block": [
+        2,
+        3,
+        5,
+        6,
+        8
+      ],
+      "canonical_variable": 233,
+      "earlier_orbit_variable_count": 205,
+      "earlier_orbit_variables_sha256": "1c6729d06826b4dc60d4e8e5f47d9fda6fbf6a4db87cd76a62c641408a4f459a",
+      "orbit_size": 1,
+      "orbit_variables": [
+        233
+      ],
+      "quaternary_index": 148
+    },
+    {
+      "canonical_block": [
+        2,
+        3,
+        5,
+        6,
+        9
+      ],
+      "canonical_variable": 234,
+      "earlier_orbit_variable_count": 206,
+      "earlier_orbit_variables_sha256": "2f9bcaaadff86dd082d81c714dafcd1ac89aba08fa97fa88c3f0b835efb2fab2",
+      "orbit_size": 1,
+      "orbit_variables": [
+        234
+      ],
+      "quaternary_index": 149
+    },
+    {
+      "canonical_block": [
+        2,
+        3,
+        5,
+        6,
+        10
+      ],
+      "canonical_variable": 235,
+      "earlier_orbit_variable_count": 207,
+      "earlier_orbit_variables_sha256": "f636c5d1f4c3d8ec41c13f50705f718c54f6e5e7c84e227b61cd9f35e69e35ae",
+      "orbit_size": 2,
+      "orbit_variables": [
+        235,
+        236
+      ],
+      "quaternary_index": 150
+    },
+    {
+      "canonical_block": [
+        2,
+        3,
+        5,
+        7,
+        8
+      ],
+      "canonical_variable": 237,
+      "earlier_orbit_variable_count": 209,
+      "earlier_orbit_variables_sha256": "88d602f1b84fbb0ae7739a50b4dae8a2816262460c31b3506320eab0fb834833",
+      "orbit_size": 1,
+      "orbit_variables": [
+        237
+      ],
+      "quaternary_index": 151
+    },
+    {
+      "canonical_block": [
+        2,
+        3,
+        5,
+        7,
+        9
+      ],
+      "canonical_variable": 238,
+      "earlier_orbit_variable_count": 210,
+      "earlier_orbit_variables_sha256": "afb21404ea43f79ceca7c07a93c44debe62ffcd44f8973a6248494640e1338e0",
+      "orbit_size": 1,
+      "orbit_variables": [
+        238
+      ],
+      "quaternary_index": 152
+    },
+    {
+      "canonical_block": [
+        2,
+        3,
+        5,
+        7,
+        10
+      ],
+      "canonical_variable": 239,
+      "earlier_orbit_variable_count": 211,
+      "earlier_orbit_variables_sha256": "af96cadf4ad9fde968d1e0328df047bc49fe0c5c1e18235b459c68b69ed8043f",
+      "orbit_size": 2,
+      "orbit_variables": [
+        239,
+        240
+      ],
+      "quaternary_index": 153
+    },
+    {
+      "canonical_block": [
+        2,
+        3,
+        5,
+        8,
+        9
+      ],
+      "canonical_variable": 241,
+      "earlier_orbit_variable_count": 213,
+      "earlier_orbit_variables_sha256": "69c88a4b7f20deab1255a1608aefbc7381effa99cd3f729100979640124d9cc4",
+      "orbit_size": 1,
+      "orbit_variables": [
+        241
+      ],
+      "quaternary_index": 154
+    },
+    {
+      "canonical_block": [
+        2,
+        3,
+        5,
+        8,
+        10
+      ],
+      "canonical_variable": 242,
+      "earlier_orbit_variable_count": 214,
+      "earlier_orbit_variables_sha256": "5cc521e1360a4b59489c1045d8c32d168cd43cd1ebcbd2e057c2f0694a039214",
+      "orbit_size": 2,
+      "orbit_variables": [
+        242,
+        243
+      ],
+      "quaternary_index": 155
+    },
+    {
+      "canonical_block": [
+        2,
+        3,
+        5,
+        9,
+        10
+      ],
+      "canonical_variable": 244,
+      "earlier_orbit_variable_count": 216,
+      "earlier_orbit_variables_sha256": "707720f32663a582c225c11c42492ef43058d688b281da4316a1b326741ef0b0",
+      "orbit_size": 2,
+      "orbit_variables": [
+        244,
+        245
+      ],
+      "quaternary_index": 156
+    },
+    {
+      "canonical_block": [
+        2,
+        3,
+        5,
+        10,
+        11
+      ],
+      "canonical_variable": 246,
+      "earlier_orbit_variable_count": 218,
+      "earlier_orbit_variables_sha256": "207fd003924d94074fb301da644bf0c96fae4edff598fc796fdd056d25ce0835",
+      "orbit_size": 1,
+      "orbit_variables": [
+        246
+      ],
+      "quaternary_index": 157
+    },
+    {
+      "canonical_block": [
+        2,
+        3,
+        6,
+        7,
+        8
+      ],
+      "canonical_variable": 247,
+      "earlier_orbit_variable_count": 219,
+      "earlier_orbit_variables_sha256": "24d9b12902161d93d58cf5f8bd445f1cd39147792ebec39be4431d1052d0288e",
+      "orbit_size": 1,
+      "orbit_variables": [
+        247
+      ],
+      "quaternary_index": 158
+    },
+    {
+      "canonical_block": [
+        2,
+        3,
+        6,
+        7,
+        9
+      ],
+      "canonical_variable": 248,
+      "earlier_orbit_variable_count": 220,
+      "earlier_orbit_variables_sha256": "3ec0e9d1570948d81676f696b1b4e61fafd8c97282aa76deeb4bd209a504aa2b",
+      "orbit_size": 1,
+      "orbit_variables": [
+        248
+      ],
+      "quaternary_index": 159
+    },
+    {
+      "canonical_block": [
+        2,
+        3,
+        6,
+        7,
+        10
+      ],
+      "canonical_variable": 249,
+      "earlier_orbit_variable_count": 221,
+      "earlier_orbit_variables_sha256": "8e75711bf4384d6313065dff07970b27d8e264837ff30c600036e4bdd0c9f16b",
+      "orbit_size": 2,
+      "orbit_variables": [
+        249,
+        250
+      ],
+      "quaternary_index": 160
+    },
+    {
+      "canonical_block": [
+        2,
+        3,
+        6,
+        8,
+        9
+      ],
+      "canonical_variable": 251,
+      "earlier_orbit_variable_count": 223,
+      "earlier_orbit_variables_sha256": "6c891c2e1288c029cbeee1ac2c744bd91dd3cf78d8dd195cf10e5e1c86d93c4b",
+      "orbit_size": 1,
+      "orbit_variables": [
+        251
+      ],
+      "quaternary_index": 161
+    },
+    {
+      "canonical_block": [
+        2,
+        3,
+        6,
+        8,
+        10
+      ],
+      "canonical_variable": 252,
+      "earlier_orbit_variable_count": 224,
+      "earlier_orbit_variables_sha256": "fb67eea7a3782f6ea762dc51368a30cca1a1d911c62dd1d28a05b1b4a3285ddf",
+      "orbit_size": 2,
+      "orbit_variables": [
+        252,
+        253
+      ],
+      "quaternary_index": 162
+    },
+    {
+      "canonical_block": [
+        2,
+        3,
+        6,
+        9,
+        10
+      ],
+      "canonical_variable": 254,
+      "earlier_orbit_variable_count": 226,
+      "earlier_orbit_variables_sha256": "80a7db7a569d8afc9f09b585ffd63ef008b2b51fb91f837a73e218d8afef833d",
+      "orbit_size": 2,
+      "orbit_variables": [
+        254,
+        255
+      ],
+      "quaternary_index": 163
+    },
+    {
+      "canonical_block": [
+        2,
+        3,
+        6,
+        10,
+        11
+      ],
+      "canonical_variable": 256,
+      "earlier_orbit_variable_count": 228,
+      "earlier_orbit_variables_sha256": "9450fd5155b02f427c9b79a5aa762717d508add558454872c3423042c8f54c1e",
+      "orbit_size": 1,
+      "orbit_variables": [
+        256
+      ],
+      "quaternary_index": 164
+    },
+    {
+      "canonical_block": [
+        2,
+        3,
+        7,
+        8,
+        9
+      ],
+      "canonical_variable": 257,
+      "earlier_orbit_variable_count": 229,
+      "earlier_orbit_variables_sha256": "1870725c4936964bb469e4427538aae9b9ada29479586a5f51d6861e1167c435",
+      "orbit_size": 1,
+      "orbit_variables": [
+        257
+      ],
+      "quaternary_index": 165
+    },
+    {
+      "canonical_block": [
+        2,
+        3,
+        7,
+        8,
+        10
+      ],
+      "canonical_variable": 258,
+      "earlier_orbit_variable_count": 230,
+      "earlier_orbit_variables_sha256": "6be062f23b978e1d509e6cc20a40c94a409dcc2633e03971cbdbebfaffdfcaa8",
+      "orbit_size": 2,
+      "orbit_variables": [
+        258,
+        259
+      ],
+      "quaternary_index": 166
+    },
+    {
+      "canonical_block": [
+        2,
+        3,
+        7,
+        9,
+        10
+      ],
+      "canonical_variable": 260,
+      "earlier_orbit_variable_count": 232,
+      "earlier_orbit_variables_sha256": "3e37673f78ac6bf7b80503143702a09a7a5ea4fadcc1aac0798040c8f573b14b",
+      "orbit_size": 2,
+      "orbit_variables": [
+        260,
+        261
+      ],
+      "quaternary_index": 167
+    },
+    {
+      "canonical_block": [
+        2,
+        3,
+        7,
+        10,
+        11
+      ],
+      "canonical_variable": 262,
+      "earlier_orbit_variable_count": 234,
+      "earlier_orbit_variables_sha256": "b3387b2672886b46e60a8666cf3cfa04ac9c1a9274e3edd21de795ac2ffe67d7",
+      "orbit_size": 1,
+      "orbit_variables": [
+        262
+      ],
+      "quaternary_index": 168
+    },
+    {
+      "canonical_block": [
+        2,
+        3,
+        8,
+        9,
+        10
+      ],
+      "canonical_variable": 263,
+      "earlier_orbit_variable_count": 235,
+      "earlier_orbit_variables_sha256": "a81b8dfdaf2ec668d78f86ccf9bf443d5a5e7fa6ca4067e696cba966bbeba84a",
+      "orbit_size": 2,
+      "orbit_variables": [
+        263,
+        264
+      ],
+      "quaternary_index": 169
+    },
+    {
+      "canonical_block": [
+        2,
+        3,
+        8,
+        10,
+        11
+      ],
+      "canonical_variable": 265,
+      "earlier_orbit_variable_count": 237,
+      "earlier_orbit_variables_sha256": "a29c5fca4978f4120d79c5ab94fe7ed10edd2f74e637c42306ce4c244bacf8ea",
+      "orbit_size": 1,
+      "orbit_variables": [
+        265
+      ],
+      "quaternary_index": 170
+    },
+    {
+      "canonical_block": [
+        2,
+        3,
+        9,
+        10,
+        11
+      ],
+      "canonical_variable": 266,
+      "earlier_orbit_variable_count": 238,
+      "earlier_orbit_variables_sha256": "26b42b562778c3b8afff7b62f13a77a6d4a9554b1491cf1e0aa9e1417973024d",
+      "orbit_size": 1,
+      "orbit_variables": [
+        266
+      ],
+      "quaternary_index": 171
+    },
+    {
+      "canonical_block": [
+        2,
+        4,
+        5,
+        6,
+        7
+      ],
+      "canonical_variable": 267,
+      "earlier_orbit_variable_count": 239,
+      "earlier_orbit_variables_sha256": "924e4bcedf9307397622eaeefbf99d4046e3533c9f060fb9898f47a037d04a28",
+      "orbit_size": 1,
+      "orbit_variables": [
+        267
+      ],
+      "quaternary_index": 172
+    },
+    {
+      "canonical_block": [
+        2,
+        4,
+        5,
+        6,
+        8
+      ],
+      "canonical_variable": 268,
+      "earlier_orbit_variable_count": 240,
+      "earlier_orbit_variables_sha256": "31f78a16360de69ce409bb6e85097cd446709e41051948e2526da028d0ac93fe",
+      "orbit_size": 1,
+      "orbit_variables": [
+        268
+      ],
+      "quaternary_index": 173
+    },
+    {
+      "canonical_block": [
+        2,
+        4,
+        5,
+        6,
+        9
+      ],
+      "canonical_variable": 269,
+      "earlier_orbit_variable_count": 241,
+      "earlier_orbit_variables_sha256": "b90cb118571aa8a7f031996b1a8e643884b90e54a0853924229edde2473629f2",
+      "orbit_size": 1,
+      "orbit_variables": [
+        269
+      ],
+      "quaternary_index": 174
+    },
+    {
+      "canonical_block": [
+        2,
+        4,
+        5,
+        6,
+        10
+      ],
+      "canonical_variable": 270,
+      "earlier_orbit_variable_count": 242,
+      "earlier_orbit_variables_sha256": "79cbca35f5bba7b595e9c531bdb77e9d3c6689ea806301e9baaecadee1c9ee20",
+      "orbit_size": 2,
+      "orbit_variables": [
+        270,
+        271
+      ],
+      "quaternary_index": 175
+    },
+    {
+      "canonical_block": [
+        2,
+        4,
+        5,
+        7,
+        8
+      ],
+      "canonical_variable": 272,
+      "earlier_orbit_variable_count": 244,
+      "earlier_orbit_variables_sha256": "2693fc6bc7eee1c24ff3dd6c62781d4b0f03867a27babc65c75e8173cf66cc79",
+      "orbit_size": 1,
+      "orbit_variables": [
+        272
+      ],
+      "quaternary_index": 176
+    },
+    {
+      "canonical_block": [
+        2,
+        4,
+        5,
+        7,
+        9
+      ],
+      "canonical_variable": 273,
+      "earlier_orbit_variable_count": 245,
+      "earlier_orbit_variables_sha256": "95c4120d2f219e7f4e49b247a54c596b8c518886c8fdf76568bdd881c6dad8ae",
+      "orbit_size": 1,
+      "orbit_variables": [
+        273
+      ],
+      "quaternary_index": 177
+    },
+    {
+      "canonical_block": [
+        2,
+        4,
+        5,
+        7,
+        10
+      ],
+      "canonical_variable": 274,
+      "earlier_orbit_variable_count": 246,
+      "earlier_orbit_variables_sha256": "7c987b2d7bfca2d47679a324b93c27e41eea9deac37b197e8f7fcaaab055eedd",
+      "orbit_size": 2,
+      "orbit_variables": [
+        274,
+        275
+      ],
+      "quaternary_index": 178
+    },
+    {
+      "canonical_block": [
+        2,
+        4,
+        5,
+        8,
+        9
+      ],
+      "canonical_variable": 276,
+      "earlier_orbit_variable_count": 248,
+      "earlier_orbit_variables_sha256": "e2afec3546c0e6a7449748847e85b88d07b97840a2e3dd7a15d6c65a66bafbe3",
+      "orbit_size": 1,
+      "orbit_variables": [
+        276
+      ],
+      "quaternary_index": 179
+    },
+    {
+      "canonical_block": [
+        2,
+        4,
+        5,
+        8,
+        10
+      ],
+      "canonical_variable": 277,
+      "earlier_orbit_variable_count": 249,
+      "earlier_orbit_variables_sha256": "e69dc20bb3e9eec1cbd9468efcc9ccbd9cb23ad8bc42032972c35fdfd378cf87",
+      "orbit_size": 2,
+      "orbit_variables": [
+        277,
+        278
+      ],
+      "quaternary_index": 180
+    },
+    {
+      "canonical_block": [
+        2,
+        4,
+        5,
+        9,
+        10
+      ],
+      "canonical_variable": 279,
+      "earlier_orbit_variable_count": 251,
+      "earlier_orbit_variables_sha256": "c05f180bf2c963ecba323134117aee8c2086d949e67a06886ebbe713dd8934e5",
+      "orbit_size": 2,
+      "orbit_variables": [
+        279,
+        280
+      ],
+      "quaternary_index": 181
+    },
+    {
+      "canonical_block": [
+        2,
+        4,
+        5,
+        10,
+        11
+      ],
+      "canonical_variable": 281,
+      "earlier_orbit_variable_count": 253,
+      "earlier_orbit_variables_sha256": "d87523993db15766cc68ecf3380a3be87114b6fe5902c34c2bb5ae2ffc8cd7d9",
+      "orbit_size": 1,
+      "orbit_variables": [
+        281
+      ],
+      "quaternary_index": 182
+    },
+    {
+      "canonical_block": [
+        2,
+        4,
+        6,
+        7,
+        8
+      ],
+      "canonical_variable": 282,
+      "earlier_orbit_variable_count": 254,
+      "earlier_orbit_variables_sha256": "c1be79fed71cca0ba5e0a69c971de97af043434809400a8ca27db5aa4bb53d97",
+      "orbit_size": 1,
+      "orbit_variables": [
+        282
+      ],
+      "quaternary_index": 183
+    },
+    {
+      "canonical_block": [
+        2,
+        4,
+        6,
+        7,
+        9
+      ],
+      "canonical_variable": 283,
+      "earlier_orbit_variable_count": 255,
+      "earlier_orbit_variables_sha256": "42f047e7fe7dea3fe169793ae5509d9c25e994c005a878126799803f511189a2",
+      "orbit_size": 1,
+      "orbit_variables": [
+        283
+      ],
+      "quaternary_index": 184
+    },
+    {
+      "canonical_block": [
+        2,
+        4,
+        6,
+        7,
+        10
+      ],
+      "canonical_variable": 284,
+      "earlier_orbit_variable_count": 256,
+      "earlier_orbit_variables_sha256": "db0cd9fd276237e893ad70b8c719941573a7fab2195fb92d4d1fc5247b61eca3",
+      "orbit_size": 2,
+      "orbit_variables": [
+        284,
+        285
+      ],
+      "quaternary_index": 185
+    },
+    {
+      "canonical_block": [
+        2,
+        4,
+        6,
+        8,
+        9
+      ],
+      "canonical_variable": 286,
+      "earlier_orbit_variable_count": 258,
+      "earlier_orbit_variables_sha256": "358e9d18ed0704d7244226288ad420a00a70417bc2399b180b12a931048a81fe",
+      "orbit_size": 1,
+      "orbit_variables": [
+        286
+      ],
+      "quaternary_index": 186
+    },
+    {
+      "canonical_block": [
+        2,
+        4,
+        6,
+        8,
+        10
+      ],
+      "canonical_variable": 287,
+      "earlier_orbit_variable_count": 259,
+      "earlier_orbit_variables_sha256": "86f7ddba79779672ee63fee1c03ee6935856b0226848548e215801e3e82a379e",
+      "orbit_size": 2,
+      "orbit_variables": [
+        287,
+        288
+      ],
+      "quaternary_index": 187
+    },
+    {
+      "canonical_block": [
+        2,
+        4,
+        6,
+        9,
+        10
+      ],
+      "canonical_variable": 289,
+      "earlier_orbit_variable_count": 261,
+      "earlier_orbit_variables_sha256": "2a7cd2cf47654a1d272ce2c5186cf6a4fab4ffd2ab3cc26e96bd069d117860d7",
+      "orbit_size": 2,
+      "orbit_variables": [
+        289,
+        290
+      ],
+      "quaternary_index": 188
+    },
+    {
+      "canonical_block": [
+        2,
+        4,
+        6,
+        10,
+        11
+      ],
+      "canonical_variable": 291,
+      "earlier_orbit_variable_count": 263,
+      "earlier_orbit_variables_sha256": "306f56ad0e33b2425664c6b74a80e5b3c733c7f5afe535ed1d1c5cf678095ed6",
+      "orbit_size": 1,
+      "orbit_variables": [
+        291
+      ],
+      "quaternary_index": 189
+    },
+    {
+      "canonical_block": [
+        2,
+        4,
+        7,
+        8,
+        9
+      ],
+      "canonical_variable": 292,
+      "earlier_orbit_variable_count": 264,
+      "earlier_orbit_variables_sha256": "5f0b1699f53d6e23e0685ba23f4b0c993c08203cfaa3d9fbcce261f38e5d6cf1",
+      "orbit_size": 1,
+      "orbit_variables": [
+        292
+      ],
+      "quaternary_index": 190
+    },
+    {
+      "canonical_block": [
+        2,
+        4,
+        7,
+        8,
+        10
+      ],
+      "canonical_variable": 293,
+      "earlier_orbit_variable_count": 265,
+      "earlier_orbit_variables_sha256": "1f65ef00623e5cf5da24b1c26ddd05caf0e6efee25a76db6d3a86337875b52e4",
+      "orbit_size": 2,
+      "orbit_variables": [
+        293,
+        294
+      ],
+      "quaternary_index": 191
+    },
+    {
+      "canonical_block": [
+        2,
+        4,
+        7,
+        9,
+        10
+      ],
+      "canonical_variable": 295,
+      "earlier_orbit_variable_count": 267,
+      "earlier_orbit_variables_sha256": "3ee31a894747879d8f7719fb3fd147a240a0813882cc33ab52d31b433232db1a",
+      "orbit_size": 2,
+      "orbit_variables": [
+        295,
+        296
+      ],
+      "quaternary_index": 192
+    },
+    {
+      "canonical_block": [
+        2,
+        4,
+        7,
+        10,
+        11
+      ],
+      "canonical_variable": 297,
+      "earlier_orbit_variable_count": 269,
+      "earlier_orbit_variables_sha256": "1c83f9ae2e3cf02e1d7ab3fc2bade8d9095c05ea3ecee937781dfbdd0c274a81",
+      "orbit_size": 1,
+      "orbit_variables": [
+        297
+      ],
+      "quaternary_index": 193
+    },
+    {
+      "canonical_block": [
+        2,
+        4,
+        8,
+        9,
+        10
+      ],
+      "canonical_variable": 298,
+      "earlier_orbit_variable_count": 270,
+      "earlier_orbit_variables_sha256": "974fd066543f3ca030c74fbccac85e2d4828c04291c89f9d66c2322ea95d8a60",
+      "orbit_size": 2,
+      "orbit_variables": [
+        298,
+        299
+      ],
+      "quaternary_index": 194
+    },
+    {
+      "canonical_block": [
+        2,
+        4,
+        8,
+        10,
+        11
+      ],
+      "canonical_variable": 300,
+      "earlier_orbit_variable_count": 272,
+      "earlier_orbit_variables_sha256": "5d3e5d366528e9cd9a837a7a4f79fed5cbf78080b0fed5bde3bcdf0bfe1ce011",
+      "orbit_size": 1,
+      "orbit_variables": [
+        300
+      ],
+      "quaternary_index": 195
+    },
+    {
+      "canonical_block": [
+        2,
+        4,
+        9,
+        10,
+        11
+      ],
+      "canonical_variable": 301,
+      "earlier_orbit_variable_count": 273,
+      "earlier_orbit_variables_sha256": "66716b2af54331d4322ec8e09ad998a6e3cb49b383fb526eaa8ed04cff60bd15",
+      "orbit_size": 1,
+      "orbit_variables": [
+        301
+      ],
+      "quaternary_index": 196
+    },
+    {
+      "canonical_block": [
+        2,
+        5,
+        6,
+        7,
+        8
+      ],
+      "canonical_variable": 302,
+      "earlier_orbit_variable_count": 274,
+      "earlier_orbit_variables_sha256": "9f8489486fce60ddf881bb941e3d9361f21079caf5d7366cdc324679b201e83f",
+      "orbit_size": 1,
+      "orbit_variables": [
+        302
+      ],
+      "quaternary_index": 197
+    },
+    {
+      "canonical_block": [
+        2,
+        5,
+        6,
+        7,
+        9
+      ],
+      "canonical_variable": 303,
+      "earlier_orbit_variable_count": 275,
+      "earlier_orbit_variables_sha256": "9e5dc27dda3ecaf5b6607eb7f24cb66850816f4b3467203a1101f6b1b121f6e2",
+      "orbit_size": 1,
+      "orbit_variables": [
+        303
+      ],
+      "quaternary_index": 198
+    },
+    {
+      "canonical_block": [
+        2,
+        5,
+        6,
+        7,
+        10
+      ],
+      "canonical_variable": 304,
+      "earlier_orbit_variable_count": 276,
+      "earlier_orbit_variables_sha256": "dfc0ff882bcd50720f23637170e14585677b4b81c72e047ad103cf3236748391",
+      "orbit_size": 2,
+      "orbit_variables": [
+        304,
+        305
+      ],
+      "quaternary_index": 199
+    },
+    {
+      "canonical_block": [
+        2,
+        5,
+        6,
+        8,
+        9
+      ],
+      "canonical_variable": 306,
+      "earlier_orbit_variable_count": 278,
+      "earlier_orbit_variables_sha256": "59dc5239684f384a4ff226aef8b6d54175c10212c4a5cd62eb39f22221c0369c",
+      "orbit_size": 1,
+      "orbit_variables": [
+        306
+      ],
+      "quaternary_index": 200
+    },
+    {
+      "canonical_block": [
+        2,
+        5,
+        6,
+        8,
+        10
+      ],
+      "canonical_variable": 307,
+      "earlier_orbit_variable_count": 279,
+      "earlier_orbit_variables_sha256": "7f2a6481b39be9311885a165e0e6a9e85c04f8135170c1a816c7031993588dee",
+      "orbit_size": 2,
+      "orbit_variables": [
+        307,
+        308
+      ],
+      "quaternary_index": 201
+    },
+    {
+      "canonical_block": [
+        2,
+        5,
+        6,
+        9,
+        10
+      ],
+      "canonical_variable": 309,
+      "earlier_orbit_variable_count": 281,
+      "earlier_orbit_variables_sha256": "9cbd9dda7ccb1095b0f3120a27f7e38787df50273a10d81300e38ad30d091b6b",
+      "orbit_size": 2,
+      "orbit_variables": [
+        309,
+        310
+      ],
+      "quaternary_index": 202
+    },
+    {
+      "canonical_block": [
+        2,
+        5,
+        6,
+        10,
+        11
+      ],
+      "canonical_variable": 311,
+      "earlier_orbit_variable_count": 283,
+      "earlier_orbit_variables_sha256": "7e32f188f880324795afd82edfbd708225ef6474a0c7bbd8ae51bfe61405cf24",
+      "orbit_size": 1,
+      "orbit_variables": [
+        311
+      ],
+      "quaternary_index": 203
+    },
+    {
+      "canonical_block": [
+        2,
+        5,
+        7,
+        8,
+        9
+      ],
+      "canonical_variable": 312,
+      "earlier_orbit_variable_count": 284,
+      "earlier_orbit_variables_sha256": "f59954fc9b5169fb4e8f9ee25a9737dfc23e8d3b777dd47366031e640ae0d8d2",
+      "orbit_size": 1,
+      "orbit_variables": [
+        312
+      ],
+      "quaternary_index": 204
+    },
+    {
+      "canonical_block": [
+        2,
+        5,
+        7,
+        8,
+        10
+      ],
+      "canonical_variable": 313,
+      "earlier_orbit_variable_count": 285,
+      "earlier_orbit_variables_sha256": "00cc5a1fa8992830613a2120e49c5a665fb3977afe83b41a24531827c24d2517",
+      "orbit_size": 2,
+      "orbit_variables": [
+        313,
+        314
+      ],
+      "quaternary_index": 205
+    },
+    {
+      "canonical_block": [
+        2,
+        5,
+        7,
+        9,
+        10
+      ],
+      "canonical_variable": 315,
+      "earlier_orbit_variable_count": 287,
+      "earlier_orbit_variables_sha256": "f45bef0633195176f599e8b10bbfd1a0a3149913e68a4421016ed05bf4cbe130",
+      "orbit_size": 2,
+      "orbit_variables": [
+        315,
+        316
+      ],
+      "quaternary_index": 206
+    },
+    {
+      "canonical_block": [
+        2,
+        5,
+        7,
+        10,
+        11
+      ],
+      "canonical_variable": 317,
+      "earlier_orbit_variable_count": 289,
+      "earlier_orbit_variables_sha256": "91d9e119ce9662b3cddbf6da3a8640ded1974f3bc295d96e77194a4ebfe48485",
+      "orbit_size": 1,
+      "orbit_variables": [
+        317
+      ],
+      "quaternary_index": 207
+    },
+    {
+      "canonical_block": [
+        2,
+        5,
+        8,
+        9,
+        10
+      ],
+      "canonical_variable": 318,
+      "earlier_orbit_variable_count": 290,
+      "earlier_orbit_variables_sha256": "13a650cdfa86c36d579606f2670b5f50a0ffb8b80270dc5392c26f83e408a41a",
+      "orbit_size": 2,
+      "orbit_variables": [
+        318,
+        319
+      ],
+      "quaternary_index": 208
+    },
+    {
+      "canonical_block": [
+        2,
+        5,
+        8,
+        10,
+        11
+      ],
+      "canonical_variable": 320,
+      "earlier_orbit_variable_count": 292,
+      "earlier_orbit_variables_sha256": "2ab70a859e3f901899d52a0a6b39cf97bfca6b463c26ed4343c89c9a5f483bb2",
+      "orbit_size": 1,
+      "orbit_variables": [
+        320
+      ],
+      "quaternary_index": 209
+    },
+    {
+      "canonical_block": [
+        2,
+        5,
+        9,
+        10,
+        11
+      ],
+      "canonical_variable": 321,
+      "earlier_orbit_variable_count": 293,
+      "earlier_orbit_variables_sha256": "74295deb8d262dda68ed2aead52b2ffe21123310693604d28d11d4e4e391615f",
+      "orbit_size": 1,
+      "orbit_variables": [
+        321
+      ],
+      "quaternary_index": 210
+    },
+    {
+      "canonical_block": [
+        2,
+        6,
+        7,
+        8,
+        9
+      ],
+      "canonical_variable": 322,
+      "earlier_orbit_variable_count": 294,
+      "earlier_orbit_variables_sha256": "50d7470de05c67dd425ece3119891a633f39e33a5a455eb502b8c991811c2eab",
+      "orbit_size": 1,
+      "orbit_variables": [
+        322
+      ],
+      "quaternary_index": 211
+    },
+    {
+      "canonical_block": [
+        2,
+        6,
+        7,
+        8,
+        10
+      ],
+      "canonical_variable": 323,
+      "earlier_orbit_variable_count": 295,
+      "earlier_orbit_variables_sha256": "7054d20e9a16d741d5f4936e076807f4ac0f197dc436136a30a79cd37956631f",
+      "orbit_size": 2,
+      "orbit_variables": [
+        323,
+        324
+      ],
+      "quaternary_index": 212
+    },
+    {
+      "canonical_block": [
+        2,
+        6,
+        7,
+        9,
+        10
+      ],
+      "canonical_variable": 325,
+      "earlier_orbit_variable_count": 297,
+      "earlier_orbit_variables_sha256": "19dc74141ba3571ebb718e8ee6ead91b5f37eff197c3be8caf4db2292e94dafa",
+      "orbit_size": 2,
+      "orbit_variables": [
+        325,
+        326
+      ],
+      "quaternary_index": 213
+    },
+    {
+      "canonical_block": [
+        2,
+        6,
+        7,
+        10,
+        11
+      ],
+      "canonical_variable": 327,
+      "earlier_orbit_variable_count": 299,
+      "earlier_orbit_variables_sha256": "a6ee8b1b76651cbafe719d85c852c475ff3cc3941c23adc0a616f0ade94918a9",
+      "orbit_size": 1,
+      "orbit_variables": [
+        327
+      ],
+      "quaternary_index": 214
+    },
+    {
+      "canonical_block": [
+        2,
+        6,
+        8,
+        9,
+        10
+      ],
+      "canonical_variable": 328,
+      "earlier_orbit_variable_count": 300,
+      "earlier_orbit_variables_sha256": "0424d95d2203e95556d18ae5ff79969399c7898f2475099ad9f53fe7e24c2d07",
+      "orbit_size": 2,
+      "orbit_variables": [
+        328,
+        329
+      ],
+      "quaternary_index": 215
+    },
+    {
+      "canonical_block": [
+        2,
+        6,
+        8,
+        10,
+        11
+      ],
+      "canonical_variable": 330,
+      "earlier_orbit_variable_count": 302,
+      "earlier_orbit_variables_sha256": "30a57c496afac7d2cee54aaecc70cd6ea0df3b0570f45b9cbe75cf93b6bd7670",
+      "orbit_size": 1,
+      "orbit_variables": [
+        330
+      ],
+      "quaternary_index": 216
+    },
+    {
+      "canonical_block": [
+        2,
+        6,
+        9,
+        10,
+        11
+      ],
+      "canonical_variable": 331,
+      "earlier_orbit_variable_count": 303,
+      "earlier_orbit_variables_sha256": "af467c9210db78dedb7dfb865e1d87d56d2882ba45e753dccc09efa5694dfc61",
+      "orbit_size": 1,
+      "orbit_variables": [
+        331
+      ],
+      "quaternary_index": 217
+    },
+    {
+      "canonical_block": [
+        2,
+        7,
+        8,
+        9,
+        10
+      ],
+      "canonical_variable": 332,
+      "earlier_orbit_variable_count": 304,
+      "earlier_orbit_variables_sha256": "0fdbe40776b578aeffe239ebe222f6d0f2326c154705c00f214ab858ceedf074",
+      "orbit_size": 2,
+      "orbit_variables": [
+        332,
+        333
+      ],
+      "quaternary_index": 218
+    },
+    {
+      "canonical_block": [
+        2,
+        7,
+        8,
+        10,
+        11
+      ],
+      "canonical_variable": 334,
+      "earlier_orbit_variable_count": 306,
+      "earlier_orbit_variables_sha256": "3315e6432103d9d174282f0dc0870cc1bebad5f2c8f165a562820beb24caf230",
+      "orbit_size": 1,
+      "orbit_variables": [
+        334
+      ],
+      "quaternary_index": 219
+    },
+    {
+      "canonical_block": [
+        2,
+        7,
+        9,
+        10,
+        11
+      ],
+      "canonical_variable": 335,
+      "earlier_orbit_variable_count": 307,
+      "earlier_orbit_variables_sha256": "e87415b5630f1c94d2ab64f4412c878f6b20e3100f47a0f36e7a494222a3a4bc",
+      "orbit_size": 1,
+      "orbit_variables": [
+        335
+      ],
+      "quaternary_index": 220
+    },
+    {
+      "canonical_block": [
+        2,
+        8,
+        9,
+        10,
+        11
+      ],
+      "canonical_variable": 336,
+      "earlier_orbit_variable_count": 308,
+      "earlier_orbit_variables_sha256": "2faab39d0c6ce4342ad75f0d84e8b6c233b2f7d9da90caa0aba96824ffd783c9",
+      "orbit_size": 1,
+      "orbit_variables": [
+        336
+      ],
+      "quaternary_index": 221
+    },
+    {
+      "canonical_block": [
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "canonical_variable": 337,
+      "earlier_orbit_variable_count": 309,
+      "earlier_orbit_variables_sha256": "b2a97c23ca947e02ffaab75b9c68aed3034127ed005578f9e6dd8c0a20569e52",
+      "orbit_size": 1,
+      "orbit_variables": [
+        337
+      ],
+      "quaternary_index": 222
+    },
+    {
+      "canonical_block": [
+        3,
+        4,
+        5,
+        6,
+        8
+      ],
+      "canonical_variable": 338,
+      "earlier_orbit_variable_count": 310,
+      "earlier_orbit_variables_sha256": "98274b7a50e95f6b4b6574e2000dce5b95db685b6cb38a540a6689fe5f117077",
+      "orbit_size": 1,
+      "orbit_variables": [
+        338
+      ],
+      "quaternary_index": 223
+    },
+    {
+      "canonical_block": [
+        3,
+        4,
+        5,
+        6,
+        9
+      ],
+      "canonical_variable": 339,
+      "earlier_orbit_variable_count": 311,
+      "earlier_orbit_variables_sha256": "e3020f1677f74955d30d812375af704d1e55d28246e544fd81a1b3206366db26",
+      "orbit_size": 1,
+      "orbit_variables": [
+        339
+      ],
+      "quaternary_index": 224
+    },
+    {
+      "canonical_block": [
+        3,
+        4,
+        5,
+        6,
+        10
+      ],
+      "canonical_variable": 340,
+      "earlier_orbit_variable_count": 312,
+      "earlier_orbit_variables_sha256": "ceefe8116d9a8be8c52542b1994c0c085141948bbc2f9e2db239ef6e3f04550c",
+      "orbit_size": 2,
+      "orbit_variables": [
+        340,
+        341
+      ],
+      "quaternary_index": 225
+    },
+    {
+      "canonical_block": [
+        3,
+        4,
+        5,
+        7,
+        8
+      ],
+      "canonical_variable": 342,
+      "earlier_orbit_variable_count": 314,
+      "earlier_orbit_variables_sha256": "7d5562c3626614efed20369f21915108392212f24b6c0343030cbcca0ea8f523",
+      "orbit_size": 1,
+      "orbit_variables": [
+        342
+      ],
+      "quaternary_index": 226
+    },
+    {
+      "canonical_block": [
+        3,
+        4,
+        5,
+        7,
+        9
+      ],
+      "canonical_variable": 343,
+      "earlier_orbit_variable_count": 315,
+      "earlier_orbit_variables_sha256": "6d8871d41d238813303cee0ee259b111019665b2d76330787532e49283b3e083",
+      "orbit_size": 1,
+      "orbit_variables": [
+        343
+      ],
+      "quaternary_index": 227
+    },
+    {
+      "canonical_block": [
+        3,
+        4,
+        5,
+        7,
+        10
+      ],
+      "canonical_variable": 344,
+      "earlier_orbit_variable_count": 316,
+      "earlier_orbit_variables_sha256": "78cbf0e4d7f5194b353a08c1e58af1eb16ab24c2cb816e15871f097c779c8f74",
+      "orbit_size": 2,
+      "orbit_variables": [
+        344,
+        345
+      ],
+      "quaternary_index": 228
+    },
+    {
+      "canonical_block": [
+        3,
+        4,
+        5,
+        8,
+        9
+      ],
+      "canonical_variable": 346,
+      "earlier_orbit_variable_count": 318,
+      "earlier_orbit_variables_sha256": "aa576aea54485d8d8bf7d0bc8c2cf8d0a84f13f7666ee77300edb43b1d6c6ef3",
+      "orbit_size": 1,
+      "orbit_variables": [
+        346
+      ],
+      "quaternary_index": 229
+    },
+    {
+      "canonical_block": [
+        3,
+        4,
+        5,
+        8,
+        10
+      ],
+      "canonical_variable": 347,
+      "earlier_orbit_variable_count": 319,
+      "earlier_orbit_variables_sha256": "8437d5010b4ef9f2d66aedfc79c9389d9c139207e667775793f84e60d1a2fea1",
+      "orbit_size": 2,
+      "orbit_variables": [
+        347,
+        348
+      ],
+      "quaternary_index": 230
+    },
+    {
+      "canonical_block": [
+        3,
+        4,
+        5,
+        9,
+        10
+      ],
+      "canonical_variable": 349,
+      "earlier_orbit_variable_count": 321,
+      "earlier_orbit_variables_sha256": "e69dd4e303bb3731f8be70811ddec062c43365b4f6fbd125608b5a7281de6172",
+      "orbit_size": 2,
+      "orbit_variables": [
+        349,
+        350
+      ],
+      "quaternary_index": 231
+    },
+    {
+      "canonical_block": [
+        3,
+        4,
+        5,
+        10,
+        11
+      ],
+      "canonical_variable": 351,
+      "earlier_orbit_variable_count": 323,
+      "earlier_orbit_variables_sha256": "66ce7e24134b2c62915e2034ea664ab99a8a6e23ae323f7d6d4a93ebc20b85e1",
+      "orbit_size": 1,
+      "orbit_variables": [
+        351
+      ],
+      "quaternary_index": 232
+    },
+    {
+      "canonical_block": [
+        3,
+        4,
+        6,
+        7,
+        8
+      ],
+      "canonical_variable": 352,
+      "earlier_orbit_variable_count": 324,
+      "earlier_orbit_variables_sha256": "1ec861bc7050eadf399277ab3095b107489fc5b3af2dd2c2c43377052fcb67b0",
+      "orbit_size": 1,
+      "orbit_variables": [
+        352
+      ],
+      "quaternary_index": 233
+    },
+    {
+      "canonical_block": [
+        3,
+        4,
+        6,
+        7,
+        9
+      ],
+      "canonical_variable": 353,
+      "earlier_orbit_variable_count": 325,
+      "earlier_orbit_variables_sha256": "5b8acece10021999788687d878fc9d64a92cceff89022ab0b8a625a785739d0d",
+      "orbit_size": 1,
+      "orbit_variables": [
+        353
+      ],
+      "quaternary_index": 234
+    },
+    {
+      "canonical_block": [
+        3,
+        4,
+        6,
+        7,
+        10
+      ],
+      "canonical_variable": 354,
+      "earlier_orbit_variable_count": 326,
+      "earlier_orbit_variables_sha256": "3bb5958614f0938795c1e2dd06484cda9b6b1f6701ae1c0ccf390413917a8e93",
+      "orbit_size": 2,
+      "orbit_variables": [
+        354,
+        355
+      ],
+      "quaternary_index": 235
+    },
+    {
+      "canonical_block": [
+        3,
+        4,
+        6,
+        8,
+        9
+      ],
+      "canonical_variable": 356,
+      "earlier_orbit_variable_count": 328,
+      "earlier_orbit_variables_sha256": "c647bb3525227c02e2bfcc52cfa69675dc506cfbea48dc9ee70b35858ae62b2e",
+      "orbit_size": 1,
+      "orbit_variables": [
+        356
+      ],
+      "quaternary_index": 236
+    },
+    {
+      "canonical_block": [
+        3,
+        4,
+        6,
+        8,
+        10
+      ],
+      "canonical_variable": 357,
+      "earlier_orbit_variable_count": 329,
+      "earlier_orbit_variables_sha256": "6b353c0bffa992a27d274fa5c1670f54602c194593f6bd3a88c422cf922d86ac",
+      "orbit_size": 2,
+      "orbit_variables": [
+        357,
+        358
+      ],
+      "quaternary_index": 237
+    },
+    {
+      "canonical_block": [
+        3,
+        4,
+        6,
+        9,
+        10
+      ],
+      "canonical_variable": 359,
+      "earlier_orbit_variable_count": 331,
+      "earlier_orbit_variables_sha256": "82d04a6047e4fc1292bd267de1ed1b88b689a0f0c92119547f68f43b9189c4df",
+      "orbit_size": 2,
+      "orbit_variables": [
+        359,
+        360
+      ],
+      "quaternary_index": 238
+    },
+    {
+      "canonical_block": [
+        3,
+        4,
+        6,
+        10,
+        11
+      ],
+      "canonical_variable": 361,
+      "earlier_orbit_variable_count": 333,
+      "earlier_orbit_variables_sha256": "240f32ca75ac8902bc9b40520d1cb334564f7f53a9812674f148aacb16876390",
+      "orbit_size": 1,
+      "orbit_variables": [
+        361
+      ],
+      "quaternary_index": 239
+    },
+    {
+      "canonical_block": [
+        3,
+        4,
+        7,
+        8,
+        9
+      ],
+      "canonical_variable": 362,
+      "earlier_orbit_variable_count": 334,
+      "earlier_orbit_variables_sha256": "983b6a1f9214daf0da7a34670b9fd76adf56e3a49653551eb8ad06d5421f9cb0",
+      "orbit_size": 1,
+      "orbit_variables": [
+        362
+      ],
+      "quaternary_index": 240
+    },
+    {
+      "canonical_block": [
+        3,
+        4,
+        7,
+        8,
+        10
+      ],
+      "canonical_variable": 363,
+      "earlier_orbit_variable_count": 335,
+      "earlier_orbit_variables_sha256": "52b95116d5039f30c76de1bae96a24cf49457cde2cf1108003bab647310426d5",
+      "orbit_size": 2,
+      "orbit_variables": [
+        363,
+        364
+      ],
+      "quaternary_index": 241
+    },
+    {
+      "canonical_block": [
+        3,
+        4,
+        7,
+        9,
+        10
+      ],
+      "canonical_variable": 365,
+      "earlier_orbit_variable_count": 337,
+      "earlier_orbit_variables_sha256": "722ea5df1b5fa3395c358c9ab3faf3ec23e518ea537f9fb66379f2fd40613014",
+      "orbit_size": 2,
+      "orbit_variables": [
+        365,
+        366
+      ],
+      "quaternary_index": 242
+    },
+    {
+      "canonical_block": [
+        3,
+        4,
+        7,
+        10,
+        11
+      ],
+      "canonical_variable": 367,
+      "earlier_orbit_variable_count": 339,
+      "earlier_orbit_variables_sha256": "652cf91c322a3946497b4895554b92010c7bd3d7ac488df8aa18de8d1bce7003",
+      "orbit_size": 1,
+      "orbit_variables": [
+        367
+      ],
+      "quaternary_index": 243
+    },
+    {
+      "canonical_block": [
+        3,
+        4,
+        8,
+        9,
+        10
+      ],
+      "canonical_variable": 368,
+      "earlier_orbit_variable_count": 340,
+      "earlier_orbit_variables_sha256": "3658af120dbe6ba825cca0b252bdb693993e99f3501d53a50b55c2cd9658f7b3",
+      "orbit_size": 2,
+      "orbit_variables": [
+        368,
+        369
+      ],
+      "quaternary_index": 244
+    },
+    {
+      "canonical_block": [
+        3,
+        4,
+        8,
+        10,
+        11
+      ],
+      "canonical_variable": 370,
+      "earlier_orbit_variable_count": 342,
+      "earlier_orbit_variables_sha256": "df063f8efd5a4affaeb155bbfc22f6e37cae0170016aa33e0108ff9b5fb24fbe",
+      "orbit_size": 1,
+      "orbit_variables": [
+        370
+      ],
+      "quaternary_index": 245
+    },
+    {
+      "canonical_block": [
+        3,
+        4,
+        9,
+        10,
+        11
+      ],
+      "canonical_variable": 371,
+      "earlier_orbit_variable_count": 343,
+      "earlier_orbit_variables_sha256": "01a6e5290f02c70ee2832bdef72ae12fd6ccab9a19763c47ca5eac76aec51624",
+      "orbit_size": 1,
+      "orbit_variables": [
+        371
+      ],
+      "quaternary_index": 246
+    },
+    {
+      "canonical_block": [
+        3,
+        5,
+        6,
+        7,
+        8
+      ],
+      "canonical_variable": 372,
+      "earlier_orbit_variable_count": 344,
+      "earlier_orbit_variables_sha256": "9b674a9ae9ae52d646c7f976e7fd9d7520b72d6412e56d7936b6ae276588c750",
+      "orbit_size": 1,
+      "orbit_variables": [
+        372
+      ],
+      "quaternary_index": 247
+    },
+    {
+      "canonical_block": [
+        3,
+        5,
+        6,
+        7,
+        9
+      ],
+      "canonical_variable": 373,
+      "earlier_orbit_variable_count": 345,
+      "earlier_orbit_variables_sha256": "312aa95f1f4785f203e08f0d08c5e986e5111b177c1f82e411628a7a20346f22",
+      "orbit_size": 1,
+      "orbit_variables": [
+        373
+      ],
+      "quaternary_index": 248
+    },
+    {
+      "canonical_block": [
+        3,
+        5,
+        6,
+        7,
+        10
+      ],
+      "canonical_variable": 374,
+      "earlier_orbit_variable_count": 346,
+      "earlier_orbit_variables_sha256": "d25e0d713b386c14541c858fbfa20b0248dcdd1aacac20c6861461fc7100e55f",
+      "orbit_size": 2,
+      "orbit_variables": [
+        374,
+        375
+      ],
+      "quaternary_index": 249
+    },
+    {
+      "canonical_block": [
+        3,
+        5,
+        6,
+        8,
+        9
+      ],
+      "canonical_variable": 376,
+      "earlier_orbit_variable_count": 348,
+      "earlier_orbit_variables_sha256": "ce66c1737c0d05be817d9a792e2a193979ac8e44a8e99ac9ca61c2e69c87f8ce",
+      "orbit_size": 1,
+      "orbit_variables": [
+        376
+      ],
+      "quaternary_index": 250
+    },
+    {
+      "canonical_block": [
+        3,
+        5,
+        6,
+        8,
+        10
+      ],
+      "canonical_variable": 377,
+      "earlier_orbit_variable_count": 349,
+      "earlier_orbit_variables_sha256": "2c5dc894a86916645c4d5d4929c8963dbbc45a5ccf2b5a00bfe7f5a37b0da6e2",
+      "orbit_size": 2,
+      "orbit_variables": [
+        377,
+        378
+      ],
+      "quaternary_index": 251
+    },
+    {
+      "canonical_block": [
+        3,
+        5,
+        6,
+        9,
+        10
+      ],
+      "canonical_variable": 379,
+      "earlier_orbit_variable_count": 351,
+      "earlier_orbit_variables_sha256": "e32eeb764170858e4bdafe84fc01603a82dbe84cb184f3e523e324275831f937",
+      "orbit_size": 2,
+      "orbit_variables": [
+        379,
+        380
+      ],
+      "quaternary_index": 252
+    },
+    {
+      "canonical_block": [
+        3,
+        5,
+        6,
+        10,
+        11
+      ],
+      "canonical_variable": 381,
+      "earlier_orbit_variable_count": 353,
+      "earlier_orbit_variables_sha256": "43a1404c454be7fa8a2c9e364ec60b41e7c2fd7068661f5fb894486bc8311023",
+      "orbit_size": 1,
+      "orbit_variables": [
+        381
+      ],
+      "quaternary_index": 253
+    },
+    {
+      "canonical_block": [
+        3,
+        5,
+        7,
+        8,
+        9
+      ],
+      "canonical_variable": 382,
+      "earlier_orbit_variable_count": 354,
+      "earlier_orbit_variables_sha256": "77832b8249a414c69665771d83818d1f583a2889db4d5403e4c1a221a96bd82f",
+      "orbit_size": 1,
+      "orbit_variables": [
+        382
+      ],
+      "quaternary_index": 254
+    },
+    {
+      "canonical_block": [
+        3,
+        5,
+        7,
+        8,
+        10
+      ],
+      "canonical_variable": 383,
+      "earlier_orbit_variable_count": 355,
+      "earlier_orbit_variables_sha256": "4b80ccd73041f94701ddf564f4bf0b19f41a2a33e011de74c996de44f86ecd9f",
+      "orbit_size": 2,
+      "orbit_variables": [
+        383,
+        384
+      ],
+      "quaternary_index": 255
+    },
+    {
+      "canonical_block": [
+        3,
+        5,
+        7,
+        9,
+        10
+      ],
+      "canonical_variable": 385,
+      "earlier_orbit_variable_count": 357,
+      "earlier_orbit_variables_sha256": "fd57658f438be46129abaee63c750b770f56030ccee78c510b1af76efe4e3097",
+      "orbit_size": 2,
+      "orbit_variables": [
+        385,
+        386
+      ],
+      "quaternary_index": 256
+    },
+    {
+      "canonical_block": [
+        3,
+        5,
+        7,
+        10,
+        11
+      ],
+      "canonical_variable": 387,
+      "earlier_orbit_variable_count": 359,
+      "earlier_orbit_variables_sha256": "12f3b638deeda7ffbe8b10c8df7472ce2f78a2ebb81b07b3947731795eec0297",
+      "orbit_size": 1,
+      "orbit_variables": [
+        387
+      ],
+      "quaternary_index": 257
+    },
+    {
+      "canonical_block": [
+        3,
+        5,
+        8,
+        9,
+        10
+      ],
+      "canonical_variable": 388,
+      "earlier_orbit_variable_count": 360,
+      "earlier_orbit_variables_sha256": "488bc855a611d40e5570fff5bd57e0f986d5a3486cba0f34ff3bdd010694658f",
+      "orbit_size": 2,
+      "orbit_variables": [
+        388,
+        389
+      ],
+      "quaternary_index": 258
+    },
+    {
+      "canonical_block": [
+        3,
+        5,
+        8,
+        10,
+        11
+      ],
+      "canonical_variable": 390,
+      "earlier_orbit_variable_count": 362,
+      "earlier_orbit_variables_sha256": "cf3ca24dcf02fb2eb9456be915814444c4d659c281a2fffe82fec130e723544e",
+      "orbit_size": 1,
+      "orbit_variables": [
+        390
+      ],
+      "quaternary_index": 259
+    },
+    {
+      "canonical_block": [
+        3,
+        5,
+        9,
+        10,
+        11
+      ],
+      "canonical_variable": 391,
+      "earlier_orbit_variable_count": 363,
+      "earlier_orbit_variables_sha256": "3104593ef7f8fcef15e907c5807e443255862398043bdc733002d2f00e1dfc7f",
+      "orbit_size": 1,
+      "orbit_variables": [
+        391
+      ],
+      "quaternary_index": 260
+    },
+    {
+      "canonical_block": [
+        3,
+        6,
+        7,
+        8,
+        9
+      ],
+      "canonical_variable": 392,
+      "earlier_orbit_variable_count": 364,
+      "earlier_orbit_variables_sha256": "3a00b5471893b68807fa09e9a94c93961df6237215c3d531892ec92f812fea55",
+      "orbit_size": 1,
+      "orbit_variables": [
+        392
+      ],
+      "quaternary_index": 261
+    },
+    {
+      "canonical_block": [
+        3,
+        6,
+        7,
+        8,
+        10
+      ],
+      "canonical_variable": 393,
+      "earlier_orbit_variable_count": 365,
+      "earlier_orbit_variables_sha256": "a883a5e21cee00b441320ee35895db5d9afb9e4e9db508c73b76a57fe52ce5ef",
+      "orbit_size": 2,
+      "orbit_variables": [
+        393,
+        394
+      ],
+      "quaternary_index": 262
+    },
+    {
+      "canonical_block": [
+        3,
+        6,
+        7,
+        9,
+        10
+      ],
+      "canonical_variable": 395,
+      "earlier_orbit_variable_count": 367,
+      "earlier_orbit_variables_sha256": "5a84a5531155343caef81711eefa1bab1403e03c60659f55230162ef3400c17f",
+      "orbit_size": 2,
+      "orbit_variables": [
+        395,
+        396
+      ],
+      "quaternary_index": 263
+    },
+    {
+      "canonical_block": [
+        3,
+        6,
+        7,
+        10,
+        11
+      ],
+      "canonical_variable": 397,
+      "earlier_orbit_variable_count": 369,
+      "earlier_orbit_variables_sha256": "9cebe938ea08c0e0238038f53a2cc0e83bedefd8ff4b541966105b1ad50080dd",
+      "orbit_size": 1,
+      "orbit_variables": [
+        397
+      ],
+      "quaternary_index": 264
+    },
+    {
+      "canonical_block": [
+        3,
+        6,
+        8,
+        9,
+        10
+      ],
+      "canonical_variable": 398,
+      "earlier_orbit_variable_count": 370,
+      "earlier_orbit_variables_sha256": "5b469dd045d75249fe5edfddb4bf8739a5fa476626c73415545ddf4e025ddfe8",
+      "orbit_size": 2,
+      "orbit_variables": [
+        398,
+        399
+      ],
+      "quaternary_index": 265
+    },
+    {
+      "canonical_block": [
+        3,
+        6,
+        8,
+        10,
+        11
+      ],
+      "canonical_variable": 400,
+      "earlier_orbit_variable_count": 372,
+      "earlier_orbit_variables_sha256": "c566657dc61b8f1fe91809c8c78280cd0823df770c350feee6954a9d1d88dc85",
+      "orbit_size": 1,
+      "orbit_variables": [
+        400
+      ],
+      "quaternary_index": 266
+    },
+    {
+      "canonical_block": [
+        3,
+        6,
+        9,
+        10,
+        11
+      ],
+      "canonical_variable": 401,
+      "earlier_orbit_variable_count": 373,
+      "earlier_orbit_variables_sha256": "b00af9047d9835c130c9aaf7d3f5bff541ce70a3888809f16f67dec982585d94",
+      "orbit_size": 1,
+      "orbit_variables": [
+        401
+      ],
+      "quaternary_index": 267
+    },
+    {
+      "canonical_block": [
+        3,
+        7,
+        8,
+        9,
+        10
+      ],
+      "canonical_variable": 402,
+      "earlier_orbit_variable_count": 374,
+      "earlier_orbit_variables_sha256": "5cd944a33bd01b85dff48f9996e1807c7903a7cff831af27bd81db05b0fcac15",
+      "orbit_size": 2,
+      "orbit_variables": [
+        402,
+        403
+      ],
+      "quaternary_index": 268
+    },
+    {
+      "canonical_block": [
+        3,
+        7,
+        8,
+        10,
+        11
+      ],
+      "canonical_variable": 404,
+      "earlier_orbit_variable_count": 376,
+      "earlier_orbit_variables_sha256": "aaebf113e18df60e38de54e88934aa2bc42db72ddca72643e9355a0f76312b96",
+      "orbit_size": 1,
+      "orbit_variables": [
+        404
+      ],
+      "quaternary_index": 269
+    },
+    {
+      "canonical_block": [
+        3,
+        7,
+        9,
+        10,
+        11
+      ],
+      "canonical_variable": 405,
+      "earlier_orbit_variable_count": 377,
+      "earlier_orbit_variables_sha256": "b8b7cb1780140ef7230226f508112db778beb7121f9af3106a06669da4199edc",
+      "orbit_size": 1,
+      "orbit_variables": [
+        405
+      ],
+      "quaternary_index": 270
+    },
+    {
+      "canonical_block": [
+        3,
+        8,
+        9,
+        10,
+        11
+      ],
+      "canonical_variable": 406,
+      "earlier_orbit_variable_count": 378,
+      "earlier_orbit_variables_sha256": "838240afc2c1f4a364051f0980ed588c4601bfe3ef9f0c3b9839f330525aa873",
+      "orbit_size": 1,
+      "orbit_variables": [
+        406
+      ],
+      "quaternary_index": 271
+    },
+    {
+      "canonical_block": [
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "canonical_variable": 407,
+      "earlier_orbit_variable_count": 379,
+      "earlier_orbit_variables_sha256": "ba16ab592fb23bfed279b7da70f169fe7d7fedfce3f17fa0f5a510181b1f0ea6",
+      "orbit_size": 1,
+      "orbit_variables": [
+        407
+      ],
+      "quaternary_index": 272
+    },
+    {
+      "canonical_block": [
+        4,
+        5,
+        6,
+        7,
+        9
+      ],
+      "canonical_variable": 408,
+      "earlier_orbit_variable_count": 380,
+      "earlier_orbit_variables_sha256": "34df4ec54bf104deb5e5fe2611d83a8ae5802a152d753c5da6a0057363931ff3",
+      "orbit_size": 1,
+      "orbit_variables": [
+        408
+      ],
+      "quaternary_index": 273
+    },
+    {
+      "canonical_block": [
+        4,
+        5,
+        6,
+        7,
+        10
+      ],
+      "canonical_variable": 409,
+      "earlier_orbit_variable_count": 381,
+      "earlier_orbit_variables_sha256": "1222459343b735209ff572a55cd2cd123c0b948e93e0842299779649be8e4cec",
+      "orbit_size": 2,
+      "orbit_variables": [
+        409,
+        410
+      ],
+      "quaternary_index": 274
+    },
+    {
+      "canonical_block": [
+        4,
+        5,
+        6,
+        8,
+        9
+      ],
+      "canonical_variable": 411,
+      "earlier_orbit_variable_count": 383,
+      "earlier_orbit_variables_sha256": "50235317bc0c80bb8bd24edb393ce992a17bf9f2ca38fc06b71b939045cee029",
+      "orbit_size": 1,
+      "orbit_variables": [
+        411
+      ],
+      "quaternary_index": 275
+    },
+    {
+      "canonical_block": [
+        4,
+        5,
+        6,
+        8,
+        10
+      ],
+      "canonical_variable": 412,
+      "earlier_orbit_variable_count": 384,
+      "earlier_orbit_variables_sha256": "23b391f1c913b801d797f0ce29a5f8db88ff7d3b7fc51035cd873764e499c3f8",
+      "orbit_size": 2,
+      "orbit_variables": [
+        412,
+        413
+      ],
+      "quaternary_index": 276
+    },
+    {
+      "canonical_block": [
+        4,
+        5,
+        6,
+        9,
+        10
+      ],
+      "canonical_variable": 414,
+      "earlier_orbit_variable_count": 386,
+      "earlier_orbit_variables_sha256": "c143bf3bacf53d540208b20f5e5962506fde07fbf58c7839f2421c89f29d28a9",
+      "orbit_size": 2,
+      "orbit_variables": [
+        414,
+        415
+      ],
+      "quaternary_index": 277
+    },
+    {
+      "canonical_block": [
+        4,
+        5,
+        6,
+        10,
+        11
+      ],
+      "canonical_variable": 416,
+      "earlier_orbit_variable_count": 388,
+      "earlier_orbit_variables_sha256": "d3f67a3b88b277f3278bc45987e34b8f380371948fb3718466e4f41177e3df6c",
+      "orbit_size": 1,
+      "orbit_variables": [
+        416
+      ],
+      "quaternary_index": 278
+    },
+    {
+      "canonical_block": [
+        4,
+        5,
+        7,
+        8,
+        9
+      ],
+      "canonical_variable": 417,
+      "earlier_orbit_variable_count": 389,
+      "earlier_orbit_variables_sha256": "84bea9c0587fa548e81e0efcdb74e85789443685761e2d977e2ad24d79187e91",
+      "orbit_size": 1,
+      "orbit_variables": [
+        417
+      ],
+      "quaternary_index": 279
+    },
+    {
+      "canonical_block": [
+        4,
+        5,
+        7,
+        8,
+        10
+      ],
+      "canonical_variable": 418,
+      "earlier_orbit_variable_count": 390,
+      "earlier_orbit_variables_sha256": "f37801b44a87fe3fe0d5d741bdfc31f8d51b3a20afcfef26f5fb53788d8d83a7",
+      "orbit_size": 2,
+      "orbit_variables": [
+        418,
+        419
+      ],
+      "quaternary_index": 280
+    },
+    {
+      "canonical_block": [
+        4,
+        5,
+        7,
+        9,
+        10
+      ],
+      "canonical_variable": 420,
+      "earlier_orbit_variable_count": 392,
+      "earlier_orbit_variables_sha256": "ab66f60efec2348e6c13ede269ac8f938deb149db386e1948ac3cd76e939902a",
+      "orbit_size": 2,
+      "orbit_variables": [
+        420,
+        421
+      ],
+      "quaternary_index": 281
+    },
+    {
+      "canonical_block": [
+        4,
+        5,
+        7,
+        10,
+        11
+      ],
+      "canonical_variable": 422,
+      "earlier_orbit_variable_count": 394,
+      "earlier_orbit_variables_sha256": "3ac3b8ea95f30d9d3422beb9c8958091214b0cd1051cf51a4eef9512a9dbc254",
+      "orbit_size": 1,
+      "orbit_variables": [
+        422
+      ],
+      "quaternary_index": 282
+    },
+    {
+      "canonical_block": [
+        4,
+        5,
+        8,
+        9,
+        10
+      ],
+      "canonical_variable": 423,
+      "earlier_orbit_variable_count": 395,
+      "earlier_orbit_variables_sha256": "aed9cc0ffbf7ad3fb9dcb689a0ec7afdd70de91ad6418fdda27a7148ee7fc06b",
+      "orbit_size": 2,
+      "orbit_variables": [
+        423,
+        424
+      ],
+      "quaternary_index": 283
+    },
+    {
+      "canonical_block": [
+        4,
+        5,
+        8,
+        10,
+        11
+      ],
+      "canonical_variable": 425,
+      "earlier_orbit_variable_count": 397,
+      "earlier_orbit_variables_sha256": "5330d329714c882affa84f80f20e85bf1f35915c4ea7a6af94fc4c20a1ba366b",
+      "orbit_size": 1,
+      "orbit_variables": [
+        425
+      ],
+      "quaternary_index": 284
+    },
+    {
+      "canonical_block": [
+        4,
+        5,
+        9,
+        10,
+        11
+      ],
+      "canonical_variable": 426,
+      "earlier_orbit_variable_count": 398,
+      "earlier_orbit_variables_sha256": "d8eff1f184a4aac60b17839de6a40ce3b404fcc86370e900c09119428cea12f8",
+      "orbit_size": 1,
+      "orbit_variables": [
+        426
+      ],
+      "quaternary_index": 285
+    },
+    {
+      "canonical_block": [
+        4,
+        6,
+        7,
+        8,
+        9
+      ],
+      "canonical_variable": 427,
+      "earlier_orbit_variable_count": 399,
+      "earlier_orbit_variables_sha256": "d6445c6f57c21d7121e98b2adb7bee7c6e9a16327054af7f76fd390e5d743a70",
+      "orbit_size": 1,
+      "orbit_variables": [
+        427
+      ],
+      "quaternary_index": 286
+    },
+    {
+      "canonical_block": [
+        4,
+        6,
+        7,
+        8,
+        10
+      ],
+      "canonical_variable": 428,
+      "earlier_orbit_variable_count": 400,
+      "earlier_orbit_variables_sha256": "5de48398c810ee74b6712b92cf841eceb6d71698d9afbf3b74ba2a32fb930278",
+      "orbit_size": 2,
+      "orbit_variables": [
+        428,
+        429
+      ],
+      "quaternary_index": 287
+    },
+    {
+      "canonical_block": [
+        4,
+        6,
+        7,
+        9,
+        10
+      ],
+      "canonical_variable": 430,
+      "earlier_orbit_variable_count": 402,
+      "earlier_orbit_variables_sha256": "b900baf083b485c11c10aa300efabbde80184298a9b8837a11e046ef82a8c1c5",
+      "orbit_size": 2,
+      "orbit_variables": [
+        430,
+        431
+      ],
+      "quaternary_index": 288
+    },
+    {
+      "canonical_block": [
+        4,
+        6,
+        7,
+        10,
+        11
+      ],
+      "canonical_variable": 432,
+      "earlier_orbit_variable_count": 404,
+      "earlier_orbit_variables_sha256": "9edc97e30ca3deb714182ad925e17f5bb7cb859c59d2feb88b50b589aaaf0a90",
+      "orbit_size": 1,
+      "orbit_variables": [
+        432
+      ],
+      "quaternary_index": 289
+    },
+    {
+      "canonical_block": [
+        4,
+        6,
+        8,
+        9,
+        10
+      ],
+      "canonical_variable": 433,
+      "earlier_orbit_variable_count": 405,
+      "earlier_orbit_variables_sha256": "7df3ab10b46acfa38da189bbc9efadf10533e3b224a075ad6b5d232eb7c53c4d",
+      "orbit_size": 2,
+      "orbit_variables": [
+        433,
+        434
+      ],
+      "quaternary_index": 290
+    },
+    {
+      "canonical_block": [
+        4,
+        6,
+        8,
+        10,
+        11
+      ],
+      "canonical_variable": 435,
+      "earlier_orbit_variable_count": 407,
+      "earlier_orbit_variables_sha256": "6658350dbd23c7558533dbadfd981e539b90c2bb833ad9a16ab72582c04e118c",
+      "orbit_size": 1,
+      "orbit_variables": [
+        435
+      ],
+      "quaternary_index": 291
+    },
+    {
+      "canonical_block": [
+        4,
+        6,
+        9,
+        10,
+        11
+      ],
+      "canonical_variable": 436,
+      "earlier_orbit_variable_count": 408,
+      "earlier_orbit_variables_sha256": "425688eb8927e9d2d645a6dc289396724ee94de9a75f070ebe9337f366a21015",
+      "orbit_size": 1,
+      "orbit_variables": [
+        436
+      ],
+      "quaternary_index": 292
+    },
+    {
+      "canonical_block": [
+        4,
+        7,
+        8,
+        9,
+        10
+      ],
+      "canonical_variable": 437,
+      "earlier_orbit_variable_count": 409,
+      "earlier_orbit_variables_sha256": "d8fca62e14f72ebd5fae755edf41526157f95190a26989d0eb2b2ae63f8ef5ca",
+      "orbit_size": 2,
+      "orbit_variables": [
+        437,
+        438
+      ],
+      "quaternary_index": 293
+    },
+    {
+      "canonical_block": [
+        4,
+        7,
+        8,
+        10,
+        11
+      ],
+      "canonical_variable": 439,
+      "earlier_orbit_variable_count": 411,
+      "earlier_orbit_variables_sha256": "60fd7eec690d9913ed631cd639765698ab702f74ea335a60cfd7074cbbcd1d8c",
+      "orbit_size": 1,
+      "orbit_variables": [
+        439
+      ],
+      "quaternary_index": 294
+    },
+    {
+      "canonical_block": [
+        4,
+        7,
+        9,
+        10,
+        11
+      ],
+      "canonical_variable": 440,
+      "earlier_orbit_variable_count": 412,
+      "earlier_orbit_variables_sha256": "ab8fa55040b1da270eed7aa40166654d9016fda2526ecf27215919bc4da0be1b",
+      "orbit_size": 1,
+      "orbit_variables": [
+        440
+      ],
+      "quaternary_index": 295
+    },
+    {
+      "canonical_block": [
+        4,
+        8,
+        9,
+        10,
+        11
+      ],
+      "canonical_variable": 441,
+      "earlier_orbit_variable_count": 413,
+      "earlier_orbit_variables_sha256": "907be86d6a2f91d8e2d01b9c808e5bdc0d9b8b7117b985fd61fcd36b59d48c1e",
+      "orbit_size": 1,
+      "orbit_variables": [
+        441
+      ],
+      "quaternary_index": 296
+    },
+    {
+      "canonical_block": [
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "canonical_variable": 442,
+      "earlier_orbit_variable_count": 414,
+      "earlier_orbit_variables_sha256": "163d50322cb0fab61eca538f2faf09231405f9cc4e63b147b404f46de0b9568f",
+      "orbit_size": 1,
+      "orbit_variables": [
+        442
+      ],
+      "quaternary_index": 297
+    },
+    {
+      "canonical_block": [
+        5,
+        6,
+        7,
+        8,
+        10
+      ],
+      "canonical_variable": 443,
+      "earlier_orbit_variable_count": 415,
+      "earlier_orbit_variables_sha256": "d545d0fce3944738e5c288d4af956f60b768cb4981ec4507a6a21816ae8fd704",
+      "orbit_size": 2,
+      "orbit_variables": [
+        443,
+        444
+      ],
+      "quaternary_index": 298
+    },
+    {
+      "canonical_block": [
+        5,
+        6,
+        7,
+        9,
+        10
+      ],
+      "canonical_variable": 445,
+      "earlier_orbit_variable_count": 417,
+      "earlier_orbit_variables_sha256": "5027d54fc11d4df096f21572ccb5f4d267fbcab9b2e56be6832caf2926d4669d",
+      "orbit_size": 2,
+      "orbit_variables": [
+        445,
+        446
+      ],
+      "quaternary_index": 299
+    },
+    {
+      "canonical_block": [
+        5,
+        6,
+        7,
+        10,
+        11
+      ],
+      "canonical_variable": 447,
+      "earlier_orbit_variable_count": 419,
+      "earlier_orbit_variables_sha256": "c2d16aff479c7779d6806febc5927045685cb2cfc1ab21ee1b515e2c704a36ee",
+      "orbit_size": 1,
+      "orbit_variables": [
+        447
+      ],
+      "quaternary_index": 300
+    },
+    {
+      "canonical_block": [
+        5,
+        6,
+        8,
+        9,
+        10
+      ],
+      "canonical_variable": 448,
+      "earlier_orbit_variable_count": 420,
+      "earlier_orbit_variables_sha256": "3a570c58e5cd02576e6d4e2b2fa4783ac40c49cca32a03ab46fad397a7ceddf0",
+      "orbit_size": 2,
+      "orbit_variables": [
+        448,
+        449
+      ],
+      "quaternary_index": 301
+    },
+    {
+      "canonical_block": [
+        5,
+        6,
+        8,
+        10,
+        11
+      ],
+      "canonical_variable": 450,
+      "earlier_orbit_variable_count": 422,
+      "earlier_orbit_variables_sha256": "fecb1d79838449d2cd18a305578bf231200178c9407d933db3af3067368d3329",
+      "orbit_size": 1,
+      "orbit_variables": [
+        450
+      ],
+      "quaternary_index": 302
+    },
+    {
+      "canonical_block": [
+        5,
+        6,
+        9,
+        10,
+        11
+      ],
+      "canonical_variable": 451,
+      "earlier_orbit_variable_count": 423,
+      "earlier_orbit_variables_sha256": "daece94c083a7041098b409ab599dc4ac31181fc0d19900946df12d1f944fd41",
+      "orbit_size": 1,
+      "orbit_variables": [
+        451
+      ],
+      "quaternary_index": 303
+    },
+    {
+      "canonical_block": [
+        5,
+        7,
+        8,
+        9,
+        10
+      ],
+      "canonical_variable": 452,
+      "earlier_orbit_variable_count": 424,
+      "earlier_orbit_variables_sha256": "4fcae9960ac04f10978cf6324371fa5e9559d93b4a2da06fdf7ac8998232978c",
+      "orbit_size": 2,
+      "orbit_variables": [
+        452,
+        453
+      ],
+      "quaternary_index": 304
+    },
+    {
+      "canonical_block": [
+        5,
+        7,
+        8,
+        10,
+        11
+      ],
+      "canonical_variable": 454,
+      "earlier_orbit_variable_count": 426,
+      "earlier_orbit_variables_sha256": "7beba953e8cf257b604dfbf1901827601438d78e7154f5ace79268a85ddd34e7",
+      "orbit_size": 1,
+      "orbit_variables": [
+        454
+      ],
+      "quaternary_index": 305
+    },
+    {
+      "canonical_block": [
+        5,
+        7,
+        9,
+        10,
+        11
+      ],
+      "canonical_variable": 455,
+      "earlier_orbit_variable_count": 427,
+      "earlier_orbit_variables_sha256": "6524835aa5740112697e9121aba631e16df83af1ef465f2687ca0e8835801ebb",
+      "orbit_size": 1,
+      "orbit_variables": [
+        455
+      ],
+      "quaternary_index": 306
+    },
+    {
+      "canonical_block": [
+        5,
+        8,
+        9,
+        10,
+        11
+      ],
+      "canonical_variable": 456,
+      "earlier_orbit_variable_count": 428,
+      "earlier_orbit_variables_sha256": "b6aedfd702a8185022ab2e72dc7788213224a8cc51aaf78d416fc44767bd19be",
+      "orbit_size": 1,
+      "orbit_variables": [
+        456
+      ],
+      "quaternary_index": 307
+    },
+    {
+      "canonical_block": [
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "canonical_variable": 457,
+      "earlier_orbit_variable_count": 429,
+      "earlier_orbit_variables_sha256": "b008a0d908ae9ad0917c3b23214b20579cf832873711de5e3f9fda1a9ae9c6ab",
+      "orbit_size": 2,
+      "orbit_variables": [
+        457,
+        458
+      ],
+      "quaternary_index": 308
+    },
+    {
+      "canonical_block": [
+        6,
+        7,
+        8,
+        10,
+        11
+      ],
+      "canonical_variable": 459,
+      "earlier_orbit_variable_count": 431,
+      "earlier_orbit_variables_sha256": "475a692bbfef643c4470a83f52f76ccbf65539047eba45e01a0329820d637129",
+      "orbit_size": 1,
+      "orbit_variables": [
+        459
+      ],
+      "quaternary_index": 309
+    },
+    {
+      "canonical_block": [
+        6,
+        7,
+        9,
+        10,
+        11
+      ],
+      "canonical_variable": 460,
+      "earlier_orbit_variable_count": 432,
+      "earlier_orbit_variables_sha256": "f0eb3e39cf246802d6da6de49fbff39667efb1879e1e0652f4828608728a2d1c",
+      "orbit_size": 1,
+      "orbit_variables": [
+        460
+      ],
+      "quaternary_index": 310
+    },
+    {
+      "canonical_block": [
+        6,
+        8,
+        9,
+        10,
+        11
+      ],
+      "canonical_variable": 461,
+      "earlier_orbit_variable_count": 433,
+      "earlier_orbit_variables_sha256": "644b91a57cd5b9cad29e66fa29e3a977791013a7ed96da5974f33ba6a2fa7d60",
+      "orbit_size": 1,
+      "orbit_variables": [
+        461
+      ],
+      "quaternary_index": 311
+    },
+    {
+      "canonical_block": [
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "canonical_variable": 462,
+      "earlier_orbit_variable_count": 434,
+      "earlier_orbit_variables_sha256": "3bdb5d7474e8d7a6676b11de11107eba25288f66f7d7935120a27ce259033eb7",
+      "orbit_size": 1,
+      "orbit_variables": [
+        462
+      ],
+      "quaternary_index": 312
+    }
+  ],
+  "schema_version": 1,
+  "secondary_canonical_block": [
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "secondary_index": 0,
+  "soundness_basis": "Within a fixed primary/secondary/tertiary leaf, all earlier secondary and tertiary orbits are absent and the three selected blocks are present. Every 20-block link has another eligible block. The exact stabilizer of all three selected blocks partitions the eligible domain; the least occupied orbit yields one exhaustive canonical child.",
+  "status": "complete-disjoint-quaternary-partition",
+  "tertiary_canonical_block": [
+    1,
+    2,
+    3,
+    6,
+    7
+  ],
+  "tertiary_index": 6,
+  "three_block_stabilizer_order": 2
+}

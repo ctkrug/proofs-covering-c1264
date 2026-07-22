@@ -100,6 +100,7 @@ def audit(result_path: Path) -> dict[str, object]:
     expected.append([positions[canonical]])
     secondary_count = 0
     tertiary_count = 0
+    quaternary_count = 0
     secondary = root.get("secondary")
     if secondary is not None:
         stabilizer = [
@@ -152,6 +153,41 @@ def audit(result_path: Path) -> dict[str, object]:
                 expected.append([-positions[block]])
             expected.append([positions[tertiary_canonical]])
             tertiary_count = len(earlier_tertiary)
+            quaternary = root.get("quaternary")
+            if quaternary is not None:
+                three_block_stabilizer = [
+                    table for table in pair_stabilizer
+                    if tuple(sorted(table[point] for point in tertiary_canonical)) == tertiary_canonical
+                ]
+                quaternary_eligible = (
+                    set(blocks) - earlier_secondary - earlier_tertiary
+                    - {canonical, secondary_canonical, tertiary_canonical}
+                )
+                quaternary_orbits = []
+                while quaternary_eligible:
+                    seed = min(quaternary_eligible)
+                    orbit = {
+                        tuple(sorted(table[point] for point in seed))
+                        for table in three_block_stabilizer
+                    }
+                    if not orbit <= quaternary_eligible:
+                        raise ValueError("quaternary orbit leaves the eligible domain")
+                    quaternary_orbits.append(orbit)
+                    quaternary_eligible -= orbit
+                quaternary_index = int(quaternary["index"])
+                if not 0 <= quaternary_index < len(quaternary_orbits):
+                    raise ValueError("invalid quaternary root index")
+                earlier_quaternary = (
+                    set().union(*quaternary_orbits[:quaternary_index])
+                    if quaternary_index else set()
+                )
+                quaternary_canonical = tuple(quaternary["canonical_block"])
+                if quaternary_canonical != min(quaternary_orbits[quaternary_index]):
+                    raise ValueError("quaternary canonical mismatch")
+                for block in sorted(earlier_quaternary):
+                    expected.append([-positions[block]])
+                expected.append([positions[quaternary_canonical]])
+                quaternary_count = len(earlier_quaternary)
     actual = CNF(from_file=str(cnf_path))
     if actual.clauses != expected.clauses or actual.nv != expected.nv:
         mismatch = next((i for i, pair in enumerate(zip(actual.clauses, expected.clauses)) if pair[0] != pair[1]), None)
@@ -174,7 +210,8 @@ def audit(result_path: Path) -> dict[str, object]:
         "canonical_unit": positions[canonical],
         "secondary_earlier_orbit_units": secondary_count,
         "tertiary_earlier_orbit_units": tertiary_count,
-        "independence_basis": "Fresh checker reconstructs the source triple, degree, blocker, block-type root, secondary stabilizer, and optional two-block-stabilizer tertiary constraints and compares every CNF clause and auxiliary range.",
+        "quaternary_earlier_orbit_units": quaternary_count,
+        "independence_basis": "Fresh checker reconstructs the source triple, degree, blocker, block-type root, secondary stabilizer, optional two-block-stabilizer tertiary constraints, and optional three-block-stabilizer quaternary constraints and compares every CNF clause and auxiliary range.",
         "independence_limit": "The reconstruction intentionally uses the same pinned PySAT sequential-counter implementation; a second encoding remains desirable for final publication-grade exclusion.",
     }
 

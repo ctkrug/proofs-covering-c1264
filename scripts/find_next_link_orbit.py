@@ -132,9 +132,50 @@ def tertiary_orbits(root_index: int, secondary_index: int) -> list[set[tuple[int
     return orbits
 
 
+def quaternary_orbits(
+    root_index: int, secondary_index: int, tertiary_index: int,
+) -> list[set[tuple[int, ...]]]:
+    """Partition eligible fourth blocks under the exact three-block stabilizer."""
+    secondary = secondary_orbits(root_index)
+    if not 0 <= secondary_index < len(secondary):
+        raise ValueError("secondary index is outside its complete partition")
+    tertiary = tertiary_orbits(root_index, secondary_index)
+    if not 0 <= tertiary_index < len(tertiary):
+        raise ValueError("tertiary index is outside its complete partition")
+    primary = LINK_ROOTS[root_index]
+    second = min(secondary[secondary_index])
+    third = min(tertiary[tertiary_index])
+    stabilizer = [
+        mapping for mapping in group_maps()
+        if tuple(sorted(mapping[point] for point in primary)) == primary
+        and tuple(sorted(mapping[point] for point in second)) == second
+        and tuple(sorted(mapping[point] for point in third)) == third
+    ]
+    two_block_order = (
+        (3840 // len(root_orbits()[root_index]))
+        // len(secondary[secondary_index])
+    )
+    expected = two_block_order // len(tertiary[tertiary_index])
+    if len(stabilizer) != expected:
+        raise AssertionError("three-block stabilizer order changed")
+    blocks = set(itertools.combinations(range(1, 12), 5))
+    earlier_secondary = set().union(*secondary[:secondary_index]) if secondary_index else set()
+    earlier_tertiary = set().union(*tertiary[:tertiary_index]) if tertiary_index else set()
+    unseen = blocks - earlier_secondary - earlier_tertiary - {primary, second, third}
+    orbits = []
+    while unseen:
+        seed = min(unseen)
+        orbit = {tuple(sorted(mapping[point] for point in seed)) for mapping in stabilizer}
+        if not orbit <= unseen:
+            raise AssertionError("quaternary orbits overlap or leave the eligible domain")
+        orbits.append(orbit)
+        unseen -= orbit
+    return orbits
+
+
 def build(
     blocking_cnf: Path, root_index: int | None = None, secondary_index: int | None = None,
-    tertiary_index: int | None = None,
+    tertiary_index: int | None = None, quaternary_index: int | None = None,
 ) -> tuple[CNF, list[tuple[int, ...]], list[dict[str, int | str]], int, dict[str, object] | None]:
     blocks = list(itertools.combinations(range(1, 12), 5))
     cnf = CNF()
@@ -214,12 +255,41 @@ def build(
                         // len(secondary[secondary_index])
                     ),
                 }
+                if quaternary_index is not None:
+                    quaternary = quaternary_orbits(root_index, secondary_index, tertiary_index)
+                    if not 0 <= quaternary_index < len(quaternary):
+                        raise ValueError("quaternary index is outside its complete partition")
+                    earlier_quaternary = (
+                        set().union(*quaternary[:quaternary_index]) if quaternary_index else set()
+                    )
+                    for block in sorted(earlier_quaternary):
+                        cnf.append([-positions[block]])
+                    quaternary_canonical = min(quaternary[quaternary_index])
+                    cnf.append([positions[quaternary_canonical]])
+                    two_block_order = (
+                        (3840 // len(root_orbits()[root_index]))
+                        // len(secondary[secondary_index])
+                    )
+                    root_record["quaternary"] = {
+                        "index": quaternary_index,
+                        "canonical_block": list(quaternary_canonical),
+                        "canonical_variable": positions[quaternary_canonical],
+                        "orbit_size": len(quaternary[quaternary_index]),
+                        "earlier_orbit_variables_forced_false": len(earlier_quaternary),
+                        "stabilizer_order": two_block_order // len(tertiary[tertiary_index]),
+                    }
+            elif quaternary_index is not None:
+                raise ValueError("quaternary index requires a tertiary index")
         elif tertiary_index is not None:
             raise ValueError("tertiary index requires a secondary index")
+        elif quaternary_index is not None:
+            raise ValueError("quaternary index requires secondary and tertiary indices")
     elif secondary_index is not None:
         raise ValueError("secondary index requires a primary root")
     elif tertiary_index is not None:
         raise ValueError("tertiary index requires primary and secondary indices")
+    elif quaternary_index is not None:
+        raise ValueError("quaternary index requires primary, secondary, and tertiary indices")
     return cnf, blocks, ranges, len(blockers), root_record
 
 
@@ -252,13 +322,14 @@ def validate_witness(selected: list[tuple[int, ...]]) -> None:
 def run(
     blocking_cnf: Path, output: Path, seconds: int, root_index: int | None,
     secondary_index: int | None, tertiary_index: int | None = None,
+    quaternary_index: int | None = None,
 ) -> dict[str, object]:
     if seconds < 1:
         raise ValueError("seconds must be positive")
     output.mkdir(parents=True, exist_ok=False)
     started = time.monotonic()
     cnf, blocks, ranges, blocker_count, root_record = build(
-        blocking_cnf, root_index, secondary_index, tertiary_index,
+        blocking_cnf, root_index, secondary_index, tertiary_index, quaternary_index,
     )
     cnf_path = output / "instance.cnf"
     cnf.to_file(str(cnf_path))
@@ -327,10 +398,11 @@ def main() -> None:
     parser.add_argument("--root-index", type=int, choices=range(6))
     parser.add_argument("--secondary-index", type=int)
     parser.add_argument("--tertiary-index", type=int)
+    parser.add_argument("--quaternary-index", type=int)
     args = parser.parse_args()
     print(json.dumps(run(
         args.blocking_cnf, args.output, args.seconds, args.root_index, args.secondary_index,
-        args.tertiary_index,
+        args.tertiary_index, args.quaternary_index,
     ), sort_keys=True))
 
 

@@ -27,7 +27,7 @@
   },
   "yellow_gate": "20-80% sampled cubes close or projection is 250-1000 core-hours; permit one bounded redesign tranche",
   "red_gate": "semantic disagreement, orbit/proof-replay failure, projection above 1000 core-hours after redesign, or proof growth above 30 GB",
-  "resource_gate": "do not compete with the active R(5,5) census or residual SAT on the droplet",
+  "resource_gate": "serialize C SAT work against memory-heavy Lean or Ramsey work on the shared droplet; keep the full regenerable proof cache local and deploy only receipts plus hash-bound reconstruction fixtures",
   "link_orbit_redesign": {
     "naive_cost": "choose 20 of 462 point-link blocks, approximately 5.315e34 subsets",
     "symmetry_reduction": "fix the degree-10 point and its matched partner, leaving the exact C2 wr S5 action of order 3840; canonicalize and block complete link orbits",
@@ -51,8 +51,33 @@
     "incremental_constraints": "retain the same 165 triple-cover and 11 exact-degree constraints while appending only independently rebuilt primary-variable orbit blockers",
     "soundness_basis": "the no-fixed-block exact-degree link formulation is independently audited at the OPB level; every SAT witness is checked directly, and UNSAT remains provisional until the exact CNF has a replayed proof plus a source-to-CNF audit",
     "checkpoint_unit": "one newly canonicalized link orbit and its full hash-bound blocking clause set",
-    "next_gate": "run one bounded second-orbit discriminator; SAT permits a checkpointed orbit-enumeration tranche, UNKNOWN redirects encoding, and UNSAT requires proof replay and an independent CNF semantic audit before an exhaustiveness claim",
-    "uncompressed_remainder": "all feasible exact-degree links outside the single 320-member orbit already blocked"
+    "next_gate": "the biased fourth-layer first-child smoke test returned 10 UNKNOWN results and the Glucose4 incremental diagnostic closed 0/10 exact parent leaves under best-effort caps, so neither policy may scale unchanged; test a materially different propagation or cardinality mechanism with exact equivalence and a reliably matched cold control",
+    "uncompressed_remainder": "47 canonical frontier nodes remain: 14 secondary cases and 33 tertiary leaves"
+  },
+  "hard_tail_diagnostics": {
+    "coordinated_parents": "root 0, secondary 0, tertiary indices 0 through 9 under the frozen three-orbit catalog; the fourth-layer smoke children and incremental parent leaves are not equivalent samples",
+    "fourth_layer": {
+      "independently_audited_partitions": 10,
+      "canonical_children": 3074,
+      "eligible_block_occurrences": 4414,
+      "sampled_children": 10,
+      "closed": 0,
+      "seconds_per_child": 2,
+      "interpretation": "biased quaternary-index-0 smoke test only; not a closure-rate estimate or a 40-percent gate measurement",
+      "decision": "stop unchanged"
+    },
+    "incremental_glucose4": {
+      "assumption_vectors_audited": 10,
+      "cold_closed": 0,
+      "incremental_closed": 0,
+      "cold_wall_seconds": 2.34845,
+      "incremental_wall_seconds": 3.47891,
+      "limitation": "best-effort caps only because of Glucose4 interrupt-safe-point overshoot; CaDiCaL195 PySAT wrapper lacks limited interruptible solving",
+      "route_gate_eligible": false,
+      "matched_route_gate_evaluated": false,
+      "decision": "stop this backend unchanged"
+    },
+    "next_gate": "a different propagation or encoding mechanism must close at least 40 percent of a predeclared, representative, reliably resource-matched tranche with independently checked equivalence before scale-up"
   },
   "decision_value": "either settle an exact classical covering number or produce reusable proof-producing covering-design infrastructure"
 }

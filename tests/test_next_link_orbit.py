@@ -70,6 +70,27 @@ class NextLinkOrbitTests(unittest.TestCase):
         self.assertEqual(tertiary_record["stabilizer_order"], 8)
         self.assertIn([tertiary_record["canonical_variable"]], cnf.clauses)
 
+    def test_three_block_quaternary_partition_is_complete(self) -> None:
+        secondary = finder.secondary_orbits(0)
+        tertiary = finder.tertiary_orbits(0, 0)
+        quaternary = finder.quaternary_orbits(0, 0, 1)
+        earlier_tertiary = set().union(*tertiary[:1])
+        eligible = set(__import__("itertools").combinations(range(1, 12), 5)) - {
+            finder.LINK_ROOTS[0], min(secondary[0]), min(tertiary[1]),
+        } - earlier_tertiary
+        self.assertEqual(set().union(*quaternary), eligible)
+        for left in range(len(quaternary)):
+            for right in range(left):
+                self.assertFalse(quaternary[left] & quaternary[right])
+        cnf, _, _, _, root = finder.build(BLOCKING, 0, 0, 1, 1)
+        record = root["quaternary"]
+        self.assertEqual(record["stabilizer_order"], 2)
+        self.assertIn([record["canonical_variable"]], cnf.clauses)
+
+    def test_quaternary_requires_tertiary_index(self) -> None:
+        with self.assertRaisesRegex(ValueError, "requires a tertiary"):
+            finder.build(BLOCKING, 0, 0, None, 0)
+
     def test_rejects_nonprimary_orbit_blocker(self) -> None:
         with tempfile.TemporaryDirectory() as raw:
             path = Path(raw) / "bad.cnf"

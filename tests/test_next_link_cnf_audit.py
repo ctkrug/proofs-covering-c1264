@@ -58,6 +58,23 @@ class NextLinkCnfAuditTests(unittest.TestCase):
             self.assertEqual(value["status"], "valid")
             self.assertGreater(value["tertiary_earlier_orbit_units"], 0)
 
+    def test_exact_quaternary_reconstruction_accepts(self) -> None:
+        with tempfile.TemporaryDirectory() as raw:
+            output = Path(raw)
+            cnf, _, ranges, _, root = finder.build(BLOCKING, 0, 0, 3, 2)
+            cnf_path = output / "instance.cnf"
+            cnf.to_file(str(cnf_path))
+            result_path = output / "result.json"
+            result_path.write_text(json.dumps({
+                "cnf": {"path": str(cnf_path), "sha256": hashlib.sha256(cnf_path.read_bytes()).hexdigest()},
+                "blocking_cnf": {"path": str(BLOCKING), "sha256": hashlib.sha256(BLOCKING.read_bytes()).hexdigest()},
+                "root_partition": root,
+                "auxiliary_ranges": ranges,
+            }))
+            value = auditor.audit(result_path)
+            self.assertEqual(value["status"], "valid")
+            self.assertGreater(value["quaternary_earlier_orbit_units"], 0)
+
 
 if __name__ == "__main__":
     unittest.main()

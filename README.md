@@ -35,3 +35,10 @@ generator, and a materially different point-link decomposition. Shallow direct c
 classes so far; all four fail their residual extension checks with replayed external proofs. Exact
 primary, secondary, and one tertiary symmetry partition have produced 189 validated external proof
 receipts, with 47 canonical frontier nodes still open. No exact-value claim is made.
+
+Coordinated ten-parent hard-tail diagnostics have now stopped two unchanged scale-up ideas. A biased
+first-child smoke test of an independently audited fourth canonical layer returned 10 UNKNOWN results;
+it is not a closure-rate estimate. Glucose4 incremental assumption reuse also closed 0/10 exact parent
+leaves while running slower than cold controls, although its stop caps were only best-effort. These
+negative pilots do not change the 47-node frontier. The next discriminator must change the propagation/
+encoding mechanism, not merely deepen the same branching or raise its timeout.
