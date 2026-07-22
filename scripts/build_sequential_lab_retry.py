@@ -39,6 +39,17 @@ def main() -> None:
     retry = json.loads(base_bytes)
     retry["expected_leaf_count"] = 32
     retry["run_id"] = RUN_ID
+    original_blocker_path = "artifacts/discoveries/link-orbit-catalog-5-blocking.cnf"
+    blocker_bytes = (ROOT / original_blocker_path).read_bytes()
+    expected_blocker_sha = retry["input_sha256"].pop(original_blocker_path)
+    if sha_bytes(blocker_bytes) != expected_blocker_sha:
+        raise ValueError("local blocker does not match the rejected manifest pin")
+    frozen_blocker = OUT.parent / "frozen-inputs/link-orbit-catalog-5-blocking.cnf"
+    frozen_blocker.parent.mkdir(parents=True, exist_ok=True)
+    frozen_blocker.write_bytes(blocker_bytes)
+    frozen_blocker_path = str(frozen_blocker.relative_to(ROOT))
+    retry["blocking_cnf"] = frozen_blocker_path
+    retry["input_sha256"][frozen_blocker_path] = expected_blocker_sha
     historical_portfolio = subprocess.check_output(
         ["git", "show", f"{BASE_COMMIT}:artifacts/portfolio/frontier-manifest-v1.json"], cwd=ROOT
     )
@@ -59,7 +70,7 @@ def main() -> None:
     )
 
     invariant_fields = [
-        "blocking_cnf", "catalog", "cold_runs", "drat_trim", "frontier_summary",
+        "catalog", "cold_runs", "drat_trim", "frontier_summary",
         "hypothesis", "leaves", "maximum_projected_proof_bytes",
         "maximum_solver_cpu_seconds", "method", "portfolio_manifest_sha256",
         "predecessor", "preserved_certified_nodes", "run_order", "seconds_per_run",
@@ -103,6 +114,12 @@ def main() -> None:
                 "to": frozen_portfolio_path,
                 "sha256": expected_portfolio_sha,
                 "reason": "retain the rejected job's audited 15/47 frontier binding despite later local ledger artifacts",
+            },
+            "blocking_cnf": {
+                "from": original_blocker_path,
+                "to": frozen_blocker_path,
+                "sha256": expected_blocker_sha,
+                "reason": "package the exact originally pinned CNF, which was gitignored and absent on the worker",
             },
         },
         "claim_limit": "This audit proves retry protocol identity, not a solver or mathematical result.",

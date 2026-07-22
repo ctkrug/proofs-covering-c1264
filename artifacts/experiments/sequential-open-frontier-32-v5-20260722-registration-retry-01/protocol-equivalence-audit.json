@@ -1,5 +1,11 @@
 {
   "allowed_changes": {
+    "blocking_cnf": {
+      "from": "artifacts/discoveries/link-orbit-catalog-5-blocking.cnf",
+      "reason": "package the exact originally pinned CNF, which was gitignored and absent on the worker",
+      "sha256": "ca2ebe74048cea4593e5fc377e441a7d51a10199bba8bc0c0ef7578f5a91eb2f",
+      "to": "artifacts/experiments/sequential-open-frontier-32-v5-20260722-registration-retry-01/frozen-inputs/link-orbit-catalog-5-blocking.cnf"
+    },
     "expected_leaf_count": {
       "from": null,
       "reason": "current runner preflight",
@@ -34,11 +40,10 @@
   "ordered_leaf_records_sha256": "853af117864f96862ca7e76d84fc7f6b4cbbd04ada6c86a67b274ad4729ceb67",
   "rejected_job_id": "lab-covering-c1264-263259d8a84d",
   "retry_manifest_path": "artifacts/experiments/sequential-open-frontier-32-v5-20260722-registration-retry-01/manifest.json",
-  "retry_manifest_sha256": "a294bb5d911b3666e35d1ba7988f2d81824aef1b2b12ff9d471b5c3d5ae36056",
+  "retry_manifest_sha256": "eab7931c009073ae9d04250a96751b0fe89b42532bb2679cdf5bb1df07a94f31",
   "schema_version": 1,
   "status": "protocol_identical_immutable_input_retry",
   "unchanged_protocol_fields": [
-    "blocking_cnf",
     "catalog",
     "cold_runs",
     "drat_trim",
