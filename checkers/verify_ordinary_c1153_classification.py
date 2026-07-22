@@ -163,7 +163,8 @@ def verify(manifest_path: Path, replay: bool = False) -> dict[str, object]:
             if sha(proof) != result["proof"]["sha256"]:
                 raise ValueError("proof hash mismatch")
             if replay:
-                checker = ROOT / "toolchains/drat-trim/drat-trim"
+                local_checker = ROOT / ".venv/sat-audit-tools/drat-trim/drat-trim"
+                checker = local_checker if local_checker.exists() else ROOT / "toolchains/drat-trim/drat-trim"
                 completed = subprocess.run([str(checker), str(cnf_path), str(proof)], capture_output=True, text=True)
                 if completed.returncode != 0 or "VERIFIED" not in completed.stdout + completed.stderr:
                     raise ValueError("external proof replay failed")

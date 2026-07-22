@@ -1,0 +1,227 @@
+{
+  "checker": {
+    "path": ".venv/sat-audit-tools/drat-trim/drat-trim",
+    "sha256": "f58f63b0f76945d4c4c9ff6e87afaf870f579e67c0f7cca589492df8fc7ebd47"
+  },
+  "claim_limit": "This audits the two hard top-level branches only; ordinary uniqueness also requires the three easy top-level certificates.",
+  "classification_complete": false,
+  "counts": {
+    "FIXED_CAP_TIMEOUT": 13,
+    "UNSAT_REPLAYED": 29
+  },
+  "manifest_sha256": "1f5b29ebd457139f46968525465b321c7b80f6af350933e121387f07c2bd0791",
+  "parents": {
+    "intersection-3": {
+      "children": 25,
+      "parent_closed": false,
+      "verified_children": 18
+    },
+    "intersection-4": {
+      "children": 17,
+      "parent_closed": false,
+      "verified_children": 11
+    }
+  },
+  "partition_audit_status": "VALID",
+  "results": [
+    {
+      "id": "intersection-3-third-00",
+      "status": "FIXED_CAP_TIMEOUT"
+    },
+    {
+      "id": "intersection-3-third-01",
+      "status": "FIXED_CAP_TIMEOUT"
+    },
+    {
+      "id": "intersection-3-third-02",
+      "status": "FIXED_CAP_TIMEOUT"
+    },
+    {
+      "id": "intersection-3-third-03",
+      "status": "FIXED_CAP_TIMEOUT"
+    },
+    {
+      "id": "intersection-3-third-04",
+      "status": "FIXED_CAP_TIMEOUT"
+    },
+    {
+      "id": "intersection-3-third-05",
+      "status": "FIXED_CAP_TIMEOUT"
+    },
+    {
+      "id": "intersection-3-third-06",
+      "status": "FIXED_CAP_TIMEOUT"
+    },
+    {
+      "id": "intersection-3-third-07",
+      "proof_sha256": "caf5326062c1957c3ffaec5a70974869657ff362d09b28a49e84d8a73a1c7fa5",
+      "status": "UNSAT_REPLAYED"
+    },
+    {
+      "id": "intersection-3-third-08",
+      "proof_sha256": "b6c1189d814f602c693a6cf642758b38c0f81b03fb5ad2e939f656e8c3c269d3",
+      "status": "UNSAT_REPLAYED"
+    },
+    {
+      "id": "intersection-3-third-09",
+      "proof_sha256": "46817c5c2bfb24e1fb387b1af7ce3a87d8976d7f7fe4b86a89cab03271b0126a",
+      "status": "UNSAT_REPLAYED"
+    },
+    {
+      "id": "intersection-3-third-10",
+      "proof_sha256": "79e5d398211ad4c209d28b3c75261eae9ae1b8ff17e9f70b24fd9f8bf05649f2",
+      "status": "UNSAT_REPLAYED"
+    },
+    {
+      "id": "intersection-3-third-11",
+      "proof_sha256": "480513bf6305e82565aabab8d26f272eeb90c986ea0ad7ff45f110f6d50e4688",
+      "status": "UNSAT_REPLAYED"
+    },
+    {
+      "id": "intersection-3-third-12",
+      "proof_sha256": "f5512df086b60887a02b1584e82ff5b7706706dfc4524e4499bbf39e8c922a26",
+      "status": "UNSAT_REPLAYED"
+    },
+    {
+      "id": "intersection-3-third-13",
+      "proof_sha256": "c972369b9f85694460feec965b355d5a141ad05d1d2c71de98b6977f1ef55923",
+      "status": "UNSAT_REPLAYED"
+    },
+    {
+      "id": "intersection-3-third-14",
+      "proof_sha256": "b4889b300a695df6e622c75048fa6d56a8fe5049e9bd14ffc719076692d1852c",
+      "status": "UNSAT_REPLAYED"
+    },
+    {
+      "id": "intersection-3-third-15",
+      "proof_sha256": "07487019c75f3227e50d1827fa539323854814e0894eed1de6228c3dddd79aa9",
+      "status": "UNSAT_REPLAYED"
+    },
+    {
+      "id": "intersection-3-third-16",
+      "proof_sha256": "aabc83fd1d3462d3a3f0b1bfb4a6bb4cdb4934dda96bb23dde236a3d7c7385f3",
+      "status": "UNSAT_REPLAYED"
+    },
+    {
+      "id": "intersection-3-third-17",
+      "proof_sha256": "dd32355c2804d0a5b07b3e66285a93e11df5f10fcb0699b2388fa35cf64646f2",
+      "status": "UNSAT_REPLAYED"
+    },
+    {
+      "id": "intersection-3-third-18",
+      "proof_sha256": "68cbc49861c16f7632b19ccc15940422903c98684732a843ace0e8e39a9ec80d",
+      "status": "UNSAT_REPLAYED"
+    },
+    {
+      "id": "intersection-3-third-19",
+      "proof_sha256": "bdac7ba5af5e7ce566c3216caa64fd59e0318cc3632f07514c8a81e06d5cac44",
+      "status": "UNSAT_REPLAYED"
+    },
+    {
+      "id": "intersection-3-third-20",
+      "proof_sha256": "a37f5107d1b2cf0be3548a22e38414a6c1a5d93f3bb92b948a056961ae5d0675",
+      "status": "UNSAT_REPLAYED"
+    },
+    {
+      "id": "intersection-3-third-21",
+      "proof_sha256": "71bd9b248b5ac1851c202e027deb6cb845c10c630e039b1efe5184802dcac8c6",
+      "status": "UNSAT_REPLAYED"
+    },
+    {
+      "id": "intersection-3-third-22",
+      "proof_sha256": "3be94827db87a9b5fe9ac93720b5901f0ac6a7770c384d367e0641466f8c07bf",
+      "status": "UNSAT_REPLAYED"
+    },
+    {
+      "id": "intersection-3-third-23",
+      "proof_sha256": "8d4e8f4979d5b5a28862340ea534f477e27cce10281cf513a5e794488063acc6",
+      "status": "UNSAT_REPLAYED"
+    },
+    {
+      "id": "intersection-3-third-24",
+      "proof_sha256": "98f996960d8cb6887618bbf1537482faa7cd2f8c627247797ef41ef5a7187858",
+      "status": "UNSAT_REPLAYED"
+    },
+    {
+      "id": "intersection-4-third-00",
+      "status": "FIXED_CAP_TIMEOUT"
+    },
+    {
+      "id": "intersection-4-third-01",
+      "status": "FIXED_CAP_TIMEOUT"
+    },
+    {
+      "id": "intersection-4-third-02",
+      "status": "FIXED_CAP_TIMEOUT"
+    },
+    {
+      "id": "intersection-4-third-03",
+      "status": "FIXED_CAP_TIMEOUT"
+    },
+    {
+      "id": "intersection-4-third-04",
+      "status": "FIXED_CAP_TIMEOUT"
+    },
+    {
+      "id": "intersection-4-third-05",
+      "status": "FIXED_CAP_TIMEOUT"
+    },
+    {
+      "id": "intersection-4-third-06",
+      "proof_sha256": "bbaa1c8e405fe572e3dc57ef25bc9d2d7bb7d9fc1a92a0c00ac89d150a46b21f",
+      "status": "UNSAT_REPLAYED"
+    },
+    {
+      "id": "intersection-4-third-07",
+      "proof_sha256": "26a1660fbd5ae8a4dab189dac2d12e56353cea59cff42486023199d992433e41",
+      "status": "UNSAT_REPLAYED"
+    },
+    {
+      "id": "intersection-4-third-08",
+      "proof_sha256": "6a2c188b5b0cbe2892fd7e7cb436436e3aa75ff1c710df74377f6cb34d251f8c",
+      "status": "UNSAT_REPLAYED"
+    },
+    {
+      "id": "intersection-4-third-09",
+      "proof_sha256": "112e18a35f9486ff04d20e86c569698c3454081301e4cd31e53e59df4e86d247",
+      "status": "UNSAT_REPLAYED"
+    },
+    {
+      "id": "intersection-4-third-10",
+      "proof_sha256": "d5b9ca86ff7074cb1658e7c2b1650bd0eb7526c512eb16e0084aae16d0aaf2a1",
+      "status": "UNSAT_REPLAYED"
+    },
+    {
+      "id": "intersection-4-third-11",
+      "proof_sha256": "466cda4137e491b08e036cb86aa58d7d33e8b9710b083da7606137eedc9f918f",
+      "status": "UNSAT_REPLAYED"
+    },
+    {
+      "id": "intersection-4-third-12",
+      "proof_sha256": "414698e302ec1b984f62d4e7783ab2aded21f2c4fdbf5aa1f60c16c1087d9830",
+      "status": "UNSAT_REPLAYED"
+    },
+    {
+      "id": "intersection-4-third-13",
+      "proof_sha256": "2aeb4bf71d1a15c2055ff7789674ecb27eb00f4c8d1bbfa1b7e81214e5712887",
+      "status": "UNSAT_REPLAYED"
+    },
+    {
+      "id": "intersection-4-third-14",
+      "proof_sha256": "9d8cc6919846e3deb71d7f2b4e2c999325ba6634297853010c04eeebf2e36e16",
+      "status": "UNSAT_REPLAYED"
+    },
+    {
+      "id": "intersection-4-third-15",
+      "proof_sha256": "248eb1d3d328a23fcbadaad8a8b2c734dd069fda7208f042e2de55edb3c021b9",
+      "status": "UNSAT_REPLAYED"
+    },
+    {
+      "id": "intersection-4-third-16",
+      "proof_sha256": "2e3bca0ee6e0b14aecd95fd9beedd008bfe8c98e609a9b1e6859157c747d6107",
+      "status": "UNSAT_REPLAYED"
+    }
+  ],
+  "schema_version": 1,
+  "status": "VALID"
+}

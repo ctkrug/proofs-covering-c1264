@@ -1,0 +1,167 @@
+{
+  "decision_rule": "If at least 11/13 first-quartile cases replay UNSAT, treat the suffix as cheap proof work; if at least 9/13 second-orbit cases time out, split the early prefix one level deeper instead of raising caps.",
+  "hypothesis": "The 60-second parent hardness is concentrated in a short prefix of the ordered fourth-block orbits; midpoint branches are easy because accumulated canonical negatives prune the residual space.",
+  "manifest_sha256": "bf7051f0e3515e0e145def6c1612487a9ff9aa01b6e94f040a42441e09677045",
+  "parallelism": 4,
+  "schema_version": 1,
+  "seconds_cap": 10,
+  "selection": [
+    {
+      "index": 1,
+      "label": "second_orbit",
+      "leaf_id": "intersection-4-third-00-fourth-001",
+      "parent": "intersection-4-third-00"
+    },
+    {
+      "index": 7,
+      "label": "first_quartile",
+      "leaf_id": "intersection-4-third-00-fourth-007",
+      "parent": "intersection-4-third-00"
+    },
+    {
+      "index": 1,
+      "label": "second_orbit",
+      "leaf_id": "intersection-4-third-01-fourth-001",
+      "parent": "intersection-4-third-01"
+    },
+    {
+      "index": 6,
+      "label": "first_quartile",
+      "leaf_id": "intersection-4-third-01-fourth-006",
+      "parent": "intersection-4-third-01"
+    },
+    {
+      "index": 1,
+      "label": "second_orbit",
+      "leaf_id": "intersection-4-third-02-fourth-001",
+      "parent": "intersection-4-third-02"
+    },
+    {
+      "index": 12,
+      "label": "first_quartile",
+      "leaf_id": "intersection-4-third-02-fourth-012",
+      "parent": "intersection-4-third-02"
+    },
+    {
+      "index": 1,
+      "label": "second_orbit",
+      "leaf_id": "intersection-4-third-03-fourth-001",
+      "parent": "intersection-4-third-03"
+    },
+    {
+      "index": 11,
+      "label": "first_quartile",
+      "leaf_id": "intersection-4-third-03-fourth-011",
+      "parent": "intersection-4-third-03"
+    },
+    {
+      "index": 1,
+      "label": "second_orbit",
+      "leaf_id": "intersection-4-third-04-fourth-001",
+      "parent": "intersection-4-third-04"
+    },
+    {
+      "index": 14,
+      "label": "first_quartile",
+      "leaf_id": "intersection-4-third-04-fourth-014",
+      "parent": "intersection-4-third-04"
+    },
+    {
+      "index": 1,
+      "label": "second_orbit",
+      "leaf_id": "intersection-4-third-05-fourth-001",
+      "parent": "intersection-4-third-05"
+    },
+    {
+      "index": 11,
+      "label": "first_quartile",
+      "leaf_id": "intersection-4-third-05-fourth-011",
+      "parent": "intersection-4-third-05"
+    },
+    {
+      "index": 1,
+      "label": "second_orbit",
+      "leaf_id": "intersection-3-third-00-fourth-001",
+      "parent": "intersection-3-third-00"
+    },
+    {
+      "index": 15,
+      "label": "first_quartile",
+      "leaf_id": "intersection-3-third-00-fourth-015",
+      "parent": "intersection-3-third-00"
+    },
+    {
+      "index": 1,
+      "label": "second_orbit",
+      "leaf_id": "intersection-3-third-01-fourth-001",
+      "parent": "intersection-3-third-01"
+    },
+    {
+      "index": 12,
+      "label": "first_quartile",
+      "leaf_id": "intersection-3-third-01-fourth-012",
+      "parent": "intersection-3-third-01"
+    },
+    {
+      "index": 1,
+      "label": "second_orbit",
+      "leaf_id": "intersection-3-third-02-fourth-001",
+      "parent": "intersection-3-third-02"
+    },
+    {
+      "index": 13,
+      "label": "first_quartile",
+      "leaf_id": "intersection-3-third-02-fourth-013",
+      "parent": "intersection-3-third-02"
+    },
+    {
+      "index": 1,
+      "label": "second_orbit",
+      "leaf_id": "intersection-3-third-03-fourth-001",
+      "parent": "intersection-3-third-03"
+    },
+    {
+      "index": 31,
+      "label": "first_quartile",
+      "leaf_id": "intersection-3-third-03-fourth-031",
+      "parent": "intersection-3-third-03"
+    },
+    {
+      "index": 1,
+      "label": "second_orbit",
+      "leaf_id": "intersection-3-third-04-fourth-001",
+      "parent": "intersection-3-third-04"
+    },
+    {
+      "index": 24,
+      "label": "first_quartile",
+      "leaf_id": "intersection-3-third-04-fourth-024",
+      "parent": "intersection-3-third-04"
+    },
+    {
+      "index": 1,
+      "label": "second_orbit",
+      "leaf_id": "intersection-3-third-05-fourth-001",
+      "parent": "intersection-3-third-05"
+    },
+    {
+      "index": 14,
+      "label": "first_quartile",
+      "leaf_id": "intersection-3-third-05-fourth-014",
+      "parent": "intersection-3-third-05"
+    },
+    {
+      "index": 1,
+      "label": "second_orbit",
+      "leaf_id": "intersection-3-third-06-fourth-001",
+      "parent": "intersection-3-third-06"
+    },
+    {
+      "index": 22,
+      "label": "first_quartile",
+      "leaf_id": "intersection-3-third-06-fourth-022",
+      "parent": "intersection-3-third-06"
+    }
+  ],
+  "status": "FROZEN"
+}

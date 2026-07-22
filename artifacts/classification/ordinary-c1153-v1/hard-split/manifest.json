@@ -1,0 +1,1112 @@
+{
+  "claim_limit": "Built partition only; no child solver status is counted before independent CNF/coverage audit and certificate replay.",
+  "completion_standard": "A parent closes only when every child is replay-verified UNSAT, unless a directly validated nonisomorphic SAT cover is found.",
+  "expected_counts": {
+    "intersection-3": 25,
+    "intersection-4": 17
+  },
+  "parents": [
+    {
+      "child_count": 17,
+      "children": [
+        {
+          "canonical_third_block": [
+            1,
+            2,
+            3,
+            4,
+            7
+          ],
+          "canonical_third_block_variable": 3,
+          "cnf": {
+            "bytes": 1347578,
+            "clauses": 46180,
+            "path": "artifacts/classification/ordinary-c1153-v1/hard-split/intersection-4/intersection-4-third-00/instance.cnf",
+            "sha256": "d34339f442c5818c772490cf433248441d3da32797dd4d1e61f1599be39c82aa",
+            "variables": 10166
+          },
+          "earlier_third_variables_forced_false": 0,
+          "id": "intersection-4-third-00",
+          "index": 0,
+          "result": {
+            "path": "artifacts/classification/ordinary-c1153-v1/hard-split/intersection-4/intersection-4-third-00/result.json",
+            "sha256": "024fc6b075b6280d9cefa6894180096a3a12a35d3a8ef4545e2f35b2ff27f8f3"
+          },
+          "third_block_orbit_size": 5
+        },
+        {
+          "canonical_third_block": [
+            1,
+            2,
+            3,
+            5,
+            6
+          ],
+          "canonical_third_block_variable": 8,
+          "cnf": {
+            "bytes": 1347603,
+            "clauses": 46185,
+            "path": "artifacts/classification/ordinary-c1153-v1/hard-split/intersection-4/intersection-4-third-01/instance.cnf",
+            "sha256": "13deb69f954b931aeb9f5785eeb7903d31755b129f59d8306db5ae8d3beff11f",
+            "variables": 10166
+          },
+          "earlier_third_variables_forced_false": 5,
+          "id": "intersection-4-third-01",
+          "index": 1,
+          "result": {
+            "path": "artifacts/classification/ordinary-c1153-v1/hard-split/intersection-4/intersection-4-third-01/result.json",
+            "sha256": "024fc6b075b6280d9cefa6894180096a3a12a35d3a8ef4545e2f35b2ff27f8f3"
+          },
+          "third_block_orbit_size": 4
+        },
+        {
+          "canonical_third_block": [
+            1,
+            2,
+            3,
+            5,
+            7
+          ],
+          "canonical_third_block_variable": 9,
+          "cnf": {
+            "bytes": 1347627,
+            "clauses": 46189,
+            "path": "artifacts/classification/ordinary-c1153-v1/hard-split/intersection-4/intersection-4-third-02/instance.cnf",
+            "sha256": "323c99b844f04f4130e3cbb38fda880f0c09924262d09e84020c279ed41fb57b",
+            "variables": 10166
+          },
+          "earlier_third_variables_forced_false": 9,
+          "id": "intersection-4-third-02",
+          "index": 2,
+          "result": {
+            "path": "artifacts/classification/ordinary-c1153-v1/hard-split/intersection-4/intersection-4-third-02/result.json",
+            "sha256": "024fc6b075b6280d9cefa6894180096a3a12a35d3a8ef4545e2f35b2ff27f8f3"
+          },
+          "third_block_orbit_size": 20
+        },
+        {
+          "canonical_third_block": [
+            1,
+            2,
+            3,
+            6,
+            7
+          ],
+          "canonical_third_block_variable": 14,
+          "cnf": {
+            "bytes": 1347752,
+            "clauses": 46209,
+            "path": "artifacts/classification/ordinary-c1153-v1/hard-split/intersection-4/intersection-4-third-03/instance.cnf",
+            "sha256": "30a4a7f28d27d5cb18402f8f7d699662d867b60a5d4ab61d54b220a1cae906ec",
+            "variables": 10166
+          },
+          "earlier_third_variables_forced_false": 29,
+          "id": "intersection-4-third-03",
+          "index": 3,
+          "result": {
+            "path": "artifacts/classification/ordinary-c1153-v1/hard-split/intersection-4/intersection-4-third-03/result.json",
+            "sha256": "024fc6b075b6280d9cefa6894180096a3a12a35d3a8ef4545e2f35b2ff27f8f3"
+          },
+          "third_block_orbit_size": 20
+        },
+        {
+          "canonical_third_block": [
+            1,
+            2,
+            3,
+            7,
+            8
+          ],
+          "canonical_third_block_variable": 19,
+          "cnf": {
+            "bytes": 1347877,
+            "clauses": 46229,
+            "path": "artifacts/classification/ordinary-c1153-v1/hard-split/intersection-4/intersection-4-third-04/instance.cnf",
+            "sha256": "983b3fa968eb4041be756d38eccd03529f117b39cccbe2f7e3aa3d81978d15f1",
+            "variables": 10166
+          },
+          "earlier_third_variables_forced_false": 49,
+          "id": "intersection-4-third-04",
+          "index": 4,
+          "result": {
+            "path": "artifacts/classification/ordinary-c1153-v1/hard-split/intersection-4/intersection-4-third-04/result.json",
+            "sha256": "024fc6b075b6280d9cefa6894180096a3a12a35d3a8ef4545e2f35b2ff27f8f3"
+          },
+          "third_block_orbit_size": 40
+        },
+        {
+          "canonical_third_block": [
+            1,
+            2,
+            5,
+            6,
+            7
+          ],
+          "canonical_third_block_variable": 50,
+          "cnf": {
+            "bytes": 1348133,
+            "clauses": 46269,
+            "path": "artifacts/classification/ordinary-c1153-v1/hard-split/intersection-4/intersection-4-third-05/instance.cnf",
+            "sha256": "841ce8a9641fb33c45793bed0d897e23ee462fd5200ee204f167c38d933b0576",
+            "variables": 10166
+          },
+          "earlier_third_variables_forced_false": 89,
+          "id": "intersection-4-third-05",
+          "index": 5,
+          "result": {
+            "path": "artifacts/classification/ordinary-c1153-v1/hard-split/intersection-4/intersection-4-third-05/result.json",
+            "sha256": "024fc6b075b6280d9cefa6894180096a3a12a35d3a8ef4545e2f35b2ff27f8f3"
+          },
+          "third_block_orbit_size": 30
+        },
+        {
+          "canonical_third_block": [
+            1,
+            2,
+            5,
+            7,
+            8
+          ],
+          "canonical_third_block_variable": 55,
+          "cnf": {
+            "bytes": 1348338,
+            "clauses": 46299,
+            "path": "artifacts/classification/ordinary-c1153-v1/hard-split/intersection-4/intersection-4-third-06/instance.cnf",
+            "sha256": "854369839819ffa444a51c27616118498fcee3663d12ab765800173fe37c555c",
+            "variables": 10166
+          },
+          "earlier_third_variables_forced_false": 119,
+          "id": "intersection-4-third-06",
+          "index": 6,
+          "result": {
+            "path": "artifacts/classification/ordinary-c1153-v1/hard-split/intersection-4/intersection-4-third-06/result.json",
+            "sha256": "024fc6b075b6280d9cefa6894180096a3a12a35d3a8ef4545e2f35b2ff27f8f3"
+          },
+          "third_block_orbit_size": 60
+        },
+        {
+          "canonical_third_block": [
+            1,
+            2,
+            6,
+            7,
+            8
+          ],
+          "canonical_third_block_variable": 65,
+          "cnf": {
+            "bytes": 1348748,
+            "clauses": 46359,
+            "path": "artifacts/classification/ordinary-c1153-v1/hard-split/intersection-4/intersection-4-third-07/instance.cnf",
+            "sha256": "cb3b0eb3e514d8a71d47e7d18c9721ba448219c902d42ed2684ebe1f3dd066c5",
+            "variables": 10166
+          },
+          "earlier_third_variables_forced_false": 179,
+          "id": "intersection-4-third-07",
+          "index": 7,
+          "result": {
+            "path": "artifacts/classification/ordinary-c1153-v1/hard-split/intersection-4/intersection-4-third-07/result.json",
+            "sha256": "024fc6b075b6280d9cefa6894180096a3a12a35d3a8ef4545e2f35b2ff27f8f3"
+          },
+          "third_block_orbit_size": 60
+        },
+        {
+          "canonical_third_block": [
+            1,
+            2,
+            7,
+            8,
+            9
+          ],
+          "canonical_third_block_variable": 75,
+          "cnf": {
+            "bytes": 1349158,
+            "clauses": 46419,
+            "path": "artifacts/classification/ordinary-c1153-v1/hard-split/intersection-4/intersection-4-third-08/instance.cnf",
+            "sha256": "a71772fde66d530fd0633ee1fbfc27b6e7b63ea8a476d1dae1c1589e931ef3a4",
+            "variables": 10166
+          },
+          "earlier_third_variables_forced_false": 239,
+          "id": "intersection-4-third-08",
+          "index": 8,
+          "result": {
+            "path": "artifacts/classification/ordinary-c1153-v1/hard-split/intersection-4/intersection-4-third-08/result.json",
+            "sha256": "024fc6b075b6280d9cefa6894180096a3a12a35d3a8ef4545e2f35b2ff27f8f3"
+          },
+          "third_block_orbit_size": 60
+        },
+        {
+          "canonical_third_block": [
+            1,
+            5,
+            6,
+            7,
+            8
+          ],
+          "canonical_third_block_variable": 176,
+          "cnf": {
+            "bytes": 1349569,
+            "clauses": 46479,
+            "path": "artifacts/classification/ordinary-c1153-v1/hard-split/intersection-4/intersection-4-third-09/instance.cnf",
+            "sha256": "6ca50301787afc8e7477f87f10ab492522db0efe3bcddb6b6db8e0336130a353",
+            "variables": 10166
+          },
+          "earlier_third_variables_forced_false": 299,
+          "id": "intersection-4-third-09",
+          "index": 9,
+          "result": {
+            "path": "artifacts/classification/ordinary-c1153-v1/hard-split/intersection-4/intersection-4-third-09/result.json",
+            "sha256": "024fc6b075b6280d9cefa6894180096a3a12a35d3a8ef4545e2f35b2ff27f8f3"
+          },
+          "third_block_orbit_size": 40
+        },
+        {
+          "canonical_third_block": [
+            1,
+            5,
+            7,
+            8,
+            9
+          ],
+          "canonical_third_block_variable": 186,
+          "cnf": {
+            "bytes": 1349849,
+            "clauses": 46519,
+            "path": "artifacts/classification/ordinary-c1153-v1/hard-split/intersection-4/intersection-4-third-10/instance.cnf",
+            "sha256": "19f22627ca05d22f130000f536af2e981806b2d242cbd38516fea41064e9b130",
+            "variables": 10166
+          },
+          "earlier_third_variables_forced_false": 339,
+          "id": "intersection-4-third-10",
+          "index": 10,
+          "result": {
+            "path": "artifacts/classification/ordinary-c1153-v1/hard-split/intersection-4/intersection-4-third-10/result.json",
+            "sha256": "024fc6b075b6280d9cefa6894180096a3a12a35d3a8ef4545e2f35b2ff27f8f3"
+          },
+          "third_block_orbit_size": 40
+        },
+        {
+          "canonical_third_block": [
+            1,
+            6,
+            7,
+            8,
+            9
+          ],
+          "canonical_third_block_variable": 196,
+          "cnf": {
+            "bytes": 1350129,
+            "clauses": 46559,
+            "path": "artifacts/classification/ordinary-c1153-v1/hard-split/intersection-4/intersection-4-third-11/instance.cnf",
+            "sha256": "dee1ff1c570a8b40b986057c7dc98a91ee49fd1785e11d79ceda97e55563fd99",
+            "variables": 10166
+          },
+          "earlier_third_variables_forced_false": 379,
+          "id": "intersection-4-third-11",
+          "index": 11,
+          "result": {
+            "path": "artifacts/classification/ordinary-c1153-v1/hard-split/intersection-4/intersection-4-third-11/result.json",
+            "sha256": "024fc6b075b6280d9cefa6894180096a3a12a35d3a8ef4545e2f35b2ff27f8f3"
+          },
+          "third_block_orbit_size": 40
+        },
+        {
+          "canonical_third_block": [
+            1,
+            7,
+            8,
+            9,
+            10
+          ],
+          "canonical_third_block_variable": 206,
+          "cnf": {
+            "bytes": 1350409,
+            "clauses": 46599,
+            "path": "artifacts/classification/ordinary-c1153-v1/hard-split/intersection-4/intersection-4-third-12/instance.cnf",
+            "sha256": "62472a816bc34090a17a716402fcfff3924ccf9f367d38738da5eb98497c6e54",
+            "variables": 10166
+          },
+          "earlier_third_variables_forced_false": 419,
+          "id": "intersection-4-third-12",
+          "index": 12,
+          "result": {
+            "path": "artifacts/classification/ordinary-c1153-v1/hard-split/intersection-4/intersection-4-third-12/result.json",
+            "sha256": "024fc6b075b6280d9cefa6894180096a3a12a35d3a8ef4545e2f35b2ff27f8f3"
+          },
+          "third_block_orbit_size": 20
+        },
+        {
+          "canonical_third_block": [
+            5,
+            6,
+            7,
+            8,
+            9
+          ],
+          "canonical_third_block_variable": 442,
+          "cnf": {
+            "bytes": 1350549,
+            "clauses": 46619,
+            "path": "artifacts/classification/ordinary-c1153-v1/hard-split/intersection-4/intersection-4-third-13/instance.cnf",
+            "sha256": "210192222b73f6ac2f2189edcb20332989ff111d71e9f5f8c435e9c1c53f0548",
+            "variables": 10166
+          },
+          "earlier_third_variables_forced_false": 439,
+          "id": "intersection-4-third-13",
+          "index": 13,
+          "result": {
+            "path": "artifacts/classification/ordinary-c1153-v1/hard-split/intersection-4/intersection-4-third-13/result.json",
+            "sha256": "024fc6b075b6280d9cefa6894180096a3a12a35d3a8ef4545e2f35b2ff27f8f3"
+          },
+          "third_block_orbit_size": 10
+        },
+        {
+          "canonical_third_block": [
+            5,
+            7,
+            8,
+            9,
+            10
+          ],
+          "canonical_third_block_variable": 452,
+          "cnf": {
+            "bytes": 1350619,
+            "clauses": 46629,
+            "path": "artifacts/classification/ordinary-c1153-v1/hard-split/intersection-4/intersection-4-third-14/instance.cnf",
+            "sha256": "8a87e108f77cba60e1ca474ca87f80a64b8a184f5b23cbef408b93e86ea26d6a",
+            "variables": 10166
+          },
+          "earlier_third_variables_forced_false": 449,
+          "id": "intersection-4-third-14",
+          "index": 14,
+          "result": {
+            "path": "artifacts/classification/ordinary-c1153-v1/hard-split/intersection-4/intersection-4-third-14/result.json",
+            "sha256": "024fc6b075b6280d9cefa6894180096a3a12a35d3a8ef4545e2f35b2ff27f8f3"
+          },
+          "third_block_orbit_size": 5
+        },
+        {
+          "canonical_third_block": [
+            6,
+            7,
+            8,
+            9,
+            10
+          ],
+          "canonical_third_block_variable": 457,
+          "cnf": {
+            "bytes": 1350654,
+            "clauses": 46634,
+            "path": "artifacts/classification/ordinary-c1153-v1/hard-split/intersection-4/intersection-4-third-15/instance.cnf",
+            "sha256": "3bfc30c0b798836c516561e659cfab0c0ee71b54a2223eeaae80eb3034457668",
+            "variables": 10166
+          },
+          "earlier_third_variables_forced_false": 454,
+          "id": "intersection-4-third-15",
+          "index": 15,
+          "result": {
+            "path": "artifacts/classification/ordinary-c1153-v1/hard-split/intersection-4/intersection-4-third-15/result.json",
+            "sha256": "024fc6b075b6280d9cefa6894180096a3a12a35d3a8ef4545e2f35b2ff27f8f3"
+          },
+          "third_block_orbit_size": 5
+        },
+        {
+          "canonical_third_block": [
+            7,
+            8,
+            9,
+            10,
+            11
+          ],
+          "canonical_third_block_variable": 462,
+          "cnf": {
+            "bytes": 1350689,
+            "clauses": 46639,
+            "path": "artifacts/classification/ordinary-c1153-v1/hard-split/intersection-4/intersection-4-third-16/instance.cnf",
+            "sha256": "bda1a273052be1046816a1b7ff881536801af583dfbc3a3ba32471d97bcb6936",
+            "variables": 10166
+          },
+          "earlier_third_variables_forced_false": 459,
+          "id": "intersection-4-third-16",
+          "index": 16,
+          "result": {
+            "path": "artifacts/classification/ordinary-c1153-v1/hard-split/intersection-4/intersection-4-third-16/result.json",
+            "sha256": "024fc6b075b6280d9cefa6894180096a3a12a35d3a8ef4545e2f35b2ff27f8f3"
+          },
+          "third_block_orbit_size": 1
+        }
+      ],
+      "eligible_third_blocks": 460,
+      "fixed_second_block": [
+        1,
+        2,
+        3,
+        4,
+        6
+      ],
+      "id": "intersection-4",
+      "parent_cnf": {
+        "bytes": 1347574,
+        "clauses": 46179,
+        "path": "artifacts/classification/ordinary-c1153-v1/intersection-4/instance.cnf",
+        "sha256": "70636124bdebf5bfba97683ebe8856c99d23781a754e7d5a8a1a40feaec654b5",
+        "variables": 10166
+      },
+      "stabilizer_order": 2880
+    },
+    {
+      "child_count": 25,
+      "children": [
+        {
+          "canonical_third_block": [
+            1,
+            2,
+            3,
+            6,
+            8
+          ],
+          "canonical_third_block_variable": 15,
+          "cnf": {
+            "bytes": 1347758,
+            "clauses": 46210,
+            "path": "artifacts/classification/ordinary-c1153-v1/hard-split/intersection-3/intersection-3-third-00/instance.cnf",
+            "sha256": "39cae2fbf472dacfd39c5f4df5576a510754e923967ce20775e41ecb042b0197",
+            "variables": 10166
+          },
+          "earlier_third_variables_forced_false": 0,
+          "id": "intersection-3-third-00",
+          "index": 0,
+          "result": {
+            "path": "artifacts/classification/ordinary-c1153-v1/hard-split/intersection-3/intersection-3-third-00/result.json",
+            "sha256": "024fc6b075b6280d9cefa6894180096a3a12a35d3a8ef4545e2f35b2ff27f8f3"
+          },
+          "third_block_orbit_size": 8
+        },
+        {
+          "canonical_third_block": [
+            1,
+            2,
+            3,
+            8,
+            9
+          ],
+          "canonical_third_block_variable": 23,
+          "cnf": {
+            "bytes": 1347806,
+            "clauses": 46218,
+            "path": "artifacts/classification/ordinary-c1153-v1/hard-split/intersection-3/intersection-3-third-01/instance.cnf",
+            "sha256": "688faa230c837734c923f92b3efbb9232562846fa9ded3255d85f0f7147e8913",
+            "variables": 10166
+          },
+          "earlier_third_variables_forced_false": 8,
+          "id": "intersection-3-third-01",
+          "index": 1,
+          "result": {
+            "path": "artifacts/classification/ordinary-c1153-v1/hard-split/intersection-3/intersection-3-third-01/result.json",
+            "sha256": "024fc6b075b6280d9cefa6894180096a3a12a35d3a8ef4545e2f35b2ff27f8f3"
+          },
+          "third_block_orbit_size": 6
+        },
+        {
+          "canonical_third_block": [
+            1,
+            2,
+            4,
+            6,
+            7
+          ],
+          "canonical_third_block_variable": 35,
+          "cnf": {
+            "bytes": 1347842,
+            "clauses": 46224,
+            "path": "artifacts/classification/ordinary-c1153-v1/hard-split/intersection-3/intersection-3-third-02/instance.cnf",
+            "sha256": "b99320a3c698d5243f28c5433b3f91698507673c162d04512c0c2d3616844677",
+            "variables": 10166
+          },
+          "earlier_third_variables_forced_false": 14,
+          "id": "intersection-3-third-02",
+          "index": 2,
+          "result": {
+            "path": "artifacts/classification/ordinary-c1153-v1/hard-split/intersection-3/intersection-3-third-02/result.json",
+            "sha256": "024fc6b075b6280d9cefa6894180096a3a12a35d3a8ef4545e2f35b2ff27f8f3"
+          },
+          "third_block_orbit_size": 6
+        },
+        {
+          "canonical_third_block": [
+            1,
+            2,
+            4,
+            6,
+            8
+          ],
+          "canonical_third_block_variable": 36,
+          "cnf": {
+            "bytes": 1347881,
+            "clauses": 46230,
+            "path": "artifacts/classification/ordinary-c1153-v1/hard-split/intersection-3/intersection-3-third-03/instance.cnf",
+            "sha256": "0c1eba2dc4a6d83f010fcbea452b39ef6cea91a26525389ae54344bca743f591",
+            "variables": 10166
+          },
+          "earlier_third_variables_forced_false": 20,
+          "id": "intersection-3-third-03",
+          "index": 3,
+          "result": {
+            "path": "artifacts/classification/ordinary-c1153-v1/hard-split/intersection-3/intersection-3-third-03/result.json",
+            "sha256": "024fc6b075b6280d9cefa6894180096a3a12a35d3a8ef4545e2f35b2ff27f8f3"
+          },
+          "third_block_orbit_size": 48
+        },
+        {
+          "canonical_third_block": [
+            1,
+            2,
+            4,
+            8,
+            9
+          ],
+          "canonical_third_block_variable": 44,
+          "cnf": {
+            "bytes": 1348193,
+            "clauses": 46278,
+            "path": "artifacts/classification/ordinary-c1153-v1/hard-split/intersection-3/intersection-3-third-04/instance.cnf",
+            "sha256": "ea4827737c7fe972c418e494f270e2677d027320bcea5b8715a9383d695302c7",
+            "variables": 10166
+          },
+          "earlier_third_variables_forced_false": 68,
+          "id": "intersection-3-third-04",
+          "index": 4,
+          "result": {
+            "path": "artifacts/classification/ordinary-c1153-v1/hard-split/intersection-3/intersection-3-third-04/result.json",
+            "sha256": "024fc6b075b6280d9cefa6894180096a3a12a35d3a8ef4545e2f35b2ff27f8f3"
+          },
+          "third_block_orbit_size": 36
+        },
+        {
+          "canonical_third_block": [
+            1,
+            2,
+            6,
+            7,
+            8
+          ],
+          "canonical_third_block_variable": 65,
+          "cnf": {
+            "bytes": 1348433,
+            "clauses": 46314,
+            "path": "artifacts/classification/ordinary-c1153-v1/hard-split/intersection-3/intersection-3-third-05/instance.cnf",
+            "sha256": "caa4108c636d3a1952bde541e2d9071bf8d70ea13265fc59cd114a76c272c64d",
+            "variables": 10166
+          },
+          "earlier_third_variables_forced_false": 104,
+          "id": "intersection-3-third-05",
+          "index": 5,
+          "result": {
+            "path": "artifacts/classification/ordinary-c1153-v1/hard-split/intersection-3/intersection-3-third-05/result.json",
+            "sha256": "024fc6b075b6280d9cefa6894180096a3a12a35d3a8ef4545e2f35b2ff27f8f3"
+          },
+          "third_block_orbit_size": 12
+        },
+        {
+          "canonical_third_block": [
+            1,
+            2,
+            6,
+            8,
+            9
+          ],
+          "canonical_third_block_variable": 69,
+          "cnf": {
+            "bytes": 1348513,
+            "clauses": 46326,
+            "path": "artifacts/classification/ordinary-c1153-v1/hard-split/intersection-3/intersection-3-third-06/instance.cnf",
+            "sha256": "df5b1346f92f1b893de3ca7d5104f570d0e685fb84569182bb27239a45bcf3fc",
+            "variables": 10166
+          },
+          "earlier_third_variables_forced_false": 116,
+          "id": "intersection-3-third-06",
+          "index": 6,
+          "result": {
+            "path": "artifacts/classification/ordinary-c1153-v1/hard-split/intersection-3/intersection-3-third-06/result.json",
+            "sha256": "024fc6b075b6280d9cefa6894180096a3a12a35d3a8ef4545e2f35b2ff27f8f3"
+          },
+          "third_block_orbit_size": 36
+        },
+        {
+          "canonical_third_block": [
+            1,
+            2,
+            8,
+            9,
+            10
+          ],
+          "canonical_third_block_variable": 81,
+          "cnf": {
+            "bytes": 1348753,
+            "clauses": 46362,
+            "path": "artifacts/classification/ordinary-c1153-v1/hard-split/intersection-3/intersection-3-third-07/instance.cnf",
+            "sha256": "95575334da9912dab0e19568d7c9859882018f3a66aa0901dea2a13bbdc592d3",
+            "variables": 10166
+          },
+          "earlier_third_variables_forced_false": 152,
+          "id": "intersection-3-third-07",
+          "index": 7,
+          "result": {
+            "path": "artifacts/classification/ordinary-c1153-v1/hard-split/intersection-3/intersection-3-third-07/result.json",
+            "sha256": "024fc6b075b6280d9cefa6894180096a3a12a35d3a8ef4545e2f35b2ff27f8f3"
+          },
+          "third_block_orbit_size": 12
+        },
+        {
+          "canonical_third_block": [
+            1,
+            4,
+            5,
+            6,
+            7
+          ],
+          "canonical_third_block_variable": 141,
+          "cnf": {
+            "bytes": 1348834,
+            "clauses": 46374,
+            "path": "artifacts/classification/ordinary-c1153-v1/hard-split/intersection-3/intersection-3-third-08/instance.cnf",
+            "sha256": "ed6803463708d0293079e4ffc9460baf1e671e32023d604202c124d2e93ec887",
+            "variables": 10166
+          },
+          "earlier_third_variables_forced_false": 164,
+          "id": "intersection-3-third-08",
+          "index": 8,
+          "result": {
+            "path": "artifacts/classification/ordinary-c1153-v1/hard-split/intersection-3/intersection-3-third-08/result.json",
+            "sha256": "024fc6b075b6280d9cefa6894180096a3a12a35d3a8ef4545e2f35b2ff27f8f3"
+          },
+          "third_block_orbit_size": 3
+        },
+        {
+          "canonical_third_block": [
+            1,
+            4,
+            5,
+            6,
+            8
+          ],
+          "canonical_third_block_variable": 142,
+          "cnf": {
+            "bytes": 1348855,
+            "clauses": 46377,
+            "path": "artifacts/classification/ordinary-c1153-v1/hard-split/intersection-3/intersection-3-third-09/instance.cnf",
+            "sha256": "9d6fd346e144b8b2cfc94fa1a729937f4f2560fe1edd0c09ed71a28a4868ddda",
+            "variables": 10166
+          },
+          "earlier_third_variables_forced_false": 167,
+          "id": "intersection-3-third-09",
+          "index": 9,
+          "result": {
+            "path": "artifacts/classification/ordinary-c1153-v1/hard-split/intersection-3/intersection-3-third-09/result.json",
+            "sha256": "024fc6b075b6280d9cefa6894180096a3a12a35d3a8ef4545e2f35b2ff27f8f3"
+          },
+          "third_block_orbit_size": 24
+        },
+        {
+          "canonical_third_block": [
+            1,
+            4,
+            5,
+            8,
+            9
+          ],
+          "canonical_third_block_variable": 150,
+          "cnf": {
+            "bytes": 1349023,
+            "clauses": 46401,
+            "path": "artifacts/classification/ordinary-c1153-v1/hard-split/intersection-3/intersection-3-third-10/instance.cnf",
+            "sha256": "fc896452fd44fb27ad437ea865d6b855b2e678f9f9cf067e42ea17bed19f0590",
+            "variables": 10166
+          },
+          "earlier_third_variables_forced_false": 191,
+          "id": "intersection-3-third-10",
+          "index": 10,
+          "result": {
+            "path": "artifacts/classification/ordinary-c1153-v1/hard-split/intersection-3/intersection-3-third-10/result.json",
+            "sha256": "024fc6b075b6280d9cefa6894180096a3a12a35d3a8ef4545e2f35b2ff27f8f3"
+          },
+          "third_block_orbit_size": 18
+        },
+        {
+          "canonical_third_block": [
+            1,
+            4,
+            6,
+            7,
+            8
+          ],
+          "canonical_third_block_variable": 156,
+          "cnf": {
+            "bytes": 1349149,
+            "clauses": 46419,
+            "path": "artifacts/classification/ordinary-c1153-v1/hard-split/intersection-3/intersection-3-third-11/instance.cnf",
+            "sha256": "3ec32a1da728eb8a5781c36673e99a412312d35abac60e75d4161fdd386aa6be",
+            "variables": 10166
+          },
+          "earlier_third_variables_forced_false": 209,
+          "id": "intersection-3-third-11",
+          "index": 11,
+          "result": {
+            "path": "artifacts/classification/ordinary-c1153-v1/hard-split/intersection-3/intersection-3-third-11/result.json",
+            "sha256": "024fc6b075b6280d9cefa6894180096a3a12a35d3a8ef4545e2f35b2ff27f8f3"
+          },
+          "third_block_orbit_size": 24
+        },
+        {
+          "canonical_third_block": [
+            1,
+            4,
+            6,
+            8,
+            9
+          ],
+          "canonical_third_block_variable": 160,
+          "cnf": {
+            "bytes": 1349317,
+            "clauses": 46443,
+            "path": "artifacts/classification/ordinary-c1153-v1/hard-split/intersection-3/intersection-3-third-12/instance.cnf",
+            "sha256": "f54253ef58d298a06a8f6597ed7cec5650be768afafdd673ce58e75263d88c68",
+            "variables": 10166
+          },
+          "earlier_third_variables_forced_false": 233,
+          "id": "intersection-3-third-12",
+          "index": 12,
+          "result": {
+            "path": "artifacts/classification/ordinary-c1153-v1/hard-split/intersection-3/intersection-3-third-12/result.json",
+            "sha256": "024fc6b075b6280d9cefa6894180096a3a12a35d3a8ef4545e2f35b2ff27f8f3"
+          },
+          "third_block_orbit_size": 72
+        },
+        {
+          "canonical_third_block": [
+            1,
+            4,
+            8,
+            9,
+            10
+          ],
+          "canonical_third_block_variable": 172,
+          "cnf": {
+            "bytes": 1349821,
+            "clauses": 46515,
+            "path": "artifacts/classification/ordinary-c1153-v1/hard-split/intersection-3/intersection-3-third-13/instance.cnf",
+            "sha256": "6ee713e44ad6e41a110e594723b547f4e9d07c46fa1394d63e6fb6b8d493c5fb",
+            "variables": 10166
+          },
+          "earlier_third_variables_forced_false": 305,
+          "id": "intersection-3-third-13",
+          "index": 13,
+          "result": {
+            "path": "artifacts/classification/ordinary-c1153-v1/hard-split/intersection-3/intersection-3-third-13/result.json",
+            "sha256": "024fc6b075b6280d9cefa6894180096a3a12a35d3a8ef4545e2f35b2ff27f8f3"
+          },
+          "third_block_orbit_size": 24
+        },
+        {
+          "canonical_third_block": [
+            1,
+            6,
+            7,
+            8,
+            9
+          ],
+          "canonical_third_block_variable": 196,
+          "cnf": {
+            "bytes": 1349989,
+            "clauses": 46539,
+            "path": "artifacts/classification/ordinary-c1153-v1/hard-split/intersection-3/intersection-3-third-14/instance.cnf",
+            "sha256": "502cf0717bb8f588341794e5fc9f3f0c9ea3f0820801613423bff88906cd9702",
+            "variables": 10166
+          },
+          "earlier_third_variables_forced_false": 329,
+          "id": "intersection-3-third-14",
+          "index": 14,
+          "result": {
+            "path": "artifacts/classification/ordinary-c1153-v1/hard-split/intersection-3/intersection-3-third-14/result.json",
+            "sha256": "024fc6b075b6280d9cefa6894180096a3a12a35d3a8ef4545e2f35b2ff27f8f3"
+          },
+          "third_block_orbit_size": 18
+        },
+        {
+          "canonical_third_block": [
+            1,
+            6,
+            8,
+            9,
+            10
+          ],
+          "canonical_third_block_variable": 202,
+          "cnf": {
+            "bytes": 1350115,
+            "clauses": 46557,
+            "path": "artifacts/classification/ordinary-c1153-v1/hard-split/intersection-3/intersection-3-third-15/instance.cnf",
+            "sha256": "163f9bb219a70d9d9a6092a33671c19d6cc0020f6c4e68836cc0dfa778c893ff",
+            "variables": 10166
+          },
+          "earlier_third_variables_forced_false": 347,
+          "id": "intersection-3-third-15",
+          "index": 15,
+          "result": {
+            "path": "artifacts/classification/ordinary-c1153-v1/hard-split/intersection-3/intersection-3-third-15/result.json",
+            "sha256": "024fc6b075b6280d9cefa6894180096a3a12a35d3a8ef4545e2f35b2ff27f8f3"
+          },
+          "third_block_orbit_size": 24
+        },
+        {
+          "canonical_third_block": [
+            1,
+            8,
+            9,
+            10,
+            11
+          ],
+          "canonical_third_block_variable": 210,
+          "cnf": {
+            "bytes": 1350283,
+            "clauses": 46581,
+            "path": "artifacts/classification/ordinary-c1153-v1/hard-split/intersection-3/intersection-3-third-16/instance.cnf",
+            "sha256": "a24465ce57437853cf1a852ca7baea51750cd12257cdf9ffaf5a1663c21c0578",
+            "variables": 10166
+          },
+          "earlier_third_variables_forced_false": 371,
+          "id": "intersection-3-third-16",
+          "index": 16,
+          "result": {
+            "path": "artifacts/classification/ordinary-c1153-v1/hard-split/intersection-3/intersection-3-third-16/result.json",
+            "sha256": "024fc6b075b6280d9cefa6894180096a3a12a35d3a8ef4545e2f35b2ff27f8f3"
+          },
+          "third_block_orbit_size": 3
+        },
+        {
+          "canonical_third_block": [
+            4,
+            5,
+            6,
+            7,
+            8
+          ],
+          "canonical_third_block_variable": 407,
+          "cnf": {
+            "bytes": 1350304,
+            "clauses": 46584,
+            "path": "artifacts/classification/ordinary-c1153-v1/hard-split/intersection-3/intersection-3-third-17/instance.cnf",
+            "sha256": "2976901e6a310450e301ba60aaad7775c649555088aa05f975cdf37beaba768d",
+            "variables": 10166
+          },
+          "earlier_third_variables_forced_false": 374,
+          "id": "intersection-3-third-17",
+          "index": 17,
+          "result": {
+            "path": "artifacts/classification/ordinary-c1153-v1/hard-split/intersection-3/intersection-3-third-17/result.json",
+            "sha256": "024fc6b075b6280d9cefa6894180096a3a12a35d3a8ef4545e2f35b2ff27f8f3"
+          },
+          "third_block_orbit_size": 4
+        },
+        {
+          "canonical_third_block": [
+            4,
+            5,
+            6,
+            8,
+            9
+          ],
+          "canonical_third_block_variable": 411,
+          "cnf": {
+            "bytes": 1350332,
+            "clauses": 46588,
+            "path": "artifacts/classification/ordinary-c1153-v1/hard-split/intersection-3/intersection-3-third-18/instance.cnf",
+            "sha256": "972c4b2994aedf8ed3fc09bc664865b7c7f59f91052380014629ae0981e3a37b",
+            "variables": 10166
+          },
+          "earlier_third_variables_forced_false": 378,
+          "id": "intersection-3-third-18",
+          "index": 18,
+          "result": {
+            "path": "artifacts/classification/ordinary-c1153-v1/hard-split/intersection-3/intersection-3-third-18/result.json",
+            "sha256": "024fc6b075b6280d9cefa6894180096a3a12a35d3a8ef4545e2f35b2ff27f8f3"
+          },
+          "third_block_orbit_size": 12
+        },
+        {
+          "canonical_third_block": [
+            4,
+            5,
+            8,
+            9,
+            10
+          ],
+          "canonical_third_block_variable": 423,
+          "cnf": {
+            "bytes": 1350416,
+            "clauses": 46600,
+            "path": "artifacts/classification/ordinary-c1153-v1/hard-split/intersection-3/intersection-3-third-19/instance.cnf",
+            "sha256": "7f99b71d30cf63c6a9c7b92367368873de2aee18d737cc61f990fb753752df34",
+            "variables": 10166
+          },
+          "earlier_third_variables_forced_false": 390,
+          "id": "intersection-3-third-19",
+          "index": 19,
+          "result": {
+            "path": "artifacts/classification/ordinary-c1153-v1/hard-split/intersection-3/intersection-3-third-19/result.json",
+            "sha256": "024fc6b075b6280d9cefa6894180096a3a12a35d3a8ef4545e2f35b2ff27f8f3"
+          },
+          "third_block_orbit_size": 4
+        },
+        {
+          "canonical_third_block": [
+            4,
+            6,
+            7,
+            8,
+            9
+          ],
+          "canonical_third_block_variable": 427,
+          "cnf": {
+            "bytes": 1350444,
+            "clauses": 46604,
+            "path": "artifacts/classification/ordinary-c1153-v1/hard-split/intersection-3/intersection-3-third-20/instance.cnf",
+            "sha256": "dfbfa02ccf9a356109ca9023f16b2631892527513cbc951f865eec203574ba7b",
+            "variables": 10166
+          },
+          "earlier_third_variables_forced_false": 394,
+          "id": "intersection-3-third-20",
+          "index": 20,
+          "result": {
+            "path": "artifacts/classification/ordinary-c1153-v1/hard-split/intersection-3/intersection-3-third-20/result.json",
+            "sha256": "024fc6b075b6280d9cefa6894180096a3a12a35d3a8ef4545e2f35b2ff27f8f3"
+          },
+          "third_block_orbit_size": 12
+        },
+        {
+          "canonical_third_block": [
+            4,
+            6,
+            8,
+            9,
+            10
+          ],
+          "canonical_third_block_variable": 433,
+          "cnf": {
+            "bytes": 1350528,
+            "clauses": 46616,
+            "path": "artifacts/classification/ordinary-c1153-v1/hard-split/intersection-3/intersection-3-third-21/instance.cnf",
+            "sha256": "cc4459a0fb0fe996d59d79813fe5bc96768675d9cdd3635ac1f88f8f4b5002d3",
+            "variables": 10166
+          },
+          "earlier_third_variables_forced_false": 406,
+          "id": "intersection-3-third-21",
+          "index": 21,
+          "result": {
+            "path": "artifacts/classification/ordinary-c1153-v1/hard-split/intersection-3/intersection-3-third-21/result.json",
+            "sha256": "024fc6b075b6280d9cefa6894180096a3a12a35d3a8ef4545e2f35b2ff27f8f3"
+          },
+          "third_block_orbit_size": 16
+        },
+        {
+          "canonical_third_block": [
+            4,
+            8,
+            9,
+            10,
+            11
+          ],
+          "canonical_third_block_variable": 441,
+          "cnf": {
+            "bytes": 1350640,
+            "clauses": 46632,
+            "path": "artifacts/classification/ordinary-c1153-v1/hard-split/intersection-3/intersection-3-third-22/instance.cnf",
+            "sha256": "ec9c74f9c738358ec8df4502116883668454b037bacdd845d3bdd073d705a54b",
+            "variables": 10166
+          },
+          "earlier_third_variables_forced_false": 422,
+          "id": "intersection-3-third-22",
+          "index": 22,
+          "result": {
+            "path": "artifacts/classification/ordinary-c1153-v1/hard-split/intersection-3/intersection-3-third-22/result.json",
+            "sha256": "024fc6b075b6280d9cefa6894180096a3a12a35d3a8ef4545e2f35b2ff27f8f3"
+          },
+          "third_block_orbit_size": 2
+        },
+        {
+          "canonical_third_block": [
+            6,
+            7,
+            8,
+            9,
+            10
+          ],
+          "canonical_third_block_variable": 457,
+          "cnf": {
+            "bytes": 1350654,
+            "clauses": 46634,
+            "path": "artifacts/classification/ordinary-c1153-v1/hard-split/intersection-3/intersection-3-third-23/instance.cnf",
+            "sha256": "70019af14ea21e9f8b9d8505e0aea41f2cca55425eaa840a8975a0fc4c8178f9",
+            "variables": 10166
+          },
+          "earlier_third_variables_forced_false": 424,
+          "id": "intersection-3-third-23",
+          "index": 23,
+          "result": {
+            "path": "artifacts/classification/ordinary-c1153-v1/hard-split/intersection-3/intersection-3-third-23/result.json",
+            "sha256": "024fc6b075b6280d9cefa6894180096a3a12a35d3a8ef4545e2f35b2ff27f8f3"
+          },
+          "third_block_orbit_size": 4
+        },
+        {
+          "canonical_third_block": [
+            6,
+            8,
+            9,
+            10,
+            11
+          ],
+          "canonical_third_block_variable": 461,
+          "cnf": {
+            "bytes": 1350682,
+            "clauses": 46638,
+            "path": "artifacts/classification/ordinary-c1153-v1/hard-split/intersection-3/intersection-3-third-24/instance.cnf",
+            "sha256": "1507c5836e8df2270036c98b9da303e82b830347d43d9321ee1df07a61744e60",
+            "variables": 10166
+          },
+          "earlier_third_variables_forced_false": 428,
+          "id": "intersection-3-third-24",
+          "index": 24,
+          "result": {
+            "path": "artifacts/classification/ordinary-c1153-v1/hard-split/intersection-3/intersection-3-third-24/result.json",
+            "sha256": "024fc6b075b6280d9cefa6894180096a3a12a35d3a8ef4545e2f35b2ff27f8f3"
+          },
+          "third_block_orbit_size": 2
+        }
+      ],
+      "eligible_third_blocks": 430,
+      "fixed_second_block": [
+        1,
+        2,
+        3,
+        6,
+        7
+      ],
+      "id": "intersection-3",
+      "parent_cnf": {
+        "bytes": 1347753,
+        "clauses": 46209,
+        "path": "artifacts/classification/ordinary-c1153-v1/intersection-3/instance.cnf",
+        "sha256": "0121b14e6cabe6b7fcf1c84a4342940cc3f240bcdf0ab11a59796450d43e996c",
+        "variables": 10166
+      },
+      "stabilizer_order": 576
+    }
+  ],
+  "partition_rule": "For each hard parent, choose the first present third-block orbit under the stabilizer of the fixed root and second blocks; force earlier orbits absent and a canonical member present.",
+  "schema_version": 1,
+  "status": "BUILT_NOT_SOLVED",
+  "top_manifest": {
+    "path": "artifacts/classification/ordinary-c1153-v1/manifest.json",
+    "sha256": "d5225d5e072581a67c8f053b6c03645d036560c2661eb21b79432ebb191509b1"
+  },
+  "total_children": 42
+}

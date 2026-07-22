@@ -1,5 +1,14 @@
 {
-  "claim_limit": "No classification claim until this exact CNF has a replay-verified UNSAT proof or a directly validated SAT witness.",
+  "claim_limit": "Replay-verified UNSAT for this exact ordinary-classification leaf only.",
+  "proof": {
+    "bytes": 592035,
+    "path": "artifacts/classification/ordinary-c1153-v1/intersection-1/proof.drat",
+    "sha256": "427ebc683ceebf152363be22aa3234593639c6baa1fa25d3b852710f912e69c5"
+  },
+  "replay_receipt": {
+    "path": "artifacts/classification/ordinary-c1153-v1/intersection-1/replay-receipt.json",
+    "sha256": "e159546f6f436fb7262f6937de72a7730081f6fedb94476117d685c83bd4001b"
+  },
   "schema_version": 1,
-  "status": "NOT_RUN"
+  "status": "UNSAT_VERIFIED"
 }

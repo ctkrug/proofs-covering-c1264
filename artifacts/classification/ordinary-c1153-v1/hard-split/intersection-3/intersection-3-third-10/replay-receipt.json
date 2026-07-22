@@ -1,0 +1,35 @@
+{
+  "checker": {
+    "path": ".venv/sat-audit-tools/drat-trim/drat-trim",
+    "returncode": 0,
+    "sha256": "f58f63b0f76945d4c4c9ff6e87afaf870f579e67c0f7cca589492df8fc7ebd47"
+  },
+  "cnf": {
+    "bytes": 1349023,
+    "path": "artifacts/classification/ordinary-c1153-v1/hard-split/intersection-3/intersection-3-third-10/instance.cnf",
+    "sha256": "fc896452fd44fb27ad437ea865d6b855b2e678f9f9cf067e42ea17bed19f0590"
+  },
+  "leaf_id": "intersection-3-third-10",
+  "proof": {
+    "bytes": 595507,
+    "path": "artifacts/classification/ordinary-c1153-v1/hard-split/intersection-3/intersection-3-third-10/proof.drat",
+    "sha256": "79e5d398211ad4c209d28b3c75261eae9ae1b8ff17e9f70b24fd9f8bf05649f2"
+  },
+  "replay_log": {
+    "path": "artifacts/classification/ordinary-c1153-v1/hard-split/intersection-3/intersection-3-third-10/replay.log",
+    "sha256": "a8ca33f2633ec05bdf1d1778f69b2d9528794fa1fba0a17d0b74d567c4ddd983"
+  },
+  "schema_version": 1,
+  "solver": {
+    "elapsed_seconds": 0.20297587499953806,
+    "path": ".venv/sat-audit-tools/cadical/build/cadical",
+    "returncode": 20,
+    "seconds_cap": 60,
+    "sha256": "d2f7e3fc9577de8548125b11c7c37772df32438bf86ffdadb9f45a11e643dd64"
+  },
+  "solver_log": {
+    "path": "artifacts/classification/ordinary-c1153-v1/hard-split/intersection-3/intersection-3-third-10/solver.log",
+    "sha256": "bde6e1eede96772c07c8ce29fd18088863815bd043aa59a06f11f5838cf8a162"
+  },
+  "status": "UNSAT_VERIFIED"
+}

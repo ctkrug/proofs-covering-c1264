@@ -1,0 +1,36 @@
+{
+  "checker": {
+    "path": ".venv/sat-audit-tools/drat-trim/drat-trim",
+    "returncode": 0,
+    "sha256": "f58f63b0f76945d4c4c9ff6e87afaf870f579e67c0f7cca589492df8fc7ebd47"
+  },
+  "claim_limit": "Replay-verified UNSAT for this exact ordinary-classification leaf only.",
+  "cnf": {
+    "bytes": 1348749,
+    "path": "artifacts/classification/ordinary-c1153-v1/intersection-2/instance.cnf",
+    "sha256": "33a5bcd16a39d58e81bada03d49832e2c15db631a8bf0396771f1860bce6e5ec"
+  },
+  "leaf_id": "intersection-2",
+  "proof": {
+    "bytes": 1275191,
+    "path": "artifacts/classification/ordinary-c1153-v1/intersection-2/proof.drat",
+    "sha256": "4f86d2ad31c34a4e01b244fd75843e767b0bef54add50e7e5e47bb356b1daa6a"
+  },
+  "replay_log": {
+    "path": "artifacts/classification/ordinary-c1153-v1/intersection-2/replay.log",
+    "sha256": "11b48a03dda2db9fd20a6b5f24f7224029a3bae0e03ce398b0da92c731c2c09d"
+  },
+  "schema_version": 1,
+  "solver": {
+    "elapsed_seconds": 0.8694997080019675,
+    "path": ".venv/sat-audit-tools/cadical/build/cadical",
+    "returncode": 20,
+    "seconds_cap": 60,
+    "sha256": "d2f7e3fc9577de8548125b11c7c37772df32438bf86ffdadb9f45a11e643dd64"
+  },
+  "solver_log": {
+    "path": "artifacts/classification/ordinary-c1153-v1/intersection-2/solver.log",
+    "sha256": "bde6e1eede96772c07c8ce29fd18088863815bd043aa59a06f11f5838cf8a162"
+  },
+  "status": "UNSAT_VERIFIED"
+}
