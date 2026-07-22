@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "id": "20260722-203028-35ee1a",
+  "name": "Exact residual extension tests for link orbits 8 and 9 segment 1/1",
+  "hypothesis": "One of the two newly validated point-link orbits may extend to a directly verifiable 40-block cover; otherwise replayed UNSAT will exclude each orbit locally.",
+  "expected_signal": "Exactly two fixed-link results at 300 seconds each, with direct cover verification for SAT and reconstructed CNF plus replayable proof for UNSAT.",
+  "command": [
+    "python3",
+    "scripts/run_two_new_orbit_extension_tranche.py",
+    "--manifest",
+    "artifacts/experiments/link-orbits-8-9-extension-300s-20260722/manifest.json",
+    "--checkpoint",
+    "artifacts/experiments/link-orbits-8-9-extension-300s-20260722/checkpoint.json",
+    "--progress",
+    "artifacts/experiments/link-orbits-8-9-extension-300s-20260722/progress.json"
+  ],
+  "cwd": "/root/proof-factory/research/covering-c1264/workspace",
+  "seed": 0,
+  "timeout_seconds": 700,
+  "memory_limit_mb": 4096,
+  "memory_limit_enforced": true,
+  "started_at": "2026-07-22T20:30:28.468666+00:00",
+  "finished_at": "2026-07-22T20:30:28.701218+00:00",
+  "duration_seconds": 0.233,
+  "returncode": 1,
+  "timed_out": false,
+  "python": "3.12.3",
+  "platform": "Linux-6.8.0-124-generic-x86_64-with-glibc2.39",
+  "git_commit": "22f74473e10ee7a49b893ec7fe566735187eb47e",
+  "source_urls": [],
+  "input_artifacts": {
+    "/root/proof-factory/research/covering-c1264/workspace/scripts/run_two_new_orbit_extension_tranche.py": "fcd74d9105b3d26046ce9cf5f290c3a769447a2a1947a01e96e4d8ac97209144",
+    "/root/proof-factory/research/covering-c1264/workspace/artifacts/experiments/link-orbits-8-9-extension-300s-20260722/manifest.json": "9d8724531c339b0c02a6f3a3d1f0fc0db78e9d95aa19f88c7e31740b9d5577f2"
+  },
+  "peak_child_memory_rusage": 17920,
+  "peak_child_memory_unit": "kilobytes",
+  "artifacts": {
+    "stdout.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr.txt": "bdd8f960da266eee3e9331676aa6098c0e6f90becc1259511b8b6e37f1bc70a4"
+  }
+}

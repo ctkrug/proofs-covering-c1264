@@ -1,0 +1,10 @@
+Traceback (most recent call last):
+  File "/root/proof-factory/research/covering-c1264/workspace/scripts/run_link_residual_pilot.py", line 15, in <module>
+    from pysat.card import CardEnc, EncType
+ModuleNotFoundError: No module named 'pysat'
+Traceback (most recent call last):
+  File "/root/proof-factory/research/covering-c1264/workspace/scripts/run_two_new_orbit_extension_tranche.py", line 70, in <module>
+    main()
+  File "/root/proof-factory/research/covering-c1264/workspace/scripts/run_two_new_orbit_extension_tranche.py", line 46, in main
+    raise RuntimeError(f"extension runner failed for {unit['id']}: {run.returncode}")
+RuntimeError: extension runner failed for orbit-8-t-16: 1

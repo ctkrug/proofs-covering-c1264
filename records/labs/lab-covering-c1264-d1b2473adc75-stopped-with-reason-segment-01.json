@@ -1,4 +1,5 @@
 {
+  "event": "stopped_with_reason",
   "schema_version": 2,
   "id": "lab-covering-c1264-d1b2473adc75",
   "problem_id": "covering-c1264",
@@ -50,5 +51,21 @@
     "artifacts/experiments/link-orbits-8-9-extension-300s-20260722/manifest.json": "9d8724531c339b0c02a6f3a3d1f0fc0db78e9d95aa19f88c7e31740b9d5577f2",
     "scripts/run_two_new_orbit_extension_tranche.py": "fcd74d9105b3d26046ce9cf5f290c3a769447a2a1947a01e96e4d8ac97209144"
   },
-  "spec_sha256": "4a9b6c00265310c1eee116aa2b39467bc3f74d92c28038423f71b37d2a9c1d30"
+  "spec_sha256": "4a9b6c00265310c1eee116aa2b39467bc3f74d92c28038423f71b37d2a9c1d30",
+  "recorded_at": "2026-07-22T20:30:28.909253+00:00",
+  "job_id": "lab-covering-c1264-d1b2473adc75",
+  "returncode": 1,
+  "duration_seconds": 0.326118,
+  "checkpoint_exists": false,
+  "checkpoint_sha256": "",
+  "progress": {},
+  "threshold_failures": [
+    "progress record missing or invalid: cannot read lab progress record: /root/proof-factory/research/covering-c1264/workspace/artifacts/experiments/link-orbits-8-9-extension-300s-20260722/progress.json: [Errno 2] No such file or directory: '/root/proof-factory/research/covering-c1264/workspace/artifacts/experiments/link-orbits-8-9-extension-300s-20260722/progress.json'",
+    "checkpoint file missing",
+    "segment process returned 1"
+  ],
+  "runner_result": "{\n  \"experiment_dir\": \"/root/proof-factory/research/covering-c1264/workspace/lab-runs/lab-covering-c1264-d1b2473adc75/segment-000001/20260722-203028-35ee1a\",\n  \"schema_version\": 1,\n  \"id\": \"20260722-203028-35ee1a\",\n  \"name\": \"Exact residual extension tests for link orbits 8 and 9 segment 1/1\",\n  \"hypothesis\": \"One of the two newly validated point-link orbits may extend to a directly verifiable 40-block cover; otherwise replayed UNSAT will exclude each orbit locally.\",\n  \"expected_signal\": \"Exactly two fixed-link results at 300 seconds each, with direct cover verification for SAT and reconstructed CNF plus replayable proof for UNSAT.\",\n  \"command\": [\n    \"python3\",\n    \"scripts/run_two_new_orbit_extension_tranche.py\",\n    \"--manifest\",\n    \"artifacts/experiments/link-orbits-8-9-extension-300s-20260722/manifest.json\",\n    \"--checkpoint\",\n    \"artifacts/experiments/link-orbits-8-9-extension-300s-20260722/checkpoint.json\",\n    \"--progress\",\n    \"artifacts/experiments/link-orbits-8-9-extension-300s-20260722/progress.json\"\n  ],\n  \"cwd\": \"/root/proof-factory/research/covering-c1264/workspace\",\n  \"seed\": 0,\n  \"timeout_seconds\": 700,\n  \"memory_limit_mb\": 4096,\n  \"memory_limit_enforced\": true,\n  \"started_at\": \"2026-07-22T20:30:28.468666+00:00\",\n  \"finished_at\": \"2026-07-22T20:30:28.701218+00:00\",\n  \"duration_seconds\": 0.233,\n  \"returncode\": 1,\n  \"timed_out\": false,\n  \"python\": \"3.12.3\",\n  \"platform\": \"Linux-6.8.0-124-generic-x86_64-with-glibc2.39\",\n  \"git_commit\": \"22f74473e10ee7a49b893ec7fe566735187eb47e\",\n  \"source_urls\": [],\n  \"input_artifacts\": {\n    \"/root/proof-factory/research/covering-c1264/workspace/scripts/run_two_new_orbit_extension_tranche.py\": \"fcd74d9105b3d26046ce9cf5f290c3a769447a2a1947a01e96e4d8ac97209144\",\n    \"/root/proof-factory/research/covering-c1264/workspace/artifacts/experiments/link-orbits-8-9-extension-300s-20260722/manifest.json\": \"9d8724531c339b0c02a6f3a3d1f0fc0db78e9d95aa19f88c7e31740b9d5577f2\"\n  },\n  \"peak_child_memory_rusage\": 17920,\n  \"peak_child_memory_unit\": \"kilobytes\",\n  \"artifacts\": {\n    \"stdout.txt\": \"e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855\",\n    \"stderr.txt\": \"bdd8f960da266eee3e9331676aa6098c0e6f90becc1259511b8b6e37f1bc70a4\"\n  }\n}\n",
+  "runner_error": "",
+  "output_root": "lab-runs/lab-covering-c1264-d1b2473adc75/segment-000001",
+  "research_event_id": "event-covering-c1264-8352ca8bb3b1"
 }
