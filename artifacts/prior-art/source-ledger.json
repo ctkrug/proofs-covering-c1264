@@ -1,0 +1,34 @@
+{
+  "schema_version": 1,
+  "retrieved_utc": "2026-07-22",
+  "sources": [
+    {
+      "authors": ["G. H. J. van Rees"],
+      "bibliography": "Three Constructions of Covers, Journal of Combinatorial Mathematics and Combinatorial Computing 16 (1994), 17-25",
+      "bytes": 403569,
+      "role": "Primary 1994 source containing the uniqueness assertion",
+      "preserved_path": "artifacts/prior-art/sources/van-rees-three-constructions-of-covers-1994.pdf",
+      "sha256": "812d7cee7c0c3941d42a037431770ae75ab61daac4682d6c8bfea0dccd59dbc1",
+      "url": "https://combinatorialpress.com/article/jcmcc/Volume%2016/vol-16-paper%202.pdf",
+      "scope_audit": "Page 22 states that C(11,5,3)=20 and is unique, but gives no theorem, proof, hypotheses, or equivalence definition. Reference [1] for this assertion is W. H. Mills, Private communication."
+    },
+    {
+      "authors": ["W. H. Mills"],
+      "bibliography": "The covering number C(11,5,3), Utilitas Mathematica 41 (1992), 63",
+      "role": "One-page primary note listed by the journal; full text not exposed by the maintained archive and not retrieved",
+      "archive_html_bytes": 118258,
+      "archive_html_sha256": "8495f4ad6ec0201be848f77a6c52c9f84edb49667e1a39db3e36f1f8bcf6eb3f",
+      "url": "https://combinatorialpress.com/um/vol41/",
+      "scope_audit": "The archive establishes title, author, volume, year, and page 63 only. It cannot presently support a uniqueness theorem quotation."
+    },
+    {
+      "authors": ["Daniel M. Gordon et al."],
+      "role": "Maintained La Jolla Covering Repository representative",
+      "url": "https://ljcr.dmgordon.org/cover/show_cover.php?v=11&k=5&t=3",
+      "preserved_block_list": "artifacts/prior-art/c1153-ljcr-cover.txt",
+      "preserved_block_list_sha256": "e1b648f356ecedaade63b65bbc9ec25f3f385f21fb8ab7598d7033d2dd17dccc",
+      "scope_audit": "Supplies a size-20 representative and bound entry, not an exhaustive classification proof."
+    }
+  ],
+  "verdict": "No retrievable primary source located in this audit contains the requested theorem statement and proof of uniqueness. The 20-class computation is therefore exact but conditional on an unverified ordinary-cover uniqueness premise."
+}

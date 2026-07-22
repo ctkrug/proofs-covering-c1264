@@ -1,0 +1,229 @@
+{
+  "claim_limit": "Class membership does not make a DRAT proof replay on a differently numbered CNF. Exact-hash reuse is ready for one class; the other eight require a checked CNF/proof relabeling or regeneration.",
+  "direct_20_manifest_sha256": "3c96efe9459679ae6f7dae2b94dcf2c2beb007f25927ed1e9ae20abccbf1c31e",
+  "exact_cnf_hash_reuse_ready": 1,
+  "isomorphic_reuse_pending": 8,
+  "mapped_replayed_classes": 9,
+  "rows": [
+    {
+      "canonical_sha256": "31fb7b6b50ebbab8a549bad171c3e42c20448c88a1ec1c0f95a167188f974374",
+      "class_index": 3,
+      "direct_20_cnf": {
+        "bytes": 2402364,
+        "path": "artifacts/prior-art/c1153-direct-20/class-03/instance.cnf",
+        "sha256": "1d3fc40477964a001c17b1cfefc6683959e4929c2bcbd26614b5ba83f0be8ddf"
+      },
+      "replayed_cnf": {
+        "clauses": 144814,
+        "coverage_constraints": 230,
+        "pair_equalities": 55,
+        "path": "artifacts/experiments/link-orbit-t-16-extension-300s-20260722/instance.cnf",
+        "sha256": "d769e2b73b84e2249332f375cf8f4fbae24e9eeb4103ce9361fed31cdfc65a88",
+        "variables": 72754
+      },
+      "replayed_proof": {
+        "bytes": 23441579,
+        "path": "artifacts/experiments/link-orbit-t-16-extension-300s-20260722/external.drat",
+        "sha256": "82a85183d8a0af12d55228875d4b130269398288b90e5e91b0b87817a3c0fc65"
+      },
+      "transfer_status": "class_mapped_but_requires_cnf_relabel_equivalence_or_regeneration",
+      "validation": {
+        "path": "artifacts/experiments/link-orbit-t-16-extension-300s-20260722/independent-validation.json",
+        "sha256": "3a5211c51318ee77a64137ade4d33e1269d53600fb19abab4b56b4723ded1a87"
+      }
+    },
+    {
+      "canonical_sha256": "67d803aa141d828b4f2911c4a9f8199b1f26f4141a96a0e3a31b78b773de3468",
+      "class_index": 6,
+      "direct_20_cnf": {
+        "bytes": 2402228,
+        "path": "artifacts/prior-art/c1153-direct-20/class-06/instance.cnf",
+        "sha256": "dc29b201532564c1e2c66b9d431f6e6c4c98dc4c874653c8d704752a5b0a7e68"
+      },
+      "replayed_cnf": {
+        "path": "artifacts/pilot/link-residual-fourth-orbit-300s/instance.cnf",
+        "sha256": "74bcee5934356211e96bc95aa9de330313038259f983eab43a79b90730d74a7e"
+      },
+      "replayed_proof": {
+        "path": "artifacts/pilot/link-residual-fourth-orbit-300s/external.drat",
+        "sha256": "f9e14780fc7cba7ca9a7ba7e9ffbe5e1d6d1d864ab9925b586c8a1ae5041bdf8"
+      },
+      "transfer_status": "class_mapped_but_requires_cnf_relabel_equivalence_or_regeneration",
+      "validation": {
+        "path": "artifacts/pilot/link-residual-fourth-orbit-300s/external-validation.json",
+        "sha256": "5c473adaa263aae67db496de78f3b30b5364a4f359e3a88175058eadf47abf62"
+      }
+    },
+    {
+      "canonical_sha256": "681764d1b0bf68ceff7809a7146d91a21a7504528ba71bbf73940daefa1c54a1",
+      "class_index": 7,
+      "direct_20_cnf": {
+        "bytes": 2402636,
+        "path": "artifacts/prior-art/c1153-direct-20/class-07/instance.cnf",
+        "sha256": "bf623b8460d4318aaf6f29c9be60fafb6c6d988c1874f2f3cbea8d3c3beef7d2"
+      },
+      "replayed_cnf": {
+        "path": "artifacts/pilot/link-residual-second-orbit-300s/instance.cnf",
+        "sha256": "1b5cabf3f535276c9466192348f987ea2ef0e4bc7f3498f6e0b58c4c7cb158f7"
+      },
+      "replayed_proof": {
+        "path": "artifacts/pilot/link-residual-second-orbit-300s/external.drat",
+        "sha256": "c122f3f2066f3a0f43cc659b032e4952f859b2bbc02fdcc9464a8a00b9e1cfed"
+      },
+      "transfer_status": "class_mapped_but_requires_cnf_relabel_equivalence_or_regeneration",
+      "validation": {
+        "path": "artifacts/pilot/link-residual-second-orbit-300s/external-validation.json",
+        "sha256": "0d4b1ebe4f89166c08a0665d3df3dabbcf417182b511e34643c0534bb930f5d6"
+      }
+    },
+    {
+      "canonical_sha256": "7291235f9679362212e69d3e7eb50dbcfc445bb1da66a14bd0d01135a56a7894",
+      "class_index": 8,
+      "direct_20_cnf": {
+        "bytes": 2402072,
+        "path": "artifacts/prior-art/c1153-direct-20/class-08/instance.cnf",
+        "sha256": "a675dd9d64a0b05c8d7a58234fdb583a87e54434d41b35d3fd88ffa34fb0616b"
+      },
+      "replayed_cnf": {
+        "clauses": 144798,
+        "coverage_constraints": 230,
+        "pair_equalities": 55,
+        "path": "artifacts/experiments/link-orbits-8-9-extension-300s-20260722/orbit-8-t-16/instance.cnf",
+        "sha256": "c4575a3fec27bec4c021b6be53b6724e9eceb986e87f03c61b4c6962ee38435b",
+        "variables": 72746
+      },
+      "replayed_proof": {
+        "bytes": 11757698,
+        "path": "artifacts/experiments/link-orbits-8-9-extension-300s-20260722/orbit-8-t-16/external-replacement.drat",
+        "sha256": "ba7e18d967d7db3affcc2d0ac68fce8cced507200aa896ce14e5266ef1e41430"
+      },
+      "transfer_status": "class_mapped_but_requires_cnf_relabel_equivalence_or_regeneration",
+      "validation": {
+        "path": "artifacts/experiments/link-orbits-8-9-extension-300s-20260722/orbit-8-t-16/independent-validation.json",
+        "sha256": "5eb0b49757c3c334b346c0e4af543a86b2b5b3af03be98fd689819886ae0dfa1"
+      }
+    },
+    {
+      "canonical_sha256": "8588c1d6bef8da17488984c28e222594e088ef1435d8737fafc28d01cd8f5148",
+      "class_index": 11,
+      "direct_20_cnf": {
+        "bytes": 2402228,
+        "path": "artifacts/prior-art/c1153-direct-20/class-11/instance.cnf",
+        "sha256": "ed113909ac897f12d0f74a643096d6aa30d78d962b249ec724be73a5e4801f66"
+      },
+      "replayed_cnf": {
+        "path": "artifacts/pilot/link-residual-first-300s/instance.cnf",
+        "sha256": "5282873464d93a28f69c64a96ca72632feade97495328281c053c951e8b26c1d"
+      },
+      "replayed_proof": {
+        "path": "artifacts/pilot/link-residual-first-300s/external-cadical.drat",
+        "sha256": "a253ae844835fe4ee4f45d48f0bca6c187d8d4567861cf277ac14d0e97ec8acb"
+      },
+      "transfer_status": "class_mapped_but_requires_cnf_relabel_equivalence_or_regeneration",
+      "validation": {
+        "path": "artifacts/pilot/link-residual-first-300s/external-validation.json",
+        "sha256": "f418fa2ae8328ba3e4dea253d09ad646bc4e5a64b1750e12baa82cd88f50ba0f"
+      }
+    },
+    {
+      "canonical_sha256": "a2b4fb1c04cc3944b697840bb50d5cd55d89348f539bf48d6c8cb8a1a5e953d1",
+      "class_index": 13,
+      "direct_20_cnf": {
+        "bytes": 2402215,
+        "path": "artifacts/prior-art/c1153-direct-20/class-13/instance.cnf",
+        "sha256": "322ed45024176502432d26b1cafb32a4543620b35db4df8abb368db7b946b383"
+      },
+      "replayed_cnf": {
+        "clauses": 144806,
+        "coverage_constraints": 230,
+        "pair_equalities": 55,
+        "path": "artifacts/experiments/link-orbits-8-9-extension-300s-20260722/orbit-9-t-17/instance.cnf",
+        "sha256": "8b2e4134d52cf536675e5ef807f739570e22f5f36b964481d6433550523a7cc2",
+        "variables": 72750
+      },
+      "replayed_proof": {
+        "bytes": 11947257,
+        "path": "artifacts/experiments/link-orbits-8-9-extension-300s-20260722/orbit-9-t-17/external-replacement.drat",
+        "sha256": "b100f7079f458192c5fd042ae581346d3fed96c47d8e4d20b86a0b4bb77560e0"
+      },
+      "transfer_status": "class_mapped_but_requires_cnf_relabel_equivalence_or_regeneration",
+      "validation": {
+        "path": "artifacts/experiments/link-orbits-8-9-extension-300s-20260722/orbit-9-t-17/independent-validation.json",
+        "sha256": "00d6b37682da20c99f1c16e15de39ffc39b3ddc7b379391869d478f1399a214d"
+      }
+    },
+    {
+      "canonical_sha256": "b470049c5444b5f9bdd253d6e096e42e52e42c3512e545b43a4ad8f9346bb49c",
+      "class_index": 14,
+      "direct_20_cnf": {
+        "bytes": 2402364,
+        "path": "artifacts/prior-art/c1153-direct-20/class-14/instance.cnf",
+        "sha256": "7058788d352a2ff59422014eb8587e8958e28ad277f78ca92aa1e99462d4e950"
+      },
+      "replayed_cnf": {
+        "path": "artifacts/discoveries/link-orbit-s-r1-3/residual-extension/instance.cnf",
+        "sha256": "79606b8e686578b92eaf4ab2a97f4ebfb095e498f104a0b7894883fa5c14bc68"
+      },
+      "replayed_proof": {
+        "path": "artifacts/discoveries/link-orbit-s-r1-3/residual-extension/external.drat",
+        "sha256": "62facc8ddd788effa5fd32511ebd8599406ef55827e0f26011b8fb40598bcae8"
+      },
+      "transfer_status": "class_mapped_but_requires_cnf_relabel_equivalence_or_regeneration",
+      "validation": {
+        "path": "artifacts/discoveries/link-orbit-s-r1-3/residual-extension/external-validation.json",
+        "sha256": "2c8693c7e67d7c6cfab6cfd2c1b5ee67bde0e18cc765601f8956a45fde3ca0a0"
+      }
+    },
+    {
+      "canonical_sha256": "c01d7d4a45ca96b3a442a87d5df422c45f6d3ce5a83ca450c3ee7c4e647837ca",
+      "class_index": 16,
+      "direct_20_cnf": {
+        "bytes": 2401936,
+        "path": "artifacts/prior-art/c1153-direct-20/class-16/instance.cnf",
+        "sha256": "48dcbf1ecc44ef99418062c61b080ecd21ca88595426b816f6a19a16c3992f5c"
+      },
+      "replayed_cnf": {
+        "clauses": 144790,
+        "coverage_constraints": 230,
+        "pair_equalities": 55,
+        "path": "artifacts/experiments/link-orbit-t-17-extension-300s-20260722/instance.cnf",
+        "sha256": "48dcbf1ecc44ef99418062c61b080ecd21ca88595426b816f6a19a16c3992f5c",
+        "variables": 72742
+      },
+      "replayed_proof": {
+        "bytes": 25982148,
+        "path": "artifacts/experiments/link-orbit-t-17-extension-300s-20260722/proof.drat",
+        "sha256": "3c9d350429f932f28cb62cbd7ec2f7a86de22fa75b12d521129595d44083df1a"
+      },
+      "transfer_status": "exact_cnf_hash_reuse_ready",
+      "validation": {
+        "path": "artifacts/experiments/link-orbit-t-17-extension-300s-20260722/independent-validation.json",
+        "sha256": "7b05fa6117a09be0d9119a87d5bb4e103a237fee31c11b35e39de7f10a8e563c"
+      }
+    },
+    {
+      "canonical_sha256": "c31bde7d138db2072f1309f834814aa2e27722a9b1bf21e08e758b1acca93349",
+      "class_index": 17,
+      "direct_20_cnf": {
+        "bytes": 2402500,
+        "path": "artifacts/prior-art/c1153-direct-20/class-17/instance.cnf",
+        "sha256": "1808621deeb12050bd141b4bad5bf3dd9fd6f5045e1ef6bec57e83c060ce3561"
+      },
+      "replayed_cnf": {
+        "path": "artifacts/pilot/link-residual-third-orbit-300s/instance.cnf",
+        "sha256": "38d5c6c3f9f17d61aa44ad29b7ac47e681634a824bc5abdc2fc5de829fb1baf6"
+      },
+      "replayed_proof": {
+        "path": "artifacts/pilot/link-residual-third-orbit-300s/external.drat",
+        "sha256": "4cea5f3b52f7eab9fb565ccfeca95c5f4350f63517c056a6d7fd9f8c37b8d142"
+      },
+      "transfer_status": "class_mapped_but_requires_cnf_relabel_equivalence_or_regeneration",
+      "validation": {
+        "path": "artifacts/pilot/link-residual-third-orbit-300s/external-validation.json",
+        "sha256": "4e3daa6f2e251260ecba1b9b6235d2c4223014d7b4a6db8d1e58ca4c880ad904"
+      }
+    }
+  ],
+  "schema_version": 1,
+  "status": "valid_reuse_inventory"
+}
