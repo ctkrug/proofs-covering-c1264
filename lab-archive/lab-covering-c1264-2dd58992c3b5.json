@@ -1,0 +1,89 @@
+{
+  "schema_version": 2,
+  "id": "lab-covering-c1264-2dd58992c3b5",
+  "problem_id": "covering-c1264",
+  "name": "Nine-orbit three-class hard-tail discriminator",
+  "hypothesis": "The strengthened nine-orbit blocker separates at least one structural hard-tail class at the unchanged 60-second cap.",
+  "expected_signal": "Exactly three outcomes for s-r0-1, s-r1-15, and t-10; replayable UNSAT, validated SAT orbit, or fixed-cap timeout.",
+  "decision_value": "Distinguishes root-0 secondary, root-1 secondary, and tertiary hard-tail behavior before any broader allocation.",
+  "efficiency_design": {
+    "naive_cost": "A generic pass over all 12 hard-tail nodes would spend up to 720 solver-seconds before review.",
+    "opportunities_considered": [
+      "uniform timeout increase",
+      "generic alternative encoding",
+      "three-class sequential discriminator"
+    ],
+    "chosen_reductions": "Exactly three structurally distinct representatives at the unchanged 60-second cap.",
+    "expected_throughput_gain": "Measures blocker sensitivity and class behavior using 25% of a full hard-tail sweep.",
+    "soundness_basis": "Hash-bound nine-orbit blocker/frontier and complete 32-certificate disjointness gate; independent audit required for every decisive result.",
+    "remains_uncompressed": "Nine-node hard tail and catalogue exhaustion remain after this discriminator."
+  },
+  "source_urls": [],
+  "command": [
+    "python3",
+    "scripts/run_sequential_frontier_sweep.py",
+    "--manifest",
+    "artifacts/experiments/sequential-hard-tail-discriminator-v9-20260722/manifest.json",
+    "--run-id",
+    "sequential-hard-tail-discriminator-v9-20260722",
+    "--checkpoint",
+    "artifacts/sequential-frontier-sweep/sequential-hard-tail-discriminator-v9-20260722/checkpoint.json",
+    "--progress",
+    "artifacts/sequential-frontier-sweep/sequential-hard-tail-discriminator-v9-20260722/progress.json",
+    "--units-per-invocation",
+    "3"
+  ],
+  "seed": 0,
+  "segment_seconds": 600,
+  "memory_mb": 4096,
+  "max_segments": 1,
+  "segment": 1,
+  "pilot_segments": 1,
+  "review_every_segments": 1,
+  "checkpoint_path": "artifacts/sequential-frontier-sweep/sequential-hard-tail-discriminator-v9-20260722/checkpoint.json",
+  "progress_path": "artifacts/sequential-frontier-sweep/sequential-hard-tail-discriminator-v9-20260722/progress.json",
+  "continuation_thresholds": {
+    "min_throughput_per_second": 0.004,
+    "max_artifact_growth_bytes": 5000000000,
+    "require_correctness_checks": true
+  },
+  "submitted_at": "2026-07-22T20:55:31.537640+00:00",
+  "workspace_git_commit": "a5a36886c902878786e9074ff60f293e83e22e03",
+  "input_sha256": {
+    "artifacts/experiments/sequential-hard-tail-discriminator-v9-20260722/manifest.json": "70fa44d921c4de4ff3b27462bc300babcaf9c2e7f38eb5d8dd40e72aee5c1e6c",
+    "scripts/run_sequential_frontier_sweep.py": "f9dd9b4e07ae3f242187a59e7a9c33de49596439c09e3cadc8df405b1d19a3d7"
+  },
+  "spec_sha256": "5f1aba920f53a9044c6fce89bf6f250e4273ba072b49c54abcba8f9288ff8d91",
+  "final_record": {
+    "recorded_at": "2026-07-22T20:59:32.393706+00:00",
+    "job_id": "lab-covering-c1264-2dd58992c3b5",
+    "problem_id": "covering-c1264",
+    "segment": 1,
+    "max_segments": 1,
+    "returncode": 0,
+    "duration_seconds": 211.214681,
+    "checkpoint_exists": true,
+    "checkpoint_sha256": "bebf76410da16a56624b6a23dd01e5ea331b9f0450d9668a8060870b3909c640",
+    "progress": {
+      "path": "artifacts/sequential-frontier-sweep/sequential-hard-tail-discriminator-v9-20260722/progress.json",
+      "sha256": "9179dd241c8140deaeacf146163c7657c88d9a629755ba390d542be2577eef8c",
+      "completed_units": 3.0,
+      "total_units": 3.0,
+      "delta_units": 3.0,
+      "throughput_per_second": 0.014203558132400844,
+      "artifact_bytes": 131316327,
+      "reported_artifact_bytes": 131316327,
+      "reported_artifact_growth_bytes": 131316327,
+      "measured_artifact_growth_bytes": 131318519,
+      "artifact_growth_bytes": 131318519,
+      "complete": true,
+      "correctness_checks_passed": true,
+      "decision_value_active": true,
+      "message": ""
+    },
+    "threshold_failures": [],
+    "runner_result": "{\n  \"experiment_dir\": \"/root/proof-factory/research/covering-c1264/workspace/lab-runs/lab-covering-c1264-2dd58992c3b5/segment-000001/20260722-205601-951e3b\",\n  \"schema_version\": 1,\n  \"id\": \"20260722-205601-951e3b\",\n  \"name\": \"Nine-orbit three-class hard-tail discriminator segment 1/1\",\n  \"hypothesis\": \"The strengthened nine-orbit blocker separates at least one structural hard-tail class at the unchanged 60-second cap.\",\n  \"expected_signal\": \"Exactly three outcomes for s-r0-1, s-r1-15, and t-10; replayable UNSAT, validated SAT orbit, or fixed-cap timeout.\",\n  \"command\": [\n    \"python3\",\n    \"scripts/run_sequential_frontier_sweep.py\",\n    \"--manifest\",\n    \"artifacts/experiments/sequential-hard-tail-discriminator-v9-20260722/manifest.json\",\n    \"--run-id\",\n    \"sequential-hard-tail-discriminator-v9-20260722\",\n    \"--checkpoint\",\n    \"artifacts/sequential-frontier-sweep/sequential-hard-tail-discriminator-v9-20260722/checkpoint.json\",\n    \"--progress\",\n    \"artifacts/sequential-frontier-sweep/sequential-hard-tail-discriminator-v9-20260722/progress.json\",\n    \"--units-per-invocation\",\n    \"3\"\n  ],\n  \"cwd\": \"/root/proof-factory/research/covering-c1264/workspace\",\n  \"seed\": 0,\n  \"timeout_seconds\": 600,\n  \"memory_limit_mb\": 4096,\n  \"memory_limit_enforced\": true,\n  \"started_at\": \"2026-07-22T20:56:01.081807+00:00\",\n  \"finished_at\": \"2026-07-22T20:59:32.208992+00:00\",\n  \"duration_seconds\": 211.127,\n  \"returncode\": 0,\n  \"timed_out\": false,\n  \"python\": \"3.12.3\",\n  \"platform\": \"Linux-6.8.0-124-generic-x86_64-with-glibc2.39\",\n  \"git_commit\": \"462eb34bce3cfc3a834b1ae72535695937264066\",\n  \"source_urls\": [],\n  \"input_artifacts\": {\n    \"/root/proof-factory/research/covering-c1264/workspace/scripts/run_sequential_frontier_sweep.py\": \"f9dd9b4e07ae3f242187a59e7a9c33de49596439c09e3cadc8df405b1d19a3d7\",\n    \"/root/proof-factory/research/covering-c1264/workspace/artifacts/experiments/sequential-hard-tail-discriminator-v9-20260722/manifest.json\": \"70fa44d921c4de4ff3b27462bc300babcaf9c2e7f38eb5d8dd40e72aee5c1e6c\"\n  },\n  \"peak_child_memory_rusage\": 167372,\n  \"peak_child_memory_unit\": \"kilobytes\",\n  \"artifacts\": {\n    \"stdout.txt\": \"53fa01ce77d520ab7ad7e5944c4dfddc3284abe03067d2a443d0582bfd70583f\",\n    \"stderr.txt\": \"e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855\"\n  }\n}\n",
+    "runner_error": "",
+    "output_root": "lab-runs/lab-covering-c1264-2dd58992c3b5/segment-000001"
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "cnf_sha256": "4ba4be35b2be066544d6d3fc173d9c397eb50e17739fb7b190b027281dfe4d51",
+  "command": [
+    "/usr/bin/cadical",
+    "-t",
+    "60",
+    "--no-binary",
+    "/root/proof-factory/research/covering-c1264/workspace/artifacts/sequential-frontier-sweep/sequential-hard-tail-discriminator-v9-20260722/t-10/sequential/instance.cnf",
+    "/root/proof-factory/research/covering-c1264/workspace/artifacts/sequential-frontier-sweep/sequential-hard-tail-discriminator-v9-20260722/t-10/sequential/proof.drat"
+  ],
+  "completed_at": "2026-07-22T20:59:32.153226+00:00",
+  "encoding": "sequential",
+  "leaf_id": "t-10",
+  "proof": {
+    "bytes": 126079816,
+    "sha256": "40b0e95d13f1c9f96198c23892684355b0ffb11ac014fa3bf19c6edf1bcda1d8"
+  },
+  "schema_version": 1,
+  "seconds_cap": 60,
+  "solver_elapsed_seconds": 44.90529248001985,
+  "solver_exit_code": 20,
+  "solver_sha256": "7b73df0a6d9cf3c751a1948300e5baff8e82c4d39bcd88f0c063b5f5cfb8b33e",
+  "status": "UNSAT_VERIFIED",
+  "validation": {
+    "checked_at": "2026-07-22T20:59:31.129346+00:00",
+    "checker": {
+      "path": "/root/proof-factory/research/covering-c1264/workspace/toolchains/drat-trim/drat-trim",
+      "sha256": "92f0aa9575ed519d66a99b8b1b3dde6ece4618ae4c202a3a4b200265dda0aa7a"
+    },
+    "cnf": {
+      "path": "/root/proof-factory/research/covering-c1264/workspace/artifacts/sequential-frontier-sweep/sequential-hard-tail-discriminator-v9-20260722/t-10/sequential/instance.cnf",
+      "sha256": "4ba4be35b2be066544d6d3fc173d9c397eb50e17739fb7b190b027281dfe4d51"
+    },
+    "command": [
+      "/root/proof-factory/research/covering-c1264/workspace/toolchains/drat-trim/drat-trim",
+      "/root/proof-factory/research/covering-c1264/workspace/artifacts/sequential-frontier-sweep/sequential-hard-tail-discriminator-v9-20260722/t-10/sequential/instance.cnf",
+      "/root/proof-factory/research/covering-c1264/workspace/artifacts/sequential-frontier-sweep/sequential-hard-tail-discriminator-v9-20260722/t-10/sequential/proof.drat"
+    ],
+    "exit_code": 0,
+    "log": {
+      "path": "/root/proof-factory/research/covering-c1264/workspace/artifacts/sequential-frontier-sweep/sequential-hard-tail-discriminator-v9-20260722/t-10/sequential/validation.json.log",
+      "sha256": "a3fc82a9322e31e95f6452e7884e2cf0e4b9e10302acc8c1cb3f56742cab01cc"
+    },
+    "proof": {
+      "path": "/root/proof-factory/research/covering-c1264/workspace/artifacts/sequential-frontier-sweep/sequential-hard-tail-discriminator-v9-20260722/t-10/sequential/proof.drat",
+      "sha256": "40b0e95d13f1c9f96198c23892684355b0ffb11ac014fa3bf19c6edf1bcda1d8"
+    },
+    "schema_version": 1,
+    "seconds_cap": 600,
+    "status": "verified",
+    "verdict": "s VERIFIED"
+  }
+}

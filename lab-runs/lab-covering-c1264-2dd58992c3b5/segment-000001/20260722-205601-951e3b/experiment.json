@@ -1,0 +1,45 @@
+{
+  "schema_version": 1,
+  "id": "20260722-205601-951e3b",
+  "name": "Nine-orbit three-class hard-tail discriminator segment 1/1",
+  "hypothesis": "The strengthened nine-orbit blocker separates at least one structural hard-tail class at the unchanged 60-second cap.",
+  "expected_signal": "Exactly three outcomes for s-r0-1, s-r1-15, and t-10; replayable UNSAT, validated SAT orbit, or fixed-cap timeout.",
+  "command": [
+    "python3",
+    "scripts/run_sequential_frontier_sweep.py",
+    "--manifest",
+    "artifacts/experiments/sequential-hard-tail-discriminator-v9-20260722/manifest.json",
+    "--run-id",
+    "sequential-hard-tail-discriminator-v9-20260722",
+    "--checkpoint",
+    "artifacts/sequential-frontier-sweep/sequential-hard-tail-discriminator-v9-20260722/checkpoint.json",
+    "--progress",
+    "artifacts/sequential-frontier-sweep/sequential-hard-tail-discriminator-v9-20260722/progress.json",
+    "--units-per-invocation",
+    "3"
+  ],
+  "cwd": "/root/proof-factory/research/covering-c1264/workspace",
+  "seed": 0,
+  "timeout_seconds": 600,
+  "memory_limit_mb": 4096,
+  "memory_limit_enforced": true,
+  "started_at": "2026-07-22T20:56:01.081807+00:00",
+  "finished_at": "2026-07-22T20:59:32.208992+00:00",
+  "duration_seconds": 211.127,
+  "returncode": 0,
+  "timed_out": false,
+  "python": "3.12.3",
+  "platform": "Linux-6.8.0-124-generic-x86_64-with-glibc2.39",
+  "git_commit": "462eb34bce3cfc3a834b1ae72535695937264066",
+  "source_urls": [],
+  "input_artifacts": {
+    "/root/proof-factory/research/covering-c1264/workspace/scripts/run_sequential_frontier_sweep.py": "f9dd9b4e07ae3f242187a59e7a9c33de49596439c09e3cadc8df405b1d19a3d7",
+    "/root/proof-factory/research/covering-c1264/workspace/artifacts/experiments/sequential-hard-tail-discriminator-v9-20260722/manifest.json": "70fa44d921c4de4ff3b27462bc300babcaf9c2e7f38eb5d8dd40e72aee5c1e6c"
+  },
+  "peak_child_memory_rusage": 167372,
+  "peak_child_memory_unit": "kilobytes",
+  "artifacts": {
+    "stdout.txt": "53fa01ce77d520ab7ad7e5944c4dfddc3284abe03067d2a443d0582bfd70583f",
+    "stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  }
+}
