@@ -1,0 +1,886 @@
+{
+  "compressed_proof_storage_budget_bytes": 67108864,
+  "expected_worst_solver_wall_seconds": 120.0,
+  "fifth_manifest": {
+    "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-fifth-split/manifest.json",
+    "sha256": "02919771a97207014ae798610c6ed3c88e34965d91a44bbfd72cc2baa046decc"
+  },
+  "parallelism": 4,
+  "partition_audit": {
+    "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-fifth-split/independent-partition-audit.json",
+    "sha256": "98a00d7b12def81614f5d0b2f7b8260ea6ff42bdd5f927110b77d57418e90321"
+  },
+  "route_rule": "If at least 36/48 orbit-zero-plus-orbit-one cases time out, split the early prefix deeper; otherwise compare the hard strata before choosing a method. Any SAT stops for independent isomorphism audit.",
+  "sample": [
+    {
+      "index": 0,
+      "leaf_id": "intersection-3-third-01-fourth-001-fifth-000",
+      "parent_branch_count": 48,
+      "parent_id": "intersection-3-third-01-fourth-001",
+      "position": "orbit_zero",
+      "prior_status": "FIXED_CAP_TIMEOUT",
+      "top_parent": "intersection-3"
+    },
+    {
+      "index": 1,
+      "leaf_id": "intersection-3-third-01-fourth-001-fifth-001",
+      "parent_branch_count": 48,
+      "parent_id": "intersection-3-third-01-fourth-001",
+      "position": "orbit_one",
+      "prior_status": "FIXED_CAP_TIMEOUT",
+      "top_parent": "intersection-3"
+    },
+    {
+      "index": 12,
+      "leaf_id": "intersection-3-third-01-fourth-001-fifth-012",
+      "parent_branch_count": 48,
+      "parent_id": "intersection-3-third-01-fourth-001",
+      "position": "first_quartile",
+      "prior_status": "FIXED_CAP_TIMEOUT",
+      "top_parent": "intersection-3"
+    },
+    {
+      "index": 24,
+      "leaf_id": "intersection-3-third-01-fourth-001-fifth-024",
+      "parent_branch_count": 48,
+      "parent_id": "intersection-3-third-01-fourth-001",
+      "position": "midpoint",
+      "prior_status": "FIXED_CAP_TIMEOUT",
+      "top_parent": "intersection-3"
+    },
+    {
+      "index": 0,
+      "leaf_id": "intersection-3-third-06-fourth-001-fifth-000",
+      "parent_branch_count": 87,
+      "parent_id": "intersection-3-third-06-fourth-001",
+      "position": "orbit_zero",
+      "prior_status": "FIXED_CAP_TIMEOUT",
+      "top_parent": "intersection-3"
+    },
+    {
+      "index": 1,
+      "leaf_id": "intersection-3-third-06-fourth-001-fifth-001",
+      "parent_branch_count": 87,
+      "parent_id": "intersection-3-third-06-fourth-001",
+      "position": "orbit_one",
+      "prior_status": "FIXED_CAP_TIMEOUT",
+      "top_parent": "intersection-3"
+    },
+    {
+      "index": 21,
+      "leaf_id": "intersection-3-third-06-fourth-001-fifth-021",
+      "parent_branch_count": 87,
+      "parent_id": "intersection-3-third-06-fourth-001",
+      "position": "first_quartile",
+      "prior_status": "FIXED_CAP_TIMEOUT",
+      "top_parent": "intersection-3"
+    },
+    {
+      "index": 43,
+      "leaf_id": "intersection-3-third-06-fourth-001-fifth-043",
+      "parent_branch_count": 87,
+      "parent_id": "intersection-3-third-06-fourth-001",
+      "position": "midpoint",
+      "prior_status": "FIXED_CAP_TIMEOUT",
+      "top_parent": "intersection-3"
+    },
+    {
+      "index": 0,
+      "leaf_id": "intersection-3-third-04-fourth-001-fifth-000",
+      "parent_branch_count": 97,
+      "parent_id": "intersection-3-third-04-fourth-001",
+      "position": "orbit_zero",
+      "prior_status": "FIXED_CAP_TIMEOUT",
+      "top_parent": "intersection-3"
+    },
+    {
+      "index": 1,
+      "leaf_id": "intersection-3-third-04-fourth-001-fifth-001",
+      "parent_branch_count": 97,
+      "parent_id": "intersection-3-third-04-fourth-001",
+      "position": "orbit_one",
+      "prior_status": "FIXED_CAP_TIMEOUT",
+      "top_parent": "intersection-3"
+    },
+    {
+      "index": 24,
+      "leaf_id": "intersection-3-third-04-fourth-001-fifth-024",
+      "parent_branch_count": 97,
+      "parent_id": "intersection-3-third-04-fourth-001",
+      "position": "first_quartile",
+      "prior_status": "FIXED_CAP_TIMEOUT",
+      "top_parent": "intersection-3"
+    },
+    {
+      "index": 48,
+      "leaf_id": "intersection-3-third-04-fourth-001-fifth-048",
+      "parent_branch_count": 97,
+      "parent_id": "intersection-3-third-04-fourth-001",
+      "position": "midpoint",
+      "prior_status": "FIXED_CAP_TIMEOUT",
+      "top_parent": "intersection-3"
+    },
+    {
+      "index": 0,
+      "leaf_id": "intersection-3-third-00-fourth-015-fifth-000",
+      "parent_branch_count": 119,
+      "parent_id": "intersection-3-third-00-fourth-015",
+      "position": "orbit_zero",
+      "prior_status": "FIXED_CAP_TIMEOUT",
+      "top_parent": "intersection-3"
+    },
+    {
+      "index": 1,
+      "leaf_id": "intersection-3-third-00-fourth-015-fifth-001",
+      "parent_branch_count": 119,
+      "parent_id": "intersection-3-third-00-fourth-015",
+      "position": "orbit_one",
+      "prior_status": "FIXED_CAP_TIMEOUT",
+      "top_parent": "intersection-3"
+    },
+    {
+      "index": 29,
+      "leaf_id": "intersection-3-third-00-fourth-015-fifth-029",
+      "parent_branch_count": 119,
+      "parent_id": "intersection-3-third-00-fourth-015",
+      "position": "first_quartile",
+      "prior_status": "FIXED_CAP_TIMEOUT",
+      "top_parent": "intersection-3"
+    },
+    {
+      "index": 59,
+      "leaf_id": "intersection-3-third-00-fourth-015-fifth-059",
+      "parent_branch_count": 119,
+      "parent_id": "intersection-3-third-00-fourth-015",
+      "position": "midpoint",
+      "prior_status": "FIXED_CAP_TIMEOUT",
+      "top_parent": "intersection-3"
+    },
+    {
+      "index": 0,
+      "leaf_id": "intersection-3-third-02-fourth-000-fifth-000",
+      "parent_branch_count": 128,
+      "parent_id": "intersection-3-third-02-fourth-000",
+      "position": "orbit_zero",
+      "prior_status": "FIXED_CAP_TIMEOUT",
+      "top_parent": "intersection-3"
+    },
+    {
+      "index": 1,
+      "leaf_id": "intersection-3-third-02-fourth-000-fifth-001",
+      "parent_branch_count": 128,
+      "parent_id": "intersection-3-third-02-fourth-000",
+      "position": "orbit_one",
+      "prior_status": "FIXED_CAP_TIMEOUT",
+      "top_parent": "intersection-3"
+    },
+    {
+      "index": 32,
+      "leaf_id": "intersection-3-third-02-fourth-000-fifth-032",
+      "parent_branch_count": 128,
+      "parent_id": "intersection-3-third-02-fourth-000",
+      "position": "first_quartile",
+      "prior_status": "FIXED_CAP_TIMEOUT",
+      "top_parent": "intersection-3"
+    },
+    {
+      "index": 64,
+      "leaf_id": "intersection-3-third-02-fourth-000-fifth-064",
+      "parent_branch_count": 128,
+      "parent_id": "intersection-3-third-02-fourth-000",
+      "position": "midpoint",
+      "prior_status": "FIXED_CAP_TIMEOUT",
+      "top_parent": "intersection-3"
+    },
+    {
+      "index": 0,
+      "leaf_id": "intersection-3-third-03-fourth-000-fifth-000",
+      "parent_branch_count": 207,
+      "parent_id": "intersection-3-third-03-fourth-000",
+      "position": "orbit_zero",
+      "prior_status": "FIXED_CAP_TIMEOUT",
+      "top_parent": "intersection-3"
+    },
+    {
+      "index": 1,
+      "leaf_id": "intersection-3-third-03-fourth-000-fifth-001",
+      "parent_branch_count": 207,
+      "parent_id": "intersection-3-third-03-fourth-000",
+      "position": "orbit_one",
+      "prior_status": "FIXED_CAP_TIMEOUT",
+      "top_parent": "intersection-3"
+    },
+    {
+      "index": 51,
+      "leaf_id": "intersection-3-third-03-fourth-000-fifth-051",
+      "parent_branch_count": 207,
+      "parent_id": "intersection-3-third-03-fourth-000",
+      "position": "first_quartile",
+      "prior_status": "FIXED_CAP_TIMEOUT",
+      "top_parent": "intersection-3"
+    },
+    {
+      "index": 103,
+      "leaf_id": "intersection-3-third-03-fourth-000-fifth-103",
+      "parent_branch_count": 207,
+      "parent_id": "intersection-3-third-03-fourth-000",
+      "position": "midpoint",
+      "prior_status": "FIXED_CAP_TIMEOUT",
+      "top_parent": "intersection-3"
+    },
+    {
+      "index": 0,
+      "leaf_id": "intersection-4-third-02-fourth-001-fifth-000",
+      "parent_branch_count": 48,
+      "parent_id": "intersection-4-third-02-fourth-001",
+      "position": "orbit_zero",
+      "prior_status": "FIXED_CAP_TIMEOUT",
+      "top_parent": "intersection-4"
+    },
+    {
+      "index": 1,
+      "leaf_id": "intersection-4-third-02-fourth-001-fifth-001",
+      "parent_branch_count": 48,
+      "parent_id": "intersection-4-third-02-fourth-001",
+      "position": "orbit_one",
+      "prior_status": "FIXED_CAP_TIMEOUT",
+      "top_parent": "intersection-4"
+    },
+    {
+      "index": 12,
+      "leaf_id": "intersection-4-third-02-fourth-001-fifth-012",
+      "parent_branch_count": 48,
+      "parent_id": "intersection-4-third-02-fourth-001",
+      "position": "first_quartile",
+      "prior_status": "FIXED_CAP_TIMEOUT",
+      "top_parent": "intersection-4"
+    },
+    {
+      "index": 24,
+      "leaf_id": "intersection-4-third-02-fourth-001-fifth-024",
+      "parent_branch_count": 48,
+      "parent_id": "intersection-4-third-02-fourth-001",
+      "position": "midpoint",
+      "prior_status": "FIXED_CAP_TIMEOUT",
+      "top_parent": "intersection-4"
+    },
+    {
+      "index": 0,
+      "leaf_id": "intersection-4-third-00-fourth-001-fifth-000",
+      "parent_branch_count": 52,
+      "parent_id": "intersection-4-third-00-fourth-001",
+      "position": "orbit_zero",
+      "prior_status": "FIXED_CAP_TIMEOUT",
+      "top_parent": "intersection-4"
+    },
+    {
+      "index": 1,
+      "leaf_id": "intersection-4-third-00-fourth-001-fifth-001",
+      "parent_branch_count": 52,
+      "parent_id": "intersection-4-third-00-fourth-001",
+      "position": "orbit_one",
+      "prior_status": "FIXED_CAP_TIMEOUT",
+      "top_parent": "intersection-4"
+    },
+    {
+      "index": 13,
+      "leaf_id": "intersection-4-third-00-fourth-001-fifth-013",
+      "parent_branch_count": 52,
+      "parent_id": "intersection-4-third-00-fourth-001",
+      "position": "first_quartile",
+      "prior_status": "FIXED_CAP_TIMEOUT",
+      "top_parent": "intersection-4"
+    },
+    {
+      "index": 26,
+      "leaf_id": "intersection-4-third-00-fourth-001-fifth-026",
+      "parent_branch_count": 52,
+      "parent_id": "intersection-4-third-00-fourth-001",
+      "position": "midpoint",
+      "prior_status": "FIXED_CAP_TIMEOUT",
+      "top_parent": "intersection-4"
+    },
+    {
+      "index": 0,
+      "leaf_id": "intersection-4-third-05-fourth-001-fifth-000",
+      "parent_branch_count": 82,
+      "parent_id": "intersection-4-third-05-fourth-001",
+      "position": "orbit_zero",
+      "prior_status": "FIXED_CAP_TIMEOUT",
+      "top_parent": "intersection-4"
+    },
+    {
+      "index": 1,
+      "leaf_id": "intersection-4-third-05-fourth-001-fifth-001",
+      "parent_branch_count": 82,
+      "parent_id": "intersection-4-third-05-fourth-001",
+      "position": "orbit_one",
+      "prior_status": "FIXED_CAP_TIMEOUT",
+      "top_parent": "intersection-4"
+    },
+    {
+      "index": 20,
+      "leaf_id": "intersection-4-third-05-fourth-001-fifth-020",
+      "parent_branch_count": 82,
+      "parent_id": "intersection-4-third-05-fourth-001",
+      "position": "first_quartile",
+      "prior_status": "FIXED_CAP_TIMEOUT",
+      "top_parent": "intersection-4"
+    },
+    {
+      "index": 41,
+      "leaf_id": "intersection-4-third-05-fourth-001-fifth-041",
+      "parent_branch_count": 82,
+      "parent_id": "intersection-4-third-05-fourth-001",
+      "position": "midpoint",
+      "prior_status": "FIXED_CAP_TIMEOUT",
+      "top_parent": "intersection-4"
+    },
+    {
+      "index": 0,
+      "leaf_id": "intersection-4-third-00-fourth-007-fifth-000",
+      "parent_branch_count": 89,
+      "parent_id": "intersection-4-third-00-fourth-007",
+      "position": "orbit_zero",
+      "prior_status": "FIXED_CAP_TIMEOUT",
+      "top_parent": "intersection-4"
+    },
+    {
+      "index": 1,
+      "leaf_id": "intersection-4-third-00-fourth-007-fifth-001",
+      "parent_branch_count": 89,
+      "parent_id": "intersection-4-third-00-fourth-007",
+      "position": "orbit_one",
+      "prior_status": "FIXED_CAP_TIMEOUT",
+      "top_parent": "intersection-4"
+    },
+    {
+      "index": 22,
+      "leaf_id": "intersection-4-third-00-fourth-007-fifth-022",
+      "parent_branch_count": 89,
+      "parent_id": "intersection-4-third-00-fourth-007",
+      "position": "first_quartile",
+      "prior_status": "FIXED_CAP_TIMEOUT",
+      "top_parent": "intersection-4"
+    },
+    {
+      "index": 44,
+      "leaf_id": "intersection-4-third-00-fourth-007-fifth-044",
+      "parent_branch_count": 89,
+      "parent_id": "intersection-4-third-00-fourth-007",
+      "position": "midpoint",
+      "prior_status": "FIXED_CAP_TIMEOUT",
+      "top_parent": "intersection-4"
+    },
+    {
+      "index": 0,
+      "leaf_id": "intersection-4-third-04-fourth-001-fifth-000",
+      "parent_branch_count": 90,
+      "parent_id": "intersection-4-third-04-fourth-001",
+      "position": "orbit_zero",
+      "prior_status": "FIXED_CAP_TIMEOUT",
+      "top_parent": "intersection-4"
+    },
+    {
+      "index": 1,
+      "leaf_id": "intersection-4-third-04-fourth-001-fifth-001",
+      "parent_branch_count": 90,
+      "parent_id": "intersection-4-third-04-fourth-001",
+      "position": "orbit_one",
+      "prior_status": "FIXED_CAP_TIMEOUT",
+      "top_parent": "intersection-4"
+    },
+    {
+      "index": 22,
+      "leaf_id": "intersection-4-third-04-fourth-001-fifth-022",
+      "parent_branch_count": 90,
+      "parent_id": "intersection-4-third-04-fourth-001",
+      "position": "first_quartile",
+      "prior_status": "FIXED_CAP_TIMEOUT",
+      "top_parent": "intersection-4"
+    },
+    {
+      "index": 45,
+      "leaf_id": "intersection-4-third-04-fourth-001-fifth-045",
+      "parent_branch_count": 90,
+      "parent_id": "intersection-4-third-04-fourth-001",
+      "position": "midpoint",
+      "prior_status": "FIXED_CAP_TIMEOUT",
+      "top_parent": "intersection-4"
+    },
+    {
+      "index": 0,
+      "leaf_id": "intersection-4-third-04-fourth-000-fifth-000",
+      "parent_branch_count": 128,
+      "parent_id": "intersection-4-third-04-fourth-000",
+      "position": "orbit_zero",
+      "prior_status": "FIXED_CAP_TIMEOUT",
+      "top_parent": "intersection-4"
+    },
+    {
+      "index": 1,
+      "leaf_id": "intersection-4-third-04-fourth-000-fifth-001",
+      "parent_branch_count": 128,
+      "parent_id": "intersection-4-third-04-fourth-000",
+      "position": "orbit_one",
+      "prior_status": "FIXED_CAP_TIMEOUT",
+      "top_parent": "intersection-4"
+    },
+    {
+      "index": 32,
+      "leaf_id": "intersection-4-third-04-fourth-000-fifth-032",
+      "parent_branch_count": 128,
+      "parent_id": "intersection-4-third-04-fourth-000",
+      "position": "first_quartile",
+      "prior_status": "FIXED_CAP_TIMEOUT",
+      "top_parent": "intersection-4"
+    },
+    {
+      "index": 64,
+      "leaf_id": "intersection-4-third-04-fourth-000-fifth-064",
+      "parent_branch_count": 128,
+      "parent_id": "intersection-4-third-04-fourth-000",
+      "position": "midpoint",
+      "prior_status": "FIXED_CAP_TIMEOUT",
+      "top_parent": "intersection-4"
+    },
+    {
+      "index": 0,
+      "leaf_id": "intersection-3-third-05-fourth-027-fifth-000",
+      "parent_branch_count": 29,
+      "parent_id": "intersection-3-third-05-fourth-027",
+      "position": "orbit_zero",
+      "prior_status": "NEVER_MEASURED",
+      "top_parent": "intersection-3"
+    },
+    {
+      "index": 1,
+      "leaf_id": "intersection-3-third-05-fourth-027-fifth-001",
+      "parent_branch_count": 29,
+      "parent_id": "intersection-3-third-05-fourth-027",
+      "position": "orbit_one",
+      "prior_status": "NEVER_MEASURED",
+      "top_parent": "intersection-3"
+    },
+    {
+      "index": 7,
+      "leaf_id": "intersection-3-third-05-fourth-027-fifth-007",
+      "parent_branch_count": 29,
+      "parent_id": "intersection-3-third-05-fourth-027",
+      "position": "first_quartile",
+      "prior_status": "NEVER_MEASURED",
+      "top_parent": "intersection-3"
+    },
+    {
+      "index": 14,
+      "leaf_id": "intersection-3-third-05-fourth-027-fifth-014",
+      "parent_branch_count": 29,
+      "parent_id": "intersection-3-third-05-fourth-027",
+      "position": "midpoint",
+      "prior_status": "NEVER_MEASURED",
+      "top_parent": "intersection-3"
+    },
+    {
+      "index": 0,
+      "leaf_id": "intersection-3-third-00-fourth-026-fifth-000",
+      "parent_branch_count": 83,
+      "parent_id": "intersection-3-third-00-fourth-026",
+      "position": "orbit_zero",
+      "prior_status": "NEVER_MEASURED",
+      "top_parent": "intersection-3"
+    },
+    {
+      "index": 1,
+      "leaf_id": "intersection-3-third-00-fourth-026-fifth-001",
+      "parent_branch_count": 83,
+      "parent_id": "intersection-3-third-00-fourth-026",
+      "position": "orbit_one",
+      "prior_status": "NEVER_MEASURED",
+      "top_parent": "intersection-3"
+    },
+    {
+      "index": 20,
+      "leaf_id": "intersection-3-third-00-fourth-026-fifth-020",
+      "parent_branch_count": 83,
+      "parent_id": "intersection-3-third-00-fourth-026",
+      "position": "first_quartile",
+      "prior_status": "NEVER_MEASURED",
+      "top_parent": "intersection-3"
+    },
+    {
+      "index": 41,
+      "leaf_id": "intersection-3-third-00-fourth-026-fifth-041",
+      "parent_branch_count": 83,
+      "parent_id": "intersection-3-third-00-fourth-026",
+      "position": "midpoint",
+      "prior_status": "NEVER_MEASURED",
+      "top_parent": "intersection-3"
+    },
+    {
+      "index": 0,
+      "leaf_id": "intersection-3-third-06-fourth-027-fifth-000",
+      "parent_branch_count": 105,
+      "parent_id": "intersection-3-third-06-fourth-027",
+      "position": "orbit_zero",
+      "prior_status": "NEVER_MEASURED",
+      "top_parent": "intersection-3"
+    },
+    {
+      "index": 1,
+      "leaf_id": "intersection-3-third-06-fourth-027-fifth-001",
+      "parent_branch_count": 105,
+      "parent_id": "intersection-3-third-06-fourth-027",
+      "position": "orbit_one",
+      "prior_status": "NEVER_MEASURED",
+      "top_parent": "intersection-3"
+    },
+    {
+      "index": 26,
+      "leaf_id": "intersection-3-third-06-fourth-027-fifth-026",
+      "parent_branch_count": 105,
+      "parent_id": "intersection-3-third-06-fourth-027",
+      "position": "first_quartile",
+      "prior_status": "NEVER_MEASURED",
+      "top_parent": "intersection-3"
+    },
+    {
+      "index": 52,
+      "leaf_id": "intersection-3-third-06-fourth-027-fifth-052",
+      "parent_branch_count": 105,
+      "parent_id": "intersection-3-third-06-fourth-027",
+      "position": "midpoint",
+      "prior_status": "NEVER_MEASURED",
+      "top_parent": "intersection-3"
+    },
+    {
+      "index": 0,
+      "leaf_id": "intersection-3-third-04-fourth-012-fifth-000",
+      "parent_branch_count": 125,
+      "parent_id": "intersection-3-third-04-fourth-012",
+      "position": "orbit_zero",
+      "prior_status": "NEVER_MEASURED",
+      "top_parent": "intersection-3"
+    },
+    {
+      "index": 1,
+      "leaf_id": "intersection-3-third-04-fourth-012-fifth-001",
+      "parent_branch_count": 125,
+      "parent_id": "intersection-3-third-04-fourth-012",
+      "position": "orbit_one",
+      "prior_status": "NEVER_MEASURED",
+      "top_parent": "intersection-3"
+    },
+    {
+      "index": 31,
+      "leaf_id": "intersection-3-third-04-fourth-012-fifth-031",
+      "parent_branch_count": 125,
+      "parent_id": "intersection-3-third-04-fourth-012",
+      "position": "first_quartile",
+      "prior_status": "NEVER_MEASURED",
+      "top_parent": "intersection-3"
+    },
+    {
+      "index": 62,
+      "leaf_id": "intersection-3-third-04-fourth-012-fifth-062",
+      "parent_branch_count": 125,
+      "parent_id": "intersection-3-third-04-fourth-012",
+      "position": "midpoint",
+      "prior_status": "NEVER_MEASURED",
+      "top_parent": "intersection-3"
+    },
+    {
+      "index": 0,
+      "leaf_id": "intersection-3-third-03-fourth-017-fifth-000",
+      "parent_branch_count": 177,
+      "parent_id": "intersection-3-third-03-fourth-017",
+      "position": "orbit_zero",
+      "prior_status": "NEVER_MEASURED",
+      "top_parent": "intersection-3"
+    },
+    {
+      "index": 1,
+      "leaf_id": "intersection-3-third-03-fourth-017-fifth-001",
+      "parent_branch_count": 177,
+      "parent_id": "intersection-3-third-03-fourth-017",
+      "position": "orbit_one",
+      "prior_status": "NEVER_MEASURED",
+      "top_parent": "intersection-3"
+    },
+    {
+      "index": 44,
+      "leaf_id": "intersection-3-third-03-fourth-017-fifth-044",
+      "parent_branch_count": 177,
+      "parent_id": "intersection-3-third-03-fourth-017",
+      "position": "first_quartile",
+      "prior_status": "NEVER_MEASURED",
+      "top_parent": "intersection-3"
+    },
+    {
+      "index": 88,
+      "leaf_id": "intersection-3-third-03-fourth-017-fifth-088",
+      "parent_branch_count": 177,
+      "parent_id": "intersection-3-third-03-fourth-017",
+      "position": "midpoint",
+      "prior_status": "NEVER_MEASURED",
+      "top_parent": "intersection-3"
+    },
+    {
+      "index": 0,
+      "leaf_id": "intersection-3-third-04-fourth-021-fifth-000",
+      "parent_branch_count": 293,
+      "parent_id": "intersection-3-third-04-fourth-021",
+      "position": "orbit_zero",
+      "prior_status": "NEVER_MEASURED",
+      "top_parent": "intersection-3"
+    },
+    {
+      "index": 1,
+      "leaf_id": "intersection-3-third-04-fourth-021-fifth-001",
+      "parent_branch_count": 293,
+      "parent_id": "intersection-3-third-04-fourth-021",
+      "position": "orbit_one",
+      "prior_status": "NEVER_MEASURED",
+      "top_parent": "intersection-3"
+    },
+    {
+      "index": 73,
+      "leaf_id": "intersection-3-third-04-fourth-021-fifth-073",
+      "parent_branch_count": 293,
+      "parent_id": "intersection-3-third-04-fourth-021",
+      "position": "first_quartile",
+      "prior_status": "NEVER_MEASURED",
+      "top_parent": "intersection-3"
+    },
+    {
+      "index": 146,
+      "leaf_id": "intersection-3-third-04-fourth-021-fifth-146",
+      "parent_branch_count": 293,
+      "parent_id": "intersection-3-third-04-fourth-021",
+      "position": "midpoint",
+      "prior_status": "NEVER_MEASURED",
+      "top_parent": "intersection-3"
+    },
+    {
+      "index": 0,
+      "leaf_id": "intersection-4-third-05-fourth-022-fifth-000",
+      "parent_branch_count": 24,
+      "parent_id": "intersection-4-third-05-fourth-022",
+      "position": "orbit_zero",
+      "prior_status": "NEVER_MEASURED",
+      "top_parent": "intersection-4"
+    },
+    {
+      "index": 1,
+      "leaf_id": "intersection-4-third-05-fourth-022-fifth-001",
+      "parent_branch_count": 24,
+      "parent_id": "intersection-4-third-05-fourth-022",
+      "position": "orbit_one",
+      "prior_status": "NEVER_MEASURED",
+      "top_parent": "intersection-4"
+    },
+    {
+      "index": 6,
+      "leaf_id": "intersection-4-third-05-fourth-022-fifth-006",
+      "parent_branch_count": 24,
+      "parent_id": "intersection-4-third-05-fourth-022",
+      "position": "first_quartile",
+      "prior_status": "NEVER_MEASURED",
+      "top_parent": "intersection-4"
+    },
+    {
+      "index": 12,
+      "leaf_id": "intersection-4-third-05-fourth-022-fifth-012",
+      "parent_branch_count": 24,
+      "parent_id": "intersection-4-third-05-fourth-022",
+      "position": "midpoint",
+      "prior_status": "NEVER_MEASURED",
+      "top_parent": "intersection-4"
+    },
+    {
+      "index": 0,
+      "leaf_id": "intersection-4-third-05-fourth-019-fifth-000",
+      "parent_branch_count": 63,
+      "parent_id": "intersection-4-third-05-fourth-019",
+      "position": "orbit_zero",
+      "prior_status": "NEVER_MEASURED",
+      "top_parent": "intersection-4"
+    },
+    {
+      "index": 1,
+      "leaf_id": "intersection-4-third-05-fourth-019-fifth-001",
+      "parent_branch_count": 63,
+      "parent_id": "intersection-4-third-05-fourth-019",
+      "position": "orbit_one",
+      "prior_status": "NEVER_MEASURED",
+      "top_parent": "intersection-4"
+    },
+    {
+      "index": 15,
+      "leaf_id": "intersection-4-third-05-fourth-019-fifth-015",
+      "parent_branch_count": 63,
+      "parent_id": "intersection-4-third-05-fourth-019",
+      "position": "first_quartile",
+      "prior_status": "NEVER_MEASURED",
+      "top_parent": "intersection-4"
+    },
+    {
+      "index": 31,
+      "leaf_id": "intersection-4-third-05-fourth-019-fifth-031",
+      "parent_branch_count": 63,
+      "parent_id": "intersection-4-third-05-fourth-019",
+      "position": "midpoint",
+      "prior_status": "NEVER_MEASURED",
+      "top_parent": "intersection-4"
+    },
+    {
+      "index": 0,
+      "leaf_id": "intersection-4-third-05-fourth-003-fifth-000",
+      "parent_branch_count": 78,
+      "parent_id": "intersection-4-third-05-fourth-003",
+      "position": "orbit_zero",
+      "prior_status": "NEVER_MEASURED",
+      "top_parent": "intersection-4"
+    },
+    {
+      "index": 1,
+      "leaf_id": "intersection-4-third-05-fourth-003-fifth-001",
+      "parent_branch_count": 78,
+      "parent_id": "intersection-4-third-05-fourth-003",
+      "position": "orbit_one",
+      "prior_status": "NEVER_MEASURED",
+      "top_parent": "intersection-4"
+    },
+    {
+      "index": 19,
+      "leaf_id": "intersection-4-third-05-fourth-003-fifth-019",
+      "parent_branch_count": 78,
+      "parent_id": "intersection-4-third-05-fourth-003",
+      "position": "first_quartile",
+      "prior_status": "NEVER_MEASURED",
+      "top_parent": "intersection-4"
+    },
+    {
+      "index": 39,
+      "leaf_id": "intersection-4-third-05-fourth-003-fifth-039",
+      "parent_branch_count": 78,
+      "parent_id": "intersection-4-third-05-fourth-003",
+      "position": "midpoint",
+      "prior_status": "NEVER_MEASURED",
+      "top_parent": "intersection-4"
+    },
+    {
+      "index": 0,
+      "leaf_id": "intersection-4-third-04-fourth-020-fifth-000",
+      "parent_branch_count": 89,
+      "parent_id": "intersection-4-third-04-fourth-020",
+      "position": "orbit_zero",
+      "prior_status": "NEVER_MEASURED",
+      "top_parent": "intersection-4"
+    },
+    {
+      "index": 1,
+      "leaf_id": "intersection-4-third-04-fourth-020-fifth-001",
+      "parent_branch_count": 89,
+      "parent_id": "intersection-4-third-04-fourth-020",
+      "position": "orbit_one",
+      "prior_status": "NEVER_MEASURED",
+      "top_parent": "intersection-4"
+    },
+    {
+      "index": 22,
+      "leaf_id": "intersection-4-third-04-fourth-020-fifth-022",
+      "parent_branch_count": 89,
+      "parent_id": "intersection-4-third-04-fourth-020",
+      "position": "first_quartile",
+      "prior_status": "NEVER_MEASURED",
+      "top_parent": "intersection-4"
+    },
+    {
+      "index": 44,
+      "leaf_id": "intersection-4-third-04-fourth-020-fifth-044",
+      "parent_branch_count": 89,
+      "parent_id": "intersection-4-third-04-fourth-020",
+      "position": "midpoint",
+      "prior_status": "NEVER_MEASURED",
+      "top_parent": "intersection-4"
+    },
+    {
+      "index": 0,
+      "leaf_id": "intersection-4-third-02-fourth-016-fifth-000",
+      "parent_branch_count": 117,
+      "parent_id": "intersection-4-third-02-fourth-016",
+      "position": "orbit_zero",
+      "prior_status": "NEVER_MEASURED",
+      "top_parent": "intersection-4"
+    },
+    {
+      "index": 1,
+      "leaf_id": "intersection-4-third-02-fourth-016-fifth-001",
+      "parent_branch_count": 117,
+      "parent_id": "intersection-4-third-02-fourth-016",
+      "position": "orbit_one",
+      "prior_status": "NEVER_MEASURED",
+      "top_parent": "intersection-4"
+    },
+    {
+      "index": 29,
+      "leaf_id": "intersection-4-third-02-fourth-016-fifth-029",
+      "parent_branch_count": 117,
+      "parent_id": "intersection-4-third-02-fourth-016",
+      "position": "first_quartile",
+      "prior_status": "NEVER_MEASURED",
+      "top_parent": "intersection-4"
+    },
+    {
+      "index": 58,
+      "leaf_id": "intersection-4-third-02-fourth-016-fifth-058",
+      "parent_branch_count": 117,
+      "parent_id": "intersection-4-third-02-fourth-016",
+      "position": "midpoint",
+      "prior_status": "NEVER_MEASURED",
+      "top_parent": "intersection-4"
+    },
+    {
+      "index": 0,
+      "leaf_id": "intersection-4-third-04-fourth-003-fifth-000",
+      "parent_branch_count": 202,
+      "parent_id": "intersection-4-third-04-fourth-003",
+      "position": "orbit_zero",
+      "prior_status": "NEVER_MEASURED",
+      "top_parent": "intersection-4"
+    },
+    {
+      "index": 1,
+      "leaf_id": "intersection-4-third-04-fourth-003-fifth-001",
+      "parent_branch_count": 202,
+      "parent_id": "intersection-4-third-04-fourth-003",
+      "position": "orbit_one",
+      "prior_status": "NEVER_MEASURED",
+      "top_parent": "intersection-4"
+    },
+    {
+      "index": 50,
+      "leaf_id": "intersection-4-third-04-fourth-003-fifth-050",
+      "parent_branch_count": 202,
+      "parent_id": "intersection-4-third-04-fourth-003",
+      "position": "first_quartile",
+      "prior_status": "NEVER_MEASURED",
+      "top_parent": "intersection-4"
+    },
+    {
+      "index": 101,
+      "leaf_id": "intersection-4-third-04-fourth-003-fifth-101",
+      "parent_branch_count": 202,
+      "parent_id": "intersection-4-third-04-fourth-003",
+      "position": "midpoint",
+      "prior_status": "NEVER_MEASURED",
+      "top_parent": "intersection-4"
+    }
+  ],
+  "sample_size": 96,
+  "scale_gate": "After independent replay, a cheap suffix is demonstrated only if at least 39/48 first-quartile-plus-midpoint cases verify UNSAT, their mean compressed proof is at most 1 MiB, total artifacts remain within 64 MiB, and no SAT or audit disagreement occurs.",
+  "schema_version": 1,
+  "seconds_cap": 5,
+  "selection_rule": "Six deterministic branch-count quantiles from each prior-status x top-parent stratum; within each selected parent test orbit 0, orbit 1, first quartile, and midpoint.",
+  "status": "FROZEN"
+}

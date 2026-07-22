@@ -1,0 +1,3493 @@
+{
+  "claim_limit": "Each verified result closes only its exact fifth branch; no fourth parent closes from this sample.",
+  "compressed_proof_bytes": 11330604,
+  "counts": {
+    "FIXED_CAP_TIMEOUT": 32,
+    "UNSAT_VERIFIED": 64
+  },
+  "counts_by_position": {
+    "first_quartile": {
+      "FIXED_CAP_TIMEOUT": 3,
+      "UNSAT_VERIFIED": 21
+    },
+    "midpoint": {
+      "FIXED_CAP_TIMEOUT": 0,
+      "UNSAT_VERIFIED": 24
+    },
+    "orbit_one": {
+      "FIXED_CAP_TIMEOUT": 15,
+      "UNSAT_VERIFIED": 9
+    },
+    "orbit_zero": {
+      "FIXED_CAP_TIMEOUT": 14,
+      "UNSAT_VERIFIED": 10
+    }
+  },
+  "early_deeper_split_trigger": false,
+  "mean_suffix_compressed_proof_bytes": 135445.6888888889,
+  "outcomes": [
+    {
+      "checker": {
+        "path": ".venv/sat-audit-tools/drat-trim/drat-trim",
+        "sha256": "f58f63b0f76945d4c4c9ff6e87afaf870f579e67c0f7cca589492df8fc7ebd47"
+      },
+      "exact_cnf_clauses": 46336,
+      "exact_cnf_sha256": "4ef7e09f7ec92efb640d07705bcf9742f8af5976abab6e2ca0b333765362bfea",
+      "exact_cnf_variables": 10166,
+      "fifth_index": 0,
+      "fifth_unit_sha256": "c6ebc76be5dc1f8b433f8d6fd9bd85cd9325086038442db8614bb799fec6fd85",
+      "fourth_parent_id": "intersection-3-third-00-fourth-015",
+      "inherited_fourth_unit_sha256": "791da98f18f86971b732296e338f3cceb8895e44c21ff712b9472b32b343b9a6",
+      "leaf_id": "intersection-3-third-00-fourth-015-fifth-000",
+      "parent_cnf_sha256": "39cae2fbf472dacfd39c5f4df5576a510754e923967ce20775e41ecb042b0197",
+      "proof": {
+        "compressed_bytes": 1580417,
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-fifth-split/discriminator-5s/intersection-3-third-00-fourth-015-fifth-000/proof.drat.gz",
+        "sha256": "ab4831621955cd0712d033972745f76ea8703ba21c24e968bdcd8e9444f4f932",
+        "uncompressed_bytes": 4995484,
+        "uncompressed_sha256": "af162630ada934553413a6f463acce51c1e9909ee22d825cff2125a27982c1d1"
+      },
+      "replay_log": {
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-fifth-split/discriminator-5s/intersection-3-third-00-fourth-015-fifth-000/replay.log",
+        "sha256": "8c2354993f908a95e8397078b31d883b45e42107e68a3f35e50b7e3324a499a8"
+      },
+      "schema_version": 1,
+      "seconds_cap": 5,
+      "solver_elapsed_seconds": 3.6426343329949304,
+      "solver_log": {
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-fifth-split/discriminator-5s/intersection-3-third-00-fourth-015-fifth-000/solver.log",
+        "sha256": "bde6e1eede96772c07c8ce29fd18088863815bd043aa59a06f11f5838cf8a162"
+      },
+      "status": "UNSAT_VERIFIED",
+      "stratum": {
+        "branch_count": 119,
+        "position": "orbit_zero",
+        "prior_status": "FIXED_CAP_TIMEOUT",
+        "top_parent": "intersection-3"
+      }
+    },
+    {
+      "checker": {
+        "path": ".venv/sat-audit-tools/drat-trim/drat-trim",
+        "sha256": "f58f63b0f76945d4c4c9ff6e87afaf870f579e67c0f7cca589492df8fc7ebd47"
+      },
+      "exact_cnf_clauses": 46338,
+      "exact_cnf_sha256": "39b402b99c487d752ed673e0151f58b831de2086bd874e7cd275d5ca225b9e79",
+      "exact_cnf_variables": 10166,
+      "fifth_index": 1,
+      "fifth_unit_sha256": "4215591ded305678b754a76c35cb90f5e96dae169c2d79d0a683502275466b5a",
+      "fourth_parent_id": "intersection-3-third-00-fourth-015",
+      "inherited_fourth_unit_sha256": "791da98f18f86971b732296e338f3cceb8895e44c21ff712b9472b32b343b9a6",
+      "leaf_id": "intersection-3-third-00-fourth-015-fifth-001",
+      "parent_cnf_sha256": "39cae2fbf472dacfd39c5f4df5576a510754e923967ce20775e41ecb042b0197",
+      "proof": {
+        "compressed_bytes": 1414456,
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-fifth-split/discriminator-5s/intersection-3-third-00-fourth-015-fifth-001/proof.drat.gz",
+        "sha256": "251b3ae8b461f8e09ffb558aefb6f34791e096a502c29c27e2b72009f88befce",
+        "uncompressed_bytes": 4237299,
+        "uncompressed_sha256": "235f37f239b68e08814af6b5f3768d9cbe9444320fb6804fecafa047a8289989"
+      },
+      "replay_log": {
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-fifth-split/discriminator-5s/intersection-3-third-00-fourth-015-fifth-001/replay.log",
+        "sha256": "74e5f958e6eb65aca96bbf93ab9a3753648fcf941c9927ac6d0d3ceafc30808d"
+      },
+      "schema_version": 1,
+      "seconds_cap": 5,
+      "solver_elapsed_seconds": 2.562459749984555,
+      "solver_log": {
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-fifth-split/discriminator-5s/intersection-3-third-00-fourth-015-fifth-001/solver.log",
+        "sha256": "bde6e1eede96772c07c8ce29fd18088863815bd043aa59a06f11f5838cf8a162"
+      },
+      "status": "UNSAT_VERIFIED",
+      "stratum": {
+        "branch_count": 119,
+        "position": "orbit_one",
+        "prior_status": "FIXED_CAP_TIMEOUT",
+        "top_parent": "intersection-3"
+      }
+    },
+    {
+      "checker": {
+        "path": ".venv/sat-audit-tools/drat-trim/drat-trim",
+        "sha256": "f58f63b0f76945d4c4c9ff6e87afaf870f579e67c0f7cca589492df8fc7ebd47"
+      },
+      "exact_cnf_clauses": 46408,
+      "exact_cnf_sha256": "3279a2a79c28abeaba8e0e191bf3ea9543486f0eacc6b27c40501ac6e32187d2",
+      "exact_cnf_variables": 10166,
+      "fifth_index": 29,
+      "fifth_unit_sha256": "ecf15a1b188046fd13328d7b1d72f32baf1f0158fde83ead1ae9b745f7e0c50a",
+      "fourth_parent_id": "intersection-3-third-00-fourth-015",
+      "inherited_fourth_unit_sha256": "791da98f18f86971b732296e338f3cceb8895e44c21ff712b9472b32b343b9a6",
+      "leaf_id": "intersection-3-third-00-fourth-015-fifth-029",
+      "parent_cnf_sha256": "39cae2fbf472dacfd39c5f4df5576a510754e923967ce20775e41ecb042b0197",
+      "proof": {
+        "compressed_bytes": 110791,
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-fifth-split/discriminator-5s/intersection-3-third-00-fourth-015-fifth-029/proof.drat.gz",
+        "sha256": "e93cf43f33c9ffa653a059b3a5d4ddd58fc5cf736c05f3c10e0df29c18314234",
+        "uncompressed_bytes": 598973,
+        "uncompressed_sha256": "ff3a456f8a279199ec65b31f0cd2481a8871b1b76bcad6eeeca22ed90e4e62c9"
+      },
+      "replay_log": {
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-fifth-split/discriminator-5s/intersection-3-third-00-fourth-015-fifth-029/replay.log",
+        "sha256": "17e59b37e0c6530ab1ec1b5955a60561bd25983aeae18efa6c8befec77b88b15"
+      },
+      "schema_version": 1,
+      "seconds_cap": 5,
+      "solver_elapsed_seconds": 0.08314449997851625,
+      "solver_log": {
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-fifth-split/discriminator-5s/intersection-3-third-00-fourth-015-fifth-029/solver.log",
+        "sha256": "bde6e1eede96772c07c8ce29fd18088863815bd043aa59a06f11f5838cf8a162"
+      },
+      "status": "UNSAT_VERIFIED",
+      "stratum": {
+        "branch_count": 119,
+        "position": "first_quartile",
+        "prior_status": "FIXED_CAP_TIMEOUT",
+        "top_parent": "intersection-3"
+      }
+    },
+    {
+      "checker": {
+        "path": ".venv/sat-audit-tools/drat-trim/drat-trim",
+        "sha256": "f58f63b0f76945d4c4c9ff6e87afaf870f579e67c0f7cca589492df8fc7ebd47"
+      },
+      "exact_cnf_clauses": 46522,
+      "exact_cnf_sha256": "ceca494e6f8f6d89a6cb733caf40d6a9dad128f9b78f489d7e738bf7848805bd",
+      "exact_cnf_variables": 10166,
+      "fifth_index": 59,
+      "fifth_unit_sha256": "95cd40e464bdcf1cfb55224335325cff3cfeba5e176d33220407ff95b7b890bb",
+      "fourth_parent_id": "intersection-3-third-00-fourth-015",
+      "inherited_fourth_unit_sha256": "791da98f18f86971b732296e338f3cceb8895e44c21ff712b9472b32b343b9a6",
+      "leaf_id": "intersection-3-third-00-fourth-015-fifth-059",
+      "parent_cnf_sha256": "39cae2fbf472dacfd39c5f4df5576a510754e923967ce20775e41ecb042b0197",
+      "proof": {
+        "compressed_bytes": 110991,
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-fifth-split/discriminator-5s/intersection-3-third-00-fourth-015-fifth-059/proof.drat.gz",
+        "sha256": "c76a2b65f22fc1b183bba008f8061ea82ea9a9129a1faf314185ae5f7ad12650",
+        "uncompressed_bytes": 599429,
+        "uncompressed_sha256": "7237b598e8621c522c8cb531555e6407879dca1d1500c85d9426e4cd70e8702c"
+      },
+      "replay_log": {
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-fifth-split/discriminator-5s/intersection-3-third-00-fourth-015-fifth-059/replay.log",
+        "sha256": "dc877f1d81c0150c0a03338efc070fa25e8b58b4357078ed8b71c6c290a37235"
+      },
+      "schema_version": 1,
+      "seconds_cap": 5,
+      "solver_elapsed_seconds": 0.08732241595862433,
+      "solver_log": {
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-fifth-split/discriminator-5s/intersection-3-third-00-fourth-015-fifth-059/solver.log",
+        "sha256": "bde6e1eede96772c07c8ce29fd18088863815bd043aa59a06f11f5838cf8a162"
+      },
+      "status": "UNSAT_VERIFIED",
+      "stratum": {
+        "branch_count": 119,
+        "position": "midpoint",
+        "prior_status": "FIXED_CAP_TIMEOUT",
+        "top_parent": "intersection-3"
+      }
+    },
+    {
+      "checker": {
+        "path": ".venv/sat-audit-tools/drat-trim/drat-trim",
+        "sha256": "f58f63b0f76945d4c4c9ff6e87afaf870f579e67c0f7cca589492df8fc7ebd47"
+      },
+      "exact_cnf_clauses": 46411,
+      "exact_cnf_sha256": "3f5ca96d2056e68f4ed7b9a4010eec192880b2fdb8ff8549b434e52f8a597e78",
+      "exact_cnf_variables": 10166,
+      "fifth_index": 0,
+      "fifth_unit_sha256": "8b0cbb7822a9d0b6edee6cd71f9ba02cfebc2a717e007f84a9fed382bcfee8a4",
+      "fourth_parent_id": "intersection-3-third-00-fourth-026",
+      "inherited_fourth_unit_sha256": "3a3e02796a3a81c22950d6c8a89e15ef79d7e2d832bb0a8a75894ce1f8a85519",
+      "leaf_id": "intersection-3-third-00-fourth-026-fifth-000",
+      "parent_cnf_sha256": "39cae2fbf472dacfd39c5f4df5576a510754e923967ce20775e41ecb042b0197",
+      "proof": {
+        "compressed_bytes": 109272,
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-fifth-split/discriminator-5s/intersection-3-third-00-fourth-026-fifth-000/proof.drat.gz",
+        "sha256": "2a441a309ed7f17151989c8ea3e18567fa73cf9b3be0ef12f1bdaafb305da255",
+        "uncompressed_bytes": 595539,
+        "uncompressed_sha256": "b22bfe28eb28316dc771b01db298d1c3c96f6f106d45b3bdd299dde33641cd25"
+      },
+      "replay_log": {
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-fifth-split/discriminator-5s/intersection-3-third-00-fourth-026-fifth-000/replay.log",
+        "sha256": "e8056481acaf6f6672f97d645e7c3040fe5ad65151966d32d6ae2129ed4b5632"
+      },
+      "schema_version": 1,
+      "seconds_cap": 5,
+      "solver_elapsed_seconds": 0.11268500000005588,
+      "solver_log": {
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-fifth-split/discriminator-5s/intersection-3-third-00-fourth-026-fifth-000/solver.log",
+        "sha256": "bde6e1eede96772c07c8ce29fd18088863815bd043aa59a06f11f5838cf8a162"
+      },
+      "status": "UNSAT_VERIFIED",
+      "stratum": {
+        "branch_count": 83,
+        "position": "orbit_zero",
+        "prior_status": "NEVER_MEASURED",
+        "top_parent": "intersection-3"
+      }
+    },
+    {
+      "checker": {
+        "path": ".venv/sat-audit-tools/drat-trim/drat-trim",
+        "sha256": "f58f63b0f76945d4c4c9ff6e87afaf870f579e67c0f7cca589492df8fc7ebd47"
+      },
+      "exact_cnf_clauses": 46413,
+      "exact_cnf_sha256": "a3e1dd43e9c76301e561f614d8e6f09b7b082f0aa2e49b57c2dfa646c59be400",
+      "exact_cnf_variables": 10166,
+      "fifth_index": 1,
+      "fifth_unit_sha256": "35088b5597b83724658fb29155907187f5567f5764147053743ca19e029045e4",
+      "fourth_parent_id": "intersection-3-third-00-fourth-026",
+      "inherited_fourth_unit_sha256": "3a3e02796a3a81c22950d6c8a89e15ef79d7e2d832bb0a8a75894ce1f8a85519",
+      "leaf_id": "intersection-3-third-00-fourth-026-fifth-001",
+      "parent_cnf_sha256": "39cae2fbf472dacfd39c5f4df5576a510754e923967ce20775e41ecb042b0197",
+      "proof": {
+        "compressed_bytes": 109278,
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-fifth-split/discriminator-5s/intersection-3-third-00-fourth-026-fifth-001/proof.drat.gz",
+        "sha256": "5f5ac73e3996e7ad3dd064576a70192a1ced59de4a342ee3abd9acd8943dd691",
+        "uncompressed_bytes": 595547,
+        "uncompressed_sha256": "7582e855c94aae4a0b15cbef6b33186668e85b85831ed14a439e0fbc5ca6fa89"
+      },
+      "replay_log": {
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-fifth-split/discriminator-5s/intersection-3-third-00-fourth-026-fifth-001/replay.log",
+        "sha256": "f189f620d29a21e58e8c18d9ac63cfac4a5d65e448be5df0cddf118093b9101c"
+      },
+      "schema_version": 1,
+      "seconds_cap": 5,
+      "solver_elapsed_seconds": 0.24912066699471325,
+      "solver_log": {
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-fifth-split/discriminator-5s/intersection-3-third-00-fourth-026-fifth-001/solver.log",
+        "sha256": "bde6e1eede96772c07c8ce29fd18088863815bd043aa59a06f11f5838cf8a162"
+      },
+      "status": "UNSAT_VERIFIED",
+      "stratum": {
+        "branch_count": 83,
+        "position": "orbit_one",
+        "prior_status": "NEVER_MEASURED",
+        "top_parent": "intersection-3"
+      }
+    },
+    {
+      "checker": {
+        "path": ".venv/sat-audit-tools/drat-trim/drat-trim",
+        "sha256": "f58f63b0f76945d4c4c9ff6e87afaf870f579e67c0f7cca589492df8fc7ebd47"
+      },
+      "exact_cnf_clauses": 46460,
+      "exact_cnf_sha256": "9fd8548c831a012f3bc0e21abe543eb41f4e540c655b9dee86c6db5902308078",
+      "exact_cnf_variables": 10166,
+      "fifth_index": 20,
+      "fifth_unit_sha256": "5efdbce436906ac2afc6a249c0180725c8a0544b4e59835892614d622d0600ce",
+      "fourth_parent_id": "intersection-3-third-00-fourth-026",
+      "inherited_fourth_unit_sha256": "3a3e02796a3a81c22950d6c8a89e15ef79d7e2d832bb0a8a75894ce1f8a85519",
+      "leaf_id": "intersection-3-third-00-fourth-026-fifth-020",
+      "parent_cnf_sha256": "39cae2fbf472dacfd39c5f4df5576a510754e923967ce20775e41ecb042b0197",
+      "proof": {
+        "compressed_bytes": 109336,
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-fifth-split/discriminator-5s/intersection-3-third-00-fourth-026-fifth-020/proof.drat.gz",
+        "sha256": "7333af18dd61a6f0368612158b3f1336a8d19b599a3a66bbb48b6b0e509511a8",
+        "uncompressed_bytes": 595735,
+        "uncompressed_sha256": "2b9115c41bc019d151d26d7b0dc3b96c9e8c4b808f1e76ebb7da0a6cb2c69bbd"
+      },
+      "replay_log": {
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-fifth-split/discriminator-5s/intersection-3-third-00-fourth-026-fifth-020/replay.log",
+        "sha256": "2fd540f7327eccc464fbb48ae9f3c6e4eab8f8418acf1735c5c29d101a94f30c"
+      },
+      "schema_version": 1,
+      "seconds_cap": 5,
+      "solver_elapsed_seconds": 0.16481350001413375,
+      "solver_log": {
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-fifth-split/discriminator-5s/intersection-3-third-00-fourth-026-fifth-020/solver.log",
+        "sha256": "bde6e1eede96772c07c8ce29fd18088863815bd043aa59a06f11f5838cf8a162"
+      },
+      "status": "UNSAT_VERIFIED",
+      "stratum": {
+        "branch_count": 83,
+        "position": "first_quartile",
+        "prior_status": "NEVER_MEASURED",
+        "top_parent": "intersection-3"
+      }
+    },
+    {
+      "checker": {
+        "path": ".venv/sat-audit-tools/drat-trim/drat-trim",
+        "sha256": "f58f63b0f76945d4c4c9ff6e87afaf870f579e67c0f7cca589492df8fc7ebd47"
+      },
+      "exact_cnf_clauses": 46550,
+      "exact_cnf_sha256": "7fff566b60271f81d1c9ff653b06831b861615c7162dc46d4065eeae4503e181",
+      "exact_cnf_variables": 10166,
+      "fifth_index": 41,
+      "fifth_unit_sha256": "5c86eeed30d2dfa5fd21a63b9bb87323d957227498596ff46872b9b2e00044e3",
+      "fourth_parent_id": "intersection-3-third-00-fourth-026",
+      "inherited_fourth_unit_sha256": "3a3e02796a3a81c22950d6c8a89e15ef79d7e2d832bb0a8a75894ce1f8a85519",
+      "leaf_id": "intersection-3-third-00-fourth-026-fifth-041",
+      "parent_cnf_sha256": "39cae2fbf472dacfd39c5f4df5576a510754e923967ce20775e41ecb042b0197",
+      "proof": {
+        "compressed_bytes": 109469,
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-fifth-split/discriminator-5s/intersection-3-third-00-fourth-026-fifth-041/proof.drat.gz",
+        "sha256": "318a1a6cd14cf6a414f0f6ee8335ed890a9d61c66d5d243a9926d058e6910952",
+        "uncompressed_bytes": 596095,
+        "uncompressed_sha256": "893efab169c41980acfd0e180e1c81cd391b14e483cee6a9b0505b0f847c7f8d"
+      },
+      "replay_log": {
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-fifth-split/discriminator-5s/intersection-3-third-00-fourth-026-fifth-041/replay.log",
+        "sha256": "2add4a78a67066709b30f82363363ced8c3078bbc7c2f5f008498242ea70a591"
+      },
+      "schema_version": 1,
+      "seconds_cap": 5,
+      "solver_elapsed_seconds": 0.1544841660070233,
+      "solver_log": {
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-fifth-split/discriminator-5s/intersection-3-third-00-fourth-026-fifth-041/solver.log",
+        "sha256": "bde6e1eede96772c07c8ce29fd18088863815bd043aa59a06f11f5838cf8a162"
+      },
+      "status": "UNSAT_VERIFIED",
+      "stratum": {
+        "branch_count": 83,
+        "position": "midpoint",
+        "prior_status": "NEVER_MEASURED",
+        "top_parent": "intersection-3"
+      }
+    },
+    {
+      "claim_limit": "UNKNOWN closes no branch.",
+      "exact_cnf_clauses": 46224,
+      "exact_cnf_sha256": "8f4258df0db688e4e02c0783aca486e8e26e217729008a6fa3b4625c046ae29b",
+      "exact_cnf_variables": 10166,
+      "fifth_index": 0,
+      "fifth_unit_sha256": "90d7ec0f0acef104d8b6252794295f661a0149634868d02a1ae0c358099638f5",
+      "fourth_parent_id": "intersection-3-third-01-fourth-001",
+      "inherited_fourth_unit_sha256": "0b6f0cd71662b95ab905acada04f33be633eded097864c47ec1d21e1c1728215",
+      "leaf_id": "intersection-3-third-01-fourth-001-fifth-000",
+      "parent_cnf_sha256": "688faa230c837734c923f92b3efbb9232562846fa9ded3255d85f0f7147e8913",
+      "partial_proof_sha256": "c03e035a4b81e2c7fe44871ce44ad5fa34f4afe07417e916567325870fa5bbc6",
+      "returncode": 0,
+      "schema_version": 1,
+      "seconds_cap": 5,
+      "solver_elapsed_seconds": 5.046732667018659,
+      "solver_log": {
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-fifth-split/discriminator-5s/intersection-3-third-01-fourth-001-fifth-000/solver.log",
+        "sha256": "8fba55cea0f98be36fab7b65349dda867a58aabfcf974a46098f5123830ac5cb"
+      },
+      "status": "FIXED_CAP_TIMEOUT",
+      "stratum": {
+        "branch_count": 48,
+        "position": "orbit_zero",
+        "prior_status": "FIXED_CAP_TIMEOUT",
+        "top_parent": "intersection-3"
+      }
+    },
+    {
+      "claim_limit": "UNKNOWN closes no branch.",
+      "exact_cnf_clauses": 46230,
+      "exact_cnf_sha256": "5e7c2aeaa77f7e487bf635241d02b81c39d3fc6c8f6ffc90ee7d4b6761a7d46b",
+      "exact_cnf_variables": 10166,
+      "fifth_index": 1,
+      "fifth_unit_sha256": "4240cc7c793adf10c9a032a08738b0e89d3d48687e0fbabf9596703771384233",
+      "fourth_parent_id": "intersection-3-third-01-fourth-001",
+      "inherited_fourth_unit_sha256": "0b6f0cd71662b95ab905acada04f33be633eded097864c47ec1d21e1c1728215",
+      "leaf_id": "intersection-3-third-01-fourth-001-fifth-001",
+      "parent_cnf_sha256": "688faa230c837734c923f92b3efbb9232562846fa9ded3255d85f0f7147e8913",
+      "partial_proof_sha256": "41427e7680fb5b583c4f80c52c294a480cc1bb6d33e169024337fbf9d421b90a",
+      "returncode": 0,
+      "schema_version": 1,
+      "seconds_cap": 5,
+      "solver_elapsed_seconds": 5.04969891696237,
+      "solver_log": {
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-fifth-split/discriminator-5s/intersection-3-third-01-fourth-001-fifth-001/solver.log",
+        "sha256": "8fba55cea0f98be36fab7b65349dda867a58aabfcf974a46098f5123830ac5cb"
+      },
+      "status": "FIXED_CAP_TIMEOUT",
+      "stratum": {
+        "branch_count": 48,
+        "position": "orbit_one",
+        "prior_status": "FIXED_CAP_TIMEOUT",
+        "top_parent": "intersection-3"
+      }
+    },
+    {
+      "claim_limit": "UNKNOWN closes no branch.",
+      "exact_cnf_clauses": 46368,
+      "exact_cnf_sha256": "95045727543acbca32296c2b504b731e6ae4f5e46ee0e9bd2d45b2a1169a5ec8",
+      "exact_cnf_variables": 10166,
+      "fifth_index": 12,
+      "fifth_unit_sha256": "ffff0afbc37addf7b3a60f3704b6ee78fa59f9f6edca0158d1dfe52adb291da6",
+      "fourth_parent_id": "intersection-3-third-01-fourth-001",
+      "inherited_fourth_unit_sha256": "0b6f0cd71662b95ab905acada04f33be633eded097864c47ec1d21e1c1728215",
+      "leaf_id": "intersection-3-third-01-fourth-001-fifth-012",
+      "parent_cnf_sha256": "688faa230c837734c923f92b3efbb9232562846fa9ded3255d85f0f7147e8913",
+      "partial_proof_sha256": "2ee9e1d984176549ed5e2572a55a1c3aef4277f59d6f20cdc409efaa619fde76",
+      "returncode": 0,
+      "schema_version": 1,
+      "seconds_cap": 5,
+      "solver_elapsed_seconds": 5.020828915992752,
+      "solver_log": {
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-fifth-split/discriminator-5s/intersection-3-third-01-fourth-001-fifth-012/solver.log",
+        "sha256": "8fba55cea0f98be36fab7b65349dda867a58aabfcf974a46098f5123830ac5cb"
+      },
+      "status": "FIXED_CAP_TIMEOUT",
+      "stratum": {
+        "branch_count": 48,
+        "position": "first_quartile",
+        "prior_status": "FIXED_CAP_TIMEOUT",
+        "top_parent": "intersection-3"
+      }
+    },
+    {
+      "checker": {
+        "path": ".venv/sat-audit-tools/drat-trim/drat-trim",
+        "sha256": "f58f63b0f76945d4c4c9ff6e87afaf870f579e67c0f7cca589492df8fc7ebd47"
+      },
+      "exact_cnf_clauses": 46515,
+      "exact_cnf_sha256": "dc5fe2364b797cf75cdd2f9a7307e16fa6d38ad2ec26c80a4ed6b377a384e066",
+      "exact_cnf_variables": 10166,
+      "fifth_index": 24,
+      "fifth_unit_sha256": "e21feeb827bf810fbbd4910fcbf559336f5bf68436b59a7b2caa60b6c91debd2",
+      "fourth_parent_id": "intersection-3-third-01-fourth-001",
+      "inherited_fourth_unit_sha256": "0b6f0cd71662b95ab905acada04f33be633eded097864c47ec1d21e1c1728215",
+      "leaf_id": "intersection-3-third-01-fourth-001-fifth-024",
+      "parent_cnf_sha256": "688faa230c837734c923f92b3efbb9232562846fa9ded3255d85f0f7147e8913",
+      "proof": {
+        "compressed_bytes": 118740,
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-fifth-split/discriminator-5s/intersection-3-third-01-fourth-001-fifth-024/proof.drat.gz",
+        "sha256": "be78e220afdd3840dfea3a8189f5fcac6e84baa9c872dcecc5758fbe6d8cd707",
+        "uncompressed_bytes": 614903,
+        "uncompressed_sha256": "763e4c2c14fdf9cc220686b72333e9c2ee1caac93874694657739a381837c511"
+      },
+      "replay_log": {
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-fifth-split/discriminator-5s/intersection-3-third-01-fourth-001-fifth-024/replay.log",
+        "sha256": "9404df78b336af6ad01f1994153a2f0039c31d500f7bb60d34b2ce6a23f188a4"
+      },
+      "schema_version": 1,
+      "seconds_cap": 5,
+      "solver_elapsed_seconds": 0.09297475003404543,
+      "solver_log": {
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-fifth-split/discriminator-5s/intersection-3-third-01-fourth-001-fifth-024/solver.log",
+        "sha256": "bde6e1eede96772c07c8ce29fd18088863815bd043aa59a06f11f5838cf8a162"
+      },
+      "status": "UNSAT_VERIFIED",
+      "stratum": {
+        "branch_count": 48,
+        "position": "midpoint",
+        "prior_status": "FIXED_CAP_TIMEOUT",
+        "top_parent": "intersection-3"
+      }
+    },
+    {
+      "claim_limit": "UNKNOWN closes no branch.",
+      "exact_cnf_clauses": 46226,
+      "exact_cnf_sha256": "2be8443f76fc4bbaa51ab445c62c54df3ee2e13682d750d1b47ff8fd9bcf6cda",
+      "exact_cnf_variables": 10166,
+      "fifth_index": 0,
+      "fifth_unit_sha256": "b58a3da5fde2680191877ec88a1aa7d06927cc3b30cdf0d0db8c39b488891576",
+      "fourth_parent_id": "intersection-3-third-02-fourth-000",
+      "inherited_fourth_unit_sha256": "a4b2c5db15348c29451e18b8307e5ef81625ea638e807935f39ceaa8d9ac7758",
+      "leaf_id": "intersection-3-third-02-fourth-000-fifth-000",
+      "parent_cnf_sha256": "b99320a3c698d5243f28c5433b3f91698507673c162d04512c0c2d3616844677",
+      "partial_proof_sha256": "2b8456308d0edaac1856744ec1e964288e4a872c421fbd9cbf7d508539feac81",
+      "returncode": 0,
+      "schema_version": 1,
+      "seconds_cap": 5,
+      "solver_elapsed_seconds": 5.031009499973152,
+      "solver_log": {
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-fifth-split/discriminator-5s/intersection-3-third-02-fourth-000-fifth-000/solver.log",
+        "sha256": "8fba55cea0f98be36fab7b65349dda867a58aabfcf974a46098f5123830ac5cb"
+      },
+      "status": "FIXED_CAP_TIMEOUT",
+      "stratum": {
+        "branch_count": 128,
+        "position": "orbit_zero",
+        "prior_status": "FIXED_CAP_TIMEOUT",
+        "top_parent": "intersection-3"
+      }
+    },
+    {
+      "claim_limit": "UNKNOWN closes no branch.",
+      "exact_cnf_clauses": 46229,
+      "exact_cnf_sha256": "c4826cbf0585e40838ad2034741e0efffc415c108ef89074b49fff09a14a9e54",
+      "exact_cnf_variables": 10166,
+      "fifth_index": 1,
+      "fifth_unit_sha256": "193b54da4a699dd6289fcd437521c37ff53159afce64e1dc70a1ff0eea72edf3",
+      "fourth_parent_id": "intersection-3-third-02-fourth-000",
+      "inherited_fourth_unit_sha256": "a4b2c5db15348c29451e18b8307e5ef81625ea638e807935f39ceaa8d9ac7758",
+      "leaf_id": "intersection-3-third-02-fourth-000-fifth-001",
+      "parent_cnf_sha256": "b99320a3c698d5243f28c5433b3f91698507673c162d04512c0c2d3616844677",
+      "partial_proof_sha256": "6e063a3c1ebfbe22198c8b7371d3d9a92a2ec80dfdc1e19d536ebde6000639e5",
+      "returncode": 0,
+      "schema_version": 1,
+      "seconds_cap": 5,
+      "solver_elapsed_seconds": 5.041759083047509,
+      "solver_log": {
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-fifth-split/discriminator-5s/intersection-3-third-02-fourth-000-fifth-001/solver.log",
+        "sha256": "8fba55cea0f98be36fab7b65349dda867a58aabfcf974a46098f5123830ac5cb"
+      },
+      "status": "FIXED_CAP_TIMEOUT",
+      "stratum": {
+        "branch_count": 128,
+        "position": "orbit_one",
+        "prior_status": "FIXED_CAP_TIMEOUT",
+        "top_parent": "intersection-3"
+      }
+    },
+    {
+      "checker": {
+        "path": ".venv/sat-audit-tools/drat-trim/drat-trim",
+        "sha256": "f58f63b0f76945d4c4c9ff6e87afaf870f579e67c0f7cca589492df8fc7ebd47"
+      },
+      "exact_cnf_clauses": 46322,
+      "exact_cnf_sha256": "a4a5d8c072f816afbb4ecb3fc2bb0f98ecf06a81d734accb16c5ee88d4e3bc37",
+      "exact_cnf_variables": 10166,
+      "fifth_index": 32,
+      "fifth_unit_sha256": "6adbff30b6192e7cde31282b7674f978dd9367db1f914dabd8852c8bec8c1711",
+      "fourth_parent_id": "intersection-3-third-02-fourth-000",
+      "inherited_fourth_unit_sha256": "a4b2c5db15348c29451e18b8307e5ef81625ea638e807935f39ceaa8d9ac7758",
+      "leaf_id": "intersection-3-third-02-fourth-000-fifth-032",
+      "parent_cnf_sha256": "b99320a3c698d5243f28c5433b3f91698507673c162d04512c0c2d3616844677",
+      "proof": {
+        "compressed_bytes": 109871,
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-fifth-split/discriminator-5s/intersection-3-third-02-fourth-000-fifth-032/proof.drat.gz",
+        "sha256": "376365f8266c9b69c573fe799a059de8693919c35df0b9ccd4d5fd794fe3cb7c",
+        "uncompressed_bytes": 596705,
+        "uncompressed_sha256": "3e3ea8208ce63948d9488011bd75c09dd15f26abab909ec92cc4c16690088cd1"
+      },
+      "replay_log": {
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-fifth-split/discriminator-5s/intersection-3-third-02-fourth-000-fifth-032/replay.log",
+        "sha256": "ac1747aaa314f6a4dc553cdd2944eb0402d6ddd813e635e15c4f25c3f5b3ca20"
+      },
+      "schema_version": 1,
+      "seconds_cap": 5,
+      "solver_elapsed_seconds": 0.09038141701603308,
+      "solver_log": {
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-fifth-split/discriminator-5s/intersection-3-third-02-fourth-000-fifth-032/solver.log",
+        "sha256": "bde6e1eede96772c07c8ce29fd18088863815bd043aa59a06f11f5838cf8a162"
+      },
+      "status": "UNSAT_VERIFIED",
+      "stratum": {
+        "branch_count": 128,
+        "position": "first_quartile",
+        "prior_status": "FIXED_CAP_TIMEOUT",
+        "top_parent": "intersection-3"
+      }
+    },
+    {
+      "checker": {
+        "path": ".venv/sat-audit-tools/drat-trim/drat-trim",
+        "sha256": "f58f63b0f76945d4c4c9ff6e87afaf870f579e67c0f7cca589492df8fc7ebd47"
+      },
+      "exact_cnf_clauses": 46482,
+      "exact_cnf_sha256": "9bf03f0bb55a00c93dc73b8aa7c2a15cbb29822ce481c0c793e0297d5cff6036",
+      "exact_cnf_variables": 10166,
+      "fifth_index": 64,
+      "fifth_unit_sha256": "0be6f196ba3eb5a1129b907aeadb0bf74acb694991c36aa56e16ca556d6236d7",
+      "fourth_parent_id": "intersection-3-third-02-fourth-000",
+      "inherited_fourth_unit_sha256": "a4b2c5db15348c29451e18b8307e5ef81625ea638e807935f39ceaa8d9ac7758",
+      "leaf_id": "intersection-3-third-02-fourth-000-fifth-064",
+      "parent_cnf_sha256": "b99320a3c698d5243f28c5433b3f91698507673c162d04512c0c2d3616844677",
+      "proof": {
+        "compressed_bytes": 110145,
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-fifth-split/discriminator-5s/intersection-3-third-02-fourth-000-fifth-064/proof.drat.gz",
+        "sha256": "808ddb576ae66a64310a4b1747b712813f307eafa51e6c59cf07ef88a028031e",
+        "uncompressed_bytes": 597345,
+        "uncompressed_sha256": "50b59166a62ac2eb90d39596384a6cc421ea804e8b623d44eef74b8119f518f3"
+      },
+      "replay_log": {
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-fifth-split/discriminator-5s/intersection-3-third-02-fourth-000-fifth-064/replay.log",
+        "sha256": "4a731a1b0d402bdd520e7cc18ed656d0e8ca81f4a5d02e8dbe1ddecf3c6602dc"
+      },
+      "schema_version": 1,
+      "seconds_cap": 5,
+      "solver_elapsed_seconds": 0.08174699998926371,
+      "solver_log": {
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-fifth-split/discriminator-5s/intersection-3-third-02-fourth-000-fifth-064/solver.log",
+        "sha256": "bde6e1eede96772c07c8ce29fd18088863815bd043aa59a06f11f5838cf8a162"
+      },
+      "status": "UNSAT_VERIFIED",
+      "stratum": {
+        "branch_count": 128,
+        "position": "midpoint",
+        "prior_status": "FIXED_CAP_TIMEOUT",
+        "top_parent": "intersection-3"
+      }
+    },
+    {
+      "claim_limit": "UNKNOWN closes no branch.",
+      "exact_cnf_clauses": 46232,
+      "exact_cnf_sha256": "6bb690e2b2c7807dc3bd71f305cd246973a87a0b47af2cfb5169dca55d548b87",
+      "exact_cnf_variables": 10166,
+      "fifth_index": 0,
+      "fifth_unit_sha256": "a2c6c14110a317833ac8f2fbae7080ee844af7469b2aa702876548dcf4c58077",
+      "fourth_parent_id": "intersection-3-third-03-fourth-000",
+      "inherited_fourth_unit_sha256": "b58a3da5fde2680191877ec88a1aa7d06927cc3b30cdf0d0db8c39b488891576",
+      "leaf_id": "intersection-3-third-03-fourth-000-fifth-000",
+      "parent_cnf_sha256": "0c1eba2dc4a6d83f010fcbea452b39ef6cea91a26525389ae54344bca743f591",
+      "partial_proof_sha256": "d80a3874441d3cdf81abc2089e0f055e422a78b750788242867b02e0536c0814",
+      "returncode": 0,
+      "schema_version": 1,
+      "seconds_cap": 5,
+      "solver_elapsed_seconds": 5.027145083004143,
+      "solver_log": {
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-fifth-split/discriminator-5s/intersection-3-third-03-fourth-000-fifth-000/solver.log",
+        "sha256": "8fba55cea0f98be36fab7b65349dda867a58aabfcf974a46098f5123830ac5cb"
+      },
+      "status": "FIXED_CAP_TIMEOUT",
+      "stratum": {
+        "branch_count": 207,
+        "position": "orbit_zero",
+        "prior_status": "FIXED_CAP_TIMEOUT",
+        "top_parent": "intersection-3"
+      }
+    },
+    {
+      "claim_limit": "UNKNOWN closes no branch.",
+      "exact_cnf_clauses": 46234,
+      "exact_cnf_sha256": "73e9bce45b797cb3fa576d6e1aade834f25df452d523478b3d60a8a25242db17",
+      "exact_cnf_variables": 10166,
+      "fifth_index": 1,
+      "fifth_unit_sha256": "f2253f7f2b9887d9c0da97e55fdc74f81f8cd5e10d6059f321e8df0e5981fb47",
+      "fourth_parent_id": "intersection-3-third-03-fourth-000",
+      "inherited_fourth_unit_sha256": "b58a3da5fde2680191877ec88a1aa7d06927cc3b30cdf0d0db8c39b488891576",
+      "leaf_id": "intersection-3-third-03-fourth-000-fifth-001",
+      "parent_cnf_sha256": "0c1eba2dc4a6d83f010fcbea452b39ef6cea91a26525389ae54344bca743f591",
+      "partial_proof_sha256": "f0133866a8b461700e507a70b23b3847ea288b162e2c7243c4467ae8d9bdca60",
+      "returncode": 0,
+      "schema_version": 1,
+      "seconds_cap": 5,
+      "solver_elapsed_seconds": 5.025554916006513,
+      "solver_log": {
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-fifth-split/discriminator-5s/intersection-3-third-03-fourth-000-fifth-001/solver.log",
+        "sha256": "8fba55cea0f98be36fab7b65349dda867a58aabfcf974a46098f5123830ac5cb"
+      },
+      "status": "FIXED_CAP_TIMEOUT",
+      "stratum": {
+        "branch_count": 207,
+        "position": "orbit_one",
+        "prior_status": "FIXED_CAP_TIMEOUT",
+        "top_parent": "intersection-3"
+      }
+    },
+    {
+      "checker": {
+        "path": ".venv/sat-audit-tools/drat-trim/drat-trim",
+        "sha256": "f58f63b0f76945d4c4c9ff6e87afaf870f579e67c0f7cca589492df8fc7ebd47"
+      },
+      "exact_cnf_clauses": 46332,
+      "exact_cnf_sha256": "bb212f75f89c82c46915c1f95c83201f274a4bab226d41e76a7aa5a4e15c5546",
+      "exact_cnf_variables": 10166,
+      "fifth_index": 51,
+      "fifth_unit_sha256": "64df99424075efc3f1df3e5d069b449e3f24465b33357caf60eb64addd43ba2f",
+      "fourth_parent_id": "intersection-3-third-03-fourth-000",
+      "inherited_fourth_unit_sha256": "b58a3da5fde2680191877ec88a1aa7d06927cc3b30cdf0d0db8c39b488891576",
+      "leaf_id": "intersection-3-third-03-fourth-000-fifth-051",
+      "parent_cnf_sha256": "0c1eba2dc4a6d83f010fcbea452b39ef6cea91a26525389ae54344bca743f591",
+      "proof": {
+        "compressed_bytes": 109883,
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-fifth-split/discriminator-5s/intersection-3-third-03-fourth-000-fifth-051/proof.drat.gz",
+        "sha256": "4cc855ecad43290a9dad55432efc4c698699b8d6e7fd9d71df06c51a43a4ae64",
+        "uncompressed_bytes": 596793,
+        "uncompressed_sha256": "07e93c89560ac081d75515c1aa33424563c1e2be727119e3ff5daa762c1f57bd"
+      },
+      "replay_log": {
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-fifth-split/discriminator-5s/intersection-3-third-03-fourth-000-fifth-051/replay.log",
+        "sha256": "8621ef52461502affd00a19b8bcccad0044a678e61df58e16afadd6df7b5527a"
+      },
+      "schema_version": 1,
+      "seconds_cap": 5,
+      "solver_elapsed_seconds": 0.08264641702407971,
+      "solver_log": {
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-fifth-split/discriminator-5s/intersection-3-third-03-fourth-000-fifth-051/solver.log",
+        "sha256": "bde6e1eede96772c07c8ce29fd18088863815bd043aa59a06f11f5838cf8a162"
+      },
+      "status": "UNSAT_VERIFIED",
+      "stratum": {
+        "branch_count": 207,
+        "position": "first_quartile",
+        "prior_status": "FIXED_CAP_TIMEOUT",
+        "top_parent": "intersection-3"
+      }
+    },
+    {
+      "checker": {
+        "path": ".venv/sat-audit-tools/drat-trim/drat-trim",
+        "sha256": "f58f63b0f76945d4c4c9ff6e87afaf870f579e67c0f7cca589492df8fc7ebd47"
+      },
+      "exact_cnf_clauses": 46480,
+      "exact_cnf_sha256": "72fbe3f660d0ccdad9fd8c4f9b782ce7022d5be61397f43eefed4d2efa6cdf70",
+      "exact_cnf_variables": 10166,
+      "fifth_index": 103,
+      "fifth_unit_sha256": "4ee216cd37ee01ea7f82f2cd6a31d463abfbbd9cba58cb5ec844d895bf0ed5b8",
+      "fourth_parent_id": "intersection-3-third-03-fourth-000",
+      "inherited_fourth_unit_sha256": "b58a3da5fde2680191877ec88a1aa7d06927cc3b30cdf0d0db8c39b488891576",
+      "leaf_id": "intersection-3-third-03-fourth-000-fifth-103",
+      "parent_cnf_sha256": "0c1eba2dc4a6d83f010fcbea452b39ef6cea91a26525389ae54344bca743f591",
+      "proof": {
+        "compressed_bytes": 110149,
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-fifth-split/discriminator-5s/intersection-3-third-03-fourth-000-fifth-103/proof.drat.gz",
+        "sha256": "7e8bdee8ba8e0cedc4e005079b984aba78c54265e211e7974d908fef8d39e2e6",
+        "uncompressed_bytes": 597385,
+        "uncompressed_sha256": "6aeab2bbd581bb1774100ef9ee8f516f9ead36a5d041f18490d0978da3a34b19"
+      },
+      "replay_log": {
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-fifth-split/discriminator-5s/intersection-3-third-03-fourth-000-fifth-103/replay.log",
+        "sha256": "3121908eb9f5b403cac48d17bb4e307a4457903795c47e4f16dcd0a9a56f7a8d"
+      },
+      "schema_version": 1,
+      "seconds_cap": 5,
+      "solver_elapsed_seconds": 0.09442383400164545,
+      "solver_log": {
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-fifth-split/discriminator-5s/intersection-3-third-03-fourth-000-fifth-103/solver.log",
+        "sha256": "bde6e1eede96772c07c8ce29fd18088863815bd043aa59a06f11f5838cf8a162"
+      },
+      "status": "UNSAT_VERIFIED",
+      "stratum": {
+        "branch_count": 207,
+        "position": "midpoint",
+        "prior_status": "FIXED_CAP_TIMEOUT",
+        "top_parent": "intersection-3"
+      }
+    },
+    {
+      "claim_limit": "UNKNOWN closes no branch.",
+      "exact_cnf_clauses": 46275,
+      "exact_cnf_sha256": "a965c196e89f9e9a1dcc3536a6a55dde389c6db330375cae4f95b967dd84f6b0",
+      "exact_cnf_variables": 10166,
+      "fifth_index": 0,
+      "fifth_unit_sha256": "6950980e3aca96f4dc400eb2e47cc5c343e0d3f483a4e70adcae1d7e6bb22d9c",
+      "fourth_parent_id": "intersection-3-third-03-fourth-017",
+      "inherited_fourth_unit_sha256": "4446aff9f8a0e9663bd5ad72f7d5361481d906f2a1348a7e4a29f40d08705a0b",
+      "leaf_id": "intersection-3-third-03-fourth-017-fifth-000",
+      "parent_cnf_sha256": "0c1eba2dc4a6d83f010fcbea452b39ef6cea91a26525389ae54344bca743f591",
+      "partial_proof_sha256": "15704b9feca3e8f51647483e6f5c46c6a0f5a610c4efcc6f13fc48e0d5515f6d",
+      "returncode": 0,
+      "schema_version": 1,
+      "seconds_cap": 5,
+      "solver_elapsed_seconds": 5.082204292004462,
+      "solver_log": {
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-fifth-split/discriminator-5s/intersection-3-third-03-fourth-017-fifth-000/solver.log",
+        "sha256": "8fba55cea0f98be36fab7b65349dda867a58aabfcf974a46098f5123830ac5cb"
+      },
+      "status": "FIXED_CAP_TIMEOUT",
+      "stratum": {
+        "branch_count": 177,
+        "position": "orbit_zero",
+        "prior_status": "NEVER_MEASURED",
+        "top_parent": "intersection-3"
+      }
+    },
+    {
+      "claim_limit": "UNKNOWN closes no branch.",
+      "exact_cnf_clauses": 46277,
+      "exact_cnf_sha256": "9344c7a76dcb3ee6ef5c88877873c5a9b39bb97f6e034741e6e006d1096c2ed0",
+      "exact_cnf_variables": 10166,
+      "fifth_index": 1,
+      "fifth_unit_sha256": "add1ac2329cdd081dc04e8012f9d10221f4ad2e15d4a2f9f75bc27b6e1e51ddf",
+      "fourth_parent_id": "intersection-3-third-03-fourth-017",
+      "inherited_fourth_unit_sha256": "4446aff9f8a0e9663bd5ad72f7d5361481d906f2a1348a7e4a29f40d08705a0b",
+      "leaf_id": "intersection-3-third-03-fourth-017-fifth-001",
+      "parent_cnf_sha256": "0c1eba2dc4a6d83f010fcbea452b39ef6cea91a26525389ae54344bca743f591",
+      "partial_proof_sha256": "95bc51f3e8a12c958ff710d9cc1b1da78af1efa44dcdf347514722525d1921f7",
+      "returncode": 0,
+      "schema_version": 1,
+      "seconds_cap": 5,
+      "solver_elapsed_seconds": 5.040714625036344,
+      "solver_log": {
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-fifth-split/discriminator-5s/intersection-3-third-03-fourth-017-fifth-001/solver.log",
+        "sha256": "8fba55cea0f98be36fab7b65349dda867a58aabfcf974a46098f5123830ac5cb"
+      },
+      "status": "FIXED_CAP_TIMEOUT",
+      "stratum": {
+        "branch_count": 177,
+        "position": "orbit_one",
+        "prior_status": "NEVER_MEASURED",
+        "top_parent": "intersection-3"
+      }
+    },
+    {
+      "checker": {
+        "path": ".venv/sat-audit-tools/drat-trim/drat-trim",
+        "sha256": "f58f63b0f76945d4c4c9ff6e87afaf870f579e67c0f7cca589492df8fc7ebd47"
+      },
+      "exact_cnf_clauses": 46396,
+      "exact_cnf_sha256": "f540056bad91f3811384b53ef984a180174fd869a49d66125b717669a3417e82",
+      "exact_cnf_variables": 10166,
+      "fifth_index": 44,
+      "fifth_unit_sha256": "d9c8e28e98ed4e646b9adaef1a92ce6b50e929728d8c5cd5ad5d9665c0654196",
+      "fourth_parent_id": "intersection-3-third-03-fourth-017",
+      "inherited_fourth_unit_sha256": "4446aff9f8a0e9663bd5ad72f7d5361481d906f2a1348a7e4a29f40d08705a0b",
+      "leaf_id": "intersection-3-third-03-fourth-017-fifth-044",
+      "parent_cnf_sha256": "0c1eba2dc4a6d83f010fcbea452b39ef6cea91a26525389ae54344bca743f591",
+      "proof": {
+        "compressed_bytes": 109967,
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-fifth-split/discriminator-5s/intersection-3-third-03-fourth-017-fifth-044/proof.drat.gz",
+        "sha256": "19874172f52c376669f3803757331dfe4a640e3b61d4f85a8a5d4c824304a18b",
+        "uncompressed_bytes": 597049,
+        "uncompressed_sha256": "f47407d14e48fbc4d04eb07e7547fd4bf9185515d1a632f75a50bc9423110785"
+      },
+      "replay_log": {
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-fifth-split/discriminator-5s/intersection-3-third-03-fourth-017-fifth-044/replay.log",
+        "sha256": "344ad30b0ba4f0be314c2e40a92fcfd292964c6f69118078f5567f7d3ac7c7dd"
+      },
+      "schema_version": 1,
+      "seconds_cap": 5,
+      "solver_elapsed_seconds": 0.10133129096357152,
+      "solver_log": {
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-fifth-split/discriminator-5s/intersection-3-third-03-fourth-017-fifth-044/solver.log",
+        "sha256": "bde6e1eede96772c07c8ce29fd18088863815bd043aa59a06f11f5838cf8a162"
+      },
+      "status": "UNSAT_VERIFIED",
+      "stratum": {
+        "branch_count": 177,
+        "position": "first_quartile",
+        "prior_status": "NEVER_MEASURED",
+        "top_parent": "intersection-3"
+      }
+    },
+    {
+      "checker": {
+        "path": ".venv/sat-audit-tools/drat-trim/drat-trim",
+        "sha256": "f58f63b0f76945d4c4c9ff6e87afaf870f579e67c0f7cca589492df8fc7ebd47"
+      },
+      "exact_cnf_clauses": 46516,
+      "exact_cnf_sha256": "641b2bd11569d98a859c896c0d7a4e942aa4e374fe79a9e10e73fa6befa644c2",
+      "exact_cnf_variables": 10166,
+      "fifth_index": 88,
+      "fifth_unit_sha256": "cd809538d8a8936b3f2e7b2dbcf568129585e89ebe9bba40e8f08cd40c3215b7",
+      "fourth_parent_id": "intersection-3-third-03-fourth-017",
+      "inherited_fourth_unit_sha256": "4446aff9f8a0e9663bd5ad72f7d5361481d906f2a1348a7e4a29f40d08705a0b",
+      "leaf_id": "intersection-3-third-03-fourth-017-fifth-088",
+      "parent_cnf_sha256": "0c1eba2dc4a6d83f010fcbea452b39ef6cea91a26525389ae54344bca743f591",
+      "proof": {
+        "compressed_bytes": 110165,
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-fifth-split/discriminator-5s/intersection-3-third-03-fourth-017-fifth-088/proof.drat.gz",
+        "sha256": "defd6f5fd1340fd5c8c0d65387518ac8167af4332e4621084889a81a35d38639",
+        "uncompressed_bytes": 597529,
+        "uncompressed_sha256": "55a207509e45d538d035025c8708341f00b2c19ba5e2380a62ca9536cf0c70f2"
+      },
+      "replay_log": {
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-fifth-split/discriminator-5s/intersection-3-third-03-fourth-017-fifth-088/replay.log",
+        "sha256": "a1086ba142f1971fea39e48a2a5990adb00d5a44996d1f417968132b9de08bb1"
+      },
+      "schema_version": 1,
+      "seconds_cap": 5,
+      "solver_elapsed_seconds": 0.13058983301743865,
+      "solver_log": {
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-fifth-split/discriminator-5s/intersection-3-third-03-fourth-017-fifth-088/solver.log",
+        "sha256": "bde6e1eede96772c07c8ce29fd18088863815bd043aa59a06f11f5838cf8a162"
+      },
+      "status": "UNSAT_VERIFIED",
+      "stratum": {
+        "branch_count": 177,
+        "position": "midpoint",
+        "prior_status": "NEVER_MEASURED",
+        "top_parent": "intersection-3"
+      }
+    },
+    {
+      "claim_limit": "UNKNOWN closes no branch.",
+      "exact_cnf_clauses": 46284,
+      "exact_cnf_sha256": "e7e1eb0921e3653734fba60e11b14a96f082c1e4001a53bead26329a44b4bdfa",
+      "exact_cnf_variables": 10166,
+      "fifth_index": 0,
+      "fifth_unit_sha256": "be4ba010e48e7d5c7c60457e7f40538407a26f4ead94b392beff67a3a5546b8a",
+      "fourth_parent_id": "intersection-3-third-04-fourth-001",
+      "inherited_fourth_unit_sha256": "67267cc6a34218b20ab25de89d4bf71f7f6b770a6a6b592d491ed42682568a47",
+      "leaf_id": "intersection-3-third-04-fourth-001-fifth-000",
+      "parent_cnf_sha256": "ea4827737c7fe972c418e494f270e2677d027320bcea5b8715a9383d695302c7",
+      "partial_proof_sha256": "9adc7dce1eb666ade32fe7b8efcb55e15dc9728caec3b0b5022089b519673bd6",
+      "returncode": 0,
+      "schema_version": 1,
+      "seconds_cap": 5,
+      "solver_elapsed_seconds": 5.022857332951389,
+      "solver_log": {
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-fifth-split/discriminator-5s/intersection-3-third-04-fourth-001-fifth-000/solver.log",
+        "sha256": "8fba55cea0f98be36fab7b65349dda867a58aabfcf974a46098f5123830ac5cb"
+      },
+      "status": "FIXED_CAP_TIMEOUT",
+      "stratum": {
+        "branch_count": 97,
+        "position": "orbit_zero",
+        "prior_status": "FIXED_CAP_TIMEOUT",
+        "top_parent": "intersection-3"
+      }
+    },
+    {
+      "claim_limit": "UNKNOWN closes no branch.",
+      "exact_cnf_clauses": 46285,
+      "exact_cnf_sha256": "01eafe5abc860d158b06d83048e6baefbe788da05791624ca8ca7dc586dd5fe3",
+      "exact_cnf_variables": 10166,
+      "fifth_index": 1,
+      "fifth_unit_sha256": "681f55782d3eddde635134fe4bf50ecec9f90333b6ea7217d0e0724de0b9914a",
+      "fourth_parent_id": "intersection-3-third-04-fourth-001",
+      "inherited_fourth_unit_sha256": "67267cc6a34218b20ab25de89d4bf71f7f6b770a6a6b592d491ed42682568a47",
+      "leaf_id": "intersection-3-third-04-fourth-001-fifth-001",
+      "parent_cnf_sha256": "ea4827737c7fe972c418e494f270e2677d027320bcea5b8715a9383d695302c7",
+      "partial_proof_sha256": "25d57c1119e257ab6fe8c0cb5d9ee0c1b400140cd58de2e2dfefa370cc97f820",
+      "returncode": 0,
+      "schema_version": 1,
+      "seconds_cap": 5,
+      "solver_elapsed_seconds": 5.061036208004225,
+      "solver_log": {
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-fifth-split/discriminator-5s/intersection-3-third-04-fourth-001-fifth-001/solver.log",
+        "sha256": "8fba55cea0f98be36fab7b65349dda867a58aabfcf974a46098f5123830ac5cb"
+      },
+      "status": "FIXED_CAP_TIMEOUT",
+      "stratum": {
+        "branch_count": 97,
+        "position": "orbit_one",
+        "prior_status": "FIXED_CAP_TIMEOUT",
+        "top_parent": "intersection-3"
+      }
+    },
+    {
+      "checker": {
+        "path": ".venv/sat-audit-tools/drat-trim/drat-trim",
+        "sha256": "f58f63b0f76945d4c4c9ff6e87afaf870f579e67c0f7cca589492df8fc7ebd47"
+      },
+      "exact_cnf_clauses": 46376,
+      "exact_cnf_sha256": "2a9d0bbb81ac6d11601d8224d589fd38a8e1ee88a3c336da1b11c9ddc52d4f81",
+      "exact_cnf_variables": 10166,
+      "fifth_index": 24,
+      "fifth_unit_sha256": "1bffa81ac786cbe8ef1786d0c6ecd663a3b061d55c31afa29c4a164857ad4783",
+      "fourth_parent_id": "intersection-3-third-04-fourth-001",
+      "inherited_fourth_unit_sha256": "67267cc6a34218b20ab25de89d4bf71f7f6b770a6a6b592d491ed42682568a47",
+      "leaf_id": "intersection-3-third-04-fourth-001-fifth-024",
+      "parent_cnf_sha256": "ea4827737c7fe972c418e494f270e2677d027320bcea5b8715a9383d695302c7",
+      "proof": {
+        "compressed_bytes": 112885,
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-fifth-split/discriminator-5s/intersection-3-third-04-fourth-001-fifth-024/proof.drat.gz",
+        "sha256": "a20c5eb768f6b23671703359c495e3bda2eba303a4c3651880f5726f65d62b02",
+        "uncompressed_bytes": 603535,
+        "uncompressed_sha256": "9f553031fa4c479b28c4fa0b3fc2f5c0b8a5525553b6a4f35066e01a3d1dd906"
+      },
+      "replay_log": {
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-fifth-split/discriminator-5s/intersection-3-third-04-fourth-001-fifth-024/replay.log",
+        "sha256": "b5012eaa6302b2f057e575003622df58549f530dee8a68e0d1841e18def1b276"
+      },
+      "schema_version": 1,
+      "seconds_cap": 5,
+      "solver_elapsed_seconds": 0.14522229199064896,
+      "solver_log": {
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-fifth-split/discriminator-5s/intersection-3-third-04-fourth-001-fifth-024/solver.log",
+        "sha256": "bde6e1eede96772c07c8ce29fd18088863815bd043aa59a06f11f5838cf8a162"
+      },
+      "status": "UNSAT_VERIFIED",
+      "stratum": {
+        "branch_count": 97,
+        "position": "first_quartile",
+        "prior_status": "FIXED_CAP_TIMEOUT",
+        "top_parent": "intersection-3"
+      }
+    },
+    {
+      "checker": {
+        "path": ".venv/sat-audit-tools/drat-trim/drat-trim",
+        "sha256": "f58f63b0f76945d4c4c9ff6e87afaf870f579e67c0f7cca589492df8fc7ebd47"
+      },
+      "exact_cnf_clauses": 46512,
+      "exact_cnf_sha256": "a4a9069cd0e276a7eb105b443a5d317b02da567d8480ed8b60bc5f6db3f36cb6",
+      "exact_cnf_variables": 10166,
+      "fifth_index": 48,
+      "fifth_unit_sha256": "c364e7322a4d33079e9b71836a340e7d942af0e6c9f2c6e245ff047a224238fa",
+      "fourth_parent_id": "intersection-3-third-04-fourth-001",
+      "inherited_fourth_unit_sha256": "67267cc6a34218b20ab25de89d4bf71f7f6b770a6a6b592d491ed42682568a47",
+      "leaf_id": "intersection-3-third-04-fourth-001-fifth-048",
+      "parent_cnf_sha256": "ea4827737c7fe972c418e494f270e2677d027320bcea5b8715a9383d695302c7",
+      "proof": {
+        "compressed_bytes": 113108,
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-fifth-split/discriminator-5s/intersection-3-third-04-fourth-001-fifth-048/proof.drat.gz",
+        "sha256": "5d225a2c5261ca49ee98c81e20b9b0a7370b63ff1ea8cd102b5a1226e5f8e71f",
+        "uncompressed_bytes": 604079,
+        "uncompressed_sha256": "7af8457f8af1f6551452f517f419dd3c2f054fed496043b780e999219ff6f2fb"
+      },
+      "replay_log": {
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-fifth-split/discriminator-5s/intersection-3-third-04-fourth-001-fifth-048/replay.log",
+        "sha256": "fee9854bd0dec61a427e185919eabd58b3f864d0a130465a688f4838eb79c286"
+      },
+      "schema_version": 1,
+      "seconds_cap": 5,
+      "solver_elapsed_seconds": 0.08706087502650917,
+      "solver_log": {
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-fifth-split/discriminator-5s/intersection-3-third-04-fourth-001-fifth-048/solver.log",
+        "sha256": "bde6e1eede96772c07c8ce29fd18088863815bd043aa59a06f11f5838cf8a162"
+      },
+      "status": "UNSAT_VERIFIED",
+      "stratum": {
+        "branch_count": 97,
+        "position": "midpoint",
+        "prior_status": "FIXED_CAP_TIMEOUT",
+        "top_parent": "intersection-3"
+      }
+    },
+    {
+      "checker": {
+        "path": ".venv/sat-audit-tools/drat-trim/drat-trim",
+        "sha256": "f58f63b0f76945d4c4c9ff6e87afaf870f579e67c0f7cca589492df8fc7ebd47"
+      },
+      "exact_cnf_clauses": 46311,
+      "exact_cnf_sha256": "21205057ac43d99e0d9c44108dba28c14669c80ef3f7cc0fa78487bbda145820",
+      "exact_cnf_variables": 10166,
+      "fifth_index": 0,
+      "fifth_unit_sha256": "39b8dc3fc8b44765c8e6f1adee04c5b465e555ab791cc42d0d9e810d5b64297c",
+      "fourth_parent_id": "intersection-3-third-04-fourth-012",
+      "inherited_fourth_unit_sha256": "669d01f2fd1bcea1848cefffe9fad3325cd5ef7a8e1af4ce21373b7ea4c08ba7",
+      "leaf_id": "intersection-3-third-04-fourth-012-fifth-000",
+      "parent_cnf_sha256": "ea4827737c7fe972c418e494f270e2677d027320bcea5b8715a9383d695302c7",
+      "proof": {
+        "compressed_bytes": 109345,
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-fifth-split/discriminator-5s/intersection-3-third-04-fourth-012-fifth-000/proof.drat.gz",
+        "sha256": "9461fa8c54eddcff766667e3e328286e3ff73f633dc890c81faa8882116ac5a2",
+        "uncompressed_bytes": 595931,
+        "uncompressed_sha256": "28ef4d5cc9f605a1653978bc6d2d13e1e9b43565bb9d93fb06ffd93d5fc70db2"
+      },
+      "replay_log": {
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-fifth-split/discriminator-5s/intersection-3-third-04-fourth-012-fifth-000/replay.log",
+        "sha256": "9e158477fde63c47a551f0257720981baaabccee1f3b02942fc7dab13b0d1272"
+      },
+      "schema_version": 1,
+      "seconds_cap": 5,
+      "solver_elapsed_seconds": 0.10535150003852323,
+      "solver_log": {
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-fifth-split/discriminator-5s/intersection-3-third-04-fourth-012-fifth-000/solver.log",
+        "sha256": "bde6e1eede96772c07c8ce29fd18088863815bd043aa59a06f11f5838cf8a162"
+      },
+      "status": "UNSAT_VERIFIED",
+      "stratum": {
+        "branch_count": 125,
+        "position": "orbit_zero",
+        "prior_status": "NEVER_MEASURED",
+        "top_parent": "intersection-3"
+      }
+    },
+    {
+      "checker": {
+        "path": ".venv/sat-audit-tools/drat-trim/drat-trim",
+        "sha256": "f58f63b0f76945d4c4c9ff6e87afaf870f579e67c0f7cca589492df8fc7ebd47"
+      },
+      "exact_cnf_clauses": 46315,
+      "exact_cnf_sha256": "d8e5f9d27884c23970bf956e0c3c66c268bc02a2b14e1c95d092f239920f8278",
+      "exact_cnf_variables": 10166,
+      "fifth_index": 1,
+      "fifth_unit_sha256": "b02006ec037c78c9cc37c71950269ec74aa04a793abc5d1cefecdb513a657dca",
+      "fourth_parent_id": "intersection-3-third-04-fourth-012",
+      "inherited_fourth_unit_sha256": "669d01f2fd1bcea1848cefffe9fad3325cd5ef7a8e1af4ce21373b7ea4c08ba7",
+      "leaf_id": "intersection-3-third-04-fourth-012-fifth-001",
+      "parent_cnf_sha256": "ea4827737c7fe972c418e494f270e2677d027320bcea5b8715a9383d695302c7",
+      "proof": {
+        "compressed_bytes": 109353,
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-fifth-split/discriminator-5s/intersection-3-third-04-fourth-012-fifth-001/proof.drat.gz",
+        "sha256": "9778411bd4ba1e330dc956d53e31d23cbfb137e4015477acf8a06d0d7a63e877",
+        "uncompressed_bytes": 595947,
+        "uncompressed_sha256": "edd1665f2abec11c45064d97181b539d47313f61cd3494985a0d2cfcd5fb6827"
+      },
+      "replay_log": {
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-fifth-split/discriminator-5s/intersection-3-third-04-fourth-012-fifth-001/replay.log",
+        "sha256": "d038e2aa714612415e02bdf1373bf191ecb870c46767179fb31743e4634ce13c"
+      },
+      "schema_version": 1,
+      "seconds_cap": 5,
+      "solver_elapsed_seconds": 0.0908474589814432,
+      "solver_log": {
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-fifth-split/discriminator-5s/intersection-3-third-04-fourth-012-fifth-001/solver.log",
+        "sha256": "bde6e1eede96772c07c8ce29fd18088863815bd043aa59a06f11f5838cf8a162"
+      },
+      "status": "UNSAT_VERIFIED",
+      "stratum": {
+        "branch_count": 125,
+        "position": "orbit_one",
+        "prior_status": "NEVER_MEASURED",
+        "top_parent": "intersection-3"
+      }
+    },
+    {
+      "checker": {
+        "path": ".venv/sat-audit-tools/drat-trim/drat-trim",
+        "sha256": "f58f63b0f76945d4c4c9ff6e87afaf870f579e67c0f7cca589492df8fc7ebd47"
+      },
+      "exact_cnf_clauses": 46395,
+      "exact_cnf_sha256": "d6a3748c98a7cb61f06b7ee838c4ef3a40a4681b8de968b6ba164a63dd645e6b",
+      "exact_cnf_variables": 10166,
+      "fifth_index": 31,
+      "fifth_unit_sha256": "28402602662c7528356b353843e10e5ebea7fb59c92bb36a9c25a33e8cc859bc",
+      "fourth_parent_id": "intersection-3-third-04-fourth-012",
+      "inherited_fourth_unit_sha256": "669d01f2fd1bcea1848cefffe9fad3325cd5ef7a8e1af4ce21373b7ea4c08ba7",
+      "leaf_id": "intersection-3-third-04-fourth-012-fifth-031",
+      "parent_cnf_sha256": "ea4827737c7fe972c418e494f270e2677d027320bcea5b8715a9383d695302c7",
+      "proof": {
+        "compressed_bytes": 109487,
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-fifth-split/discriminator-5s/intersection-3-third-04-fourth-012-fifth-031/proof.drat.gz",
+        "sha256": "25890b148d573e109a3658ccd62cdc18c50da9eb066ac1b7c5c9107a0a460968",
+        "uncompressed_bytes": 596267,
+        "uncompressed_sha256": "cbbcc8b958ad6cdb69a30ab1cea704fe64cd5366fed338120532902fbcd8d628"
+      },
+      "replay_log": {
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-fifth-split/discriminator-5s/intersection-3-third-04-fourth-012-fifth-031/replay.log",
+        "sha256": "7d25625b1bda3da0f8ca2dafc97253d758670c5068ab32b11b659d520746374f"
+      },
+      "schema_version": 1,
+      "seconds_cap": 5,
+      "solver_elapsed_seconds": 0.1489944169879891,
+      "solver_log": {
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-fifth-split/discriminator-5s/intersection-3-third-04-fourth-012-fifth-031/solver.log",
+        "sha256": "bde6e1eede96772c07c8ce29fd18088863815bd043aa59a06f11f5838cf8a162"
+      },
+      "status": "UNSAT_VERIFIED",
+      "stratum": {
+        "branch_count": 125,
+        "position": "first_quartile",
+        "prior_status": "NEVER_MEASURED",
+        "top_parent": "intersection-3"
+      }
+    },
+    {
+      "checker": {
+        "path": ".venv/sat-audit-tools/drat-trim/drat-trim",
+        "sha256": "f58f63b0f76945d4c4c9ff6e87afaf870f579e67c0f7cca589492df8fc7ebd47"
+      },
+      "exact_cnf_clauses": 46475,
+      "exact_cnf_sha256": "2ea6b98e023529bf30a58f38ccca3916633d74f30542c0dda281651e8ac8d430",
+      "exact_cnf_variables": 10166,
+      "fifth_index": 62,
+      "fifth_unit_sha256": "0f2443ee1baa6d5678988662f555a90967c7c424c014e87575ccb88e38a5e59a",
+      "fourth_parent_id": "intersection-3-third-04-fourth-012",
+      "inherited_fourth_unit_sha256": "669d01f2fd1bcea1848cefffe9fad3325cd5ef7a8e1af4ce21373b7ea4c08ba7",
+      "leaf_id": "intersection-3-third-04-fourth-012-fifth-062",
+      "parent_cnf_sha256": "ea4827737c7fe972c418e494f270e2677d027320bcea5b8715a9383d695302c7",
+      "proof": {
+        "compressed_bytes": 109607,
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-fifth-split/discriminator-5s/intersection-3-third-04-fourth-012-fifth-062/proof.drat.gz",
+        "sha256": "5e27e8cc72e9ae30d298ad28801636b8d2dca57a0d03f18460f075736e16fa65",
+        "uncompressed_bytes": 596587,
+        "uncompressed_sha256": "5f6ed60e411d8d5ee0141195c90099cccd8ffd0f9f5a8461695f1ce9727e87d1"
+      },
+      "replay_log": {
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-fifth-split/discriminator-5s/intersection-3-third-04-fourth-012-fifth-062/replay.log",
+        "sha256": "fbf059d20991855b7441c2ef6169c3449e7ad1607f2b3e58074f35a02a6dd6ce"
+      },
+      "schema_version": 1,
+      "seconds_cap": 5,
+      "solver_elapsed_seconds": 0.1988342910190113,
+      "solver_log": {
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-fifth-split/discriminator-5s/intersection-3-third-04-fourth-012-fifth-062/solver.log",
+        "sha256": "bde6e1eede96772c07c8ce29fd18088863815bd043aa59a06f11f5838cf8a162"
+      },
+      "status": "UNSAT_VERIFIED",
+      "stratum": {
+        "branch_count": 125,
+        "position": "midpoint",
+        "prior_status": "NEVER_MEASURED",
+        "top_parent": "intersection-3"
+      }
+    },
+    {
+      "checker": {
+        "path": ".venv/sat-audit-tools/drat-trim/drat-trim",
+        "sha256": "f58f63b0f76945d4c4c9ff6e87afaf870f579e67c0f7cca589492df8fc7ebd47"
+      },
+      "exact_cnf_clauses": 46347,
+      "exact_cnf_sha256": "abb2303b917ce258e877f88c2dab18791058281987f255886d7f23cba9cf100e",
+      "exact_cnf_variables": 10166,
+      "fifth_index": 0,
+      "fifth_unit_sha256": "743c7850cccfba5e53a9002663ec1ddd1079315a98bdbfdde10e6044f56abefe",
+      "fourth_parent_id": "intersection-3-third-04-fourth-021",
+      "inherited_fourth_unit_sha256": "9971109756b94c9bf3bd7a25f98ab5a6910281bba4cefe8f82a965f5d8ed0ff6",
+      "leaf_id": "intersection-3-third-04-fourth-021-fifth-000",
+      "parent_cnf_sha256": "ea4827737c7fe972c418e494f270e2677d027320bcea5b8715a9383d695302c7",
+      "proof": {
+        "compressed_bytes": 109423,
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-fifth-split/discriminator-5s/intersection-3-third-04-fourth-021-fifth-000/proof.drat.gz",
+        "sha256": "c8700664998b79d4b1f11ba2b0d0aa9f308bcf3599aa7cedb47838131962db0a",
+        "uncompressed_bytes": 596075,
+        "uncompressed_sha256": "1f6eaa4f1e9c913cc2059b02a9f866102c56ee000a80c9379022cdfee5462240"
+      },
+      "replay_log": {
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-fifth-split/discriminator-5s/intersection-3-third-04-fourth-021-fifth-000/replay.log",
+        "sha256": "8e038357ef0bb7e38082154fb796750ba6f58f9bcb7f6de920ab166b1282bc7a"
+      },
+      "schema_version": 1,
+      "seconds_cap": 5,
+      "solver_elapsed_seconds": 0.09138145798351616,
+      "solver_log": {
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-fifth-split/discriminator-5s/intersection-3-third-04-fourth-021-fifth-000/solver.log",
+        "sha256": "bde6e1eede96772c07c8ce29fd18088863815bd043aa59a06f11f5838cf8a162"
+      },
+      "status": "UNSAT_VERIFIED",
+      "stratum": {
+        "branch_count": 293,
+        "position": "orbit_zero",
+        "prior_status": "NEVER_MEASURED",
+        "top_parent": "intersection-3"
+      }
+    },
+    {
+      "checker": {
+        "path": ".venv/sat-audit-tools/drat-trim/drat-trim",
+        "sha256": "f58f63b0f76945d4c4c9ff6e87afaf870f579e67c0f7cca589492df8fc7ebd47"
+      },
+      "exact_cnf_clauses": 46348,
+      "exact_cnf_sha256": "bb3ce89406b769b06c17e29e197fe7a107e3c0239cbcee4b562cba09a93fe16c",
+      "exact_cnf_variables": 10166,
+      "fifth_index": 1,
+      "fifth_unit_sha256": "f1191fb29134034480734d5b55601d2d736a7a81625a340d76f3e3c2a7c79536",
+      "fourth_parent_id": "intersection-3-third-04-fourth-021",
+      "inherited_fourth_unit_sha256": "9971109756b94c9bf3bd7a25f98ab5a6910281bba4cefe8f82a965f5d8ed0ff6",
+      "leaf_id": "intersection-3-third-04-fourth-021-fifth-001",
+      "parent_cnf_sha256": "ea4827737c7fe972c418e494f270e2677d027320bcea5b8715a9383d695302c7",
+      "proof": {
+        "compressed_bytes": 109426,
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-fifth-split/discriminator-5s/intersection-3-third-04-fourth-021-fifth-001/proof.drat.gz",
+        "sha256": "2d960cb7d436a2568319c6d9942a83842d7f71cb5b1e26b03fe351f0d0fffbb5",
+        "uncompressed_bytes": 596079,
+        "uncompressed_sha256": "38f2d0aa53e98c868897eab0f5e5a01631ea3ad0dc4a09624d50cb076dd3f1fc"
+      },
+      "replay_log": {
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-fifth-split/discriminator-5s/intersection-3-third-04-fourth-021-fifth-001/replay.log",
+        "sha256": "34793d5abc333d86fb1da13a6d785dc45eeafa728102eb036caaf97c2ca69f64"
+      },
+      "schema_version": 1,
+      "seconds_cap": 5,
+      "solver_elapsed_seconds": 0.1180657499935478,
+      "solver_log": {
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-fifth-split/discriminator-5s/intersection-3-third-04-fourth-021-fifth-001/solver.log",
+        "sha256": "bde6e1eede96772c07c8ce29fd18088863815bd043aa59a06f11f5838cf8a162"
+      },
+      "status": "UNSAT_VERIFIED",
+      "stratum": {
+        "branch_count": 293,
+        "position": "orbit_one",
+        "prior_status": "NEVER_MEASURED",
+        "top_parent": "intersection-3"
+      }
+    },
+    {
+      "checker": {
+        "path": ".venv/sat-audit-tools/drat-trim/drat-trim",
+        "sha256": "f58f63b0f76945d4c4c9ff6e87afaf870f579e67c0f7cca589492df8fc7ebd47"
+      },
+      "exact_cnf_clauses": 46420,
+      "exact_cnf_sha256": "0f58adde6976bdf4ef1addf5a9d57ee1fa27ba6af9dfc5adafa1bf6867bad1ff",
+      "exact_cnf_variables": 10166,
+      "fifth_index": 73,
+      "fifth_unit_sha256": "9d6eaddfc93f231cfdc12674b3b13488b3a41d4fd791a7620dd5fd4bbdd6bbac",
+      "fourth_parent_id": "intersection-3-third-04-fourth-021",
+      "inherited_fourth_unit_sha256": "9971109756b94c9bf3bd7a25f98ab5a6910281bba4cefe8f82a965f5d8ed0ff6",
+      "leaf_id": "intersection-3-third-04-fourth-021-fifth-073",
+      "parent_cnf_sha256": "ea4827737c7fe972c418e494f270e2677d027320bcea5b8715a9383d695302c7",
+      "proof": {
+        "compressed_bytes": 109525,
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-fifth-split/discriminator-5s/intersection-3-third-04-fourth-021-fifth-073/proof.drat.gz",
+        "sha256": "ccd12510f97a15da24b2a3c6470558912c77c302d9139fdcfc82bb4ca731a2bb",
+        "uncompressed_bytes": 596367,
+        "uncompressed_sha256": "ce4e7f55e3ad8d071390666af4abba662ff1fdcb564cd6375624f7d6145c3e28"
+      },
+      "replay_log": {
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-fifth-split/discriminator-5s/intersection-3-third-04-fourth-021-fifth-073/replay.log",
+        "sha256": "763d90946b9cb1c0d73b7cf6e31dde243230b63e6bac70fbc43d44363fd2897c"
+      },
+      "schema_version": 1,
+      "seconds_cap": 5,
+      "solver_elapsed_seconds": 0.09797216695733368,
+      "solver_log": {
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-fifth-split/discriminator-5s/intersection-3-third-04-fourth-021-fifth-073/solver.log",
+        "sha256": "bde6e1eede96772c07c8ce29fd18088863815bd043aa59a06f11f5838cf8a162"
+      },
+      "status": "UNSAT_VERIFIED",
+      "stratum": {
+        "branch_count": 293,
+        "position": "first_quartile",
+        "prior_status": "NEVER_MEASURED",
+        "top_parent": "intersection-3"
+      }
+    },
+    {
+      "checker": {
+        "path": ".venv/sat-audit-tools/drat-trim/drat-trim",
+        "sha256": "f58f63b0f76945d4c4c9ff6e87afaf870f579e67c0f7cca589492df8fc7ebd47"
+      },
+      "exact_cnf_clauses": 46493,
+      "exact_cnf_sha256": "3c2c689bb00ee6580bf4bc18a6266aaf5a1764caf3cfcb836f929d23780d585e",
+      "exact_cnf_variables": 10166,
+      "fifth_index": 146,
+      "fifth_unit_sha256": "86d90cef61fc8348ccc17984043e5f59abb81e7bcee108e35c80bcc5e5414e55",
+      "fourth_parent_id": "intersection-3-third-04-fourth-021",
+      "inherited_fourth_unit_sha256": "9971109756b94c9bf3bd7a25f98ab5a6910281bba4cefe8f82a965f5d8ed0ff6",
+      "leaf_id": "intersection-3-third-04-fourth-021-fifth-146",
+      "parent_cnf_sha256": "ea4827737c7fe972c418e494f270e2677d027320bcea5b8715a9383d695302c7",
+      "proof": {
+        "compressed_bytes": 109629,
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-fifth-split/discriminator-5s/intersection-3-third-04-fourth-021-fifth-146/proof.drat.gz",
+        "sha256": "62b4017fb3dcde2c5632f9979ea58998f9f479798cefc736b79ca7afbd46533f",
+        "uncompressed_bytes": 596659,
+        "uncompressed_sha256": "5e9eaa9edb7c9fedbfa3e933df5e2aec25138ef0a804573d7702dbc0ae7981d0"
+      },
+      "replay_log": {
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-fifth-split/discriminator-5s/intersection-3-third-04-fourth-021-fifth-146/replay.log",
+        "sha256": "d48696afd779d653cc0215317438bdf7d3fb1aa44bead9361d239ab52fa456ff"
+      },
+      "schema_version": 1,
+      "seconds_cap": 5,
+      "solver_elapsed_seconds": 0.19574741699034348,
+      "solver_log": {
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-fifth-split/discriminator-5s/intersection-3-third-04-fourth-021-fifth-146/solver.log",
+        "sha256": "bde6e1eede96772c07c8ce29fd18088863815bd043aa59a06f11f5838cf8a162"
+      },
+      "status": "UNSAT_VERIFIED",
+      "stratum": {
+        "branch_count": 293,
+        "position": "midpoint",
+        "prior_status": "NEVER_MEASURED",
+        "top_parent": "intersection-3"
+      }
+    },
+    {
+      "checker": {
+        "path": ".venv/sat-audit-tools/drat-trim/drat-trim",
+        "sha256": "f58f63b0f76945d4c4c9ff6e87afaf870f579e67c0f7cca589492df8fc7ebd47"
+      },
+      "exact_cnf_clauses": 46515,
+      "exact_cnf_sha256": "0ef50bf1cc446e5ce3db3ec9e690a51d02523a574d20ce416c3fc198d2566bfd",
+      "exact_cnf_variables": 10166,
+      "fifth_index": 0,
+      "fifth_unit_sha256": "1eb44c2905d30987e4eb317ac6a1aea3ccfdc7e29f73d44c347801bf0b061805",
+      "fourth_parent_id": "intersection-3-third-05-fourth-027",
+      "inherited_fourth_unit_sha256": "435861b0207307bea41161b88a8c76ff2c98aa275ae79458fb8e2bd58cb762c9",
+      "leaf_id": "intersection-3-third-05-fourth-027-fifth-000",
+      "parent_cnf_sha256": "caa4108c636d3a1952bde541e2d9071bf8d70ea13265fc59cd114a76c272c64d",
+      "proof": {
+        "compressed_bytes": 110026,
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-fifth-split/discriminator-5s/intersection-3-third-05-fourth-027-fifth-000/proof.drat.gz",
+        "sha256": "8ce13ed0746cf5f7aa86c6bc5bc52c81de80816e258677249b3ae13249fde5ff",
+        "uncompressed_bytes": 597635,
+        "uncompressed_sha256": "634a14a13ce67d14e0470d8e613378d2ff876ccf26c88b5bfd5f86efd97e4abf"
+      },
+      "replay_log": {
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-fifth-split/discriminator-5s/intersection-3-third-05-fourth-027-fifth-000/replay.log",
+        "sha256": "026ea2a29b1dbb4d203d4bbd0c0420a26252bb1f61e9c3eb09e85b7decf39837"
+      },
+      "schema_version": 1,
+      "seconds_cap": 5,
+      "solver_elapsed_seconds": 0.2699454590328969,
+      "solver_log": {
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-fifth-split/discriminator-5s/intersection-3-third-05-fourth-027-fifth-000/solver.log",
+        "sha256": "bde6e1eede96772c07c8ce29fd18088863815bd043aa59a06f11f5838cf8a162"
+      },
+      "status": "UNSAT_VERIFIED",
+      "stratum": {
+        "branch_count": 29,
+        "position": "orbit_zero",
+        "prior_status": "NEVER_MEASURED",
+        "top_parent": "intersection-3"
+      }
+    },
+    {
+      "checker": {
+        "path": ".venv/sat-audit-tools/drat-trim/drat-trim",
+        "sha256": "f58f63b0f76945d4c4c9ff6e87afaf870f579e67c0f7cca589492df8fc7ebd47"
+      },
+      "exact_cnf_clauses": 46517,
+      "exact_cnf_sha256": "332b83f5898954912d11708df4d2405769e89cbd77d6d8ec6541e4e39ac7c3d1",
+      "exact_cnf_variables": 10166,
+      "fifth_index": 1,
+      "fifth_unit_sha256": "2e1ff239770af3f3d0871257e28594c80bcf7f3c19fc5d3a92dab2ab4ef0d718",
+      "fourth_parent_id": "intersection-3-third-05-fourth-027",
+      "inherited_fourth_unit_sha256": "435861b0207307bea41161b88a8c76ff2c98aa275ae79458fb8e2bd58cb762c9",
+      "leaf_id": "intersection-3-third-05-fourth-027-fifth-001",
+      "parent_cnf_sha256": "caa4108c636d3a1952bde541e2d9071bf8d70ea13265fc59cd114a76c272c64d",
+      "proof": {
+        "compressed_bytes": 110029,
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-fifth-split/discriminator-5s/intersection-3-third-05-fourth-027-fifth-001/proof.drat.gz",
+        "sha256": "82c55e006f2d6fb980a2efbdeff22ec5e62008dc03d365eca161a037327978d8",
+        "uncompressed_bytes": 597643,
+        "uncompressed_sha256": "459397b11ae9a6416c36e57a64886502d0c6fbfa4446df188b05415592804a9f"
+      },
+      "replay_log": {
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-fifth-split/discriminator-5s/intersection-3-third-05-fourth-027-fifth-001/replay.log",
+        "sha256": "553c662b310cb1b5e1482f17ea9090d169fa172405875c2e481192a117c5027b"
+      },
+      "schema_version": 1,
+      "seconds_cap": 5,
+      "solver_elapsed_seconds": 0.13133316702442244,
+      "solver_log": {
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-fifth-split/discriminator-5s/intersection-3-third-05-fourth-027-fifth-001/solver.log",
+        "sha256": "bde6e1eede96772c07c8ce29fd18088863815bd043aa59a06f11f5838cf8a162"
+      },
+      "status": "UNSAT_VERIFIED",
+      "stratum": {
+        "branch_count": 29,
+        "position": "orbit_one",
+        "prior_status": "NEVER_MEASURED",
+        "top_parent": "intersection-3"
+      }
+    },
+    {
+      "checker": {
+        "path": ".venv/sat-audit-tools/drat-trim/drat-trim",
+        "sha256": "f58f63b0f76945d4c4c9ff6e87afaf870f579e67c0f7cca589492df8fc7ebd47"
+      },
+      "exact_cnf_clauses": 46549,
+      "exact_cnf_sha256": "8340779fcd8ab90a90db200748899fd11df4e522ce9ae8345065e4b4b795f92f",
+      "exact_cnf_variables": 10166,
+      "fifth_index": 7,
+      "fifth_unit_sha256": "1b420e2a5103e17209a0c7cb6a276dc1e94d4eb202d203eca19c0f09a5ba861e",
+      "fourth_parent_id": "intersection-3-third-05-fourth-027",
+      "inherited_fourth_unit_sha256": "435861b0207307bea41161b88a8c76ff2c98aa275ae79458fb8e2bd58cb762c9",
+      "leaf_id": "intersection-3-third-05-fourth-027-fifth-007",
+      "parent_cnf_sha256": "caa4108c636d3a1952bde541e2d9071bf8d70ea13265fc59cd114a76c272c64d",
+      "proof": {
+        "compressed_bytes": 110092,
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-fifth-split/discriminator-5s/intersection-3-third-05-fourth-027-fifth-007/proof.drat.gz",
+        "sha256": "5aa71b09e20fa184bfb413869f7a8eb7f46f12ed8973ba148bdbd8577fa4f8d7",
+        "uncompressed_bytes": 597771,
+        "uncompressed_sha256": "ca1d190491719a1596ab2a99277f682ba8f8ddad656c67c2674e008c18036465"
+      },
+      "replay_log": {
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-fifth-split/discriminator-5s/intersection-3-third-05-fourth-027-fifth-007/replay.log",
+        "sha256": "f7a7c767306e0b2cc99a8d1cf9a36c48722f7c89c58df697d9b848cb2f0b03fd"
+      },
+      "schema_version": 1,
+      "seconds_cap": 5,
+      "solver_elapsed_seconds": 0.20033866702578962,
+      "solver_log": {
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-fifth-split/discriminator-5s/intersection-3-third-05-fourth-027-fifth-007/solver.log",
+        "sha256": "bde6e1eede96772c07c8ce29fd18088863815bd043aa59a06f11f5838cf8a162"
+      },
+      "status": "UNSAT_VERIFIED",
+      "stratum": {
+        "branch_count": 29,
+        "position": "first_quartile",
+        "prior_status": "NEVER_MEASURED",
+        "top_parent": "intersection-3"
+      }
+    },
+    {
+      "checker": {
+        "path": ".venv/sat-audit-tools/drat-trim/drat-trim",
+        "sha256": "f58f63b0f76945d4c4c9ff6e87afaf870f579e67c0f7cca589492df8fc7ebd47"
+      },
+      "exact_cnf_clauses": 46583,
+      "exact_cnf_sha256": "408d7c4a19335d0678e7dfedcf31c7a26fbb6c41c95973196bcb568a19be24a9",
+      "exact_cnf_variables": 10166,
+      "fifth_index": 14,
+      "fifth_unit_sha256": "9920c3ba4c43598fd9e1ae9df141344b4ba8dea8251bed1f3ea8b08a9e398092",
+      "fourth_parent_id": "intersection-3-third-05-fourth-027",
+      "inherited_fourth_unit_sha256": "435861b0207307bea41161b88a8c76ff2c98aa275ae79458fb8e2bd58cb762c9",
+      "leaf_id": "intersection-3-third-05-fourth-027-fifth-014",
+      "parent_cnf_sha256": "caa4108c636d3a1952bde541e2d9071bf8d70ea13265fc59cd114a76c272c64d",
+      "proof": {
+        "compressed_bytes": 110132,
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-fifth-split/discriminator-5s/intersection-3-third-05-fourth-027-fifth-014/proof.drat.gz",
+        "sha256": "c2394e14da718c1b6d07d8b09e69fe784cd3cfacdbb3736a599a4ca333e10e19",
+        "uncompressed_bytes": 597907,
+        "uncompressed_sha256": "4936599dfd93b3691535dffc5f49569ec784aae081abc44ad5c3136ae260a27f"
+      },
+      "replay_log": {
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-fifth-split/discriminator-5s/intersection-3-third-05-fourth-027-fifth-014/replay.log",
+        "sha256": "89818aaf2824f269050c1a8dcf8b05a11568ecb8bbbc6bbfdfaea89ac73b4eb2"
+      },
+      "schema_version": 1,
+      "seconds_cap": 5,
+      "solver_elapsed_seconds": 0.12835279200226068,
+      "solver_log": {
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-fifth-split/discriminator-5s/intersection-3-third-05-fourth-027-fifth-014/solver.log",
+        "sha256": "bde6e1eede96772c07c8ce29fd18088863815bd043aa59a06f11f5838cf8a162"
+      },
+      "status": "UNSAT_VERIFIED",
+      "stratum": {
+        "branch_count": 29,
+        "position": "midpoint",
+        "prior_status": "NEVER_MEASURED",
+        "top_parent": "intersection-3"
+      }
+    },
+    {
+      "claim_limit": "UNKNOWN closes no branch.",
+      "exact_cnf_clauses": 46332,
+      "exact_cnf_sha256": "f7f00aa0771c9b877b504794d0b0c55d8a4e42b140a25d684f75e5ed9571c5ef",
+      "exact_cnf_variables": 10166,
+      "fifth_index": 0,
+      "fifth_unit_sha256": "84b9bb077be0d8a29d0d01ef350d718b77c2ec5f40c3ab90502b1b4b5016c550",
+      "fourth_parent_id": "intersection-3-third-06-fourth-001",
+      "inherited_fourth_unit_sha256": "afcc57a023e7cf2042afea0039839c1dd35a1b9aabbce11bc94bb595532738bf",
+      "leaf_id": "intersection-3-third-06-fourth-001-fifth-000",
+      "parent_cnf_sha256": "df5b1346f92f1b893de3ca7d5104f570d0e685fb84569182bb27239a45bcf3fc",
+      "partial_proof_sha256": "7ca268df55f599c7334cf4317dacdd90dbc24505c5dd1e4764d9d350d3917dfb",
+      "returncode": 0,
+      "schema_version": 1,
+      "seconds_cap": 5,
+      "solver_elapsed_seconds": 5.065892332990188,
+      "solver_log": {
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-fifth-split/discriminator-5s/intersection-3-third-06-fourth-001-fifth-000/solver.log",
+        "sha256": "8fba55cea0f98be36fab7b65349dda867a58aabfcf974a46098f5123830ac5cb"
+      },
+      "status": "FIXED_CAP_TIMEOUT",
+      "stratum": {
+        "branch_count": 87,
+        "position": "orbit_zero",
+        "prior_status": "FIXED_CAP_TIMEOUT",
+        "top_parent": "intersection-3"
+      }
+    },
+    {
+      "claim_limit": "UNKNOWN closes no branch.",
+      "exact_cnf_clauses": 46333,
+      "exact_cnf_sha256": "1437100a4d425cc2d9d93b14ef8c010c9d9515165fab02dc9a83d0b596cf6f39",
+      "exact_cnf_variables": 10166,
+      "fifth_index": 1,
+      "fifth_unit_sha256": "fef00090021b44642015f2db3bd317f6a528eb63ef38d2f12a50b1ac21f37555",
+      "fourth_parent_id": "intersection-3-third-06-fourth-001",
+      "inherited_fourth_unit_sha256": "afcc57a023e7cf2042afea0039839c1dd35a1b9aabbce11bc94bb595532738bf",
+      "leaf_id": "intersection-3-third-06-fourth-001-fifth-001",
+      "parent_cnf_sha256": "df5b1346f92f1b893de3ca7d5104f570d0e685fb84569182bb27239a45bcf3fc",
+      "partial_proof_sha256": "4ee12e23bf888b6bf18cfff6eba2195b816ec9234a5ef5c71bb1c5a210b6a272",
+      "returncode": 0,
+      "schema_version": 1,
+      "seconds_cap": 5,
+      "solver_elapsed_seconds": 5.06027349998476,
+      "solver_log": {
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-fifth-split/discriminator-5s/intersection-3-third-06-fourth-001-fifth-001/solver.log",
+        "sha256": "8fba55cea0f98be36fab7b65349dda867a58aabfcf974a46098f5123830ac5cb"
+      },
+      "status": "FIXED_CAP_TIMEOUT",
+      "stratum": {
+        "branch_count": 87,
+        "position": "orbit_one",
+        "prior_status": "FIXED_CAP_TIMEOUT",
+        "top_parent": "intersection-3"
+      }
+    },
+    {
+      "checker": {
+        "path": ".venv/sat-audit-tools/drat-trim/drat-trim",
+        "sha256": "f58f63b0f76945d4c4c9ff6e87afaf870f579e67c0f7cca589492df8fc7ebd47"
+      },
+      "exact_cnf_clauses": 46404,
+      "exact_cnf_sha256": "8c1a2cf441d7e55c0c123249cc21cd8877a705037ca74caf65ced78ade077032",
+      "exact_cnf_variables": 10166,
+      "fifth_index": 21,
+      "fifth_unit_sha256": "221f5457890b71c3dae99813326fe3fefc8ac6ac5d300e6983517419338e765b",
+      "fourth_parent_id": "intersection-3-third-06-fourth-001",
+      "inherited_fourth_unit_sha256": "afcc57a023e7cf2042afea0039839c1dd35a1b9aabbce11bc94bb595532738bf",
+      "leaf_id": "intersection-3-third-06-fourth-001-fifth-021",
+      "parent_cnf_sha256": "df5b1346f92f1b893de3ca7d5104f570d0e685fb84569182bb27239a45bcf3fc",
+      "proof": {
+        "compressed_bytes": 112913,
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-fifth-split/discriminator-5s/intersection-3-third-06-fourth-001-fifth-021/proof.drat.gz",
+        "sha256": "19c25e09a5d7e2044b7bdf09106bb2f90c1a67cc8e8cbb43dcb5b489648954ea",
+        "uncompressed_bytes": 603647,
+        "uncompressed_sha256": "0bea9d5c9aba55453e2bac68f222be652c4464fb8739ab72705999c8370694d4"
+      },
+      "replay_log": {
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-fifth-split/discriminator-5s/intersection-3-third-06-fourth-001-fifth-021/replay.log",
+        "sha256": "d22ea918feb8eec6ce18a8b053dac44a155b3872f8b28da4e3debacfeeac82fa"
+      },
+      "schema_version": 1,
+      "seconds_cap": 5,
+      "solver_elapsed_seconds": 0.13777724996907637,
+      "solver_log": {
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-fifth-split/discriminator-5s/intersection-3-third-06-fourth-001-fifth-021/solver.log",
+        "sha256": "bde6e1eede96772c07c8ce29fd18088863815bd043aa59a06f11f5838cf8a162"
+      },
+      "status": "UNSAT_VERIFIED",
+      "stratum": {
+        "branch_count": 87,
+        "position": "first_quartile",
+        "prior_status": "FIXED_CAP_TIMEOUT",
+        "top_parent": "intersection-3"
+      }
+    },
+    {
+      "checker": {
+        "path": ".venv/sat-audit-tools/drat-trim/drat-trim",
+        "sha256": "f58f63b0f76945d4c4c9ff6e87afaf870f579e67c0f7cca589492df8fc7ebd47"
+      },
+      "exact_cnf_clauses": 46521,
+      "exact_cnf_sha256": "2fd100412c8632edef8b8fe27ff67ecffddcd554db5afc0d3251e0758684a969",
+      "exact_cnf_variables": 10166,
+      "fifth_index": 43,
+      "fifth_unit_sha256": "c4a167513491d00220674bd5586b17958a93b2f5ae96d2bc73b66878d4da42a7",
+      "fourth_parent_id": "intersection-3-third-06-fourth-001",
+      "inherited_fourth_unit_sha256": "afcc57a023e7cf2042afea0039839c1dd35a1b9aabbce11bc94bb595532738bf",
+      "leaf_id": "intersection-3-third-06-fourth-001-fifth-043",
+      "parent_cnf_sha256": "df5b1346f92f1b893de3ca7d5104f570d0e685fb84569182bb27239a45bcf3fc",
+      "proof": {
+        "compressed_bytes": 113108,
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-fifth-split/discriminator-5s/intersection-3-third-06-fourth-001-fifth-043/proof.drat.gz",
+        "sha256": "4434814af0fec3195453f9cfccae2df403b4d6b8a5d60d0f9f0f4a9674c1b998",
+        "uncompressed_bytes": 604115,
+        "uncompressed_sha256": "88b101d7c367f394da1de42fa25cccbf02b1e4662356016da9840a1919a9283a"
+      },
+      "replay_log": {
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-fifth-split/discriminator-5s/intersection-3-third-06-fourth-001-fifth-043/replay.log",
+        "sha256": "978576017d679dff09414138f94f66937c4cccb6473b32ff600434cbdd626f82"
+      },
+      "schema_version": 1,
+      "seconds_cap": 5,
+      "solver_elapsed_seconds": 0.1007065000012517,
+      "solver_log": {
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-fifth-split/discriminator-5s/intersection-3-third-06-fourth-001-fifth-043/solver.log",
+        "sha256": "bde6e1eede96772c07c8ce29fd18088863815bd043aa59a06f11f5838cf8a162"
+      },
+      "status": "UNSAT_VERIFIED",
+      "stratum": {
+        "branch_count": 87,
+        "position": "midpoint",
+        "prior_status": "FIXED_CAP_TIMEOUT",
+        "top_parent": "intersection-3"
+      }
+    },
+    {
+      "checker": {
+        "path": ".venv/sat-audit-tools/drat-trim/drat-trim",
+        "sha256": "f58f63b0f76945d4c4c9ff6e87afaf870f579e67c0f7cca589492df8fc7ebd47"
+      },
+      "exact_cnf_clauses": 46441,
+      "exact_cnf_sha256": "594c0a9b8ba16509a86b5963fa0dd9c0faa011e4b5457d1f9fd2b323ad3d9ff3",
+      "exact_cnf_variables": 10166,
+      "fifth_index": 0,
+      "fifth_unit_sha256": "df4dbcf752155e353f22f032408eebaf0ad7635f68364132f83c25fff94070b1",
+      "fourth_parent_id": "intersection-3-third-06-fourth-027",
+      "inherited_fourth_unit_sha256": "5bc199296f6f55ee0d5ea87c235f74fbe38352744162b4d7e909e220e209f24c",
+      "leaf_id": "intersection-3-third-06-fourth-027-fifth-000",
+      "parent_cnf_sha256": "df5b1346f92f1b893de3ca7d5104f570d0e685fb84569182bb27239a45bcf3fc",
+      "proof": {
+        "compressed_bytes": 109978,
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-fifth-split/discriminator-5s/intersection-3-third-06-fourth-027-fifth-000/proof.drat.gz",
+        "sha256": "3e2b2f398778a507cba3080e216b2828c56637ab00fc55b84dbae1cc1389821c",
+        "uncompressed_bytes": 597563,
+        "uncompressed_sha256": "6f7cf2995892f7abd9cc7ed85a6522f7a558edc660b2d7af49e96a9e1cc92645"
+      },
+      "replay_log": {
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-fifth-split/discriminator-5s/intersection-3-third-06-fourth-027-fifth-000/replay.log",
+        "sha256": "69426e70d5f7f33a416daab2107778bc7dc3562557fa9dae1e5407dab1bece71"
+      },
+      "schema_version": 1,
+      "seconds_cap": 5,
+      "solver_elapsed_seconds": 0.1009734999970533,
+      "solver_log": {
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-fifth-split/discriminator-5s/intersection-3-third-06-fourth-027-fifth-000/solver.log",
+        "sha256": "bde6e1eede96772c07c8ce29fd18088863815bd043aa59a06f11f5838cf8a162"
+      },
+      "status": "UNSAT_VERIFIED",
+      "stratum": {
+        "branch_count": 105,
+        "position": "orbit_zero",
+        "prior_status": "NEVER_MEASURED",
+        "top_parent": "intersection-3"
+      }
+    },
+    {
+      "checker": {
+        "path": ".venv/sat-audit-tools/drat-trim/drat-trim",
+        "sha256": "f58f63b0f76945d4c4c9ff6e87afaf870f579e67c0f7cca589492df8fc7ebd47"
+      },
+      "exact_cnf_clauses": 46442,
+      "exact_cnf_sha256": "2abe93153c1ccc4ca3d2269c6bcd55b048a863ca2786f961a90861b149a9cbf2",
+      "exact_cnf_variables": 10166,
+      "fifth_index": 1,
+      "fifth_unit_sha256": "465bcd6ec215d2b6a079ddf58a59f0c617edecb68556718ae556b6a9fa46872f",
+      "fourth_parent_id": "intersection-3-third-06-fourth-027",
+      "inherited_fourth_unit_sha256": "5bc199296f6f55ee0d5ea87c235f74fbe38352744162b4d7e909e220e209f24c",
+      "leaf_id": "intersection-3-third-06-fourth-027-fifth-001",
+      "parent_cnf_sha256": "df5b1346f92f1b893de3ca7d5104f570d0e685fb84569182bb27239a45bcf3fc",
+      "proof": {
+        "compressed_bytes": 109978,
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-fifth-split/discriminator-5s/intersection-3-third-06-fourth-027-fifth-001/proof.drat.gz",
+        "sha256": "ffda022dd3730ed18529efc22a6dd6c1a7afa3b1799df25f71823568114cdb20",
+        "uncompressed_bytes": 597567,
+        "uncompressed_sha256": "bef0fde9380ec2faa82645a9c10cc765284fc03d3428b31b676d1aa2c871eb1d"
+      },
+      "replay_log": {
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-fifth-split/discriminator-5s/intersection-3-third-06-fourth-027-fifth-001/replay.log",
+        "sha256": "96622205b83586c93ddb409e51e2dfb05e70f463c686a8cd7ba223392fedc9c2"
+      },
+      "schema_version": 1,
+      "seconds_cap": 5,
+      "solver_elapsed_seconds": 0.21657412499189377,
+      "solver_log": {
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-fifth-split/discriminator-5s/intersection-3-third-06-fourth-027-fifth-001/solver.log",
+        "sha256": "bde6e1eede96772c07c8ce29fd18088863815bd043aa59a06f11f5838cf8a162"
+      },
+      "status": "UNSAT_VERIFIED",
+      "stratum": {
+        "branch_count": 105,
+        "position": "orbit_one",
+        "prior_status": "NEVER_MEASURED",
+        "top_parent": "intersection-3"
+      }
+    },
+    {
+      "checker": {
+        "path": ".venv/sat-audit-tools/drat-trim/drat-trim",
+        "sha256": "f58f63b0f76945d4c4c9ff6e87afaf870f579e67c0f7cca589492df8fc7ebd47"
+      },
+      "exact_cnf_clauses": 46489,
+      "exact_cnf_sha256": "6e3af0fb77693154c05224c131da2c2cfe0a3eb7a4a7fb22bccc60cda8264e54",
+      "exact_cnf_variables": 10166,
+      "fifth_index": 26,
+      "fifth_unit_sha256": "d481d74a819c43df24080ce85561c7e27f8fdbeee0f38255500793486b6169f2",
+      "fourth_parent_id": "intersection-3-third-06-fourth-027",
+      "inherited_fourth_unit_sha256": "5bc199296f6f55ee0d5ea87c235f74fbe38352744162b4d7e909e220e209f24c",
+      "leaf_id": "intersection-3-third-06-fourth-027-fifth-026",
+      "parent_cnf_sha256": "df5b1346f92f1b893de3ca7d5104f570d0e685fb84569182bb27239a45bcf3fc",
+      "proof": {
+        "compressed_bytes": 110046,
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-fifth-split/discriminator-5s/intersection-3-third-06-fourth-027-fifth-026/proof.drat.gz",
+        "sha256": "7d0d6f8f876fdded12f6892a4d59e897fc35551b1fba412500013753fe5ad618",
+        "uncompressed_bytes": 597755,
+        "uncompressed_sha256": "5ea21a19ef11d80c1d0147cace49f4b3b3a7fd6d8096a702efd80b3ed6471585"
+      },
+      "replay_log": {
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-fifth-split/discriminator-5s/intersection-3-third-06-fourth-027-fifth-026/replay.log",
+        "sha256": "5f84243d5d972c1fa5532e15249a1e7f62bf5e84e3e3114f2c7f49896c6d0a0e"
+      },
+      "schema_version": 1,
+      "seconds_cap": 5,
+      "solver_elapsed_seconds": 0.10500420903554186,
+      "solver_log": {
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-fifth-split/discriminator-5s/intersection-3-third-06-fourth-027-fifth-026/solver.log",
+        "sha256": "bde6e1eede96772c07c8ce29fd18088863815bd043aa59a06f11f5838cf8a162"
+      },
+      "status": "UNSAT_VERIFIED",
+      "stratum": {
+        "branch_count": 105,
+        "position": "first_quartile",
+        "prior_status": "NEVER_MEASURED",
+        "top_parent": "intersection-3"
+      }
+    },
+    {
+      "checker": {
+        "path": ".venv/sat-audit-tools/drat-trim/drat-trim",
+        "sha256": "f58f63b0f76945d4c4c9ff6e87afaf870f579e67c0f7cca589492df8fc7ebd47"
+      },
+      "exact_cnf_clauses": 46539,
+      "exact_cnf_sha256": "caf01d61cf89938db0a61887ac1c6b58ff27f0efb0591b96e1dc2b7013c40260",
+      "exact_cnf_variables": 10166,
+      "fifth_index": 52,
+      "fifth_unit_sha256": "4d0b86a75cf1eb06161f5fa7d858bb2473461eb65aab9b122009aac4849a13d7",
+      "fourth_parent_id": "intersection-3-third-06-fourth-027",
+      "inherited_fourth_unit_sha256": "5bc199296f6f55ee0d5ea87c235f74fbe38352744162b4d7e909e220e209f24c",
+      "leaf_id": "intersection-3-third-06-fourth-027-fifth-052",
+      "parent_cnf_sha256": "df5b1346f92f1b893de3ca7d5104f570d0e685fb84569182bb27239a45bcf3fc",
+      "proof": {
+        "compressed_bytes": 110125,
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-fifth-split/discriminator-5s/intersection-3-third-06-fourth-027-fifth-052/proof.drat.gz",
+        "sha256": "c2ba9218297357d3f4529dfc9260d02914544a063b932eefe45e7eac3a502d2b",
+        "uncompressed_bytes": 597955,
+        "uncompressed_sha256": "29f7c68e164c3c5a02b015d2e7ac84006bf95aa5f7c7af9e6beee28b1576d709"
+      },
+      "replay_log": {
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-fifth-split/discriminator-5s/intersection-3-third-06-fourth-027-fifth-052/replay.log",
+        "sha256": "a38304d0c1ee25486fd07a27195c3a084dfe551c9944b32117010463949fa89c"
+      },
+      "schema_version": 1,
+      "seconds_cap": 5,
+      "solver_elapsed_seconds": 0.10853670898359269,
+      "solver_log": {
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-fifth-split/discriminator-5s/intersection-3-third-06-fourth-027-fifth-052/solver.log",
+        "sha256": "bde6e1eede96772c07c8ce29fd18088863815bd043aa59a06f11f5838cf8a162"
+      },
+      "status": "UNSAT_VERIFIED",
+      "stratum": {
+        "branch_count": 105,
+        "position": "midpoint",
+        "prior_status": "NEVER_MEASURED",
+        "top_parent": "intersection-3"
+      }
+    },
+    {
+      "claim_limit": "UNKNOWN closes no branch.",
+      "exact_cnf_clauses": 46186,
+      "exact_cnf_sha256": "94e6a8cbc550f142834fe5324640c8fe275afaaeba95850ad5947570bf32bcaa",
+      "exact_cnf_variables": 10166,
+      "fifth_index": 0,
+      "fifth_unit_sha256": "2e6d31a5983a91251bfae5aefa1c0a19d8ba3cf601d0e8a706b4cfa9661a6b8a",
+      "fourth_parent_id": "intersection-4-third-00-fourth-001",
+      "inherited_fourth_unit_sha256": "a7a0afc3491dd790e4d2a00b8f55458ca86d26835b42839d647e105d2cd460db",
+      "leaf_id": "intersection-4-third-00-fourth-001-fifth-000",
+      "parent_cnf_sha256": "d34339f442c5818c772490cf433248441d3da32797dd4d1e61f1599be39c82aa",
+      "partial_proof_sha256": "0b0590f65ce3e9b08877c103de03314d9e71d399a689f057010c299755cb55e1",
+      "returncode": 0,
+      "schema_version": 1,
+      "seconds_cap": 5,
+      "solver_elapsed_seconds": 5.263644207967445,
+      "solver_log": {
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-fifth-split/discriminator-5s/intersection-4-third-00-fourth-001-fifth-000/solver.log",
+        "sha256": "8fba55cea0f98be36fab7b65349dda867a58aabfcf974a46098f5123830ac5cb"
+      },
+      "status": "FIXED_CAP_TIMEOUT",
+      "stratum": {
+        "branch_count": 52,
+        "position": "orbit_zero",
+        "prior_status": "FIXED_CAP_TIMEOUT",
+        "top_parent": "intersection-4"
+      }
+    },
+    {
+      "claim_limit": "UNKNOWN closes no branch.",
+      "exact_cnf_clauses": 46187,
+      "exact_cnf_sha256": "df2fb9e02f8ba075410b4db4fdc11f99436367b84d413259f53d67cd11bb3dc8",
+      "exact_cnf_variables": 10166,
+      "fifth_index": 1,
+      "fifth_unit_sha256": "f98ca8afd5c95d0e9da5ca360062f145e0a8a188414d4304d11981a6d147e89d",
+      "fourth_parent_id": "intersection-4-third-00-fourth-001",
+      "inherited_fourth_unit_sha256": "a7a0afc3491dd790e4d2a00b8f55458ca86d26835b42839d647e105d2cd460db",
+      "leaf_id": "intersection-4-third-00-fourth-001-fifth-001",
+      "parent_cnf_sha256": "d34339f442c5818c772490cf433248441d3da32797dd4d1e61f1599be39c82aa",
+      "partial_proof_sha256": "d0009c266421c99c8386fd742246a432450899da804a01c2bc243d3cb20520ce",
+      "returncode": 0,
+      "schema_version": 1,
+      "seconds_cap": 5,
+      "solver_elapsed_seconds": 5.075869457970839,
+      "solver_log": {
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-fifth-split/discriminator-5s/intersection-4-third-00-fourth-001-fifth-001/solver.log",
+        "sha256": "8fba55cea0f98be36fab7b65349dda867a58aabfcf974a46098f5123830ac5cb"
+      },
+      "status": "FIXED_CAP_TIMEOUT",
+      "stratum": {
+        "branch_count": 52,
+        "position": "orbit_one",
+        "prior_status": "FIXED_CAP_TIMEOUT",
+        "top_parent": "intersection-4"
+      }
+    },
+    {
+      "claim_limit": "UNKNOWN closes no branch.",
+      "exact_cnf_clauses": 46269,
+      "exact_cnf_sha256": "e07d3f3d3afabe85bb86215157154792241a6696fb5aab481c1c1f86a7be0346",
+      "exact_cnf_variables": 10166,
+      "fifth_index": 13,
+      "fifth_unit_sha256": "436adc9cddfb2ba89748cd49c5897c433984046839f163bea9be58be64e0f7be",
+      "fourth_parent_id": "intersection-4-third-00-fourth-001",
+      "inherited_fourth_unit_sha256": "a7a0afc3491dd790e4d2a00b8f55458ca86d26835b42839d647e105d2cd460db",
+      "leaf_id": "intersection-4-third-00-fourth-001-fifth-013",
+      "parent_cnf_sha256": "d34339f442c5818c772490cf433248441d3da32797dd4d1e61f1599be39c82aa",
+      "partial_proof_sha256": "48c2c23cc9ab9c840d1c9d5ba9633449cf83fc7db265913a6b84a1ae07e064c1",
+      "returncode": 0,
+      "schema_version": 1,
+      "seconds_cap": 5,
+      "solver_elapsed_seconds": 5.0336801670491695,
+      "solver_log": {
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-fifth-split/discriminator-5s/intersection-4-third-00-fourth-001-fifth-013/solver.log",
+        "sha256": "8fba55cea0f98be36fab7b65349dda867a58aabfcf974a46098f5123830ac5cb"
+      },
+      "status": "FIXED_CAP_TIMEOUT",
+      "stratum": {
+        "branch_count": 52,
+        "position": "first_quartile",
+        "prior_status": "FIXED_CAP_TIMEOUT",
+        "top_parent": "intersection-4"
+      }
+    },
+    {
+      "checker": {
+        "path": ".venv/sat-audit-tools/drat-trim/drat-trim",
+        "sha256": "f58f63b0f76945d4c4c9ff6e87afaf870f579e67c0f7cca589492df8fc7ebd47"
+      },
+      "exact_cnf_clauses": 46431,
+      "exact_cnf_sha256": "dd05481aae535bf570b384d19aa6a8d927f11fee0510248ccb1f9f85ea003465",
+      "exact_cnf_variables": 10166,
+      "fifth_index": 26,
+      "fifth_unit_sha256": "1e7d8f386b2c69339bc103155abf8fffe0221464aefa163eba57f89271fb95a3",
+      "fourth_parent_id": "intersection-4-third-00-fourth-001",
+      "inherited_fourth_unit_sha256": "a7a0afc3491dd790e4d2a00b8f55458ca86d26835b42839d647e105d2cd460db",
+      "leaf_id": "intersection-4-third-00-fourth-001-fifth-026",
+      "parent_cnf_sha256": "d34339f442c5818c772490cf433248441d3da32797dd4d1e61f1599be39c82aa",
+      "proof": {
+        "compressed_bytes": 111594,
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-fifth-split/discriminator-5s/intersection-4-third-00-fourth-001-fifth-026/proof.drat.gz",
+        "sha256": "4dba8a0b1b9e4f11ad40bb63760169985c374928a931593072b13c0a2ff70f31",
+        "uncompressed_bytes": 600883,
+        "uncompressed_sha256": "71bdab1b6e8d4f462a964f7aedf230ab5d09b4633c8682c96c6ece27beba9dcf"
+      },
+      "replay_log": {
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-fifth-split/discriminator-5s/intersection-4-third-00-fourth-001-fifth-026/replay.log",
+        "sha256": "4cd17f5490f2ca1086daa2b8f8efcdeff8178f5dce1d1669d9a69ed14a1a1b1a"
+      },
+      "schema_version": 1,
+      "seconds_cap": 5,
+      "solver_elapsed_seconds": 0.2903035840135999,
+      "solver_log": {
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-fifth-split/discriminator-5s/intersection-4-third-00-fourth-001-fifth-026/solver.log",
+        "sha256": "bde6e1eede96772c07c8ce29fd18088863815bd043aa59a06f11f5838cf8a162"
+      },
+      "status": "UNSAT_VERIFIED",
+      "stratum": {
+        "branch_count": 52,
+        "position": "midpoint",
+        "prior_status": "FIXED_CAP_TIMEOUT",
+        "top_parent": "intersection-4"
+      }
+    },
+    {
+      "claim_limit": "UNKNOWN closes no branch.",
+      "exact_cnf_clauses": 46246,
+      "exact_cnf_sha256": "999f872de713011d14ba8b44997908f83787bf619a0464b5915ed1c91fd895a7",
+      "exact_cnf_variables": 10166,
+      "fifth_index": 0,
+      "fifth_unit_sha256": "68ca3fba3b7e864770cb61aeb306d4bd4354b68ab4dd38450860c5d823e42a53",
+      "fourth_parent_id": "intersection-4-third-00-fourth-007",
+      "inherited_fourth_unit_sha256": "8c37ebd8a05c3a741c04fdaae1004859b95a0a6d8a841c70db5f4fd9dad83656",
+      "leaf_id": "intersection-4-third-00-fourth-007-fifth-000",
+      "parent_cnf_sha256": "d34339f442c5818c772490cf433248441d3da32797dd4d1e61f1599be39c82aa",
+      "partial_proof_sha256": "5b9545fec85edff293f217d7da19871ae5b2e17226a40652a1fdf517068788a6",
+      "returncode": 0,
+      "schema_version": 1,
+      "seconds_cap": 5,
+      "solver_elapsed_seconds": 5.067409417009912,
+      "solver_log": {
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-fifth-split/discriminator-5s/intersection-4-third-00-fourth-007-fifth-000/solver.log",
+        "sha256": "8fba55cea0f98be36fab7b65349dda867a58aabfcf974a46098f5123830ac5cb"
+      },
+      "status": "FIXED_CAP_TIMEOUT",
+      "stratum": {
+        "branch_count": 89,
+        "position": "orbit_zero",
+        "prior_status": "FIXED_CAP_TIMEOUT",
+        "top_parent": "intersection-4"
+      }
+    },
+    {
+      "claim_limit": "UNKNOWN closes no branch.",
+      "exact_cnf_clauses": 46250,
+      "exact_cnf_sha256": "cc7beec35ec4f08297ba6e6e1ce4f21f362352c3c52c8a5a427c09a2404c960a",
+      "exact_cnf_variables": 10166,
+      "fifth_index": 1,
+      "fifth_unit_sha256": "0b6f0cd71662b95ab905acada04f33be633eded097864c47ec1d21e1c1728215",
+      "fourth_parent_id": "intersection-4-third-00-fourth-007",
+      "inherited_fourth_unit_sha256": "8c37ebd8a05c3a741c04fdaae1004859b95a0a6d8a841c70db5f4fd9dad83656",
+      "leaf_id": "intersection-4-third-00-fourth-007-fifth-001",
+      "parent_cnf_sha256": "d34339f442c5818c772490cf433248441d3da32797dd4d1e61f1599be39c82aa",
+      "partial_proof_sha256": "a2416efa27010b8584781c33ea9781a99586adff06841dfa33bebb12cdd8d608",
+      "returncode": 0,
+      "schema_version": 1,
+      "seconds_cap": 5,
+      "solver_elapsed_seconds": 5.027567292039748,
+      "solver_log": {
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-fifth-split/discriminator-5s/intersection-4-third-00-fourth-007-fifth-001/solver.log",
+        "sha256": "8fba55cea0f98be36fab7b65349dda867a58aabfcf974a46098f5123830ac5cb"
+      },
+      "status": "FIXED_CAP_TIMEOUT",
+      "stratum": {
+        "branch_count": 89,
+        "position": "orbit_one",
+        "prior_status": "FIXED_CAP_TIMEOUT",
+        "top_parent": "intersection-4"
+      }
+    },
+    {
+      "checker": {
+        "path": ".venv/sat-audit-tools/drat-trim/drat-trim",
+        "sha256": "f58f63b0f76945d4c4c9ff6e87afaf870f579e67c0f7cca589492df8fc7ebd47"
+      },
+      "exact_cnf_clauses": 46368,
+      "exact_cnf_sha256": "c855c6ee693b50ee663a2bd46239531ae4c166f3e3e423122436c4cbd33b7297",
+      "exact_cnf_variables": 10166,
+      "fifth_index": 22,
+      "fifth_unit_sha256": "b94fd75fe7c4658c07f56c90bccd5347d89f8c16d83e8455b8c356622f74b6c8",
+      "fourth_parent_id": "intersection-4-third-00-fourth-007",
+      "inherited_fourth_unit_sha256": "8c37ebd8a05c3a741c04fdaae1004859b95a0a6d8a841c70db5f4fd9dad83656",
+      "leaf_id": "intersection-4-third-00-fourth-007-fifth-022",
+      "parent_cnf_sha256": "d34339f442c5818c772490cf433248441d3da32797dd4d1e61f1599be39c82aa",
+      "proof": {
+        "compressed_bytes": 438280,
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-fifth-split/discriminator-5s/intersection-4-third-00-fourth-007-fifth-022/proof.drat.gz",
+        "sha256": "6d73a79a38d2a3d7ac0a03d5e639ffe7d58da1f307d05d69ae17b457b7c4bca0",
+        "uncompressed_bytes": 1459301,
+        "uncompressed_sha256": "eeb1e853fec9e4a4b4783aa2e056ecf493b0831ee9401f30e0688c80f5fa79a7"
+      },
+      "replay_log": {
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-fifth-split/discriminator-5s/intersection-4-third-00-fourth-007-fifth-022/replay.log",
+        "sha256": "1f7d43d69c093443b56c322970b9f127a8c312c20c77b4739b045cb834cd43cb"
+      },
+      "schema_version": 1,
+      "seconds_cap": 5,
+      "solver_elapsed_seconds": 0.5582648750278167,
+      "solver_log": {
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-fifth-split/discriminator-5s/intersection-4-third-00-fourth-007-fifth-022/solver.log",
+        "sha256": "bde6e1eede96772c07c8ce29fd18088863815bd043aa59a06f11f5838cf8a162"
+      },
+      "status": "UNSAT_VERIFIED",
+      "stratum": {
+        "branch_count": 89,
+        "position": "first_quartile",
+        "prior_status": "FIXED_CAP_TIMEOUT",
+        "top_parent": "intersection-4"
+      }
+    },
+    {
+      "checker": {
+        "path": ".venv/sat-audit-tools/drat-trim/drat-trim",
+        "sha256": "f58f63b0f76945d4c4c9ff6e87afaf870f579e67c0f7cca589492df8fc7ebd47"
+      },
+      "exact_cnf_clauses": 46494,
+      "exact_cnf_sha256": "a6cd9968ffe1d45c385152e843939e3fc3bcc54adad426b72a08cc96ea85c589",
+      "exact_cnf_variables": 10166,
+      "fifth_index": 44,
+      "fifth_unit_sha256": "ae6318dd11cfff658fb9ea2f82c3445f6acfa73155a10e9bb48ac06d616e06e1",
+      "fourth_parent_id": "intersection-4-third-00-fourth-007",
+      "inherited_fourth_unit_sha256": "8c37ebd8a05c3a741c04fdaae1004859b95a0a6d8a841c70db5f4fd9dad83656",
+      "leaf_id": "intersection-4-third-00-fourth-007-fifth-044",
+      "parent_cnf_sha256": "d34339f442c5818c772490cf433248441d3da32797dd4d1e61f1599be39c82aa",
+      "proof": {
+        "compressed_bytes": 111277,
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-fifth-split/discriminator-5s/intersection-4-third-00-fourth-007-fifth-044/proof.drat.gz",
+        "sha256": "30d2d8439fe7c2cc3c083433b8b165ea9a27675323886f29490d868e80ca5ee3",
+        "uncompressed_bytes": 599889,
+        "uncompressed_sha256": "ceb2bed32401eec33aa646a3cbc0e59cbd74611ea179735177b5df0e145f499c"
+      },
+      "replay_log": {
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-fifth-split/discriminator-5s/intersection-4-third-00-fourth-007-fifth-044/replay.log",
+        "sha256": "318f27ffd468fa55076aa41e82a15fc65e299d57239e0c895a60aa26c0aabd99"
+      },
+      "schema_version": 1,
+      "seconds_cap": 5,
+      "solver_elapsed_seconds": 0.33419270801823586,
+      "solver_log": {
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-fifth-split/discriminator-5s/intersection-4-third-00-fourth-007-fifth-044/solver.log",
+        "sha256": "bde6e1eede96772c07c8ce29fd18088863815bd043aa59a06f11f5838cf8a162"
+      },
+      "status": "UNSAT_VERIFIED",
+      "stratum": {
+        "branch_count": 89,
+        "position": "midpoint",
+        "prior_status": "FIXED_CAP_TIMEOUT",
+        "top_parent": "intersection-4"
+      }
+    },
+    {
+      "claim_limit": "UNKNOWN closes no branch.",
+      "exact_cnf_clauses": 46195,
+      "exact_cnf_sha256": "f2a6e36e38b2490ad431c6bbca97ab1d7deb04095a765cf7fb22fa89725391bb",
+      "exact_cnf_variables": 10166,
+      "fifth_index": 0,
+      "fifth_unit_sha256": "238903180cc104ec2c5d8b3f20c5bc61b389ec0a967df8cc208cdc7cd454174f",
+      "fourth_parent_id": "intersection-4-third-02-fourth-001",
+      "inherited_fourth_unit_sha256": "8e9f850b01a8ec6942130b8ee144ff4eda28502f1205fa5b67880c78ce615ead",
+      "leaf_id": "intersection-4-third-02-fourth-001-fifth-000",
+      "parent_cnf_sha256": "323c99b844f04f4130e3cbb38fda880f0c09924262d09e84020c279ed41fb57b",
+      "partial_proof_sha256": "e8fec8705e6afcdbfbf636731b9bdd0e1f7e56d349eee6b18cd1d76a48d3e849",
+      "returncode": 0,
+      "schema_version": 1,
+      "seconds_cap": 5,
+      "solver_elapsed_seconds": 5.027690374990925,
+      "solver_log": {
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-fifth-split/discriminator-5s/intersection-4-third-02-fourth-001-fifth-000/solver.log",
+        "sha256": "8fba55cea0f98be36fab7b65349dda867a58aabfcf974a46098f5123830ac5cb"
+      },
+      "status": "FIXED_CAP_TIMEOUT",
+      "stratum": {
+        "branch_count": 48,
+        "position": "orbit_zero",
+        "prior_status": "FIXED_CAP_TIMEOUT",
+        "top_parent": "intersection-4"
+      }
+    },
+    {
+      "claim_limit": "UNKNOWN closes no branch.",
+      "exact_cnf_clauses": 46199,
+      "exact_cnf_sha256": "8f2e235eefcf51bd682a31e56573f28a3c42ed8e8f6a61302ac006105cfbdbc3",
+      "exact_cnf_variables": 10166,
+      "fifth_index": 1,
+      "fifth_unit_sha256": "14290705f0829b690ee592df2520f0845ddabe39ce42a6ac4921f913486059a8",
+      "fourth_parent_id": "intersection-4-third-02-fourth-001",
+      "inherited_fourth_unit_sha256": "8e9f850b01a8ec6942130b8ee144ff4eda28502f1205fa5b67880c78ce615ead",
+      "leaf_id": "intersection-4-third-02-fourth-001-fifth-001",
+      "parent_cnf_sha256": "323c99b844f04f4130e3cbb38fda880f0c09924262d09e84020c279ed41fb57b",
+      "partial_proof_sha256": "5caf7595355d4f7dfac12c736402ada0ae760d28a29614e8463067ad2d9bd828",
+      "returncode": 0,
+      "schema_version": 1,
+      "seconds_cap": 5,
+      "solver_elapsed_seconds": 5.0354708330123685,
+      "solver_log": {
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-fifth-split/discriminator-5s/intersection-4-third-02-fourth-001-fifth-001/solver.log",
+        "sha256": "8fba55cea0f98be36fab7b65349dda867a58aabfcf974a46098f5123830ac5cb"
+      },
+      "status": "FIXED_CAP_TIMEOUT",
+      "stratum": {
+        "branch_count": 48,
+        "position": "orbit_one",
+        "prior_status": "FIXED_CAP_TIMEOUT",
+        "top_parent": "intersection-4"
+      }
+    },
+    {
+      "claim_limit": "UNKNOWN closes no branch.",
+      "exact_cnf_clauses": 46296,
+      "exact_cnf_sha256": "87ffeb1672a2993999e109ae9bce4d67212a9fd735180c07440b7dc0ef09fad7",
+      "exact_cnf_variables": 10166,
+      "fifth_index": 12,
+      "fifth_unit_sha256": "4ae706acaf0cb4a3ffcddfaf72731de58401038dec8f4adc7fe1893f99b51e77",
+      "fourth_parent_id": "intersection-4-third-02-fourth-001",
+      "inherited_fourth_unit_sha256": "8e9f850b01a8ec6942130b8ee144ff4eda28502f1205fa5b67880c78ce615ead",
+      "leaf_id": "intersection-4-third-02-fourth-001-fifth-012",
+      "parent_cnf_sha256": "323c99b844f04f4130e3cbb38fda880f0c09924262d09e84020c279ed41fb57b",
+      "partial_proof_sha256": "e45f8202ca455abd7101de885824eb784f36ac46391772acefeef3ff6699cdba",
+      "returncode": 0,
+      "schema_version": 1,
+      "seconds_cap": 5,
+      "solver_elapsed_seconds": 5.025324708025437,
+      "solver_log": {
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-fifth-split/discriminator-5s/intersection-4-third-02-fourth-001-fifth-012/solver.log",
+        "sha256": "8fba55cea0f98be36fab7b65349dda867a58aabfcf974a46098f5123830ac5cb"
+      },
+      "status": "FIXED_CAP_TIMEOUT",
+      "stratum": {
+        "branch_count": 48,
+        "position": "first_quartile",
+        "prior_status": "FIXED_CAP_TIMEOUT",
+        "top_parent": "intersection-4"
+      }
+    },
+    {
+      "checker": {
+        "path": ".venv/sat-audit-tools/drat-trim/drat-trim",
+        "sha256": "f58f63b0f76945d4c4c9ff6e87afaf870f579e67c0f7cca589492df8fc7ebd47"
+      },
+      "exact_cnf_clauses": 46467,
+      "exact_cnf_sha256": "5e8ee9d7b1216d11c6fdb8095069952d254823223ede3d9766b005c2db69b98d",
+      "exact_cnf_variables": 10166,
+      "fifth_index": 24,
+      "fifth_unit_sha256": "2c4785bf5691cac23c360344a458c675f93d8dc2527ce9801955613dc83ddff9",
+      "fourth_parent_id": "intersection-4-third-02-fourth-001",
+      "inherited_fourth_unit_sha256": "8e9f850b01a8ec6942130b8ee144ff4eda28502f1205fa5b67880c78ce615ead",
+      "leaf_id": "intersection-4-third-02-fourth-001-fifth-024",
+      "parent_cnf_sha256": "323c99b844f04f4130e3cbb38fda880f0c09924262d09e84020c279ed41fb57b",
+      "proof": {
+        "compressed_bytes": 111628,
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-fifth-split/discriminator-5s/intersection-4-third-02-fourth-001-fifth-024/proof.drat.gz",
+        "sha256": "3c00e18b7eea06c7fe555c3022063248d6d47517c222e8f81f37d3919d6334c0",
+        "uncompressed_bytes": 601027,
+        "uncompressed_sha256": "5ed54bff3050d3f55616d0ca76303abc9177f7b125673eb03a10eccbdf970cb5"
+      },
+      "replay_log": {
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-fifth-split/discriminator-5s/intersection-4-third-02-fourth-001-fifth-024/replay.log",
+        "sha256": "f6804bdbf8d74c90a0945c46308c0bc9880f8e7600bd82d7716fca47404859cb"
+      },
+      "schema_version": 1,
+      "seconds_cap": 5,
+      "solver_elapsed_seconds": 0.0795149999903515,
+      "solver_log": {
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-fifth-split/discriminator-5s/intersection-4-third-02-fourth-001-fifth-024/solver.log",
+        "sha256": "bde6e1eede96772c07c8ce29fd18088863815bd043aa59a06f11f5838cf8a162"
+      },
+      "status": "UNSAT_VERIFIED",
+      "stratum": {
+        "branch_count": 48,
+        "position": "midpoint",
+        "prior_status": "FIXED_CAP_TIMEOUT",
+        "top_parent": "intersection-4"
+      }
+    },
+    {
+      "checker": {
+        "path": ".venv/sat-audit-tools/drat-trim/drat-trim",
+        "sha256": "f58f63b0f76945d4c4c9ff6e87afaf870f579e67c0f7cca589492df8fc7ebd47"
+      },
+      "exact_cnf_clauses": 46327,
+      "exact_cnf_sha256": "d01820892a8022589bedfe7eb69d98c22e5115ef8955995ecee0bd6208dafee9",
+      "exact_cnf_variables": 10166,
+      "fifth_index": 0,
+      "fifth_unit_sha256": "6442bc26a7c562f5afe6467dab36365c709909f6a81afcecfc0c25cff0f1bab0",
+      "fourth_parent_id": "intersection-4-third-02-fourth-016",
+      "inherited_fourth_unit_sha256": "8c119ed2d7a6b9ee8dda72e69a6f47fa7486b318d6ebc1b27e12cedf0b5297a5",
+      "leaf_id": "intersection-4-third-02-fourth-016-fifth-000",
+      "parent_cnf_sha256": "323c99b844f04f4130e3cbb38fda880f0c09924262d09e84020c279ed41fb57b",
+      "proof": {
+        "compressed_bytes": 484757,
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-fifth-split/discriminator-5s/intersection-4-third-02-fourth-016-fifth-000/proof.drat.gz",
+        "sha256": "f09d6d3af783d72966a1588450a69704157c17ec32ca4282b6c4cfa99e7b3299",
+        "uncompressed_bytes": 1564588,
+        "uncompressed_sha256": "48ecffc0f0e82703d2b5c59bac85f4cfe07f3774bfc66bf3c835e69d2e31ba7a"
+      },
+      "replay_log": {
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-fifth-split/discriminator-5s/intersection-4-third-02-fourth-016-fifth-000/replay.log",
+        "sha256": "4e3576e6ed50d4181ef8c5a21935377d1a7211b6fe0139db0f8e28ee699c0ef8"
+      },
+      "schema_version": 1,
+      "seconds_cap": 5,
+      "solver_elapsed_seconds": 0.6209215000271797,
+      "solver_log": {
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-fifth-split/discriminator-5s/intersection-4-third-02-fourth-016-fifth-000/solver.log",
+        "sha256": "bde6e1eede96772c07c8ce29fd18088863815bd043aa59a06f11f5838cf8a162"
+      },
+      "status": "UNSAT_VERIFIED",
+      "stratum": {
+        "branch_count": 117,
+        "position": "orbit_zero",
+        "prior_status": "NEVER_MEASURED",
+        "top_parent": "intersection-4"
+      }
+    },
+    {
+      "claim_limit": "UNKNOWN closes no branch.",
+      "exact_cnf_clauses": 46331,
+      "exact_cnf_sha256": "7b3eb387b2c0b10c59e45a2b9dfac68edd008e529f20e5ade5eb6ad26725396b",
+      "exact_cnf_variables": 10166,
+      "fifth_index": 1,
+      "fifth_unit_sha256": "afcc57a023e7cf2042afea0039839c1dd35a1b9aabbce11bc94bb595532738bf",
+      "fourth_parent_id": "intersection-4-third-02-fourth-016",
+      "inherited_fourth_unit_sha256": "8c119ed2d7a6b9ee8dda72e69a6f47fa7486b318d6ebc1b27e12cedf0b5297a5",
+      "leaf_id": "intersection-4-third-02-fourth-016-fifth-001",
+      "parent_cnf_sha256": "323c99b844f04f4130e3cbb38fda880f0c09924262d09e84020c279ed41fb57b",
+      "partial_proof_sha256": "a39964079bcc2290b55e9d6078614d68c7eb0c59b7bf4228ed114c4158e1579c",
+      "returncode": 0,
+      "schema_version": 1,
+      "seconds_cap": 5,
+      "solver_elapsed_seconds": 5.024722833011765,
+      "solver_log": {
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-fifth-split/discriminator-5s/intersection-4-third-02-fourth-016-fifth-001/solver.log",
+        "sha256": "8fba55cea0f98be36fab7b65349dda867a58aabfcf974a46098f5123830ac5cb"
+      },
+      "status": "FIXED_CAP_TIMEOUT",
+      "stratum": {
+        "branch_count": 117,
+        "position": "orbit_one",
+        "prior_status": "NEVER_MEASURED",
+        "top_parent": "intersection-4"
+      }
+    },
+    {
+      "checker": {
+        "path": ".venv/sat-audit-tools/drat-trim/drat-trim",
+        "sha256": "f58f63b0f76945d4c4c9ff6e87afaf870f579e67c0f7cca589492df8fc7ebd47"
+      },
+      "exact_cnf_clauses": 46426,
+      "exact_cnf_sha256": "5c627886811dff2066c61e1e595967765931f8f20316e6e310317902575acf03",
+      "exact_cnf_variables": 10166,
+      "fifth_index": 29,
+      "fifth_unit_sha256": "c61e586cfba39dea694245d77cc24b129a4dcd09d972f3212cf4f3bad167621f",
+      "fourth_parent_id": "intersection-4-third-02-fourth-016",
+      "inherited_fourth_unit_sha256": "8c119ed2d7a6b9ee8dda72e69a6f47fa7486b318d6ebc1b27e12cedf0b5297a5",
+      "leaf_id": "intersection-4-third-02-fourth-016-fifth-029",
+      "parent_cnf_sha256": "323c99b844f04f4130e3cbb38fda880f0c09924262d09e84020c279ed41fb57b",
+      "proof": {
+        "compressed_bytes": 110795,
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-fifth-split/discriminator-5s/intersection-4-third-02-fourth-016-fifth-029/proof.drat.gz",
+        "sha256": "a7c9ba29d0f0c4cd906af4a34311e2400577250e16da90c93198c24ece85d7a0",
+        "uncompressed_bytes": 598889,
+        "uncompressed_sha256": "175213d39e2be271d28e6275c0fcc214686caa0f7af55c4a109fedf701ee80cb"
+      },
+      "replay_log": {
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-fifth-split/discriminator-5s/intersection-4-third-02-fourth-016-fifth-029/replay.log",
+        "sha256": "ee3f7d2e1b3f0b2c0be5ab2ce93328e5ebf6a7fc6301c07c443826dca5b14801"
+      },
+      "schema_version": 1,
+      "seconds_cap": 5,
+      "solver_elapsed_seconds": 0.13944212498608977,
+      "solver_log": {
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-fifth-split/discriminator-5s/intersection-4-third-02-fourth-016-fifth-029/solver.log",
+        "sha256": "bde6e1eede96772c07c8ce29fd18088863815bd043aa59a06f11f5838cf8a162"
+      },
+      "status": "UNSAT_VERIFIED",
+      "stratum": {
+        "branch_count": 117,
+        "position": "first_quartile",
+        "prior_status": "NEVER_MEASURED",
+        "top_parent": "intersection-4"
+      }
+    },
+    {
+      "checker": {
+        "path": ".venv/sat-audit-tools/drat-trim/drat-trim",
+        "sha256": "f58f63b0f76945d4c4c9ff6e87afaf870f579e67c0f7cca589492df8fc7ebd47"
+      },
+      "exact_cnf_clauses": 46528,
+      "exact_cnf_sha256": "43996ab89effe7e502dc0abe089708873d0d256fde1fa83648ec1d8c96ebba13",
+      "exact_cnf_variables": 10166,
+      "fifth_index": 58,
+      "fifth_unit_sha256": "03b92f38ee3cf73e743cc2ea76e68712cf6d32183a185174bca2a1a424097991",
+      "fourth_parent_id": "intersection-4-third-02-fourth-016",
+      "inherited_fourth_unit_sha256": "8c119ed2d7a6b9ee8dda72e69a6f47fa7486b318d6ebc1b27e12cedf0b5297a5",
+      "leaf_id": "intersection-4-third-02-fourth-016-fifth-058",
+      "parent_cnf_sha256": "323c99b844f04f4130e3cbb38fda880f0c09924262d09e84020c279ed41fb57b",
+      "proof": {
+        "compressed_bytes": 110962,
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-fifth-split/discriminator-5s/intersection-4-third-02-fourth-016-fifth-058/proof.drat.gz",
+        "sha256": "b33b2efab0f28df2f5c222262ef0c169ca40ddf6a49520327e22875cb7e4c0f4",
+        "uncompressed_bytes": 599297,
+        "uncompressed_sha256": "50d0ad59cb44436ae96efb49d6df993424e23e0731fc02526e37ef9b5606d192"
+      },
+      "replay_log": {
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-fifth-split/discriminator-5s/intersection-4-third-02-fourth-016-fifth-058/replay.log",
+        "sha256": "3abd6377fc539629c059a3efb8a2fe1b246c47034afb52401928593c47ba0697"
+      },
+      "schema_version": 1,
+      "seconds_cap": 5,
+      "solver_elapsed_seconds": 0.12203179200878367,
+      "solver_log": {
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-fifth-split/discriminator-5s/intersection-4-third-02-fourth-016-fifth-058/solver.log",
+        "sha256": "bde6e1eede96772c07c8ce29fd18088863815bd043aa59a06f11f5838cf8a162"
+      },
+      "status": "UNSAT_VERIFIED",
+      "stratum": {
+        "branch_count": 117,
+        "position": "midpoint",
+        "prior_status": "NEVER_MEASURED",
+        "top_parent": "intersection-4"
+      }
+    },
+    {
+      "claim_limit": "UNKNOWN closes no branch.",
+      "exact_cnf_clauses": 46231,
+      "exact_cnf_sha256": "0844c0e5edaa2f83ba3e70d3665ca9cc1a4d21ba2867d5d44ccad0b6722ac974",
+      "exact_cnf_variables": 10166,
+      "fifth_index": 0,
+      "fifth_unit_sha256": "6e2ae11dad0616f66bbb2b6e6556f580bb987fd911d7132aa6bee2bfc7cc7b52",
+      "fourth_parent_id": "intersection-4-third-04-fourth-000",
+      "inherited_fourth_unit_sha256": "5378796307535df3ec8d8b15a2e2dc5641419c3d3060cfe32238c0fa973f7aa3",
+      "leaf_id": "intersection-4-third-04-fourth-000-fifth-000",
+      "parent_cnf_sha256": "983b3fa968eb4041be756d38eccd03529f117b39cccbe2f7e3aa3d81978d15f1",
+      "partial_proof_sha256": "c9109476918ed880ac66d96b3595a4aff205032eabdfe090a8a048fda7422ccd",
+      "returncode": 0,
+      "schema_version": 1,
+      "seconds_cap": 5,
+      "solver_elapsed_seconds": 5.044717916985974,
+      "solver_log": {
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-fifth-split/discriminator-5s/intersection-4-third-04-fourth-000-fifth-000/solver.log",
+        "sha256": "8fba55cea0f98be36fab7b65349dda867a58aabfcf974a46098f5123830ac5cb"
+      },
+      "status": "FIXED_CAP_TIMEOUT",
+      "stratum": {
+        "branch_count": 128,
+        "position": "orbit_zero",
+        "prior_status": "FIXED_CAP_TIMEOUT",
+        "top_parent": "intersection-4"
+      }
+    },
+    {
+      "claim_limit": "UNKNOWN closes no branch.",
+      "exact_cnf_clauses": 46233,
+      "exact_cnf_sha256": "c9988500cd57f2b72919c264a0e863f1a32e966d248e21d08179f3957de4cbf2",
+      "exact_cnf_variables": 10166,
+      "fifth_index": 1,
+      "fifth_unit_sha256": "87fce096bbe0be3a6dfe699a4f64745ca9060517d993f13698222c8d33bff880",
+      "fourth_parent_id": "intersection-4-third-04-fourth-000",
+      "inherited_fourth_unit_sha256": "5378796307535df3ec8d8b15a2e2dc5641419c3d3060cfe32238c0fa973f7aa3",
+      "leaf_id": "intersection-4-third-04-fourth-000-fifth-001",
+      "parent_cnf_sha256": "983b3fa968eb4041be756d38eccd03529f117b39cccbe2f7e3aa3d81978d15f1",
+      "partial_proof_sha256": "826af3c34eb5eb0415ccf444dc1fe8afaa8325156d3f11d439ea260b45ba00ed",
+      "returncode": 0,
+      "schema_version": 1,
+      "seconds_cap": 5,
+      "solver_elapsed_seconds": 5.0808327500126325,
+      "solver_log": {
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-fifth-split/discriminator-5s/intersection-4-third-04-fourth-000-fifth-001/solver.log",
+        "sha256": "8fba55cea0f98be36fab7b65349dda867a58aabfcf974a46098f5123830ac5cb"
+      },
+      "status": "FIXED_CAP_TIMEOUT",
+      "stratum": {
+        "branch_count": 128,
+        "position": "orbit_one",
+        "prior_status": "FIXED_CAP_TIMEOUT",
+        "top_parent": "intersection-4"
+      }
+    },
+    {
+      "checker": {
+        "path": ".venv/sat-audit-tools/drat-trim/drat-trim",
+        "sha256": "f58f63b0f76945d4c4c9ff6e87afaf870f579e67c0f7cca589492df8fc7ebd47"
+      },
+      "exact_cnf_clauses": 46353,
+      "exact_cnf_sha256": "b0d618852e7f6ffa9c0760a1057fb1a8182309e7ef9b00b87202e73a98436e63",
+      "exact_cnf_variables": 10166,
+      "fifth_index": 32,
+      "fifth_unit_sha256": "f28a6daae0b6feaeaf1f528bee18a9b05d48328abb710c31d0ed21f767039b2f",
+      "fourth_parent_id": "intersection-4-third-04-fourth-000",
+      "inherited_fourth_unit_sha256": "5378796307535df3ec8d8b15a2e2dc5641419c3d3060cfe32238c0fa973f7aa3",
+      "leaf_id": "intersection-4-third-04-fourth-000-fifth-032",
+      "parent_cnf_sha256": "983b3fa968eb4041be756d38eccd03529f117b39cccbe2f7e3aa3d81978d15f1",
+      "proof": {
+        "compressed_bytes": 449080,
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-fifth-split/discriminator-5s/intersection-4-third-04-fourth-000-fifth-032/proof.drat.gz",
+        "sha256": "7dc2a001f3244d75496a6f62bae2d34b4078385b417e78dac5c430f6d0a34351",
+        "uncompressed_bytes": 1464734,
+        "uncompressed_sha256": "7a81354db8dfa28da15895f166b28afc2c04e3504d859656f9235e11807cfa89"
+      },
+      "replay_log": {
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-fifth-split/discriminator-5s/intersection-4-third-04-fourth-000-fifth-032/replay.log",
+        "sha256": "33450c9b4ecc71da580f6ded0a061774050a6e01d6565143c9b1a7dc6510b069"
+      },
+      "schema_version": 1,
+      "seconds_cap": 5,
+      "solver_elapsed_seconds": 0.42566837498452514,
+      "solver_log": {
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-fifth-split/discriminator-5s/intersection-4-third-04-fourth-000-fifth-032/solver.log",
+        "sha256": "bde6e1eede96772c07c8ce29fd18088863815bd043aa59a06f11f5838cf8a162"
+      },
+      "status": "UNSAT_VERIFIED",
+      "stratum": {
+        "branch_count": 128,
+        "position": "first_quartile",
+        "prior_status": "FIXED_CAP_TIMEOUT",
+        "top_parent": "intersection-4"
+      }
+    },
+    {
+      "checker": {
+        "path": ".venv/sat-audit-tools/drat-trim/drat-trim",
+        "sha256": "f58f63b0f76945d4c4c9ff6e87afaf870f579e67c0f7cca589492df8fc7ebd47"
+      },
+      "exact_cnf_clauses": 46485,
+      "exact_cnf_sha256": "358ef9a206476aefcff6fa2452d1f636823e2cfe11b5c8b86a8fe2acfa554c38",
+      "exact_cnf_variables": 10166,
+      "fifth_index": 64,
+      "fifth_unit_sha256": "6378ad2aa7bfc28ae6084e4df926f5e88f98176dfc336b7cb6e1d2b2edb6fe89",
+      "fourth_parent_id": "intersection-4-third-04-fourth-000",
+      "inherited_fourth_unit_sha256": "5378796307535df3ec8d8b15a2e2dc5641419c3d3060cfe32238c0fa973f7aa3",
+      "leaf_id": "intersection-4-third-04-fourth-000-fifth-064",
+      "parent_cnf_sha256": "983b3fa968eb4041be756d38eccd03529f117b39cccbe2f7e3aa3d81978d15f1",
+      "proof": {
+        "compressed_bytes": 112711,
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-fifth-split/discriminator-5s/intersection-4-third-04-fourth-000-fifth-064/proof.drat.gz",
+        "sha256": "9066e28eaae20163af12142662ff5199372da7e352f44ee9954e21165e347282",
+        "uncompressed_bytes": 602629,
+        "uncompressed_sha256": "0db41ef6779305035d224855e3bea469e505cb133a8abb07c7674f4d8cca85c1"
+      },
+      "replay_log": {
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-fifth-split/discriminator-5s/intersection-4-third-04-fourth-000-fifth-064/replay.log",
+        "sha256": "13fae30655136dfbc9ba0d375d6e9f7c596fe0e7108cf2129a74981f149b5b14"
+      },
+      "schema_version": 1,
+      "seconds_cap": 5,
+      "solver_elapsed_seconds": 0.09719345800112933,
+      "solver_log": {
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-fifth-split/discriminator-5s/intersection-4-third-04-fourth-000-fifth-064/solver.log",
+        "sha256": "bde6e1eede96772c07c8ce29fd18088863815bd043aa59a06f11f5838cf8a162"
+      },
+      "status": "UNSAT_VERIFIED",
+      "stratum": {
+        "branch_count": 128,
+        "position": "midpoint",
+        "prior_status": "FIXED_CAP_TIMEOUT",
+        "top_parent": "intersection-4"
+      }
+    },
+    {
+      "claim_limit": "UNKNOWN closes no branch.",
+      "exact_cnf_clauses": 46237,
+      "exact_cnf_sha256": "897f0bc71f1ff6b63f47aaa5590a2c91163378d04aac2aa20f32339e25d2810a",
+      "exact_cnf_variables": 10166,
+      "fifth_index": 0,
+      "fifth_unit_sha256": "932ab0a0e4191d32c0af7b3f565b7b180dbe9869378abc5816f9add54b806e7f",
+      "fourth_parent_id": "intersection-4-third-04-fourth-001",
+      "inherited_fourth_unit_sha256": "d9142feb60710efd480af9b6315e325db5adb6715d58edd726aab62137f95fa9",
+      "leaf_id": "intersection-4-third-04-fourth-001-fifth-000",
+      "parent_cnf_sha256": "983b3fa968eb4041be756d38eccd03529f117b39cccbe2f7e3aa3d81978d15f1",
+      "partial_proof_sha256": "40ccc3f007ce302e226bf23845c7bc1cdc71da3e96155ebdb0e2f35a8f780bba",
+      "returncode": 0,
+      "schema_version": 1,
+      "seconds_cap": 5,
+      "solver_elapsed_seconds": 5.083208249998279,
+      "solver_log": {
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-fifth-split/discriminator-5s/intersection-4-third-04-fourth-001-fifth-000/solver.log",
+        "sha256": "8fba55cea0f98be36fab7b65349dda867a58aabfcf974a46098f5123830ac5cb"
+      },
+      "status": "FIXED_CAP_TIMEOUT",
+      "stratum": {
+        "branch_count": 90,
+        "position": "orbit_zero",
+        "prior_status": "FIXED_CAP_TIMEOUT",
+        "top_parent": "intersection-4"
+      }
+    },
+    {
+      "claim_limit": "UNKNOWN closes no branch.",
+      "exact_cnf_clauses": 46239,
+      "exact_cnf_sha256": "c09165559358d75e11f161c18c84041e055fe2172f3daec8624a9ff75a724f1c",
+      "exact_cnf_variables": 10166,
+      "fifth_index": 1,
+      "fifth_unit_sha256": "2bfbda0f40250f1b2dc57ff0c2494e78f87103e2f0fecdc226e052597b508cbd",
+      "fourth_parent_id": "intersection-4-third-04-fourth-001",
+      "inherited_fourth_unit_sha256": "d9142feb60710efd480af9b6315e325db5adb6715d58edd726aab62137f95fa9",
+      "leaf_id": "intersection-4-third-04-fourth-001-fifth-001",
+      "parent_cnf_sha256": "983b3fa968eb4041be756d38eccd03529f117b39cccbe2f7e3aa3d81978d15f1",
+      "partial_proof_sha256": "3e4c9f1d02a4b66a07bce5b0c88827efd040104bf58b785c842031376497ab1b",
+      "returncode": 0,
+      "schema_version": 1,
+      "seconds_cap": 5,
+      "solver_elapsed_seconds": 5.0772951249964535,
+      "solver_log": {
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-fifth-split/discriminator-5s/intersection-4-third-04-fourth-001-fifth-001/solver.log",
+        "sha256": "8fba55cea0f98be36fab7b65349dda867a58aabfcf974a46098f5123830ac5cb"
+      },
+      "status": "FIXED_CAP_TIMEOUT",
+      "stratum": {
+        "branch_count": 90,
+        "position": "orbit_one",
+        "prior_status": "FIXED_CAP_TIMEOUT",
+        "top_parent": "intersection-4"
+      }
+    },
+    {
+      "checker": {
+        "path": ".venv/sat-audit-tools/drat-trim/drat-trim",
+        "sha256": "f58f63b0f76945d4c4c9ff6e87afaf870f579e67c0f7cca589492df8fc7ebd47"
+      },
+      "exact_cnf_clauses": 46359,
+      "exact_cnf_sha256": "f27061aa737abd5212d7593440afb02240997d0da92f99b3103d8cc7cb3ee485",
+      "exact_cnf_variables": 10166,
+      "fifth_index": 22,
+      "fifth_unit_sha256": "cebb69db165bba3d2ee85737a6b6e7b826a2378827018be51501c652cdf7ae9a",
+      "fourth_parent_id": "intersection-4-third-04-fourth-001",
+      "inherited_fourth_unit_sha256": "d9142feb60710efd480af9b6315e325db5adb6715d58edd726aab62137f95fa9",
+      "leaf_id": "intersection-4-third-04-fourth-001-fifth-022",
+      "parent_cnf_sha256": "983b3fa968eb4041be756d38eccd03529f117b39cccbe2f7e3aa3d81978d15f1",
+      "proof": {
+        "compressed_bytes": 553245,
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-fifth-split/discriminator-5s/intersection-4-third-04-fourth-001-fifth-022/proof.drat.gz",
+        "sha256": "86ca433761c21ead158498482bf08ea6f6c5ce4bbfb6a0e70ef4c88cdff6d814",
+        "uncompressed_bytes": 1738853,
+        "uncompressed_sha256": "24045adf999d016309b1966acc2662aa094ae994988e8510cce38b9619ea4747"
+      },
+      "replay_log": {
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-fifth-split/discriminator-5s/intersection-4-third-04-fourth-001-fifth-022/replay.log",
+        "sha256": "f1ce7ef35eeb8837a0dce1bc4eee862625b412c056e2446caca0bb4601e90bbb"
+      },
+      "schema_version": 1,
+      "seconds_cap": 5,
+      "solver_elapsed_seconds": 1.7044342500157654,
+      "solver_log": {
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-fifth-split/discriminator-5s/intersection-4-third-04-fourth-001-fifth-022/solver.log",
+        "sha256": "bde6e1eede96772c07c8ce29fd18088863815bd043aa59a06f11f5838cf8a162"
+      },
+      "status": "UNSAT_VERIFIED",
+      "stratum": {
+        "branch_count": 90,
+        "position": "first_quartile",
+        "prior_status": "FIXED_CAP_TIMEOUT",
+        "top_parent": "intersection-4"
+      }
+    },
+    {
+      "checker": {
+        "path": ".venv/sat-audit-tools/drat-trim/drat-trim",
+        "sha256": "f58f63b0f76945d4c4c9ff6e87afaf870f579e67c0f7cca589492df8fc7ebd47"
+      },
+      "exact_cnf_clauses": 46500,
+      "exact_cnf_sha256": "2980944642c22f2c48ceccfd3cc902c47701c1c086ea10c39118cb7fca175ffd",
+      "exact_cnf_variables": 10166,
+      "fifth_index": 45,
+      "fifth_unit_sha256": "2cccda31a1ea6b39ab44127c72b64eef115062f160ead130459f89b83e85e884",
+      "fourth_parent_id": "intersection-4-third-04-fourth-001",
+      "inherited_fourth_unit_sha256": "d9142feb60710efd480af9b6315e325db5adb6715d58edd726aab62137f95fa9",
+      "leaf_id": "intersection-4-third-04-fourth-001-fifth-045",
+      "parent_cnf_sha256": "983b3fa968eb4041be756d38eccd03529f117b39cccbe2f7e3aa3d81978d15f1",
+      "proof": {
+        "compressed_bytes": 112729,
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-fifth-split/discriminator-5s/intersection-4-third-04-fourth-001-fifth-045/proof.drat.gz",
+        "sha256": "031578a5525885307e4dd276696fd710b6dbf4bf0f48f7656030fb5fe6d01497",
+        "uncompressed_bytes": 602689,
+        "uncompressed_sha256": "8b0dffb8266b678c08ddf6583ff2fb45035a48787605b063244bd2d76f3ab3d6"
+      },
+      "replay_log": {
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-fifth-split/discriminator-5s/intersection-4-third-04-fourth-001-fifth-045/replay.log",
+        "sha256": "ef511cec47ba642a7bd8b6fa99ec90d62dcf320a0b741bea87dad085e1c6bdd1"
+      },
+      "schema_version": 1,
+      "seconds_cap": 5,
+      "solver_elapsed_seconds": 0.1734116249717772,
+      "solver_log": {
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-fifth-split/discriminator-5s/intersection-4-third-04-fourth-001-fifth-045/solver.log",
+        "sha256": "bde6e1eede96772c07c8ce29fd18088863815bd043aa59a06f11f5838cf8a162"
+      },
+      "status": "UNSAT_VERIFIED",
+      "stratum": {
+        "branch_count": 90,
+        "position": "midpoint",
+        "prior_status": "FIXED_CAP_TIMEOUT",
+        "top_parent": "intersection-4"
+      }
+    },
+    {
+      "claim_limit": "UNKNOWN closes no branch.",
+      "exact_cnf_clauses": 46243,
+      "exact_cnf_sha256": "6a118539257c50e4b4eb43dffc2e11568bc7f9cdb614bd118e7d10280743b77c",
+      "exact_cnf_variables": 10166,
+      "fifth_index": 0,
+      "fifth_unit_sha256": "084c799cd551dd1d8d5c5f9a5d593b2e931f5e36122ee5c793c1d08a19839cc0",
+      "fourth_parent_id": "intersection-4-third-04-fourth-003",
+      "inherited_fourth_unit_sha256": "67a729b75ec50d510d21121d6726d81a3f0bb6556b1b6c226f7a9cc86e37f1b3",
+      "leaf_id": "intersection-4-third-04-fourth-003-fifth-000",
+      "parent_cnf_sha256": "983b3fa968eb4041be756d38eccd03529f117b39cccbe2f7e3aa3d81978d15f1",
+      "partial_proof_sha256": "a442d25ffc4b8a4148fa6eebcab890a38cbe4516ad422353d9a4414e8da6b51b",
+      "returncode": 0,
+      "schema_version": 1,
+      "seconds_cap": 5,
+      "solver_elapsed_seconds": 5.066929874999914,
+      "solver_log": {
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-fifth-split/discriminator-5s/intersection-4-third-04-fourth-003-fifth-000/solver.log",
+        "sha256": "8fba55cea0f98be36fab7b65349dda867a58aabfcf974a46098f5123830ac5cb"
+      },
+      "status": "FIXED_CAP_TIMEOUT",
+      "stratum": {
+        "branch_count": 202,
+        "position": "orbit_zero",
+        "prior_status": "NEVER_MEASURED",
+        "top_parent": "intersection-4"
+      }
+    },
+    {
+      "claim_limit": "UNKNOWN closes no branch.",
+      "exact_cnf_clauses": 46245,
+      "exact_cnf_sha256": "730dbbf597ffffdbccbee74ae331de8cb0ac7227612d45736a2ef2142595df49",
+      "exact_cnf_variables": 10166,
+      "fifth_index": 1,
+      "fifth_unit_sha256": "cb0325d692c74eef1b58e3ec6ee8a1dc265123bba0d3fe814b869f2672b354fd",
+      "fourth_parent_id": "intersection-4-third-04-fourth-003",
+      "inherited_fourth_unit_sha256": "67a729b75ec50d510d21121d6726d81a3f0bb6556b1b6c226f7a9cc86e37f1b3",
+      "leaf_id": "intersection-4-third-04-fourth-003-fifth-001",
+      "parent_cnf_sha256": "983b3fa968eb4041be756d38eccd03529f117b39cccbe2f7e3aa3d81978d15f1",
+      "partial_proof_sha256": "bdacc8729199951dd0730a0d2f2a3e82821bc905651808285a4dbe43292b21ec",
+      "returncode": 0,
+      "schema_version": 1,
+      "seconds_cap": 5,
+      "solver_elapsed_seconds": 5.052132082986645,
+      "solver_log": {
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-fifth-split/discriminator-5s/intersection-4-third-04-fourth-003-fifth-001/solver.log",
+        "sha256": "8fba55cea0f98be36fab7b65349dda867a58aabfcf974a46098f5123830ac5cb"
+      },
+      "status": "FIXED_CAP_TIMEOUT",
+      "stratum": {
+        "branch_count": 202,
+        "position": "orbit_one",
+        "prior_status": "NEVER_MEASURED",
+        "top_parent": "intersection-4"
+      }
+    },
+    {
+      "checker": {
+        "path": ".venv/sat-audit-tools/drat-trim/drat-trim",
+        "sha256": "f58f63b0f76945d4c4c9ff6e87afaf870f579e67c0f7cca589492df8fc7ebd47"
+      },
+      "exact_cnf_clauses": 46342,
+      "exact_cnf_sha256": "aa7265670d740656a39437e7348ac8968816db30b10c4c132c4910adfeb6f39d",
+      "exact_cnf_variables": 10166,
+      "fifth_index": 50,
+      "fifth_unit_sha256": "6c32c8b02b62e614f548eba1dc53ece169afaaea435835088828e01bf737b1a8",
+      "fourth_parent_id": "intersection-4-third-04-fourth-003",
+      "inherited_fourth_unit_sha256": "67a729b75ec50d510d21121d6726d81a3f0bb6556b1b6c226f7a9cc86e37f1b3",
+      "leaf_id": "intersection-4-third-04-fourth-003-fifth-050",
+      "parent_cnf_sha256": "983b3fa968eb4041be756d38eccd03529f117b39cccbe2f7e3aa3d81978d15f1",
+      "proof": {
+        "compressed_bytes": 110084,
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-fifth-split/discriminator-5s/intersection-4-third-04-fourth-003-fifth-050/proof.drat.gz",
+        "sha256": "19b1eb6b321bcaa21b7fe7a2837478c6b52a6c00242b3eaf6b8a76f952f6fb54",
+        "uncompressed_bytes": 597097,
+        "uncompressed_sha256": "2342743b5ac3c9d28599c4f3d3eea870b09a50f44a7f253df2bf1078e855c67b"
+      },
+      "replay_log": {
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-fifth-split/discriminator-5s/intersection-4-third-04-fourth-003-fifth-050/replay.log",
+        "sha256": "047a64bdec8d31a046df043f4f50cc06abf7ef76d81f185c55f34e3908b4df33"
+      },
+      "schema_version": 1,
+      "seconds_cap": 5,
+      "solver_elapsed_seconds": 0.23406633298145607,
+      "solver_log": {
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-fifth-split/discriminator-5s/intersection-4-third-04-fourth-003-fifth-050/solver.log",
+        "sha256": "bde6e1eede96772c07c8ce29fd18088863815bd043aa59a06f11f5838cf8a162"
+      },
+      "status": "UNSAT_VERIFIED",
+      "stratum": {
+        "branch_count": 202,
+        "position": "first_quartile",
+        "prior_status": "NEVER_MEASURED",
+        "top_parent": "intersection-4"
+      }
+    },
+    {
+      "checker": {
+        "path": ".venv/sat-audit-tools/drat-trim/drat-trim",
+        "sha256": "f58f63b0f76945d4c4c9ff6e87afaf870f579e67c0f7cca589492df8fc7ebd47"
+      },
+      "exact_cnf_clauses": 46486,
+      "exact_cnf_sha256": "6608547e56b25fb31892f27b15e73395271d39986ed57eb753d76436b619e7b7",
+      "exact_cnf_variables": 10166,
+      "fifth_index": 101,
+      "fifth_unit_sha256": "25e5b842bd4d7fd89936664cf6a70bc22f120663f87900b5c8e4df3889b95f93",
+      "fourth_parent_id": "intersection-4-third-04-fourth-003",
+      "inherited_fourth_unit_sha256": "67a729b75ec50d510d21121d6726d81a3f0bb6556b1b6c226f7a9cc86e37f1b3",
+      "leaf_id": "intersection-4-third-04-fourth-003-fifth-101",
+      "parent_cnf_sha256": "983b3fa968eb4041be756d38eccd03529f117b39cccbe2f7e3aa3d81978d15f1",
+      "proof": {
+        "compressed_bytes": 110360,
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-fifth-split/discriminator-5s/intersection-4-third-04-fourth-003-fifth-101/proof.drat.gz",
+        "sha256": "6e3d13564e9a24920f7fe5c844b2d0a542a87c27d46782785e862f89b07678b3",
+        "uncompressed_bytes": 597673,
+        "uncompressed_sha256": "d7a3edb8323d792f48c378b615fdc3e914957917c59b617ebcdc1441664ce530"
+      },
+      "replay_log": {
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-fifth-split/discriminator-5s/intersection-4-third-04-fourth-003-fifth-101/replay.log",
+        "sha256": "3f2b003064fdf65b99919a0d6d079becc9f0895d79101912aa8dbb8760ddf65f"
+      },
+      "schema_version": 1,
+      "seconds_cap": 5,
+      "solver_elapsed_seconds": 0.08815912500722334,
+      "solver_log": {
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-fifth-split/discriminator-5s/intersection-4-third-04-fourth-003-fifth-101/solver.log",
+        "sha256": "bde6e1eede96772c07c8ce29fd18088863815bd043aa59a06f11f5838cf8a162"
+      },
+      "status": "UNSAT_VERIFIED",
+      "stratum": {
+        "branch_count": 202,
+        "position": "midpoint",
+        "prior_status": "NEVER_MEASURED",
+        "top_parent": "intersection-4"
+      }
+    },
+    {
+      "checker": {
+        "path": ".venv/sat-audit-tools/drat-trim/drat-trim",
+        "sha256": "f58f63b0f76945d4c4c9ff6e87afaf870f579e67c0f7cca589492df8fc7ebd47"
+      },
+      "exact_cnf_clauses": 46411,
+      "exact_cnf_sha256": "cd640cbcb4eb2c1baee6e1e7a0dd388fd16362b14ce69e59ae06cbd14e0d6ff7",
+      "exact_cnf_variables": 10166,
+      "fifth_index": 0,
+      "fifth_unit_sha256": "8b0cbb7822a9d0b6edee6cd71f9ba02cfebc2a717e007f84a9fed382bcfee8a4",
+      "fourth_parent_id": "intersection-4-third-04-fourth-020",
+      "inherited_fourth_unit_sha256": "9990fb1276246a2b1859b9abcfce49df7b7cd2493d04c9f3d1b6fb4bf53f56ad",
+      "leaf_id": "intersection-4-third-04-fourth-020-fifth-000",
+      "parent_cnf_sha256": "983b3fa968eb4041be756d38eccd03529f117b39cccbe2f7e3aa3d81978d15f1",
+      "proof": {
+        "compressed_bytes": 109457,
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-fifth-split/discriminator-5s/intersection-4-third-04-fourth-020-fifth-000/proof.drat.gz",
+        "sha256": "45262de6e784dc912ac70645c647aeab2626448fd62217257b1b5ee05f60276a",
+        "uncompressed_bytes": 595819,
+        "uncompressed_sha256": "c10f158dc8bd2c25c7b45be2f820344383e190b1524237d5fa10b855bd1a74ca"
+      },
+      "replay_log": {
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-fifth-split/discriminator-5s/intersection-4-third-04-fourth-020-fifth-000/replay.log",
+        "sha256": "de9a78893d2fd21f82db3e338c538435a6f7e20c6fdf2aa933ec2242f8c0cf15"
+      },
+      "schema_version": 1,
+      "seconds_cap": 5,
+      "solver_elapsed_seconds": 0.11856979201547801,
+      "solver_log": {
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-fifth-split/discriminator-5s/intersection-4-third-04-fourth-020-fifth-000/solver.log",
+        "sha256": "bde6e1eede96772c07c8ce29fd18088863815bd043aa59a06f11f5838cf8a162"
+      },
+      "status": "UNSAT_VERIFIED",
+      "stratum": {
+        "branch_count": 89,
+        "position": "orbit_zero",
+        "prior_status": "NEVER_MEASURED",
+        "top_parent": "intersection-4"
+      }
+    },
+    {
+      "checker": {
+        "path": ".venv/sat-audit-tools/drat-trim/drat-trim",
+        "sha256": "f58f63b0f76945d4c4c9ff6e87afaf870f579e67c0f7cca589492df8fc7ebd47"
+      },
+      "exact_cnf_clauses": 46413,
+      "exact_cnf_sha256": "1d8096b1400d518155b40ad944d0131dc6ebd6d242b3ecfb12978a133d379cd2",
+      "exact_cnf_variables": 10166,
+      "fifth_index": 1,
+      "fifth_unit_sha256": "35088b5597b83724658fb29155907187f5567f5764147053743ca19e029045e4",
+      "fourth_parent_id": "intersection-4-third-04-fourth-020",
+      "inherited_fourth_unit_sha256": "9990fb1276246a2b1859b9abcfce49df7b7cd2493d04c9f3d1b6fb4bf53f56ad",
+      "leaf_id": "intersection-4-third-04-fourth-020-fifth-001",
+      "parent_cnf_sha256": "983b3fa968eb4041be756d38eccd03529f117b39cccbe2f7e3aa3d81978d15f1",
+      "proof": {
+        "compressed_bytes": 109462,
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-fifth-split/discriminator-5s/intersection-4-third-04-fourth-020-fifth-001/proof.drat.gz",
+        "sha256": "07501f96e903443cbf523cf1a7d92d45cd4068ec29425fa1867bd2f1adfa96dd",
+        "uncompressed_bytes": 595827,
+        "uncompressed_sha256": "c9f5deba7e90f6ef207c5c96e12adbd13d950e9a95e5a946be8420d492ac17dc"
+      },
+      "replay_log": {
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-fifth-split/discriminator-5s/intersection-4-third-04-fourth-020-fifth-001/replay.log",
+        "sha256": "a143577def6b765760c191e947a9959d0413c049e2aae0927e278887770d8a75"
+      },
+      "schema_version": 1,
+      "seconds_cap": 5,
+      "solver_elapsed_seconds": 0.1060693750041537,
+      "solver_log": {
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-fifth-split/discriminator-5s/intersection-4-third-04-fourth-020-fifth-001/solver.log",
+        "sha256": "bde6e1eede96772c07c8ce29fd18088863815bd043aa59a06f11f5838cf8a162"
+      },
+      "status": "UNSAT_VERIFIED",
+      "stratum": {
+        "branch_count": 89,
+        "position": "orbit_one",
+        "prior_status": "NEVER_MEASURED",
+        "top_parent": "intersection-4"
+      }
+    },
+    {
+      "checker": {
+        "path": ".venv/sat-audit-tools/drat-trim/drat-trim",
+        "sha256": "f58f63b0f76945d4c4c9ff6e87afaf870f579e67c0f7cca589492df8fc7ebd47"
+      },
+      "exact_cnf_clauses": 46455,
+      "exact_cnf_sha256": "a671ca573107f28fbd8a7455fa39f78655eabfbf509bc79821e69f3d25c83fd3",
+      "exact_cnf_variables": 10166,
+      "fifth_index": 22,
+      "fifth_unit_sha256": "7b7661965172214d111538785d077a5a20c3aa8b841d9def864e6ce4dc8c2495",
+      "fourth_parent_id": "intersection-4-third-04-fourth-020",
+      "inherited_fourth_unit_sha256": "9990fb1276246a2b1859b9abcfce49df7b7cd2493d04c9f3d1b6fb4bf53f56ad",
+      "leaf_id": "intersection-4-third-04-fourth-020-fifth-022",
+      "parent_cnf_sha256": "983b3fa968eb4041be756d38eccd03529f117b39cccbe2f7e3aa3d81978d15f1",
+      "proof": {
+        "compressed_bytes": 109512,
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-fifth-split/discriminator-5s/intersection-4-third-04-fourth-020-fifth-022/proof.drat.gz",
+        "sha256": "2bbaba7186f0645c02c89419dfe86c7923947d8f14af928f61d6a9642e7a8074",
+        "uncompressed_bytes": 595995,
+        "uncompressed_sha256": "a32b6a96c080cfa71cca2dd95f40d71050d31d785fffedf08f33f895c1772ca3"
+      },
+      "replay_log": {
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-fifth-split/discriminator-5s/intersection-4-third-04-fourth-020-fifth-022/replay.log",
+        "sha256": "f59154c5b6add5bfab37926419096a5a56d7d91eb2981ff588fa1fce77cbae95"
+      },
+      "schema_version": 1,
+      "seconds_cap": 5,
+      "solver_elapsed_seconds": 0.1458605420193635,
+      "solver_log": {
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-fifth-split/discriminator-5s/intersection-4-third-04-fourth-020-fifth-022/solver.log",
+        "sha256": "bde6e1eede96772c07c8ce29fd18088863815bd043aa59a06f11f5838cf8a162"
+      },
+      "status": "UNSAT_VERIFIED",
+      "stratum": {
+        "branch_count": 89,
+        "position": "first_quartile",
+        "prior_status": "NEVER_MEASURED",
+        "top_parent": "intersection-4"
+      }
+    },
+    {
+      "checker": {
+        "path": ".venv/sat-audit-tools/drat-trim/drat-trim",
+        "sha256": "f58f63b0f76945d4c4c9ff6e87afaf870f579e67c0f7cca589492df8fc7ebd47"
+      },
+      "exact_cnf_clauses": 46528,
+      "exact_cnf_sha256": "adef3ddd7c7a760f052e269b93ead96437fa5d21d44a66915051c306813da657",
+      "exact_cnf_variables": 10166,
+      "fifth_index": 44,
+      "fifth_unit_sha256": "648e6dc9c0f157515e5c0e79aee978bf870cb76d0f72f4ee02079fa0776c6b02",
+      "fourth_parent_id": "intersection-4-third-04-fourth-020",
+      "inherited_fourth_unit_sha256": "9990fb1276246a2b1859b9abcfce49df7b7cd2493d04c9f3d1b6fb4bf53f56ad",
+      "leaf_id": "intersection-4-third-04-fourth-020-fifth-044",
+      "parent_cnf_sha256": "983b3fa968eb4041be756d38eccd03529f117b39cccbe2f7e3aa3d81978d15f1",
+      "proof": {
+        "compressed_bytes": 109623,
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-fifth-split/discriminator-5s/intersection-4-third-04-fourth-020-fifth-044/proof.drat.gz",
+        "sha256": "a2d2d777d544c0263b8350fe99aa2d6c030ebd51580ab750de01ad2e004cf0c2",
+        "uncompressed_bytes": 596287,
+        "uncompressed_sha256": "b20192a5933f12a6b7958a60c2e36191334eb5963a2518f074da17539ec81cfe"
+      },
+      "replay_log": {
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-fifth-split/discriminator-5s/intersection-4-third-04-fourth-020-fifth-044/replay.log",
+        "sha256": "ae9263e3e4265070198002c810f28108c24f428052034d4e6a833649fac27d3a"
+      },
+      "schema_version": 1,
+      "seconds_cap": 5,
+      "solver_elapsed_seconds": 0.10097500000847504,
+      "solver_log": {
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-fifth-split/discriminator-5s/intersection-4-third-04-fourth-020-fifth-044/solver.log",
+        "sha256": "bde6e1eede96772c07c8ce29fd18088863815bd043aa59a06f11f5838cf8a162"
+      },
+      "status": "UNSAT_VERIFIED",
+      "stratum": {
+        "branch_count": 89,
+        "position": "midpoint",
+        "prior_status": "NEVER_MEASURED",
+        "top_parent": "intersection-4"
+      }
+    },
+    {
+      "claim_limit": "UNKNOWN closes no branch.",
+      "exact_cnf_clauses": 46275,
+      "exact_cnf_sha256": "9d293532f44db0c3aa4fad07209b357f994afac44756e0394399b08e466c9428",
+      "exact_cnf_variables": 10166,
+      "fifth_index": 0,
+      "fifth_unit_sha256": "2a57042a43991d2ca310938e6802d7283954e38c825a548c4bee89c45238b43b",
+      "fourth_parent_id": "intersection-4-third-05-fourth-001",
+      "inherited_fourth_unit_sha256": "59f196cca1edb365a14e3f3d7c32fd69e79d9a3fffdb395020f8003a4671e55c",
+      "leaf_id": "intersection-4-third-05-fourth-001-fifth-000",
+      "parent_cnf_sha256": "841ce8a9641fb33c45793bed0d897e23ee462fd5200ee204f167c38d933b0576",
+      "partial_proof_sha256": "7abdbed292c5e5c0757d2e17c4f053f20b64f5fb8fa910d38081dec9aad88a8d",
+      "returncode": 0,
+      "schema_version": 1,
+      "seconds_cap": 5,
+      "solver_elapsed_seconds": 5.091947874985635,
+      "solver_log": {
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-fifth-split/discriminator-5s/intersection-4-third-05-fourth-001-fifth-000/solver.log",
+        "sha256": "8fba55cea0f98be36fab7b65349dda867a58aabfcf974a46098f5123830ac5cb"
+      },
+      "status": "FIXED_CAP_TIMEOUT",
+      "stratum": {
+        "branch_count": 82,
+        "position": "orbit_zero",
+        "prior_status": "FIXED_CAP_TIMEOUT",
+        "top_parent": "intersection-4"
+      }
+    },
+    {
+      "claim_limit": "UNKNOWN closes no branch.",
+      "exact_cnf_clauses": 46278,
+      "exact_cnf_sha256": "45387cbfd62bf71ef6b78111eb44b44573793512327fa4eafd630ccd4a448ca2",
+      "exact_cnf_variables": 10166,
+      "fifth_index": 1,
+      "fifth_unit_sha256": "b8cc4479a9ae1965b1bf07de37edf8d20a2b09c5429565aba6131bfab43a7f1c",
+      "fourth_parent_id": "intersection-4-third-05-fourth-001",
+      "inherited_fourth_unit_sha256": "59f196cca1edb365a14e3f3d7c32fd69e79d9a3fffdb395020f8003a4671e55c",
+      "leaf_id": "intersection-4-third-05-fourth-001-fifth-001",
+      "parent_cnf_sha256": "841ce8a9641fb33c45793bed0d897e23ee462fd5200ee204f167c38d933b0576",
+      "partial_proof_sha256": "d0bb9db756e82fd9fbc4f564144b00c85d6d483f34e922fcfd314b98bea7b2c3",
+      "returncode": 0,
+      "schema_version": 1,
+      "seconds_cap": 5,
+      "solver_elapsed_seconds": 5.039452875033021,
+      "solver_log": {
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-fifth-split/discriminator-5s/intersection-4-third-05-fourth-001-fifth-001/solver.log",
+        "sha256": "8fba55cea0f98be36fab7b65349dda867a58aabfcf974a46098f5123830ac5cb"
+      },
+      "status": "FIXED_CAP_TIMEOUT",
+      "stratum": {
+        "branch_count": 82,
+        "position": "orbit_one",
+        "prior_status": "FIXED_CAP_TIMEOUT",
+        "top_parent": "intersection-4"
+      }
+    },
+    {
+      "checker": {
+        "path": ".venv/sat-audit-tools/drat-trim/drat-trim",
+        "sha256": "f58f63b0f76945d4c4c9ff6e87afaf870f579e67c0f7cca589492df8fc7ebd47"
+      },
+      "exact_cnf_clauses": 46380,
+      "exact_cnf_sha256": "f0d60491a95fd35a1e7d8d232750287b6b2b1b65aba402c79138045152e693d7",
+      "exact_cnf_variables": 10166,
+      "fifth_index": 20,
+      "fifth_unit_sha256": "da20aaaf0ecfc1209a54968582442360a25fbe12c78a8d5f090cb1b9f56d1bb1",
+      "fourth_parent_id": "intersection-4-third-05-fourth-001",
+      "inherited_fourth_unit_sha256": "59f196cca1edb365a14e3f3d7c32fd69e79d9a3fffdb395020f8003a4671e55c",
+      "leaf_id": "intersection-4-third-05-fourth-001-fifth-020",
+      "parent_cnf_sha256": "841ce8a9641fb33c45793bed0d897e23ee462fd5200ee204f167c38d933b0576",
+      "proof": {
+        "compressed_bytes": 110347,
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-fifth-split/discriminator-5s/intersection-4-third-05-fourth-001-fifth-020/proof.drat.gz",
+        "sha256": "87f763e59f83ae87efbbed750a52445f9a946a60334f444ff945059745869680",
+        "uncompressed_bytes": 597717,
+        "uncompressed_sha256": "d52915d380d9a980cf246e3ed66da5bed9a7647d397779bb5c6cbda40fd5447d"
+      },
+      "replay_log": {
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-fifth-split/discriminator-5s/intersection-4-third-05-fourth-001-fifth-020/replay.log",
+        "sha256": "f0f3f5434052ceb95ac9c4c66234344aba24062a8864c936b1cc857d7970110f"
+      },
+      "schema_version": 1,
+      "seconds_cap": 5,
+      "solver_elapsed_seconds": 0.13751929200952873,
+      "solver_log": {
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-fifth-split/discriminator-5s/intersection-4-third-05-fourth-001-fifth-020/solver.log",
+        "sha256": "bde6e1eede96772c07c8ce29fd18088863815bd043aa59a06f11f5838cf8a162"
+      },
+      "status": "UNSAT_VERIFIED",
+      "stratum": {
+        "branch_count": 82,
+        "position": "first_quartile",
+        "prior_status": "FIXED_CAP_TIMEOUT",
+        "top_parent": "intersection-4"
+      }
+    },
+    {
+      "checker": {
+        "path": ".venv/sat-audit-tools/drat-trim/drat-trim",
+        "sha256": "f58f63b0f76945d4c4c9ff6e87afaf870f579e67c0f7cca589492df8fc7ebd47"
+      },
+      "exact_cnf_clauses": 46514,
+      "exact_cnf_sha256": "7dd57c573b8219a41387d250049530029290daaac5b3399c663c676ce2ef8ac9",
+      "exact_cnf_variables": 10166,
+      "fifth_index": 41,
+      "fifth_unit_sha256": "d84d2fd261d11f3559ac28b3c57b50bb20d1db7e47eb172ffdb1046cfe1a3212",
+      "fourth_parent_id": "intersection-4-third-05-fourth-001",
+      "inherited_fourth_unit_sha256": "59f196cca1edb365a14e3f3d7c32fd69e79d9a3fffdb395020f8003a4671e55c",
+      "leaf_id": "intersection-4-third-05-fourth-001-fifth-041",
+      "parent_cnf_sha256": "841ce8a9641fb33c45793bed0d897e23ee462fd5200ee204f167c38d933b0576",
+      "proof": {
+        "compressed_bytes": 110593,
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-fifth-split/discriminator-5s/intersection-4-third-05-fourth-001-fifth-041/proof.drat.gz",
+        "sha256": "b6edb04c906d1d3e3da65522909611d7b2f50108a0e74ba8d086bc129a72d440",
+        "uncompressed_bytes": 598253,
+        "uncompressed_sha256": "7a0a2363c89f0b6a4d92bf96317a07edd9a1b72ff4036fb3fd55823fe9027a38"
+      },
+      "replay_log": {
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-fifth-split/discriminator-5s/intersection-4-third-05-fourth-001-fifth-041/replay.log",
+        "sha256": "5690e018de3f7fed79f00d2bfe4b11e71eb3b7c134b2db14fe7a4f9f872d859b"
+      },
+      "schema_version": 1,
+      "seconds_cap": 5,
+      "solver_elapsed_seconds": 0.1312132920138538,
+      "solver_log": {
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-fifth-split/discriminator-5s/intersection-4-third-05-fourth-001-fifth-041/solver.log",
+        "sha256": "bde6e1eede96772c07c8ce29fd18088863815bd043aa59a06f11f5838cf8a162"
+      },
+      "status": "UNSAT_VERIFIED",
+      "stratum": {
+        "branch_count": 82,
+        "position": "midpoint",
+        "prior_status": "FIXED_CAP_TIMEOUT",
+        "top_parent": "intersection-4"
+      }
+    },
+    {
+      "claim_limit": "UNKNOWN closes no branch.",
+      "exact_cnf_clauses": 46285,
+      "exact_cnf_sha256": "99f12126fed954c9aa1553d9e4f3179e6e618a77b93d5bcc52623973c2c02a74",
+      "exact_cnf_variables": 10166,
+      "fifth_index": 0,
+      "fifth_unit_sha256": "8e37bed9dff3949ffd23ae638260dff869f5cc26e551f2a9e5e289a8888949fa",
+      "fourth_parent_id": "intersection-4-third-05-fourth-003",
+      "inherited_fourth_unit_sha256": "cfced09ab3c6c1a81cf3f29955f489324fd08bbfbde56860d2b2fa4e887cc498",
+      "leaf_id": "intersection-4-third-05-fourth-003-fifth-000",
+      "parent_cnf_sha256": "841ce8a9641fb33c45793bed0d897e23ee462fd5200ee204f167c38d933b0576",
+      "partial_proof_sha256": "ed081f40214d7aebb119dc38448111647c9d3d75b3772885e19c90f089f07207",
+      "returncode": 0,
+      "schema_version": 1,
+      "seconds_cap": 5,
+      "solver_elapsed_seconds": 5.058723292022478,
+      "solver_log": {
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-fifth-split/discriminator-5s/intersection-4-third-05-fourth-003-fifth-000/solver.log",
+        "sha256": "8fba55cea0f98be36fab7b65349dda867a58aabfcf974a46098f5123830ac5cb"
+      },
+      "status": "FIXED_CAP_TIMEOUT",
+      "stratum": {
+        "branch_count": 78,
+        "position": "orbit_zero",
+        "prior_status": "NEVER_MEASURED",
+        "top_parent": "intersection-4"
+      }
+    },
+    {
+      "claim_limit": "UNKNOWN closes no branch.",
+      "exact_cnf_clauses": 46288,
+      "exact_cnf_sha256": "75afda5ea7c6db3f719fb698c313c24e17ff77dbdc6e2943462bdfc1edf36100",
+      "exact_cnf_variables": 10166,
+      "fifth_index": 1,
+      "fifth_unit_sha256": "afa3a09ad04ff90a528912c77bfdd7c055e0d9e490c09160bbae24cd58db2615",
+      "fourth_parent_id": "intersection-4-third-05-fourth-003",
+      "inherited_fourth_unit_sha256": "cfced09ab3c6c1a81cf3f29955f489324fd08bbfbde56860d2b2fa4e887cc498",
+      "leaf_id": "intersection-4-third-05-fourth-003-fifth-001",
+      "parent_cnf_sha256": "841ce8a9641fb33c45793bed0d897e23ee462fd5200ee204f167c38d933b0576",
+      "partial_proof_sha256": "0fa5e62f24214e5ec17f92fcbc3412c5a82953d688e4a87c82716e100a69c030",
+      "returncode": 0,
+      "schema_version": 1,
+      "seconds_cap": 5,
+      "solver_elapsed_seconds": 5.038878458028194,
+      "solver_log": {
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-fifth-split/discriminator-5s/intersection-4-third-05-fourth-003-fifth-001/solver.log",
+        "sha256": "8fba55cea0f98be36fab7b65349dda867a58aabfcf974a46098f5123830ac5cb"
+      },
+      "status": "FIXED_CAP_TIMEOUT",
+      "stratum": {
+        "branch_count": 78,
+        "position": "orbit_one",
+        "prior_status": "NEVER_MEASURED",
+        "top_parent": "intersection-4"
+      }
+    },
+    {
+      "checker": {
+        "path": ".venv/sat-audit-tools/drat-trim/drat-trim",
+        "sha256": "f58f63b0f76945d4c4c9ff6e87afaf870f579e67c0f7cca589492df8fc7ebd47"
+      },
+      "exact_cnf_clauses": 46416,
+      "exact_cnf_sha256": "ade7f670b8815f17d8f7052cf99b2bdd39c83c8a8d0e012b8988a1ba11b7862b",
+      "exact_cnf_variables": 10166,
+      "fifth_index": 19,
+      "fifth_unit_sha256": "cdac95ca748ce8f7c24a7cd46630a0d10fdee768c96652ac994617e217f68489",
+      "fourth_parent_id": "intersection-4-third-05-fourth-003",
+      "inherited_fourth_unit_sha256": "cfced09ab3c6c1a81cf3f29955f489324fd08bbfbde56860d2b2fa4e887cc498",
+      "leaf_id": "intersection-4-third-05-fourth-003-fifth-019",
+      "parent_cnf_sha256": "841ce8a9641fb33c45793bed0d897e23ee462fd5200ee204f167c38d933b0576",
+      "proof": {
+        "compressed_bytes": 110376,
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-fifth-split/discriminator-5s/intersection-4-third-05-fourth-003-fifth-019/proof.drat.gz",
+        "sha256": "b72f8ff447b22e660e96cb9f824c33c5bc36291b0e041b42e8608218703fa7c4",
+        "uncompressed_bytes": 597861,
+        "uncompressed_sha256": "ca650bab7a7953f15e9f8d03e6bf00e47781917d4caaf2dd9592ef165a6f6e76"
+      },
+      "replay_log": {
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-fifth-split/discriminator-5s/intersection-4-third-05-fourth-003-fifth-019/replay.log",
+        "sha256": "1cf8f8b6b36200dc5fbd4d547e36f2d5154d9e016a965736f99229898ecc65bd"
+      },
+      "schema_version": 1,
+      "seconds_cap": 5,
+      "solver_elapsed_seconds": 0.10303587501402944,
+      "solver_log": {
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-fifth-split/discriminator-5s/intersection-4-third-05-fourth-003-fifth-019/solver.log",
+        "sha256": "bde6e1eede96772c07c8ce29fd18088863815bd043aa59a06f11f5838cf8a162"
+      },
+      "status": "UNSAT_VERIFIED",
+      "stratum": {
+        "branch_count": 78,
+        "position": "first_quartile",
+        "prior_status": "NEVER_MEASURED",
+        "top_parent": "intersection-4"
+      }
+    },
+    {
+      "checker": {
+        "path": ".venv/sat-audit-tools/drat-trim/drat-trim",
+        "sha256": "f58f63b0f76945d4c4c9ff6e87afaf870f579e67c0f7cca589492df8fc7ebd47"
+      },
+      "exact_cnf_clauses": 46516,
+      "exact_cnf_sha256": "94f917284ae1484be8cb833c1f9c6352258ba4375cf02a51d35336ddd2ceb5db",
+      "exact_cnf_variables": 10166,
+      "fifth_index": 39,
+      "fifth_unit_sha256": "f76c0ad1e0ea58a986d47009c6cf8ab323528d7c1f28ae0abf305f0c0b0c09f1",
+      "fourth_parent_id": "intersection-4-third-05-fourth-003",
+      "inherited_fourth_unit_sha256": "cfced09ab3c6c1a81cf3f29955f489324fd08bbfbde56860d2b2fa4e887cc498",
+      "leaf_id": "intersection-4-third-05-fourth-003-fifth-039",
+      "parent_cnf_sha256": "841ce8a9641fb33c45793bed0d897e23ee462fd5200ee204f167c38d933b0576",
+      "proof": {
+        "compressed_bytes": 110563,
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-fifth-split/discriminator-5s/intersection-4-third-05-fourth-003-fifth-039/proof.drat.gz",
+        "sha256": "ab33e51e484e5251e831b7ce3d4c85f25d4acce57e6d3fafdad5cdcfc0fedce7",
+        "uncompressed_bytes": 598261,
+        "uncompressed_sha256": "f5d36836993284bcd26b7c45c4af1062dadab15ec1faa3ccb1320125c307a40b"
+      },
+      "replay_log": {
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-fifth-split/discriminator-5s/intersection-4-third-05-fourth-003-fifth-039/replay.log",
+        "sha256": "22529fd783449a6ee7988b56b00e0668ed23bfdc6742ac793d47144cfa1ca005"
+      },
+      "schema_version": 1,
+      "seconds_cap": 5,
+      "solver_elapsed_seconds": 0.11167225003009662,
+      "solver_log": {
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-fifth-split/discriminator-5s/intersection-4-third-05-fourth-003-fifth-039/solver.log",
+        "sha256": "bde6e1eede96772c07c8ce29fd18088863815bd043aa59a06f11f5838cf8a162"
+      },
+      "status": "UNSAT_VERIFIED",
+      "stratum": {
+        "branch_count": 78,
+        "position": "midpoint",
+        "prior_status": "NEVER_MEASURED",
+        "top_parent": "intersection-4"
+      }
+    },
+    {
+      "checker": {
+        "path": ".venv/sat-audit-tools/drat-trim/drat-trim",
+        "sha256": "f58f63b0f76945d4c4c9ff6e87afaf870f579e67c0f7cca589492df8fc7ebd47"
+      },
+      "exact_cnf_clauses": 46485,
+      "exact_cnf_sha256": "560275b92e7a28b94854d0c61d3209b8cc16c80e254b9193e345aa79a8627274",
+      "exact_cnf_variables": 10166,
+      "fifth_index": 0,
+      "fifth_unit_sha256": "46b9d3a6b593718297df7eb071f0725bcf72fe988f1a5cfe099ea20ceeb016bd",
+      "fourth_parent_id": "intersection-4-third-05-fourth-019",
+      "inherited_fourth_unit_sha256": "e54977f08b92383b775bd2f0fcd259f3c09656a2227952e029f97de21ec7af98",
+      "leaf_id": "intersection-4-third-05-fourth-019-fifth-000",
+      "parent_cnf_sha256": "841ce8a9641fb33c45793bed0d897e23ee462fd5200ee204f167c38d933b0576",
+      "proof": {
+        "compressed_bytes": 110200,
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-fifth-split/discriminator-5s/intersection-4-third-05-fourth-019-fifth-000/proof.drat.gz",
+        "sha256": "e79c587e472e6455dabe517b26439b6da3511a9119646a0a179c41da35e0968c",
+        "uncompressed_bytes": 598145,
+        "uncompressed_sha256": "91b9aeba95eb7f80c53a7d9519b288c60614aebf48f76e19ee027f48c063a233"
+      },
+      "replay_log": {
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-fifth-split/discriminator-5s/intersection-4-third-05-fourth-019-fifth-000/replay.log",
+        "sha256": "9f2b33268e0dfe7d85958c791093242c236d206afd4316679238b787ad32aea4"
+      },
+      "schema_version": 1,
+      "seconds_cap": 5,
+      "solver_elapsed_seconds": 0.10943354200571775,
+      "solver_log": {
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-fifth-split/discriminator-5s/intersection-4-third-05-fourth-019-fifth-000/solver.log",
+        "sha256": "bde6e1eede96772c07c8ce29fd18088863815bd043aa59a06f11f5838cf8a162"
+      },
+      "status": "UNSAT_VERIFIED",
+      "stratum": {
+        "branch_count": 63,
+        "position": "orbit_zero",
+        "prior_status": "NEVER_MEASURED",
+        "top_parent": "intersection-4"
+      }
+    },
+    {
+      "checker": {
+        "path": ".venv/sat-audit-tools/drat-trim/drat-trim",
+        "sha256": "f58f63b0f76945d4c4c9ff6e87afaf870f579e67c0f7cca589492df8fc7ebd47"
+      },
+      "exact_cnf_clauses": 46489,
+      "exact_cnf_sha256": "8a7a48e7b3f5be54f3629a59d52f14ffe2d4b7a1b2612f313da13eef5d047ccc",
+      "exact_cnf_variables": 10166,
+      "fifth_index": 1,
+      "fifth_unit_sha256": "0725daa8c05ef16340cbbc3771fcfa9d1dfbb5085ad1709ecc9e15f7c8af34b6",
+      "fourth_parent_id": "intersection-4-third-05-fourth-019",
+      "inherited_fourth_unit_sha256": "e54977f08b92383b775bd2f0fcd259f3c09656a2227952e029f97de21ec7af98",
+      "leaf_id": "intersection-4-third-05-fourth-019-fifth-001",
+      "parent_cnf_sha256": "841ce8a9641fb33c45793bed0d897e23ee462fd5200ee204f167c38d933b0576",
+      "proof": {
+        "compressed_bytes": 110206,
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-fifth-split/discriminator-5s/intersection-4-third-05-fourth-019-fifth-001/proof.drat.gz",
+        "sha256": "b67e45cdfe90c50059fe98a84c531d065d3b84ce29ef790f5637fae5867a5df1",
+        "uncompressed_bytes": 598161,
+        "uncompressed_sha256": "211ecd8b01029ec6976b7d1cb60e2e350a2cc0f3d50361ed1046d09c91162bae"
+      },
+      "replay_log": {
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-fifth-split/discriminator-5s/intersection-4-third-05-fourth-019-fifth-001/replay.log",
+        "sha256": "4805662050e9ee54b80d4d8cf8a2564d91be70b382313a6ef0b9121d36810e7a"
+      },
+      "schema_version": 1,
+      "seconds_cap": 5,
+      "solver_elapsed_seconds": 0.13305441598640755,
+      "solver_log": {
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-fifth-split/discriminator-5s/intersection-4-third-05-fourth-019-fifth-001/solver.log",
+        "sha256": "bde6e1eede96772c07c8ce29fd18088863815bd043aa59a06f11f5838cf8a162"
+      },
+      "status": "UNSAT_VERIFIED",
+      "stratum": {
+        "branch_count": 63,
+        "position": "orbit_one",
+        "prior_status": "NEVER_MEASURED",
+        "top_parent": "intersection-4"
+      }
+    },
+    {
+      "checker": {
+        "path": ".venv/sat-audit-tools/drat-trim/drat-trim",
+        "sha256": "f58f63b0f76945d4c4c9ff6e87afaf870f579e67c0f7cca589492df8fc7ebd47"
+      },
+      "exact_cnf_clauses": 46514,
+      "exact_cnf_sha256": "317ef767fb84d9b5fdca35c6e451806ce64008b31e760a56daa195eddc82fb33",
+      "exact_cnf_variables": 10166,
+      "fifth_index": 15,
+      "fifth_unit_sha256": "57b969188d3a0f6a9a6d5e21f9e31970f2b87d8ea6f9a7d6f0c816320d856f5e",
+      "fourth_parent_id": "intersection-4-third-05-fourth-019",
+      "inherited_fourth_unit_sha256": "e54977f08b92383b775bd2f0fcd259f3c09656a2227952e029f97de21ec7af98",
+      "leaf_id": "intersection-4-third-05-fourth-019-fifth-015",
+      "parent_cnf_sha256": "841ce8a9641fb33c45793bed0d897e23ee462fd5200ee204f167c38d933b0576",
+      "proof": {
+        "compressed_bytes": 110246,
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-fifth-split/discriminator-5s/intersection-4-third-05-fourth-019-fifth-015/proof.drat.gz",
+        "sha256": "556e2c4841e6b732d968339429f5e4840d2af1bc893ce1f92654ff5c0da2f9c3",
+        "uncompressed_bytes": 598261,
+        "uncompressed_sha256": "d87318770e52589990426de73f4c54d024ce9eb845c854912bfa261426bd392b"
+      },
+      "replay_log": {
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-fifth-split/discriminator-5s/intersection-4-third-05-fourth-019-fifth-015/replay.log",
+        "sha256": "db7e54c432e3aae17ede28a1dc6a3c24a501110076436bac61ee4a4b4c214241"
+      },
+      "schema_version": 1,
+      "seconds_cap": 5,
+      "solver_elapsed_seconds": 0.12661383301019669,
+      "solver_log": {
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-fifth-split/discriminator-5s/intersection-4-third-05-fourth-019-fifth-015/solver.log",
+        "sha256": "bde6e1eede96772c07c8ce29fd18088863815bd043aa59a06f11f5838cf8a162"
+      },
+      "status": "UNSAT_VERIFIED",
+      "stratum": {
+        "branch_count": 63,
+        "position": "first_quartile",
+        "prior_status": "NEVER_MEASURED",
+        "top_parent": "intersection-4"
+      }
+    },
+    {
+      "checker": {
+        "path": ".venv/sat-audit-tools/drat-trim/drat-trim",
+        "sha256": "f58f63b0f76945d4c4c9ff6e87afaf870f579e67c0f7cca589492df8fc7ebd47"
+      },
+      "exact_cnf_clauses": 46545,
+      "exact_cnf_sha256": "8ba3f258af6680b146b22afe0497ebf1b7623c6844a3d0ea3c4b85647095eb0f",
+      "exact_cnf_variables": 10166,
+      "fifth_index": 31,
+      "fifth_unit_sha256": "4d6a0b95caa4a54089f29bb85b62685a799fbd653af03fc5c3b1f72f96bc93f7",
+      "fourth_parent_id": "intersection-4-third-05-fourth-019",
+      "inherited_fourth_unit_sha256": "e54977f08b92383b775bd2f0fcd259f3c09656a2227952e029f97de21ec7af98",
+      "leaf_id": "intersection-4-third-05-fourth-019-fifth-031",
+      "parent_cnf_sha256": "841ce8a9641fb33c45793bed0d897e23ee462fd5200ee204f167c38d933b0576",
+      "proof": {
+        "compressed_bytes": 110283,
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-fifth-split/discriminator-5s/intersection-4-third-05-fourth-019-fifth-031/proof.drat.gz",
+        "sha256": "f4f11787bd5c6279ea1a9d66c246d14c88c450fc1a795c4346eade7ac75b70b4",
+        "uncompressed_bytes": 598385,
+        "uncompressed_sha256": "c116c6c5a8c93caaed76f2ddc45bfb5d7ebcee9f7cde3acef843f08a1e29c1d0"
+      },
+      "replay_log": {
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-fifth-split/discriminator-5s/intersection-4-third-05-fourth-019-fifth-031/replay.log",
+        "sha256": "532d93a4eab97ffc2d4d7469a90836ea17598aa1e03ff23bbc5d1f5af2aec5bf"
+      },
+      "schema_version": 1,
+      "seconds_cap": 5,
+      "solver_elapsed_seconds": 0.12340691697318107,
+      "solver_log": {
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-fifth-split/discriminator-5s/intersection-4-third-05-fourth-019-fifth-031/solver.log",
+        "sha256": "bde6e1eede96772c07c8ce29fd18088863815bd043aa59a06f11f5838cf8a162"
+      },
+      "status": "UNSAT_VERIFIED",
+      "stratum": {
+        "branch_count": 63,
+        "position": "midpoint",
+        "prior_status": "NEVER_MEASURED",
+        "top_parent": "intersection-4"
+      }
+    },
+    {
+      "checker": {
+        "path": ".venv/sat-audit-tools/drat-trim/drat-trim",
+        "sha256": "f58f63b0f76945d4c4c9ff6e87afaf870f579e67c0f7cca589492df8fc7ebd47"
+      },
+      "exact_cnf_clauses": 46513,
+      "exact_cnf_sha256": "fb06144da391c443bb074bb658b78bd172a3fd0c4c136e6120173cca16c34e0a",
+      "exact_cnf_variables": 10166,
+      "fifth_index": 0,
+      "fifth_unit_sha256": "a4b3116b2c9879d49feca51c192ebaf0415d79d7b915f5e6db1e75153d63cda9",
+      "fourth_parent_id": "intersection-4-third-05-fourth-022",
+      "inherited_fourth_unit_sha256": "e488eeaec030dffb349cfd37359114dae08eae00cf8010332e6cd3ac88ca645b",
+      "leaf_id": "intersection-4-third-05-fourth-022-fifth-000",
+      "parent_cnf_sha256": "841ce8a9641fb33c45793bed0d897e23ee462fd5200ee204f167c38d933b0576",
+      "proof": {
+        "compressed_bytes": 110240,
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-fifth-split/discriminator-5s/intersection-4-third-05-fourth-022-fifth-000/proof.drat.gz",
+        "sha256": "ce6ba15ba2e52f6a9f22bf8cee1f238481f1c141193d86790630ce3af1f833aa",
+        "uncompressed_bytes": 598257,
+        "uncompressed_sha256": "a4f8f01aa23e40886469bb1905e4148f595781119b6e860492048e49cc0b22b2"
+      },
+      "replay_log": {
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-fifth-split/discriminator-5s/intersection-4-third-05-fourth-022-fifth-000/replay.log",
+        "sha256": "7776326ae03c307571fbf356dce371c270c93a352c33550bd42ff7ef69fca0c2"
+      },
+      "schema_version": 1,
+      "seconds_cap": 5,
+      "solver_elapsed_seconds": 0.16014479100704193,
+      "solver_log": {
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-fifth-split/discriminator-5s/intersection-4-third-05-fourth-022-fifth-000/solver.log",
+        "sha256": "bde6e1eede96772c07c8ce29fd18088863815bd043aa59a06f11f5838cf8a162"
+      },
+      "status": "UNSAT_VERIFIED",
+      "stratum": {
+        "branch_count": 24,
+        "position": "orbit_zero",
+        "prior_status": "NEVER_MEASURED",
+        "top_parent": "intersection-4"
+      }
+    },
+    {
+      "checker": {
+        "path": ".venv/sat-audit-tools/drat-trim/drat-trim",
+        "sha256": "f58f63b0f76945d4c4c9ff6e87afaf870f579e67c0f7cca589492df8fc7ebd47"
+      },
+      "exact_cnf_clauses": 46514,
+      "exact_cnf_sha256": "04f881526ba925ce1aa9a677d18901cf88ff8a157cf3478c8b04d56c3bc2ee52",
+      "exact_cnf_variables": 10166,
+      "fifth_index": 1,
+      "fifth_unit_sha256": "81b0d0ade6972f40b4c9eb573898ad15dba5d73e5c081f203a9c2176261d66c2",
+      "fourth_parent_id": "intersection-4-third-05-fourth-022",
+      "inherited_fourth_unit_sha256": "e488eeaec030dffb349cfd37359114dae08eae00cf8010332e6cd3ac88ca645b",
+      "leaf_id": "intersection-4-third-05-fourth-022-fifth-001",
+      "parent_cnf_sha256": "841ce8a9641fb33c45793bed0d897e23ee462fd5200ee204f167c38d933b0576",
+      "proof": {
+        "compressed_bytes": 110245,
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-fifth-split/discriminator-5s/intersection-4-third-05-fourth-022-fifth-001/proof.drat.gz",
+        "sha256": "dc9eac521eb644e01e3806daa5b73f8dc8354aa07decefba27a23f95bb97507b",
+        "uncompressed_bytes": 598261,
+        "uncompressed_sha256": "25dff78a3c96c9d093c03167e24a95193e3e53fc36d96ad8782f0dce5f0c1951"
+      },
+      "replay_log": {
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-fifth-split/discriminator-5s/intersection-4-third-05-fourth-022-fifth-001/replay.log",
+        "sha256": "5dbf655960e37d9e7b9d19b1ec5e95b8fe0e763fcc790ba6e5560b0d9eb0c26b"
+      },
+      "schema_version": 1,
+      "seconds_cap": 5,
+      "solver_elapsed_seconds": 0.12958725000498816,
+      "solver_log": {
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-fifth-split/discriminator-5s/intersection-4-third-05-fourth-022-fifth-001/solver.log",
+        "sha256": "bde6e1eede96772c07c8ce29fd18088863815bd043aa59a06f11f5838cf8a162"
+      },
+      "status": "UNSAT_VERIFIED",
+      "stratum": {
+        "branch_count": 24,
+        "position": "orbit_one",
+        "prior_status": "NEVER_MEASURED",
+        "top_parent": "intersection-4"
+      }
+    },
+    {
+      "checker": {
+        "path": ".venv/sat-audit-tools/drat-trim/drat-trim",
+        "sha256": "f58f63b0f76945d4c4c9ff6e87afaf870f579e67c0f7cca589492df8fc7ebd47"
+      },
+      "exact_cnf_clauses": 46533,
+      "exact_cnf_sha256": "c188bb6f0e550c8822d352336c806f8234aed1fc7647ae617d15f12d5c0cc9b7",
+      "exact_cnf_variables": 10166,
+      "fifth_index": 6,
+      "fifth_unit_sha256": "56df11abedabea1826a4bc75cf6732a157a53e27864b3f864b4f2fa951dd70d0",
+      "fourth_parent_id": "intersection-4-third-05-fourth-022",
+      "inherited_fourth_unit_sha256": "e488eeaec030dffb349cfd37359114dae08eae00cf8010332e6cd3ac88ca645b",
+      "leaf_id": "intersection-4-third-05-fourth-022-fifth-006",
+      "parent_cnf_sha256": "841ce8a9641fb33c45793bed0d897e23ee462fd5200ee204f167c38d933b0576",
+      "proof": {
+        "compressed_bytes": 110265,
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-fifth-split/discriminator-5s/intersection-4-third-05-fourth-022-fifth-006/proof.drat.gz",
+        "sha256": "6bd1cc9b951859291bcd7393a983369d6136d47bb37434e3587770af7fd20b2c",
+        "uncompressed_bytes": 598337,
+        "uncompressed_sha256": "5a1ebc8255ffb1ffe748dd550f46474d4c1cfba78af4f75cbe8ec7cef986716c"
+      },
+      "replay_log": {
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-fifth-split/discriminator-5s/intersection-4-third-05-fourth-022-fifth-006/replay.log",
+        "sha256": "1c26a225d744a663a07c6ff0ca482fe758a35f17003d8eaa62c56feca2142ae0"
+      },
+      "schema_version": 1,
+      "seconds_cap": 5,
+      "solver_elapsed_seconds": 0.3245139589998871,
+      "solver_log": {
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-fifth-split/discriminator-5s/intersection-4-third-05-fourth-022-fifth-006/solver.log",
+        "sha256": "bde6e1eede96772c07c8ce29fd18088863815bd043aa59a06f11f5838cf8a162"
+      },
+      "status": "UNSAT_VERIFIED",
+      "stratum": {
+        "branch_count": 24,
+        "position": "first_quartile",
+        "prior_status": "NEVER_MEASURED",
+        "top_parent": "intersection-4"
+      }
+    },
+    {
+      "checker": {
+        "path": ".venv/sat-audit-tools/drat-trim/drat-trim",
+        "sha256": "f58f63b0f76945d4c4c9ff6e87afaf870f579e67c0f7cca589492df8fc7ebd47"
+      },
+      "exact_cnf_clauses": 46581,
+      "exact_cnf_sha256": "71dd3df5202859ec122a112c0fb3ab9176f1ec32f1417453ad04936c3cf25641",
+      "exact_cnf_variables": 10166,
+      "fifth_index": 12,
+      "fifth_unit_sha256": "0c84a379dafc33183208352ce330266b397c01a6b8e4df3601d2cf34cabcac91",
+      "fourth_parent_id": "intersection-4-third-05-fourth-022",
+      "inherited_fourth_unit_sha256": "e488eeaec030dffb349cfd37359114dae08eae00cf8010332e6cd3ac88ca645b",
+      "leaf_id": "intersection-4-third-05-fourth-022-fifth-012",
+      "parent_cnf_sha256": "841ce8a9641fb33c45793bed0d897e23ee462fd5200ee204f167c38d933b0576",
+      "proof": {
+        "compressed_bytes": 110339,
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-fifth-split/discriminator-5s/intersection-4-third-05-fourth-022-fifth-012/proof.drat.gz",
+        "sha256": "e72c5d1713543854e7916514ab7b6b54f9197b210fb558ccbbfdd6fd52401d5f",
+        "uncompressed_bytes": 598529,
+        "uncompressed_sha256": "d9f6b45a41e9940329ca92d2f9d65e8229b41081f35bc5d2c3a15454b6486798"
+      },
+      "replay_log": {
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-fifth-split/discriminator-5s/intersection-4-third-05-fourth-022-fifth-012/replay.log",
+        "sha256": "d05698860d3b31b017852923efe3068ce2b79c8ab16357f819e68aeece05232c"
+      },
+      "schema_version": 1,
+      "seconds_cap": 5,
+      "solver_elapsed_seconds": 0.1395648750476539,
+      "solver_log": {
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-fifth-split/discriminator-5s/intersection-4-third-05-fourth-022-fifth-012/solver.log",
+        "sha256": "bde6e1eede96772c07c8ce29fd18088863815bd043aa59a06f11f5838cf8a162"
+      },
+      "status": "UNSAT_VERIFIED",
+      "stratum": {
+        "branch_count": 24,
+        "position": "midpoint",
+        "prior_status": "NEVER_MEASURED",
+        "top_parent": "intersection-4"
+      }
+    }
+  ],
+  "protocol": {
+    "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-fifth-split/discriminator-5s-protocol.json",
+    "sha256": "b5390fbbe84deacdeefe2d85e464024329f40b03313b8dc1bda45fce39bd4879"
+  },
+  "scale_gate_provisional": true,
+  "schema_version": 1,
+  "status": "COMPLETE"
+}

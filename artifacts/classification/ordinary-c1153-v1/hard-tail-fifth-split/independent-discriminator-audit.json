@@ -1,0 +1,647 @@
+{
+  "checker_sha256": "f58f63b0f76945d4c4c9ff6e87afaf870f579e67c0f7cca589492df8fc7ebd47",
+  "claim_limit": "The sample closes 64 exact fifth branches only; no fourth parent or ordinary top-level branch is closed.",
+  "compressed_proof_bytes": 11330604,
+  "counts": {
+    "FIXED_CAP_TIMEOUT": 32,
+    "UNSAT_REPLAYED": 64
+  },
+  "counts_by_position": {
+    "first_quartile": {
+      "FIXED_CAP_TIMEOUT": 3,
+      "UNSAT_REPLAYED": 21
+    },
+    "midpoint": {
+      "FIXED_CAP_TIMEOUT": 0,
+      "UNSAT_REPLAYED": 24
+    },
+    "orbit_one": {
+      "FIXED_CAP_TIMEOUT": 15,
+      "UNSAT_REPLAYED": 9
+    },
+    "orbit_zero": {
+      "FIXED_CAP_TIMEOUT": 14,
+      "UNSAT_REPLAYED": 10
+    }
+  },
+  "early_deeper_split_trigger": false,
+  "manifest_sha256": "02919771a97207014ae798610c6ed3c88e34965d91a44bbfd72cc2baa046decc",
+  "mean_suffix_compressed_proof_bytes": 135445.6888888889,
+  "partition_audit_status": "VALID",
+  "protocol_sha256": "b5390fbbe84deacdeefe2d85e464024329f40b03313b8dc1bda45fce39bd4879",
+  "results": [
+    {
+      "compressed_bytes": 1580417,
+      "id": "intersection-3-third-00-fourth-015-fifth-000",
+      "position": "orbit_zero",
+      "proof_sha256": "ab4831621955cd0712d033972745f76ea8703ba21c24e968bdcd8e9444f4f932",
+      "status": "UNSAT_REPLAYED"
+    },
+    {
+      "compressed_bytes": 1414456,
+      "id": "intersection-3-third-00-fourth-015-fifth-001",
+      "position": "orbit_one",
+      "proof_sha256": "251b3ae8b461f8e09ffb558aefb6f34791e096a502c29c27e2b72009f88befce",
+      "status": "UNSAT_REPLAYED"
+    },
+    {
+      "compressed_bytes": 110791,
+      "id": "intersection-3-third-00-fourth-015-fifth-029",
+      "position": "first_quartile",
+      "proof_sha256": "e93cf43f33c9ffa653a059b3a5d4ddd58fc5cf736c05f3c10e0df29c18314234",
+      "status": "UNSAT_REPLAYED"
+    },
+    {
+      "compressed_bytes": 110991,
+      "id": "intersection-3-third-00-fourth-015-fifth-059",
+      "position": "midpoint",
+      "proof_sha256": "c76a2b65f22fc1b183bba008f8061ea82ea9a9129a1faf314185ae5f7ad12650",
+      "status": "UNSAT_REPLAYED"
+    },
+    {
+      "compressed_bytes": 109272,
+      "id": "intersection-3-third-00-fourth-026-fifth-000",
+      "position": "orbit_zero",
+      "proof_sha256": "2a441a309ed7f17151989c8ea3e18567fa73cf9b3be0ef12f1bdaafb305da255",
+      "status": "UNSAT_REPLAYED"
+    },
+    {
+      "compressed_bytes": 109278,
+      "id": "intersection-3-third-00-fourth-026-fifth-001",
+      "position": "orbit_one",
+      "proof_sha256": "5f5ac73e3996e7ad3dd064576a70192a1ced59de4a342ee3abd9acd8943dd691",
+      "status": "UNSAT_REPLAYED"
+    },
+    {
+      "compressed_bytes": 109336,
+      "id": "intersection-3-third-00-fourth-026-fifth-020",
+      "position": "first_quartile",
+      "proof_sha256": "7333af18dd61a6f0368612158b3f1336a8d19b599a3a66bbb48b6b0e509511a8",
+      "status": "UNSAT_REPLAYED"
+    },
+    {
+      "compressed_bytes": 109469,
+      "id": "intersection-3-third-00-fourth-026-fifth-041",
+      "position": "midpoint",
+      "proof_sha256": "318a1a6cd14cf6a414f0f6ee8335ed890a9d61c66d5d243a9926d058e6910952",
+      "status": "UNSAT_REPLAYED"
+    },
+    {
+      "id": "intersection-3-third-01-fourth-001-fifth-000",
+      "position": "orbit_zero",
+      "status": "FIXED_CAP_TIMEOUT"
+    },
+    {
+      "id": "intersection-3-third-01-fourth-001-fifth-001",
+      "position": "orbit_one",
+      "status": "FIXED_CAP_TIMEOUT"
+    },
+    {
+      "id": "intersection-3-third-01-fourth-001-fifth-012",
+      "position": "first_quartile",
+      "status": "FIXED_CAP_TIMEOUT"
+    },
+    {
+      "compressed_bytes": 118740,
+      "id": "intersection-3-third-01-fourth-001-fifth-024",
+      "position": "midpoint",
+      "proof_sha256": "be78e220afdd3840dfea3a8189f5fcac6e84baa9c872dcecc5758fbe6d8cd707",
+      "status": "UNSAT_REPLAYED"
+    },
+    {
+      "id": "intersection-3-third-02-fourth-000-fifth-000",
+      "position": "orbit_zero",
+      "status": "FIXED_CAP_TIMEOUT"
+    },
+    {
+      "id": "intersection-3-third-02-fourth-000-fifth-001",
+      "position": "orbit_one",
+      "status": "FIXED_CAP_TIMEOUT"
+    },
+    {
+      "compressed_bytes": 109871,
+      "id": "intersection-3-third-02-fourth-000-fifth-032",
+      "position": "first_quartile",
+      "proof_sha256": "376365f8266c9b69c573fe799a059de8693919c35df0b9ccd4d5fd794fe3cb7c",
+      "status": "UNSAT_REPLAYED"
+    },
+    {
+      "compressed_bytes": 110145,
+      "id": "intersection-3-third-02-fourth-000-fifth-064",
+      "position": "midpoint",
+      "proof_sha256": "808ddb576ae66a64310a4b1747b712813f307eafa51e6c59cf07ef88a028031e",
+      "status": "UNSAT_REPLAYED"
+    },
+    {
+      "id": "intersection-3-third-03-fourth-000-fifth-000",
+      "position": "orbit_zero",
+      "status": "FIXED_CAP_TIMEOUT"
+    },
+    {
+      "id": "intersection-3-third-03-fourth-000-fifth-001",
+      "position": "orbit_one",
+      "status": "FIXED_CAP_TIMEOUT"
+    },
+    {
+      "compressed_bytes": 109883,
+      "id": "intersection-3-third-03-fourth-000-fifth-051",
+      "position": "first_quartile",
+      "proof_sha256": "4cc855ecad43290a9dad55432efc4c698699b8d6e7fd9d71df06c51a43a4ae64",
+      "status": "UNSAT_REPLAYED"
+    },
+    {
+      "compressed_bytes": 110149,
+      "id": "intersection-3-third-03-fourth-000-fifth-103",
+      "position": "midpoint",
+      "proof_sha256": "7e8bdee8ba8e0cedc4e005079b984aba78c54265e211e7974d908fef8d39e2e6",
+      "status": "UNSAT_REPLAYED"
+    },
+    {
+      "id": "intersection-3-third-03-fourth-017-fifth-000",
+      "position": "orbit_zero",
+      "status": "FIXED_CAP_TIMEOUT"
+    },
+    {
+      "id": "intersection-3-third-03-fourth-017-fifth-001",
+      "position": "orbit_one",
+      "status": "FIXED_CAP_TIMEOUT"
+    },
+    {
+      "compressed_bytes": 109967,
+      "id": "intersection-3-third-03-fourth-017-fifth-044",
+      "position": "first_quartile",
+      "proof_sha256": "19874172f52c376669f3803757331dfe4a640e3b61d4f85a8a5d4c824304a18b",
+      "status": "UNSAT_REPLAYED"
+    },
+    {
+      "compressed_bytes": 110165,
+      "id": "intersection-3-third-03-fourth-017-fifth-088",
+      "position": "midpoint",
+      "proof_sha256": "defd6f5fd1340fd5c8c0d65387518ac8167af4332e4621084889a81a35d38639",
+      "status": "UNSAT_REPLAYED"
+    },
+    {
+      "id": "intersection-3-third-04-fourth-001-fifth-000",
+      "position": "orbit_zero",
+      "status": "FIXED_CAP_TIMEOUT"
+    },
+    {
+      "id": "intersection-3-third-04-fourth-001-fifth-001",
+      "position": "orbit_one",
+      "status": "FIXED_CAP_TIMEOUT"
+    },
+    {
+      "compressed_bytes": 112885,
+      "id": "intersection-3-third-04-fourth-001-fifth-024",
+      "position": "first_quartile",
+      "proof_sha256": "a20c5eb768f6b23671703359c495e3bda2eba303a4c3651880f5726f65d62b02",
+      "status": "UNSAT_REPLAYED"
+    },
+    {
+      "compressed_bytes": 113108,
+      "id": "intersection-3-third-04-fourth-001-fifth-048",
+      "position": "midpoint",
+      "proof_sha256": "5d225a2c5261ca49ee98c81e20b9b0a7370b63ff1ea8cd102b5a1226e5f8e71f",
+      "status": "UNSAT_REPLAYED"
+    },
+    {
+      "compressed_bytes": 109345,
+      "id": "intersection-3-third-04-fourth-012-fifth-000",
+      "position": "orbit_zero",
+      "proof_sha256": "9461fa8c54eddcff766667e3e328286e3ff73f633dc890c81faa8882116ac5a2",
+      "status": "UNSAT_REPLAYED"
+    },
+    {
+      "compressed_bytes": 109353,
+      "id": "intersection-3-third-04-fourth-012-fifth-001",
+      "position": "orbit_one",
+      "proof_sha256": "9778411bd4ba1e330dc956d53e31d23cbfb137e4015477acf8a06d0d7a63e877",
+      "status": "UNSAT_REPLAYED"
+    },
+    {
+      "compressed_bytes": 109487,
+      "id": "intersection-3-third-04-fourth-012-fifth-031",
+      "position": "first_quartile",
+      "proof_sha256": "25890b148d573e109a3658ccd62cdc18c50da9eb066ac1b7c5c9107a0a460968",
+      "status": "UNSAT_REPLAYED"
+    },
+    {
+      "compressed_bytes": 109607,
+      "id": "intersection-3-third-04-fourth-012-fifth-062",
+      "position": "midpoint",
+      "proof_sha256": "5e27e8cc72e9ae30d298ad28801636b8d2dca57a0d03f18460f075736e16fa65",
+      "status": "UNSAT_REPLAYED"
+    },
+    {
+      "compressed_bytes": 109423,
+      "id": "intersection-3-third-04-fourth-021-fifth-000",
+      "position": "orbit_zero",
+      "proof_sha256": "c8700664998b79d4b1f11ba2b0d0aa9f308bcf3599aa7cedb47838131962db0a",
+      "status": "UNSAT_REPLAYED"
+    },
+    {
+      "compressed_bytes": 109426,
+      "id": "intersection-3-third-04-fourth-021-fifth-001",
+      "position": "orbit_one",
+      "proof_sha256": "2d960cb7d436a2568319c6d9942a83842d7f71cb5b1e26b03fe351f0d0fffbb5",
+      "status": "UNSAT_REPLAYED"
+    },
+    {
+      "compressed_bytes": 109525,
+      "id": "intersection-3-third-04-fourth-021-fifth-073",
+      "position": "first_quartile",
+      "proof_sha256": "ccd12510f97a15da24b2a3c6470558912c77c302d9139fdcfc82bb4ca731a2bb",
+      "status": "UNSAT_REPLAYED"
+    },
+    {
+      "compressed_bytes": 109629,
+      "id": "intersection-3-third-04-fourth-021-fifth-146",
+      "position": "midpoint",
+      "proof_sha256": "62b4017fb3dcde2c5632f9979ea58998f9f479798cefc736b79ca7afbd46533f",
+      "status": "UNSAT_REPLAYED"
+    },
+    {
+      "compressed_bytes": 110026,
+      "id": "intersection-3-third-05-fourth-027-fifth-000",
+      "position": "orbit_zero",
+      "proof_sha256": "8ce13ed0746cf5f7aa86c6bc5bc52c81de80816e258677249b3ae13249fde5ff",
+      "status": "UNSAT_REPLAYED"
+    },
+    {
+      "compressed_bytes": 110029,
+      "id": "intersection-3-third-05-fourth-027-fifth-001",
+      "position": "orbit_one",
+      "proof_sha256": "82c55e006f2d6fb980a2efbdeff22ec5e62008dc03d365eca161a037327978d8",
+      "status": "UNSAT_REPLAYED"
+    },
+    {
+      "compressed_bytes": 110092,
+      "id": "intersection-3-third-05-fourth-027-fifth-007",
+      "position": "first_quartile",
+      "proof_sha256": "5aa71b09e20fa184bfb413869f7a8eb7f46f12ed8973ba148bdbd8577fa4f8d7",
+      "status": "UNSAT_REPLAYED"
+    },
+    {
+      "compressed_bytes": 110132,
+      "id": "intersection-3-third-05-fourth-027-fifth-014",
+      "position": "midpoint",
+      "proof_sha256": "c2394e14da718c1b6d07d8b09e69fe784cd3cfacdbb3736a599a4ca333e10e19",
+      "status": "UNSAT_REPLAYED"
+    },
+    {
+      "id": "intersection-3-third-06-fourth-001-fifth-000",
+      "position": "orbit_zero",
+      "status": "FIXED_CAP_TIMEOUT"
+    },
+    {
+      "id": "intersection-3-third-06-fourth-001-fifth-001",
+      "position": "orbit_one",
+      "status": "FIXED_CAP_TIMEOUT"
+    },
+    {
+      "compressed_bytes": 112913,
+      "id": "intersection-3-third-06-fourth-001-fifth-021",
+      "position": "first_quartile",
+      "proof_sha256": "19c25e09a5d7e2044b7bdf09106bb2f90c1a67cc8e8cbb43dcb5b489648954ea",
+      "status": "UNSAT_REPLAYED"
+    },
+    {
+      "compressed_bytes": 113108,
+      "id": "intersection-3-third-06-fourth-001-fifth-043",
+      "position": "midpoint",
+      "proof_sha256": "4434814af0fec3195453f9cfccae2df403b4d6b8a5d60d0f9f0f4a9674c1b998",
+      "status": "UNSAT_REPLAYED"
+    },
+    {
+      "compressed_bytes": 109978,
+      "id": "intersection-3-third-06-fourth-027-fifth-000",
+      "position": "orbit_zero",
+      "proof_sha256": "3e2b2f398778a507cba3080e216b2828c56637ab00fc55b84dbae1cc1389821c",
+      "status": "UNSAT_REPLAYED"
+    },
+    {
+      "compressed_bytes": 109978,
+      "id": "intersection-3-third-06-fourth-027-fifth-001",
+      "position": "orbit_one",
+      "proof_sha256": "ffda022dd3730ed18529efc22a6dd6c1a7afa3b1799df25f71823568114cdb20",
+      "status": "UNSAT_REPLAYED"
+    },
+    {
+      "compressed_bytes": 110046,
+      "id": "intersection-3-third-06-fourth-027-fifth-026",
+      "position": "first_quartile",
+      "proof_sha256": "7d0d6f8f876fdded12f6892a4d59e897fc35551b1fba412500013753fe5ad618",
+      "status": "UNSAT_REPLAYED"
+    },
+    {
+      "compressed_bytes": 110125,
+      "id": "intersection-3-third-06-fourth-027-fifth-052",
+      "position": "midpoint",
+      "proof_sha256": "c2ba9218297357d3f4529dfc9260d02914544a063b932eefe45e7eac3a502d2b",
+      "status": "UNSAT_REPLAYED"
+    },
+    {
+      "id": "intersection-4-third-00-fourth-001-fifth-000",
+      "position": "orbit_zero",
+      "status": "FIXED_CAP_TIMEOUT"
+    },
+    {
+      "id": "intersection-4-third-00-fourth-001-fifth-001",
+      "position": "orbit_one",
+      "status": "FIXED_CAP_TIMEOUT"
+    },
+    {
+      "id": "intersection-4-third-00-fourth-001-fifth-013",
+      "position": "first_quartile",
+      "status": "FIXED_CAP_TIMEOUT"
+    },
+    {
+      "compressed_bytes": 111594,
+      "id": "intersection-4-third-00-fourth-001-fifth-026",
+      "position": "midpoint",
+      "proof_sha256": "4dba8a0b1b9e4f11ad40bb63760169985c374928a931593072b13c0a2ff70f31",
+      "status": "UNSAT_REPLAYED"
+    },
+    {
+      "id": "intersection-4-third-00-fourth-007-fifth-000",
+      "position": "orbit_zero",
+      "status": "FIXED_CAP_TIMEOUT"
+    },
+    {
+      "id": "intersection-4-third-00-fourth-007-fifth-001",
+      "position": "orbit_one",
+      "status": "FIXED_CAP_TIMEOUT"
+    },
+    {
+      "compressed_bytes": 438280,
+      "id": "intersection-4-third-00-fourth-007-fifth-022",
+      "position": "first_quartile",
+      "proof_sha256": "6d73a79a38d2a3d7ac0a03d5e639ffe7d58da1f307d05d69ae17b457b7c4bca0",
+      "status": "UNSAT_REPLAYED"
+    },
+    {
+      "compressed_bytes": 111277,
+      "id": "intersection-4-third-00-fourth-007-fifth-044",
+      "position": "midpoint",
+      "proof_sha256": "30d2d8439fe7c2cc3c083433b8b165ea9a27675323886f29490d868e80ca5ee3",
+      "status": "UNSAT_REPLAYED"
+    },
+    {
+      "id": "intersection-4-third-02-fourth-001-fifth-000",
+      "position": "orbit_zero",
+      "status": "FIXED_CAP_TIMEOUT"
+    },
+    {
+      "id": "intersection-4-third-02-fourth-001-fifth-001",
+      "position": "orbit_one",
+      "status": "FIXED_CAP_TIMEOUT"
+    },
+    {
+      "id": "intersection-4-third-02-fourth-001-fifth-012",
+      "position": "first_quartile",
+      "status": "FIXED_CAP_TIMEOUT"
+    },
+    {
+      "compressed_bytes": 111628,
+      "id": "intersection-4-third-02-fourth-001-fifth-024",
+      "position": "midpoint",
+      "proof_sha256": "3c00e18b7eea06c7fe555c3022063248d6d47517c222e8f81f37d3919d6334c0",
+      "status": "UNSAT_REPLAYED"
+    },
+    {
+      "compressed_bytes": 484757,
+      "id": "intersection-4-third-02-fourth-016-fifth-000",
+      "position": "orbit_zero",
+      "proof_sha256": "f09d6d3af783d72966a1588450a69704157c17ec32ca4282b6c4cfa99e7b3299",
+      "status": "UNSAT_REPLAYED"
+    },
+    {
+      "id": "intersection-4-third-02-fourth-016-fifth-001",
+      "position": "orbit_one",
+      "status": "FIXED_CAP_TIMEOUT"
+    },
+    {
+      "compressed_bytes": 110795,
+      "id": "intersection-4-third-02-fourth-016-fifth-029",
+      "position": "first_quartile",
+      "proof_sha256": "a7c9ba29d0f0c4cd906af4a34311e2400577250e16da90c93198c24ece85d7a0",
+      "status": "UNSAT_REPLAYED"
+    },
+    {
+      "compressed_bytes": 110962,
+      "id": "intersection-4-third-02-fourth-016-fifth-058",
+      "position": "midpoint",
+      "proof_sha256": "b33b2efab0f28df2f5c222262ef0c169ca40ddf6a49520327e22875cb7e4c0f4",
+      "status": "UNSAT_REPLAYED"
+    },
+    {
+      "id": "intersection-4-third-04-fourth-000-fifth-000",
+      "position": "orbit_zero",
+      "status": "FIXED_CAP_TIMEOUT"
+    },
+    {
+      "id": "intersection-4-third-04-fourth-000-fifth-001",
+      "position": "orbit_one",
+      "status": "FIXED_CAP_TIMEOUT"
+    },
+    {
+      "compressed_bytes": 449080,
+      "id": "intersection-4-third-04-fourth-000-fifth-032",
+      "position": "first_quartile",
+      "proof_sha256": "7dc2a001f3244d75496a6f62bae2d34b4078385b417e78dac5c430f6d0a34351",
+      "status": "UNSAT_REPLAYED"
+    },
+    {
+      "compressed_bytes": 112711,
+      "id": "intersection-4-third-04-fourth-000-fifth-064",
+      "position": "midpoint",
+      "proof_sha256": "9066e28eaae20163af12142662ff5199372da7e352f44ee9954e21165e347282",
+      "status": "UNSAT_REPLAYED"
+    },
+    {
+      "id": "intersection-4-third-04-fourth-001-fifth-000",
+      "position": "orbit_zero",
+      "status": "FIXED_CAP_TIMEOUT"
+    },
+    {
+      "id": "intersection-4-third-04-fourth-001-fifth-001",
+      "position": "orbit_one",
+      "status": "FIXED_CAP_TIMEOUT"
+    },
+    {
+      "compressed_bytes": 553245,
+      "id": "intersection-4-third-04-fourth-001-fifth-022",
+      "position": "first_quartile",
+      "proof_sha256": "86ca433761c21ead158498482bf08ea6f6c5ce4bbfb6a0e70ef4c88cdff6d814",
+      "status": "UNSAT_REPLAYED"
+    },
+    {
+      "compressed_bytes": 112729,
+      "id": "intersection-4-third-04-fourth-001-fifth-045",
+      "position": "midpoint",
+      "proof_sha256": "031578a5525885307e4dd276696fd710b6dbf4bf0f48f7656030fb5fe6d01497",
+      "status": "UNSAT_REPLAYED"
+    },
+    {
+      "id": "intersection-4-third-04-fourth-003-fifth-000",
+      "position": "orbit_zero",
+      "status": "FIXED_CAP_TIMEOUT"
+    },
+    {
+      "id": "intersection-4-third-04-fourth-003-fifth-001",
+      "position": "orbit_one",
+      "status": "FIXED_CAP_TIMEOUT"
+    },
+    {
+      "compressed_bytes": 110084,
+      "id": "intersection-4-third-04-fourth-003-fifth-050",
+      "position": "first_quartile",
+      "proof_sha256": "19b1eb6b321bcaa21b7fe7a2837478c6b52a6c00242b3eaf6b8a76f952f6fb54",
+      "status": "UNSAT_REPLAYED"
+    },
+    {
+      "compressed_bytes": 110360,
+      "id": "intersection-4-third-04-fourth-003-fifth-101",
+      "position": "midpoint",
+      "proof_sha256": "6e3d13564e9a24920f7fe5c844b2d0a542a87c27d46782785e862f89b07678b3",
+      "status": "UNSAT_REPLAYED"
+    },
+    {
+      "compressed_bytes": 109457,
+      "id": "intersection-4-third-04-fourth-020-fifth-000",
+      "position": "orbit_zero",
+      "proof_sha256": "45262de6e784dc912ac70645c647aeab2626448fd62217257b1b5ee05f60276a",
+      "status": "UNSAT_REPLAYED"
+    },
+    {
+      "compressed_bytes": 109462,
+      "id": "intersection-4-third-04-fourth-020-fifth-001",
+      "position": "orbit_one",
+      "proof_sha256": "07501f96e903443cbf523cf1a7d92d45cd4068ec29425fa1867bd2f1adfa96dd",
+      "status": "UNSAT_REPLAYED"
+    },
+    {
+      "compressed_bytes": 109512,
+      "id": "intersection-4-third-04-fourth-020-fifth-022",
+      "position": "first_quartile",
+      "proof_sha256": "2bbaba7186f0645c02c89419dfe86c7923947d8f14af928f61d6a9642e7a8074",
+      "status": "UNSAT_REPLAYED"
+    },
+    {
+      "compressed_bytes": 109623,
+      "id": "intersection-4-third-04-fourth-020-fifth-044",
+      "position": "midpoint",
+      "proof_sha256": "a2d2d777d544c0263b8350fe99aa2d6c030ebd51580ab750de01ad2e004cf0c2",
+      "status": "UNSAT_REPLAYED"
+    },
+    {
+      "id": "intersection-4-third-05-fourth-001-fifth-000",
+      "position": "orbit_zero",
+      "status": "FIXED_CAP_TIMEOUT"
+    },
+    {
+      "id": "intersection-4-third-05-fourth-001-fifth-001",
+      "position": "orbit_one",
+      "status": "FIXED_CAP_TIMEOUT"
+    },
+    {
+      "compressed_bytes": 110347,
+      "id": "intersection-4-third-05-fourth-001-fifth-020",
+      "position": "first_quartile",
+      "proof_sha256": "87f763e59f83ae87efbbed750a52445f9a946a60334f444ff945059745869680",
+      "status": "UNSAT_REPLAYED"
+    },
+    {
+      "compressed_bytes": 110593,
+      "id": "intersection-4-third-05-fourth-001-fifth-041",
+      "position": "midpoint",
+      "proof_sha256": "b6edb04c906d1d3e3da65522909611d7b2f50108a0e74ba8d086bc129a72d440",
+      "status": "UNSAT_REPLAYED"
+    },
+    {
+      "id": "intersection-4-third-05-fourth-003-fifth-000",
+      "position": "orbit_zero",
+      "status": "FIXED_CAP_TIMEOUT"
+    },
+    {
+      "id": "intersection-4-third-05-fourth-003-fifth-001",
+      "position": "orbit_one",
+      "status": "FIXED_CAP_TIMEOUT"
+    },
+    {
+      "compressed_bytes": 110376,
+      "id": "intersection-4-third-05-fourth-003-fifth-019",
+      "position": "first_quartile",
+      "proof_sha256": "b72f8ff447b22e660e96cb9f824c33c5bc36291b0e041b42e8608218703fa7c4",
+      "status": "UNSAT_REPLAYED"
+    },
+    {
+      "compressed_bytes": 110563,
+      "id": "intersection-4-third-05-fourth-003-fifth-039",
+      "position": "midpoint",
+      "proof_sha256": "ab33e51e484e5251e831b7ce3d4c85f25d4acce57e6d3fafdad5cdcfc0fedce7",
+      "status": "UNSAT_REPLAYED"
+    },
+    {
+      "compressed_bytes": 110200,
+      "id": "intersection-4-third-05-fourth-019-fifth-000",
+      "position": "orbit_zero",
+      "proof_sha256": "e79c587e472e6455dabe517b26439b6da3511a9119646a0a179c41da35e0968c",
+      "status": "UNSAT_REPLAYED"
+    },
+    {
+      "compressed_bytes": 110206,
+      "id": "intersection-4-third-05-fourth-019-fifth-001",
+      "position": "orbit_one",
+      "proof_sha256": "b67e45cdfe90c50059fe98a84c531d065d3b84ce29ef790f5637fae5867a5df1",
+      "status": "UNSAT_REPLAYED"
+    },
+    {
+      "compressed_bytes": 110246,
+      "id": "intersection-4-third-05-fourth-019-fifth-015",
+      "position": "first_quartile",
+      "proof_sha256": "556e2c4841e6b732d968339429f5e4840d2af1bc893ce1f92654ff5c0da2f9c3",
+      "status": "UNSAT_REPLAYED"
+    },
+    {
+      "compressed_bytes": 110283,
+      "id": "intersection-4-third-05-fourth-019-fifth-031",
+      "position": "midpoint",
+      "proof_sha256": "f4f11787bd5c6279ea1a9d66c246d14c88c450fc1a795c4346eade7ac75b70b4",
+      "status": "UNSAT_REPLAYED"
+    },
+    {
+      "compressed_bytes": 110240,
+      "id": "intersection-4-third-05-fourth-022-fifth-000",
+      "position": "orbit_zero",
+      "proof_sha256": "ce6ba15ba2e52f6a9f22bf8cee1f238481f1c141193d86790630ce3af1f833aa",
+      "status": "UNSAT_REPLAYED"
+    },
+    {
+      "compressed_bytes": 110245,
+      "id": "intersection-4-third-05-fourth-022-fifth-001",
+      "position": "orbit_one",
+      "proof_sha256": "dc9eac521eb644e01e3806daa5b73f8dc8354aa07decefba27a23f95bb97507b",
+      "status": "UNSAT_REPLAYED"
+    },
+    {
+      "compressed_bytes": 110265,
+      "id": "intersection-4-third-05-fourth-022-fifth-006",
+      "position": "first_quartile",
+      "proof_sha256": "6bd1cc9b951859291bcd7393a983369d6136d47bb37434e3587770af7fd20b2c",
+      "status": "UNSAT_REPLAYED"
+    },
+    {
+      "compressed_bytes": 110339,
+      "id": "intersection-4-third-05-fourth-022-fifth-012",
+      "position": "midpoint",
+      "proof_sha256": "e72c5d1713543854e7916514ab7b6b54f9197b210fb558ccbbfdd6fd52401d5f",
+      "status": "UNSAT_REPLAYED"
+    }
+  ],
+  "sample_size": 96,
+  "scale_gate_passed": true,
+  "schema_version": 1,
+  "status": "VALID",
+  "summary_sha256": "807f397a1f060391dee3d3da5e1bc1ad5c482ced911120abeb0fe42a0ae76892"
+}

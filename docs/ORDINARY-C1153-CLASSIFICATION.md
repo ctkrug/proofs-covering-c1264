@@ -75,9 +75,33 @@ produced UNSAT proofs. Together with 20 discriminator closures, all 406 measured
 independently reconstructed and externally replayed; 32 measured timeouts close nothing. There were no
 SAT candidates.
 
-The ordinary classification is still incomplete: 416 fourth-level branches remain open (384 never
-measured and 32 fixed-cap timeouts), all in the early half of their parent partitions. The next tranche
-must split that hard prefix structurally or certify its later part cheaply; it must not infer a parent
-closure from the 406 subcase certificates. Consequently the conditional twenty-way C(12,6,4) residual
+An independent ledger reconciliation corrected the earlier arithmetic: 384 fourth-level branches were
+open (352 never measured and 32 fixed-cap timeouts), not 416. The prior 416 statement double-counted the
+32 timeouts. The audited identity is exactly 790 = 406 replay-closed + 32 timed out + 352 unmeasured.
+Consequently the conditional twenty-way C(12,6,4) residual
 family is still not promoted to an exhaustive theorem case set, and the global C(12,6,4) frontier ledger
 remains 33/47.
+
+## Fifth-level review gate (2026-07-22)
+
+All 384 corrected open fourth cases were augmented by a fifth selected block under the stabilizer of
+their four fixed blocks. The compact partition contains 43,319 branches and stores only cached-parent
+bindings, orbit member lists, and unit-clause recipes. A separate checker classified blocks by their
+membership counts in the four-block point cells rather than replaying the builder's permutation
+enumeration. It verified all 384 parents, all 43,319 branches, and first-present orbit coverage and
+disjointness.
+
+The frozen proof discriminator selected 24 parents: six branch-count quantiles from each prior-status by
+top-parent stratum. It tested orbit zero, orbit one, first quartile, and midpoint in each parent, for 96
+cases at five seconds with four-way parallelism. Independent exact-CNF reconstruction and external replay
+certified 64 UNSAT results; 32 timed out and no SAT witness appeared. By position: orbit zero 10/24,
+orbit one 9/24, first quartile 21/24, and midpoint 24/24 replay-closed. Verified proofs occupy 11,330,604
+compressed bytes; the 45 verified quartile-or-midpoint proofs average 135,446 bytes.
+
+The predeclared suffix gate passes: 45/48 suffix samples exceed the required 39/48, proof size is far below
+1 MiB mean, the sample stays below 64 MiB, and every proof replays. The early deeper-split trigger does not
+pass because only 29/48, not 36/48, early samples timed out. No fourth parent is closed by four sampled
+children. Exactly 43,255 fifth branches remain open, and all 384 fourth parents remain open. Scaling every
+branch from the first quartile onward would cover 32,645 branches and projects to roughly 8--12 host-hours
+and about 4.2 GiB of compressed proofs at observed throughput; it therefore requires segmented storage and
+review rather than an automatic bulk launch.

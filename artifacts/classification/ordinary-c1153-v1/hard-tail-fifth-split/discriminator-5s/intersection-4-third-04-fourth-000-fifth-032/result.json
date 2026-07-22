@@ -1,0 +1,40 @@
+{
+  "checker": {
+    "path": ".venv/sat-audit-tools/drat-trim/drat-trim",
+    "sha256": "f58f63b0f76945d4c4c9ff6e87afaf870f579e67c0f7cca589492df8fc7ebd47"
+  },
+  "exact_cnf_clauses": 46353,
+  "exact_cnf_sha256": "b0d618852e7f6ffa9c0760a1057fb1a8182309e7ef9b00b87202e73a98436e63",
+  "exact_cnf_variables": 10166,
+  "fifth_index": 32,
+  "fifth_unit_sha256": "f28a6daae0b6feaeaf1f528bee18a9b05d48328abb710c31d0ed21f767039b2f",
+  "fourth_parent_id": "intersection-4-third-04-fourth-000",
+  "inherited_fourth_unit_sha256": "5378796307535df3ec8d8b15a2e2dc5641419c3d3060cfe32238c0fa973f7aa3",
+  "leaf_id": "intersection-4-third-04-fourth-000-fifth-032",
+  "parent_cnf_sha256": "983b3fa968eb4041be756d38eccd03529f117b39cccbe2f7e3aa3d81978d15f1",
+  "proof": {
+    "compressed_bytes": 449080,
+    "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-fifth-split/discriminator-5s/intersection-4-third-04-fourth-000-fifth-032/proof.drat.gz",
+    "sha256": "7dc2a001f3244d75496a6f62bae2d34b4078385b417e78dac5c430f6d0a34351",
+    "uncompressed_bytes": 1464734,
+    "uncompressed_sha256": "7a81354db8dfa28da15895f166b28afc2c04e3504d859656f9235e11807cfa89"
+  },
+  "replay_log": {
+    "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-fifth-split/discriminator-5s/intersection-4-third-04-fourth-000-fifth-032/replay.log",
+    "sha256": "33450c9b4ecc71da580f6ded0a061774050a6e01d6565143c9b1a7dc6510b069"
+  },
+  "schema_version": 1,
+  "seconds_cap": 5,
+  "solver_elapsed_seconds": 0.42566837498452514,
+  "solver_log": {
+    "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-fifth-split/discriminator-5s/intersection-4-third-04-fourth-000-fifth-032/solver.log",
+    "sha256": "bde6e1eede96772c07c8ce29fd18088863815bd043aa59a06f11f5838cf8a162"
+  },
+  "status": "UNSAT_VERIFIED",
+  "stratum": {
+    "branch_count": 128,
+    "position": "first_quartile",
+    "prior_status": "FIXED_CAP_TIMEOUT",
+    "top_parent": "intersection-4"
+  }
+}
