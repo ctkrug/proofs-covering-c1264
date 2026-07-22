@@ -1,0 +1,193 @@
+{
+  "action": {
+    "fixed_point": 1,
+    "group": "C2 wr S5",
+    "group_order": 3840,
+    "preserved_pairs": [
+      [
+        2,
+        3
+      ],
+      [
+        4,
+        5
+      ],
+      [
+        6,
+        7
+      ],
+      [
+        8,
+        9
+      ],
+      [
+        10,
+        11
+      ]
+    ]
+  },
+  "canonical_blocks": [
+    [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    [
+      1,
+      2,
+      3,
+      6,
+      8
+    ],
+    [
+      1,
+      2,
+      3,
+      7,
+      10
+    ],
+    [
+      1,
+      2,
+      3,
+      9,
+      11
+    ],
+    [
+      1,
+      4,
+      5,
+      6,
+      8
+    ],
+    [
+      1,
+      4,
+      5,
+      7,
+      10
+    ],
+    [
+      1,
+      4,
+      5,
+      9,
+      11
+    ],
+    [
+      1,
+      6,
+      7,
+      8,
+      10
+    ],
+    [
+      1,
+      6,
+      8,
+      9,
+      11
+    ],
+    [
+      1,
+      7,
+      9,
+      10,
+      11
+    ],
+    [
+      2,
+      4,
+      6,
+      7,
+      9
+    ],
+    [
+      2,
+      4,
+      6,
+      10,
+      11
+    ],
+    [
+      2,
+      4,
+      8,
+      9,
+      10
+    ],
+    [
+      2,
+      5,
+      6,
+      9,
+      10
+    ],
+    [
+      2,
+      5,
+      7,
+      8,
+      11
+    ],
+    [
+      3,
+      4,
+      6,
+      9,
+      10
+    ],
+    [
+      3,
+      4,
+      7,
+      8,
+      11
+    ],
+    [
+      3,
+      5,
+      6,
+      7,
+      11
+    ],
+    [
+      3,
+      5,
+      7,
+      8,
+      9
+    ],
+    [
+      3,
+      5,
+      8,
+      10,
+      11
+    ]
+  ],
+  "canonical_sha256": "67d803aa141d828b4f2911c4a9f8199b1f26f4141a96a0e3a31b78b773de3468",
+  "claim_limit": "Exactly classifies only the supplied link under the stated 3,840-element group. It does not count or exhaust all C(11,5,3) links and does not settle C(12,6,4).",
+  "elapsed_seconds": 0.3615758750238456,
+  "orbit_blocking_cnf": {
+    "bytes": 30982,
+    "clauses": 320,
+    "literals_per_clause": 20,
+    "path": "artifacts/pilot/link-orbit-root1-secondary-8-60s/orbit-blocking.cnf",
+    "sha256": "07a64ec81426240c08d2bbf455fe91449f16a6b118537956a960f8c4dfdcac73",
+    "soundness_basis": "Each clause negates the 20 selected blocks of one orbit image. Exact degree constraints force every feasible link to contain exactly 20 blocks, so the clause excludes exactly that image within the intended link formulation.",
+    "variables": 462
+  },
+  "orbit_size": 320,
+  "schema_version": 1,
+  "source": {
+    "bytes": 218,
+    "path": "artifacts/pilot/link-orbit-root1-secondary-8-60s/witness.txt",
+    "sha256": "bfa9f0c47dde379e49acd296ee973497cce13837fe363f3c03297e2ff12ed743"
+  },
+  "stabilizer_order": 12,
+  "status": "exact-single-link-orbit",
+  "transformations_checked": 3840
+}

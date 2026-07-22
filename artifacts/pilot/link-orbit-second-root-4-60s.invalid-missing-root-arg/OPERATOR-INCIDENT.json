@@ -1,0 +1,7 @@
+{
+  "schema_version": 1,
+  "status": "invalidated_run_label",
+  "detail": "The command omitted --root-index 4 and therefore repeated the no-root formulation. The 60-second UNKNOWN result has no root-4 meaning.",
+  "mathematical_result": "none",
+  "corrective_action": "Preserve this receipt and rerun with --root-index 4; require result.root_partition.index == 4."
+}

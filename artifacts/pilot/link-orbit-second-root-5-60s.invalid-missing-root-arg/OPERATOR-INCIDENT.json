@@ -1,0 +1,7 @@
+{
+  "schema_version": 1,
+  "status": "invalidated_interrupted_run",
+  "detail": "The command omitted --root-index 5 and began a second no-root formulation. It was interrupted after the omission was detected and has no result receipt.",
+  "mathematical_result": "none",
+  "corrective_action": "Preserve this incident and rerun with --root-index 5; require result.root_partition.index == 5."
+}

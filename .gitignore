@@ -15,3 +15,5 @@ lab-queue/*.running.json
 # Regenerable solver instances and proof streams are represented by a hash manifest.
 artifacts/**/*.cnf
 artifacts/**/*.drat
+# Raw solver/checker streams are local evidence inputs; compact JSON receipts retain their hashes.
+artifacts/**/*.log

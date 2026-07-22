@@ -1,0 +1,9 @@
+{
+  "schema_version": 1,
+  "status": "invalidated_proof",
+  "solver_verdict": "UNSAT_ONE_LINK",
+  "checker_verdict": "s NOT VERIFIED",
+  "checker_detail": "drat-trim reported no conflict",
+  "mathematical_result": "UNKNOWN until a separately streamed proof replays",
+  "corrective_action": "Run the exact hash-bound CNF with a pinned external CaDiCaL binary that streams its proof directly, then replay with the independent drat-trim binary."
+}

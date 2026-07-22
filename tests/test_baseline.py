@@ -20,6 +20,8 @@ def load(name: str, path: Path):
 checker = load("verify_cover", ROOT / "checkers" / "verify_cover.py")
 builder = load("build_pilot_instances", ROOT / "scripts" / "build_pilot_instances.py")
 auditor = load("audit_pilot_instance", ROOT / "checkers" / "audit_pilot_instance.py")
+cube_builder = load("build_cube_frontier", ROOT / "scripts" / "build_cube_frontier.py")
+cube_auditor = load("audit_cube_frontier", ROOT / "checkers" / "audit_cube_frontier.py")
 
 
 class BaselineTests(unittest.TestCase):
@@ -68,6 +70,28 @@ class BaselineTests(unittest.TestCase):
         self.assertIn("process.join(seconds)", text)
         self.assertIn("UNKNOWN is inconclusive", text)
         self.assertIn("overlapping auxiliary-variable range", text)
+
+    def test_cube_frontier_is_complete_and_hash_bound(self) -> None:
+        with tempfile.TemporaryDirectory() as raw:
+            cnf = Path(raw) / "instance.cnf"
+            cnf.write_text("p cnf 1 0\n")
+            manifest = Path(raw) / "frontier.json"
+            manifest.write_text(__import__("json").dumps(cube_builder.build("r0-present", 4, cnf)))
+            result = cube_auditor.audit(manifest, cnf)
+        self.assertEqual(result["cube_count"], 16)
+        self.assertEqual(result["status"], "valid")
+
+    def test_link_residual_script_is_bounded_and_claim_limited(self) -> None:
+        text = (ROOT / "scripts" / "run_link_residual_pilot.py").read_text()
+        self.assertIn("process.join(args.seconds)", text)
+        self.assertIn("UNSAT excludes only this link", text)
+        self.assertIn("overlapping auxiliary-variable range", text)
+
+    def test_external_solver_wrapper_is_bounded_and_claim_limited(self) -> None:
+        text = (ROOT / "scripts" / "run_external_cadical.py").read_text()
+        self.assertIn("timeout=args.seconds + 30", text)
+        self.assertIn("independently replayed", text)
+        self.assertIn("pre-existing immutable output", text)
 
 
 if __name__ == "__main__":

@@ -1,0 +1,112 @@
+{
+  "auxiliary_ranges": [
+    {
+      "first": 463,
+      "last": 4462,
+      "purpose": "point-1-equals-10"
+    },
+    {
+      "first": 4463,
+      "last": 8080,
+      "purpose": "point-2-equals-9"
+    },
+    {
+      "first": 8081,
+      "last": 11698,
+      "purpose": "point-3-equals-9"
+    },
+    {
+      "first": 11699,
+      "last": 15316,
+      "purpose": "point-4-equals-9"
+    },
+    {
+      "first": 15317,
+      "last": 18934,
+      "purpose": "point-5-equals-9"
+    },
+    {
+      "first": 18935,
+      "last": 22552,
+      "purpose": "point-6-equals-9"
+    },
+    {
+      "first": 22553,
+      "last": 26170,
+      "purpose": "point-7-equals-9"
+    },
+    {
+      "first": 26171,
+      "last": 29788,
+      "purpose": "point-8-equals-9"
+    },
+    {
+      "first": 29789,
+      "last": 33406,
+      "purpose": "point-9-equals-9"
+    },
+    {
+      "first": 33407,
+      "last": 37024,
+      "purpose": "point-10-equals-9"
+    },
+    {
+      "first": 37025,
+      "last": 40642,
+      "purpose": "point-11-equals-9"
+    }
+  ],
+  "blocking_cnf": {
+    "bytes": 125487,
+    "path": "artifacts/pilot/link-orbit-catalog-3-blocking.cnf",
+    "sha256": "2ed16dac670d94d74c5e05a0012e74ed7ed6abd424d5bf9e744319901ef48d7b"
+  },
+  "build_seconds": 1.1527818749891594,
+  "claim_limit": "SAT plus an independent direct witness/orbit check establishes another link orbit. UNSAT is provisional pending a replayed proof and independent source-to-CNF audit. UNKNOWN is inconclusive.",
+  "clauses": 82278,
+  "cnf": {
+    "bytes": 1466043,
+    "path": "artifacts/pilot/link-orbit-root0-secondary-37-10s/instance.cnf",
+    "sha256": "e50275895b4d7e6513c6662b7ee9810a96e3f7e92911a2248938e9f061f72f22"
+  },
+  "coverage_constraints": 165,
+  "detail": "",
+  "exact_degree_constraints": 11,
+  "formulation": "no-fixed-block exact-degree C(11,5,3) link",
+  "orbit_blocking_clauses": 1296,
+  "primary_variables": 462,
+  "root_partition": {
+    "canonical_block": [
+      1,
+      2,
+      4,
+      6,
+      8
+    ],
+    "canonical_variable": 36,
+    "earlier_orbit_variables_forced_false": 0,
+    "index": 0,
+    "orbit_size": 80,
+    "secondary": {
+      "canonical_block": [
+        3,
+        5,
+        7,
+        9,
+        10
+      ],
+      "canonical_variable": 385,
+      "earlier_orbit_variables_forced_false": 455,
+      "index": 37,
+      "orbit_size": 2,
+      "stabilizer_order": 48
+    }
+  },
+  "schema_version": 1,
+  "seconds_cap": 10,
+  "solve_elapsed_seconds": 1.2865295000374317,
+  "status": "UNSAT_PROVISIONAL",
+  "symmetry": "degree-10 point 1 fixed; no block fixed",
+  "variables": 40642,
+  "witness": null
+}

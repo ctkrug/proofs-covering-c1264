@@ -23,10 +23,15 @@ require independent verification, a novelty check, Charlie's approval, and exter
 
 ## Current scope
 
-Charlie approved the baseline, independent checkers, dual encoding skeletons, and lightweight local
-controls on 2026-07-22. Automated or substantial computation remains fail-closed until the active
-R(5,5) Phase 5 experiment has an independently validated completion receipt.
+Charlie approved the baseline, independent checkers, dual encoding skeletons, and bounded local
+pilots on 2026-07-22. The R(5,5) Phase 5 census now has an independently validated completion receipt.
+C(12,6,4) experiments remain checkpointed, resource-bounded, and claim-limited; the current pilots
+run locally so they do not contend with the droplet's Ramsey and Lean workloads.
 
-The first target is the maintained one-bit gap `40 <= C(12,6,4) <= 41`. The repository begins with
-the published 41-block control, a direct cover checker, a proof-producing pseudo-Boolean instance
-generator, and a materially different point-link instance generator. No exact-value claim is made.
+The first target is the maintained one-bit gap `40 <= C(12,6,4) <= 41`. The repository contains the
+published 41-block control, a direct cover checker, a proof-producing pseudo-Boolean instance
+generator, and a materially different point-link decomposition. Shallow direct cubing closed only
+7.8125% of a 128-cube sample and was redirected. The link route has four independently checked orbit
+classes so far; all four fail their residual extension checks with replayed external proofs. Exact
+primary, secondary, and one tertiary symmetry partition have produced 189 validated external proof
+receipts, with 47 canonical frontier nodes still open. No exact-value claim is made.

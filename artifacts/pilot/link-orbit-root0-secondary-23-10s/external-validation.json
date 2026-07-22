@@ -1,0 +1,29 @@
+{
+  "checked_at": "2026-07-22T04:09:24.728166+00:00",
+  "checker": {
+    "path": ".venv/sat-audit-tools/drat-trim/drat-trim",
+    "sha256": "f58f63b0f76945d4c4c9ff6e87afaf870f579e67c0f7cca589492df8fc7ebd47"
+  },
+  "cnf": {
+    "path": "artifacts/pilot/link-orbit-root0-secondary-23-10s/instance.cnf",
+    "sha256": "1b559b4e61360f9fda12ca58363297dcbecb8dc02ee46d8c853e66f65472ddd1"
+  },
+  "command": [
+    ".venv/sat-audit-tools/drat-trim/drat-trim",
+    "artifacts/pilot/link-orbit-root0-secondary-23-10s/instance.cnf",
+    "artifacts/pilot/link-orbit-root0-secondary-23-10s/external.drat"
+  ],
+  "exit_code": 0,
+  "log": {
+    "path": "artifacts/pilot/link-orbit-root0-secondary-23-10s/external-validation.json.log",
+    "sha256": "203fe65f695021dc771c7beff22da9895f4db8cd92a6353b80b85871d773ab1f"
+  },
+  "proof": {
+    "path": "artifacts/pilot/link-orbit-root0-secondary-23-10s/external.drat",
+    "sha256": "747820ccbb8e19d08a95699a6bb93493f3db017ddedc7238d7a9db5542c7633b"
+  },
+  "schema_version": 1,
+  "seconds_cap": 300,
+  "status": "verified",
+  "verdict": "s VERIFIED"
+}

@@ -1,0 +1,36 @@
+{
+  "claim_limit": "UNSAT is provisional until the exact proof is independently replayed; SAT requires a direct witness check.",
+  "cnf": {
+    "bytes": 1464642,
+    "path": "artifacts/pilot/link-orbit-root0-secondary-0-tertiary-69-2s/instance.cnf",
+    "sha256": "9aefd5dfcedeb5fe4898a0e681d5ba2412ea0e9bc74f5a92dff6ce436978773c"
+  },
+  "command": [
+    ".venv/sat-audit-tools/cadical/build/cadical",
+    "-t",
+    "120",
+    "--no-binary",
+    "artifacts/pilot/link-orbit-root0-secondary-0-tertiary-69-2s/instance.cnf",
+    "artifacts/pilot/link-orbit-root0-secondary-0-tertiary-69-2s/external.drat"
+  ],
+  "completed_at": "2026-07-22T04:24:28.122363+00:00",
+  "elapsed_seconds": 0.6961055420106277,
+  "exit_code": 20,
+  "log": {
+    "bytes": 4283,
+    "path": "artifacts/pilot/link-orbit-root0-secondary-0-tertiary-69-2s/external-solver.json.log",
+    "sha256": "954c37e152236d348789fa514f7edd1729c2d483d34f483f1e0860d4c9c2b72b"
+  },
+  "proof": {
+    "bytes": 48014,
+    "path": "artifacts/pilot/link-orbit-root0-secondary-0-tertiary-69-2s/external.drat",
+    "sha256": "2f37a032fea0826fa031e59cdeaa73a4659011233efc92daad1a772e3694c5cc"
+  },
+  "schema_version": 1,
+  "seconds_cap": 120,
+  "solver": {
+    "path": ".venv/sat-audit-tools/cadical/build/cadical",
+    "sha256": "d2f7e3fc9577de8548125b11c7c37772df32438bf86ffdadb9f45a11e643dd64"
+  },
+  "status": "UNSAT_PROVISIONAL"
+}

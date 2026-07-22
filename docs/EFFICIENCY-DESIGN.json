@@ -28,5 +28,31 @@
   "yellow_gate": "20-80% sampled cubes close or projection is 250-1000 core-hours; permit one bounded redesign tranche",
   "red_gate": "semantic disagreement, orbit/proof-replay failure, projection above 1000 core-hours after redesign, or proof growth above 30 GB",
   "resource_gate": "do not compete with the active R(5,5) census or residual SAT on the droplet",
+  "link_orbit_redesign": {
+    "naive_cost": "choose 20 of 462 point-link blocks, approximately 5.315e34 subsets",
+    "symmetry_reduction": "fix the degree-10 point and its matched partner, leaving the exact C2 wr S5 action of order 3840; canonicalize and block complete link orbits",
+    "first_measured_orbit": {
+      "orbit_size": 320,
+      "stabilizer_order": 12,
+      "blocking_clauses": 320
+    },
+    "measured_canonical_augmentation": {
+      "primary_root_orbit_sizes": [80, 120, 10, 32, 160, 60],
+      "root_0_secondary_cases": 39,
+      "root_0_secondary_validated_unsat": 32,
+      "root_1_secondary_cases": 68,
+      "root_1_secondary_validated_unsat": 60,
+      "root_0_secondary_0_tertiary_cases": 122,
+      "root_0_secondary_0_tertiary_validated_unsat": 89,
+      "cataloged_full_group_orbits": 4,
+      "validated_external_proof_receipts": 189,
+      "open_frontier_nodes": 47
+    },
+    "incremental_constraints": "retain the same 165 triple-cover and 11 exact-degree constraints while appending only independently rebuilt primary-variable orbit blockers",
+    "soundness_basis": "the no-fixed-block exact-degree link formulation is independently audited at the OPB level; every SAT witness is checked directly, and UNSAT remains provisional until the exact CNF has a replayed proof plus a source-to-CNF audit",
+    "checkpoint_unit": "one newly canonicalized link orbit and its full hash-bound blocking clause set",
+    "next_gate": "run one bounded second-orbit discriminator; SAT permits a checkpointed orbit-enumeration tranche, UNKNOWN redirects encoding, and UNSAT requires proof replay and an independent CNF semantic audit before an exhaustiveness claim",
+    "uncompressed_remainder": "all feasible exact-degree links outside the single 320-member orbit already blocked"
+  },
   "decision_value": "either settle an exact classical covering number or produce reusable proof-producing covering-design infrastructure"
 }

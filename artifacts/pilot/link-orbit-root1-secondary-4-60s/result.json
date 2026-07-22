@@ -1,0 +1,116 @@
+{
+  "auxiliary_ranges": [
+    {
+      "first": 463,
+      "last": 4462,
+      "purpose": "point-1-equals-10"
+    },
+    {
+      "first": 4463,
+      "last": 8080,
+      "purpose": "point-2-equals-9"
+    },
+    {
+      "first": 8081,
+      "last": 11698,
+      "purpose": "point-3-equals-9"
+    },
+    {
+      "first": 11699,
+      "last": 15316,
+      "purpose": "point-4-equals-9"
+    },
+    {
+      "first": 15317,
+      "last": 18934,
+      "purpose": "point-5-equals-9"
+    },
+    {
+      "first": 18935,
+      "last": 22552,
+      "purpose": "point-6-equals-9"
+    },
+    {
+      "first": 22553,
+      "last": 26170,
+      "purpose": "point-7-equals-9"
+    },
+    {
+      "first": 26171,
+      "last": 29788,
+      "purpose": "point-8-equals-9"
+    },
+    {
+      "first": 29789,
+      "last": 33406,
+      "purpose": "point-9-equals-9"
+    },
+    {
+      "first": 33407,
+      "last": 37024,
+      "purpose": "point-10-equals-9"
+    },
+    {
+      "first": 37025,
+      "last": 40642,
+      "purpose": "point-11-equals-9"
+    }
+  ],
+  "blocking_cnf": {
+    "bytes": 125487,
+    "path": "artifacts/pilot/link-orbit-catalog-3-blocking.cnf",
+    "sha256": "2ed16dac670d94d74c5e05a0012e74ed7ed6abd424d5bf9e744319901ef48d7b"
+  },
+  "build_seconds": 1.2518502920283936,
+  "claim_limit": "SAT plus an independent direct witness/orbit check establishes another link orbit. UNSAT is provisional pending a replayed proof and independent source-to-CNF audit. UNKNOWN is inconclusive.",
+  "clauses": 81916,
+  "cnf": {
+    "bytes": 1463553,
+    "path": "artifacts/pilot/link-orbit-root1-secondary-4-60s/instance.cnf",
+    "sha256": "f2047c59937993610701358cb14ff70550f34cd65121de007acd583388dd09f2"
+  },
+  "coverage_constraints": 165,
+  "detail": "",
+  "exact_degree_constraints": 11,
+  "formulation": "no-fixed-block exact-degree C(11,5,3) link",
+  "orbit_blocking_clauses": 1296,
+  "primary_variables": 462,
+  "root_partition": {
+    "canonical_block": [
+      1,
+      2,
+      3,
+      4,
+      6
+    ],
+    "canonical_variable": 2,
+    "earlier_orbit_variables_forced_false": 80,
+    "index": 1,
+    "orbit_size": 120,
+    "secondary": {
+      "canonical_block": [
+        1,
+        2,
+        3,
+        5,
+        8
+      ],
+      "canonical_variable": 10,
+      "earlier_orbit_variables_forced_false": 13,
+      "index": 4,
+      "orbit_size": 8,
+      "stabilizer_order": 32
+    }
+  },
+  "schema_version": 1,
+  "seconds_cap": 60,
+  "solve_elapsed_seconds": 58.44053575000726,
+  "status": "SAT_NEW_ORBIT",
+  "symmetry": "degree-10 point 1 fixed; no block fixed",
+  "variables": 40642,
+  "witness": {
+    "bytes": 218,
+    "path": "artifacts/pilot/link-orbit-root1-secondary-4-60s/witness.txt",
+    "sha256": "b5da1992a615acce12e2d7869a39450588378f9c7671a4b867c0df510abff33a"
+  }
+}

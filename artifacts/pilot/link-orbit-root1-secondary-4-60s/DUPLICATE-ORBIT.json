@@ -1,0 +1,10 @@
+{
+  "schema_version": 1,
+  "status": "duplicate_existing_orbit",
+  "witness_sha256": "b5da1992a615acce12e2d7869a39450588378f9c7671a4b867c0df510abff33a",
+  "existing_orbit_witness_sha256": "bfa9f0c47dde379e49acd296ee973497cce13837fe363f3c03297e2ff12ed743",
+  "shared_canonical_sha256": "67d803aa141d828b4f2911c4a9f8199b1f26f4141a96a0e3a31b78b773de3468",
+  "expected_rejection_log_sha256": "4bd083ff2b0efe36d169b7a40d04a457256fa35f19d00c609fbbe9f821ad7562",
+  "catalog_action": "none; retain four distinct link orbits",
+  "design_note": "Secondary roots are disjoint labeled SAT cases but can contain different representatives of the same full C2 wr S5 link orbit. Every SAT witness must be canonicalized against the full catalog before adding an orbit."
+}

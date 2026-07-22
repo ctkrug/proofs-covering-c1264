@@ -1,0 +1,85 @@
+{
+  "auxiliary_ranges": [
+    {
+      "first": 463,
+      "last": 4462,
+      "purpose": "point-1-equals-10"
+    },
+    {
+      "first": 4463,
+      "last": 8080,
+      "purpose": "point-2-equals-9"
+    },
+    {
+      "first": 8081,
+      "last": 11698,
+      "purpose": "point-3-equals-9"
+    },
+    {
+      "first": 11699,
+      "last": 15316,
+      "purpose": "point-4-equals-9"
+    },
+    {
+      "first": 15317,
+      "last": 18934,
+      "purpose": "point-5-equals-9"
+    },
+    {
+      "first": 18935,
+      "last": 22552,
+      "purpose": "point-6-equals-9"
+    },
+    {
+      "first": 22553,
+      "last": 26170,
+      "purpose": "point-7-equals-9"
+    },
+    {
+      "first": 26171,
+      "last": 29788,
+      "purpose": "point-8-equals-9"
+    },
+    {
+      "first": 29789,
+      "last": 33406,
+      "purpose": "point-9-equals-9"
+    },
+    {
+      "first": 33407,
+      "last": 37024,
+      "purpose": "point-10-equals-9"
+    },
+    {
+      "first": 37025,
+      "last": 40642,
+      "purpose": "point-11-equals-9"
+    }
+  ],
+  "blocking_cnf": {
+    "bytes": 31030,
+    "path": "artifacts/pilot/link-orbit-known-control-blocking.cnf",
+    "sha256": "3677377c6a26d563af8b5469353213ef8e8bf0ffa08861ed3b30e232b17d489f"
+  },
+  "build_seconds": 3.260085459041875,
+  "claim_limit": "SAT plus an independent direct witness/orbit check establishes another link orbit. UNSAT is provisional pending a replayed proof and independent source-to-CNF audit. UNKNOWN is inconclusive.",
+  "clauses": 80845,
+  "cnf": {
+    "bytes": 1368498,
+    "path": "artifacts/pilot/link-orbit-second-discriminator-300s/instance.cnf",
+    "sha256": "9a2698cd04029e36ce49e2079edbc4dfeac7ebbfc07df32daf1171d5b76a8cab"
+  },
+  "coverage_constraints": 165,
+  "detail": "wall-clock cap reached",
+  "exact_degree_constraints": 11,
+  "formulation": "no-fixed-block exact-degree C(11,5,3) link",
+  "orbit_blocking_clauses": 320,
+  "primary_variables": 462,
+  "schema_version": 1,
+  "seconds_cap": 300,
+  "solve_elapsed_seconds": 300.03627708298154,
+  "status": "UNKNOWN",
+  "symmetry": "degree-10 point 1 fixed; no block fixed",
+  "variables": 40642,
+  "witness": null
+}

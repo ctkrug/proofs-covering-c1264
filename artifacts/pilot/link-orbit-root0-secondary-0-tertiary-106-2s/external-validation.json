@@ -1,0 +1,29 @@
+{
+  "checked_at": "2026-07-22T04:20:56.138218+00:00",
+  "checker": {
+    "path": ".venv/sat-audit-tools/drat-trim/drat-trim",
+    "sha256": "f58f63b0f76945d4c4c9ff6e87afaf870f579e67c0f7cca589492df8fc7ebd47"
+  },
+  "cnf": {
+    "path": "artifacts/pilot/link-orbit-root0-secondary-0-tertiary-106-2s/instance.cnf",
+    "sha256": "74187387bd33f6455131f5539fe63974475d4a52a44ea3197c2fa42fb923ae77"
+  },
+  "command": [
+    ".venv/sat-audit-tools/drat-trim/drat-trim",
+    "artifacts/pilot/link-orbit-root0-secondary-0-tertiary-106-2s/instance.cnf",
+    "artifacts/pilot/link-orbit-root0-secondary-0-tertiary-106-2s/external.drat"
+  ],
+  "exit_code": 0,
+  "log": {
+    "path": "artifacts/pilot/link-orbit-root0-secondary-0-tertiary-106-2s/external-validation.json.log",
+    "sha256": "8d3380ac30db13c5d2ea5da59ce632a7669ab2214d0ed48d8964a024e9f26ea0"
+  },
+  "proof": {
+    "path": "artifacts/pilot/link-orbit-root0-secondary-0-tertiary-106-2s/external.drat",
+    "sha256": "1780272c28fb9b12f0bbb91248e495d3f857dbd8e311838eb21e6d94d2f55ddc"
+  },
+  "schema_version": 1,
+  "seconds_cap": 300,
+  "status": "verified",
+  "verdict": "s VERIFIED"
+}
