@@ -10,8 +10,8 @@
     "A candidate is not a solution until independent and human review are recorded.",
     "Restating a known reduction, checking examples, or giving an unproved key lemma is not terminal success."
   ],
-  "epoch_count": 1,
-  "last_updated": "2026-07-22T13:15:09.478653+00:00",
+  "epoch_count": 2,
+  "last_updated": "2026-07-22T15:12:54.586824+00:00",
   "baseline_review": {
     "status": "complete",
     "reviewed_at": "2026-07-22T13:15:09.478653+00:00",
@@ -22,7 +22,7 @@
     "leads_recorded": 3,
     "requirement": "Repeat when the authoritative status changes materially or the baseline is explicitly invalidated."
   },
-  "synthesis_summary": "The mandatory baseline is complete. The designated current source still reports 40 <= C(12,6,4) <= 41; the preserved 41-block witness covers all 495 four-subsets. A deterministic producer and materially different bitmask checker established the exact forced perfect-matching quotient and two-root split for any hypothetical 40-cover. No frontier search was run and the exact value remains open. The audit also found that this checkout lacks DRAT-trim, so historical Mac proof receipts cannot yet be freshly replayed here.",
+  "synthesis_summary": "Attempt retained without durable claim projection because its evidence receipt did not validate: Proof replay is now portable, a fresh nontrivial inherited CNF proof replayed, and the missing 1,616-clause four-orbit blocker was exactly reconstructed. The matched encoding preflight passed: kmtotalizer has 20,160 fewer auxiliaries and 853 more clauses with an identical audited core. The full benchmark is running as lab job lab-covering-c1264-e9221dfd02b3; none of its live outputs is claimed here. The exact covering number remains open.",
   "established_facts": [
     {
       "claim": "The preserved 41-block witness covers all 495 four-subsets.",
@@ -199,7 +199,8 @@
     "source_attempt_id": "covering-c1264-20260722-131509-6394f5"
   },
   "recent_attempt_ids": [
-    "covering-c1264-20260722-131509-6394f5"
+    "covering-c1264-20260722-131509-6394f5",
+    "covering-c1264-20260722-151254-64a392"
   ],
   "tactical_memory": {
     "current_bottleneck": "Before testing the 47-node inherited link frontier, restore and control-test a pinned project-scoped proof checker; after that, propagation strength of the cardinality encoding is the main measured uncertainty.",
