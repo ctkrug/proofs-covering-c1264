@@ -1,0 +1,55 @@
+{
+  "event": "submitted",
+  "schema_version": 2,
+  "id": "lab-covering-c1264-d1b2473adc75",
+  "problem_id": "covering-c1264",
+  "name": "Exact residual extension tests for link orbits 8 and 9",
+  "hypothesis": "One of the two newly validated point-link orbits may extend to a directly verifiable 40-block cover; otherwise replayed UNSAT will exclude each orbit locally.",
+  "expected_signal": "Exactly two fixed-link results at 300 seconds each, with direct cover verification for SAT and reconstructed CNF plus replayable proof for UNSAT.",
+  "decision_value": "A verified SAT settles C(12,6,4)=40; two replayed UNSAT results establish durable local nonextensions and return attention to the 12-case hard tail.",
+  "efficiency_design": {
+    "naive_cost": "Returning immediately to the 12-node exclusion hard tail could spend at least 720 solver-seconds without testing whether either new orbit supplies a decisive positive 40-cover.",
+    "opportunities_considered": [
+      "Exact fixed-link residual extension for each of the two new orbits.",
+      "A stratified three-node nine-orbit frontier discriminator.",
+      "Generic constructive local search.",
+      "Uniform timeout increases or kmtotalizer."
+    ],
+    "chosen_reductions": "Condition on each independently validated 20-block point link, leaving only the exact residual 20-block completion problem. Test exactly two representatives and stop immediately on SAT.",
+    "expected_throughput_gain": "Two conditioned residual searches directly test theorem-settling witnesses in at most 600 solver-seconds and avoid unrelated frontier or generic local-search work.",
+    "soundness_basis": "Both point links passed fresh direct validation and complete C2 wr S5 canonicalization. SAT is checked directly over all 495 quadruples; UNSAT requires independent CNF reconstruction and external DRAT replay before acceptance.",
+    "remains_uncompressed": "The point-link catalogue is still not exhaustive, and the 12 genuine timeout leaves remain open if both fixed-link extensions are excluded."
+  },
+  "source_urls": [],
+  "command": [
+    "python3",
+    "scripts/run_two_new_orbit_extension_tranche.py",
+    "--manifest",
+    "artifacts/experiments/link-orbits-8-9-extension-300s-20260722/manifest.json",
+    "--checkpoint",
+    "artifacts/experiments/link-orbits-8-9-extension-300s-20260722/checkpoint.json",
+    "--progress",
+    "artifacts/experiments/link-orbits-8-9-extension-300s-20260722/progress.json"
+  ],
+  "seed": 0,
+  "segment_seconds": 700,
+  "memory_mb": 4096,
+  "max_segments": 1,
+  "segment": 1,
+  "pilot_segments": 1,
+  "review_every_segments": 1,
+  "checkpoint_path": "artifacts/experiments/link-orbits-8-9-extension-300s-20260722/checkpoint.json",
+  "progress_path": "artifacts/experiments/link-orbits-8-9-extension-300s-20260722/progress.json",
+  "continuation_thresholds": {
+    "min_throughput_per_second": 0.002,
+    "max_artifact_growth_bytes": 150000000,
+    "require_correctness_checks": true
+  },
+  "submitted_at": "2026-07-22T20:29:38.415485+00:00",
+  "workspace_git_commit": "26b96e5fee7e480d755a7eddab2548a355ce2bc3",
+  "input_sha256": {
+    "artifacts/experiments/link-orbits-8-9-extension-300s-20260722/manifest.json": "9d8724531c339b0c02a6f3a3d1f0fc0db78e9d95aa19f88c7e31740b9d5577f2",
+    "scripts/run_two_new_orbit_extension_tranche.py": "fcd74d9105b3d26046ce9cf5f290c3a769447a2a1947a01e96e4d8ac97209144"
+  },
+  "spec_sha256": "4a9b6c00265310c1eee116aa2b39467bc3f74d92c28038423f71b37d2a9c1d30"
+}
