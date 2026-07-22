@@ -6,6 +6,7 @@ from pathlib import Path
 
 from checkers.verify_certificate_portfolio import ROOT, verify
 from scripts.build_certificate_portfolio import build
+from scripts.ingest_cardinality_tranche import ingest
 
 
 class CertificatePortfolioTests(unittest.TestCase):
@@ -35,6 +36,14 @@ class CertificatePortfolioTests(unittest.TestCase):
                 verify(path)
         finally:
             path.unlink()
+
+    def test_first_tranche_ingestion_records_net_new_certificates(self):
+        manifest = ingest()
+        self.assertEqual(manifest["counts"], {"total": 47, "closed": 3, "open": 44})
+        tranche = manifest["tranches"][0]
+        self.assertEqual(tranche["newly_closed_nodes"], ["s-r0-6", "s-r1-5", "s-r1-8"])
+        self.assertEqual(tranche["method_stats"]["sequential"]["net_new_closures"], 3)
+        self.assertEqual(tranche["method_stats"]["kmtotalizer"]["net_new_closures"], 0)
 
 
 if __name__ == "__main__":

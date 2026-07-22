@@ -70,6 +70,10 @@ def verify(manifest_path: Path) -> None:
                 assert outcome.get("direct_cover_receipt") and outcome.get("canonicalization_receipt")
             else:
                 assert outcome.get("status") in {"unknown", "provisional_unsat", "provisional_sat", "error"}
+            for receipt_key in ("result_receipt", "replay_receipt", "independent_audit_receipt"):
+                receipt = outcome.get(receipt_key)
+                if receipt:
+                    assert digest(ROOT / receipt["path"]) == receipt["sha256"], f"{receipt_key} hash mismatch"
         if row["final_coverage_status"] == "closed_unsat":
             assert any(x.get("status") == "unsat_certified" for x in row["outcomes"])
         if row["final_coverage_status"] == "closed_sat":
@@ -77,6 +81,10 @@ def verify(manifest_path: Path) -> None:
 
     closed = sum(row["final_coverage_status"] != "open" for row in nodes)
     assert manifest["counts"] == {"total": 47, "closed": closed, "open": 47 - closed}
+    for tranche in manifest["tranches"]:
+        source = tranche["source_checkpoint"]
+        assert digest(ROOT / source["path"]) == source["sha256"], "tranche checkpoint hash mismatch"
+        assert tranche["cumulative_closed_out_of_47"] == f"{closed}/47"
     identity = [{key: row[key] for key in ("id", "kind", "root_index", "secondary_index",
         "tertiary_index", "source_path", "inherited_result_sha256")} for row in nodes]
     assert canonical_hash(identity) == manifest["frontier_definition_sha256"]
