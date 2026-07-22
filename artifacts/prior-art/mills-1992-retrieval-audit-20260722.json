@@ -1,0 +1,75 @@
+{
+  "schema_version": 1,
+  "audit_date": "2026-07-22",
+  "target": {
+    "authors": ["W. H. Mills"],
+    "title": "The covering number C(11,5,3)",
+    "journal": "Utilitas Mathematica",
+    "volume": 41,
+    "year": 1992,
+    "pages": "63",
+    "issn": "0315-3681"
+  },
+  "result": "FULL_TEXT_NOT_LOCATED",
+  "proof_gate": "FAIL",
+  "findings": [
+    {
+      "source": "Combinatorial Press maintained volume archive",
+      "url": "https://combinatorialpress.com/um/vol41/",
+      "result": "Bibliographic entry confirmed; no article link or full text."
+    },
+    {
+      "source": "Combinatorial Press WordPress REST record",
+      "url": "https://combinatorialpress.com/wp-json/wp/v2/um/909?_embed=1",
+      "result": "The volume record has no embedded article object, featured media, or attachment."
+    },
+    {
+      "source": "Combinatorial Press WordPress media lookup",
+      "url": "https://combinatorialpress.com/wp-json/wp/v2/media?parent=909&per_page=100",
+      "result": "Empty media list. Exact-title searches of posts, pages, media, and the UM custom post type returned only volume record 909."
+    },
+    {
+      "source": "Internet Archive advanced search",
+      "url": "https://archive.org/advancedsearch.php?q=%28title%3A%22Utilitas+Mathematica%22+OR+identifier%3Autilitasmathematica%29+AND+year%3A1992&fl%5B%5D=identifier%2Ctitle%2Cdate&rows=50&page=1&output=json",
+      "result": "Zero matching digitized volumes."
+    },
+    {
+      "source": "Crossref bibliographic search",
+      "url": "https://api.crossref.org/works?query.bibliographic=The%20covering%20number%20C%2811%2C5%2C3%29%20W%20H%20Mills&rows=10",
+      "result": "No matching registered work or DOI."
+    },
+    {
+      "source": "OpenAlex work search",
+      "url": "https://api.openalex.org/works?search=The%20covering%20number%20C%2811%2C5%2C3%29%20Mills&per-page=10",
+      "result": "No matching work or open-access location."
+    },
+    {
+      "source": "LIBRIS serial record",
+      "url": "https://libris.kb.se/bib/3651280",
+      "result": "Physical volume 41 is held by Umea University Library and Linkoping University Library; NTNU reports holdings from volume 1 onward."
+    },
+    {
+      "source": "CiNii serial record",
+      "url": "https://ci.nii.ac.jp/ncid/AA0087932X",
+      "result": "Multiple physical holdings cover volume 41, including Osaka, the Institute of Statistical Mathematics, Tohoku, Hirosaki, and Hiroshima."
+    },
+    {
+      "source": "ISSN Portal",
+      "url": "https://portal.issn.org/resource/ISSN/0315-3681",
+      "result": "Serial identity confirmed; listed digital preservation begins in 2021 and does not cover volume 41."
+    }
+  ],
+  "scope_conclusion": "No retrieved primary source states and proves that every 20-block C(11,5,3) cover is unique up to arbitrary point relabeling. The exact theorem hypotheses and equivalence notion remain unavailable.",
+  "campaign_consequence": "The 20 matching classes and their residual CNFs remain a conditional exact reduction. They are not promoted to an exhaustive case set; no direct-20 CNF is solved in this tranche; the nine-orbit frontier remains active discovery scaffolding.",
+  "retrieval_plan": [
+    "Request a scan of page 63 of Utilitas Mathematica 41 (1992) through a library holding the physical volume, citing ISSN 0315-3681 and the complete article metadata.",
+    "In parallel, request the legacy page from Combinatorial Press/current Utilitas Mathematica editorial contact, noting that the maintained archive lists the item but exposes no file.",
+    "On receipt, hash and preserve the scan, transcribe the complete one-page note, and audit whether it proves ordinary-cover uniqueness up to S_11 or only establishes the covering number/constructs one cover.",
+    "If the note does not contain a uniqueness proof, request the W. H. Mills private-communication material or independently certify the ordinary-link classification computationally."
+  ],
+  "route_switch": {
+    "promote_direct_20": "A primary proof is obtained whose hypotheses cover every ordinary 20-block C(11,5,3) cover and whose equivalence is arbitrary point relabeling, followed by an independent scope audit.",
+    "retain_conditional_only": "The Mills note proves only C(11,5,3)=20 or gives a construction without uniqueness.",
+    "replace_literature_gate": "An independent replayable exhaustive classification of ordinary 20-block C(11,5,3) covers is completed and audited."
+  }
+}
