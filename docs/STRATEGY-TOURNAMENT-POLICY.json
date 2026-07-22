@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "problem_id": "covering-c1264",
+  "effective_date": "2026-07-22",
+  "objective": "Accumulate a valid resolution with a staged tournament of materially distinct methods while spending screening compute only after semantic validation.",
+  "candidate_count": 100,
+  "stages": [
+    {
+      "id": "semantic_gate",
+      "rule": "Validate each encoding, formulation, symmetry representation, or witness transformation once against a direct checker or an independently reconstructed equivalent instance before search."
+    },
+    {
+      "id": "cheap_screen",
+      "rule": "Give each admitted candidate a fixed five-second search cap on each of eight frozen stratified leaves, or eight fixed seeds for a global constructive method. Proof replay and direct witness checking are separate validation work and do not weaken the search cap."
+    },
+    {
+      "id": "retain_net_new",
+      "rule": "Retain immediately when a method supplies at least one independently validated target not already covered by an earlier retained method. Stop after the screen when it supplies zero net-new coverage, except while completing an explicitly frozen pre-existing protocol or an assigned independent-validation control."
+    },
+    {
+      "id": "leaf_assignment",
+      "rule": "For each still-open leaf, assign only the most promising few retained methods using structural-class evidence, net-new closures per CPU-hour, proof storage, and replay reliability."
+    },
+    {
+      "id": "repeat",
+      "rule": "Repeat bounded tranches until a validated 40-block witness settles the problem or all 47 exclusion leaves have replayable certificates and independent global coverage validation."
+    }
+  ],
+  "diversity_rule": "Candidate identity is bound to an operational mechanism signature. Prompt wording is not a mechanism and cannot create a new candidate.",
+  "hardware_rule": {
+    "maximum_parallel_searches": 1,
+    "basis": "The live shared host has one useful SAT core allocation and 4 GB RAM; proof jobs remain serial so nominal parallelism cannot create contention or invalid matched budgets.",
+    "reassess_before_each_tranche": true
+  },
+  "frozen_predecessor": {
+    "run_id": "cardinality-encoding-20-leaf-20260722",
+    "instruction": "Complete unchanged and treat its results as inherited tournament evidence."
+  },
+  "global_coverage_matrix": "artifacts/tournament/coverage-matrix.json",
+  "claim_limit": "Tournament ranking is allocation evidence only. A global mathematical claim still requires a directly checked 40-block witness or 47/47 certified exclusion coverage with independent global audit."
+}

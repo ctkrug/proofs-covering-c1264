@@ -1,0 +1,157 @@
+{
+  "candidate_registry_sha256": "0d08b859c728cef87acc1f5ee3c46d99951939f706a845f58bacec22f4959233",
+  "cells": [
+    {
+      "cpu_seconds": 60.05935862008482,
+      "method_id": "sat_cardinality-02",
+      "proof_sha256": null,
+      "source_run_id": "cardinality-encoding-20-leaf-20260722",
+      "status": "unknown",
+      "target_id": "s-r0-3"
+    },
+    {
+      "cpu_seconds": 60.025428232969716,
+      "method_id": "sat_cardinality-09",
+      "proof_sha256": null,
+      "source_run_id": "cardinality-encoding-20-leaf-20260722",
+      "status": "unknown",
+      "target_id": "s-r0-3"
+    },
+    {
+      "cpu_seconds": 60.02122072200291,
+      "method_id": "sat_cardinality-02",
+      "proof_sha256": null,
+      "source_run_id": "cardinality-encoding-20-leaf-20260722",
+      "status": "unknown",
+      "target_id": "s-r0-4"
+    },
+    {
+      "cpu_seconds": 60.041396751999855,
+      "method_id": "sat_cardinality-09",
+      "proof_sha256": null,
+      "source_run_id": "cardinality-encoding-20-leaf-20260722",
+      "status": "unknown",
+      "target_id": "s-r0-4"
+    },
+    {
+      "cpu_seconds": 14.662423338042572,
+      "method_id": "sat_cardinality-02",
+      "proof_sha256": "d5c8ea45c3d1a5be069065120a9c12be7526935c85188ec1d77981a7657eecff",
+      "source_run_id": "cardinality-encoding-20-leaf-20260722",
+      "status": "unsat_certified",
+      "target_id": "s-r0-6"
+    },
+    {
+      "cpu_seconds": 27.39602767000906,
+      "method_id": "sat_cardinality-09",
+      "proof_sha256": "58becf791f9eaaf526ae6f9dd7330702fd63f02afc87b7765381e7a1af8ff7c8",
+      "source_run_id": "cardinality-encoding-20-leaf-20260722",
+      "status": "unsat_certified",
+      "target_id": "s-r0-6"
+    },
+    {
+      "cpu_seconds": 49.55574635299854,
+      "method_id": "sat_cardinality-02",
+      "proof_sha256": "5afcae6950a3eda4ea5ee7042c6a595e656fc4bc38598f531fd64259a8a12be7",
+      "source_run_id": "cardinality-encoding-20-leaf-20260722",
+      "status": "unsat_certified",
+      "target_id": "s-r1-5"
+    },
+    {
+      "cpu_seconds": 60.016700110863894,
+      "method_id": "sat_cardinality-09",
+      "proof_sha256": null,
+      "source_run_id": "cardinality-encoding-20-leaf-20260722",
+      "status": "unknown",
+      "target_id": "s-r1-5"
+    },
+    {
+      "cpu_seconds": 46.30979149788618,
+      "method_id": "sat_cardinality-02",
+      "proof_sha256": "83543e8e14a8d80c168dcbc07a08c473be620ff16530132a43c7b7a69788e0d2",
+      "source_run_id": "cardinality-encoding-20-leaf-20260722",
+      "status": "unsat_certified",
+      "target_id": "s-r1-8"
+    },
+    {
+      "cpu_seconds": 60.01502854982391,
+      "method_id": "sat_cardinality-09",
+      "proof_sha256": null,
+      "source_run_id": "cardinality-encoding-20-leaf-20260722",
+      "status": "unknown",
+      "target_id": "s-r1-8"
+    }
+  ],
+  "covered_frontier_targets": [
+    "s-r0-6",
+    "s-r1-5",
+    "s-r1-8"
+  ],
+  "frontier_definition_sha256": "8ccf62d23382db6d79298f470b640c8b188c6e80a32e6b02b1d66b3663467e92",
+  "global_witness_status": "open",
+  "matrix_payload_sha256": "81e640e2f51a2fe40b06b7e0f0f035df0a21509f67fe6d7c3492c7a8f4188d7f",
+  "problem_id": "covering-c1264",
+  "protected_incomplete_methods": [
+    {
+      "basis": "must finish frozen predecessor protocol before stop/retain decision",
+      "method_id": "sat_cardinality-09"
+    }
+  ],
+  "retained_methods": [
+    {
+      "basis": "three net-new independently replayed closures in inherited tranche",
+      "method_id": "sat_cardinality-02"
+    }
+  ],
+  "schema_version": 1,
+  "targets": [
+    "global-40-block-witness",
+    "s-r0-1",
+    "s-r0-2",
+    "s-r0-3",
+    "s-r0-4",
+    "s-r0-5",
+    "s-r0-6",
+    "s-r1-0",
+    "s-r1-1",
+    "s-r1-15",
+    "s-r1-2",
+    "s-r1-3",
+    "s-r1-4",
+    "s-r1-5",
+    "s-r1-8",
+    "t-0",
+    "t-1",
+    "t-10",
+    "t-11",
+    "t-12",
+    "t-13",
+    "t-14",
+    "t-15",
+    "t-16",
+    "t-17",
+    "t-18",
+    "t-19",
+    "t-2",
+    "t-20",
+    "t-21",
+    "t-22",
+    "t-23",
+    "t-24",
+    "t-25",
+    "t-26",
+    "t-27",
+    "t-28",
+    "t-29",
+    "t-3",
+    "t-30",
+    "t-31",
+    "t-32",
+    "t-4",
+    "t-5",
+    "t-6",
+    "t-7",
+    "t-8",
+    "t-9"
+  ]
+}

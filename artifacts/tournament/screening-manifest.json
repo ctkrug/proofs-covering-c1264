@@ -1,0 +1,33 @@
+{
+  "admission_rule": "validation_status must be passed before any screen unit runs",
+  "candidate_registry_sha256": "0d08b859c728cef87acc1f5ee3c46d99951939f706a845f58bacec22f4959233",
+  "constructive_seed_ids": [
+    "seed-00",
+    "seed-01",
+    "seed-02",
+    "seed-03",
+    "seed-04",
+    "seed-05",
+    "seed-06",
+    "seed-07"
+  ],
+  "frozen_predecessor_exception": "sequential-counter and kmtotalizer finish cardinality-encoding-20-leaf-20260722 unchanged",
+  "frozen_stratified_leaf_sample": [
+    "s-r0-4",
+    "s-r0-1",
+    "s-r1-3",
+    "s-r1-1",
+    "t-0",
+    "t-11",
+    "t-22",
+    "t-32"
+  ],
+  "maximum_parallel_searches": 1,
+  "maximum_search_cpu_seconds_per_candidate": 40,
+  "maximum_units_per_candidate": 8,
+  "retention_rule": "retain one or more net-new independently validated targets; otherwise stop after the fixed screen",
+  "schema_version": 1,
+  "screening_payload_sha256": "a1b2c5a2a23566b59c3bc4d29987e386022276a98851e5211d3d01e13de0b8eb",
+  "search_seconds_per_unit": 5,
+  "stage": "semantic_gate_then_cheap_screen"
+}

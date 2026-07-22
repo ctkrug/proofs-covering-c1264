@@ -1,0 +1,2417 @@
+{
+  "candidate_count": 100,
+  "candidates": [
+    {
+      "applicable_targets": "eight fixed seeds plus any returned global witness",
+      "family": "constructive_local_search",
+      "implementation_status": "design_candidate",
+      "material_signature": {
+        "family": "constructive_local_search",
+        "route_kind": "constructive",
+        "semantic_gate": "every candidate state has 40 distinct blocks, preserves declared forced constraints, and is checked directly for all 495 quadruples",
+        "variant": "one-block-replacement"
+      },
+      "mechanism_fingerprint": "8d9a19e5f7704c19dd5b5a1cf206df45a3593fd6c9ee201dae35ed16daf4d251",
+      "method_id": "constructive_local_search-01",
+      "route_kind": "constructive",
+      "screen_budget": {
+        "maximum_search_cpu_seconds": 40,
+        "search_seconds_per_unit": 5,
+        "units": 8
+      },
+      "screen_status": "blocked_pending_semantic_gate",
+      "semantic_gate": "every candidate state has 40 distinct blocks, preserves declared forced constraints, and is checked directly for all 495 quadruples",
+      "success_certificate": "independently validated 40-block cover",
+      "validation_status": "pending",
+      "variant": "one-block-replacement"
+    },
+    {
+      "applicable_targets": "eight fixed seeds plus any returned global witness",
+      "family": "constructive_local_search",
+      "implementation_status": "design_candidate",
+      "material_signature": {
+        "family": "constructive_local_search",
+        "route_kind": "constructive",
+        "semantic_gate": "every candidate state has 40 distinct blocks, preserves declared forced constraints, and is checked directly for all 495 quadruples",
+        "variant": "two-block-swap"
+      },
+      "mechanism_fingerprint": "4b2c814599ffe473426422d915d128f74bcece0eff6b311c6f5fb78ad83dfa9c",
+      "method_id": "constructive_local_search-02",
+      "route_kind": "constructive",
+      "screen_budget": {
+        "maximum_search_cpu_seconds": 40,
+        "search_seconds_per_unit": 5,
+        "units": 8
+      },
+      "screen_status": "blocked_pending_semantic_gate",
+      "semantic_gate": "every candidate state has 40 distinct blocks, preserves declared forced constraints, and is checked directly for all 495 quadruples",
+      "success_certificate": "independently validated 40-block cover",
+      "validation_status": "pending",
+      "variant": "two-block-swap"
+    },
+    {
+      "applicable_targets": "eight fixed seeds plus any returned global witness",
+      "family": "constructive_local_search",
+      "implementation_status": "design_candidate",
+      "material_signature": {
+        "family": "constructive_local_search",
+        "route_kind": "constructive",
+        "semantic_gate": "every candidate state has 40 distinct blocks, preserves declared forced constraints, and is checked directly for all 495 quadruples",
+        "variant": "three-block-ejection-chain"
+      },
+      "mechanism_fingerprint": "007a6bb540b6f17a5cb73421a1c3e689cff9f1963d6c62968aaaf78edb98e968",
+      "method_id": "constructive_local_search-03",
+      "route_kind": "constructive",
+      "screen_budget": {
+        "maximum_search_cpu_seconds": 40,
+        "search_seconds_per_unit": 5,
+        "units": 8
+      },
+      "screen_status": "blocked_pending_semantic_gate",
+      "semantic_gate": "every candidate state has 40 distinct blocks, preserves declared forced constraints, and is checked directly for all 495 quadruples",
+      "success_certificate": "independently validated 40-block cover",
+      "validation_status": "pending",
+      "variant": "three-block-ejection-chain"
+    },
+    {
+      "applicable_targets": "eight fixed seeds plus any returned global witness",
+      "family": "constructive_local_search",
+      "implementation_status": "design_candidate",
+      "material_signature": {
+        "family": "constructive_local_search",
+        "route_kind": "constructive",
+        "semantic_gate": "every candidate state has 40 distinct blocks, preserves declared forced constraints, and is checked directly for all 495 quadruples",
+        "variant": "uncovered-quadruple-repair"
+      },
+      "mechanism_fingerprint": "9cde521371c375ffe765929fb3728771cdf2a09aef75d6c9079b3f8d5e08966c",
+      "method_id": "constructive_local_search-04",
+      "route_kind": "constructive",
+      "screen_budget": {
+        "maximum_search_cpu_seconds": 40,
+        "search_seconds_per_unit": 5,
+        "units": 8
+      },
+      "screen_status": "blocked_pending_semantic_gate",
+      "semantic_gate": "every candidate state has 40 distinct blocks, preserves declared forced constraints, and is checked directly for all 495 quadruples",
+      "success_certificate": "independently validated 40-block cover",
+      "validation_status": "pending",
+      "variant": "uncovered-quadruple-repair"
+    },
+    {
+      "applicable_targets": "eight fixed seeds plus any returned global witness",
+      "family": "constructive_local_search",
+      "implementation_status": "design_candidate",
+      "material_signature": {
+        "family": "constructive_local_search",
+        "route_kind": "constructive",
+        "semantic_gate": "every candidate state has 40 distinct blocks, preserves declared forced constraints, and is checked directly for all 495 quadruples",
+        "variant": "degree-balanced-swap"
+      },
+      "mechanism_fingerprint": "be2de19f2e8b207fa61797bd7e74d0cb110b8f0b04b8b02fbebd930e66b4cc12",
+      "method_id": "constructive_local_search-05",
+      "route_kind": "constructive",
+      "screen_budget": {
+        "maximum_search_cpu_seconds": 40,
+        "search_seconds_per_unit": 5,
+        "units": 8
+      },
+      "screen_status": "blocked_pending_semantic_gate",
+      "semantic_gate": "every candidate state has 40 distinct blocks, preserves declared forced constraints, and is checked directly for all 495 quadruples",
+      "success_certificate": "independently validated 40-block cover",
+      "validation_status": "pending",
+      "variant": "degree-balanced-swap"
+    },
+    {
+      "applicable_targets": "eight fixed seeds plus any returned global witness",
+      "family": "constructive_local_search",
+      "implementation_status": "design_candidate",
+      "material_signature": {
+        "family": "constructive_local_search",
+        "route_kind": "constructive",
+        "semantic_gate": "every candidate state has 40 distinct blocks, preserves declared forced constraints, and is checked directly for all 495 quadruples",
+        "variant": "matching-preserving-swap"
+      },
+      "mechanism_fingerprint": "cd0b3d001e1c423e1ffea5059fd8c82059ce8997d58540446beb7888d15e09b2",
+      "method_id": "constructive_local_search-06",
+      "route_kind": "constructive",
+      "screen_budget": {
+        "maximum_search_cpu_seconds": 40,
+        "search_seconds_per_unit": 5,
+        "units": 8
+      },
+      "screen_status": "blocked_pending_semantic_gate",
+      "semantic_gate": "every candidate state has 40 distinct blocks, preserves declared forced constraints, and is checked directly for all 495 quadruples",
+      "success_certificate": "independently validated 40-block cover",
+      "validation_status": "pending",
+      "variant": "matching-preserving-swap"
+    },
+    {
+      "applicable_targets": "eight fixed seeds plus any returned global witness",
+      "family": "constructive_local_search",
+      "implementation_status": "design_candidate",
+      "material_signature": {
+        "family": "constructive_local_search",
+        "route_kind": "constructive",
+        "semantic_gate": "every candidate state has 40 distinct blocks, preserves declared forced constraints, and is checked directly for all 495 quadruples",
+        "variant": "pair-frequency-repair"
+      },
+      "mechanism_fingerprint": "cb1e79a5c05621f5d878b4a894e7b95302cedba5928e44310c2fba706cd6e7b4",
+      "method_id": "constructive_local_search-07",
+      "route_kind": "constructive",
+      "screen_budget": {
+        "maximum_search_cpu_seconds": 40,
+        "search_seconds_per_unit": 5,
+        "units": 8
+      },
+      "screen_status": "blocked_pending_semantic_gate",
+      "semantic_gate": "every candidate state has 40 distinct blocks, preserves declared forced constraints, and is checked directly for all 495 quadruples",
+      "success_certificate": "independently validated 40-block cover",
+      "validation_status": "pending",
+      "variant": "pair-frequency-repair"
+    },
+    {
+      "applicable_targets": "eight fixed seeds plus any returned global witness",
+      "family": "constructive_local_search",
+      "implementation_status": "design_candidate",
+      "material_signature": {
+        "family": "constructive_local_search",
+        "route_kind": "constructive",
+        "semantic_gate": "every candidate state has 40 distinct blocks, preserves declared forced constraints, and is checked directly for all 495 quadruples",
+        "variant": "triple-frequency-repair"
+      },
+      "mechanism_fingerprint": "5c55772cca4a8b5479e55638ca8bee97ab19d29d1b94e9c741d0f541448fd1a8",
+      "method_id": "constructive_local_search-08",
+      "route_kind": "constructive",
+      "screen_budget": {
+        "maximum_search_cpu_seconds": 40,
+        "search_seconds_per_unit": 5,
+        "units": 8
+      },
+      "screen_status": "blocked_pending_semantic_gate",
+      "semantic_gate": "every candidate state has 40 distinct blocks, preserves declared forced constraints, and is checked directly for all 495 quadruples",
+      "success_certificate": "independently validated 40-block cover",
+      "validation_status": "pending",
+      "variant": "triple-frequency-repair"
+    },
+    {
+      "applicable_targets": "eight fixed seeds plus any returned global witness",
+      "family": "constructive_local_search",
+      "implementation_status": "design_candidate",
+      "material_signature": {
+        "family": "constructive_local_search",
+        "route_kind": "constructive",
+        "semantic_gate": "every candidate state has 40 distinct blocks, preserves declared forced constraints, and is checked directly for all 495 quadruples",
+        "variant": "tabu-block-replacement"
+      },
+      "mechanism_fingerprint": "b75130c9fc1e69c51673c15eed1291c58af4b2d3940c92bbe73218222b22c990",
+      "method_id": "constructive_local_search-09",
+      "route_kind": "constructive",
+      "screen_budget": {
+        "maximum_search_cpu_seconds": 40,
+        "search_seconds_per_unit": 5,
+        "units": 8
+      },
+      "screen_status": "blocked_pending_semantic_gate",
+      "semantic_gate": "every candidate state has 40 distinct blocks, preserves declared forced constraints, and is checked directly for all 495 quadruples",
+      "success_certificate": "independently validated 40-block cover",
+      "validation_status": "pending",
+      "variant": "tabu-block-replacement"
+    },
+    {
+      "applicable_targets": "eight fixed seeds plus any returned global witness",
+      "family": "constructive_local_search",
+      "implementation_status": "design_candidate",
+      "material_signature": {
+        "family": "constructive_local_search",
+        "route_kind": "constructive",
+        "semantic_gate": "every candidate state has 40 distinct blocks, preserves declared forced constraints, and is checked directly for all 495 quadruples",
+        "variant": "min-conflicts-block-replacement"
+      },
+      "mechanism_fingerprint": "68d145aa2a2a75b874b461503dedbfe727798e36aca7524ebe6d6b6a1120c44c",
+      "method_id": "constructive_local_search-10",
+      "route_kind": "constructive",
+      "screen_budget": {
+        "maximum_search_cpu_seconds": 40,
+        "search_seconds_per_unit": 5,
+        "units": 8
+      },
+      "screen_status": "blocked_pending_semantic_gate",
+      "semantic_gate": "every candidate state has 40 distinct blocks, preserves declared forced constraints, and is checked directly for all 495 quadruples",
+      "success_certificate": "independently validated 40-block cover",
+      "validation_status": "pending",
+      "variant": "min-conflicts-block-replacement"
+    },
+    {
+      "applicable_targets": "eight fixed seeds plus any returned global witness",
+      "family": "constructive_metaheuristic",
+      "implementation_status": "design_candidate",
+      "material_signature": {
+        "family": "constructive_metaheuristic",
+        "route_kind": "constructive",
+        "semantic_gate": "deterministic seeded control plus independent direct validation of any 40-block output",
+        "variant": "simulated-annealing"
+      },
+      "mechanism_fingerprint": "1a409158235fb7a4764da647148924116b81c3270d486ca03ed091b4d676e170",
+      "method_id": "constructive_metaheuristic-01",
+      "route_kind": "constructive",
+      "screen_budget": {
+        "maximum_search_cpu_seconds": 40,
+        "search_seconds_per_unit": 5,
+        "units": 8
+      },
+      "screen_status": "blocked_pending_semantic_gate",
+      "semantic_gate": "deterministic seeded control plus independent direct validation of any 40-block output",
+      "success_certificate": "independently validated 40-block cover",
+      "validation_status": "pending",
+      "variant": "simulated-annealing"
+    },
+    {
+      "applicable_targets": "eight fixed seeds plus any returned global witness",
+      "family": "constructive_metaheuristic",
+      "implementation_status": "design_candidate",
+      "material_signature": {
+        "family": "constructive_metaheuristic",
+        "route_kind": "constructive",
+        "semantic_gate": "deterministic seeded control plus independent direct validation of any 40-block output",
+        "variant": "parallel-tempering"
+      },
+      "mechanism_fingerprint": "32ffb61a5cd77c1b14526d8ce6af5c0f3d2b3255f053237bf21e52e2338e20a2",
+      "method_id": "constructive_metaheuristic-02",
+      "route_kind": "constructive",
+      "screen_budget": {
+        "maximum_search_cpu_seconds": 40,
+        "search_seconds_per_unit": 5,
+        "units": 8
+      },
+      "screen_status": "blocked_pending_semantic_gate",
+      "semantic_gate": "deterministic seeded control plus independent direct validation of any 40-block output",
+      "success_certificate": "independently validated 40-block cover",
+      "validation_status": "pending",
+      "variant": "parallel-tempering"
+    },
+    {
+      "applicable_targets": "eight fixed seeds plus any returned global witness",
+      "family": "constructive_metaheuristic",
+      "implementation_status": "design_candidate",
+      "material_signature": {
+        "family": "constructive_metaheuristic",
+        "route_kind": "constructive",
+        "semantic_gate": "deterministic seeded control plus independent direct validation of any 40-block output",
+        "variant": "late-acceptance"
+      },
+      "mechanism_fingerprint": "e9296791d580239206c5372d707c13e6cf05001da6f9e448b7b3b7de7a8baf0a",
+      "method_id": "constructive_metaheuristic-03",
+      "route_kind": "constructive",
+      "screen_budget": {
+        "maximum_search_cpu_seconds": 40,
+        "search_seconds_per_unit": 5,
+        "units": 8
+      },
+      "screen_status": "blocked_pending_semantic_gate",
+      "semantic_gate": "deterministic seeded control plus independent direct validation of any 40-block output",
+      "success_certificate": "independently validated 40-block cover",
+      "validation_status": "pending",
+      "variant": "late-acceptance"
+    },
+    {
+      "applicable_targets": "eight fixed seeds plus any returned global witness",
+      "family": "constructive_metaheuristic",
+      "implementation_status": "design_candidate",
+      "material_signature": {
+        "family": "constructive_metaheuristic",
+        "route_kind": "constructive",
+        "semantic_gate": "deterministic seeded control plus independent direct validation of any 40-block output",
+        "variant": "iterated-local-search"
+      },
+      "mechanism_fingerprint": "983cb49ca116346209b786fd93339e6dd6f0dd8bd54d2168bc4dcba485b514e7",
+      "method_id": "constructive_metaheuristic-04",
+      "route_kind": "constructive",
+      "screen_budget": {
+        "maximum_search_cpu_seconds": 40,
+        "search_seconds_per_unit": 5,
+        "units": 8
+      },
+      "screen_status": "blocked_pending_semantic_gate",
+      "semantic_gate": "deterministic seeded control plus independent direct validation of any 40-block output",
+      "success_certificate": "independently validated 40-block cover",
+      "validation_status": "pending",
+      "variant": "iterated-local-search"
+    },
+    {
+      "applicable_targets": "eight fixed seeds plus any returned global witness",
+      "family": "constructive_metaheuristic",
+      "implementation_status": "design_candidate",
+      "material_signature": {
+        "family": "constructive_metaheuristic",
+        "route_kind": "constructive",
+        "semantic_gate": "deterministic seeded control plus independent direct validation of any 40-block output",
+        "variant": "variable-neighborhood-search"
+      },
+      "mechanism_fingerprint": "d11c3fa55a672aec96fa76fc88b77a68455e4a75461704ea72fe4671d07a0fac",
+      "method_id": "constructive_metaheuristic-05",
+      "route_kind": "constructive",
+      "screen_budget": {
+        "maximum_search_cpu_seconds": 40,
+        "search_seconds_per_unit": 5,
+        "units": 8
+      },
+      "screen_status": "blocked_pending_semantic_gate",
+      "semantic_gate": "deterministic seeded control plus independent direct validation of any 40-block output",
+      "success_certificate": "independently validated 40-block cover",
+      "validation_status": "pending",
+      "variant": "variable-neighborhood-search"
+    },
+    {
+      "applicable_targets": "eight fixed seeds plus any returned global witness",
+      "family": "constructive_metaheuristic",
+      "implementation_status": "design_candidate",
+      "material_signature": {
+        "family": "constructive_metaheuristic",
+        "route_kind": "constructive",
+        "semantic_gate": "deterministic seeded control plus independent direct validation of any 40-block output",
+        "variant": "genetic-block-set"
+      },
+      "mechanism_fingerprint": "046154666ed677e22d953ed09d6816274c5affac50c61e6d32b265bdad704758",
+      "method_id": "constructive_metaheuristic-06",
+      "route_kind": "constructive",
+      "screen_budget": {
+        "maximum_search_cpu_seconds": 40,
+        "search_seconds_per_unit": 5,
+        "units": 8
+      },
+      "screen_status": "blocked_pending_semantic_gate",
+      "semantic_gate": "deterministic seeded control plus independent direct validation of any 40-block output",
+      "success_certificate": "independently validated 40-block cover",
+      "validation_status": "pending",
+      "variant": "genetic-block-set"
+    },
+    {
+      "applicable_targets": "eight fixed seeds plus any returned global witness",
+      "family": "constructive_metaheuristic",
+      "implementation_status": "design_candidate",
+      "material_signature": {
+        "family": "constructive_metaheuristic",
+        "route_kind": "constructive",
+        "semantic_gate": "deterministic seeded control plus independent direct validation of any 40-block output",
+        "variant": "cross-entropy"
+      },
+      "mechanism_fingerprint": "58a26566471eaf86f27d00fcbd717e63d6a6f6d8494243bd301d5d2ee5539de9",
+      "method_id": "constructive_metaheuristic-07",
+      "route_kind": "constructive",
+      "screen_budget": {
+        "maximum_search_cpu_seconds": 40,
+        "search_seconds_per_unit": 5,
+        "units": 8
+      },
+      "screen_status": "blocked_pending_semantic_gate",
+      "semantic_gate": "deterministic seeded control plus independent direct validation of any 40-block output",
+      "success_certificate": "independently validated 40-block cover",
+      "validation_status": "pending",
+      "variant": "cross-entropy"
+    },
+    {
+      "applicable_targets": "eight fixed seeds plus any returned global witness",
+      "family": "constructive_metaheuristic",
+      "implementation_status": "design_candidate",
+      "material_signature": {
+        "family": "constructive_metaheuristic",
+        "route_kind": "constructive",
+        "semantic_gate": "deterministic seeded control plus independent direct validation of any 40-block output",
+        "variant": "estimation-of-distribution"
+      },
+      "mechanism_fingerprint": "a5d3ff1e6d5acde7415c0d7b48c0a18ffd5ddaac836e382df33957e51cc77df7",
+      "method_id": "constructive_metaheuristic-08",
+      "route_kind": "constructive",
+      "screen_budget": {
+        "maximum_search_cpu_seconds": 40,
+        "search_seconds_per_unit": 5,
+        "units": 8
+      },
+      "screen_status": "blocked_pending_semantic_gate",
+      "semantic_gate": "deterministic seeded control plus independent direct validation of any 40-block output",
+      "success_certificate": "independently validated 40-block cover",
+      "validation_status": "pending",
+      "variant": "estimation-of-distribution"
+    },
+    {
+      "applicable_targets": "eight fixed seeds plus any returned global witness",
+      "family": "constructive_metaheuristic",
+      "implementation_status": "design_candidate",
+      "material_signature": {
+        "family": "constructive_metaheuristic",
+        "route_kind": "constructive",
+        "semantic_gate": "deterministic seeded control plus independent direct validation of any 40-block output",
+        "variant": "large-neighborhood-repair"
+      },
+      "mechanism_fingerprint": "5490f6595b31cf6cc08a273f25bc104d468e355593c8ab5b7f92f709b15ceb6a",
+      "method_id": "constructive_metaheuristic-09",
+      "route_kind": "constructive",
+      "screen_budget": {
+        "maximum_search_cpu_seconds": 40,
+        "search_seconds_per_unit": 5,
+        "units": 8
+      },
+      "screen_status": "blocked_pending_semantic_gate",
+      "semantic_gate": "deterministic seeded control plus independent direct validation of any 40-block output",
+      "success_certificate": "independently validated 40-block cover",
+      "validation_status": "pending",
+      "variant": "large-neighborhood-repair"
+    },
+    {
+      "applicable_targets": "eight fixed seeds plus any returned global witness",
+      "family": "constructive_metaheuristic",
+      "implementation_status": "design_candidate",
+      "material_signature": {
+        "family": "constructive_metaheuristic",
+        "route_kind": "constructive",
+        "semantic_gate": "deterministic seeded control plus independent direct validation of any 40-block output",
+        "variant": "beam-search-deficit"
+      },
+      "mechanism_fingerprint": "c1ca2fe72e5e237b2fe49a68905cc056247fe5c7a9969bd3241e1e6d7debc926",
+      "method_id": "constructive_metaheuristic-10",
+      "route_kind": "constructive",
+      "screen_budget": {
+        "maximum_search_cpu_seconds": 40,
+        "search_seconds_per_unit": 5,
+        "units": 8
+      },
+      "screen_status": "blocked_pending_semantic_gate",
+      "semantic_gate": "deterministic seeded control plus independent direct validation of any 40-block output",
+      "success_certificate": "independently validated 40-block cover",
+      "validation_status": "pending",
+      "variant": "beam-search-deficit"
+    },
+    {
+      "applicable_targets": "bounded parent plus downstream leaves after coverage validation",
+      "family": "cp_sat",
+      "implementation_status": "design_candidate",
+      "material_signature": {
+        "family": "cp_sat",
+        "route_kind": "negative_or_constructive",
+        "semantic_gate": "direct witness validation for feasible output and matched small-instance infeasibility cross-check",
+        "variant": "fixed-block-order"
+      },
+      "mechanism_fingerprint": "c871547e3dc0ea245166c8df664a27ea2740d169c22ad86845fd3b735d66547b",
+      "method_id": "cp_sat-01",
+      "route_kind": "negative_or_constructive",
+      "screen_budget": {
+        "maximum_search_cpu_seconds": 40,
+        "search_seconds_per_unit": 5,
+        "units": 8
+      },
+      "screen_status": "blocked_pending_semantic_gate",
+      "semantic_gate": "direct witness validation for feasible output and matched small-instance infeasibility cross-check",
+      "success_certificate": "net-new reconstructed and replayed UNSAT leaf, or directly validated 40-block cover",
+      "validation_status": "pending",
+      "variant": "fixed-block-order"
+    },
+    {
+      "applicable_targets": "bounded parent plus downstream leaves after coverage validation",
+      "family": "cp_sat",
+      "implementation_status": "design_candidate",
+      "material_signature": {
+        "family": "cp_sat",
+        "route_kind": "negative_or_constructive",
+        "semantic_gate": "direct witness validation for feasible output and matched small-instance infeasibility cross-check",
+        "variant": "minimum-domain"
+      },
+      "mechanism_fingerprint": "f99c96846de6f2f2f92795b50e936e60ae5b2dea008f4ddb76502f626dc237b9",
+      "method_id": "cp_sat-02",
+      "route_kind": "negative_or_constructive",
+      "screen_budget": {
+        "maximum_search_cpu_seconds": 40,
+        "search_seconds_per_unit": 5,
+        "units": 8
+      },
+      "screen_status": "blocked_pending_semantic_gate",
+      "semantic_gate": "direct witness validation for feasible output and matched small-instance infeasibility cross-check",
+      "success_certificate": "net-new reconstructed and replayed UNSAT leaf, or directly validated 40-block cover",
+      "validation_status": "pending",
+      "variant": "minimum-domain"
+    },
+    {
+      "applicable_targets": "bounded parent plus downstream leaves after coverage validation",
+      "family": "cp_sat",
+      "implementation_status": "design_candidate",
+      "material_signature": {
+        "family": "cp_sat",
+        "route_kind": "negative_or_constructive",
+        "semantic_gate": "direct witness validation for feasible output and matched small-instance infeasibility cross-check",
+        "variant": "maximum-domain"
+      },
+      "mechanism_fingerprint": "1cba59eb57adbe829ac4175b64b9c438a86612fdc3082125dd11d1e59c29191f",
+      "method_id": "cp_sat-03",
+      "route_kind": "negative_or_constructive",
+      "screen_budget": {
+        "maximum_search_cpu_seconds": 40,
+        "search_seconds_per_unit": 5,
+        "units": 8
+      },
+      "screen_status": "blocked_pending_semantic_gate",
+      "semantic_gate": "direct witness validation for feasible output and matched small-instance infeasibility cross-check",
+      "success_certificate": "net-new reconstructed and replayed UNSAT leaf, or directly validated 40-block cover",
+      "validation_status": "pending",
+      "variant": "maximum-domain"
+    },
+    {
+      "applicable_targets": "bounded parent plus downstream leaves after coverage validation",
+      "family": "cp_sat",
+      "implementation_status": "design_candidate",
+      "material_signature": {
+        "family": "cp_sat",
+        "route_kind": "negative_or_constructive",
+        "semantic_gate": "direct witness validation for feasible output and matched small-instance infeasibility cross-check",
+        "variant": "degree-first"
+      },
+      "mechanism_fingerprint": "c1fbdb35caef4662f719d17812fce2f15a95169ab7f4ce3dbe4f4a1f5901c3fb",
+      "method_id": "cp_sat-04",
+      "route_kind": "negative_or_constructive",
+      "screen_budget": {
+        "maximum_search_cpu_seconds": 40,
+        "search_seconds_per_unit": 5,
+        "units": 8
+      },
+      "screen_status": "blocked_pending_semantic_gate",
+      "semantic_gate": "direct witness validation for feasible output and matched small-instance infeasibility cross-check",
+      "success_certificate": "net-new reconstructed and replayed UNSAT leaf, or directly validated 40-block cover",
+      "validation_status": "pending",
+      "variant": "degree-first"
+    },
+    {
+      "applicable_targets": "bounded parent plus downstream leaves after coverage validation",
+      "family": "cp_sat",
+      "implementation_status": "design_candidate",
+      "material_signature": {
+        "family": "cp_sat",
+        "route_kind": "negative_or_constructive",
+        "semantic_gate": "direct witness validation for feasible output and matched small-instance infeasibility cross-check",
+        "variant": "coverage-first"
+      },
+      "mechanism_fingerprint": "f7c3843a1fdcfe0e4f3c98c18db503ccd9404255f683822df5372785c36f2c71",
+      "method_id": "cp_sat-05",
+      "route_kind": "negative_or_constructive",
+      "screen_budget": {
+        "maximum_search_cpu_seconds": 40,
+        "search_seconds_per_unit": 5,
+        "units": 8
+      },
+      "screen_status": "blocked_pending_semantic_gate",
+      "semantic_gate": "direct witness validation for feasible output and matched small-instance infeasibility cross-check",
+      "success_certificate": "net-new reconstructed and replayed UNSAT leaf, or directly validated 40-block cover",
+      "validation_status": "pending",
+      "variant": "coverage-first"
+    },
+    {
+      "applicable_targets": "bounded parent plus downstream leaves after coverage validation",
+      "family": "cp_sat",
+      "implementation_status": "design_candidate",
+      "material_signature": {
+        "family": "cp_sat",
+        "route_kind": "negative_or_constructive",
+        "semantic_gate": "direct witness validation for feasible output and matched small-instance infeasibility cross-check",
+        "variant": "conflict-first"
+      },
+      "mechanism_fingerprint": "80aa1bfbf0867b3311425abe78c64fdb61d916a89a13d9384d927e630713dcb2",
+      "method_id": "cp_sat-06",
+      "route_kind": "negative_or_constructive",
+      "screen_budget": {
+        "maximum_search_cpu_seconds": 40,
+        "search_seconds_per_unit": 5,
+        "units": 8
+      },
+      "screen_status": "blocked_pending_semantic_gate",
+      "semantic_gate": "direct witness validation for feasible output and matched small-instance infeasibility cross-check",
+      "success_certificate": "net-new reconstructed and replayed UNSAT leaf, or directly validated 40-block cover",
+      "validation_status": "pending",
+      "variant": "conflict-first"
+    },
+    {
+      "applicable_targets": "bounded parent plus downstream leaves after coverage validation",
+      "family": "cp_sat",
+      "implementation_status": "design_candidate",
+      "material_signature": {
+        "family": "cp_sat",
+        "route_kind": "negative_or_constructive",
+        "semantic_gate": "direct witness validation for feasible output and matched small-instance infeasibility cross-check",
+        "variant": "pseudo-cost"
+      },
+      "mechanism_fingerprint": "47932895e057cc3037ff33cbbaf431e62c396d375ec2bba305f3a3b3b96a1ca2",
+      "method_id": "cp_sat-07",
+      "route_kind": "negative_or_constructive",
+      "screen_budget": {
+        "maximum_search_cpu_seconds": 40,
+        "search_seconds_per_unit": 5,
+        "units": 8
+      },
+      "screen_status": "blocked_pending_semantic_gate",
+      "semantic_gate": "direct witness validation for feasible output and matched small-instance infeasibility cross-check",
+      "success_certificate": "net-new reconstructed and replayed UNSAT leaf, or directly validated 40-block cover",
+      "validation_status": "pending",
+      "variant": "pseudo-cost"
+    },
+    {
+      "applicable_targets": "bounded parent plus downstream leaves after coverage validation",
+      "family": "cp_sat",
+      "implementation_status": "design_candidate",
+      "material_signature": {
+        "family": "cp_sat",
+        "route_kind": "negative_or_constructive",
+        "semantic_gate": "direct witness validation for feasible output and matched small-instance infeasibility cross-check",
+        "variant": "deterministic-portfolio"
+      },
+      "mechanism_fingerprint": "214f25a0d8e69267d7e6b7c3b1d3e3547aa38d48e8765ecfa9f9cc06af07c44c",
+      "method_id": "cp_sat-08",
+      "route_kind": "negative_or_constructive",
+      "screen_budget": {
+        "maximum_search_cpu_seconds": 40,
+        "search_seconds_per_unit": 5,
+        "units": 8
+      },
+      "screen_status": "blocked_pending_semantic_gate",
+      "semantic_gate": "direct witness validation for feasible output and matched small-instance infeasibility cross-check",
+      "success_certificate": "net-new reconstructed and replayed UNSAT leaf, or directly validated 40-block cover",
+      "validation_status": "pending",
+      "variant": "deterministic-portfolio"
+    },
+    {
+      "applicable_targets": "bounded parent plus downstream leaves after coverage validation",
+      "family": "cp_sat",
+      "implementation_status": "design_candidate",
+      "material_signature": {
+        "family": "cp_sat",
+        "route_kind": "negative_or_constructive",
+        "semantic_gate": "direct witness validation for feasible output and matched small-instance infeasibility cross-check",
+        "variant": "block-neighborhood-lns"
+      },
+      "mechanism_fingerprint": "1e8371317fc4469d27b859dc9e2c7f89ae8d43929f824770eb4bec147c725965",
+      "method_id": "cp_sat-09",
+      "route_kind": "negative_or_constructive",
+      "screen_budget": {
+        "maximum_search_cpu_seconds": 40,
+        "search_seconds_per_unit": 5,
+        "units": 8
+      },
+      "screen_status": "blocked_pending_semantic_gate",
+      "semantic_gate": "direct witness validation for feasible output and matched small-instance infeasibility cross-check",
+      "success_certificate": "net-new reconstructed and replayed UNSAT leaf, or directly validated 40-block cover",
+      "validation_status": "pending",
+      "variant": "block-neighborhood-lns"
+    },
+    {
+      "applicable_targets": "bounded parent plus downstream leaves after coverage validation",
+      "family": "cp_sat",
+      "implementation_status": "design_candidate",
+      "material_signature": {
+        "family": "cp_sat",
+        "route_kind": "negative_or_constructive",
+        "semantic_gate": "direct witness validation for feasible output and matched small-instance infeasibility cross-check",
+        "variant": "uncovered-quadruple-lns"
+      },
+      "mechanism_fingerprint": "161b4e548952a6c23c0081d5a515ef97fd3f2e1a0296a35074ae165281550dbe",
+      "method_id": "cp_sat-10",
+      "route_kind": "negative_or_constructive",
+      "screen_budget": {
+        "maximum_search_cpu_seconds": 40,
+        "search_seconds_per_unit": 5,
+        "units": 8
+      },
+      "screen_status": "blocked_pending_semantic_gate",
+      "semantic_gate": "direct witness validation for feasible output and matched small-instance infeasibility cross-check",
+      "success_certificate": "net-new reconstructed and replayed UNSAT leaf, or directly validated 40-block cover",
+      "validation_status": "pending",
+      "variant": "uncovered-quadruple-lns"
+    },
+    {
+      "applicable_targets": "bounded parent plus downstream leaves after coverage validation",
+      "family": "integer_programming",
+      "implementation_status": "design_candidate",
+      "material_signature": {
+        "family": "integer_programming",
+        "route_kind": "negative_or_constructive",
+        "semantic_gate": "coefficient-by-coefficient model audit and direct validation of every integer witness or checkable cut log",
+        "variant": "plain-set-cover"
+      },
+      "mechanism_fingerprint": "afa07a956e673aa4f5a91e78973d2a386ec10b0dcc8c9baf91a09a124a645db7",
+      "method_id": "integer_programming-01",
+      "route_kind": "negative_or_constructive",
+      "screen_budget": {
+        "maximum_search_cpu_seconds": 40,
+        "search_seconds_per_unit": 5,
+        "units": 8
+      },
+      "screen_status": "blocked_pending_semantic_gate",
+      "semantic_gate": "coefficient-by-coefficient model audit and direct validation of every integer witness or checkable cut log",
+      "success_certificate": "net-new reconstructed and replayed UNSAT leaf, or directly validated 40-block cover",
+      "validation_status": "pending",
+      "variant": "plain-set-cover"
+    },
+    {
+      "applicable_targets": "bounded parent plus downstream leaves after coverage validation",
+      "family": "integer_programming",
+      "implementation_status": "design_candidate",
+      "material_signature": {
+        "family": "integer_programming",
+        "route_kind": "negative_or_constructive",
+        "semantic_gate": "coefficient-by-coefficient model audit and direct validation of every integer witness or checkable cut log",
+        "variant": "exact-degree-equalities"
+      },
+      "mechanism_fingerprint": "135bc3215df5c429d25d68aa20ebe0a60b28ac92b933f17ab6bcf2b9c500abc1",
+      "method_id": "integer_programming-02",
+      "route_kind": "negative_or_constructive",
+      "screen_budget": {
+        "maximum_search_cpu_seconds": 40,
+        "search_seconds_per_unit": 5,
+        "units": 8
+      },
+      "screen_status": "blocked_pending_semantic_gate",
+      "semantic_gate": "coefficient-by-coefficient model audit and direct validation of every integer witness or checkable cut log",
+      "success_certificate": "net-new reconstructed and replayed UNSAT leaf, or directly validated 40-block cover",
+      "validation_status": "pending",
+      "variant": "exact-degree-equalities"
+    },
+    {
+      "applicable_targets": "bounded parent plus downstream leaves after coverage validation",
+      "family": "integer_programming",
+      "implementation_status": "design_candidate",
+      "material_signature": {
+        "family": "integer_programming",
+        "route_kind": "negative_or_constructive",
+        "semantic_gate": "coefficient-by-coefficient model audit and direct validation of every integer witness or checkable cut log",
+        "variant": "orbit-representatives"
+      },
+      "mechanism_fingerprint": "38a8c769b755105a47a8ea39e66a7787639bfb5082771ac0f693ca341800c7f6",
+      "method_id": "integer_programming-03",
+      "route_kind": "negative_or_constructive",
+      "screen_budget": {
+        "maximum_search_cpu_seconds": 40,
+        "search_seconds_per_unit": 5,
+        "units": 8
+      },
+      "screen_status": "blocked_pending_semantic_gate",
+      "semantic_gate": "coefficient-by-coefficient model audit and direct validation of every integer witness or checkable cut log",
+      "success_certificate": "net-new reconstructed and replayed UNSAT leaf, or directly validated 40-block cover",
+      "validation_status": "pending",
+      "variant": "orbit-representatives"
+    },
+    {
+      "applicable_targets": "bounded parent plus downstream leaves after coverage validation",
+      "family": "integer_programming",
+      "implementation_status": "design_candidate",
+      "material_signature": {
+        "family": "integer_programming",
+        "route_kind": "negative_or_constructive",
+        "semantic_gate": "coefficient-by-coefficient model audit and direct validation of every integer witness or checkable cut log",
+        "variant": "lex-symmetry-breaking"
+      },
+      "mechanism_fingerprint": "adda0080f6573ad72b5c6f87fe5e9ba7483e3c733a011b1209bfb5040568165d",
+      "method_id": "integer_programming-04",
+      "route_kind": "negative_or_constructive",
+      "screen_budget": {
+        "maximum_search_cpu_seconds": 40,
+        "search_seconds_per_unit": 5,
+        "units": 8
+      },
+      "screen_status": "blocked_pending_semantic_gate",
+      "semantic_gate": "coefficient-by-coefficient model audit and direct validation of every integer witness or checkable cut log",
+      "success_certificate": "net-new reconstructed and replayed UNSAT leaf, or directly validated 40-block cover",
+      "validation_status": "pending",
+      "variant": "lex-symmetry-breaking"
+    },
+    {
+      "applicable_targets": "bounded parent plus downstream leaves after coverage validation",
+      "family": "integer_programming",
+      "implementation_status": "design_candidate",
+      "material_signature": {
+        "family": "integer_programming",
+        "route_kind": "negative_or_constructive",
+        "semantic_gate": "coefficient-by-coefficient model audit and direct validation of every integer witness or checkable cut log",
+        "variant": "row-generation"
+      },
+      "mechanism_fingerprint": "82fe7bfbdda0eea43b4567212bdee2c7a0c66fa189ea5007b4e4a0d9cb9a5e7e",
+      "method_id": "integer_programming-05",
+      "route_kind": "negative_or_constructive",
+      "screen_budget": {
+        "maximum_search_cpu_seconds": 40,
+        "search_seconds_per_unit": 5,
+        "units": 8
+      },
+      "screen_status": "blocked_pending_semantic_gate",
+      "semantic_gate": "coefficient-by-coefficient model audit and direct validation of every integer witness or checkable cut log",
+      "success_certificate": "net-new reconstructed and replayed UNSAT leaf, or directly validated 40-block cover",
+      "validation_status": "pending",
+      "variant": "row-generation"
+    },
+    {
+      "applicable_targets": "bounded parent plus downstream leaves after coverage validation",
+      "family": "integer_programming",
+      "implementation_status": "design_candidate",
+      "material_signature": {
+        "family": "integer_programming",
+        "route_kind": "negative_or_constructive",
+        "semantic_gate": "coefficient-by-coefficient model audit and direct validation of every integer witness or checkable cut log",
+        "variant": "cover-cut-separation"
+      },
+      "mechanism_fingerprint": "655ae173c11b51a9203a577c7e9dade93e83389e992d710f0a7d2dddb6cc01f9",
+      "method_id": "integer_programming-06",
+      "route_kind": "negative_or_constructive",
+      "screen_budget": {
+        "maximum_search_cpu_seconds": 40,
+        "search_seconds_per_unit": 5,
+        "units": 8
+      },
+      "screen_status": "blocked_pending_semantic_gate",
+      "semantic_gate": "coefficient-by-coefficient model audit and direct validation of every integer witness or checkable cut log",
+      "success_certificate": "net-new reconstructed and replayed UNSAT leaf, or directly validated 40-block cover",
+      "validation_status": "pending",
+      "variant": "cover-cut-separation"
+    },
+    {
+      "applicable_targets": "bounded parent plus downstream leaves after coverage validation",
+      "family": "integer_programming",
+      "implementation_status": "design_candidate",
+      "material_signature": {
+        "family": "integer_programming",
+        "route_kind": "negative_or_constructive",
+        "semantic_gate": "coefficient-by-coefficient model audit and direct validation of every integer witness or checkable cut log",
+        "variant": "clique-cuts"
+      },
+      "mechanism_fingerprint": "b218900bb56f4ca88fb203c9fef41f03cf7eaa0a0f1190d4b0573a09a05465e8",
+      "method_id": "integer_programming-07",
+      "route_kind": "negative_or_constructive",
+      "screen_budget": {
+        "maximum_search_cpu_seconds": 40,
+        "search_seconds_per_unit": 5,
+        "units": 8
+      },
+      "screen_status": "blocked_pending_semantic_gate",
+      "semantic_gate": "coefficient-by-coefficient model audit and direct validation of every integer witness or checkable cut log",
+      "success_certificate": "net-new reconstructed and replayed UNSAT leaf, or directly validated 40-block cover",
+      "validation_status": "pending",
+      "variant": "clique-cuts"
+    },
+    {
+      "applicable_targets": "bounded parent plus downstream leaves after coverage validation",
+      "family": "integer_programming",
+      "implementation_status": "design_candidate",
+      "material_signature": {
+        "family": "integer_programming",
+        "route_kind": "negative_or_constructive",
+        "semantic_gate": "coefficient-by-coefficient model audit and direct validation of every integer witness or checkable cut log",
+        "variant": "degree-deficit-branching"
+      },
+      "mechanism_fingerprint": "e8abdfc6778c785624c7c014002eaf84b4ef570c0561f55c0cad0a2f4b164354",
+      "method_id": "integer_programming-08",
+      "route_kind": "negative_or_constructive",
+      "screen_budget": {
+        "maximum_search_cpu_seconds": 40,
+        "search_seconds_per_unit": 5,
+        "units": 8
+      },
+      "screen_status": "blocked_pending_semantic_gate",
+      "semantic_gate": "coefficient-by-coefficient model audit and direct validation of every integer witness or checkable cut log",
+      "success_certificate": "net-new reconstructed and replayed UNSAT leaf, or directly validated 40-block cover",
+      "validation_status": "pending",
+      "variant": "degree-deficit-branching"
+    },
+    {
+      "applicable_targets": "bounded parent plus downstream leaves after coverage validation",
+      "family": "integer_programming",
+      "implementation_status": "design_candidate",
+      "material_signature": {
+        "family": "integer_programming",
+        "route_kind": "negative_or_constructive",
+        "semantic_gate": "coefficient-by-coefficient model audit and direct validation of every integer witness or checkable cut log",
+        "variant": "block-pair-branching"
+      },
+      "mechanism_fingerprint": "44f5c42aa86c61ecd9dec0098e2442990521be0760dd020074fca875baf26e28",
+      "method_id": "integer_programming-09",
+      "route_kind": "negative_or_constructive",
+      "screen_budget": {
+        "maximum_search_cpu_seconds": 40,
+        "search_seconds_per_unit": 5,
+        "units": 8
+      },
+      "screen_status": "blocked_pending_semantic_gate",
+      "semantic_gate": "coefficient-by-coefficient model audit and direct validation of every integer witness or checkable cut log",
+      "success_certificate": "net-new reconstructed and replayed UNSAT leaf, or directly validated 40-block cover",
+      "validation_status": "pending",
+      "variant": "block-pair-branching"
+    },
+    {
+      "applicable_targets": "bounded parent plus downstream leaves after coverage validation",
+      "family": "integer_programming",
+      "implementation_status": "design_candidate",
+      "material_signature": {
+        "family": "integer_programming",
+        "route_kind": "negative_or_constructive",
+        "semantic_gate": "coefficient-by-coefficient model audit and direct validation of every integer witness or checkable cut log",
+        "variant": "proof-producing-cut-log"
+      },
+      "mechanism_fingerprint": "b298e3abb52f91c00c80230b52f7a316370e9e4e7547068c0dacdf98d44303fd",
+      "method_id": "integer_programming-10",
+      "route_kind": "negative_or_constructive",
+      "screen_budget": {
+        "maximum_search_cpu_seconds": 40,
+        "search_seconds_per_unit": 5,
+        "units": 8
+      },
+      "screen_status": "blocked_pending_semantic_gate",
+      "semantic_gate": "coefficient-by-coefficient model audit and direct validation of every integer witness or checkable cut log",
+      "success_certificate": "net-new reconstructed and replayed UNSAT leaf, or directly validated 40-block cover",
+      "validation_status": "pending",
+      "variant": "proof-producing-cut-log"
+    },
+    {
+      "applicable_targets": "eight frozen leaves",
+      "family": "pseudo_boolean",
+      "implementation_status": "design_candidate",
+      "material_signature": {
+        "family": "pseudo_boolean",
+        "route_kind": "negative",
+        "semantic_gate": "exhaustive small-instance equivalence plus reconstruction of every coverage and degree inequality",
+        "variant": "bdd"
+      },
+      "mechanism_fingerprint": "27ee242499feff08402d17c44765a626de0efd6b12aac380336bd83944d91740",
+      "method_id": "pseudo_boolean-01",
+      "route_kind": "negative",
+      "screen_budget": {
+        "maximum_search_cpu_seconds": 40,
+        "search_seconds_per_unit": 5,
+        "units": 8
+      },
+      "screen_status": "blocked_pending_semantic_gate",
+      "semantic_gate": "exhaustive small-instance equivalence plus reconstruction of every coverage and degree inequality",
+      "success_certificate": "net-new reconstructed and replayed UNSAT leaf, or directly validated 40-block cover",
+      "validation_status": "pending",
+      "variant": "bdd"
+    },
+    {
+      "applicable_targets": "eight frozen leaves",
+      "family": "pseudo_boolean",
+      "implementation_status": "design_candidate",
+      "material_signature": {
+        "family": "pseudo_boolean",
+        "route_kind": "negative",
+        "semantic_gate": "exhaustive small-instance equivalence plus reconstruction of every coverage and degree inequality",
+        "variant": "sequential-weight-counter"
+      },
+      "mechanism_fingerprint": "ab38af821e5cce4ac052b35e552b1efda2a7121ce8ca2de2691a9c0dae21db41",
+      "method_id": "pseudo_boolean-02",
+      "route_kind": "negative",
+      "screen_budget": {
+        "maximum_search_cpu_seconds": 40,
+        "search_seconds_per_unit": 5,
+        "units": 8
+      },
+      "screen_status": "blocked_pending_semantic_gate",
+      "semantic_gate": "exhaustive small-instance equivalence plus reconstruction of every coverage and degree inequality",
+      "success_certificate": "net-new reconstructed and replayed UNSAT leaf, or directly validated 40-block cover",
+      "validation_status": "pending",
+      "variant": "sequential-weight-counter"
+    },
+    {
+      "applicable_targets": "eight frozen leaves",
+      "family": "pseudo_boolean",
+      "implementation_status": "design_candidate",
+      "material_signature": {
+        "family": "pseudo_boolean",
+        "route_kind": "negative",
+        "semantic_gate": "exhaustive small-instance equivalence plus reconstruction of every coverage and degree inequality",
+        "variant": "sorting-network"
+      },
+      "mechanism_fingerprint": "41054a2852b13e87e8f1cc7a3d813c208816fa878d0fe8ba91ce210dbc764ef4",
+      "method_id": "pseudo_boolean-03",
+      "route_kind": "negative",
+      "screen_budget": {
+        "maximum_search_cpu_seconds": 40,
+        "search_seconds_per_unit": 5,
+        "units": 8
+      },
+      "screen_status": "blocked_pending_semantic_gate",
+      "semantic_gate": "exhaustive small-instance equivalence plus reconstruction of every coverage and degree inequality",
+      "success_certificate": "net-new reconstructed and replayed UNSAT leaf, or directly validated 40-block cover",
+      "validation_status": "pending",
+      "variant": "sorting-network"
+    },
+    {
+      "applicable_targets": "eight frozen leaves",
+      "family": "pseudo_boolean",
+      "implementation_status": "design_candidate",
+      "material_signature": {
+        "family": "pseudo_boolean",
+        "route_kind": "negative",
+        "semantic_gate": "exhaustive small-instance equivalence plus reconstruction of every coverage and degree inequality",
+        "variant": "binary-adder"
+      },
+      "mechanism_fingerprint": "6eb9cfda4162de4bba8662e531f5585cce4235234cfd8810241a7ec1a7958d4d",
+      "method_id": "pseudo_boolean-04",
+      "route_kind": "negative",
+      "screen_budget": {
+        "maximum_search_cpu_seconds": 40,
+        "search_seconds_per_unit": 5,
+        "units": 8
+      },
+      "screen_status": "blocked_pending_semantic_gate",
+      "semantic_gate": "exhaustive small-instance equivalence plus reconstruction of every coverage and degree inequality",
+      "success_certificate": "net-new reconstructed and replayed UNSAT leaf, or directly validated 40-block cover",
+      "validation_status": "pending",
+      "variant": "binary-adder"
+    },
+    {
+      "applicable_targets": "eight frozen leaves",
+      "family": "pseudo_boolean",
+      "implementation_status": "design_candidate",
+      "material_signature": {
+        "family": "pseudo_boolean",
+        "route_kind": "negative",
+        "semantic_gate": "exhaustive small-instance equivalence plus reconstruction of every coverage and degree inequality",
+        "variant": "binary-merge"
+      },
+      "mechanism_fingerprint": "15370fd859868081173edf525f7caef042b2bfccd41b86ae445d58b42abbf441",
+      "method_id": "pseudo_boolean-05",
+      "route_kind": "negative",
+      "screen_budget": {
+        "maximum_search_cpu_seconds": 40,
+        "search_seconds_per_unit": 5,
+        "units": 8
+      },
+      "screen_status": "blocked_pending_semantic_gate",
+      "semantic_gate": "exhaustive small-instance equivalence plus reconstruction of every coverage and degree inequality",
+      "success_certificate": "net-new reconstructed and replayed UNSAT leaf, or directly validated 40-block cover",
+      "validation_status": "pending",
+      "variant": "binary-merge"
+    },
+    {
+      "applicable_targets": "eight frozen leaves",
+      "family": "pseudo_boolean",
+      "implementation_status": "design_candidate",
+      "material_signature": {
+        "family": "pseudo_boolean",
+        "route_kind": "negative",
+        "semantic_gate": "exhaustive small-instance equivalence plus reconstruction of every coverage and degree inequality",
+        "variant": "generalized-totalizer"
+      },
+      "mechanism_fingerprint": "e3248fcdc05fc42982d9dca25fa4d5c5808abbb59bbfae7dd2f3b57b73604ee2",
+      "method_id": "pseudo_boolean-06",
+      "route_kind": "negative",
+      "screen_budget": {
+        "maximum_search_cpu_seconds": 40,
+        "search_seconds_per_unit": 5,
+        "units": 8
+      },
+      "screen_status": "blocked_pending_semantic_gate",
+      "semantic_gate": "exhaustive small-instance equivalence plus reconstruction of every coverage and degree inequality",
+      "success_certificate": "net-new reconstructed and replayed UNSAT leaf, or directly validated 40-block cover",
+      "validation_status": "pending",
+      "variant": "generalized-totalizer"
+    },
+    {
+      "applicable_targets": "eight frozen leaves",
+      "family": "pseudo_boolean",
+      "implementation_status": "design_candidate",
+      "material_signature": {
+        "family": "pseudo_boolean",
+        "route_kind": "negative",
+        "semantic_gate": "exhaustive small-instance equivalence plus reconstruction of every coverage and degree inequality",
+        "variant": "modulo-totalizer"
+      },
+      "mechanism_fingerprint": "7b7dd32e181abb7f01fbd0c2742c69b584ecc47cdd7ab705acfa2c2511c36465",
+      "method_id": "pseudo_boolean-07",
+      "route_kind": "negative",
+      "screen_budget": {
+        "maximum_search_cpu_seconds": 40,
+        "search_seconds_per_unit": 5,
+        "units": 8
+      },
+      "screen_status": "blocked_pending_semantic_gate",
+      "semantic_gate": "exhaustive small-instance equivalence plus reconstruction of every coverage and degree inequality",
+      "success_certificate": "net-new reconstructed and replayed UNSAT leaf, or directly validated 40-block cover",
+      "validation_status": "pending",
+      "variant": "modulo-totalizer"
+    },
+    {
+      "applicable_targets": "eight frozen leaves",
+      "family": "pseudo_boolean",
+      "implementation_status": "design_candidate",
+      "material_signature": {
+        "family": "pseudo_boolean",
+        "route_kind": "negative",
+        "semantic_gate": "exhaustive small-instance equivalence plus reconstruction of every coverage and degree inequality",
+        "variant": "global-polynomial-watchdog"
+      },
+      "mechanism_fingerprint": "0f9893a39c9c708b05ece033ae6a3587b0b8d2706fd8c23a3fee88dad05d8438",
+      "method_id": "pseudo_boolean-08",
+      "route_kind": "negative",
+      "screen_budget": {
+        "maximum_search_cpu_seconds": 40,
+        "search_seconds_per_unit": 5,
+        "units": 8
+      },
+      "screen_status": "blocked_pending_semantic_gate",
+      "semantic_gate": "exhaustive small-instance equivalence plus reconstruction of every coverage and degree inequality",
+      "success_certificate": "net-new reconstructed and replayed UNSAT leaf, or directly validated 40-block cover",
+      "validation_status": "pending",
+      "variant": "global-polynomial-watchdog"
+    },
+    {
+      "applicable_targets": "eight frozen leaves",
+      "family": "pseudo_boolean",
+      "implementation_status": "design_candidate",
+      "material_signature": {
+        "family": "pseudo_boolean",
+        "route_kind": "negative",
+        "semantic_gate": "exhaustive small-instance equivalence plus reconstruction of every coverage and degree inequality",
+        "variant": "mixed-radix"
+      },
+      "mechanism_fingerprint": "505b23255fb40da5c16db7fc7ce7bd680f0ba66cfcfae711ab9326c70e35c136",
+      "method_id": "pseudo_boolean-09",
+      "route_kind": "negative",
+      "screen_budget": {
+        "maximum_search_cpu_seconds": 40,
+        "search_seconds_per_unit": 5,
+        "units": 8
+      },
+      "screen_status": "blocked_pending_semantic_gate",
+      "semantic_gate": "exhaustive small-instance equivalence plus reconstruction of every coverage and degree inequality",
+      "success_certificate": "net-new reconstructed and replayed UNSAT leaf, or directly validated 40-block cover",
+      "validation_status": "pending",
+      "variant": "mixed-radix"
+    },
+    {
+      "applicable_targets": "eight frozen leaves",
+      "family": "pseudo_boolean",
+      "implementation_status": "design_candidate",
+      "material_signature": {
+        "family": "pseudo_boolean",
+        "route_kind": "negative",
+        "semantic_gate": "exhaustive small-instance equivalence plus reconstruction of every coverage and degree inequality",
+        "variant": "cutting-planes"
+      },
+      "mechanism_fingerprint": "2758ee039eb348212c92378243fc0f8ce96f9d1e245a8e81abb8288f9675221c",
+      "method_id": "pseudo_boolean-10",
+      "route_kind": "negative",
+      "screen_budget": {
+        "maximum_search_cpu_seconds": 40,
+        "search_seconds_per_unit": 5,
+        "units": 8
+      },
+      "screen_status": "blocked_pending_semantic_gate",
+      "semantic_gate": "exhaustive small-instance equivalence plus reconstruction of every coverage and degree inequality",
+      "success_certificate": "net-new reconstructed and replayed UNSAT leaf, or directly validated 40-block cover",
+      "validation_status": "pending",
+      "variant": "cutting-planes"
+    },
+    {
+      "applicable_targets": "eight frozen leaves",
+      "family": "sat_cardinality",
+      "implementation_status": "design_candidate",
+      "material_signature": {
+        "family": "sat_cardinality",
+        "route_kind": "negative",
+        "semantic_gate": "truth-table boundary checks plus exact reconstruction of the non-cardinality CNF core",
+        "variant": "pairwise"
+      },
+      "mechanism_fingerprint": "b315c6415c3ef388ce646ec115bcf99abe9c7e3b99e10b0b4c94d4c914a37735",
+      "method_id": "sat_cardinality-01",
+      "route_kind": "negative",
+      "screen_budget": {
+        "maximum_search_cpu_seconds": 40,
+        "search_seconds_per_unit": 5,
+        "units": 8
+      },
+      "screen_status": "blocked_pending_semantic_gate",
+      "semantic_gate": "truth-table boundary checks plus exact reconstruction of the non-cardinality CNF core",
+      "success_certificate": "net-new reconstructed and replayed UNSAT leaf, or directly validated 40-block cover",
+      "validation_status": "pending",
+      "variant": "pairwise"
+    },
+    {
+      "applicable_targets": "eight frozen leaves",
+      "family": "sat_cardinality",
+      "implementation_status": "available",
+      "material_signature": {
+        "family": "sat_cardinality",
+        "route_kind": "negative",
+        "semantic_gate": "truth-table boundary checks plus exact reconstruction of the non-cardinality CNF core",
+        "variant": "sequential-counter"
+      },
+      "mechanism_fingerprint": "0496882ad41a742faf15ca15d84d6faa775588a42c3874d8990d07528677530e",
+      "method_id": "sat_cardinality-02",
+      "route_kind": "negative",
+      "screen_budget": {
+        "maximum_search_cpu_seconds": 40,
+        "search_seconds_per_unit": 5,
+        "units": 8
+      },
+      "screen_status": "frozen_predecessor_in_progress",
+      "semantic_gate": "truth-table boundary checks plus exact reconstruction of the non-cardinality CNF core",
+      "success_certificate": "net-new reconstructed and replayed UNSAT leaf, or directly validated 40-block cover",
+      "validation_status": "passed",
+      "variant": "sequential-counter"
+    },
+    {
+      "applicable_targets": "eight frozen leaves",
+      "family": "sat_cardinality",
+      "implementation_status": "design_candidate",
+      "material_signature": {
+        "family": "sat_cardinality",
+        "route_kind": "negative",
+        "semantic_gate": "truth-table boundary checks plus exact reconstruction of the non-cardinality CNF core",
+        "variant": "sorting-network"
+      },
+      "mechanism_fingerprint": "5dc7b15e4863d4f2cddbc2ab561b744c00b39a51653c13012ccaee9cb4ea3eec",
+      "method_id": "sat_cardinality-03",
+      "route_kind": "negative",
+      "screen_budget": {
+        "maximum_search_cpu_seconds": 40,
+        "search_seconds_per_unit": 5,
+        "units": 8
+      },
+      "screen_status": "blocked_pending_semantic_gate",
+      "semantic_gate": "truth-table boundary checks plus exact reconstruction of the non-cardinality CNF core",
+      "success_certificate": "net-new reconstructed and replayed UNSAT leaf, or directly validated 40-block cover",
+      "validation_status": "pending",
+      "variant": "sorting-network"
+    },
+    {
+      "applicable_targets": "eight frozen leaves",
+      "family": "sat_cardinality",
+      "implementation_status": "design_candidate",
+      "material_signature": {
+        "family": "sat_cardinality",
+        "route_kind": "negative",
+        "semantic_gate": "truth-table boundary checks plus exact reconstruction of the non-cardinality CNF core",
+        "variant": "cardinality-network"
+      },
+      "mechanism_fingerprint": "3166efe6bd03c1df185d31b39e8137097e25a584bf32c95b21be80dd8960364a",
+      "method_id": "sat_cardinality-04",
+      "route_kind": "negative",
+      "screen_budget": {
+        "maximum_search_cpu_seconds": 40,
+        "search_seconds_per_unit": 5,
+        "units": 8
+      },
+      "screen_status": "blocked_pending_semantic_gate",
+      "semantic_gate": "truth-table boundary checks plus exact reconstruction of the non-cardinality CNF core",
+      "success_certificate": "net-new reconstructed and replayed UNSAT leaf, or directly validated 40-block cover",
+      "validation_status": "pending",
+      "variant": "cardinality-network"
+    },
+    {
+      "applicable_targets": "eight frozen leaves",
+      "family": "sat_cardinality",
+      "implementation_status": "design_candidate",
+      "material_signature": {
+        "family": "sat_cardinality",
+        "route_kind": "negative",
+        "semantic_gate": "truth-table boundary checks plus exact reconstruction of the non-cardinality CNF core",
+        "variant": "bitwise"
+      },
+      "mechanism_fingerprint": "b1bc739c16146122e05179ba22b0f28ccb8e1d0374e6b1b8f744c1045f5662d5",
+      "method_id": "sat_cardinality-05",
+      "route_kind": "negative",
+      "screen_budget": {
+        "maximum_search_cpu_seconds": 40,
+        "search_seconds_per_unit": 5,
+        "units": 8
+      },
+      "screen_status": "blocked_pending_semantic_gate",
+      "semantic_gate": "truth-table boundary checks plus exact reconstruction of the non-cardinality CNF core",
+      "success_certificate": "net-new reconstructed and replayed UNSAT leaf, or directly validated 40-block cover",
+      "validation_status": "pending",
+      "variant": "bitwise"
+    },
+    {
+      "applicable_targets": "eight frozen leaves",
+      "family": "sat_cardinality",
+      "implementation_status": "design_candidate",
+      "material_signature": {
+        "family": "sat_cardinality",
+        "route_kind": "negative",
+        "semantic_gate": "truth-table boundary checks plus exact reconstruction of the non-cardinality CNF core",
+        "variant": "ladder"
+      },
+      "mechanism_fingerprint": "8380c4112d9f6405c6ef23a9c972baf4b3d6321236a61e58b79e4c7830d83f04",
+      "method_id": "sat_cardinality-06",
+      "route_kind": "negative",
+      "screen_budget": {
+        "maximum_search_cpu_seconds": 40,
+        "search_seconds_per_unit": 5,
+        "units": 8
+      },
+      "screen_status": "blocked_pending_semantic_gate",
+      "semantic_gate": "truth-table boundary checks plus exact reconstruction of the non-cardinality CNF core",
+      "success_certificate": "net-new reconstructed and replayed UNSAT leaf, or directly validated 40-block cover",
+      "validation_status": "pending",
+      "variant": "ladder"
+    },
+    {
+      "applicable_targets": "eight frozen leaves",
+      "family": "sat_cardinality",
+      "implementation_status": "design_candidate",
+      "material_signature": {
+        "family": "sat_cardinality",
+        "route_kind": "negative",
+        "semantic_gate": "truth-table boundary checks plus exact reconstruction of the non-cardinality CNF core",
+        "variant": "totalizer"
+      },
+      "mechanism_fingerprint": "108c849c9c8f043bb0e14e0077308aac660706719e897dcaf00872df71da680a",
+      "method_id": "sat_cardinality-07",
+      "route_kind": "negative",
+      "screen_budget": {
+        "maximum_search_cpu_seconds": 40,
+        "search_seconds_per_unit": 5,
+        "units": 8
+      },
+      "screen_status": "blocked_pending_semantic_gate",
+      "semantic_gate": "truth-table boundary checks plus exact reconstruction of the non-cardinality CNF core",
+      "success_certificate": "net-new reconstructed and replayed UNSAT leaf, or directly validated 40-block cover",
+      "validation_status": "pending",
+      "variant": "totalizer"
+    },
+    {
+      "applicable_targets": "eight frozen leaves",
+      "family": "sat_cardinality",
+      "implementation_status": "design_candidate",
+      "material_signature": {
+        "family": "sat_cardinality",
+        "route_kind": "negative",
+        "semantic_gate": "truth-table boundary checks plus exact reconstruction of the non-cardinality CNF core",
+        "variant": "modulo-totalizer"
+      },
+      "mechanism_fingerprint": "fd46e95d68f09bf23ef163971aa87a37d32de736c37234718f542d3f9e7ea7d1",
+      "method_id": "sat_cardinality-08",
+      "route_kind": "negative",
+      "screen_budget": {
+        "maximum_search_cpu_seconds": 40,
+        "search_seconds_per_unit": 5,
+        "units": 8
+      },
+      "screen_status": "blocked_pending_semantic_gate",
+      "semantic_gate": "truth-table boundary checks plus exact reconstruction of the non-cardinality CNF core",
+      "success_certificate": "net-new reconstructed and replayed UNSAT leaf, or directly validated 40-block cover",
+      "validation_status": "pending",
+      "variant": "modulo-totalizer"
+    },
+    {
+      "applicable_targets": "eight frozen leaves",
+      "family": "sat_cardinality",
+      "implementation_status": "available",
+      "material_signature": {
+        "family": "sat_cardinality",
+        "route_kind": "negative",
+        "semantic_gate": "truth-table boundary checks plus exact reconstruction of the non-cardinality CNF core",
+        "variant": "kmtotalizer"
+      },
+      "mechanism_fingerprint": "890592d6a1ee661a558c6160f2c71de684ab4f327faef544e5f9ed7ebac0e544",
+      "method_id": "sat_cardinality-09",
+      "route_kind": "negative",
+      "screen_budget": {
+        "maximum_search_cpu_seconds": 40,
+        "search_seconds_per_unit": 5,
+        "units": 8
+      },
+      "screen_status": "frozen_predecessor_in_progress",
+      "semantic_gate": "truth-table boundary checks plus exact reconstruction of the non-cardinality CNF core",
+      "success_certificate": "net-new reconstructed and replayed UNSAT leaf, or directly validated 40-block cover",
+      "validation_status": "passed",
+      "variant": "kmtotalizer"
+    },
+    {
+      "applicable_targets": "eight frozen leaves",
+      "family": "sat_cardinality",
+      "implementation_status": "design_candidate",
+      "material_signature": {
+        "family": "sat_cardinality",
+        "route_kind": "negative",
+        "semantic_gate": "truth-table boundary checks plus exact reconstruction of the non-cardinality CNF core",
+        "variant": "native-cardinality"
+      },
+      "mechanism_fingerprint": "adbad1f37afd54411266912fc6896bf5d168a6b598cc08c80e6632a41c64dd24",
+      "method_id": "sat_cardinality-10",
+      "route_kind": "negative",
+      "screen_budget": {
+        "maximum_search_cpu_seconds": 40,
+        "search_seconds_per_unit": 5,
+        "units": 8
+      },
+      "screen_status": "blocked_pending_semantic_gate",
+      "semantic_gate": "truth-table boundary checks plus exact reconstruction of the non-cardinality CNF core",
+      "success_certificate": "net-new reconstructed and replayed UNSAT leaf, or directly validated 40-block cover",
+      "validation_status": "pending",
+      "variant": "native-cardinality"
+    },
+    {
+      "applicable_targets": "eight frozen leaves",
+      "family": "sat_cubing",
+      "implementation_status": "design_candidate",
+      "material_signature": {
+        "family": "sat_cubing",
+        "route_kind": "negative",
+        "semantic_gate": "independent proof that generated cubes are disjoint and exhaust the parent leaf",
+        "variant": "first-unassigned"
+      },
+      "mechanism_fingerprint": "745e32fb8d8e8ad45cd84c0050533dd6c435842dc2b3cdecb431b796cec22b77",
+      "method_id": "sat_cubing-01",
+      "route_kind": "negative",
+      "screen_budget": {
+        "maximum_search_cpu_seconds": 40,
+        "search_seconds_per_unit": 5,
+        "units": 8
+      },
+      "screen_status": "blocked_pending_semantic_gate",
+      "semantic_gate": "independent proof that generated cubes are disjoint and exhaust the parent leaf",
+      "success_certificate": "net-new reconstructed and replayed UNSAT leaf, or directly validated 40-block cover",
+      "validation_status": "pending",
+      "variant": "first-unassigned"
+    },
+    {
+      "applicable_targets": "eight frozen leaves",
+      "family": "sat_cubing",
+      "implementation_status": "design_candidate",
+      "material_signature": {
+        "family": "sat_cubing",
+        "route_kind": "negative",
+        "semantic_gate": "independent proof that generated cubes are disjoint and exhaust the parent leaf",
+        "variant": "minimum-orbit"
+      },
+      "mechanism_fingerprint": "c0098068dd60f599b1c3a833da519979fb187784269e2293efebb413fafc4f9f",
+      "method_id": "sat_cubing-02",
+      "route_kind": "negative",
+      "screen_budget": {
+        "maximum_search_cpu_seconds": 40,
+        "search_seconds_per_unit": 5,
+        "units": 8
+      },
+      "screen_status": "blocked_pending_semantic_gate",
+      "semantic_gate": "independent proof that generated cubes are disjoint and exhaust the parent leaf",
+      "success_certificate": "net-new reconstructed and replayed UNSAT leaf, or directly validated 40-block cover",
+      "validation_status": "pending",
+      "variant": "minimum-orbit"
+    },
+    {
+      "applicable_targets": "eight frozen leaves",
+      "family": "sat_cubing",
+      "implementation_status": "design_candidate",
+      "material_signature": {
+        "family": "sat_cubing",
+        "route_kind": "negative",
+        "semantic_gate": "independent proof that generated cubes are disjoint and exhaust the parent leaf",
+        "variant": "maximum-occurrence"
+      },
+      "mechanism_fingerprint": "e5ff825958c6c361d613c3468517776e98eb18b23f3bd948aa7ebd6e99ddb4a6",
+      "method_id": "sat_cubing-03",
+      "route_kind": "negative",
+      "screen_budget": {
+        "maximum_search_cpu_seconds": 40,
+        "search_seconds_per_unit": 5,
+        "units": 8
+      },
+      "screen_status": "blocked_pending_semantic_gate",
+      "semantic_gate": "independent proof that generated cubes are disjoint and exhaust the parent leaf",
+      "success_certificate": "net-new reconstructed and replayed UNSAT leaf, or directly validated 40-block cover",
+      "validation_status": "pending",
+      "variant": "maximum-occurrence"
+    },
+    {
+      "applicable_targets": "eight frozen leaves",
+      "family": "sat_cubing",
+      "implementation_status": "design_candidate",
+      "material_signature": {
+        "family": "sat_cubing",
+        "route_kind": "negative",
+        "semantic_gate": "independent proof that generated cubes are disjoint and exhaust the parent leaf",
+        "variant": "balanced-polarity"
+      },
+      "mechanism_fingerprint": "db0a487638a995cd8ade2ee7355fd4627ea3e83a93b3b77473e30dfc24255f2d",
+      "method_id": "sat_cubing-04",
+      "route_kind": "negative",
+      "screen_budget": {
+        "maximum_search_cpu_seconds": 40,
+        "search_seconds_per_unit": 5,
+        "units": 8
+      },
+      "screen_status": "blocked_pending_semantic_gate",
+      "semantic_gate": "independent proof that generated cubes are disjoint and exhaust the parent leaf",
+      "success_certificate": "net-new reconstructed and replayed UNSAT leaf, or directly validated 40-block cover",
+      "validation_status": "pending",
+      "variant": "balanced-polarity"
+    },
+    {
+      "applicable_targets": "eight frozen leaves",
+      "family": "sat_cubing",
+      "implementation_status": "design_candidate",
+      "material_signature": {
+        "family": "sat_cubing",
+        "route_kind": "negative",
+        "semantic_gate": "independent proof that generated cubes are disjoint and exhaust the parent leaf",
+        "variant": "lookahead-propagation"
+      },
+      "mechanism_fingerprint": "4e5c2754f4d1059e3bbeb9d06927ffc8b856bf4f8e563f7626d86531eed23836",
+      "method_id": "sat_cubing-05",
+      "route_kind": "negative",
+      "screen_budget": {
+        "maximum_search_cpu_seconds": 40,
+        "search_seconds_per_unit": 5,
+        "units": 8
+      },
+      "screen_status": "blocked_pending_semantic_gate",
+      "semantic_gate": "independent proof that generated cubes are disjoint and exhaust the parent leaf",
+      "success_certificate": "net-new reconstructed and replayed UNSAT leaf, or directly validated 40-block cover",
+      "validation_status": "pending",
+      "variant": "lookahead-propagation"
+    },
+    {
+      "applicable_targets": "eight frozen leaves",
+      "family": "sat_cubing",
+      "implementation_status": "design_candidate",
+      "material_signature": {
+        "family": "sat_cubing",
+        "route_kind": "negative",
+        "semantic_gate": "independent proof that generated cubes are disjoint and exhaust the parent leaf",
+        "variant": "degree-deficit"
+      },
+      "mechanism_fingerprint": "207aa23f7ae811a8c0f3a3c7ea671269b798ae15ed685887380c48d625a30173",
+      "method_id": "sat_cubing-06",
+      "route_kind": "negative",
+      "screen_budget": {
+        "maximum_search_cpu_seconds": 40,
+        "search_seconds_per_unit": 5,
+        "units": 8
+      },
+      "screen_status": "blocked_pending_semantic_gate",
+      "semantic_gate": "independent proof that generated cubes are disjoint and exhaust the parent leaf",
+      "success_certificate": "net-new reconstructed and replayed UNSAT leaf, or directly validated 40-block cover",
+      "validation_status": "pending",
+      "variant": "degree-deficit"
+    },
+    {
+      "applicable_targets": "eight frozen leaves",
+      "family": "sat_cubing",
+      "implementation_status": "design_candidate",
+      "material_signature": {
+        "family": "sat_cubing",
+        "route_kind": "negative",
+        "semantic_gate": "independent proof that generated cubes are disjoint and exhaust the parent leaf",
+        "variant": "uncovered-quadruple"
+      },
+      "mechanism_fingerprint": "29ea2a4050c60a5e827d155d495cea85db58943d6656b64a75dc9568162060f7",
+      "method_id": "sat_cubing-07",
+      "route_kind": "negative",
+      "screen_budget": {
+        "maximum_search_cpu_seconds": 40,
+        "search_seconds_per_unit": 5,
+        "units": 8
+      },
+      "screen_status": "blocked_pending_semantic_gate",
+      "semantic_gate": "independent proof that generated cubes are disjoint and exhaust the parent leaf",
+      "success_certificate": "net-new reconstructed and replayed UNSAT leaf, or directly validated 40-block cover",
+      "validation_status": "pending",
+      "variant": "uncovered-quadruple"
+    },
+    {
+      "applicable_targets": "eight frozen leaves",
+      "family": "sat_cubing",
+      "implementation_status": "design_candidate",
+      "material_signature": {
+        "family": "sat_cubing",
+        "route_kind": "negative",
+        "semantic_gate": "independent proof that generated cubes are disjoint and exhaust the parent leaf",
+        "variant": "proof-core-guided"
+      },
+      "mechanism_fingerprint": "717bb0dc193c479a864872106f954b3f6cfc1b947ccfeb0b62de41f53d153578",
+      "method_id": "sat_cubing-08",
+      "route_kind": "negative",
+      "screen_budget": {
+        "maximum_search_cpu_seconds": 40,
+        "search_seconds_per_unit": 5,
+        "units": 8
+      },
+      "screen_status": "blocked_pending_semantic_gate",
+      "semantic_gate": "independent proof that generated cubes are disjoint and exhaust the parent leaf",
+      "success_certificate": "net-new reconstructed and replayed UNSAT leaf, or directly validated 40-block cover",
+      "validation_status": "pending",
+      "variant": "proof-core-guided"
+    },
+    {
+      "applicable_targets": "eight frozen leaves",
+      "family": "sat_cubing",
+      "implementation_status": "design_candidate",
+      "material_signature": {
+        "family": "sat_cubing",
+        "route_kind": "negative",
+        "semantic_gate": "independent proof that generated cubes are disjoint and exhaust the parent leaf",
+        "variant": "secondary-prefix"
+      },
+      "mechanism_fingerprint": "bab7181d816690113ce4e0a714c2256f5dff90323a551adc7a7dfcaf349f1533",
+      "method_id": "sat_cubing-09",
+      "route_kind": "negative",
+      "screen_budget": {
+        "maximum_search_cpu_seconds": 40,
+        "search_seconds_per_unit": 5,
+        "units": 8
+      },
+      "screen_status": "blocked_pending_semantic_gate",
+      "semantic_gate": "independent proof that generated cubes are disjoint and exhaust the parent leaf",
+      "success_certificate": "net-new reconstructed and replayed UNSAT leaf, or directly validated 40-block cover",
+      "validation_status": "pending",
+      "variant": "secondary-prefix"
+    },
+    {
+      "applicable_targets": "eight frozen leaves",
+      "family": "sat_cubing",
+      "implementation_status": "design_candidate",
+      "material_signature": {
+        "family": "sat_cubing",
+        "route_kind": "negative",
+        "semantic_gate": "independent proof that generated cubes are disjoint and exhaust the parent leaf",
+        "variant": "tertiary-prefix"
+      },
+      "mechanism_fingerprint": "c280c4dafcbf0c1a09030bf6ec0b0d9be58c3a00fc0367d3250e278a4a453a35",
+      "method_id": "sat_cubing-10",
+      "route_kind": "negative",
+      "screen_budget": {
+        "maximum_search_cpu_seconds": 40,
+        "search_seconds_per_unit": 5,
+        "units": 8
+      },
+      "screen_status": "blocked_pending_semantic_gate",
+      "semantic_gate": "independent proof that generated cubes are disjoint and exhaust the parent leaf",
+      "success_certificate": "net-new reconstructed and replayed UNSAT leaf, or directly validated 40-block cover",
+      "validation_status": "pending",
+      "variant": "tertiary-prefix"
+    },
+    {
+      "applicable_targets": "eight frozen leaves",
+      "family": "sat_search",
+      "implementation_status": "design_candidate",
+      "material_signature": {
+        "family": "sat_search",
+        "route_kind": "negative",
+        "semantic_gate": "same frozen CNF hash and proof-producing solver control on one known UNSAT leaf",
+        "variant": "cadical-default"
+      },
+      "mechanism_fingerprint": "4fe56177cfbe3e1ffc356880b85cc45a66aede1782e8f5d453442b450e563b29",
+      "method_id": "sat_search-01",
+      "route_kind": "negative",
+      "screen_budget": {
+        "maximum_search_cpu_seconds": 40,
+        "search_seconds_per_unit": 5,
+        "units": 8
+      },
+      "screen_status": "blocked_pending_semantic_gate",
+      "semantic_gate": "same frozen CNF hash and proof-producing solver control on one known UNSAT leaf",
+      "success_certificate": "net-new reconstructed and replayed UNSAT leaf, or directly validated 40-block cover",
+      "validation_status": "pending",
+      "variant": "cadical-default"
+    },
+    {
+      "applicable_targets": "eight frozen leaves",
+      "family": "sat_search",
+      "implementation_status": "design_candidate",
+      "material_signature": {
+        "family": "sat_search",
+        "route_kind": "negative",
+        "semantic_gate": "same frozen CNF hash and proof-producing solver control on one known UNSAT leaf",
+        "variant": "stable-only"
+      },
+      "mechanism_fingerprint": "17a02a558083f199809c4af757719e8896feb6f481f9ad71c3b047e30aabccc4",
+      "method_id": "sat_search-02",
+      "route_kind": "negative",
+      "screen_budget": {
+        "maximum_search_cpu_seconds": 40,
+        "search_seconds_per_unit": 5,
+        "units": 8
+      },
+      "screen_status": "blocked_pending_semantic_gate",
+      "semantic_gate": "same frozen CNF hash and proof-producing solver control on one known UNSAT leaf",
+      "success_certificate": "net-new reconstructed and replayed UNSAT leaf, or directly validated 40-block cover",
+      "validation_status": "pending",
+      "variant": "stable-only"
+    },
+    {
+      "applicable_targets": "eight frozen leaves",
+      "family": "sat_search",
+      "implementation_status": "design_candidate",
+      "material_signature": {
+        "family": "sat_search",
+        "route_kind": "negative",
+        "semantic_gate": "same frozen CNF hash and proof-producing solver control on one known UNSAT leaf",
+        "variant": "focused-only"
+      },
+      "mechanism_fingerprint": "b2a9d58a47ffda675c08701dbe3a9d73f5ba040bb456b48f60ecdd357a6237e6",
+      "method_id": "sat_search-03",
+      "route_kind": "negative",
+      "screen_budget": {
+        "maximum_search_cpu_seconds": 40,
+        "search_seconds_per_unit": 5,
+        "units": 8
+      },
+      "screen_status": "blocked_pending_semantic_gate",
+      "semantic_gate": "same frozen CNF hash and proof-producing solver control on one known UNSAT leaf",
+      "success_certificate": "net-new reconstructed and replayed UNSAT leaf, or directly validated 40-block cover",
+      "validation_status": "pending",
+      "variant": "focused-only"
+    },
+    {
+      "applicable_targets": "eight frozen leaves",
+      "family": "sat_search",
+      "implementation_status": "design_candidate",
+      "material_signature": {
+        "family": "sat_search",
+        "route_kind": "negative",
+        "semantic_gate": "same frozen CNF hash and proof-producing solver control on one known UNSAT leaf",
+        "variant": "phase-false"
+      },
+      "mechanism_fingerprint": "7dd3659ba7b2d1f219b919acc8b13ecebefc5d3d406e5576a2d44baf48cb2fda",
+      "method_id": "sat_search-04",
+      "route_kind": "negative",
+      "screen_budget": {
+        "maximum_search_cpu_seconds": 40,
+        "search_seconds_per_unit": 5,
+        "units": 8
+      },
+      "screen_status": "blocked_pending_semantic_gate",
+      "semantic_gate": "same frozen CNF hash and proof-producing solver control on one known UNSAT leaf",
+      "success_certificate": "net-new reconstructed and replayed UNSAT leaf, or directly validated 40-block cover",
+      "validation_status": "pending",
+      "variant": "phase-false"
+    },
+    {
+      "applicable_targets": "eight frozen leaves",
+      "family": "sat_search",
+      "implementation_status": "design_candidate",
+      "material_signature": {
+        "family": "sat_search",
+        "route_kind": "negative",
+        "semantic_gate": "same frozen CNF hash and proof-producing solver control on one known UNSAT leaf",
+        "variant": "phase-true"
+      },
+      "mechanism_fingerprint": "ff5f3975ebe66513faf6b8fe81521f672f460caf5b06a0433db66425089a838d",
+      "method_id": "sat_search-05",
+      "route_kind": "negative",
+      "screen_budget": {
+        "maximum_search_cpu_seconds": 40,
+        "search_seconds_per_unit": 5,
+        "units": 8
+      },
+      "screen_status": "blocked_pending_semantic_gate",
+      "semantic_gate": "same frozen CNF hash and proof-producing solver control on one known UNSAT leaf",
+      "success_certificate": "net-new reconstructed and replayed UNSAT leaf, or directly validated 40-block cover",
+      "validation_status": "pending",
+      "variant": "phase-true"
+    },
+    {
+      "applicable_targets": "eight frozen leaves",
+      "family": "sat_search",
+      "implementation_status": "design_candidate",
+      "material_signature": {
+        "family": "sat_search",
+        "route_kind": "negative",
+        "semantic_gate": "same frozen CNF hash and proof-producing solver control on one known UNSAT leaf",
+        "variant": "random-phase"
+      },
+      "mechanism_fingerprint": "855d99c8cb6f845a1c93b6faef27c5a9eed4ad06a19bb0aabde646d546ec01b1",
+      "method_id": "sat_search-06",
+      "route_kind": "negative",
+      "screen_budget": {
+        "maximum_search_cpu_seconds": 40,
+        "search_seconds_per_unit": 5,
+        "units": 8
+      },
+      "screen_status": "blocked_pending_semantic_gate",
+      "semantic_gate": "same frozen CNF hash and proof-producing solver control on one known UNSAT leaf",
+      "success_certificate": "net-new reconstructed and replayed UNSAT leaf, or directly validated 40-block cover",
+      "validation_status": "pending",
+      "variant": "random-phase"
+    },
+    {
+      "applicable_targets": "eight frozen leaves",
+      "family": "sat_search",
+      "implementation_status": "design_candidate",
+      "material_signature": {
+        "family": "sat_search",
+        "route_kind": "negative",
+        "semantic_gate": "same frozen CNF hash and proof-producing solver control on one known UNSAT leaf",
+        "variant": "walk-initialized"
+      },
+      "mechanism_fingerprint": "a4efeca504e8f717aceb7cdd679f2d55767c8d15367c0fa46aba2a76765c5f34",
+      "method_id": "sat_search-07",
+      "route_kind": "negative",
+      "screen_budget": {
+        "maximum_search_cpu_seconds": 40,
+        "search_seconds_per_unit": 5,
+        "units": 8
+      },
+      "screen_status": "blocked_pending_semantic_gate",
+      "semantic_gate": "same frozen CNF hash and proof-producing solver control on one known UNSAT leaf",
+      "success_certificate": "net-new reconstructed and replayed UNSAT leaf, or directly validated 40-block cover",
+      "validation_status": "pending",
+      "variant": "walk-initialized"
+    },
+    {
+      "applicable_targets": "eight frozen leaves",
+      "family": "sat_search",
+      "implementation_status": "design_candidate",
+      "material_signature": {
+        "family": "sat_search",
+        "route_kind": "negative",
+        "semantic_gate": "same frozen CNF hash and proof-producing solver control on one known UNSAT leaf",
+        "variant": "restart-aggressive"
+      },
+      "mechanism_fingerprint": "d404d359f8367e1e95d03b9565fce0188aa4c1ff1a73a59d2e5d2288a8ffb92e",
+      "method_id": "sat_search-08",
+      "route_kind": "negative",
+      "screen_budget": {
+        "maximum_search_cpu_seconds": 40,
+        "search_seconds_per_unit": 5,
+        "units": 8
+      },
+      "screen_status": "blocked_pending_semantic_gate",
+      "semantic_gate": "same frozen CNF hash and proof-producing solver control on one known UNSAT leaf",
+      "success_certificate": "net-new reconstructed and replayed UNSAT leaf, or directly validated 40-block cover",
+      "validation_status": "pending",
+      "variant": "restart-aggressive"
+    },
+    {
+      "applicable_targets": "eight frozen leaves",
+      "family": "sat_search",
+      "implementation_status": "design_candidate",
+      "material_signature": {
+        "family": "sat_search",
+        "route_kind": "negative",
+        "semantic_gate": "same frozen CNF hash and proof-producing solver control on one known UNSAT leaf",
+        "variant": "restart-conservative"
+      },
+      "mechanism_fingerprint": "53259282fe17eecfd28f615d28b5f7a2d86da5c262ad4d26ffa27b8a3b37b209",
+      "method_id": "sat_search-09",
+      "route_kind": "negative",
+      "screen_budget": {
+        "maximum_search_cpu_seconds": 40,
+        "search_seconds_per_unit": 5,
+        "units": 8
+      },
+      "screen_status": "blocked_pending_semantic_gate",
+      "semantic_gate": "same frozen CNF hash and proof-producing solver control on one known UNSAT leaf",
+      "success_certificate": "net-new reconstructed and replayed UNSAT leaf, or directly validated 40-block cover",
+      "validation_status": "pending",
+      "variant": "restart-conservative"
+    },
+    {
+      "applicable_targets": "eight frozen leaves",
+      "family": "sat_search",
+      "implementation_status": "design_candidate",
+      "material_signature": {
+        "family": "sat_search",
+        "route_kind": "negative",
+        "semantic_gate": "same frozen CNF hash and proof-producing solver control on one known UNSAT leaf",
+        "variant": "proof-core-variable-order"
+      },
+      "mechanism_fingerprint": "cefdd709ae87c44c9860cd89f3c56c395fb8dfb38e3f7db6003343c66a8515bb",
+      "method_id": "sat_search-10",
+      "route_kind": "negative",
+      "screen_budget": {
+        "maximum_search_cpu_seconds": 40,
+        "search_seconds_per_unit": 5,
+        "units": 8
+      },
+      "screen_status": "blocked_pending_semantic_gate",
+      "semantic_gate": "same frozen CNF hash and proof-producing solver control on one known UNSAT leaf",
+      "success_certificate": "net-new reconstructed and replayed UNSAT leaf, or directly validated 40-block cover",
+      "validation_status": "pending",
+      "variant": "proof-core-variable-order"
+    },
+    {
+      "applicable_targets": "bounded parent plus downstream leaves after coverage validation",
+      "family": "structural_reduction",
+      "implementation_status": "design_candidate",
+      "material_signature": {
+        "family": "structural_reduction",
+        "route_kind": "reduction",
+        "semantic_gate": "independent derivation or exhaustive bounded counterexample search for the proposed reduction",
+        "variant": "point-degree-profile"
+      },
+      "mechanism_fingerprint": "edffcab208cc99e9d6cc5087240d068e0d904745b42678ac327336157d0e14b9",
+      "method_id": "structural_reduction-01",
+      "route_kind": "reduction",
+      "screen_budget": {
+        "maximum_search_cpu_seconds": 40,
+        "search_seconds_per_unit": 5,
+        "units": 8
+      },
+      "screen_status": "blocked_pending_semantic_gate",
+      "semantic_gate": "independent derivation or exhaustive bounded counterexample search for the proposed reduction",
+      "success_certificate": "net-new reconstructed and replayed UNSAT leaf, or directly validated 40-block cover",
+      "validation_status": "pending",
+      "variant": "point-degree-profile"
+    },
+    {
+      "applicable_targets": "bounded parent plus downstream leaves after coverage validation",
+      "family": "structural_reduction",
+      "implementation_status": "design_candidate",
+      "material_signature": {
+        "family": "structural_reduction",
+        "route_kind": "reduction",
+        "semantic_gate": "independent derivation or exhaustive bounded counterexample search for the proposed reduction",
+        "variant": "pair-frequency-profile"
+      },
+      "mechanism_fingerprint": "1e39077b9dfe2c162f5b58ac1da71c88840eddda495d80471fc14546fd75772a",
+      "method_id": "structural_reduction-02",
+      "route_kind": "reduction",
+      "screen_budget": {
+        "maximum_search_cpu_seconds": 40,
+        "search_seconds_per_unit": 5,
+        "units": 8
+      },
+      "screen_status": "blocked_pending_semantic_gate",
+      "semantic_gate": "independent derivation or exhaustive bounded counterexample search for the proposed reduction",
+      "success_certificate": "net-new reconstructed and replayed UNSAT leaf, or directly validated 40-block cover",
+      "validation_status": "pending",
+      "variant": "pair-frequency-profile"
+    },
+    {
+      "applicable_targets": "bounded parent plus downstream leaves after coverage validation",
+      "family": "structural_reduction",
+      "implementation_status": "design_candidate",
+      "material_signature": {
+        "family": "structural_reduction",
+        "route_kind": "reduction",
+        "semantic_gate": "independent derivation or exhaustive bounded counterexample search for the proposed reduction",
+        "variant": "triple-frequency-profile"
+      },
+      "mechanism_fingerprint": "d076691232489a2def061af1878feccad778be7acad5da2779578fe0abae0cb8",
+      "method_id": "structural_reduction-03",
+      "route_kind": "reduction",
+      "screen_budget": {
+        "maximum_search_cpu_seconds": 40,
+        "search_seconds_per_unit": 5,
+        "units": 8
+      },
+      "screen_status": "blocked_pending_semantic_gate",
+      "semantic_gate": "independent derivation or exhaustive bounded counterexample search for the proposed reduction",
+      "success_certificate": "net-new reconstructed and replayed UNSAT leaf, or directly validated 40-block cover",
+      "validation_status": "pending",
+      "variant": "triple-frequency-profile"
+    },
+    {
+      "applicable_targets": "bounded parent plus downstream leaves after coverage validation",
+      "family": "structural_reduction",
+      "implementation_status": "design_candidate",
+      "material_signature": {
+        "family": "structural_reduction",
+        "route_kind": "reduction",
+        "semantic_gate": "independent derivation or exhaustive bounded counterexample search for the proposed reduction",
+        "variant": "intersection-distribution"
+      },
+      "mechanism_fingerprint": "e8bc4f3620397c9474723b32b9a0ebb82fa9212319e00ee4309d17870dee547c",
+      "method_id": "structural_reduction-04",
+      "route_kind": "reduction",
+      "screen_budget": {
+        "maximum_search_cpu_seconds": 40,
+        "search_seconds_per_unit": 5,
+        "units": 8
+      },
+      "screen_status": "blocked_pending_semantic_gate",
+      "semantic_gate": "independent derivation or exhaustive bounded counterexample search for the proposed reduction",
+      "success_certificate": "net-new reconstructed and replayed UNSAT leaf, or directly validated 40-block cover",
+      "validation_status": "pending",
+      "variant": "intersection-distribution"
+    },
+    {
+      "applicable_targets": "bounded parent plus downstream leaves after coverage validation",
+      "family": "structural_reduction",
+      "implementation_status": "design_candidate",
+      "material_signature": {
+        "family": "structural_reduction",
+        "route_kind": "reduction",
+        "semantic_gate": "independent derivation or exhaustive bounded counterexample search for the proposed reduction",
+        "variant": "matching-incidence-profile"
+      },
+      "mechanism_fingerprint": "dccefb51c4c11e4c1d73b6c15a45f809a5353f8474f752b774219ed0745fa077",
+      "method_id": "structural_reduction-05",
+      "route_kind": "reduction",
+      "screen_budget": {
+        "maximum_search_cpu_seconds": 40,
+        "search_seconds_per_unit": 5,
+        "units": 8
+      },
+      "screen_status": "blocked_pending_semantic_gate",
+      "semantic_gate": "independent derivation or exhaustive bounded counterexample search for the proposed reduction",
+      "success_certificate": "net-new reconstructed and replayed UNSAT leaf, or directly validated 40-block cover",
+      "validation_status": "pending",
+      "variant": "matching-incidence-profile"
+    },
+    {
+      "applicable_targets": "bounded parent plus downstream leaves after coverage validation",
+      "family": "structural_reduction",
+      "implementation_status": "design_candidate",
+      "material_signature": {
+        "family": "structural_reduction",
+        "route_kind": "reduction",
+        "semantic_gate": "independent derivation or exhaustive bounded counterexample search for the proposed reduction",
+        "variant": "LP-dual-bound"
+      },
+      "mechanism_fingerprint": "b52db9784682cfe70d48c1fa10b9cf128c8d94bd85fe306911434faa61c8e0f6",
+      "method_id": "structural_reduction-06",
+      "route_kind": "reduction",
+      "screen_budget": {
+        "maximum_search_cpu_seconds": 40,
+        "search_seconds_per_unit": 5,
+        "units": 8
+      },
+      "screen_status": "blocked_pending_semantic_gate",
+      "semantic_gate": "independent derivation or exhaustive bounded counterexample search for the proposed reduction",
+      "success_certificate": "net-new reconstructed and replayed UNSAT leaf, or directly validated 40-block cover",
+      "validation_status": "pending",
+      "variant": "LP-dual-bound"
+    },
+    {
+      "applicable_targets": "bounded parent plus downstream leaves after coverage validation",
+      "family": "structural_reduction",
+      "implementation_status": "design_candidate",
+      "material_signature": {
+        "family": "structural_reduction",
+        "route_kind": "reduction",
+        "semantic_gate": "independent derivation or exhaustive bounded counterexample search for the proposed reduction",
+        "variant": "covering-density-bound"
+      },
+      "mechanism_fingerprint": "99c03ac1bac2e7256dc4f84d6f1e5834df2785e36fb8bfb37dcaba8b78b39093",
+      "method_id": "structural_reduction-07",
+      "route_kind": "reduction",
+      "screen_budget": {
+        "maximum_search_cpu_seconds": 40,
+        "search_seconds_per_unit": 5,
+        "units": 8
+      },
+      "screen_status": "blocked_pending_semantic_gate",
+      "semantic_gate": "independent derivation or exhaustive bounded counterexample search for the proposed reduction",
+      "success_certificate": "net-new reconstructed and replayed UNSAT leaf, or directly validated 40-block cover",
+      "validation_status": "pending",
+      "variant": "covering-density-bound"
+    },
+    {
+      "applicable_targets": "bounded parent plus downstream leaves after coverage validation",
+      "family": "structural_reduction",
+      "implementation_status": "design_candidate",
+      "material_signature": {
+        "family": "structural_reduction",
+        "route_kind": "reduction",
+        "semantic_gate": "independent derivation or exhaustive bounded counterexample search for the proposed reduction",
+        "variant": "dominance-elimination"
+      },
+      "mechanism_fingerprint": "de15dc9e0e351316ee7403fad9432725ef3ff3d054e1921a996a951e87e0cc73",
+      "method_id": "structural_reduction-08",
+      "route_kind": "reduction",
+      "screen_budget": {
+        "maximum_search_cpu_seconds": 40,
+        "search_seconds_per_unit": 5,
+        "units": 8
+      },
+      "screen_status": "blocked_pending_semantic_gate",
+      "semantic_gate": "independent derivation or exhaustive bounded counterexample search for the proposed reduction",
+      "success_certificate": "net-new reconstructed and replayed UNSAT leaf, or directly validated 40-block cover",
+      "validation_status": "pending",
+      "variant": "dominance-elimination"
+    },
+    {
+      "applicable_targets": "bounded parent plus downstream leaves after coverage validation",
+      "family": "structural_reduction",
+      "implementation_status": "design_candidate",
+      "material_signature": {
+        "family": "structural_reduction",
+        "route_kind": "reduction",
+        "semantic_gate": "independent derivation or exhaustive bounded counterexample search for the proposed reduction",
+        "variant": "proof-core-signature"
+      },
+      "mechanism_fingerprint": "e678f3010c2ac75b6996a3bffdc9ecb55942ce2574b5dd81124605bcba0de306",
+      "method_id": "structural_reduction-09",
+      "route_kind": "reduction",
+      "screen_budget": {
+        "maximum_search_cpu_seconds": 40,
+        "search_seconds_per_unit": 5,
+        "units": 8
+      },
+      "screen_status": "blocked_pending_semantic_gate",
+      "semantic_gate": "independent derivation or exhaustive bounded counterexample search for the proposed reduction",
+      "success_certificate": "net-new reconstructed and replayed UNSAT leaf, or directly validated 40-block cover",
+      "validation_status": "pending",
+      "variant": "proof-core-signature"
+    },
+    {
+      "applicable_targets": "bounded parent plus downstream leaves after coverage validation",
+      "family": "structural_reduction",
+      "implementation_status": "design_candidate",
+      "material_signature": {
+        "family": "structural_reduction",
+        "route_kind": "reduction",
+        "semantic_gate": "independent derivation or exhaustive bounded counterexample search for the proposed reduction",
+        "variant": "meet-in-the-middle-half-cover"
+      },
+      "mechanism_fingerprint": "ee25472602965820631167fcb919480e2774000d4a17bd35715f89bacf88046d",
+      "method_id": "structural_reduction-10",
+      "route_kind": "reduction",
+      "screen_budget": {
+        "maximum_search_cpu_seconds": 40,
+        "search_seconds_per_unit": 5,
+        "units": 8
+      },
+      "screen_status": "blocked_pending_semantic_gate",
+      "semantic_gate": "independent derivation or exhaustive bounded counterexample search for the proposed reduction",
+      "success_certificate": "net-new reconstructed and replayed UNSAT leaf, or directly validated 40-block cover",
+      "validation_status": "pending",
+      "variant": "meet-in-the-middle-half-cover"
+    },
+    {
+      "applicable_targets": "bounded parent plus downstream leaves after coverage validation",
+      "family": "symmetry_representation",
+      "implementation_status": "design_candidate",
+      "material_signature": {
+        "family": "symmetry_representation",
+        "route_kind": "reduction",
+        "semantic_gate": "independent orbit/canonicalization implementation and exhaustive coverage check on a bounded parent",
+        "variant": "fixed-perfect-matching"
+      },
+      "mechanism_fingerprint": "ac7b7db55d145c9aa4af3eee3f08ee6eae2cce33bafeff10d4c94f82959164f1",
+      "method_id": "symmetry_representation-01",
+      "route_kind": "reduction",
+      "screen_budget": {
+        "maximum_search_cpu_seconds": 40,
+        "search_seconds_per_unit": 5,
+        "units": 8
+      },
+      "screen_status": "blocked_pending_semantic_gate",
+      "semantic_gate": "independent orbit/canonicalization implementation and exhaustive coverage check on a bounded parent",
+      "success_certificate": "net-new reconstructed and replayed UNSAT leaf, or directly validated 40-block cover",
+      "validation_status": "pending",
+      "variant": "fixed-perfect-matching"
+    },
+    {
+      "applicable_targets": "bounded parent plus downstream leaves after coverage validation",
+      "family": "symmetry_representation",
+      "implementation_status": "design_candidate",
+      "material_signature": {
+        "family": "symmetry_representation",
+        "route_kind": "reduction",
+        "semantic_gate": "independent orbit/canonicalization implementation and exhaustive coverage check on a bounded parent",
+        "variant": "point-link-orbits"
+      },
+      "mechanism_fingerprint": "60011526f7e49ec17380ab5a766253fbeea502037de0a04d17d3c86d8a4e45cf",
+      "method_id": "symmetry_representation-02",
+      "route_kind": "reduction",
+      "screen_budget": {
+        "maximum_search_cpu_seconds": 40,
+        "search_seconds_per_unit": 5,
+        "units": 8
+      },
+      "screen_status": "blocked_pending_semantic_gate",
+      "semantic_gate": "independent orbit/canonicalization implementation and exhaustive coverage check on a bounded parent",
+      "success_certificate": "net-new reconstructed and replayed UNSAT leaf, or directly validated 40-block cover",
+      "validation_status": "pending",
+      "variant": "point-link-orbits"
+    },
+    {
+      "applicable_targets": "bounded parent plus downstream leaves after coverage validation",
+      "family": "symmetry_representation",
+      "implementation_status": "design_candidate",
+      "material_signature": {
+        "family": "symmetry_representation",
+        "route_kind": "reduction",
+        "semantic_gate": "independent orbit/canonicalization implementation and exhaustive coverage check on a bounded parent",
+        "variant": "block-stabilizer-orbits"
+      },
+      "mechanism_fingerprint": "c79a22c65a8ed6746313918986900f6334aed19f9a1d733847535a3a77118561",
+      "method_id": "symmetry_representation-03",
+      "route_kind": "reduction",
+      "screen_budget": {
+        "maximum_search_cpu_seconds": 40,
+        "search_seconds_per_unit": 5,
+        "units": 8
+      },
+      "screen_status": "blocked_pending_semantic_gate",
+      "semantic_gate": "independent orbit/canonicalization implementation and exhaustive coverage check on a bounded parent",
+      "success_certificate": "net-new reconstructed and replayed UNSAT leaf, or directly validated 40-block cover",
+      "validation_status": "pending",
+      "variant": "block-stabilizer-orbits"
+    },
+    {
+      "applicable_targets": "bounded parent plus downstream leaves after coverage validation",
+      "family": "symmetry_representation",
+      "implementation_status": "design_candidate",
+      "material_signature": {
+        "family": "symmetry_representation",
+        "route_kind": "reduction",
+        "semantic_gate": "independent orbit/canonicalization implementation and exhaustive coverage check on a bounded parent",
+        "variant": "incidence-graph-canonical"
+      },
+      "mechanism_fingerprint": "27119800015a94ae27efbfceaf88f82defb3171f17e11e7ef84a095d1325f766",
+      "method_id": "symmetry_representation-04",
+      "route_kind": "reduction",
+      "screen_budget": {
+        "maximum_search_cpu_seconds": 40,
+        "search_seconds_per_unit": 5,
+        "units": 8
+      },
+      "screen_status": "blocked_pending_semantic_gate",
+      "semantic_gate": "independent orbit/canonicalization implementation and exhaustive coverage check on a bounded parent",
+      "success_certificate": "net-new reconstructed and replayed UNSAT leaf, or directly validated 40-block cover",
+      "validation_status": "pending",
+      "variant": "incidence-graph-canonical"
+    },
+    {
+      "applicable_targets": "bounded parent plus downstream leaves after coverage validation",
+      "family": "symmetry_representation",
+      "implementation_status": "design_candidate",
+      "material_signature": {
+        "family": "symmetry_representation",
+        "route_kind": "reduction",
+        "semantic_gate": "independent orbit/canonicalization implementation and exhaustive coverage check on a bounded parent",
+        "variant": "lex-leader-blocks"
+      },
+      "mechanism_fingerprint": "50585222ea6c2a047c9ebe66ca48cdab4b9bc074672d37f0f8f19487d8788191",
+      "method_id": "symmetry_representation-05",
+      "route_kind": "reduction",
+      "screen_budget": {
+        "maximum_search_cpu_seconds": 40,
+        "search_seconds_per_unit": 5,
+        "units": 8
+      },
+      "screen_status": "blocked_pending_semantic_gate",
+      "semantic_gate": "independent orbit/canonicalization implementation and exhaustive coverage check on a bounded parent",
+      "success_certificate": "net-new reconstructed and replayed UNSAT leaf, or directly validated 40-block cover",
+      "validation_status": "pending",
+      "variant": "lex-leader-blocks"
+    },
+    {
+      "applicable_targets": "bounded parent plus downstream leaves after coverage validation",
+      "family": "symmetry_representation",
+      "implementation_status": "design_candidate",
+      "material_signature": {
+        "family": "symmetry_representation",
+        "route_kind": "reduction",
+        "semantic_gate": "independent orbit/canonicalization implementation and exhaustive coverage check on a bounded parent",
+        "variant": "orderly-generation"
+      },
+      "mechanism_fingerprint": "ef626bded2c506ed6a989b406260acf26b307bfaf0b0a8048360ec13d96f7de2",
+      "method_id": "symmetry_representation-06",
+      "route_kind": "reduction",
+      "screen_budget": {
+        "maximum_search_cpu_seconds": 40,
+        "search_seconds_per_unit": 5,
+        "units": 8
+      },
+      "screen_status": "blocked_pending_semantic_gate",
+      "semantic_gate": "independent orbit/canonicalization implementation and exhaustive coverage check on a bounded parent",
+      "success_certificate": "net-new reconstructed and replayed UNSAT leaf, or directly validated 40-block cover",
+      "validation_status": "pending",
+      "variant": "orderly-generation"
+    },
+    {
+      "applicable_targets": "bounded parent plus downstream leaves after coverage validation",
+      "family": "symmetry_representation",
+      "implementation_status": "design_candidate",
+      "material_signature": {
+        "family": "symmetry_representation",
+        "route_kind": "reduction",
+        "semantic_gate": "independent orbit/canonicalization implementation and exhaustive coverage check on a bounded parent",
+        "variant": "canonical-augmentation"
+      },
+      "mechanism_fingerprint": "47dda42981fa529158a9a705b00eef775f27bdd4348c8509696ae020809fe4d6",
+      "method_id": "symmetry_representation-07",
+      "route_kind": "reduction",
+      "screen_budget": {
+        "maximum_search_cpu_seconds": 40,
+        "search_seconds_per_unit": 5,
+        "units": 8
+      },
+      "screen_status": "blocked_pending_semantic_gate",
+      "semantic_gate": "independent orbit/canonicalization implementation and exhaustive coverage check on a bounded parent",
+      "success_certificate": "net-new reconstructed and replayed UNSAT leaf, or directly validated 40-block cover",
+      "validation_status": "pending",
+      "variant": "canonical-augmentation"
+    },
+    {
+      "applicable_targets": "bounded parent plus downstream leaves after coverage validation",
+      "family": "symmetry_representation",
+      "implementation_status": "design_candidate",
+      "material_signature": {
+        "family": "symmetry_representation",
+        "route_kind": "reduction",
+        "semantic_gate": "independent orbit/canonicalization implementation and exhaustive coverage check on a bounded parent",
+        "variant": "orbitopal-fixing"
+      },
+      "mechanism_fingerprint": "9674166b59d59992b1bf9abc7a6e39c3f3b8737177b197643351dce86564b8de",
+      "method_id": "symmetry_representation-08",
+      "route_kind": "reduction",
+      "screen_budget": {
+        "maximum_search_cpu_seconds": 40,
+        "search_seconds_per_unit": 5,
+        "units": 8
+      },
+      "screen_status": "blocked_pending_semantic_gate",
+      "semantic_gate": "independent orbit/canonicalization implementation and exhaustive coverage check on a bounded parent",
+      "success_certificate": "net-new reconstructed and replayed UNSAT leaf, or directly validated 40-block cover",
+      "validation_status": "pending",
+      "variant": "orbitopal-fixing"
+    },
+    {
+      "applicable_targets": "bounded parent plus downstream leaves after coverage validation",
+      "family": "symmetry_representation",
+      "implementation_status": "design_candidate",
+      "material_signature": {
+        "family": "symmetry_representation",
+        "route_kind": "reduction",
+        "semantic_gate": "independent orbit/canonicalization implementation and exhaustive coverage check on a bounded parent",
+        "variant": "double-lex-incidence"
+      },
+      "mechanism_fingerprint": "2b26d5a163655bf38fb81b50cca06744a318479fa5a3237a8db62cfca855ded5",
+      "method_id": "symmetry_representation-09",
+      "route_kind": "reduction",
+      "screen_budget": {
+        "maximum_search_cpu_seconds": 40,
+        "search_seconds_per_unit": 5,
+        "units": 8
+      },
+      "screen_status": "blocked_pending_semantic_gate",
+      "semantic_gate": "independent orbit/canonicalization implementation and exhaustive coverage check on a bounded parent",
+      "success_certificate": "net-new reconstructed and replayed UNSAT leaf, or directly validated 40-block cover",
+      "validation_status": "pending",
+      "variant": "double-lex-incidence"
+    },
+    {
+      "applicable_targets": "bounded parent plus downstream leaves after coverage validation",
+      "family": "symmetry_representation",
+      "implementation_status": "design_candidate",
+      "material_signature": {
+        "family": "symmetry_representation",
+        "route_kind": "reduction",
+        "semantic_gate": "independent orbit/canonicalization implementation and exhaustive coverage check on a bounded parent",
+        "variant": "nauty-canonical-cubes"
+      },
+      "mechanism_fingerprint": "380ff59be91a1c90a2707c4f604b81fd2ba3fe94104682f739d0ac388b2f0996",
+      "method_id": "symmetry_representation-10",
+      "route_kind": "reduction",
+      "screen_budget": {
+        "maximum_search_cpu_seconds": 40,
+        "search_seconds_per_unit": 5,
+        "units": 8
+      },
+      "screen_status": "blocked_pending_semantic_gate",
+      "semantic_gate": "independent orbit/canonicalization implementation and exhaustive coverage check on a bounded parent",
+      "success_certificate": "net-new reconstructed and replayed UNSAT leaf, or directly validated 40-block cover",
+      "validation_status": "pending",
+      "variant": "nauty-canonical-cubes"
+    }
+  ],
+  "family_count": 10,
+  "policy": {
+    "path": "docs/STRATEGY-TOURNAMENT-POLICY.json",
+    "sha256": "d64c05bbae7567da7b0ef3d75e9e8a64394b0f4e7f6b8a223379a6b841216943"
+  },
+  "portfolio_manifest": {
+    "path": "artifacts/portfolio/frontier-manifest-v1.json",
+    "sha256": "2badf458f03e9a400b034352a0ec9060cc962f6dec97b94b873995f26a0236a8"
+  },
+  "problem_id": "covering-c1264",
+  "registry_payload_sha256": "0d08b859c728cef87acc1f5ee3c46d99951939f706a845f58bacec22f4959233",
+  "schema_version": 1
+}
