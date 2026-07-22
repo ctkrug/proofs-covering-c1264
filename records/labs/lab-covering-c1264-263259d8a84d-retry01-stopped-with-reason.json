@@ -1,0 +1,11 @@
+{
+  "event": "stopped_with_reason",
+  "id": "lab-covering-c1264-263259d8a84d-retry01",
+  "review": {
+    "decision": "redirect",
+    "reason": "Segment 1 completed the fixed 8-node gate with correctness checks passing: five UNKNOWN and three replay-verified UNSAT certificates on t-7, t-8, and t-9. All three closures already exist as durable native-replayed certificates in campaign commit 9fedbce, so this tranche earned zero net-new global coverage. Redirect rather than spend later segments duplicating known work; preserve all artifacts and next bind a continuation only to genuinely unmeasured globally open leaves.",
+    "reviewer": "codex-heartbeat",
+    "reviewed_at": "2026-07-22T19:12:56.839647+00:00",
+    "segment": 1
+  }
+}
