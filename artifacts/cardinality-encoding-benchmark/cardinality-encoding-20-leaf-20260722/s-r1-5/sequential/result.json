@@ -1,0 +1,53 @@
+{
+  "cnf_sha256": "db59087651089d05727aa2f8384f3b4f48e3530489a384257b29aa9768f0f8c4",
+  "command": [
+    "/usr/bin/cadical",
+    "-t",
+    "60",
+    "--no-binary",
+    "/root/proof-factory/research/covering-c1264/workspace/artifacts/cardinality-encoding-benchmark/cardinality-encoding-20-leaf-20260722/s-r1-5/sequential/instance.cnf",
+    "/root/proof-factory/research/covering-c1264/workspace/artifacts/cardinality-encoding-benchmark/cardinality-encoding-20-leaf-20260722/s-r1-5/sequential/proof.drat"
+  ],
+  "completed_at": "2026-07-22T15:14:35.818789+00:00",
+  "encoding": "sequential",
+  "leaf_id": "s-r1-5",
+  "proof": {
+    "bytes": 116474143,
+    "sha256": "5afcae6950a3eda4ea5ee7042c6a595e656fc4bc38598f531fd64259a8a12be7"
+  },
+  "schema_version": 1,
+  "seconds_cap": 60,
+  "solver_elapsed_seconds": 49.55574635299854,
+  "solver_exit_code": 20,
+  "solver_sha256": "7b73df0a6d9cf3c751a1948300e5baff8e82c4d39bcd88f0c063b5f5cfb8b33e",
+  "status": "UNSAT_VERIFIED",
+  "validation": {
+    "checked_at": "2026-07-22T15:14:34.897478+00:00",
+    "checker": {
+      "path": "/root/proof-factory/research/covering-c1264/workspace/toolchains/drat-trim/drat-trim",
+      "sha256": "92f0aa9575ed519d66a99b8b1b3dde6ece4618ae4c202a3a4b200265dda0aa7a"
+    },
+    "cnf": {
+      "path": "/root/proof-factory/research/covering-c1264/workspace/artifacts/cardinality-encoding-benchmark/cardinality-encoding-20-leaf-20260722/s-r1-5/sequential/instance.cnf",
+      "sha256": "db59087651089d05727aa2f8384f3b4f48e3530489a384257b29aa9768f0f8c4"
+    },
+    "command": [
+      "/root/proof-factory/research/covering-c1264/workspace/toolchains/drat-trim/drat-trim",
+      "/root/proof-factory/research/covering-c1264/workspace/artifacts/cardinality-encoding-benchmark/cardinality-encoding-20-leaf-20260722/s-r1-5/sequential/instance.cnf",
+      "/root/proof-factory/research/covering-c1264/workspace/artifacts/cardinality-encoding-benchmark/cardinality-encoding-20-leaf-20260722/s-r1-5/sequential/proof.drat"
+    ],
+    "exit_code": 0,
+    "log": {
+      "path": "/root/proof-factory/research/covering-c1264/workspace/artifacts/cardinality-encoding-benchmark/cardinality-encoding-20-leaf-20260722/s-r1-5/sequential/validation.json.log",
+      "sha256": "f4c32efd6dde65254f9639c2903b2efffe37e5c2b9cc048a810ce061f28ea6fe"
+    },
+    "proof": {
+      "path": "/root/proof-factory/research/covering-c1264/workspace/artifacts/cardinality-encoding-benchmark/cardinality-encoding-20-leaf-20260722/s-r1-5/sequential/proof.drat",
+      "sha256": "5afcae6950a3eda4ea5ee7042c6a595e656fc4bc38598f531fd64259a8a12be7"
+    },
+    "schema_version": 1,
+    "seconds_cap": 600,
+    "status": "verified",
+    "verdict": "s VERIFIED"
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "schema_version": 1,
+  "id": "20260722-150735-d2942d",
+  "name": "C(12,6,4) matched cardinality encoding benchmark segment 1/4",
+  "hypothesis": "On the fixed 20-leaf sample, kmtotalizer produces at least 8 replay-verified UNSAT closures and at least four more replay-verified closures than sequential under identical 60-second cold CaDiCaL caps.",
+  "expected_signal": "All non-cardinality core hashes and audits agree; every UNSAT proof replays; kmtotalizer closes at least 8/20 and at least four more leaves than sequential; projected proofs stay below 30 GB.",
+  "command": [
+    "python3",
+    "scripts/run_cardinality_encoding_benchmark.py",
+    "--manifest",
+    "artifacts/experiments/cardinality-encoding-20-leaf-20260722/manifest.json",
+    "--run-id",
+    "cardinality-encoding-20-leaf-20260722",
+    "--checkpoint",
+    "artifacts/cardinality-encoding-benchmark/cardinality-encoding-20-leaf-20260722/checkpoint.json",
+    "--progress",
+    "artifacts/cardinality-encoding-benchmark/cardinality-encoding-20-leaf-20260722/progress.json",
+    "--units-per-invocation",
+    "10"
+  ],
+  "cwd": "/root/proof-factory/research/covering-c1264/workspace",
+  "seed": 0,
+  "timeout_seconds": 7200,
+  "memory_limit_mb": 1024,
+  "memory_limit_enforced": true,
+  "started_at": "2026-07-22T15:07:35.169545+00:00",
+  "finished_at": "2026-07-22T15:18:12.167798+00:00",
+  "duration_seconds": 636.998,
+  "returncode": 0,
+  "timed_out": false,
+  "python": "3.12.3",
+  "platform": "Linux-6.8.0-124-generic-x86_64-with-glibc2.39",
+  "git_commit": "825f82a221df6b4571b1a0c09e87c0b850fe3b19",
+  "source_urls": [
+    "https://ljcr.dmgordon.org/cover/show_cover.php?v=12&k=6&t=4"
+  ],
+  "input_artifacts": {
+    "/root/proof-factory/research/covering-c1264/workspace/scripts/run_cardinality_encoding_benchmark.py": "84761553baa9928a69b96d22b55cb1b7302b9ab8e5178c233cc18f3ddbb65a91",
+    "/root/proof-factory/research/covering-c1264/workspace/artifacts/experiments/cardinality-encoding-20-leaf-20260722/manifest.json": "5d52e2f8f1831e918b23ea7752addf0e684ad267b6634ccd2a750f93bea11242"
+  },
+  "peak_child_memory_rusage": 206996,
+  "peak_child_memory_unit": "kilobytes",
+  "artifacts": {
+    "stdout.txt": "e0157744106a52d1b3f4191fc62da09f31702aff93eba290e2125743a8ce867d",
+    "stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  }
+}
