@@ -1,0 +1,49 @@
+{
+  "schema_version": 1,
+  "id": "20260722-164419-a921a8",
+  "name": "C(12,6,4) matched cardinality encoding benchmark segment 2/4",
+  "hypothesis": "On the fixed 20-leaf sample, kmtotalizer produces at least 8 replay-verified UNSAT closures and at least four more replay-verified closures than sequential under identical 60-second cold CaDiCaL caps.",
+  "expected_signal": "All non-cardinality core hashes and audits agree; every UNSAT proof replays; kmtotalizer closes at least 8/20 and at least four more leaves than sequential; projected proofs stay below 30 GB.",
+  "command": [
+    "python3",
+    "scripts/run_cardinality_encoding_benchmark.py",
+    "--manifest",
+    "artifacts/experiments/cardinality-encoding-20-leaf-20260722/manifest.json",
+    "--run-id",
+    "cardinality-encoding-20-leaf-20260722",
+    "--checkpoint",
+    "artifacts/cardinality-encoding-benchmark/cardinality-encoding-20-leaf-20260722/checkpoint.json",
+    "--progress",
+    "artifacts/cardinality-encoding-benchmark/cardinality-encoding-20-leaf-20260722/progress.json",
+    "--units-per-invocation",
+    "10"
+  ],
+  "cwd": "/root/proof-factory/research/covering-c1264/workspace",
+  "seed": 0,
+  "timeout_seconds": 7200,
+  "memory_limit_mb": 1024,
+  "memory_limit_enforced": true,
+  "started_at": "2026-07-22T16:44:19.402983+00:00",
+  "finished_at": "2026-07-22T16:51:23.916481+00:00",
+  "duration_seconds": 424.514,
+  "returncode": 0,
+  "timed_out": false,
+  "python": "3.12.3",
+  "platform": "Linux-6.8.0-124-generic-x86_64-with-glibc2.39",
+  "git_commit": "31c50ea41fb79e6aacd27b0ef22c50ca8ca58b11",
+  "source_urls": [
+    "https://ljcr.dmgordon.org/cover/show_cover.php?v=12&k=6&t=4"
+  ],
+  "input_artifacts": {
+    "/root/proof-factory/research/covering-c1264/workspace/scripts/run_cardinality_encoding_benchmark.py": "84761553baa9928a69b96d22b55cb1b7302b9ab8e5178c233cc18f3ddbb65a91",
+    "/root/proof-factory/research/covering-c1264/workspace/artifacts/experiments/cardinality-encoding-20-leaf-20260722/manifest.json": "5d52e2f8f1831e918b23ea7752addf0e684ad267b6634ccd2a750f93bea11242",
+    "/root/proof-factory/research/covering-c1264/workspace/artifacts/cardinality-encoding-benchmark/cardinality-encoding-20-leaf-20260722/checkpoint.json": "238135658d1f7df5f2b31108f95d13773d5941ebadacee9f8d7d7f2304dbcdd2",
+    "/root/proof-factory/research/covering-c1264/workspace/artifacts/cardinality-encoding-benchmark/cardinality-encoding-20-leaf-20260722/progress.json": "73cfb1d74b55a1528f8ff7f14398a1328f01b61fd891871e4be7c271ddd1f8f1"
+  },
+  "peak_child_memory_rusage": 181312,
+  "peak_child_memory_unit": "kilobytes",
+  "artifacts": {
+    "stdout.txt": "157b5358ca8e044778b4d1a93fad9b9839f9d6bcc7798f4e023e904bd4580067",
+    "stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "cnf_sha256": "fd073005a1e0107b5f9fb214a23a5bd6c06da74bc6116219d135dbdfa9e2ad7b",
+  "command": [
+    "/usr/bin/cadical",
+    "-t",
+    "60",
+    "--no-binary",
+    "/root/proof-factory/research/covering-c1264/workspace/artifacts/cardinality-encoding-benchmark/cardinality-encoding-20-leaf-20260722/s-r1-3/sequential/instance.cnf",
+    "/root/proof-factory/research/covering-c1264/workspace/artifacts/cardinality-encoding-benchmark/cardinality-encoding-20-leaf-20260722/s-r1-3/sequential/proof.drat"
+  ],
+  "completed_at": "2026-07-22T16:44:39.078893+00:00",
+  "encoding": "sequential",
+  "leaf_id": "s-r1-3",
+  "proof": null,
+  "schema_version": 1,
+  "seconds_cap": 60,
+  "solver_elapsed_seconds": 17.744328930042684,
+  "solver_exit_code": 10,
+  "solver_sha256": "7b73df0a6d9cf3c751a1948300e5baff8e82c4d39bcd88f0c063b5f5cfb8b33e",
+  "status": "SAT_NEW_ORBIT",
+  "validation": {
+    "canonical_sha256": "b470049c5444b5f9bdd253d6e096e42e52e42c3512e545b43a4ad8f9346bb49c",
+    "catalog_sha256": "cf67941262fde9726f16c850e44082fba6d44685b776ab29c7dcb68905a2e242",
+    "status": "valid-new-link-orbit",
+    "witness_sha256": "efca42168a5be71be13bbe9b30f7767530eac29f9340dd1720316d1818aafe7d"
+  }
+}

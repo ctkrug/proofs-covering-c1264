@@ -1,4 +1,5 @@
 {
+  "event": "completed_awaiting_review",
   "schema_version": 2,
   "id": "lab-covering-c1264-e9221dfd02b3",
   "problem_id": "covering-c1264",
@@ -76,5 +77,41 @@
     "reported_artifact_bytes": 0,
     "artifact_bytes": 0
   },
-  "spec_sha256": "9eb8e34da5ec04e3fa28e9faf28f9537873d7c82d4b8a23503f75fc69a25c322"
+  "spec_sha256": "9eb8e34da5ec04e3fa28e9faf28f9537873d7c82d4b8a23503f75fc69a25c322",
+  "recorded_at": "2026-07-22T16:51:24.396813+00:00",
+  "job_id": "lab-covering-c1264-e9221dfd02b3",
+  "returncode": 0,
+  "duration_seconds": 424.680734,
+  "checkpoint_exists": true,
+  "checkpoint_sha256": "d67e70de83ccf3e390e3160642f4e28207e56c6bb2bff97dae69f11b7a74550e",
+  "progress": {
+    "path": "artifacts/cardinality-encoding-benchmark/cardinality-encoding-20-leaf-20260722/progress.json",
+    "sha256": "7354bfc76c7a80f8cb6d96a2874a6faf8a094475691a7a82018db59e1766c67c",
+    "completed_units": 20.0,
+    "total_units": 40.0,
+    "delta_units": 10.0,
+    "throughput_per_second": 0.02354710067916573,
+    "artifact_bytes": 888871815,
+    "reported_artifact_bytes": 888871815,
+    "reported_artifact_growth_bytes": 458087175,
+    "measured_artifact_growth_bytes": 458129635,
+    "artifact_growth_bytes": 458129635,
+    "complete": false,
+    "correctness_checks_passed": true,
+    "decision_value_active": true,
+    "message": ""
+  },
+  "threshold_failures": [],
+  "runner_result": "{\n  \"experiment_dir\": \"/root/proof-factory/research/covering-c1264/workspace/lab-runs/lab-covering-c1264-e9221dfd02b3/segment-000002/20260722-164419-a921a8\",\n  \"schema_version\": 1,\n  \"id\": \"20260722-164419-a921a8\",\n  \"name\": \"C(12,6,4) matched cardinality encoding benchmark segment 2/4\",\n  \"hypothesis\": \"On the fixed 20-leaf sample, kmtotalizer produces at least 8 replay-verified UNSAT closures and at least four more replay-verified closures than sequential under identical 60-second cold CaDiCaL caps.\",\n  \"expected_signal\": \"All non-cardinality core hashes and audits agree; every UNSAT proof replays; kmtotalizer closes at least 8/20 and at least four more leaves than sequential; projected proofs stay below 30 GB.\",\n  \"command\": [\n    \"python3\",\n    \"scripts/run_cardinality_encoding_benchmark.py\",\n    \"--manifest\",\n    \"artifacts/experiments/cardinality-encoding-20-leaf-20260722/manifest.json\",\n    \"--run-id\",\n    \"cardinality-encoding-20-leaf-20260722\",\n    \"--checkpoint\",\n    \"artifacts/cardinality-encoding-benchmark/cardinality-encoding-20-leaf-20260722/checkpoint.json\",\n    \"--progress\",\n    \"artifacts/cardinality-encoding-benchmark/cardinality-encoding-20-leaf-20260722/progress.json\",\n    \"--units-per-invocation\",\n    \"10\"\n  ],\n  \"cwd\": \"/root/proof-factory/research/covering-c1264/workspace\",\n  \"seed\": 0,\n  \"timeout_seconds\": 7200,\n  \"memory_limit_mb\": 1024,\n  \"memory_limit_enforced\": true,\n  \"started_at\": \"2026-07-22T16:44:19.402983+00:00\",\n  \"finished_at\": \"2026-07-22T16:51:23.916481+00:00\",\n  \"duration_seconds\": 424.514,\n  \"returncode\": 0,\n  \"timed_out\": false,\n  \"python\": \"3.12.3\",\n  \"platform\": \"Linux-6.8.0-124-generic-x86_64-with-glibc2.39\",\n  \"git_commit\": \"31c50ea41fb79e6aacd27b0ef22c50ca8ca58b11\",\n  \"source_urls\": [\n    \"https://ljcr.dmgordon.org/cover/show_cover.php?v=12&k=6&t=4\"\n  ],\n  \"input_artifacts\": {\n    \"/root/proof-factory/research/covering-c1264/workspace/scripts/run_cardinality_encoding_benchmark.py\": \"84761553baa9928a69b96d22b55cb1b7302b9ab8e5178c233cc18f3ddbb65a91\",\n    \"/root/proof-factory/research/covering-c1264/workspace/artifacts/experiments/cardinality-encoding-20-leaf-20260722/manifest.json\": \"5d52e2f8f1831e918b23ea7752addf0e684ad267b6634ccd2a750f93bea11242\",\n    \"/root/proof-factory/research/covering-c1264/workspace/artifacts/cardinality-encoding-benchmark/cardinality-encoding-20-leaf-20260722/checkpoint.json\": \"238135658d1f7df5f2b31108f95d13773d5941ebadacee9f8d7d7f2304dbcdd2\",\n    \"/root/proof-factory/research/covering-c1264/workspace/artifacts/cardinality-encoding-benchmark/cardinality-encoding-20-leaf-20260722/progress.json\": \"73cfb1d74b55a1528f8ff7f14398a1328f01b61fd891871e4be7c271ddd1f8f1\"\n  },\n  \"peak_child_memory_rusage\": 181312,\n  \"peak_child_memory_unit\": \"kilobytes\",\n  \"artifacts\": {\n    \"stdout.txt\": \"157b5358ca8e044778b4d1a93fad9b9839f9d6bcc7798f4e023e904bd4580067\",\n    \"stderr.txt\": \"e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855\"\n  }\n}\n",
+  "runner_error": "",
+  "output_root": "lab-runs/lab-covering-c1264-e9221dfd02b3/segment-000002",
+  "mutable_argv_before_sha256": {
+    "artifacts/cardinality-encoding-benchmark/cardinality-encoding-20-leaf-20260722/checkpoint.json": "238135658d1f7df5f2b31108f95d13773d5941ebadacee9f8d7d7f2304dbcdd2",
+    "artifacts/cardinality-encoding-benchmark/cardinality-encoding-20-leaf-20260722/progress.json": "73cfb1d74b55a1528f8ff7f14398a1328f01b61fd891871e4be7c271ddd1f8f1"
+  },
+  "mutable_argv_after_sha256": {
+    "artifacts/cardinality-encoding-benchmark/cardinality-encoding-20-leaf-20260722/checkpoint.json": "d67e70de83ccf3e390e3160642f4e28207e56c6bb2bff97dae69f11b7a74550e",
+    "artifacts/cardinality-encoding-benchmark/cardinality-encoding-20-leaf-20260722/progress.json": "7354bfc76c7a80f8cb6d96a2874a6faf8a094475691a7a82018db59e1766c67c"
+  },
+  "research_event_id": "event-covering-c1264-5257adab61de"
 }
