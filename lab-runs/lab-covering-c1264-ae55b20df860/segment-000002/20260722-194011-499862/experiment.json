@@ -1,0 +1,47 @@
+{
+  "schema_version": 1,
+  "id": "20260722-194011-499862",
+  "name": "Seven-orbit exhaustive-link classification pilot: 12 never-measured leaves segment 2/2",
+  "hypothesis": "The first six audited never-measured seven-orbit frontier leaves will yield at least one net-new replay-verified closure or a directly validated catalogue-expanding link orbit within the fixed 60-second cap.",
+  "expected_signal": "Per leaf: reconstructed-CNF audit, bounded solver result, replay receipt for every UNSAT, and direct witness/canonicalization receipt for every SAT; checkpoint reports closure yield, proof bytes, and remaining hard-tail class.",
+  "command": [
+    "python3",
+    "scripts/run_sequential_frontier_sweep.py",
+    "--manifest",
+    "artifacts/experiments/sequential-unmeasured-frontier-12-v7-20260722/manifest.json",
+    "--run-id",
+    "sequential-unmeasured-frontier-12-v7-20260722",
+    "--checkpoint",
+    "artifacts/sequential-frontier-sweep/sequential-unmeasured-frontier-12-v7-20260722/checkpoint.json",
+    "--progress",
+    "artifacts/sequential-frontier-sweep/sequential-unmeasured-frontier-12-v7-20260722/progress.json",
+    "--units-per-invocation",
+    "6"
+  ],
+  "cwd": "/root/proof-factory/research/covering-c1264/workspace",
+  "seed": 0,
+  "timeout_seconds": 900,
+  "memory_limit_mb": 4096,
+  "memory_limit_enforced": true,
+  "started_at": "2026-07-22T19:40:11.157666+00:00",
+  "finished_at": "2026-07-22T19:43:01.487725+00:00",
+  "duration_seconds": 170.33,
+  "returncode": 0,
+  "timed_out": false,
+  "python": "3.12.3",
+  "platform": "Linux-6.8.0-124-generic-x86_64-with-glibc2.39",
+  "git_commit": "c66a751a49e4bb018696a27ddb6d63e656ce463f",
+  "source_urls": [],
+  "input_artifacts": {
+    "/root/proof-factory/research/covering-c1264/workspace/scripts/run_sequential_frontier_sweep.py": "f9dd9b4e07ae3f242187a59e7a9c33de49596439c09e3cadc8df405b1d19a3d7",
+    "/root/proof-factory/research/covering-c1264/workspace/artifacts/experiments/sequential-unmeasured-frontier-12-v7-20260722/manifest.json": "36ba4e8a2db742bc30543f02a97f82de42c07d2abaae45a38e64242ef9d5da58",
+    "/root/proof-factory/research/covering-c1264/workspace/artifacts/sequential-frontier-sweep/sequential-unmeasured-frontier-12-v7-20260722/checkpoint.json": "4ad34c7e520d5ef783f27b54b902b869cfabef79c5144f39dd7e7111f3f1302d",
+    "/root/proof-factory/research/covering-c1264/workspace/artifacts/sequential-frontier-sweep/sequential-unmeasured-frontier-12-v7-20260722/progress.json": "1d7511fa3f69de16959b40718af8168d11df57c23504cdbf0d332e9a57c70640"
+  },
+  "peak_child_memory_rusage": 90112,
+  "peak_child_memory_unit": "kilobytes",
+  "artifacts": {
+    "stdout.txt": "217dc1aeecbe436f70575f3a7d1d220323e53d2fca3d14111725dce45d6775c0",
+    "stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  }
+}

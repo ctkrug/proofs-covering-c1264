@@ -5,10 +5,16 @@
     "t-22--sequential",
     "s-r1-0--sequential",
     "s-r1-1--sequential",
-    "s-r1-2--sequential"
+    "s-r1-2--sequential",
+    "t-23--sequential",
+    "t-25--sequential",
+    "t-28--sequential",
+    "t-31--sequential",
+    "s-r1-15--sequential",
+    "s-r1-4--sequential"
   ],
   "manifest_sha256": "36ba4e8a2db742bc30543f02a97f82de42c07d2abaae45a38e64242ef9d5da58",
-  "projected_proof_bytes": 443591382,
+  "projected_proof_bytes": 306745990,
   "results": [
     {
       "cnf_sha256": "daa93e6be6c288ea765462cecd8d4c7d81dc1ad4e79b66fb0300f659163af805",
@@ -205,6 +211,268 @@
       "schema_version": 1,
       "seconds_cap": 60,
       "solver_elapsed_seconds": 60.017519051907584,
+      "solver_exit_code": 0,
+      "solver_sha256": "7b73df0a6d9cf3c751a1948300e5baff8e82c4d39bcd88f0c063b5f5cfb8b33e",
+      "status": "UNKNOWN",
+      "validation": null
+    },
+    {
+      "cnf_sha256": "7eefe63df37730f6194a54b7f1c3f62470b4fe1db35ed31887346569f7d37bdc",
+      "command": [
+        "/usr/bin/cadical",
+        "-t",
+        "60",
+        "--no-binary",
+        "/root/proof-factory/research/covering-c1264/workspace/artifacts/sequential-frontier-sweep/sequential-unmeasured-frontier-12-v7-20260722/t-23/sequential/instance.cnf",
+        "/root/proof-factory/research/covering-c1264/workspace/artifacts/sequential-frontier-sweep/sequential-unmeasured-frontier-12-v7-20260722/t-23/sequential/proof.drat"
+      ],
+      "completed_at": "2026-07-22T19:40:31.559169+00:00",
+      "encoding": "sequential",
+      "leaf_id": "t-23",
+      "path": "artifacts/sequential-frontier-sweep/sequential-unmeasured-frontier-12-v7-20260722/t-23/sequential",
+      "proof": {
+        "bytes": 37484172,
+        "sha256": "30f5e07428ac15cdffbae3e454eb124057cc0092fdf28e373bace9ffb66ae4b9"
+      },
+      "schema_version": 1,
+      "seconds_cap": 60,
+      "solver_elapsed_seconds": 11.698644503951073,
+      "solver_exit_code": 20,
+      "solver_sha256": "7b73df0a6d9cf3c751a1948300e5baff8e82c4d39bcd88f0c063b5f5cfb8b33e",
+      "status": "UNSAT_VERIFIED",
+      "validation": {
+        "checked_at": "2026-07-22T19:40:31.208698+00:00",
+        "checker": {
+          "path": "/root/proof-factory/research/covering-c1264/workspace/toolchains/drat-trim/drat-trim",
+          "sha256": "92f0aa9575ed519d66a99b8b1b3dde6ece4618ae4c202a3a4b200265dda0aa7a"
+        },
+        "cnf": {
+          "path": "/root/proof-factory/research/covering-c1264/workspace/artifacts/sequential-frontier-sweep/sequential-unmeasured-frontier-12-v7-20260722/t-23/sequential/instance.cnf",
+          "sha256": "7eefe63df37730f6194a54b7f1c3f62470b4fe1db35ed31887346569f7d37bdc"
+        },
+        "command": [
+          "/root/proof-factory/research/covering-c1264/workspace/toolchains/drat-trim/drat-trim",
+          "/root/proof-factory/research/covering-c1264/workspace/artifacts/sequential-frontier-sweep/sequential-unmeasured-frontier-12-v7-20260722/t-23/sequential/instance.cnf",
+          "/root/proof-factory/research/covering-c1264/workspace/artifacts/sequential-frontier-sweep/sequential-unmeasured-frontier-12-v7-20260722/t-23/sequential/proof.drat"
+        ],
+        "exit_code": 0,
+        "log": {
+          "path": "/root/proof-factory/research/covering-c1264/workspace/artifacts/sequential-frontier-sweep/sequential-unmeasured-frontier-12-v7-20260722/t-23/sequential/validation.json.log",
+          "sha256": "66d2da2ae8794f04ccbccf7da03ce6315684140c0e857de3b77d6cb70276f01c"
+        },
+        "proof": {
+          "path": "/root/proof-factory/research/covering-c1264/workspace/artifacts/sequential-frontier-sweep/sequential-unmeasured-frontier-12-v7-20260722/t-23/sequential/proof.drat",
+          "sha256": "30f5e07428ac15cdffbae3e454eb124057cc0092fdf28e373bace9ffb66ae4b9"
+        },
+        "schema_version": 1,
+        "seconds_cap": 600,
+        "status": "verified",
+        "verdict": "s VERIFIED"
+      }
+    },
+    {
+      "cnf_sha256": "a2d61eaf0e2893863cdc6c3a4bbbc64b68b8828fe1c049cc64f07eb16c071303",
+      "command": [
+        "/usr/bin/cadical",
+        "-t",
+        "60",
+        "--no-binary",
+        "/root/proof-factory/research/covering-c1264/workspace/artifacts/sequential-frontier-sweep/sequential-unmeasured-frontier-12-v7-20260722/t-25/sequential/instance.cnf",
+        "/root/proof-factory/research/covering-c1264/workspace/artifacts/sequential-frontier-sweep/sequential-unmeasured-frontier-12-v7-20260722/t-25/sequential/proof.drat"
+      ],
+      "completed_at": "2026-07-22T19:40:40.226969+00:00",
+      "encoding": "sequential",
+      "leaf_id": "t-25",
+      "path": "artifacts/sequential-frontier-sweep/sequential-unmeasured-frontier-12-v7-20260722/t-25/sequential",
+      "proof": {
+        "bytes": 13604107,
+        "sha256": "1ca7cac9bda23cbc7f4c48dbd3200a1e4555c1318feb50780ad710076a5597e2"
+      },
+      "schema_version": 1,
+      "seconds_cap": 60,
+      "solver_elapsed_seconds": 3.8222312219440937,
+      "solver_exit_code": 20,
+      "solver_sha256": "7b73df0a6d9cf3c751a1948300e5baff8e82c4d39bcd88f0c063b5f5cfb8b33e",
+      "status": "UNSAT_VERIFIED",
+      "validation": {
+        "checked_at": "2026-07-22T19:40:40.091415+00:00",
+        "checker": {
+          "path": "/root/proof-factory/research/covering-c1264/workspace/toolchains/drat-trim/drat-trim",
+          "sha256": "92f0aa9575ed519d66a99b8b1b3dde6ece4618ae4c202a3a4b200265dda0aa7a"
+        },
+        "cnf": {
+          "path": "/root/proof-factory/research/covering-c1264/workspace/artifacts/sequential-frontier-sweep/sequential-unmeasured-frontier-12-v7-20260722/t-25/sequential/instance.cnf",
+          "sha256": "a2d61eaf0e2893863cdc6c3a4bbbc64b68b8828fe1c049cc64f07eb16c071303"
+        },
+        "command": [
+          "/root/proof-factory/research/covering-c1264/workspace/toolchains/drat-trim/drat-trim",
+          "/root/proof-factory/research/covering-c1264/workspace/artifacts/sequential-frontier-sweep/sequential-unmeasured-frontier-12-v7-20260722/t-25/sequential/instance.cnf",
+          "/root/proof-factory/research/covering-c1264/workspace/artifacts/sequential-frontier-sweep/sequential-unmeasured-frontier-12-v7-20260722/t-25/sequential/proof.drat"
+        ],
+        "exit_code": 0,
+        "log": {
+          "path": "/root/proof-factory/research/covering-c1264/workspace/artifacts/sequential-frontier-sweep/sequential-unmeasured-frontier-12-v7-20260722/t-25/sequential/validation.json.log",
+          "sha256": "72be8b96951b3bf6956cfe0f6c6358255023d327245fac60af9965b527c1c658"
+        },
+        "proof": {
+          "path": "/root/proof-factory/research/covering-c1264/workspace/artifacts/sequential-frontier-sweep/sequential-unmeasured-frontier-12-v7-20260722/t-25/sequential/proof.drat",
+          "sha256": "1ca7cac9bda23cbc7f4c48dbd3200a1e4555c1318feb50780ad710076a5597e2"
+        },
+        "schema_version": 1,
+        "seconds_cap": 600,
+        "status": "verified",
+        "verdict": "s VERIFIED"
+      }
+    },
+    {
+      "cnf_sha256": "3832632ec5fdee1e9574c439a468b064f2989755efd096166840e91604144203",
+      "command": [
+        "/usr/bin/cadical",
+        "-t",
+        "60",
+        "--no-binary",
+        "/root/proof-factory/research/covering-c1264/workspace/artifacts/sequential-frontier-sweep/sequential-unmeasured-frontier-12-v7-20260722/t-28/sequential/instance.cnf",
+        "/root/proof-factory/research/covering-c1264/workspace/artifacts/sequential-frontier-sweep/sequential-unmeasured-frontier-12-v7-20260722/t-28/sequential/proof.drat"
+      ],
+      "completed_at": "2026-07-22T19:40:49.729546+00:00",
+      "encoding": "sequential",
+      "leaf_id": "t-28",
+      "path": "artifacts/sequential-frontier-sweep/sequential-unmeasured-frontier-12-v7-20260722/t-28/sequential",
+      "proof": {
+        "bytes": 16916262,
+        "sha256": "72a8a54bb5d11ed381662b2e2a8644f24fd920dfbb5d931f940c9003f726fc32"
+      },
+      "schema_version": 1,
+      "seconds_cap": 60,
+      "solver_elapsed_seconds": 3.9193122580181807,
+      "solver_exit_code": 20,
+      "solver_sha256": "7b73df0a6d9cf3c751a1948300e5baff8e82c4d39bcd88f0c063b5f5cfb8b33e",
+      "status": "UNSAT_VERIFIED",
+      "validation": {
+        "checked_at": "2026-07-22T19:40:49.571571+00:00",
+        "checker": {
+          "path": "/root/proof-factory/research/covering-c1264/workspace/toolchains/drat-trim/drat-trim",
+          "sha256": "92f0aa9575ed519d66a99b8b1b3dde6ece4618ae4c202a3a4b200265dda0aa7a"
+        },
+        "cnf": {
+          "path": "/root/proof-factory/research/covering-c1264/workspace/artifacts/sequential-frontier-sweep/sequential-unmeasured-frontier-12-v7-20260722/t-28/sequential/instance.cnf",
+          "sha256": "3832632ec5fdee1e9574c439a468b064f2989755efd096166840e91604144203"
+        },
+        "command": [
+          "/root/proof-factory/research/covering-c1264/workspace/toolchains/drat-trim/drat-trim",
+          "/root/proof-factory/research/covering-c1264/workspace/artifacts/sequential-frontier-sweep/sequential-unmeasured-frontier-12-v7-20260722/t-28/sequential/instance.cnf",
+          "/root/proof-factory/research/covering-c1264/workspace/artifacts/sequential-frontier-sweep/sequential-unmeasured-frontier-12-v7-20260722/t-28/sequential/proof.drat"
+        ],
+        "exit_code": 0,
+        "log": {
+          "path": "/root/proof-factory/research/covering-c1264/workspace/artifacts/sequential-frontier-sweep/sequential-unmeasured-frontier-12-v7-20260722/t-28/sequential/validation.json.log",
+          "sha256": "98c6a0151d0bb5e192360a42f687ec5962ea8c05ab7c4510754ecd0e37f0d79a"
+        },
+        "proof": {
+          "path": "/root/proof-factory/research/covering-c1264/workspace/artifacts/sequential-frontier-sweep/sequential-unmeasured-frontier-12-v7-20260722/t-28/sequential/proof.drat",
+          "sha256": "72a8a54bb5d11ed381662b2e2a8644f24fd920dfbb5d931f940c9003f726fc32"
+        },
+        "schema_version": 1,
+        "seconds_cap": 600,
+        "status": "verified",
+        "verdict": "s VERIFIED"
+      }
+    },
+    {
+      "cnf_sha256": "2298d186f6b4855b8f251402a46b2c4a6227943b2cce4defd28692e4065c1a39",
+      "command": [
+        "/usr/bin/cadical",
+        "-t",
+        "60",
+        "--no-binary",
+        "/root/proof-factory/research/covering-c1264/workspace/artifacts/sequential-frontier-sweep/sequential-unmeasured-frontier-12-v7-20260722/t-31/sequential/instance.cnf",
+        "/root/proof-factory/research/covering-c1264/workspace/artifacts/sequential-frontier-sweep/sequential-unmeasured-frontier-12-v7-20260722/t-31/sequential/proof.drat"
+      ],
+      "completed_at": "2026-07-22T19:40:56.442285+00:00",
+      "encoding": "sequential",
+      "leaf_id": "t-31",
+      "path": "artifacts/sequential-frontier-sweep/sequential-unmeasured-frontier-12-v7-20260722/t-31/sequential",
+      "proof": {
+        "bytes": 11436557,
+        "sha256": "dcb8c1a665662288282f200915ab6789570abff0fa9bf9f2d1dc6eaebeaface7"
+      },
+      "schema_version": 1,
+      "seconds_cap": 60,
+      "solver_elapsed_seconds": 2.290601162938401,
+      "solver_exit_code": 20,
+      "solver_sha256": "7b73df0a6d9cf3c751a1948300e5baff8e82c4d39bcd88f0c063b5f5cfb8b33e",
+      "status": "UNSAT_VERIFIED",
+      "validation": {
+        "checked_at": "2026-07-22T19:40:56.313814+00:00",
+        "checker": {
+          "path": "/root/proof-factory/research/covering-c1264/workspace/toolchains/drat-trim/drat-trim",
+          "sha256": "92f0aa9575ed519d66a99b8b1b3dde6ece4618ae4c202a3a4b200265dda0aa7a"
+        },
+        "cnf": {
+          "path": "/root/proof-factory/research/covering-c1264/workspace/artifacts/sequential-frontier-sweep/sequential-unmeasured-frontier-12-v7-20260722/t-31/sequential/instance.cnf",
+          "sha256": "2298d186f6b4855b8f251402a46b2c4a6227943b2cce4defd28692e4065c1a39"
+        },
+        "command": [
+          "/root/proof-factory/research/covering-c1264/workspace/toolchains/drat-trim/drat-trim",
+          "/root/proof-factory/research/covering-c1264/workspace/artifacts/sequential-frontier-sweep/sequential-unmeasured-frontier-12-v7-20260722/t-31/sequential/instance.cnf",
+          "/root/proof-factory/research/covering-c1264/workspace/artifacts/sequential-frontier-sweep/sequential-unmeasured-frontier-12-v7-20260722/t-31/sequential/proof.drat"
+        ],
+        "exit_code": 0,
+        "log": {
+          "path": "/root/proof-factory/research/covering-c1264/workspace/artifacts/sequential-frontier-sweep/sequential-unmeasured-frontier-12-v7-20260722/t-31/sequential/validation.json.log",
+          "sha256": "36a3f89d997ad964dfd8f237e6ba55dabecba75e238d7d78b828d7e66cdb5c97"
+        },
+        "proof": {
+          "path": "/root/proof-factory/research/covering-c1264/workspace/artifacts/sequential-frontier-sweep/sequential-unmeasured-frontier-12-v7-20260722/t-31/sequential/proof.drat",
+          "sha256": "dcb8c1a665662288282f200915ab6789570abff0fa9bf9f2d1dc6eaebeaface7"
+        },
+        "schema_version": 1,
+        "seconds_cap": 600,
+        "status": "verified",
+        "verdict": "s VERIFIED"
+      }
+    },
+    {
+      "cnf_sha256": "193b33f8edcaa8c9f2d209919fe6db48150652ec8e2f17254a21067b567044f1",
+      "command": [
+        "/usr/bin/cadical",
+        "-t",
+        "60",
+        "--no-binary",
+        "/root/proof-factory/research/covering-c1264/workspace/artifacts/sequential-frontier-sweep/sequential-unmeasured-frontier-12-v7-20260722/s-r1-15/sequential/instance.cnf",
+        "/root/proof-factory/research/covering-c1264/workspace/artifacts/sequential-frontier-sweep/sequential-unmeasured-frontier-12-v7-20260722/s-r1-15/sequential/proof.drat"
+      ],
+      "completed_at": "2026-07-22T19:41:58.654479+00:00",
+      "encoding": "sequential",
+      "leaf_id": "s-r1-15",
+      "path": "artifacts/sequential-frontier-sweep/sequential-unmeasured-frontier-12-v7-20260722/s-r1-15/sequential",
+      "proof": null,
+      "schema_version": 1,
+      "seconds_cap": 60,
+      "solver_elapsed_seconds": 60.01761649805121,
+      "solver_exit_code": 0,
+      "solver_sha256": "7b73df0a6d9cf3c751a1948300e5baff8e82c4d39bcd88f0c063b5f5cfb8b33e",
+      "status": "UNKNOWN",
+      "validation": null
+    },
+    {
+      "cnf_sha256": "5f2195c744ea1301822deed247e95d11adc3106761d474ea4d656f8893e213d4",
+      "command": [
+        "/usr/bin/cadical",
+        "-t",
+        "60",
+        "--no-binary",
+        "/root/proof-factory/research/covering-c1264/workspace/artifacts/sequential-frontier-sweep/sequential-unmeasured-frontier-12-v7-20260722/s-r1-4/sequential/instance.cnf",
+        "/root/proof-factory/research/covering-c1264/workspace/artifacts/sequential-frontier-sweep/sequential-unmeasured-frontier-12-v7-20260722/s-r1-4/sequential/proof.drat"
+      ],
+      "completed_at": "2026-07-22T19:43:01.393880+00:00",
+      "encoding": "sequential",
+      "leaf_id": "s-r1-4",
+      "path": "artifacts/sequential-frontier-sweep/sequential-unmeasured-frontier-12-v7-20260722/s-r1-4/sequential",
+      "proof": null,
+      "schema_version": 1,
+      "seconds_cap": 60,
+      "solver_elapsed_seconds": 60.03835228201933,
       "solver_exit_code": 0,
       "solver_sha256": "7b73df0a6d9cf3c751a1948300e5baff8e82c4d39bcd88f0c063b5f5cfb8b33e",
       "status": "UNKNOWN",
