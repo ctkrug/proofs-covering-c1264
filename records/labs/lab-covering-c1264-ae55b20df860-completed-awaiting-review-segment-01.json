@@ -1,4 +1,5 @@
 {
+  "event": "completed_awaiting_review",
   "schema_version": 2,
   "id": "lab-covering-c1264-ae55b20df860",
   "problem_id": "covering-c1264",
@@ -67,5 +68,41 @@
     "reported_artifact_bytes": 0,
     "artifact_bytes": 0
   },
-  "spec_sha256": "3869afde0c09b04ec789ad0d7ad1cc213fae9f2f4cfe872640cde96064440d23"
+  "spec_sha256": "3869afde0c09b04ec789ad0d7ad1cc213fae9f2f4cfe872640cde96064440d23",
+  "recorded_at": "2026-07-22T19:35:16.552985+00:00",
+  "job_id": "lab-covering-c1264-ae55b20df860",
+  "returncode": 0,
+  "duration_seconds": 289.154326,
+  "checkpoint_exists": true,
+  "checkpoint_sha256": "4ad34c7e520d5ef783f27b54b902b869cfabef79c5144f39dd7e7111f3f1302d",
+  "progress": {
+    "path": "artifacts/sequential-frontier-sweep/sequential-unmeasured-frontier-12-v7-20260722/progress.json",
+    "sha256": "1d7511fa3f69de16959b40718af8168d11df57c23504cdbf0d332e9a57c70640",
+    "completed_units": 6.0,
+    "total_units": 12.0,
+    "delta_units": 6.0,
+    "throughput_per_second": 0.020750165086584248,
+    "artifact_bytes": 83690107,
+    "reported_artifact_bytes": 83690107,
+    "reported_artifact_growth_bytes": 83690107,
+    "measured_artifact_growth_bytes": 83692523,
+    "artifact_growth_bytes": 83692523,
+    "complete": false,
+    "correctness_checks_passed": true,
+    "decision_value_active": true,
+    "message": ""
+  },
+  "threshold_failures": [],
+  "runner_result": "{\n  \"experiment_dir\": \"/root/proof-factory/research/covering-c1264/workspace/lab-runs/lab-covering-c1264-ae55b20df860/segment-000001/20260722-193027-6a5c40\",\n  \"schema_version\": 1,\n  \"id\": \"20260722-193027-6a5c40\",\n  \"name\": \"Seven-orbit exhaustive-link classification pilot: 12 never-measured leaves segment 1/2\",\n  \"hypothesis\": \"The first six audited never-measured seven-orbit frontier leaves will yield at least one net-new replay-verified closure or a directly validated catalogue-expanding link orbit within the fixed 60-second cap.\",\n  \"expected_signal\": \"Per leaf: reconstructed-CNF audit, bounded solver result, replay receipt for every UNSAT, and direct witness/canonicalization receipt for every SAT; checkpoint reports closure yield, proof bytes, and remaining hard-tail class.\",\n  \"command\": [\n    \"python3\",\n    \"scripts/run_sequential_frontier_sweep.py\",\n    \"--manifest\",\n    \"artifacts/experiments/sequential-unmeasured-frontier-12-v7-20260722/manifest.json\",\n    \"--run-id\",\n    \"sequential-unmeasured-frontier-12-v7-20260722\",\n    \"--checkpoint\",\n    \"artifacts/sequential-frontier-sweep/sequential-unmeasured-frontier-12-v7-20260722/checkpoint.json\",\n    \"--progress\",\n    \"artifacts/sequential-frontier-sweep/sequential-unmeasured-frontier-12-v7-20260722/progress.json\",\n    \"--units-per-invocation\",\n    \"6\"\n  ],\n  \"cwd\": \"/root/proof-factory/research/covering-c1264/workspace\",\n  \"seed\": 0,\n  \"timeout_seconds\": 900,\n  \"memory_limit_mb\": 4096,\n  \"memory_limit_enforced\": true,\n  \"started_at\": \"2026-07-22T19:30:27.344291+00:00\",\n  \"finished_at\": \"2026-07-22T19:35:16.403508+00:00\",\n  \"duration_seconds\": 289.059,\n  \"returncode\": 0,\n  \"timed_out\": false,\n  \"python\": \"3.12.3\",\n  \"platform\": \"Linux-6.8.0-124-generic-x86_64-with-glibc2.39\",\n  \"git_commit\": \"e7d365cbe12be1be4cc8f0da6570f020fdf92c93\",\n  \"source_urls\": [],\n  \"input_artifacts\": {\n    \"/root/proof-factory/research/covering-c1264/workspace/scripts/run_sequential_frontier_sweep.py\": \"f9dd9b4e07ae3f242187a59e7a9c33de49596439c09e3cadc8df405b1d19a3d7\",\n    \"/root/proof-factory/research/covering-c1264/workspace/artifacts/experiments/sequential-unmeasured-frontier-12-v7-20260722/manifest.json\": \"36ba4e8a2db742bc30543f02a97f82de42c07d2abaae45a38e64242ef9d5da58\"\n  },\n  \"peak_child_memory_rusage\": 93952,\n  \"peak_child_memory_unit\": \"kilobytes\",\n  \"artifacts\": {\n    \"stdout.txt\": \"a1fff1b04e04a635534d2db66eaf0db0234151f92fa0abad31d97d143a1835bd\",\n    \"stderr.txt\": \"e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855\"\n  }\n}\n",
+  "runner_error": "",
+  "output_root": "lab-runs/lab-covering-c1264-ae55b20df860/segment-000001",
+  "mutable_argv_before_sha256": {
+    "artifacts/sequential-frontier-sweep/sequential-unmeasured-frontier-12-v7-20260722/checkpoint.json": "absent",
+    "artifacts/sequential-frontier-sweep/sequential-unmeasured-frontier-12-v7-20260722/progress.json": "absent"
+  },
+  "mutable_argv_after_sha256": {
+    "artifacts/sequential-frontier-sweep/sequential-unmeasured-frontier-12-v7-20260722/checkpoint.json": "4ad34c7e520d5ef783f27b54b902b869cfabef79c5144f39dd7e7111f3f1302d",
+    "artifacts/sequential-frontier-sweep/sequential-unmeasured-frontier-12-v7-20260722/progress.json": "1d7511fa3f69de16959b40718af8168d11df57c23504cdbf0d332e9a57c70640"
+  },
+  "research_event_id": "event-covering-c1264-4dfba2a31eba"
 }

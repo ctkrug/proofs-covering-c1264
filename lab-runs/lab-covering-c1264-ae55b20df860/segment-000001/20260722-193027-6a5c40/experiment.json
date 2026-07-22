@@ -1,0 +1,45 @@
+{
+  "schema_version": 1,
+  "id": "20260722-193027-6a5c40",
+  "name": "Seven-orbit exhaustive-link classification pilot: 12 never-measured leaves segment 1/2",
+  "hypothesis": "The first six audited never-measured seven-orbit frontier leaves will yield at least one net-new replay-verified closure or a directly validated catalogue-expanding link orbit within the fixed 60-second cap.",
+  "expected_signal": "Per leaf: reconstructed-CNF audit, bounded solver result, replay receipt for every UNSAT, and direct witness/canonicalization receipt for every SAT; checkpoint reports closure yield, proof bytes, and remaining hard-tail class.",
+  "command": [
+    "python3",
+    "scripts/run_sequential_frontier_sweep.py",
+    "--manifest",
+    "artifacts/experiments/sequential-unmeasured-frontier-12-v7-20260722/manifest.json",
+    "--run-id",
+    "sequential-unmeasured-frontier-12-v7-20260722",
+    "--checkpoint",
+    "artifacts/sequential-frontier-sweep/sequential-unmeasured-frontier-12-v7-20260722/checkpoint.json",
+    "--progress",
+    "artifacts/sequential-frontier-sweep/sequential-unmeasured-frontier-12-v7-20260722/progress.json",
+    "--units-per-invocation",
+    "6"
+  ],
+  "cwd": "/root/proof-factory/research/covering-c1264/workspace",
+  "seed": 0,
+  "timeout_seconds": 900,
+  "memory_limit_mb": 4096,
+  "memory_limit_enforced": true,
+  "started_at": "2026-07-22T19:30:27.344291+00:00",
+  "finished_at": "2026-07-22T19:35:16.403508+00:00",
+  "duration_seconds": 289.059,
+  "returncode": 0,
+  "timed_out": false,
+  "python": "3.12.3",
+  "platform": "Linux-6.8.0-124-generic-x86_64-with-glibc2.39",
+  "git_commit": "e7d365cbe12be1be4cc8f0da6570f020fdf92c93",
+  "source_urls": [],
+  "input_artifacts": {
+    "/root/proof-factory/research/covering-c1264/workspace/scripts/run_sequential_frontier_sweep.py": "f9dd9b4e07ae3f242187a59e7a9c33de49596439c09e3cadc8df405b1d19a3d7",
+    "/root/proof-factory/research/covering-c1264/workspace/artifacts/experiments/sequential-unmeasured-frontier-12-v7-20260722/manifest.json": "36ba4e8a2db742bc30543f02a97f82de42c07d2abaae45a38e64242ef9d5da58"
+  },
+  "peak_child_memory_rusage": 93952,
+  "peak_child_memory_unit": "kilobytes",
+  "artifacts": {
+    "stdout.txt": "a1fff1b04e04a635534d2db66eaf0db0234151f92fa0abad31d97d143a1835bd",
+    "stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  }
+}
