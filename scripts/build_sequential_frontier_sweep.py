@@ -70,6 +70,7 @@ def build() -> dict[str, object]:
         Path("artifacts/pilot/link-root0-secondary0-tertiary-partition.json"),
         Path("toolchains/drat-trim/drat-trim"),
         Path("toolchains/drat-trim/PROVENANCE.md"),
+        Path(".venv/sat-audit-tools/cadical/build/cadical"),
         Path("requirements-pilot-lock.txt"),
     ]
     return {
@@ -90,7 +91,7 @@ def build() -> dict[str, object]:
         "maximum_projected_proof_bytes": 20_000_000_000,
         "blocking_cnf": "artifacts/discoveries/link-orbit-catalog-5-blocking.cnf",
         "catalog": "artifacts/discoveries/link-orbit-catalog-5.json",
-        "solver": "/usr/bin/cadical",
+        "solver": ".venv/sat-audit-tools/cadical/build/cadical",
         "drat_trim": "toolchains/drat-trim/drat-trim",
         "frontier_summary": "artifacts/pilot/link-campaign-summary.json",
         "portfolio_manifest_sha256": sha(PORTFOLIO),

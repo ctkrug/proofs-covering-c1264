@@ -7,6 +7,7 @@
   "frontier_summary": "artifacts/pilot/link-campaign-summary.json",
   "hypothesis": "A uniform short-cap sequential pass over every currently open canonical node will cheaply harvest at least one net-new replay-verified closure and measure the hard tail without committing to a uniform timeout increase.",
   "input_sha256": {
+    ".venv/sat-audit-tools/cadical/build/cadical": "d2f7e3fc9577de8548125b11c7c37772df32438bf86ffdadb9f45a11e643dd64",
     "artifacts/discoveries/link-orbit-catalog-5-blocking.cnf": "ca2ebe74048cea4593e5fc377e441a7d51a10199bba8bc0c0ef7578f5a91eb2f",
     "artifacts/discoveries/link-orbit-catalog-5.json": "1b20916c7298dda7c172f2d435bc9e357026044c18a821f645aa82ec5e8fa2c6",
     "artifacts/pilot/link-campaign-summary.json": "1a9ff4abe35470308876496219ec6cf93d64e6b10ceafb942a3dd43b5dd3139f",
@@ -18,7 +19,7 @@
     "checkers/replay_drat.py": "8212d26af921b8a8cdf035bb6fd5469865a57200a7d8e30ffebf0da24fa7a4f3",
     "requirements-pilot-lock.txt": "f8c39296cf75ed89068b7b13bc38ba3dbc1d60e9cd3c7be326539025a293117a",
     "scripts/analyze_link_orbit.py": "d1bc19c04930870178764d52755ffd68a1f64191956d97ee0fe7b098dd7c5405",
-    "scripts/build_sequential_frontier_sweep.py": "aa1277e8eb4c7c73b9be05346936effa44be23509de6f512baaca61cb8ffe724",
+    "scripts/build_sequential_frontier_sweep.py": "4182542a5b9c7498f7fce4743a867d74bf66e76a3487e445a0d46c13016acdcb",
     "scripts/find_next_link_orbit.py": "2b9e2f5e6aac03a6708da582e32134bb76c8efdd70c2060b312059c49e2aef61",
     "scripts/profile_sequential_survivors.py": "8323fce87f5938ba56ce3426bdd06363f99e57aed70dde5bb6ae8f853db8caa3",
     "scripts/run_cardinality_encoding_benchmark.py": "84761553baa9928a69b96d22b55cb1b7302b9ab8e5178c233cc18f3ddbb65a91",
@@ -474,6 +475,6 @@
   "schema_version": 1,
   "seconds_per_run": 60,
   "selection_basis": "All 32 audited open nodes. The 15 transferred closures are excluded. Five predecessor-blocker survivors may be remeasured because the active blocker gained the newly discovered orbit; this is not a symmetry rerun.",
-  "solver": "/usr/bin/cadical",
+  "solver": ".venv/sat-audit-tools/cadical/build/cadical",
   "success_rule": "Retain every net-new closure whose reconstructed CNF audit and DRAT replay pass; UNKNOWN is a measured survivor, not evidence of satisfiability."
 }
