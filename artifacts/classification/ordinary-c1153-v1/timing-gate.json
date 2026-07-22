@@ -1,0 +1,68 @@
+{
+  "claim_limit": "No provisional SAT/UNSAT status is a classification certificate; the global C(12,6,4) ledger is unchanged.",
+  "manifest": {
+    "path": "artifacts/classification/ordinary-c1153-v1/manifest.json",
+    "sha256": "d5225d5e072581a67c8f053b6c03645d036560c2661eb21b79432ebb191509b1"
+  },
+  "outcomes": [
+    {
+      "cnf_sha256": "70636124bdebf5bfba97683ebe8856c99d23781a754e7d5a8a1a40feaec654b5",
+      "id": "intersection-4",
+      "seconds_cap": 10,
+      "status": "TIMEOUT",
+      "wall_seconds": 10.166141292022076
+    },
+    {
+      "cnf_sha256": "0121b14e6cabe6b7fcf1c84a4342940cc3f240bcdf0ab11a59796450d43e996c",
+      "id": "intersection-3",
+      "seconds_cap": 10,
+      "status": "TIMEOUT",
+      "wall_seconds": 10.236267458007205
+    },
+    {
+      "cnf_sha256": "33a5bcd16a39d58e81bada03d49832e2c15db631a8bf0396771f1860bce6e5ec",
+      "id": "intersection-2",
+      "seconds_cap": 10,
+      "stats": {
+        "conflicts": 973,
+        "decisions": 4656,
+        "propagations": 245183,
+        "restarts": 95
+      },
+      "status": "UNSAT_PROVISIONAL",
+      "wall_seconds": 3.3259017499512993
+    },
+    {
+      "cnf_sha256": "dd2de3b924e239fdae3e5058b4e44780ee9ba9efb8ef8099d8fdad208218c713",
+      "id": "intersection-1",
+      "seconds_cap": 10,
+      "stats": {
+        "conflicts": 0,
+        "decisions": 0,
+        "propagations": 2948,
+        "restarts": 0
+      },
+      "status": "UNSAT_PROVISIONAL",
+      "wall_seconds": 3.0202049169456586
+    },
+    {
+      "cnf_sha256": "16f117f9a5d59ef35c997ef1a499952dafaf849342fe1ee37be1baba6bf09d58",
+      "id": "intersection-0",
+      "seconds_cap": 10,
+      "stats": {
+        "conflicts": 0,
+        "decisions": 0,
+        "propagations": 2948,
+        "restarts": 0
+      },
+      "status": "UNSAT_PROVISIONAL",
+      "wall_seconds": 1.6166624579927884
+    }
+  ],
+  "parallelism": 4,
+  "runtime_projection": "A timeout supplies only a lower bound. Proof-producing scale is not authorized until these measurements are reviewed and a leaf-specific split or budget is chosen.",
+  "schema_version": 1,
+  "seconds_cap_per_leaf": 10,
+  "solver": "PySAT CaDiCaL 1.9.5, proofless timing only",
+  "status": "BOUNDED_TIMING_GATE_COMPLETE"
+}

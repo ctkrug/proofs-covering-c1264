@@ -1,0 +1,214 @@
+{
+  "claim_limit": "This manifest and its CNFs are a candidate completeness partition. They become a classification theorem only after independent reconstruction/coverage audit and completed certificate verification.",
+  "completion_standard": "All five exact leaves must be replay-verified UNSAT, or every SAT leaf must be exhaustively enumerated and all witnesses canonicalized to the maintained class. A single validated nonisomorphic SAT witness disproves uniqueness.",
+  "core": {
+    "cardinality_clause_count": 38812,
+    "cardinality_clause_sha256": "955f0436405e9b790e2fdafae6d93b374fca249633095cc3404b0759c4eccd25",
+    "cardinality_semantics": "DP equivalence s(i,j) iff at least j of the first i primary variables are true; assert s(462,20) and not s(462,21).",
+    "cardinality_variables": {
+      "false_constant": 464,
+      "first_state_variable": 465,
+      "last_state_variable": 10166,
+      "true_constant": 463
+    },
+    "coverage_clause_count": 165,
+    "coverage_clause_sha256": "113b23e27e372b81a722e7d26407c177b3222b7e263de59a0b9c66e4b088e6cd",
+    "known_image_blocker_count": 7200,
+    "known_image_blocker_sha256": "3e58830ae35cdbaaf53fe64e88f81dac0817bef4b8eff797857714f295bd3d6a"
+  },
+  "known_class_blocking": {
+    "argument": "With exactly 20 selected blocks, one negative 20-literal clause per root-normalized image excludes exactly that known isomorphism class.",
+    "expected_automorphism_order": 240,
+    "expected_full_orbit_size": 166320,
+    "representative": {
+      "path": "artifacts/prior-art/c1153-ljcr-cover.txt",
+      "sha256": "e1b648f356ecedaade63b65bbc9ec25f3f385f21fb8ab7598d7033d2dd17dccc"
+    },
+    "reusable_blocker": {
+      "bytes": 698415,
+      "path": "artifacts/classification/ordinary-c1153-v1/known-class-root-blocker.cnf",
+      "sha256": "d274c00fb1a78f6959134b2d41483fe5fe8d571ceaaba5ec6f88e3f352e0639d"
+    },
+    "root_normalized_images": 7200
+  },
+  "leaves": [
+    {
+      "canonical_second_block": [
+        1,
+        2,
+        3,
+        4,
+        6
+      ],
+      "canonical_second_block_variable": 2,
+      "cnf": {
+        "bytes": 1347574,
+        "clauses": 46179,
+        "path": "artifacts/classification/ordinary-c1153-v1/intersection-4/instance.cnf",
+        "sha256": "70636124bdebf5bfba97683ebe8856c99d23781a754e7d5a8a1a40feaec654b5",
+        "variables": 10166
+      },
+      "earlier_orbit_variables_forced_false": 0,
+      "id": "intersection-4",
+      "minimum_present_second_block_intersection": 4,
+      "result": {
+        "path": "artifacts/classification/ordinary-c1153-v1/intersection-4/result.json",
+        "sha256": "0225b0e888b37e72cb39bd9cebbdfeea62fa762924fe5efeaa7079f066aa0cd1"
+      },
+      "second_block_orbit_size": 30
+    },
+    {
+      "canonical_second_block": [
+        1,
+        2,
+        3,
+        6,
+        7
+      ],
+      "canonical_second_block_variable": 14,
+      "cnf": {
+        "bytes": 1347753,
+        "clauses": 46209,
+        "path": "artifacts/classification/ordinary-c1153-v1/intersection-3/instance.cnf",
+        "sha256": "0121b14e6cabe6b7fcf1c84a4342940cc3f240bcdf0ab11a59796450d43e996c",
+        "variables": 10166
+      },
+      "earlier_orbit_variables_forced_false": 30,
+      "id": "intersection-3",
+      "minimum_present_second_block_intersection": 3,
+      "result": {
+        "path": "artifacts/classification/ordinary-c1153-v1/intersection-3/result.json",
+        "sha256": "0225b0e888b37e72cb39bd9cebbdfeea62fa762924fe5efeaa7079f066aa0cd1"
+      },
+      "second_block_orbit_size": 150
+    },
+    {
+      "canonical_second_block": [
+        1,
+        2,
+        6,
+        7,
+        8
+      ],
+      "canonical_second_block_variable": 65,
+      "cnf": {
+        "bytes": 1348749,
+        "clauses": 46359,
+        "path": "artifacts/classification/ordinary-c1153-v1/intersection-2/instance.cnf",
+        "sha256": "33a5bcd16a39d58e81bada03d49832e2c15db631a8bf0396771f1860bce6e5ec",
+        "variables": 10166
+      },
+      "earlier_orbit_variables_forced_false": 180,
+      "id": "intersection-2",
+      "minimum_present_second_block_intersection": 2,
+      "result": {
+        "path": "artifacts/classification/ordinary-c1153-v1/intersection-2/result.json",
+        "sha256": "0225b0e888b37e72cb39bd9cebbdfeea62fa762924fe5efeaa7079f066aa0cd1"
+      },
+      "second_block_orbit_size": 200
+    },
+    {
+      "canonical_second_block": [
+        1,
+        6,
+        7,
+        8,
+        9
+      ],
+      "canonical_second_block_variable": 196,
+      "cnf": {
+        "bytes": 1350130,
+        "clauses": 46559,
+        "path": "artifacts/classification/ordinary-c1153-v1/intersection-1/instance.cnf",
+        "sha256": "dd2de3b924e239fdae3e5058b4e44780ee9ba9efb8ef8099d8fdad208218c713",
+        "variables": 10166
+      },
+      "earlier_orbit_variables_forced_false": 380,
+      "id": "intersection-1",
+      "minimum_present_second_block_intersection": 1,
+      "result": {
+        "path": "artifacts/classification/ordinary-c1153-v1/intersection-1/result.json",
+        "sha256": "0225b0e888b37e72cb39bd9cebbdfeea62fa762924fe5efeaa7079f066aa0cd1"
+      },
+      "second_block_orbit_size": 75
+    },
+    {
+      "canonical_second_block": [
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "canonical_second_block_variable": 457,
+      "cnf": {
+        "bytes": 1350655,
+        "clauses": 46634,
+        "path": "artifacts/classification/ordinary-c1153-v1/intersection-0/instance.cnf",
+        "sha256": "16f117f9a5d59ef35c997ef1a499952dafaf849342fe1ee37be1baba6bf09d58",
+        "variables": 10166
+      },
+      "earlier_orbit_variables_forced_false": 455,
+      "id": "intersection-0",
+      "minimum_present_second_block_intersection": 0,
+      "result": {
+        "path": "artifacts/classification/ordinary-c1153-v1/intersection-0/result.json",
+        "sha256": "0225b0e888b37e72cb39bd9cebbdfeea62fa762924fe5efeaa7079f066aa0cd1"
+      },
+      "second_block_orbit_size": 6
+    }
+  ],
+  "normalization": {
+    "argument": "Every object has a selected block and S_11 is transitive on 5-subsets, so some relabeling contains the fixed root block.",
+    "root_block": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "root_stabilizer": "S_5 x S_6",
+    "root_stabilizer_order": 86400
+  },
+  "partition": {
+    "coverage_argument": "The other 19 blocks occupy one of five stabilizer orbits. Choose the first nonempty orbit; the stabilizer maps one member to its canonical representative while preserving all earlier-orbit absences.",
+    "intersection_order": [
+      4,
+      3,
+      2,
+      1,
+      0
+    ],
+    "kind": "least-present second-block orbit under the root stabilizer",
+    "leaf_count": 5
+  },
+  "schema_version": 1,
+  "shared_normalized_base": {
+    "bytes": 1347570,
+    "clauses": 46178,
+    "path": "artifacts/classification/ordinary-c1153-v1/normalized-base.cnf",
+    "sha256": "fdbc0031c7f8b5193ea34b1fadefd483e7fa9ee08bbdc3f6207125e056e72175",
+    "variables": 10166
+  },
+  "status": "BUILT_NOT_SOLVED",
+  "theorem_target": "Every 20-block C(11,5,3) cover is isomorphic under S_11 to the maintained representative.",
+  "unrestricted_domain": {
+    "candidate_blocks": 462,
+    "covered_triples": 165,
+    "extra_degree_or_matching_assumptions": false,
+    "points": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11
+    ],
+    "selected_blocks_exactly": 20
+  }
+}
