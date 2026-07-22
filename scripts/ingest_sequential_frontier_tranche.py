@@ -1,10 +1,11 @@
 #!/usr/bin/env python3
-"""Ingest replayed results from the native five-orbit sequential continuation."""
+"""Ingest one immutable sequential tranche without overstating SAT link witnesses."""
 
 from __future__ import annotations
 
 import hashlib
 import json
+import argparse
 from pathlib import Path
 
 from build_certificate_portfolio import canonical_hash
@@ -24,9 +25,9 @@ def receipt(path: Path) -> dict[str, str]:
     return {"path": str(path), "sha256": sha(ROOT / path)}
 
 
-def ingest() -> dict:
+def ingest(checkpoint_path: Path = CHECKPOINT, run_id: str = RUN_ID) -> dict:
     manifest = json.loads(MANIFEST.read_text())
-    checkpoint = json.loads((ROOT / CHECKPOINT).read_text())
+    checkpoint = json.loads((ROOT / checkpoint_path).read_text())
     nodes = {row["id"]: row for row in manifest["nodes"]}
     before = {row["id"] for row in manifest["nodes"] if row["final_coverage_status"] != "open"}
     sources = []
@@ -36,7 +37,7 @@ def ingest() -> dict:
     for result in checkpoint["results"]:
         node = nodes[result["leaf_id"]]
         if node["final_coverage_status"] != "open" and not any(
-            row.get("run_id") == RUN_ID for row in node["outcomes"]
+            row.get("run_id") == run_id for row in node["outcomes"]
         ):
             raise ValueError(f"refusing to rerun transferred closure {node['id']}")
         if "sequential" not in node["assigned_methods"]:
@@ -50,12 +51,12 @@ def ingest() -> dict:
         runtime = float(result["solver_elapsed_seconds"])
         cpu += runtime
         outcome = {
-            "run_id": RUN_ID,
+            "run_id": run_id,
             "method": "sequential",
             "status": "unknown",
             "runtime_seconds": runtime,
             "cpu_seconds": runtime,
-            "cnf_encoding_revision": f"{RUN_ID}:sequential:schema-2",
+            "cnf_encoding_revision": f"{run_id}:sequential:schema-2",
             "cnf_sha256": result["cnf_sha256"],
             "result_receipt": receipt(result_path),
             "independent_audit_receipt": receipt(audit_path),
@@ -75,7 +76,22 @@ def ingest() -> dict:
             proof_bytes += int(proof["bytes"])
             certified.append(node["id"])
             node["final_coverage_status"] = "closed_unsat"
-        node["outcomes"] = [row for row in node["outcomes"] if row.get("run_id") != RUN_ID]
+        elif result["status"] == "SAT_NEW_ORBIT":
+            validation_path = folder / "validation.json"
+            witness_path = folder / "witness.txt"
+            validation = json.loads((ROOT / validation_path).read_text())
+            if validation.get("status") != "valid-new-link-orbit":
+                raise ValueError(f"link witness validation disagreement for {node['id']}")
+            if validation.get("witness_sha256") != sha(ROOT / witness_path):
+                raise ValueError(f"link witness hash disagreement for {node['id']}")
+            outcome.update({
+                "status": "provisional_sat",
+                "local_claim": "validated exact-degree C(11,5,3) link outside the active catalogue; not a 40-cover",
+                "link_witness_receipt": receipt(witness_path),
+                "link_validation_receipt": receipt(validation_path),
+                "canonical_link_sha256": validation["canonical_sha256"],
+            })
+        node["outcomes"] = [row for row in node["outcomes"] if row.get("run_id") != run_id]
         node["outcomes"].append(outcome)
         node["outcomes"].sort(key=lambda row: (row.get("run_id", ""), row.get("method", "")))
         sources.append(receipt(result_path))
@@ -84,7 +100,7 @@ def ingest() -> dict:
     manifest["counts"] = {"total": 47, "closed": closed, "open": 47 - closed}
     remaining = [row for row in manifest["nodes"] if row["final_coverage_status"] == "open"]
     tranche = {
-        "id": f"{RUN_ID}-segment-01",
+        "id": f"{run_id}-segment-01",
         "source_results": sorted(sources, key=lambda row: row["path"]),
         "completed_solver_runs": len(checkpoint["results"]),
         "newly_closed_nodes": newly_closed,
@@ -95,8 +111,8 @@ def ingest() -> dict:
         },
         "certificate_and_replay_status": {
             "certified_unsat_outcomes": len(certified),
-            "semantic_audits": "all six continuation outcomes valid",
-            "proof_replays": "all five UNSAT outcomes independently verified",
+            "semantic_audits": f"all {len(checkpoint['results'])} outcomes passed their declared semantic gate",
+            "proof_replays": f"all {len(certified)} UNSAT outcomes independently verified",
         },
         "cpu_seconds": round(cpu, 6),
         "proof_storage_bytes": proof_bytes,
@@ -128,7 +144,11 @@ def ingest() -> dict:
 
 
 def main() -> None:
-    value = ingest()
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--checkpoint", type=Path, default=CHECKPOINT)
+    parser.add_argument("--run-id", default=RUN_ID)
+    args = parser.parse_args()
+    value = ingest(args.checkpoint, args.run_id)
     MANIFEST.write_text(json.dumps(value, indent=2, sort_keys=True) + "\n")
     print(f"updated {MANIFEST}: {value['counts']['closed']}/47 closed")
 

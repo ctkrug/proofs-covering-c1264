@@ -1,0 +1,107 @@
+{
+  "catalogue": {
+    "blocked_images": 2576,
+    "canonical_orbits_found": 7,
+    "exhaustive": false
+  },
+  "claim_limit": "This certifies the exact classification domain and its disjoint canonical partition, not exhaustion of that partition.",
+  "classification_domain": {
+    "candidate_primary_variables": 462,
+    "degree_10_point": 1,
+    "derivation": "A hypothetical 40-cover has point degree 20 and pair multiplicities 10 on one perfect matching and 9 elsewhere; the link at a fixed point inherits these exact constraints.",
+    "forced_degree_vector": [
+      10,
+      9,
+      9,
+      9,
+      9,
+      9,
+      9,
+      9,
+      9,
+      9,
+      9
+    ],
+    "matched_pairs_preserved": [
+      [
+        2,
+        3
+      ],
+      [
+        4,
+        5
+      ],
+      [
+        6,
+        7
+      ],
+      [
+        8,
+        9
+      ],
+      [
+        10,
+        11
+      ]
+    ],
+    "naive_subsets": "choose(462,20) approximately 5.315e34",
+    "objects": "20 distinct 5-subsets of {1,...,11} covering all 165 triples"
+  },
+  "inputs": [
+    {
+      "bytes": 2081,
+      "path": "docs/BASELINE.md",
+      "sha256": "a3450ca7ff7f2be7f4d3c9abac54a7b04499f33039a143cb3c4eb7f2d3114486"
+    },
+    {
+      "bytes": 55076,
+      "path": "artifacts/baseline/link.opb",
+      "sha256": "f38b7d2cf16c7646ea21b75ebf102b247ca19c0fbfcb125130416d72c807f1de"
+    },
+    {
+      "bytes": 22324,
+      "path": "artifacts/pilot/link-root-partition.json",
+      "sha256": "9011f379380f0fd6c2c911823691d32811eab374c1a4b40195754b72350470e8"
+    },
+    {
+      "bytes": 134492,
+      "path": "artifacts/pilot/link-root-0-secondary-partition.json",
+      "sha256": "90b7972db69594d535c635a7a3bdac50fd2f281cc52cf76460e4bcf229bb0af8"
+    },
+    {
+      "bytes": 217757,
+      "path": "artifacts/pilot/link-root-1-secondary-partition.json",
+      "sha256": "cdbefde0d7b8bcb235742b74b22e38524c67c7409b1a0d8f4563b9c04428072b"
+    },
+    {
+      "bytes": 395260,
+      "path": "artifacts/pilot/link-root0-secondary0-tertiary-partition.json",
+      "sha256": "5a9a341375b14e27a2e6e98fe44f9f73119e6a36290eb4aced4facbc6b825b5a"
+    },
+    {
+      "bytes": 119457,
+      "path": "artifacts/portfolio/frontier-manifest-26of47-seven-orbit-snapshot.json",
+      "sha256": "29ceb53c3e4a2d6e78477616ded7dff9659b1b5f24d3642063e64c8cf6ebea97"
+    }
+  ],
+  "partition_coverage": {
+    "active_closed": 26,
+    "active_frontier_nodes": 47,
+    "active_open": 21,
+    "disjointness_and_prefix_coverage": "verified by independent orbit reconstruction",
+    "primary_roots": 6,
+    "primary_variables_covered": 462,
+    "root_0_secondary_0_tertiary_cases": 122,
+    "root_0_secondary_cases": 39,
+    "root_1_secondary_cases": 68
+  },
+  "schema_version": 1,
+  "status": "valid",
+  "symmetry": {
+    "actions_independently_enumerated": 3840,
+    "canonicalization_scope": "fix degree-10 point 1 and preserve the five matched pairs",
+    "group": "C2 wr S5",
+    "order": 3840
+  },
+  "theorem_chain_status": "domain and partition reduction audited; exhaustive orbit classification remains open until all 47 canonical frontier nodes close or a new orbit is found"
+}

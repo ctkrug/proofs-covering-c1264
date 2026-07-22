@@ -1,0 +1,80 @@
+{
+  "blocked_link_images": 2576,
+  "blocking_cnf": {
+    "bytes": 249479,
+    "clauses": 2576,
+    "path": "artifacts/discoveries/link-orbit-catalog-7-blocking.cnf",
+    "sha256": "d173df1b0b6cb781723d2a334fd756044ff6b3113a3f4cd3edec5eddb042e4fa"
+  },
+  "claim_limit": "Catalogs only supplied independently valid links and their complete orbits; it is not an exhaustive link classification.",
+  "group": "C2 wr S5",
+  "group_order": 3840,
+  "orbit_count": 7,
+  "orbits": [
+    {
+      "canonical_sha256": "8588c1d6bef8da17488984c28e222594e088ef1435d8737fafc28d01cd8f5148",
+      "orbit_size": 320,
+      "source": {
+        "path": "artifacts/controls/c1153-at-most-20-seqcounter-fix-first-exact-degrees-300s/witness.txt",
+        "sha256": "08282192a15dcca556d53632cbeae661076ab334d8dec4aca1e2a355486aa47f"
+      },
+      "stabilizer_order": 12
+    },
+    {
+      "canonical_sha256": "681764d1b0bf68ceff7809a7146d91a21a7504528ba71bbf73940daefa1c54a1",
+      "orbit_size": 16,
+      "source": {
+        "path": "artifacts/pilot/link-orbit-second-root-2-60s/witness.txt",
+        "sha256": "4a93a974c7ab16a5ede382c8c8bc725ed8694a0f7dd30a1abd6c0fea4300bc1d"
+      },
+      "stabilizer_order": 240
+    },
+    {
+      "canonical_sha256": "c31bde7d138db2072f1309f834814aa2e27722a9b1bf21e08e758b1acca93349",
+      "orbit_size": 960,
+      "source": {
+        "path": "artifacts/pilot/link-orbit-next-root-1-300s/witness.txt",
+        "sha256": "52a0eeb379ab87a640685b47f9bd7202b221738796e93a00c58f86a9ed8e1882"
+      },
+      "stabilizer_order": 4
+    },
+    {
+      "canonical_sha256": "67d803aa141d828b4f2911c4a9f8199b1f26f4141a96a0e3a31b78b773de3468",
+      "orbit_size": 320,
+      "source": {
+        "path": "artifacts/pilot/link-orbit-root1-secondary-8-60s/witness.txt",
+        "sha256": "bfa9f0c47dde379e49acd296ee973497cce13837fe363f3c03297e2ff12ed743"
+      },
+      "stabilizer_order": 12
+    },
+    {
+      "canonical_sha256": "b470049c5444b5f9bdd253d6e096e42e52e42c3512e545b43a4ad8f9346bb49c",
+      "orbit_size": 160,
+      "source": {
+        "path": "artifacts/discoveries/link-orbit-s-r1-3/witness.txt",
+        "sha256": "efca42168a5be71be13bbe9b30f7767530eac29f9340dd1720316d1818aafe7d"
+      },
+      "stabilizer_order": 24
+    },
+    {
+      "canonical_sha256": "31fb7b6b50ebbab8a549bad171c3e42c20448c88a1ec1c0f95a167188f974374",
+      "orbit_size": 480,
+      "source": {
+        "path": "artifacts/sequential-frontier-sweep/sequential-unmeasured-frontier-24-v5-20260722/t-16/sequential/witness.txt",
+        "sha256": "92b42459ddffa9d911ec9d15d3c12837838b440136921de323220765948533ef"
+      },
+      "stabilizer_order": 8
+    },
+    {
+      "canonical_sha256": "c01d7d4a45ca96b3a442a87d5df422c45f6d3ce5a83ca450c3ee7c4e647837ca",
+      "orbit_size": 320,
+      "source": {
+        "path": "artifacts/sequential-frontier-sweep/sequential-unmeasured-frontier-24-v5-20260722/t-17/sequential/witness.txt",
+        "sha256": "c01d7d4a45ca96b3a442a87d5df422c45f6d3ce5a83ca450c3ee7c4e647837ca"
+      },
+      "stabilizer_order": 12
+    }
+  ],
+  "schema_version": 1,
+  "status": "valid-orbit-catalog"
+}

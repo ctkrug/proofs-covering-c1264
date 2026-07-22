@@ -21,15 +21,19 @@ def load(name: str, path: Path):
     return module
 
 
-producer = load("rebind_five_orbit_frontier", ROOT / "scripts" / "rebind_five_orbit_frontier.py")
-auditor = load("audit_five_orbit_frontier", ROOT / "checkers" / "audit_five_orbit_frontier.py")
+producer = load("rebind_link_orbit_frontier", ROOT / "scripts" / "rebind_link_orbit_frontier.py")
+auditor = load("audit_link_orbit_frontier", ROOT / "checkers" / "audit_link_orbit_frontier.py")
 
 
-class FiveOrbitFrontierTests(unittest.TestCase):
+class ActiveOrbitFrontierTests(unittest.TestCase):
     def test_rebind_preserves_honest_global_count_and_audits(self) -> None:
-        value = producer.rebind(Path("artifacts/portfolio/frontier-manifest-v1.json"))
+        value = producer.rebind(
+            Path("artifacts/portfolio/frontier-manifest-20of47-snapshot.json"),
+            Path("artifacts/discoveries/link-orbit-catalog-7.json"),
+            Path("artifacts/discoveries/link-orbit-catalog-7-audit.json"),
+        )
         self.assertEqual(value["counts"], {"total": 47, "closed": 20, "open": 27})
-        self.assertEqual(value["blocker_monotonicity"]["added_clauses"], 160)
+        self.assertEqual(value["blocker_monotonicity"]["added_clauses"], 800)
         with tempfile.TemporaryDirectory() as raw:
             path = Path(raw) / "manifest.json"
             path.write_text(json.dumps(value))

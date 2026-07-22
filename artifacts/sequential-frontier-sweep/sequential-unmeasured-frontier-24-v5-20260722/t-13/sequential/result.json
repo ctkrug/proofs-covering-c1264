@@ -1,0 +1,53 @@
+{
+  "cnf_sha256": "d736639d587c0d79f67b1f5d03d628840901ef30de896f5a052b42c6fdbee84b",
+  "command": [
+    ".venv/sat-audit-tools/cadical/build/cadical",
+    "-t",
+    "60",
+    "--no-binary",
+    "/Users/Krug/Desktop/ChatGPT/proofs/research/covering-c1264/workspace/artifacts/sequential-frontier-sweep/sequential-unmeasured-frontier-24-v5-20260722/t-13/sequential/instance.cnf",
+    "/Users/Krug/Desktop/ChatGPT/proofs/research/covering-c1264/workspace/artifacts/sequential-frontier-sweep/sequential-unmeasured-frontier-24-v5-20260722/t-13/sequential/proof.drat"
+  ],
+  "completed_at": "2026-07-22T18:41:18.751883+00:00",
+  "encoding": "sequential",
+  "leaf_id": "t-13",
+  "proof": {
+    "bytes": 30879794,
+    "sha256": "a4344af29e3cce7068296378753cb20e30996511b54daea4a8c731780088bc62"
+  },
+  "schema_version": 1,
+  "seconds_cap": 60,
+  "solver_elapsed_seconds": 16.603876458015293,
+  "solver_exit_code": 20,
+  "solver_sha256": "d2f7e3fc9577de8548125b11c7c37772df32438bf86ffdadb9f45a11e643dd64",
+  "status": "UNSAT_VERIFIED",
+  "validation": {
+    "checked_at": "2026-07-22T18:41:18.590430+00:00",
+    "checker": {
+      "path": "/Users/Krug/Desktop/ChatGPT/proofs/research/covering-c1264/workspace/.venv/sat-audit-tools/drat-trim/drat-trim",
+      "sha256": "f58f63b0f76945d4c4c9ff6e87afaf870f579e67c0f7cca589492df8fc7ebd47"
+    },
+    "cnf": {
+      "path": "/Users/Krug/Desktop/ChatGPT/proofs/research/covering-c1264/workspace/artifacts/sequential-frontier-sweep/sequential-unmeasured-frontier-24-v5-20260722/t-13/sequential/instance.cnf",
+      "sha256": "d736639d587c0d79f67b1f5d03d628840901ef30de896f5a052b42c6fdbee84b"
+    },
+    "command": [
+      "/Users/Krug/Desktop/ChatGPT/proofs/research/covering-c1264/workspace/.venv/sat-audit-tools/drat-trim/drat-trim",
+      "/Users/Krug/Desktop/ChatGPT/proofs/research/covering-c1264/workspace/artifacts/sequential-frontier-sweep/sequential-unmeasured-frontier-24-v5-20260722/t-13/sequential/instance.cnf",
+      "/Users/Krug/Desktop/ChatGPT/proofs/research/covering-c1264/workspace/artifacts/sequential-frontier-sweep/sequential-unmeasured-frontier-24-v5-20260722/t-13/sequential/proof.drat"
+    ],
+    "exit_code": 0,
+    "log": {
+      "path": "/Users/Krug/Desktop/ChatGPT/proofs/research/covering-c1264/workspace/artifacts/sequential-frontier-sweep/sequential-unmeasured-frontier-24-v5-20260722/t-13/sequential/validation.json.log",
+      "sha256": "8cbbc014c046eeb8fcc3b5af8a10cdc74cc7cf2e23c74d3fe617c9f5a5caf881"
+    },
+    "proof": {
+      "path": "/Users/Krug/Desktop/ChatGPT/proofs/research/covering-c1264/workspace/artifacts/sequential-frontier-sweep/sequential-unmeasured-frontier-24-v5-20260722/t-13/sequential/proof.drat",
+      "sha256": "a4344af29e3cce7068296378753cb20e30996511b54daea4a8c731780088bc62"
+    },
+    "schema_version": 1,
+    "seconds_cap": 600,
+    "status": "verified",
+    "verdict": "s VERIFIED"
+  }
+}

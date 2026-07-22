@@ -1,0 +1,27 @@
+{
+  "cnf_sha256": "f330fc3c6643643e78b1f25f6729ec7a4efedfa8f3a767d025037873ad601e32",
+  "command": [
+    ".venv/sat-audit-tools/cadical/build/cadical",
+    "-t",
+    "60",
+    "--no-binary",
+    "/Users/Krug/Desktop/ChatGPT/proofs/research/covering-c1264/workspace/artifacts/sequential-frontier-sweep/sequential-unmeasured-frontier-24-v5-20260722/t-17/sequential/instance.cnf",
+    "/Users/Krug/Desktop/ChatGPT/proofs/research/covering-c1264/workspace/artifacts/sequential-frontier-sweep/sequential-unmeasured-frontier-24-v5-20260722/t-17/sequential/proof.drat"
+  ],
+  "completed_at": "2026-07-22T18:42:19.346165+00:00",
+  "encoding": "sequential",
+  "leaf_id": "t-17",
+  "proof": null,
+  "schema_version": 1,
+  "seconds_cap": 60,
+  "solver_elapsed_seconds": 13.158019000024069,
+  "solver_exit_code": 10,
+  "solver_sha256": "d2f7e3fc9577de8548125b11c7c37772df32438bf86ffdadb9f45a11e643dd64",
+  "status": "SAT_NEW_ORBIT",
+  "validation": {
+    "canonical_sha256": "c01d7d4a45ca96b3a442a87d5df422c45f6d3ce5a83ca450c3ee7c4e647837ca",
+    "catalog_sha256": "1b20916c7298dda7c172f2d435bc9e357026044c18a821f645aa82ec5e8fa2c6",
+    "status": "valid-new-link-orbit",
+    "witness_sha256": "c01d7d4a45ca96b3a442a87d5df422c45f6d3ce5a83ca450c3ee7c4e647837ca"
+  }
+}

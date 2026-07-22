@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Assign the audited five-orbit open frontier without rerunning settled work."""
+"""Assign the audited active-link-catalogue frontier without rerunning settled work."""
 
 from __future__ import annotations
 
@@ -14,7 +14,8 @@ ROOT = Path(__file__).resolve().parents[1]
 MANIFEST = Path("artifacts/portfolio/frontier-manifest-v1.json")
 CHECKPOINT = Path("artifacts/cardinality-encoding-benchmark/cardinality-encoding-20-leaf-20260722/checkpoint.json")
 CONTINUATION = Path("artifacts/experiments/sequential-open-frontier-30-v5-native-replay-20260722/manifest.json")
-OUTPUT = Path("artifacts/portfolio/five-orbit-dynamic-assignment.json")
+OUTPUT = Path("artifacts/portfolio/seven-orbit-dynamic-assignment.json")
+STRUCTURAL_DISCOVERY_NODES = {"s-r1-3", "t-16", "t-17"}
 
 
 def sha(path: Path) -> str:
@@ -39,14 +40,14 @@ def assign() -> tuple[dict, dict]:
         methods = node["assigned_methods"]
         measured = sequential.get(node["id"])
         sequential_outcomes = [row for row in node["outcomes"] if row.get("method") == "sequential"]
-        if node["id"] == "s-r1-3":
+        if node["id"] in STRUCTURAL_DISCOVERY_NODES:
             append_once(methods, "alternative_cubing")
             append_once(methods, "forced_matching_exact_degree_40_block_witness")
-            hard_class = "fifth_orbit_structural_constructive"
-            rationale = "new link orbit and replayed residual obstruction merit structural branching and direct witness work"
+            hard_class = "link_orbit_structural_constructive"
+            rationale = "validated catalogue-expanding link orbit or related replayed obstruction merits structural branching and direct witness work"
         elif measured is None and not sequential_outcomes and node["id"] not in preserved:
             append_once(methods, "sequential")
-            hard_class = "unmeasured_five_orbit_frontier"
+            hard_class = "unmeasured_active_frontier"
             rationale = "default cheap harvester at the frozen short cap"
         else:
             append_once(methods, "alternative_cubing")
@@ -57,9 +58,9 @@ def assign() -> tuple[dict, dict]:
             "node_id": node["id"],
             "structural_class": hard_class,
             "next_methods": (
-                ["sequential"] if hard_class == "unmeasured_five_orbit_frontier"
+                ["sequential"] if hard_class == "unmeasured_active_frontier"
                 else ["alternative_cubing", "forced_matching_exact_degree_40_block_witness"]
-                if hard_class == "fifth_orbit_structural_constructive"
+                if hard_class == "link_orbit_structural_constructive"
                 else ["alternative_cubing", "pb_cp_sat"]
             ),
             "rationale": rationale,
@@ -79,7 +80,7 @@ def assign() -> tuple[dict, dict]:
             "kmtotalizer": "contained; zero unique closure in the completed frozen benchmark",
             "sequential": "default only for nodes not yet measured by sequential",
             "hard_tail": "diversify after a short-cap survivor; no symmetry reruns",
-            "constructive": "s-r1-3 remains a first-class direct-witness and structural target",
+            "constructive": "s-r1-3, t-16, and t-17 are first-class structural/direct-witness targets; none is itself a 40-cover",
         },
     }
     output = ROOT / OUTPUT
