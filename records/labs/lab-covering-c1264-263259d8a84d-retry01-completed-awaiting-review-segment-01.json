@@ -1,4 +1,5 @@
 {
+  "event": "completed_awaiting_review",
   "schema_version": 2,
   "id": "lab-covering-c1264-263259d8a84d-retry01",
   "problem_id": "covering-c1264",
@@ -55,5 +56,33 @@
     "artifacts/experiments/sequential-open-frontier-32-v5-20260722-registration-retry-01/manifest.json": "eab7931c009073ae9d04250a96751b0fe89b42532bb2679cdf5bb1df07a94f31",
     "scripts/run_sequential_frontier_sweep.py": "f9dd9b4e07ae3f242187a59e7a9c33de49596439c09e3cadc8df405b1d19a3d7"
   },
-  "spec_sha256": "0c9876b7ced1ab0537970397126fb98a11440ba89ab7d05528a58218de36c7c8"
+  "spec_sha256": "0c9876b7ced1ab0537970397126fb98a11440ba89ab7d05528a58218de36c7c8",
+  "recorded_at": "2026-07-22T19:11:59.997557+00:00",
+  "job_id": "lab-covering-c1264-263259d8a84d-retry01",
+  "returncode": 0,
+  "duration_seconds": 492.484232,
+  "checkpoint_exists": true,
+  "checkpoint_sha256": "29cc4be13fcc09776b28fb175cb4288860050c9f3bd6237c360edf6143b2794e",
+  "progress": {
+    "path": "artifacts/sequential-frontier-sweep/sequential-open-frontier-32-v5-20260722-registration-retry-01/progress.json",
+    "sha256": "46163b1c40ce5bda1c7d316ea4f25341b239a2a3be95642c95aabe7433319079",
+    "completed_units": 8.0,
+    "total_units": 32.0,
+    "delta_units": 8.0,
+    "throughput_per_second": 0.016244174899796588,
+    "artifact_bytes": 262833115,
+    "reported_artifact_bytes": 262833115,
+    "reported_artifact_growth_bytes": 262833115,
+    "measured_artifact_growth_bytes": 262835592,
+    "artifact_growth_bytes": 262835592,
+    "complete": false,
+    "correctness_checks_passed": true,
+    "decision_value_active": true,
+    "message": ""
+  },
+  "threshold_failures": [],
+  "runner_result": "{\n  \"experiment_dir\": \"/root/proof-factory/research/covering-c1264/workspace/lab-runs/lab-covering-c1264-263259d8a84d-retry01/segment-000001/20260722-190347-4aae3a\",\n  \"schema_version\": 1,\n  \"id\": \"20260722-190347-4aae3a\",\n  \"name\": \"Registration retry: audited five-orbit sequential harvest over 32 open nodes segment 1/4\",\n  \"hypothesis\": \"The ordered 60-second sequential sweep over exactly the 32 audited open five-orbit frontier nodes will earn at least one net-new independently replayed UNSAT closure before the first eight-node review gate.\",\n  \"expected_signal\": \"Per leaf: immutable result receipt, reconstructed-CNF semantic audit, solver status, and DRAT replay for every UNSAT; segment summaries report net-new closures, proof bytes, runtime, and survivor classes.\",\n  \"command\": [\n    \"python3\",\n    \"scripts/run_sequential_frontier_sweep.py\",\n    \"--manifest\",\n    \"artifacts/experiments/sequential-open-frontier-32-v5-20260722-registration-retry-01/manifest.json\",\n    \"--run-id\",\n    \"sequential-open-frontier-32-v5-20260722-registration-retry-01\",\n    \"--checkpoint\",\n    \"artifacts/sequential-frontier-sweep/sequential-open-frontier-32-v5-20260722-registration-retry-01/checkpoint.json\",\n    \"--progress\",\n    \"artifacts/sequential-frontier-sweep/sequential-open-frontier-32-v5-20260722-registration-retry-01/progress.json\",\n    \"--units-per-invocation\",\n    \"8\"\n  ],\n  \"cwd\": \"/root/proof-factory/research/covering-c1264/workspace\",\n  \"seed\": 0,\n  \"timeout_seconds\": 1200,\n  \"memory_limit_mb\": 4096,\n  \"memory_limit_enforced\": true,\n  \"started_at\": \"2026-07-22T19:03:47.471445+00:00\",\n  \"finished_at\": \"2026-07-22T19:11:59.845627+00:00\",\n  \"duration_seconds\": 492.374,\n  \"returncode\": 0,\n  \"timed_out\": false,\n  \"python\": \"3.12.3\",\n  \"platform\": \"Linux-6.8.0-124-generic-x86_64-with-glibc2.39\",\n  \"git_commit\": \"49d9d2d6dad2fb41d09cd08b7fa7a639ccead751\",\n  \"source_urls\": [],\n  \"input_artifacts\": {\n    \"/root/proof-factory/research/covering-c1264/workspace/scripts/run_sequential_frontier_sweep.py\": \"f9dd9b4e07ae3f242187a59e7a9c33de49596439c09e3cadc8df405b1d19a3d7\",\n    \"/root/proof-factory/research/covering-c1264/workspace/artifacts/experiments/sequential-open-frontier-32-v5-20260722-registration-retry-01/manifest.json\": \"eab7931c009073ae9d04250a96751b0fe89b42532bb2679cdf5bb1df07a94f31\"\n  },\n  \"peak_child_memory_rusage\": 148072,\n  \"peak_child_memory_unit\": \"kilobytes\",\n  \"artifacts\": {\n    \"stdout.txt\": \"94ee3b55273a22c80ad27a060f3c1da6034914075c42d9c34eefaa67111652d1\",\n    \"stderr.txt\": \"e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855\"\n  }\n}\n",
+  "runner_error": "",
+  "output_root": "lab-runs/lab-covering-c1264-263259d8a84d-retry01/segment-000001",
+  "research_event_id": "event-covering-c1264-d167e006d98d"
 }

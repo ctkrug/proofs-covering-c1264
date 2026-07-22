@@ -1,0 +1,296 @@
+{
+  "completed": [
+    "s-r1-3--sequential",
+    "s-r0-1--sequential",
+    "t-3--sequential",
+    "t-4--sequential",
+    "s-r0-2--sequential",
+    "t-7--sequential",
+    "t-8--sequential",
+    "t-9--sequential"
+  ],
+  "manifest_sha256": "eab7931c009073ae9d04250a96751b0fe89b42532bb2679cdf5bb1df07a94f31",
+  "projected_proof_bytes": 2671360874,
+  "results": [
+    {
+      "cnf_sha256": "0c6bdbaaed07aac30d56abebdd04515afee915a1ccbe6efec943cb71b9f1efaf",
+      "command": [
+        "/usr/bin/cadical",
+        "-t",
+        "60",
+        "--no-binary",
+        "/root/proof-factory/research/covering-c1264/workspace/artifacts/sequential-frontier-sweep/sequential-open-frontier-32-v5-20260722-registration-retry-01/s-r1-3/sequential/instance.cnf",
+        "/root/proof-factory/research/covering-c1264/workspace/artifacts/sequential-frontier-sweep/sequential-open-frontier-32-v5-20260722-registration-retry-01/s-r1-3/sequential/proof.drat"
+      ],
+      "completed_at": "2026-07-22T19:04:49.943761+00:00",
+      "encoding": "sequential",
+      "leaf_id": "s-r1-3",
+      "path": "artifacts/sequential-frontier-sweep/sequential-open-frontier-32-v5-20260722-registration-retry-01/s-r1-3/sequential",
+      "proof": null,
+      "schema_version": 1,
+      "seconds_cap": 60,
+      "solver_elapsed_seconds": 60.0213391489815,
+      "solver_exit_code": 0,
+      "solver_sha256": "7b73df0a6d9cf3c751a1948300e5baff8e82c4d39bcd88f0c063b5f5cfb8b33e",
+      "status": "UNKNOWN",
+      "validation": null
+    },
+    {
+      "cnf_sha256": "bf323687671f396d42a758b6b7449ca1d4f5e3da586f78509916341cb29a5da3",
+      "command": [
+        "/usr/bin/cadical",
+        "-t",
+        "60",
+        "--no-binary",
+        "/root/proof-factory/research/covering-c1264/workspace/artifacts/sequential-frontier-sweep/sequential-open-frontier-32-v5-20260722-registration-retry-01/s-r0-1/sequential/instance.cnf",
+        "/root/proof-factory/research/covering-c1264/workspace/artifacts/sequential-frontier-sweep/sequential-open-frontier-32-v5-20260722-registration-retry-01/s-r0-1/sequential/proof.drat"
+      ],
+      "completed_at": "2026-07-22T19:05:52.337862+00:00",
+      "encoding": "sequential",
+      "leaf_id": "s-r0-1",
+      "path": "artifacts/sequential-frontier-sweep/sequential-open-frontier-32-v5-20260722-registration-retry-01/s-r0-1/sequential",
+      "proof": null,
+      "schema_version": 1,
+      "seconds_cap": 60,
+      "solver_elapsed_seconds": 60.02858843584545,
+      "solver_exit_code": 0,
+      "solver_sha256": "7b73df0a6d9cf3c751a1948300e5baff8e82c4d39bcd88f0c063b5f5cfb8b33e",
+      "status": "UNKNOWN",
+      "validation": null
+    },
+    {
+      "cnf_sha256": "de5319d40fedc0643045d7fbd196eac4296f6e6e765f8d193a0943f0266dad5c",
+      "command": [
+        "/usr/bin/cadical",
+        "-t",
+        "60",
+        "--no-binary",
+        "/root/proof-factory/research/covering-c1264/workspace/artifacts/sequential-frontier-sweep/sequential-open-frontier-32-v5-20260722-registration-retry-01/t-3/sequential/instance.cnf",
+        "/root/proof-factory/research/covering-c1264/workspace/artifacts/sequential-frontier-sweep/sequential-open-frontier-32-v5-20260722-registration-retry-01/t-3/sequential/proof.drat"
+      ],
+      "completed_at": "2026-07-22T19:06:54.797180+00:00",
+      "encoding": "sequential",
+      "leaf_id": "t-3",
+      "path": "artifacts/sequential-frontier-sweep/sequential-open-frontier-32-v5-20260722-registration-retry-01/t-3/sequential",
+      "proof": null,
+      "schema_version": 1,
+      "seconds_cap": 60,
+      "solver_elapsed_seconds": 60.02084843092598,
+      "solver_exit_code": 0,
+      "solver_sha256": "7b73df0a6d9cf3c751a1948300e5baff8e82c4d39bcd88f0c063b5f5cfb8b33e",
+      "status": "UNKNOWN",
+      "validation": null
+    },
+    {
+      "cnf_sha256": "0e99839fd63f965c0af06cf943f47b94616dcb792f5ebd673bbe90f0aed5903b",
+      "command": [
+        "/usr/bin/cadical",
+        "-t",
+        "60",
+        "--no-binary",
+        "/root/proof-factory/research/covering-c1264/workspace/artifacts/sequential-frontier-sweep/sequential-open-frontier-32-v5-20260722-registration-retry-01/t-4/sequential/instance.cnf",
+        "/root/proof-factory/research/covering-c1264/workspace/artifacts/sequential-frontier-sweep/sequential-open-frontier-32-v5-20260722-registration-retry-01/t-4/sequential/proof.drat"
+      ],
+      "completed_at": "2026-07-22T19:07:57.142468+00:00",
+      "encoding": "sequential",
+      "leaf_id": "t-4",
+      "path": "artifacts/sequential-frontier-sweep/sequential-open-frontier-32-v5-20260722-registration-retry-01/t-4/sequential",
+      "proof": null,
+      "schema_version": 1,
+      "seconds_cap": 60,
+      "solver_elapsed_seconds": 60.02312620799057,
+      "solver_exit_code": 0,
+      "solver_sha256": "7b73df0a6d9cf3c751a1948300e5baff8e82c4d39bcd88f0c063b5f5cfb8b33e",
+      "status": "UNKNOWN",
+      "validation": null
+    },
+    {
+      "cnf_sha256": "97d0df3f1d4ac231d4b8d9139820d46ecd267151d55c45f62e83a58720a6e126",
+      "command": [
+        "/usr/bin/cadical",
+        "-t",
+        "60",
+        "--no-binary",
+        "/root/proof-factory/research/covering-c1264/workspace/artifacts/sequential-frontier-sweep/sequential-open-frontier-32-v5-20260722-registration-retry-01/s-r0-2/sequential/instance.cnf",
+        "/root/proof-factory/research/covering-c1264/workspace/artifacts/sequential-frontier-sweep/sequential-open-frontier-32-v5-20260722-registration-retry-01/s-r0-2/sequential/proof.drat"
+      ],
+      "completed_at": "2026-07-22T19:08:59.553652+00:00",
+      "encoding": "sequential",
+      "leaf_id": "s-r0-2",
+      "path": "artifacts/sequential-frontier-sweep/sequential-open-frontier-32-v5-20260722-registration-retry-01/s-r0-2/sequential",
+      "proof": null,
+      "schema_version": 1,
+      "seconds_cap": 60,
+      "solver_elapsed_seconds": 60.045064304955304,
+      "solver_exit_code": 0,
+      "solver_sha256": "7b73df0a6d9cf3c751a1948300e5baff8e82c4d39bcd88f0c063b5f5cfb8b33e",
+      "status": "UNKNOWN",
+      "validation": null
+    },
+    {
+      "cnf_sha256": "2fa46b91d3ff461093436353a0db12732dc93c1ab245fa58e06c01a5b4211d21",
+      "command": [
+        "/usr/bin/cadical",
+        "-t",
+        "60",
+        "--no-binary",
+        "/root/proof-factory/research/covering-c1264/workspace/artifacts/sequential-frontier-sweep/sequential-open-frontier-32-v5-20260722-registration-retry-01/t-7/sequential/instance.cnf",
+        "/root/proof-factory/research/covering-c1264/workspace/artifacts/sequential-frontier-sweep/sequential-open-frontier-32-v5-20260722-registration-retry-01/t-7/sequential/proof.drat"
+      ],
+      "completed_at": "2026-07-22T19:09:25.268199+00:00",
+      "encoding": "sequential",
+      "leaf_id": "t-7",
+      "path": "artifacts/sequential-frontier-sweep/sequential-open-frontier-32-v5-20260722-registration-retry-01/t-7/sequential",
+      "proof": {
+        "bytes": 34190858,
+        "sha256": "ce04350121ff144255c10e039a54adc12e0e0a4e9269e95809c91fe62e1ab15f"
+      },
+      "schema_version": 1,
+      "seconds_cap": 60,
+      "solver_elapsed_seconds": 14.103174409130588,
+      "solver_exit_code": 20,
+      "solver_sha256": "7b73df0a6d9cf3c751a1948300e5baff8e82c4d39bcd88f0c063b5f5cfb8b33e",
+      "status": "UNSAT_VERIFIED",
+      "validation": {
+        "checked_at": "2026-07-22T19:09:24.955098+00:00",
+        "checker": {
+          "path": "/root/proof-factory/research/covering-c1264/workspace/toolchains/drat-trim/drat-trim",
+          "sha256": "92f0aa9575ed519d66a99b8b1b3dde6ece4618ae4c202a3a4b200265dda0aa7a"
+        },
+        "cnf": {
+          "path": "/root/proof-factory/research/covering-c1264/workspace/artifacts/sequential-frontier-sweep/sequential-open-frontier-32-v5-20260722-registration-retry-01/t-7/sequential/instance.cnf",
+          "sha256": "2fa46b91d3ff461093436353a0db12732dc93c1ab245fa58e06c01a5b4211d21"
+        },
+        "command": [
+          "/root/proof-factory/research/covering-c1264/workspace/toolchains/drat-trim/drat-trim",
+          "/root/proof-factory/research/covering-c1264/workspace/artifacts/sequential-frontier-sweep/sequential-open-frontier-32-v5-20260722-registration-retry-01/t-7/sequential/instance.cnf",
+          "/root/proof-factory/research/covering-c1264/workspace/artifacts/sequential-frontier-sweep/sequential-open-frontier-32-v5-20260722-registration-retry-01/t-7/sequential/proof.drat"
+        ],
+        "exit_code": 0,
+        "log": {
+          "path": "/root/proof-factory/research/covering-c1264/workspace/artifacts/sequential-frontier-sweep/sequential-open-frontier-32-v5-20260722-registration-retry-01/t-7/sequential/validation.json.log",
+          "sha256": "0b4fde425ec134d38b3f21606cb5f162901a9781e044ba752f3ef6b755da612e"
+        },
+        "proof": {
+          "path": "/root/proof-factory/research/covering-c1264/workspace/artifacts/sequential-frontier-sweep/sequential-open-frontier-32-v5-20260722-registration-retry-01/t-7/sequential/proof.drat",
+          "sha256": "ce04350121ff144255c10e039a54adc12e0e0a4e9269e95809c91fe62e1ab15f"
+        },
+        "schema_version": 1,
+        "seconds_cap": 600,
+        "status": "verified",
+        "verdict": "s VERIFIED"
+      }
+    },
+    {
+      "cnf_sha256": "e6f9337a69c6f4bccca3c787c341ab632f1988fd288e73a0b6600e28ed2f581c",
+      "command": [
+        "/usr/bin/cadical",
+        "-t",
+        "60",
+        "--no-binary",
+        "/root/proof-factory/research/covering-c1264/workspace/artifacts/sequential-frontier-sweep/sequential-open-frontier-32-v5-20260722-registration-retry-01/t-8/sequential/instance.cnf",
+        "/root/proof-factory/research/covering-c1264/workspace/artifacts/sequential-frontier-sweep/sequential-open-frontier-32-v5-20260722-registration-retry-01/t-8/sequential/proof.drat"
+      ],
+      "completed_at": "2026-07-22T19:10:50.138540+00:00",
+      "encoding": "sequential",
+      "leaf_id": "t-8",
+      "path": "artifacts/sequential-frontier-sweep/sequential-open-frontier-32-v5-20260722-registration-retry-01/t-8/sequential",
+      "proof": {
+        "bytes": 108718583,
+        "sha256": "c945500c65cbdd6e342feb4aef0c59052e09bf5765137c1a296f7bdc5575cf46"
+      },
+      "schema_version": 1,
+      "seconds_cap": 60,
+      "solver_elapsed_seconds": 47.646893014898524,
+      "solver_exit_code": 20,
+      "solver_sha256": "7b73df0a6d9cf3c751a1948300e5baff8e82c4d39bcd88f0c063b5f5cfb8b33e",
+      "status": "UNSAT_VERIFIED",
+      "validation": {
+        "checked_at": "2026-07-22T19:10:49.189503+00:00",
+        "checker": {
+          "path": "/root/proof-factory/research/covering-c1264/workspace/toolchains/drat-trim/drat-trim",
+          "sha256": "92f0aa9575ed519d66a99b8b1b3dde6ece4618ae4c202a3a4b200265dda0aa7a"
+        },
+        "cnf": {
+          "path": "/root/proof-factory/research/covering-c1264/workspace/artifacts/sequential-frontier-sweep/sequential-open-frontier-32-v5-20260722-registration-retry-01/t-8/sequential/instance.cnf",
+          "sha256": "e6f9337a69c6f4bccca3c787c341ab632f1988fd288e73a0b6600e28ed2f581c"
+        },
+        "command": [
+          "/root/proof-factory/research/covering-c1264/workspace/toolchains/drat-trim/drat-trim",
+          "/root/proof-factory/research/covering-c1264/workspace/artifacts/sequential-frontier-sweep/sequential-open-frontier-32-v5-20260722-registration-retry-01/t-8/sequential/instance.cnf",
+          "/root/proof-factory/research/covering-c1264/workspace/artifacts/sequential-frontier-sweep/sequential-open-frontier-32-v5-20260722-registration-retry-01/t-8/sequential/proof.drat"
+        ],
+        "exit_code": 0,
+        "log": {
+          "path": "/root/proof-factory/research/covering-c1264/workspace/artifacts/sequential-frontier-sweep/sequential-open-frontier-32-v5-20260722-registration-retry-01/t-8/sequential/validation.json.log",
+          "sha256": "22da3d3a29d60108c2314282b1329d32c61ae205511e46e79394b6b065b7f1a3"
+        },
+        "proof": {
+          "path": "/root/proof-factory/research/covering-c1264/workspace/artifacts/sequential-frontier-sweep/sequential-open-frontier-32-v5-20260722-registration-retry-01/t-8/sequential/proof.drat",
+          "sha256": "c945500c65cbdd6e342feb4aef0c59052e09bf5765137c1a296f7bdc5575cf46"
+        },
+        "schema_version": 1,
+        "seconds_cap": 600,
+        "status": "verified",
+        "verdict": "s VERIFIED"
+      }
+    },
+    {
+      "cnf_sha256": "80e4862be59255d1d31e3404a3e1cab815d78e7eadb648d76b0e65694438e8f5",
+      "command": [
+        "/usr/bin/cadical",
+        "-t",
+        "60",
+        "--no-binary",
+        "/root/proof-factory/research/covering-c1264/workspace/artifacts/sequential-frontier-sweep/sequential-open-frontier-32-v5-20260722-registration-retry-01/t-9/sequential/instance.cnf",
+        "/root/proof-factory/research/covering-c1264/workspace/artifacts/sequential-frontier-sweep/sequential-open-frontier-32-v5-20260722-registration-retry-01/t-9/sequential/proof.drat"
+      ],
+      "completed_at": "2026-07-22T19:11:59.781278+00:00",
+      "encoding": "sequential",
+      "leaf_id": "t-9",
+      "path": "artifacts/sequential-frontier-sweep/sequential-open-frontier-32-v5-20260722-registration-retry-01/t-9/sequential",
+      "proof": {
+        "bytes": 107530641,
+        "sha256": "fe8344b79b4ec0f745e13990f3aa5fec81f2720f9194bf6391b0ffb16f10a6a1"
+      },
+      "schema_version": 1,
+      "seconds_cap": 60,
+      "solver_elapsed_seconds": 34.88455997989513,
+      "solver_exit_code": 20,
+      "solver_sha256": "7b73df0a6d9cf3c751a1948300e5baff8e82c4d39bcd88f0c063b5f5cfb8b33e",
+      "status": "UNSAT_VERIFIED",
+      "validation": {
+        "checked_at": "2026-07-22T19:11:58.721688+00:00",
+        "checker": {
+          "path": "/root/proof-factory/research/covering-c1264/workspace/toolchains/drat-trim/drat-trim",
+          "sha256": "92f0aa9575ed519d66a99b8b1b3dde6ece4618ae4c202a3a4b200265dda0aa7a"
+        },
+        "cnf": {
+          "path": "/root/proof-factory/research/covering-c1264/workspace/artifacts/sequential-frontier-sweep/sequential-open-frontier-32-v5-20260722-registration-retry-01/t-9/sequential/instance.cnf",
+          "sha256": "80e4862be59255d1d31e3404a3e1cab815d78e7eadb648d76b0e65694438e8f5"
+        },
+        "command": [
+          "/root/proof-factory/research/covering-c1264/workspace/toolchains/drat-trim/drat-trim",
+          "/root/proof-factory/research/covering-c1264/workspace/artifacts/sequential-frontier-sweep/sequential-open-frontier-32-v5-20260722-registration-retry-01/t-9/sequential/instance.cnf",
+          "/root/proof-factory/research/covering-c1264/workspace/artifacts/sequential-frontier-sweep/sequential-open-frontier-32-v5-20260722-registration-retry-01/t-9/sequential/proof.drat"
+        ],
+        "exit_code": 0,
+        "log": {
+          "path": "/root/proof-factory/research/covering-c1264/workspace/artifacts/sequential-frontier-sweep/sequential-open-frontier-32-v5-20260722-registration-retry-01/t-9/sequential/validation.json.log",
+          "sha256": "0b733130bf5f511715d925f0a54bbeffd52b0c15a628d5f36281931257ab0d0b"
+        },
+        "proof": {
+          "path": "/root/proof-factory/research/covering-c1264/workspace/artifacts/sequential-frontier-sweep/sequential-open-frontier-32-v5-20260722-registration-retry-01/t-9/sequential/proof.drat",
+          "sha256": "fe8344b79b4ec0f745e13990f3aa5fec81f2720f9194bf6391b0ffb16f10a6a1"
+        },
+        "schema_version": 1,
+        "seconds_cap": 600,
+        "status": "verified",
+        "verdict": "s VERIFIED"
+      }
+    }
+  ],
+  "schema_version": 1,
+  "stop_reason": "",
+  "stopped": false
+}

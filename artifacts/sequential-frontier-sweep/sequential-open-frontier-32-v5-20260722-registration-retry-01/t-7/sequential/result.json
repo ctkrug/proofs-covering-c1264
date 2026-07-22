@@ -1,0 +1,53 @@
+{
+  "cnf_sha256": "2fa46b91d3ff461093436353a0db12732dc93c1ab245fa58e06c01a5b4211d21",
+  "command": [
+    "/usr/bin/cadical",
+    "-t",
+    "60",
+    "--no-binary",
+    "/root/proof-factory/research/covering-c1264/workspace/artifacts/sequential-frontier-sweep/sequential-open-frontier-32-v5-20260722-registration-retry-01/t-7/sequential/instance.cnf",
+    "/root/proof-factory/research/covering-c1264/workspace/artifacts/sequential-frontier-sweep/sequential-open-frontier-32-v5-20260722-registration-retry-01/t-7/sequential/proof.drat"
+  ],
+  "completed_at": "2026-07-22T19:09:25.268199+00:00",
+  "encoding": "sequential",
+  "leaf_id": "t-7",
+  "proof": {
+    "bytes": 34190858,
+    "sha256": "ce04350121ff144255c10e039a54adc12e0e0a4e9269e95809c91fe62e1ab15f"
+  },
+  "schema_version": 1,
+  "seconds_cap": 60,
+  "solver_elapsed_seconds": 14.103174409130588,
+  "solver_exit_code": 20,
+  "solver_sha256": "7b73df0a6d9cf3c751a1948300e5baff8e82c4d39bcd88f0c063b5f5cfb8b33e",
+  "status": "UNSAT_VERIFIED",
+  "validation": {
+    "checked_at": "2026-07-22T19:09:24.955098+00:00",
+    "checker": {
+      "path": "/root/proof-factory/research/covering-c1264/workspace/toolchains/drat-trim/drat-trim",
+      "sha256": "92f0aa9575ed519d66a99b8b1b3dde6ece4618ae4c202a3a4b200265dda0aa7a"
+    },
+    "cnf": {
+      "path": "/root/proof-factory/research/covering-c1264/workspace/artifacts/sequential-frontier-sweep/sequential-open-frontier-32-v5-20260722-registration-retry-01/t-7/sequential/instance.cnf",
+      "sha256": "2fa46b91d3ff461093436353a0db12732dc93c1ab245fa58e06c01a5b4211d21"
+    },
+    "command": [
+      "/root/proof-factory/research/covering-c1264/workspace/toolchains/drat-trim/drat-trim",
+      "/root/proof-factory/research/covering-c1264/workspace/artifacts/sequential-frontier-sweep/sequential-open-frontier-32-v5-20260722-registration-retry-01/t-7/sequential/instance.cnf",
+      "/root/proof-factory/research/covering-c1264/workspace/artifacts/sequential-frontier-sweep/sequential-open-frontier-32-v5-20260722-registration-retry-01/t-7/sequential/proof.drat"
+    ],
+    "exit_code": 0,
+    "log": {
+      "path": "/root/proof-factory/research/covering-c1264/workspace/artifacts/sequential-frontier-sweep/sequential-open-frontier-32-v5-20260722-registration-retry-01/t-7/sequential/validation.json.log",
+      "sha256": "0b4fde425ec134d38b3f21606cb5f162901a9781e044ba752f3ef6b755da612e"
+    },
+    "proof": {
+      "path": "/root/proof-factory/research/covering-c1264/workspace/artifacts/sequential-frontier-sweep/sequential-open-frontier-32-v5-20260722-registration-retry-01/t-7/sequential/proof.drat",
+      "sha256": "ce04350121ff144255c10e039a54adc12e0e0a4e9269e95809c91fe62e1ab15f"
+    },
+    "schema_version": 1,
+    "seconds_cap": 600,
+    "status": "verified",
+    "verdict": "s VERIFIED"
+  }
+}

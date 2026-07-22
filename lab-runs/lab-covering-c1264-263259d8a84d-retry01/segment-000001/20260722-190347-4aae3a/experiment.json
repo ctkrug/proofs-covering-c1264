@@ -1,0 +1,45 @@
+{
+  "schema_version": 1,
+  "id": "20260722-190347-4aae3a",
+  "name": "Registration retry: audited five-orbit sequential harvest over 32 open nodes segment 1/4",
+  "hypothesis": "The ordered 60-second sequential sweep over exactly the 32 audited open five-orbit frontier nodes will earn at least one net-new independently replayed UNSAT closure before the first eight-node review gate.",
+  "expected_signal": "Per leaf: immutable result receipt, reconstructed-CNF semantic audit, solver status, and DRAT replay for every UNSAT; segment summaries report net-new closures, proof bytes, runtime, and survivor classes.",
+  "command": [
+    "python3",
+    "scripts/run_sequential_frontier_sweep.py",
+    "--manifest",
+    "artifacts/experiments/sequential-open-frontier-32-v5-20260722-registration-retry-01/manifest.json",
+    "--run-id",
+    "sequential-open-frontier-32-v5-20260722-registration-retry-01",
+    "--checkpoint",
+    "artifacts/sequential-frontier-sweep/sequential-open-frontier-32-v5-20260722-registration-retry-01/checkpoint.json",
+    "--progress",
+    "artifacts/sequential-frontier-sweep/sequential-open-frontier-32-v5-20260722-registration-retry-01/progress.json",
+    "--units-per-invocation",
+    "8"
+  ],
+  "cwd": "/root/proof-factory/research/covering-c1264/workspace",
+  "seed": 0,
+  "timeout_seconds": 1200,
+  "memory_limit_mb": 4096,
+  "memory_limit_enforced": true,
+  "started_at": "2026-07-22T19:03:47.471445+00:00",
+  "finished_at": "2026-07-22T19:11:59.845627+00:00",
+  "duration_seconds": 492.374,
+  "returncode": 0,
+  "timed_out": false,
+  "python": "3.12.3",
+  "platform": "Linux-6.8.0-124-generic-x86_64-with-glibc2.39",
+  "git_commit": "49d9d2d6dad2fb41d09cd08b7fa7a639ccead751",
+  "source_urls": [],
+  "input_artifacts": {
+    "/root/proof-factory/research/covering-c1264/workspace/scripts/run_sequential_frontier_sweep.py": "f9dd9b4e07ae3f242187a59e7a9c33de49596439c09e3cadc8df405b1d19a3d7",
+    "/root/proof-factory/research/covering-c1264/workspace/artifacts/experiments/sequential-open-frontier-32-v5-20260722-registration-retry-01/manifest.json": "eab7931c009073ae9d04250a96751b0fe89b42532bb2679cdf5bb1df07a94f31"
+  },
+  "peak_child_memory_rusage": 148072,
+  "peak_child_memory_unit": "kilobytes",
+  "artifacts": {
+    "stdout.txt": "94ee3b55273a22c80ad27a060f3c1da6034914075c42d9c34eefaa67111652d1",
+    "stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  }
+}
