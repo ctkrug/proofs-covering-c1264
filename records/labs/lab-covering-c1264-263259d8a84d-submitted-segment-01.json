@@ -1,0 +1,60 @@
+{
+  "event": "submitted",
+  "schema_version": 2,
+  "id": "lab-covering-c1264-263259d8a84d",
+  "problem_id": "covering-c1264",
+  "name": "Audited five-orbit sequential harvest over 32 open nodes",
+  "hypothesis": "The ordered 60-second sequential sweep over exactly the 32 audited open five-orbit frontier nodes will earn at least one net-new independently replayed UNSAT closure before the first eight-node review gate.",
+  "expected_signal": "Per leaf: immutable result receipt, reconstructed-CNF semantic audit, solver status, and DRAT replay for every UNSAT; segment summaries report net-new closures, proof bytes, runtime, and survivor classes.",
+  "decision_value": "Continue sequential only while it earns replay-verified global closures at acceptable proof cost; redirect timeout clusters to structurally justified methods, and immediately validate any SAT witness directly.",
+  "efficiency_design": {
+    "naive_cost": "Rerunning all 47 frontier nodes with multiple encodings would spend at least 2,820 solver-seconds per method before proof replay and would duplicate 15 durable closures.",
+    "opportunities_considered": [
+      "Exclude all 15 globally transferred replay-verified closures.",
+      "Use sequential only because it earned every unique benchmark closure; allocate zero generic kmtotalizer work.",
+      "Prioritize the fifth-orbit structural discriminator, then smaller inherited CNFs, and defer predecessor-blocker timeout cases.",
+      "Checkpoint every eight leaves so proof growth, replay reliability, and closure yield can redirect later segments.",
+      "Reuse the audited five-orbit blocker and immutable frontier bindings rather than reconstructing the partition."
+    ],
+    "chosen_reductions": "Run exactly the 32 audited open nodes with one 60-second cold sequential attempt each, in an evidence-based order. Preserve every exact CNF, proof, semantic audit, and replay receipt; review after each eight-node segment.",
+    "expected_throughput_gain": "At least 32% fewer solver attempts than a 47-node sweep, plus elimination of the noncompetitive second encoding. Early ordering should expose closure yield and proof-storage cost before committing all four segments.",
+    "soundness_basis": "The active blocker/frontier is independently audited, the old blocker is a strict subset, all 15 transferred UNSAT proofs replayed, and every new closure requires reconstructed-CNF audit plus independent DRAT replay before ledger ingestion.",
+    "remains_uncompressed": "Each of the 32 open canonical leaves remains an independent soundness obligation. No node is inferred closed from runtime, structural similarity, a provisional UNSAT status, or another leaf's certificate."
+  },
+  "source_urls": [],
+  "command": [
+    "python3",
+    "scripts/run_sequential_frontier_sweep.py",
+    "--manifest",
+    "artifacts/experiments/sequential-open-frontier-32-v5-20260722/manifest.json",
+    "--run-id",
+    "sequential-open-frontier-32-v5-20260722",
+    "--checkpoint",
+    "artifacts/sequential-frontier-sweep/sequential-open-frontier-32-v5-20260722/checkpoint.json",
+    "--progress",
+    "artifacts/sequential-frontier-sweep/sequential-open-frontier-32-v5-20260722/progress.json",
+    "--units-per-invocation",
+    "8"
+  ],
+  "seed": 0,
+  "segment_seconds": 1200,
+  "memory_mb": 4096,
+  "max_segments": 4,
+  "segment": 1,
+  "pilot_segments": 1,
+  "review_every_segments": 1,
+  "checkpoint_path": "artifacts/sequential-frontier-sweep/sequential-open-frontier-32-v5-20260722/checkpoint.json",
+  "progress_path": "artifacts/sequential-frontier-sweep/sequential-open-frontier-32-v5-20260722/progress.json",
+  "continuation_thresholds": {
+    "min_throughput_per_second": 0.002,
+    "max_artifact_growth_bytes": 10000000000,
+    "require_correctness_checks": true
+  },
+  "submitted_at": "2026-07-22T18:16:14.056612+00:00",
+  "workspace_git_commit": "8ac4fa372810784ab2182cbe58b0c503757c4599",
+  "input_sha256": {
+    "artifacts/experiments/sequential-open-frontier-32-v5-20260722/manifest.json": "65f3e3105d146fef368f1c36f491e11d605437876fbbbaa7cf8dfaea32c28a61",
+    "scripts/run_sequential_frontier_sweep.py": "81d8941d303d2ee94826b8ffef4e573183b48a92862c45ef90a930bc93d99dfb"
+  },
+  "spec_sha256": "843a027bf6a742696f8907e56f53cef4f3d598d973561ef8aac91f3f9ae53c8a"
+}
