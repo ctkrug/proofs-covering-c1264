@@ -1,0 +1,51 @@
+{
+  "checkpoint": {
+    "path": "artifacts/sequential-frontier-sweep/sequential-hard-tail-discriminator-v9-20260722/checkpoint.json",
+    "sha256": "bebf76410da16a56624b6a23dd01e5ea331b9f0450d9668a8060870b3909c640"
+  },
+  "claim_limit": "One of three sampled hard-tail nodes closed. This does not classify all timeout nodes or exhaust point-link orbits.",
+  "global_ledger": "33/47",
+  "independent_audit": {
+    "path": "artifacts/sequential-frontier-sweep/sequential-hard-tail-discriminator-v9-20260722/independent-tranche-audit.json",
+    "sha256": "44f5d90c3d2005911ea86fc2b06085b7fbc093814f39506b4a9de859074eba84"
+  },
+  "inference": "The nine-orbit blocker resolved the sampled tertiary case but not either sampled secondary case at 60 seconds.",
+  "next_discriminator": "Compare t-10 against the remaining tertiary timeout at the non-cardinality-core and blocker-clause level before assigning more compute; do not infer that all tertiary cases are easy from one closure.",
+  "outcomes": {
+    "s-r0-1": "fixed-cap-timeout",
+    "s-r1-15": "fixed-cap-timeout",
+    "t-10": "replay-verified-unsat"
+  },
+  "portfolio": {
+    "path": "artifacts/portfolio/frontier-manifest-v1.json",
+    "sha256": "f4e5791954131995e29252e97a10884a0fccbc5e863e16bcc2d92a8f604aa4bc"
+  },
+  "remaining": {
+    "catalogued_orbit_discovery_leaves": [
+      "s-r1-3",
+      "t-16",
+      "t-17"
+    ],
+    "fixed_cap_timeout_count": 11,
+    "fixed_cap_timeouts": [
+      "s-r0-1",
+      "s-r0-2",
+      "s-r0-3",
+      "s-r0-4",
+      "s-r0-5",
+      "s-r1-0",
+      "s-r1-1",
+      "s-r1-15",
+      "s-r1-2",
+      "s-r1-4",
+      "t-1"
+    ],
+    "timeout_by_kind": {
+      "secondary": 10,
+      "tertiary": 1
+    }
+  },
+  "route_switch": "Any SAT link triggers catalogue validation/rebuild; a compact tertiary-specific invariant outranks more solver runs; otherwise test one matched tertiary/secondary pair with a specifically justified cube or branching change.",
+  "schema_version": 1,
+  "status": "valid-measured-discriminator"
+}

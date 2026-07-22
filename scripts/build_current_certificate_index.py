@@ -14,7 +14,7 @@ from verify_certificate_portfolio import verify  # noqa: E402
 
 
 MANIFEST = Path("artifacts/portfolio/frontier-manifest-v1.json")
-OUTPUT = Path("artifacts/classification/exhaustive-link-v1/certificate-index-32of47.json")
+OUTPUT = Path("artifacts/classification/exhaustive-link-v1/certificate-index-33of47.json")
 
 
 def sha(path: Path) -> str:
@@ -58,8 +58,8 @@ def build() -> dict[str, object]:
         certificates.append({"id": node["id"], "active_blocker_sha256": node["active_blocker_sha256"],
                              "certified_outcomes": rows})
     certificates.sort(key=lambda row: row["id"])
-    if len(certificates) != 32 or manifest["counts"] != {"total": 47, "closed": 32, "open": 15}:
-        raise ValueError("expected the audited 32/47 ledger")
+    if len(certificates) != 33 or manifest["counts"] != {"total": 47, "closed": 33, "open": 14}:
+        raise ValueError("expected the audited 33/47 ledger")
 
     incident_path = ROOT / "artifacts/experiments/link-orbit-t-16-extension-300s-20260722/PROOF-INCIDENT.json"
     t16_validation = ROOT / "artifacts/experiments/link-orbit-t-16-extension-300s-20260722/independent-validation.json"
@@ -92,7 +92,7 @@ def build() -> dict[str, object]:
             "t-16_valid_external_replacement": {"path": str(t16_validation.relative_to(ROOT)), "sha256": sha(t16_validation)},
             "t-17_valid_replay": {"path": str(t17_validation.relative_to(ROOT)), "sha256": sha(t17_validation)},
         },
-        "claim_limit": "Complete receipt index for the current 32/47 ledger; it does not prove catalogue exhaustion.",
+        "claim_limit": "Complete receipt index for the current 33/47 ledger; it does not prove catalogue exhaustion.",
     }
 
 

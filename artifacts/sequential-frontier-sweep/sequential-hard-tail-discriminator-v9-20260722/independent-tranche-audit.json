@@ -1,0 +1,56 @@
+{
+  "active_blocker_sha256": "637d9552614d384243426b9417d0518e8ba93acab14fe7e52e00ba61d8c0b3ef",
+  "checker": {
+    "path": "toolchains/drat-trim/drat-trim",
+    "sha256": "92f0aa9575ed519d66a99b8b1b3dde6ece4618ae4c202a3a4b200265dda0aa7a"
+  },
+  "checkpoint": {
+    "path": "artifacts/sequential-frontier-sweep/sequential-hard-tail-discriminator-v9-20260722/checkpoint.json",
+    "sha256": "bebf76410da16a56624b6a23dd01e5ea331b9f0450d9668a8060870b3909c640"
+  },
+  "claim_limit": "Audits only this frozen tranche; global closure requires portfolio ingestion and frontier audit.",
+  "counts": {
+    "fixed_cap_timeouts": 2,
+    "total": 3,
+    "unsat_independently_replayed": 1
+  },
+  "manifest_before_ingestion": {
+    "path": "artifacts/portfolio/frontier-manifest-v1.json",
+    "sha256": "0b8e4a66d3ebea1f1ed7311f17b618b81a9fdf626d536a89b04f4ad6736aad6f"
+  },
+  "results": [
+    {
+      "active_blocker_sha256": "637d9552614d384243426b9417d0518e8ba93acab14fe7e52e00ba61d8c0b3ef",
+      "build_sha256": "90a8e5ea3b54593b5619232640de9a8a01e6592be96fe373bb5722ef0e091a04",
+      "cnf_audit_sha256": "4aba8c258a2f94ba46e07d47a4d67b83dc0be8b58d4a70c4fea6ea933a93bb4a",
+      "cnf_sha256": "c0a42703bc21396ecaf579388bca47d7b388d9a68bc653d27cf83ce506b6c598",
+      "leaf_id": "s-r0-1",
+      "result_sha256": "f76a5bae747d402eb14e71b5a996280d404b82d79d4865410adda62689456a55",
+      "status": "UNKNOWN"
+    },
+    {
+      "active_blocker_sha256": "637d9552614d384243426b9417d0518e8ba93acab14fe7e52e00ba61d8c0b3ef",
+      "build_sha256": "c2e34357189ba8532baf95fb091bb248c59d0b4b5638adf5c15f09d5273126c3",
+      "cnf_audit_sha256": "e1985fb3f620d40bef0183eb904f567cdeab5bb2077de20363fae46a28622d01",
+      "cnf_sha256": "5f14a171886d2522cc88c430d6f7510dfcf3441806a6acde288d0a02ec187d6e",
+      "leaf_id": "s-r1-15",
+      "result_sha256": "27515c5167a9ca3ad016b2ab33b58401e0be522fb642b1f36a14f220d404090e",
+      "status": "UNKNOWN"
+    },
+    {
+      "active_blocker_sha256": "637d9552614d384243426b9417d0518e8ba93acab14fe7e52e00ba61d8c0b3ef",
+      "build_sha256": "0d9c08a9961f14564f4659c668b92812e2256c934c43669086907df3e8751dd8",
+      "cnf_audit_sha256": "059483e82fbb76619a3135e9507c97bea561e73eb654723c0b1d0f004d1e41cb",
+      "cnf_sha256": "4ba4be35b2be066544d6d3fc173d9c397eb50e17739fb7b190b027281dfe4d51",
+      "independent_replay": "verified",
+      "leaf_id": "t-10",
+      "proof_bytes": 126079816,
+      "proof_sha256": "40b0e95d13f1c9f96198c23892684355b0ffb11ac014fa3bf19c6edf1bcda1d8",
+      "replay_exit_code": 0,
+      "result_sha256": "9eb76be3e60e7b608c3b08e21da0be2178cec37f19b1775cafae925952eb0515",
+      "status": "UNSAT_VERIFIED"
+    }
+  ],
+  "schema_version": 1,
+  "status": "valid"
+}

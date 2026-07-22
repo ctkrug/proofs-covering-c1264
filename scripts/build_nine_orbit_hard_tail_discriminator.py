@@ -22,7 +22,8 @@ def sha(path: Path) -> str:
     return hashlib.sha256(path.read_bytes()).hexdigest()
 
 
-def validate(value: dict[str, object], portfolio: dict[str, object], index: dict[str, object]) -> None:
+def validate(value: dict[str, object], portfolio: dict[str, object], index: dict[str, object],
+             portfolio_path: Path = PORTFOLIO) -> None:
     if value["run_id"] != "sequential-hard-tail-discriminator-v9-20260722":
         raise ValueError("unexpected run ID")
     if value["method"] != "sequential" or value["seconds_per_run"] != 60:
@@ -31,7 +32,7 @@ def validate(value: dict[str, object], portfolio: dict[str, object], index: dict
         raise ValueError("exact three-case order changed")
     if portfolio["counts"] != {"total": 47, "closed": 32, "open": 15} or portfolio["frontier_revision"] != 4:
         raise ValueError("not the audited 32/47 nine-orbit checkpoint")
-    if index["manifest"]["sha256"] != sha(ROOT / PORTFOLIO):
+    if index["manifest"]["sha256"] != sha(ROOT / portfolio_path):
         raise ValueError("certificate index is stale")
     closed = set(index["closed_node_ids"])
     if closed & set(SELECTED):
@@ -58,6 +59,8 @@ def build() -> dict[str, object]:
     portfolio = json.loads((ROOT / PORTFOLIO).read_text())
     index = json.loads((ROOT / INDEX).read_text())
     analysis = json.loads((ROOT / ANALYSIS).read_text())
+    if portfolio["counts"] != {"total": 47, "closed": 32, "open": 15} or portfolio["frontier_revision"] != 4:
+        raise ValueError("the frozen discriminator can only be built from its audited 32/47 checkpoint")
     if analysis["hard_tail_size"] != 12 or analysis["global_ledger"] != "32/47":
         raise ValueError("hard-tail analysis is stale")
     (ROOT / SNAPSHOT).write_text(json.dumps(portfolio, indent=2, sort_keys=True) + "\n")
