@@ -1,0 +1,15 @@
+{
+  "naive_cost": "Treat timer enablement as sufficient and wait for an unobserved research job to expose queue, checkpoint, completion-event, and review failures.",
+  "opportunities_considered": [
+    "symmetry reduction, canonical augmentation, and orbit quotients",
+    "bitsets, batching, vectorization, and incremental evaluation",
+    "memoization, caching, reusable clauses, and reusable proof prefixes",
+    "decomposition, cube-and-conquer, meet-in-the-middle, and resumable segments",
+    "compressed artifacts and streamed or hash-verified manifests",
+    "sound cheap prefilters and independently checked coverage"
+  ],
+  "chosen_reductions": "Use the repository's 41-block control witness and direct exact checker as a tiny deterministic payload, split into two identical bounded segments so the first checkpoint requires a continuation review and the second creates a final completion event.",
+  "expected_throughput_gain": "The full lifecycle is exercised in seconds with negligible artifact growth, instead of consuming a real SAT tranche merely to test orchestration.",
+  "soundness_basis": "Each segment independently enumerates all 495 four-subsets through checkers/verify_cover.py, requires exactly 41 distinct six-blocks, and records correctness and decision-value gates in durable JSON.",
+  "remains_uncompressed": "This canary verifies orchestration and the known 41-block positive control only. It does not test solver proof production, close any 40-block frontier node, or support an exact-value claim."
+}
