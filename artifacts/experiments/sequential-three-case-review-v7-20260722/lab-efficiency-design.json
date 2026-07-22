@@ -1,0 +1,13 @@
+{
+  "naive_cost": "A generic pass over all 15 open nodes would spend up to 900 solver-seconds and mix stale-orbit cleanup, an unmeasured case, and twelve established timeouts before review.",
+  "opportunities_considered": [
+    "Remeasure the two stale orbit-discovery leaves under the active blocker.",
+    "Measure the sole never-tested active-frontier node.",
+    "Increase timeouts uniformly on the twelve-node hard tail.",
+    "Resume broad sequential harvesting or kmtotalizer."
+  ],
+  "chosen_reductions": "Run exactly t-16, t-17, and s-r0-1 once with sequential encoding at 60 seconds each. The selected set is disjoint from the complete 32-certificate index and bound to the audited seven-orbit blocker and frontier hashes.",
+  "expected_throughput_gain": "Avoids all twelve known timeout cases until their shared structure is profiled; resolves the two stale catalogue interactions and sole unmeasured case in at most 180 solver-seconds.",
+  "soundness_basis": "The complete durable certificate index, 47-node frontier identity, 2,576-clause active blocker, exact three-node selection, and immutable manifest hashes pass independent preflight. Every UNSAT requires CNF audit and DRAT replay; every SAT requires direct validation and canonicalization.",
+  "remains_uncompressed": "The twelve established timeout cases remain a structural hard-tail problem. The seven-orbit catalogue remains non-exhaustive even if all three selected leaves close."
+}
