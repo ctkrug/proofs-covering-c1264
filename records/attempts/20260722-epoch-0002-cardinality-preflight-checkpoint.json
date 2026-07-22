@@ -1,0 +1,63 @@
+{
+  "schema_version": 1,
+  "epoch": 2,
+  "attempt_id": "covering-c1264-20260722-cardinality-preflight",
+  "recorded_at": "2026-07-22T15:10:00Z",
+  "phase": "technical-discriminator-preflight",
+  "outcome": "progress",
+  "strategy_id": "strategy-253e0deb9593",
+  "strategy_fingerprint": "253e0deb9593",
+  "claim_limit": "No 40-block cover was found and no open frontier node was excluded in this epoch. C(12,6,4) remains in the maintained range 40..41. The submitted lab job is pending and is not evidence.",
+  "established": [
+    {
+      "claim": "Pinned official DRAT-trim revision 2e3b2dc0ecf938addbd779d42877b6ed69d9a985 is portable in the project workspace; the binary hash is 92f0aa9575ed519d66a99b8b1b3dde6ece4618ae4c202a3a4b200265dda0aa7a.",
+      "evidence": "toolchains/drat-trim/PROVENANCE.md and toolchains/drat-trim/control-receipt.json; positive and negative controls behaved as declared"
+    },
+    {
+      "claim": "A fresh CaDiCaL 1.7.3 proof for the inherited root-2 link CNF replayed successfully and the source-to-CNF audit was valid.",
+      "evidence": "artifacts/controls/link-orbit-third-root-2-replay-20260722/validation.json SHA-256 3bac0dfe9f03caad59aa9e8788d3cc6e91965c3bc427ea134cc16db2b2ae1826"
+    },
+    {
+      "claim": "The absent catalog-4 blocker was deterministically reconstructed from four preserved witnesses as 1,616 clauses covering 1,616 distinct link images, with the exact catalog-recorded hash d68f1de5f99cf6e56480a3778dd270e8abca276d192fdf19b354375422d6cad4.",
+      "evidence": "artifacts/controls/link-orbit-catalog-4-rebuild-20260722.audit.json SHA-256 a89c370240c414cbc3b91ba7699ff4e8a063656ba1100f5524a183224622f769"
+    },
+    {
+      "claim": "For the hash-finalized s-r0-3 preflight leaf, sequential and kmtotalizer CNFs have identical non-cardinality core SHA-256 4d8416077f50a7958e0bfda78b9526b949906af8a8c9ef339c5c91d4b38b3269. Kmtotalizer uses 20,020 auxiliaries versus 40,180, a reduction of 20,160 (50.1742%), and has 853 more clauses.",
+      "evidence": "artifacts/controls/cardinality-encoding-preflight-final-20260722/preflight-result.json SHA-256 2aff13dbcf52de05279c3937d5d2396f27984377f714fe458de0d7336439f502"
+    },
+    {
+      "claim": "The independent encoding auditor reconstructed the 165 coverage clauses, 1,616 catalog blockers, and rooted canonical units, checked all 11 point-literal universes and isolated auxiliary ranges, and passed 66 boundary-semantic checks per encoding.",
+      "evidence": "preflight sequential audit SHA-256 4c9d8f06ea88f35ff917851453a14438ad16c5f202074d880f1c9e0893ee7503; kmtotalizer audit SHA-256 f7604b3d6089897f1eb061e7aaff0cd2427c46c3c58efa8078394f46667267eb"
+    }
+  ],
+  "failed_controls_and_limits": [
+    "All 189 inherited historical validation receipts still omit their referenced proof bytes; their old replay claims are not promoted.",
+    "The semantic boundary checks are strong controls but not a formal proof of the PySAT encoder for all 2^210 assignments.",
+    "The 20-leaf sample is a route discriminator, not an orbit-weighted estimate and not exhaustive frontier coverage."
+  ],
+  "lab_review": {
+    "job_id": "lab-covering-c1264-574a0e8c0206",
+    "decision": "promote",
+    "reason": "Both canary segments passed the exact 41-cover check, durable checkpoint transition, correctness gate, throughput gate, and artifact-growth gate. Promote only the orchestration capability; it is not mathematical progress."
+  },
+  "submitted_lab": {
+    "job_id": "lab-covering-c1264-e9221dfd02b3",
+    "record": "records/labs/lab-covering-c1264-e9221dfd02b3-submitted-segment-01.json",
+    "manifest": "artifacts/experiments/cardinality-encoding-20-leaf-20260722/manifest.json",
+    "manifest_sha256": "5d52e2f8f1831e918b23ea7752addf0e684ad267b6634ccd2a750f93bea11242",
+    "status_at_checkpoint": "submitted/running; no verdict reviewed",
+    "schedule": "20 fixed leaves, sequential then kmtotalizer, 60 seconds cold per form, ten form-runs per reviewed segment",
+    "acceptance": "kmtotalizer must produce at least 8/20 replay-verified UNSAT closures and at least four more than sequential, with no audit/verdict disagreement and projected proof storage below 30 GB"
+  },
+  "test_receipt": {
+    "command": ".venv/bin/python -m unittest discover -s tests -p test_*.py -v",
+    "result": "47 tests passed",
+    "note": "pytest was not installed; the repository suite is unittest-based and ran directly without adding dependencies"
+  },
+  "next_session": {
+    "objective": "Review the first ten cold encoding runs without extending the tranche automatically.",
+    "first_action": "Open the newest immutable records/labs/lab-covering-c1264-e9221dfd02b3-*.json record and its content-addressed lab-runs output; verify checkpoint/progress hashes, per-run CNF audits, solver verdicts, and every UNSAT replay receipt.",
+    "continue_condition": "Continue the next ten form-runs only if correctness_checks_passed is true, no core/cardinality/verdict mismatch occurred, throughput is at least 0.0005 units/s, and projected proofs remain below 30 GB.",
+    "final_route_decision": "After all 40 runs, continue this encoding family only if the predeclared 8/20 plus-four acceptance rule passes; otherwise redirect without raising the same timeouts."
+  }
+}

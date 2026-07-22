@@ -1,0 +1,29 @@
+{
+  "checked_at": "2026-07-22T14:42:57.587902+00:00",
+  "checker": {
+    "path": "toolchains/drat-trim/drat-trim",
+    "sha256": "92f0aa9575ed519d66a99b8b1b3dde6ece4618ae4c202a3a4b200265dda0aa7a"
+  },
+  "cnf": {
+    "path": "toolchains/drat-trim/control-unsat.cnf",
+    "sha256": "ac42a371b5a124286c410ed5dfa2e3be7ee7d5b1feac6f08e7e1715f0c3669a8"
+  },
+  "command": [
+    "toolchains/drat-trim/drat-trim",
+    "toolchains/drat-trim/control-unsat.cnf",
+    "toolchains/drat-trim/control-unsat.drat"
+  ],
+  "exit_code": 0,
+  "log": {
+    "path": "toolchains/drat-trim/control-receipt.json.log",
+    "sha256": "dc429b3f38f492df3dd5483e388ae1bafeea59cabecf43bb0d57516193cb1973"
+  },
+  "proof": {
+    "path": "toolchains/drat-trim/control-unsat.drat",
+    "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+  },
+  "schema_version": 1,
+  "seconds_cap": 30,
+  "status": "verified",
+  "verdict": "s VERIFIED"
+}
