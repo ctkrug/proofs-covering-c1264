@@ -3,9 +3,9 @@
   "id": "lab-covering-c1264-e9221dfd02b3",
   "review": {
     "decision": "continue",
-    "reason": "Segment 2 completed 20/40 fixed units with correctness checks passing, throughput 0.0235 units/s above threshold, and 0.458 GB growth below cap. Continue the frozen protocol to segment 3: sequential has 7 replay-verified UNSAT plus one independently validated new orbit; kmtotalizer has 5 replay-verified UNSAT, all overlapping sequential, and 5 UNKNOWN. Completion remains decision-useful for the predeclared matched benchmark; no post-benchmark kmtotalizer scale-up is implied.",
+    "reason": "Segment 3 completed 30/40 fixed units with correctness checks passing, throughput 0.0178 units/s above threshold, and 0.380 GB growth below cap. Continue only the frozen protocol to its final segment. Sequential added four replay-verified UNSAT results in this tranche; kmtotalizer added two, both overlapping sequential, and still has zero unique closure. This continuation completes the predeclared measurement and does not authorize any kmtotalizer expansion.",
     "reviewer": "codex",
-    "reviewed_at": "2026-07-22T17:05:27.282696+00:00",
-    "segment": 2
+    "reviewed_at": "2026-07-22T17:28:10.384381+00:00",
+    "segment": 3
   }
 }
