@@ -1,0 +1,36 @@
+{
+  "schema_version": 1,
+  "status": "UNSAT_REPLAY_VERIFIED",
+  "claim": "The independently validated fifth exact-degree link orbit discovered in canonical frontier cell s-r1-3 cannot be extended to a 40-block C(12,6,4) cover under the forced-matching exact pair-count formulation.",
+  "link": {
+    "canonical_sha256": "b470049c5444b5f9bdd253d6e096e42e52e42c3512e545b43a4ad8f9346bb49c",
+    "orbit_size": 160,
+    "stabilizer_order": 24,
+    "witness_sha256": "efca42168a5be71be13bbe9b30f7767530eac29f9340dd1720316d1818aafe7d"
+  },
+  "full_obstruction": {
+    "variables": 72754,
+    "clauses": 144814,
+    "coverage_groups": 230,
+    "pair_equality_groups": 55,
+    "cnf_sha256": "79606b8e686578b92eaf4ab2a97f4ebfb095e498f104a0b7894883fa5c14bc68",
+    "cnf_audit_sha256": "171016dfec94e55ceff3419e09f6d9e11996d85bacf69c77e915f5ab48819c73",
+    "proof_sha256": "62facc8ddd788effa5fd32511ebd8599406ef55827e0f26011b8fb40598bcae8",
+    "replay_receipt_sha256": "2c8693c7e67d7c6cfab6cfd2c1b5ee67bde0e18cc765601f8956a45fde3ca0a0"
+  },
+  "semantic_core": {
+    "groups": 161,
+    "coverage_groups": 134,
+    "pair_equality_groups": 27,
+    "minimality": "Deletion-minimized for a fixed 60-second pass; sufficient and replay-verified, not claimed minimum.",
+    "variables": 55184,
+    "clauses": 66854,
+    "core_receipt_sha256": "7b1d0ce39f75a31c59cf370d4c4d68982abac273b343fd3f74f9726528b45451",
+    "cnf_sha256": "d587f3ba4944eecc84dfb3a0e44f184a95055607cfe954189608a04f04cbc4ec",
+    "proof_sha256": "24cc5d48c5df75617506484e25acebc5ad94bb95f1c532416f029240e8961922",
+    "replay_receipt_sha256": "692d8f8b1d209a1a9c59ad7d70ab4ca91d3cc32040df01ebe12549e5e50285b7"
+  },
+  "structural_signal": "All five known link orbits have a 20-edge triangle-free 4-regular low-pair graph on the ten nonexceptional points. The fifth orbit has two low-pair edges aligned with the forced matching; earlier known orbits realize zero, one, or three.",
+  "structure_profile_sha256": "917fed25a8758fd102bce3b49e3aaaf0d0fc680cf3a2bbd09aee8d47dcf9addc",
+  "claim_limit": "This excludes completion of this link orbit and supplies a sufficient semantic obstruction. It does not prove the five-orbit catalogue exhaustive, close cell s-r1-3 after blocking the new orbit, or settle C(12,6,4)."
+}

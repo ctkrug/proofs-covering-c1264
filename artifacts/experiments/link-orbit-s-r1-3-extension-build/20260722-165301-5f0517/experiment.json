@@ -1,0 +1,43 @@
+{
+  "schema_version": 1,
+  "id": "20260722-165301-5f0517",
+  "name": "C(12,6,4) fifth-link exact residual build",
+  "hypothesis": "The independently validated s-r1-3 fifth link either extends to a directly checked 40-block cover or has an exact replayable residual obstruction.",
+  "expected_signal": "A clause-exact independently reconstructed residual CNF, followed by SAT plus direct 40-cover validation or UNSAT plus external DRAT replay; UNKNOWN remains inconclusive.",
+  "command": [
+    ".venv/bin/python",
+    "scripts/run_link_residual_pilot.py",
+    "artifacts/discoveries/link-orbit-s-r1-3/witness.txt",
+    "--seconds",
+    "1",
+    "--output",
+    "artifacts/discoveries/link-orbit-s-r1-3/residual-extension"
+  ],
+  "cwd": "/Users/Krug/Desktop/ChatGPT/proofs/research/covering-c1264/workspace",
+  "seed": 0,
+  "timeout_seconds": 180,
+  "memory_limit_mb": 2048,
+  "memory_limit_enforced": false,
+  "started_at": "2026-07-22T16:53:01.157480+00:00",
+  "finished_at": "2026-07-22T16:53:03.240896+00:00",
+  "duration_seconds": 2.083,
+  "returncode": 0,
+  "timed_out": false,
+  "python": "3.14.6",
+  "platform": "macOS-26.5.2-arm64-arm-64bit-Mach-O",
+  "git_commit": "31c50ea41fb79e6aacd27b0ef22c50ca8ca58b11",
+  "source_urls": [
+    "https://ljcr.dmgordon.org/cover/show_cover.php?v=12&k=6&t=4"
+  ],
+  "input_artifacts": {
+    "/opt/homebrew/Cellar/python@3.14/3.14.6/Frameworks/Python.framework/Versions/3.14/bin/python3.14": "b502cb4c5b46b8d4192ec6bcb600ce8922f1afc396fcf646e8765c6eba74a0bf",
+    "/Users/Krug/Desktop/ChatGPT/proofs/research/covering-c1264/workspace/scripts/run_link_residual_pilot.py": "fe6015fc705c6f4226e787cebcc992eff52346aa419003d207bd28d3ea7faad0",
+    "/Users/Krug/Desktop/ChatGPT/proofs/research/covering-c1264/workspace/artifacts/discoveries/link-orbit-s-r1-3/witness.txt": "efca42168a5be71be13bbe9b30f7767530eac29f9340dd1720316d1818aafe7d"
+  },
+  "peak_child_memory_rusage": 102612992,
+  "peak_child_memory_unit": "bytes",
+  "artifacts": {
+    "stdout.txt": "845033f62a2431ee85bf7031f0e577d7976870a47d138c50939cd28ac664c77d",
+    "stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  }
+}

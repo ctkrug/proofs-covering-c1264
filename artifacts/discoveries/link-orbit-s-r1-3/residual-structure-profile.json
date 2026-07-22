@@ -1,0 +1,150 @@
+{
+  "catalog_sha256": "1b20916c7298dda7c172f2d435bc9e357026044c18a821f645aa82ec5e8fa2c6",
+  "claim_limit": "These are exact structural invariants of the supplied five orbits, not an exhaustive classification or a causal proof of nonextension.",
+  "fifth_orbit_semantic_core": {
+    "core_cnf": {
+      "clauses": 66854,
+      "path": "artifacts/discoveries/link-orbit-s-r1-3/residual-extension/semantic-core.cnf",
+      "sha256": "d587f3ba4944eecc84dfb3a0e44f184a95055607cfe954189608a04f04cbc4ec",
+      "variables": 55184
+    },
+    "coverage_groups": 134,
+    "groups": 161,
+    "pair_equality_groups": 27,
+    "receipt_sha256": "7b1d0ce39f75a31c59cf370d4c4d68982abac273b343fd3f74f9726528b45451"
+  },
+  "observation": "All five links share the forced 20-edge, triangle-free, 4-regular low-pair graph on ten nonexceptional points, but the fifth orbit has two low-pair edges aligned with the forced matching; the earlier orbits realize zero, one, or three.",
+  "orbits": [
+    {
+      "canonical_sha256": "8588c1d6bef8da17488984c28e222594e088ef1435d8737fafc28d01cd8f5148",
+      "low_pair_graph_degrees": [
+        0,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4
+      ],
+      "low_pair_graph_triangles": 0,
+      "low_pairs_aligned_with_forced_matching": 3,
+      "orbit_index": 1,
+      "orbit_size": 320,
+      "pair_multiplicity_histogram": {
+        "3": 20,
+        "4": 35
+      },
+      "stabilizer_order": 12,
+      "uncovered_nonzero_quadruples": 230
+    },
+    {
+      "canonical_sha256": "681764d1b0bf68ceff7809a7146d91a21a7504528ba71bbf73940daefa1c54a1",
+      "low_pair_graph_degrees": [
+        0,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4
+      ],
+      "low_pair_graph_triangles": 0,
+      "low_pairs_aligned_with_forced_matching": 0,
+      "orbit_index": 2,
+      "orbit_size": 16,
+      "pair_multiplicity_histogram": {
+        "3": 20,
+        "4": 35
+      },
+      "stabilizer_order": 240,
+      "uncovered_nonzero_quadruples": 230
+    },
+    {
+      "canonical_sha256": "c31bde7d138db2072f1309f834814aa2e27722a9b1bf21e08e758b1acca93349",
+      "low_pair_graph_degrees": [
+        0,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4
+      ],
+      "low_pair_graph_triangles": 0,
+      "low_pairs_aligned_with_forced_matching": 1,
+      "orbit_index": 3,
+      "orbit_size": 960,
+      "pair_multiplicity_histogram": {
+        "3": 20,
+        "4": 35
+      },
+      "stabilizer_order": 4,
+      "uncovered_nonzero_quadruples": 230
+    },
+    {
+      "canonical_sha256": "67d803aa141d828b4f2911c4a9f8199b1f26f4141a96a0e3a31b78b773de3468",
+      "low_pair_graph_degrees": [
+        0,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4
+      ],
+      "low_pair_graph_triangles": 0,
+      "low_pairs_aligned_with_forced_matching": 3,
+      "orbit_index": 4,
+      "orbit_size": 320,
+      "pair_multiplicity_histogram": {
+        "3": 20,
+        "4": 35
+      },
+      "stabilizer_order": 12,
+      "uncovered_nonzero_quadruples": 230
+    },
+    {
+      "canonical_sha256": "b470049c5444b5f9bdd253d6e096e42e52e42c3512e545b43a4ad8f9346bb49c",
+      "low_pair_graph_degrees": [
+        0,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4
+      ],
+      "low_pair_graph_triangles": 0,
+      "low_pairs_aligned_with_forced_matching": 2,
+      "orbit_index": 5,
+      "orbit_size": 160,
+      "pair_multiplicity_histogram": {
+        "3": 20,
+        "4": 35
+      },
+      "stabilizer_order": 24,
+      "uncovered_nonzero_quadruples": 230
+    }
+  ],
+  "schema_version": 1
+}

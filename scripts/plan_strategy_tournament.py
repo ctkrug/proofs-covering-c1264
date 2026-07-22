@@ -84,7 +84,7 @@ def build_plan() -> dict:
         })
     plan = {
         "schema_version": 1,
-        "stage": "finish_frozen_predecessor_then_short_cap_sequential_harvest",
+        "stage": "finish_frozen_predecessor_then_rebuild_for_expanded_link_catalog",
         "candidate_registry_sha256": registry["registry_payload_sha256"],
         "screening_manifest_sha256": screening["screening_payload_sha256"],
         "coverage_matrix_sha256": matrix["matrix_payload_sha256"],
@@ -96,11 +96,18 @@ def build_plan() -> dict:
         }],
         "post_predecessor_sequential_sweep": {
             "run_id": "sequential-open-frontier-44-20260722",
+            "status": "superseded_before_launch",
             "method": "sequential",
             "target_count": 44,
             "seconds_per_target": 60,
             "excluded_preserved_certificates": ["s-r0-6", "s-r1-5", "s-r1-8"],
-            "instruction": "start only after the frozen predecessor is complete and reviewed; retain every net-new independently replayed closure"
+            "instruction": "do not launch: s-r1-3 exposed a fifth link orbit; rebuild and audit the catalogue, blocker, frontier bindings, and replacement sweep first"
+        },
+        "expanded_catalog_gate": {
+            "validated_orbit_count": 5,
+            "new_orbit_canonical_sha256": "b470049c5444b5f9bdd253d6e096e42e52e42c3512e545b43a4ad8f9346bb49c",
+            "new_orbit_residual_status": "UNSAT_REPLAY_VERIFIED",
+            "required_before_scale": "ingest all benchmark discoveries, independently audit a versioned expanded blocker, recompute frontier bindings, and build a replacement sweep manifest"
         },
         "hard_tail_policy": {
             "profile": "derive structural classes only for nodes still open after the short-cap sweep",
@@ -120,7 +127,7 @@ def build_plan() -> dict:
             "initial_signal": "one-block repair improved to six uncovered quadruples with exact point degrees; four degree-preserving two-block tranches found no improvement, including two barrier-crossing runs with 35,000 accepted trades; exact-repair follow-up produced only UNKNOWN results, while earlier local CORE_UNSAT statuses remain unreplayed allocation signals",
             "next_gate": "demote exact-degree two-block repair for this basin; validate a larger neighborhood that temporarily permits degree slack or repairs at least three blocks before spending a longer tranche"
         },
-        "recompute_when": "frozen predecessor completes, the 44-node harvest records a result, survivor classes change, a semantic gate changes, or a new independently validated matrix cell is recorded"
+        "recompute_when": "frozen predecessor completes, the expanded catalogue/frontier is independently audited, survivor classes change, a semantic gate changes, or a new independently validated matrix cell is recorded"
     }
     plan["plan_payload_sha256"] = canonical_hash(plan)
     return plan

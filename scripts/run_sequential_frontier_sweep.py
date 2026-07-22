@@ -15,6 +15,10 @@ ROOT = Path(__file__).resolve().parents[1]
 
 
 def verify(manifest_path: Path) -> dict[str, object]:
+    superseded = manifest_path.parent / "SUPERSEDED.json"
+    if superseded.is_file():
+        reason = json.loads(superseded.read_text(encoding="utf-8")).get("reason", "manifest superseded")
+        raise ValueError(f"refusing superseded sweep manifest: {reason}")
     manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
     if manifest.get("method") != "sequential" or len(manifest.get("leaves", [])) != 44:
         raise ValueError("manifest must specify sequential over exactly 44 leaves")

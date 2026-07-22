@@ -1,0 +1,45 @@
+{
+  "schema_version": 1,
+  "id": "20260722-165325-c667c7",
+  "name": "C(12,6,4) fifth-link exact residual solve",
+  "hypothesis": "The independently validated s-r1-3 fifth link either extends to a directly checked 40-block cover or has an exact replayable residual obstruction.",
+  "expected_signal": "SAT followed by direct 40-cover validation, or UNSAT followed by DRAT replay against the independently reconstructed CNF; timeout is inconclusive.",
+  "command": [
+    ".venv/bin/python",
+    "scripts/run_external_cadical.py",
+    "artifacts/discoveries/link-orbit-s-r1-3/residual-extension/instance.cnf",
+    ".venv/sat-audit-tools/cadical/build/cadical",
+    "artifacts/discoveries/link-orbit-s-r1-3/residual-extension/external.drat",
+    "artifacts/discoveries/link-orbit-s-r1-3/residual-extension/external-solver.json",
+    "--seconds",
+    "300"
+  ],
+  "cwd": "/Users/Krug/Desktop/ChatGPT/proofs/research/covering-c1264/workspace",
+  "seed": 0,
+  "timeout_seconds": 360,
+  "memory_limit_mb": 4096,
+  "memory_limit_enforced": false,
+  "started_at": "2026-07-22T16:53:25.583873+00:00",
+  "finished_at": "2026-07-22T16:53:51.734757+00:00",
+  "duration_seconds": 26.151,
+  "returncode": 0,
+  "timed_out": false,
+  "python": "3.14.6",
+  "platform": "macOS-26.5.2-arm64-arm-64bit-Mach-O",
+  "git_commit": "31c50ea41fb79e6aacd27b0ef22c50ca8ca58b11",
+  "source_urls": [
+    "https://ljcr.dmgordon.org/cover/show_cover.php?v=12&k=6&t=4"
+  ],
+  "input_artifacts": {
+    "/opt/homebrew/Cellar/python@3.14/3.14.6/Frameworks/Python.framework/Versions/3.14/bin/python3.14": "b502cb4c5b46b8d4192ec6bcb600ce8922f1afc396fcf646e8765c6eba74a0bf",
+    "/Users/Krug/Desktop/ChatGPT/proofs/research/covering-c1264/workspace/scripts/run_external_cadical.py": "960d3eb30b62be5087a3201bc829f4ea7f461a11288eed5ce90eb6f1bb150d0e",
+    "/Users/Krug/Desktop/ChatGPT/proofs/research/covering-c1264/workspace/artifacts/discoveries/link-orbit-s-r1-3/residual-extension/instance.cnf": "79606b8e686578b92eaf4ab2a97f4ebfb095e498f104a0b7894883fa5c14bc68",
+    "/Users/Krug/Desktop/ChatGPT/proofs/research/covering-c1264/workspace/.venv/sat-audit-tools/cadical/build/cadical": "d2f7e3fc9577de8548125b11c7c37772df32438bf86ffdadb9f45a11e643dd64"
+  },
+  "peak_child_memory_rusage": 128942080,
+  "peak_child_memory_unit": "bytes",
+  "artifacts": {
+    "stdout.txt": "2069178327e710e18f95907476e429cfb80fd1c7efd5a6de2f44bb38e71e22ca",
+    "stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  }
+}

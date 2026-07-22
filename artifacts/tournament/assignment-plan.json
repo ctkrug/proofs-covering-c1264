@@ -12,8 +12,14 @@
     "structural_reduction-02",
     "symmetry_representation-01"
   ],
-  "candidate_registry_sha256": "4d98b207a0293a397fb55328639ce6d358463899f6371a30afb47d2ecebbee8c",
-  "coverage_matrix_sha256": "d214a0844482dc11939f78cd4989bda3edbbb8f7b81ebe88b95f470a87b0b816",
+  "candidate_registry_sha256": "bf91bc224a0a0c06236338e49307fcd7749393b451626c2a82f49cb74e178495",
+  "coverage_matrix_sha256": "5e3978de24762c2931c06bbbe7d6d2e9533c8378751c77529b1b0a89c275e18c",
+  "expanded_catalog_gate": {
+    "new_orbit_canonical_sha256": "b470049c5444b5f9bdd253d6e096e42e52e42c3512e545b43a4ad8f9346bb49c",
+    "new_orbit_residual_status": "UNSAT_REPLAY_VERIFIED",
+    "required_before_scale": "ingest all benchmark discoveries, independently audit a versioned expanded blocker, recompute frontier bindings, and build a replacement sweep manifest",
+    "validated_orbit_count": 5
+  },
   "family_champions": {
     "constructive_local_search": "constructive_local_search-04",
     "constructive_metaheuristic": "constructive_metaheuristic-09",
@@ -1438,22 +1444,23 @@
     "symmetry_representation-09",
     "symmetry_representation-10"
   ],
-  "plan_payload_sha256": "e031def5f465b408718f55973010c827ecf4358a41dace98e43c2d2e7bb16715",
+  "plan_payload_sha256": "450b22dce7da7542efb500549dbdc08962a246907635074ae541469a5a11030b",
   "post_predecessor_sequential_sweep": {
     "excluded_preserved_certificates": [
       "s-r0-6",
       "s-r1-5",
       "s-r1-8"
     ],
-    "instruction": "start only after the frozen predecessor is complete and reviewed; retain every net-new independently replayed closure",
+    "instruction": "do not launch: s-r1-3 exposed a fifth link orbit; rebuild and audit the catalogue, blocker, frontier bindings, and replacement sweep first",
     "method": "sequential",
     "run_id": "sequential-open-frontier-44-20260722",
     "seconds_per_target": 60,
+    "status": "superseded_before_launch",
     "target_count": 44
   },
-  "recompute_when": "frozen predecessor completes, the 44-node harvest records a result, survivor classes change, a semantic gate changes, or a new independently validated matrix cell is recorded",
+  "recompute_when": "frozen predecessor completes, the expanded catalogue/frontier is independently audited, survivor classes change, a semantic gate changes, or a new independently validated matrix cell is recorded",
   "schema_version": 1,
-  "screening_manifest_sha256": "07604d0c4ef47cd6a91900749a4969e3af2f8d07f73288602f5ea6927ab74744",
+  "screening_manifest_sha256": "aa15eaa1ce1eff264a61b1c9c18914242d9f166fd95e4b3a387c31a654cecb67",
   "separate_local_workstation_constructive_searches": 2,
-  "stage": "finish_frozen_predecessor_then_short_cap_sequential_harvest"
+  "stage": "finish_frozen_predecessor_then_rebuild_for_expanded_link_catalog"
 }

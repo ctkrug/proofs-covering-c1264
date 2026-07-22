@@ -1,11 +1,13 @@
 import importlib.util
 import json
+import sys
 import tempfile
 import unittest
 from pathlib import Path
 
 
 ROOT = Path(__file__).resolve().parents[1]
+sys.path.insert(0, str(ROOT / "scripts"))
 
 
 def load(name: str, relative: str):
@@ -18,6 +20,7 @@ def load(name: str, relative: str):
 
 builder = load("build_sequential_frontier_sweep", "scripts/build_sequential_frontier_sweep.py")
 profiler = load("profile_sequential_survivors", "scripts/profile_sequential_survivors.py")
+runner = load("run_sequential_frontier_sweep", "scripts/run_sequential_frontier_sweep.py")
 
 
 class SequentialFrontierSweepTests(unittest.TestCase):
@@ -50,6 +53,10 @@ class SequentialFrontierSweepTests(unittest.TestCase):
         self.assertNotIn(manifest["leaves"][0]["id"], {row["id"] for row in result["survivors"]})
         self.assertIn(manifest["leaves"][1]["id"], {row["id"] for row in result["survivors"]})
         self.assertGreater(len(result["classes"]), 0)
+
+    def test_runner_refuses_superseded_four_orbit_manifest(self):
+        with self.assertRaisesRegex(ValueError, "fifth exact-degree link orbit"):
+            runner.verify(builder.OUT)
 
 
 if __name__ == "__main__":
