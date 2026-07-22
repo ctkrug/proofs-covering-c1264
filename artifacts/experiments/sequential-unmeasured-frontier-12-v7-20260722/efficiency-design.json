@@ -1,0 +1,13 @@
+{
+  "naive_cost": "A uniform pass over all 47 canonical leaves would repeat 26 certified closures and spend at least 2,820 solver-seconds before proof replay.",
+  "opportunities_considered": [
+    "Classify all 21 open leaves immediately.",
+    "Run only the 12 open leaves never measured by sequential search.",
+    "Increase timeouts uniformly on the nine measured hard-tail leaves.",
+    "Return to kmtotalizer despite zero unique benchmark coverage."
+  ],
+  "chosen_reductions": "Run exactly the 12 audited, never-measured open leaves in inherited-CNF-size order, in one six-leaf pilot segment followed by one six-leaf segment only after review. Preserve the 26 certified nodes and use only the audited seven-orbit blocker.",
+  "expected_throughput_gain": "Avoids 35 duplicate or already-measured attempts; the six-leaf gate exposes closure yield, proof growth, and any new orbit before the second half.",
+  "soundness_basis": "The 47-node canonical partition, seven supplied orbits, 2,576-clause blocker, strict blocker monotonicity, 26 certificate receipts, and exact 12-node selection are independently audited. Every UNSAT requires reconstructed-CNF audit plus DRAT replay; every SAT requires direct link validation and canonicalization.",
+  "remains_uncompressed": "The 12 selected leaves remain independent obligations, as do nine previously measured open leaves outside this tranche. The seven-orbit catalogue remains non-exhaustive until every frontier node closes or another orbit is found."
+}
