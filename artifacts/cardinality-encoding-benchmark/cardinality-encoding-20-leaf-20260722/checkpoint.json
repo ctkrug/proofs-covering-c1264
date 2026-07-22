@@ -19,10 +19,20 @@
     "t-32--sequential",
     "t-32--kmtotalizer",
     "t-24--sequential",
-    "t-24--kmtotalizer"
+    "t-24--kmtotalizer",
+    "t-27--sequential",
+    "t-27--kmtotalizer",
+    "t-10--sequential",
+    "t-10--kmtotalizer",
+    "t-2--sequential",
+    "t-2--kmtotalizer",
+    "t-11--sequential",
+    "t-11--kmtotalizer",
+    "t-26--sequential",
+    "t-26--kmtotalizer"
   ],
   "manifest_sha256": "5d52e2f8f1831e918b23ea7752addf0e684ad267b6634ccd2a750f93bea11242",
-  "projected_proof_bytes": 2849866953,
+  "projected_proof_bytes": 2707626184,
   "results": [
     {
       "cnf_sha256": "7973b36f40648bb8045541d9a8357d02bd0830765c4cbc7bb48c00ffbc929995",
@@ -854,6 +864,422 @@
         "proof": {
           "path": "/root/proof-factory/research/covering-c1264/workspace/artifacts/cardinality-encoding-benchmark/cardinality-encoding-20-leaf-20260722/t-24/kmtotalizer/proof.drat",
           "sha256": "bc745601667f4e353cc100429e642c1760e045e500258121bee3b889ba8ec25c"
+        },
+        "schema_version": 1,
+        "seconds_cap": 600,
+        "status": "verified",
+        "verdict": "s VERIFIED"
+      }
+    },
+    {
+      "cnf_sha256": "71ba65cdc01e12edd7206a9e9cb8edf9db6d0455779d1f0cc2cd80316d7d1a6c",
+      "command": [
+        "/usr/bin/cadical",
+        "-t",
+        "60",
+        "--no-binary",
+        "/root/proof-factory/research/covering-c1264/workspace/artifacts/cardinality-encoding-benchmark/cardinality-encoding-20-leaf-20260722/t-27/sequential/instance.cnf",
+        "/root/proof-factory/research/covering-c1264/workspace/artifacts/cardinality-encoding-benchmark/cardinality-encoding-20-leaf-20260722/t-27/sequential/proof.drat"
+      ],
+      "completed_at": "2026-07-22T17:07:19.303877+00:00",
+      "encoding": "sequential",
+      "leaf_id": "t-27",
+      "path": "artifacts/cardinality-encoding-benchmark/cardinality-encoding-20-leaf-20260722/t-27/sequential",
+      "proof": {
+        "bytes": 19236843,
+        "sha256": "c20e23e458f79c4eef7b0b43daa98eb660b72a1d7b2c1a8e5e62d8e333413726"
+      },
+      "schema_version": 1,
+      "seconds_cap": 60,
+      "solver_elapsed_seconds": 15.456603019032627,
+      "solver_exit_code": 20,
+      "solver_sha256": "7b73df0a6d9cf3c751a1948300e5baff8e82c4d39bcd88f0c063b5f5cfb8b33e",
+      "status": "UNSAT_VERIFIED",
+      "validation": {
+        "checked_at": "2026-07-22T17:07:18.873179+00:00",
+        "checker": {
+          "path": "/root/proof-factory/research/covering-c1264/workspace/toolchains/drat-trim/drat-trim",
+          "sha256": "92f0aa9575ed519d66a99b8b1b3dde6ece4618ae4c202a3a4b200265dda0aa7a"
+        },
+        "cnf": {
+          "path": "/root/proof-factory/research/covering-c1264/workspace/artifacts/cardinality-encoding-benchmark/cardinality-encoding-20-leaf-20260722/t-27/sequential/instance.cnf",
+          "sha256": "71ba65cdc01e12edd7206a9e9cb8edf9db6d0455779d1f0cc2cd80316d7d1a6c"
+        },
+        "command": [
+          "/root/proof-factory/research/covering-c1264/workspace/toolchains/drat-trim/drat-trim",
+          "/root/proof-factory/research/covering-c1264/workspace/artifacts/cardinality-encoding-benchmark/cardinality-encoding-20-leaf-20260722/t-27/sequential/instance.cnf",
+          "/root/proof-factory/research/covering-c1264/workspace/artifacts/cardinality-encoding-benchmark/cardinality-encoding-20-leaf-20260722/t-27/sequential/proof.drat"
+        ],
+        "exit_code": 0,
+        "log": {
+          "path": "/root/proof-factory/research/covering-c1264/workspace/artifacts/cardinality-encoding-benchmark/cardinality-encoding-20-leaf-20260722/t-27/sequential/validation.json.log",
+          "sha256": "69aae4052f0829a57acd6a7a4384e007ee5b97aadf719acff0c20cdf42c7afdb"
+        },
+        "proof": {
+          "path": "/root/proof-factory/research/covering-c1264/workspace/artifacts/cardinality-encoding-benchmark/cardinality-encoding-20-leaf-20260722/t-27/sequential/proof.drat",
+          "sha256": "c20e23e458f79c4eef7b0b43daa98eb660b72a1d7b2c1a8e5e62d8e333413726"
+        },
+        "schema_version": 1,
+        "seconds_cap": 600,
+        "status": "verified",
+        "verdict": "s VERIFIED"
+      }
+    },
+    {
+      "cnf_sha256": "51e23e7eea8fa3072cb0648fae20746726b4da189b6a06655a75ed5fabdd9e2c",
+      "command": [
+        "/usr/bin/cadical",
+        "-t",
+        "60",
+        "--no-binary",
+        "/root/proof-factory/research/covering-c1264/workspace/artifacts/cardinality-encoding-benchmark/cardinality-encoding-20-leaf-20260722/t-27/kmtotalizer/instance.cnf",
+        "/root/proof-factory/research/covering-c1264/workspace/artifacts/cardinality-encoding-benchmark/cardinality-encoding-20-leaf-20260722/t-27/kmtotalizer/proof.drat"
+      ],
+      "completed_at": "2026-07-22T17:08:50.948170+00:00",
+      "encoding": "kmtotalizer",
+      "leaf_id": "t-27",
+      "path": "artifacts/cardinality-encoding-benchmark/cardinality-encoding-20-leaf-20260722/t-27/kmtotalizer",
+      "proof": {
+        "bytes": 55116348,
+        "sha256": "ecc0434de4793064c9b4de27209475f5f302e837480a39e94d5347fedd8c56eb"
+      },
+      "schema_version": 1,
+      "seconds_cap": 60,
+      "solver_elapsed_seconds": 55.89055839390494,
+      "solver_exit_code": 20,
+      "solver_sha256": "7b73df0a6d9cf3c751a1948300e5baff8e82c4d39bcd88f0c063b5f5cfb8b33e",
+      "status": "UNSAT_VERIFIED",
+      "validation": {
+        "checked_at": "2026-07-22T17:08:49.132798+00:00",
+        "checker": {
+          "path": "/root/proof-factory/research/covering-c1264/workspace/toolchains/drat-trim/drat-trim",
+          "sha256": "92f0aa9575ed519d66a99b8b1b3dde6ece4618ae4c202a3a4b200265dda0aa7a"
+        },
+        "cnf": {
+          "path": "/root/proof-factory/research/covering-c1264/workspace/artifacts/cardinality-encoding-benchmark/cardinality-encoding-20-leaf-20260722/t-27/kmtotalizer/instance.cnf",
+          "sha256": "51e23e7eea8fa3072cb0648fae20746726b4da189b6a06655a75ed5fabdd9e2c"
+        },
+        "command": [
+          "/root/proof-factory/research/covering-c1264/workspace/toolchains/drat-trim/drat-trim",
+          "/root/proof-factory/research/covering-c1264/workspace/artifacts/cardinality-encoding-benchmark/cardinality-encoding-20-leaf-20260722/t-27/kmtotalizer/instance.cnf",
+          "/root/proof-factory/research/covering-c1264/workspace/artifacts/cardinality-encoding-benchmark/cardinality-encoding-20-leaf-20260722/t-27/kmtotalizer/proof.drat"
+        ],
+        "exit_code": 0,
+        "log": {
+          "path": "/root/proof-factory/research/covering-c1264/workspace/artifacts/cardinality-encoding-benchmark/cardinality-encoding-20-leaf-20260722/t-27/kmtotalizer/validation.json.log",
+          "sha256": "da4c291030ed673209092705a3d0457f08784d0cc7e7964bda2465438ff1be39"
+        },
+        "proof": {
+          "path": "/root/proof-factory/research/covering-c1264/workspace/artifacts/cardinality-encoding-benchmark/cardinality-encoding-20-leaf-20260722/t-27/kmtotalizer/proof.drat",
+          "sha256": "ecc0434de4793064c9b4de27209475f5f302e837480a39e94d5347fedd8c56eb"
+        },
+        "schema_version": 1,
+        "seconds_cap": 600,
+        "status": "verified",
+        "verdict": "s VERIFIED"
+      }
+    },
+    {
+      "cnf_sha256": "565838a7eb0ec986f504d50aabacff27191943b7385f3958bee2c95de38f7b69",
+      "command": [
+        "/usr/bin/cadical",
+        "-t",
+        "60",
+        "--no-binary",
+        "/root/proof-factory/research/covering-c1264/workspace/artifacts/cardinality-encoding-benchmark/cardinality-encoding-20-leaf-20260722/t-10/sequential/instance.cnf",
+        "/root/proof-factory/research/covering-c1264/workspace/artifacts/cardinality-encoding-benchmark/cardinality-encoding-20-leaf-20260722/t-10/sequential/proof.drat"
+      ],
+      "completed_at": "2026-07-22T17:09:58.876967+00:00",
+      "encoding": "sequential",
+      "leaf_id": "t-10",
+      "path": "artifacts/cardinality-encoding-benchmark/cardinality-encoding-20-leaf-20260722/t-10/sequential",
+      "proof": null,
+      "schema_version": 1,
+      "seconds_cap": 60,
+      "solver_elapsed_seconds": 60.102987363003194,
+      "solver_exit_code": 0,
+      "solver_sha256": "7b73df0a6d9cf3c751a1948300e5baff8e82c4d39bcd88f0c063b5f5cfb8b33e",
+      "status": "UNKNOWN",
+      "validation": null
+    },
+    {
+      "cnf_sha256": "a633e5278f1de6ad560c2d01f3189f0e5a621135be47f56bdfd7ae90cd29c6d9",
+      "command": [
+        "/usr/bin/cadical",
+        "-t",
+        "60",
+        "--no-binary",
+        "/root/proof-factory/research/covering-c1264/workspace/artifacts/cardinality-encoding-benchmark/cardinality-encoding-20-leaf-20260722/t-10/kmtotalizer/instance.cnf",
+        "/root/proof-factory/research/covering-c1264/workspace/artifacts/cardinality-encoding-benchmark/cardinality-encoding-20-leaf-20260722/t-10/kmtotalizer/proof.drat"
+      ],
+      "completed_at": "2026-07-22T17:11:07.016990+00:00",
+      "encoding": "kmtotalizer",
+      "leaf_id": "t-10",
+      "path": "artifacts/cardinality-encoding-benchmark/cardinality-encoding-20-leaf-20260722/t-10/kmtotalizer",
+      "proof": null,
+      "schema_version": 1,
+      "seconds_cap": 60,
+      "solver_elapsed_seconds": 60.060786072863266,
+      "solver_exit_code": 0,
+      "solver_sha256": "7b73df0a6d9cf3c751a1948300e5baff8e82c4d39bcd88f0c063b5f5cfb8b33e",
+      "status": "UNKNOWN",
+      "validation": null
+    },
+    {
+      "cnf_sha256": "c4a29166e7b0be28a90c8dff2f3767e4aaa858b38d60fbdf8971aa1f0cee5935",
+      "command": [
+        "/usr/bin/cadical",
+        "-t",
+        "60",
+        "--no-binary",
+        "/root/proof-factory/research/covering-c1264/workspace/artifacts/cardinality-encoding-benchmark/cardinality-encoding-20-leaf-20260722/t-2/sequential/instance.cnf",
+        "/root/proof-factory/research/covering-c1264/workspace/artifacts/cardinality-encoding-benchmark/cardinality-encoding-20-leaf-20260722/t-2/sequential/proof.drat"
+      ],
+      "completed_at": "2026-07-22T17:12:19.103777+00:00",
+      "encoding": "sequential",
+      "leaf_id": "t-2",
+      "path": "artifacts/cardinality-encoding-benchmark/cardinality-encoding-20-leaf-20260722/t-2/sequential",
+      "proof": {
+        "bytes": 101080595,
+        "sha256": "cfe7aba017b149b9604d009ffee788867e5ac3bc6a01425e63304babf208372f"
+      },
+      "schema_version": 1,
+      "seconds_cap": 60,
+      "solver_elapsed_seconds": 37.844042759155855,
+      "solver_exit_code": 20,
+      "solver_sha256": "7b73df0a6d9cf3c751a1948300e5baff8e82c4d39bcd88f0c063b5f5cfb8b33e",
+      "status": "UNSAT_VERIFIED",
+      "validation": {
+        "checked_at": "2026-07-22T17:12:18.319274+00:00",
+        "checker": {
+          "path": "/root/proof-factory/research/covering-c1264/workspace/toolchains/drat-trim/drat-trim",
+          "sha256": "92f0aa9575ed519d66a99b8b1b3dde6ece4618ae4c202a3a4b200265dda0aa7a"
+        },
+        "cnf": {
+          "path": "/root/proof-factory/research/covering-c1264/workspace/artifacts/cardinality-encoding-benchmark/cardinality-encoding-20-leaf-20260722/t-2/sequential/instance.cnf",
+          "sha256": "c4a29166e7b0be28a90c8dff2f3767e4aaa858b38d60fbdf8971aa1f0cee5935"
+        },
+        "command": [
+          "/root/proof-factory/research/covering-c1264/workspace/toolchains/drat-trim/drat-trim",
+          "/root/proof-factory/research/covering-c1264/workspace/artifacts/cardinality-encoding-benchmark/cardinality-encoding-20-leaf-20260722/t-2/sequential/instance.cnf",
+          "/root/proof-factory/research/covering-c1264/workspace/artifacts/cardinality-encoding-benchmark/cardinality-encoding-20-leaf-20260722/t-2/sequential/proof.drat"
+        ],
+        "exit_code": 0,
+        "log": {
+          "path": "/root/proof-factory/research/covering-c1264/workspace/artifacts/cardinality-encoding-benchmark/cardinality-encoding-20-leaf-20260722/t-2/sequential/validation.json.log",
+          "sha256": "e7a2068d869d5aa3c0217fc3aedfb0b0656cdf80a38cddab4a8cbc72c29240ff"
+        },
+        "proof": {
+          "path": "/root/proof-factory/research/covering-c1264/workspace/artifacts/cardinality-encoding-benchmark/cardinality-encoding-20-leaf-20260722/t-2/sequential/proof.drat",
+          "sha256": "cfe7aba017b149b9604d009ffee788867e5ac3bc6a01425e63304babf208372f"
+        },
+        "schema_version": 1,
+        "seconds_cap": 600,
+        "status": "verified",
+        "verdict": "s VERIFIED"
+      }
+    },
+    {
+      "cnf_sha256": "de614f636b355f5e9e9f910251549b93167b59bf0a13dada66cc988f6b802362",
+      "command": [
+        "/usr/bin/cadical",
+        "-t",
+        "60",
+        "--no-binary",
+        "/root/proof-factory/research/covering-c1264/workspace/artifacts/cardinality-encoding-benchmark/cardinality-encoding-20-leaf-20260722/t-2/kmtotalizer/instance.cnf",
+        "/root/proof-factory/research/covering-c1264/workspace/artifacts/cardinality-encoding-benchmark/cardinality-encoding-20-leaf-20260722/t-2/kmtotalizer/proof.drat"
+      ],
+      "completed_at": "2026-07-22T17:13:21.152484+00:00",
+      "encoding": "kmtotalizer",
+      "leaf_id": "t-2",
+      "path": "artifacts/cardinality-encoding-benchmark/cardinality-encoding-20-leaf-20260722/t-2/kmtotalizer",
+      "proof": null,
+      "schema_version": 1,
+      "seconds_cap": 60,
+      "solver_elapsed_seconds": 60.015379681950435,
+      "solver_exit_code": 0,
+      "solver_sha256": "7b73df0a6d9cf3c751a1948300e5baff8e82c4d39bcd88f0c063b5f5cfb8b33e",
+      "status": "UNKNOWN",
+      "validation": null
+    },
+    {
+      "cnf_sha256": "3e9d684c3149837fea82df1d5d49e005e128d40e532750dbe88b3246b848047e",
+      "command": [
+        "/usr/bin/cadical",
+        "-t",
+        "60",
+        "--no-binary",
+        "/root/proof-factory/research/covering-c1264/workspace/artifacts/cardinality-encoding-benchmark/cardinality-encoding-20-leaf-20260722/t-11/sequential/instance.cnf",
+        "/root/proof-factory/research/covering-c1264/workspace/artifacts/cardinality-encoding-benchmark/cardinality-encoding-20-leaf-20260722/t-11/sequential/proof.drat"
+      ],
+      "completed_at": "2026-07-22T17:14:43.159393+00:00",
+      "encoding": "sequential",
+      "leaf_id": "t-11",
+      "path": "artifacts/cardinality-encoding-benchmark/cardinality-encoding-20-leaf-20260722/t-11/sequential",
+      "proof": {
+        "bytes": 137655576,
+        "sha256": "0cd39ef34eef0a244016208e38f7f946248842033a9b974d4fa41cfa8de7c137"
+      },
+      "schema_version": 1,
+      "seconds_cap": 60,
+      "solver_elapsed_seconds": 43.11737560713664,
+      "solver_exit_code": 20,
+      "solver_sha256": "7b73df0a6d9cf3c751a1948300e5baff8e82c4d39bcd88f0c063b5f5cfb8b33e",
+      "status": "UNSAT_VERIFIED",
+      "validation": {
+        "checked_at": "2026-07-22T17:14:42.075988+00:00",
+        "checker": {
+          "path": "/root/proof-factory/research/covering-c1264/workspace/toolchains/drat-trim/drat-trim",
+          "sha256": "92f0aa9575ed519d66a99b8b1b3dde6ece4618ae4c202a3a4b200265dda0aa7a"
+        },
+        "cnf": {
+          "path": "/root/proof-factory/research/covering-c1264/workspace/artifacts/cardinality-encoding-benchmark/cardinality-encoding-20-leaf-20260722/t-11/sequential/instance.cnf",
+          "sha256": "3e9d684c3149837fea82df1d5d49e005e128d40e532750dbe88b3246b848047e"
+        },
+        "command": [
+          "/root/proof-factory/research/covering-c1264/workspace/toolchains/drat-trim/drat-trim",
+          "/root/proof-factory/research/covering-c1264/workspace/artifacts/cardinality-encoding-benchmark/cardinality-encoding-20-leaf-20260722/t-11/sequential/instance.cnf",
+          "/root/proof-factory/research/covering-c1264/workspace/artifacts/cardinality-encoding-benchmark/cardinality-encoding-20-leaf-20260722/t-11/sequential/proof.drat"
+        ],
+        "exit_code": 0,
+        "log": {
+          "path": "/root/proof-factory/research/covering-c1264/workspace/artifacts/cardinality-encoding-benchmark/cardinality-encoding-20-leaf-20260722/t-11/sequential/validation.json.log",
+          "sha256": "5f5d2b4cb377ff26d801a2389d28ccb1bc0f00f2b400f8dbe020bcf392a3c5ab"
+        },
+        "proof": {
+          "path": "/root/proof-factory/research/covering-c1264/workspace/artifacts/cardinality-encoding-benchmark/cardinality-encoding-20-leaf-20260722/t-11/sequential/proof.drat",
+          "sha256": "0cd39ef34eef0a244016208e38f7f946248842033a9b974d4fa41cfa8de7c137"
+        },
+        "schema_version": 1,
+        "seconds_cap": 600,
+        "status": "verified",
+        "verdict": "s VERIFIED"
+      }
+    },
+    {
+      "cnf_sha256": "f404a63323223ecd2fe57f4315d2738bbdb9a78b4a89270b3a2a623abf9bdf3c",
+      "command": [
+        "/usr/bin/cadical",
+        "-t",
+        "60",
+        "--no-binary",
+        "/root/proof-factory/research/covering-c1264/workspace/artifacts/cardinality-encoding-benchmark/cardinality-encoding-20-leaf-20260722/t-11/kmtotalizer/instance.cnf",
+        "/root/proof-factory/research/covering-c1264/workspace/artifacts/cardinality-encoding-benchmark/cardinality-encoding-20-leaf-20260722/t-11/kmtotalizer/proof.drat"
+      ],
+      "completed_at": "2026-07-22T17:15:45.364555+00:00",
+      "encoding": "kmtotalizer",
+      "leaf_id": "t-11",
+      "path": "artifacts/cardinality-encoding-benchmark/cardinality-encoding-20-leaf-20260722/t-11/kmtotalizer",
+      "proof": null,
+      "schema_version": 1,
+      "seconds_cap": 60,
+      "solver_elapsed_seconds": 60.01572133391164,
+      "solver_exit_code": 0,
+      "solver_sha256": "7b73df0a6d9cf3c751a1948300e5baff8e82c4d39bcd88f0c063b5f5cfb8b33e",
+      "status": "UNKNOWN",
+      "validation": null
+    },
+    {
+      "cnf_sha256": "6a14b5f6c938c2412884a821a13b51d94b3a434afa46250ef4d71a855a65709f",
+      "command": [
+        "/usr/bin/cadical",
+        "-t",
+        "60",
+        "--no-binary",
+        "/root/proof-factory/research/covering-c1264/workspace/artifacts/cardinality-encoding-benchmark/cardinality-encoding-20-leaf-20260722/t-26/sequential/instance.cnf",
+        "/root/proof-factory/research/covering-c1264/workspace/artifacts/cardinality-encoding-benchmark/cardinality-encoding-20-leaf-20260722/t-26/sequential/proof.drat"
+      ],
+      "completed_at": "2026-07-22T17:15:52.135543+00:00",
+      "encoding": "sequential",
+      "leaf_id": "t-26",
+      "path": "artifacts/cardinality-encoding-benchmark/cardinality-encoding-20-leaf-20260722/t-26/sequential",
+      "proof": {
+        "bytes": 16418396,
+        "sha256": "eff461d55f12de2c4676c28015fe132efdbf943980455d73c2b0e55aa09ad0b1"
+      },
+      "schema_version": 1,
+      "seconds_cap": 60,
+      "solver_elapsed_seconds": 2.952820026082918,
+      "solver_exit_code": 20,
+      "solver_sha256": "7b73df0a6d9cf3c751a1948300e5baff8e82c4d39bcd88f0c063b5f5cfb8b33e",
+      "status": "UNSAT_VERIFIED",
+      "validation": {
+        "checked_at": "2026-07-22T17:15:51.987844+00:00",
+        "checker": {
+          "path": "/root/proof-factory/research/covering-c1264/workspace/toolchains/drat-trim/drat-trim",
+          "sha256": "92f0aa9575ed519d66a99b8b1b3dde6ece4618ae4c202a3a4b200265dda0aa7a"
+        },
+        "cnf": {
+          "path": "/root/proof-factory/research/covering-c1264/workspace/artifacts/cardinality-encoding-benchmark/cardinality-encoding-20-leaf-20260722/t-26/sequential/instance.cnf",
+          "sha256": "6a14b5f6c938c2412884a821a13b51d94b3a434afa46250ef4d71a855a65709f"
+        },
+        "command": [
+          "/root/proof-factory/research/covering-c1264/workspace/toolchains/drat-trim/drat-trim",
+          "/root/proof-factory/research/covering-c1264/workspace/artifacts/cardinality-encoding-benchmark/cardinality-encoding-20-leaf-20260722/t-26/sequential/instance.cnf",
+          "/root/proof-factory/research/covering-c1264/workspace/artifacts/cardinality-encoding-benchmark/cardinality-encoding-20-leaf-20260722/t-26/sequential/proof.drat"
+        ],
+        "exit_code": 0,
+        "log": {
+          "path": "/root/proof-factory/research/covering-c1264/workspace/artifacts/cardinality-encoding-benchmark/cardinality-encoding-20-leaf-20260722/t-26/sequential/validation.json.log",
+          "sha256": "feebdf6e87023bebe75904d69413a53a36bcd73bfd168854c5081658af9dd258"
+        },
+        "proof": {
+          "path": "/root/proof-factory/research/covering-c1264/workspace/artifacts/cardinality-encoding-benchmark/cardinality-encoding-20-leaf-20260722/t-26/sequential/proof.drat",
+          "sha256": "eff461d55f12de2c4676c28015fe132efdbf943980455d73c2b0e55aa09ad0b1"
+        },
+        "schema_version": 1,
+        "seconds_cap": 600,
+        "status": "verified",
+        "verdict": "s VERIFIED"
+      }
+    },
+    {
+      "cnf_sha256": "da3ec10921e9242949ebd64c7281796349b3aa66f421dedf0f3d7b08bfbd08ff",
+      "command": [
+        "/usr/bin/cadical",
+        "-t",
+        "60",
+        "--no-binary",
+        "/root/proof-factory/research/covering-c1264/workspace/artifacts/cardinality-encoding-benchmark/cardinality-encoding-20-leaf-20260722/t-26/kmtotalizer/instance.cnf",
+        "/root/proof-factory/research/covering-c1264/workspace/artifacts/cardinality-encoding-benchmark/cardinality-encoding-20-leaf-20260722/t-26/kmtotalizer/proof.drat"
+      ],
+      "completed_at": "2026-07-22T17:16:07.241037+00:00",
+      "encoding": "kmtotalizer",
+      "leaf_id": "t-26",
+      "path": "artifacts/cardinality-encoding-benchmark/cardinality-encoding-20-leaf-20260722/t-26/kmtotalizer",
+      "proof": {
+        "bytes": 33963939,
+        "sha256": "c7d70b4c23bcaeb0959a6c108f5f2366cb4f042a3d24992b95f2a9488567c9a1"
+      },
+      "schema_version": 1,
+      "seconds_cap": 60,
+      "solver_elapsed_seconds": 9.517389281885698,
+      "solver_exit_code": 20,
+      "solver_sha256": "7b73df0a6d9cf3c751a1948300e5baff8e82c4d39bcd88f0c063b5f5cfb8b33e",
+      "status": "UNSAT_VERIFIED",
+      "validation": {
+        "checked_at": "2026-07-22T17:16:06.950285+00:00",
+        "checker": {
+          "path": "/root/proof-factory/research/covering-c1264/workspace/toolchains/drat-trim/drat-trim",
+          "sha256": "92f0aa9575ed519d66a99b8b1b3dde6ece4618ae4c202a3a4b200265dda0aa7a"
+        },
+        "cnf": {
+          "path": "/root/proof-factory/research/covering-c1264/workspace/artifacts/cardinality-encoding-benchmark/cardinality-encoding-20-leaf-20260722/t-26/kmtotalizer/instance.cnf",
+          "sha256": "da3ec10921e9242949ebd64c7281796349b3aa66f421dedf0f3d7b08bfbd08ff"
+        },
+        "command": [
+          "/root/proof-factory/research/covering-c1264/workspace/toolchains/drat-trim/drat-trim",
+          "/root/proof-factory/research/covering-c1264/workspace/artifacts/cardinality-encoding-benchmark/cardinality-encoding-20-leaf-20260722/t-26/kmtotalizer/instance.cnf",
+          "/root/proof-factory/research/covering-c1264/workspace/artifacts/cardinality-encoding-benchmark/cardinality-encoding-20-leaf-20260722/t-26/kmtotalizer/proof.drat"
+        ],
+        "exit_code": 0,
+        "log": {
+          "path": "/root/proof-factory/research/covering-c1264/workspace/artifacts/cardinality-encoding-benchmark/cardinality-encoding-20-leaf-20260722/t-26/kmtotalizer/validation.json.log",
+          "sha256": "51dd92d49f4d16a436433932721e6fb222f873b1316cb81ba309f873a1856091"
+        },
+        "proof": {
+          "path": "/root/proof-factory/research/covering-c1264/workspace/artifacts/cardinality-encoding-benchmark/cardinality-encoding-20-leaf-20260722/t-26/kmtotalizer/proof.drat",
+          "sha256": "c7d70b4c23bcaeb0959a6c108f5f2366cb4f042a3d24992b95f2a9488567c9a1"
         },
         "schema_version": 1,
         "seconds_cap": 600,
