@@ -75,6 +75,7 @@ def build() -> dict[str, object]:
     ]
     return {
         "schema_version": 1,
+        "expected_leaf_count": 32,
         "run_id": "sequential-open-frontier-32-v5-20260722",
         "predecessor": {
             "run_id": "cardinality-encoding-20-leaf-20260722",
