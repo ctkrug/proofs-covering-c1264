@@ -1,0 +1,8 @@
+{
+  "schema_version": 1,
+  "status": "invalidated",
+  "reason": "The global at-most-eight sequential counter was allocated with top_id equal to the primary-variable count after point-degree counters had already allocated auxiliaries. Reused auxiliary identifiers coupled independent counters and made the CNF semantically stronger than the declared covering problem.",
+  "drat_replay": "The DRAT proof correctly verifies the emitted CNF but cannot validate the incorrect source-to-CNF transformation.",
+  "mathematical_result": "UNKNOWN",
+  "corrective_action": "Allocate every later cardinality encoding above the current CNF maximum variable and add explicit auxiliary-range receipts plus semantic cross-encoding controls."
+}

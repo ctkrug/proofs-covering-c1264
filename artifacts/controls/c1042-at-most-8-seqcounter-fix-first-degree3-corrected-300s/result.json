@@ -1,0 +1,90 @@
+{
+  "auxiliary_ranges": [
+    {
+      "first": 211,
+      "last": 453,
+      "purpose": "point-0-at-least-3"
+    },
+    {
+      "first": 454,
+      "last": 696,
+      "purpose": "point-1-at-least-3"
+    },
+    {
+      "first": 697,
+      "last": 939,
+      "purpose": "point-2-at-least-3"
+    },
+    {
+      "first": 940,
+      "last": 1182,
+      "purpose": "point-3-at-least-3"
+    },
+    {
+      "first": 1183,
+      "last": 1425,
+      "purpose": "point-4-at-least-3"
+    },
+    {
+      "first": 1426,
+      "last": 1668,
+      "purpose": "point-5-at-least-3"
+    },
+    {
+      "first": 1669,
+      "last": 1911,
+      "purpose": "point-6-at-least-3"
+    },
+    {
+      "first": 1912,
+      "last": 2154,
+      "purpose": "point-7-at-least-3"
+    },
+    {
+      "first": 2155,
+      "last": 2397,
+      "purpose": "point-8-at-least-3"
+    },
+    {
+      "first": 2398,
+      "last": 2640,
+      "purpose": "point-9-at-least-3"
+    },
+    {
+      "first": 2641,
+      "last": 4256,
+      "purpose": "global-at-most-8"
+    }
+  ],
+  "cardinality_encoding": "sequential-counter",
+  "claim_limit": "UNSAT is provisional until the preserved proof is replayed by an independent checker; UNKNOWN has no mathematical force.",
+  "clauses": 7552,
+  "cnf": {
+    "bytes": 113681,
+    "path": "artifacts/controls/c1042-at-most-8-seqcounter-fix-first-degree3-corrected-300s/instance.cnf",
+    "sha256": "23d1ee82dce82da98de0f9704b3a4bbad329407f684c24d55a11475dce09cf77"
+  },
+  "detail": "wall-clock cap reached",
+  "elapsed_seconds": 300.16831687500235,
+  "min_point_degree": 3,
+  "parameters": {
+    "at_most_blocks": 8,
+    "k": 4,
+    "t": 2,
+    "v": 10
+  },
+  "primary_variables": 210,
+  "proof": null,
+  "python_sat": "1.9.dev7",
+  "schema_version": 1,
+  "seconds_cap": 300,
+  "solver": "PySAT CaDiCaL 1.9.5 binding (cadical195)",
+  "status": "UNKNOWN",
+  "symmetry": {
+    "basis": "S_v transitive on k-subsets",
+    "fix_first_block": true
+  },
+  "timed_out": true,
+  "variables": 4256,
+  "witness": null
+}

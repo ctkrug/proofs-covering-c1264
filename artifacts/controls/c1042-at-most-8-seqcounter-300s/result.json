@@ -1,0 +1,28 @@
+{
+  "cardinality_encoding": "sequential-counter",
+  "claim_limit": "UNSAT is provisional until the preserved proof is replayed by an independent checker; UNKNOWN has no mathematical force.",
+  "clauses": 3471,
+  "cnf": {
+    "bytes": 51856,
+    "path": "artifacts/controls/c1042-at-most-8-seqcounter-300s/instance.cnf",
+    "sha256": "6cc1b355610741f26b25876b6ca3ad5cf2050be4cb8a52a855f0f210d2fb9f20"
+  },
+  "detail": "wall-clock cap reached",
+  "elapsed_seconds": 300.0768619579612,
+  "parameters": {
+    "at_most_blocks": 8,
+    "k": 4,
+    "t": 2,
+    "v": 10
+  },
+  "primary_variables": 210,
+  "proof": null,
+  "python_sat": "1.9.dev7",
+  "schema_version": 1,
+  "seconds_cap": 300,
+  "solver": "PySAT CaDiCaL 1.9.5 binding (cadical195)",
+  "status": "UNKNOWN",
+  "timed_out": true,
+  "variables": 1826,
+  "witness": null
+}

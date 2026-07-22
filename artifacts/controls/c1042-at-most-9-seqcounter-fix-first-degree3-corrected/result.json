@@ -1,0 +1,94 @@
+{
+  "auxiliary_ranges": [
+    {
+      "first": 211,
+      "last": 453,
+      "purpose": "point-0-at-least-3"
+    },
+    {
+      "first": 454,
+      "last": 696,
+      "purpose": "point-1-at-least-3"
+    },
+    {
+      "first": 697,
+      "last": 939,
+      "purpose": "point-2-at-least-3"
+    },
+    {
+      "first": 940,
+      "last": 1182,
+      "purpose": "point-3-at-least-3"
+    },
+    {
+      "first": 1183,
+      "last": 1425,
+      "purpose": "point-4-at-least-3"
+    },
+    {
+      "first": 1426,
+      "last": 1668,
+      "purpose": "point-5-at-least-3"
+    },
+    {
+      "first": 1669,
+      "last": 1911,
+      "purpose": "point-6-at-least-3"
+    },
+    {
+      "first": 1912,
+      "last": 2154,
+      "purpose": "point-7-at-least-3"
+    },
+    {
+      "first": 2155,
+      "last": 2397,
+      "purpose": "point-8-at-least-3"
+    },
+    {
+      "first": 2398,
+      "last": 2640,
+      "purpose": "point-9-at-least-3"
+    },
+    {
+      "first": 2641,
+      "last": 4449,
+      "purpose": "global-at-most-9"
+    }
+  ],
+  "cardinality_encoding": "sequential-counter",
+  "claim_limit": "UNSAT is provisional until the preserved proof is replayed by an independent checker; UNKNOWN has no mathematical force.",
+  "clauses": 7936,
+  "cnf": {
+    "bytes": 119554,
+    "path": "artifacts/controls/c1042-at-most-9-seqcounter-fix-first-degree3-corrected/instance.cnf",
+    "sha256": "dd2a15137e26801659aef8d32a5ab0c3ae99285647918bb36ab25859d8231439"
+  },
+  "detail": "",
+  "elapsed_seconds": 1.5773391660186462,
+  "min_point_degree": 3,
+  "parameters": {
+    "at_most_blocks": 9,
+    "k": 4,
+    "t": 2,
+    "v": 10
+  },
+  "primary_variables": 210,
+  "proof": null,
+  "python_sat": "1.9.dev7",
+  "schema_version": 1,
+  "seconds_cap": 60,
+  "solver": "PySAT CaDiCaL 1.9.5 binding (cadical195)",
+  "status": "SAT",
+  "symmetry": {
+    "basis": "S_v transitive on k-subsets",
+    "fix_first_block": true
+  },
+  "timed_out": false,
+  "variables": 4449,
+  "witness": {
+    "bytes": 76,
+    "path": "artifacts/controls/c1042-at-most-9-seqcounter-fix-first-degree3-corrected/witness.txt",
+    "sha256": "6905a14913b517277ea2d412a7114a0dc13dd90d6b2e70bdf7239ccfc007fb4e"
+  }
+}

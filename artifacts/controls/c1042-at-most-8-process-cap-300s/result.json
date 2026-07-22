@@ -1,0 +1,27 @@
+{
+  "claim_limit": "UNSAT is provisional until the preserved proof is replayed by an independent checker; UNKNOWN has no mathematical force.",
+  "clauses": 23625,
+  "cnf": {
+    "bytes": 391373,
+    "path": "artifacts/controls/c1042-at-most-8-process-cap-300s/instance.cnf",
+    "sha256": "d248a534f5ff417b32fca3d53c7cc3ef0d5c48ce6b54ebc674723f64bd2d188f"
+  },
+  "detail": "wall-clock cap reached",
+  "elapsed_seconds": 300.12556412495906,
+  "parameters": {
+    "at_most_blocks": 8,
+    "k": 4,
+    "t": 2,
+    "v": 10
+  },
+  "primary_variables": 210,
+  "proof": null,
+  "python_sat": "1.9.dev7",
+  "schema_version": 1,
+  "seconds_cap": 300,
+  "solver": "PySAT CaDiCaL 1.9.5 binding (cadical195)",
+  "status": "UNKNOWN",
+  "timed_out": true,
+  "variables": 1844,
+  "witness": null
+}

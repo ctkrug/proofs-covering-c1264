@@ -60,6 +60,15 @@ class BaselineTests(unittest.TestCase):
             )
             self.assertEqual(result["status"], "valid")
 
+    def test_solver_dependency_is_pinned(self) -> None:
+        self.assertEqual((ROOT / "requirements-pilot.txt").read_text(), "python-sat[pblib]==1.9.dev7\n")
+
+    def test_direct_solver_script_has_explicit_resource_and_claim_limits(self) -> None:
+        text = (ROOT / "scripts" / "run_c1264_direct_pilot.py").read_text()
+        self.assertIn("process.join(seconds)", text)
+        self.assertIn("UNKNOWN is inconclusive", text)
+        self.assertIn("overlapping auxiliary-variable range", text)
+
 
 if __name__ == "__main__":
     unittest.main()

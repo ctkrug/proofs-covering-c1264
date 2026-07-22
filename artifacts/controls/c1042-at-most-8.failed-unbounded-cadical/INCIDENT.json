@@ -1,0 +1,8 @@
+{
+  "schema_version": 1,
+  "status": "stopped_with_reason",
+  "reason": "PySAT CaDiCaL does not implement interrupt(), so the first in-process five-minute cap was ineffective. The operator interrupted the local process during proof extraction; no result is accepted.",
+  "mathematical_result": "UNKNOWN",
+  "preserved_partial_artifact": "instance.cnf",
+  "corrective_action": "Run the solver and proof extraction in a child process controlled by a parent wall-clock deadline."
+}

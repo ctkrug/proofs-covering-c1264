@@ -1,0 +1,100 @@
+{
+  "auxiliary_ranges": [
+    {
+      "first": 463,
+      "last": 4462,
+      "purpose": "point-0-equals-10"
+    },
+    {
+      "first": 4463,
+      "last": 8080,
+      "purpose": "point-1-equals-9"
+    },
+    {
+      "first": 8081,
+      "last": 11698,
+      "purpose": "point-2-equals-9"
+    },
+    {
+      "first": 11699,
+      "last": 15316,
+      "purpose": "point-3-equals-9"
+    },
+    {
+      "first": 15317,
+      "last": 18934,
+      "purpose": "point-4-equals-9"
+    },
+    {
+      "first": 18935,
+      "last": 22552,
+      "purpose": "point-5-equals-9"
+    },
+    {
+      "first": 22553,
+      "last": 26170,
+      "purpose": "point-6-equals-9"
+    },
+    {
+      "first": 26171,
+      "last": 29788,
+      "purpose": "point-7-equals-9"
+    },
+    {
+      "first": 29789,
+      "last": 33406,
+      "purpose": "point-8-equals-9"
+    },
+    {
+      "first": 33407,
+      "last": 37024,
+      "purpose": "point-9-equals-9"
+    },
+    {
+      "first": 37025,
+      "last": 40642,
+      "purpose": "point-10-equals-9"
+    },
+    {
+      "first": 40643,
+      "last": 49482,
+      "purpose": "global-at-most-20"
+    }
+  ],
+  "c1153_optimal_degrees": true,
+  "cardinality_encoding": "sequential-counter",
+  "claim_limit": "UNSAT is provisional until the preserved proof is replayed by an independent checker; UNKNOWN has no mathematical force.",
+  "clauses": 98628,
+  "cnf": {
+    "bytes": 1647766,
+    "path": "artifacts/controls/c1153-at-most-20-seqcounter-fix-first-exact-degrees-300s/instance.cnf",
+    "sha256": "a2234e45d90114783e4d2bff56015e846f0a3a88d27a20e9d10212c568058224"
+  },
+  "detail": "",
+  "elapsed_seconds": 187.78474141703919,
+  "min_point_degree": null,
+  "parameters": {
+    "at_most_blocks": 20,
+    "k": 5,
+    "t": 3,
+    "v": 11
+  },
+  "primary_variables": 462,
+  "proof": null,
+  "python_sat": "1.9.dev7",
+  "schema_version": 1,
+  "seconds_cap": 300,
+  "solver": "PySAT CaDiCaL 1.9.5 binding (cadical195)",
+  "status": "SAT",
+  "symmetry": {
+    "basis": "S_v transitive on k-subsets",
+    "fix_first_block": true
+  },
+  "timed_out": false,
+  "variables": 49482,
+  "witness": {
+    "bytes": 218,
+    "path": "artifacts/controls/c1153-at-most-20-seqcounter-fix-first-exact-degrees-300s/witness.txt",
+    "sha256": "08282192a15dcca556d53632cbeae661076ab334d8dec4aca1e2a355486aa47f"
+  }
+}

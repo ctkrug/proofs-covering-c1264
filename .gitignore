@@ -11,3 +11,7 @@ node_modules/
 *.tmp
 lab-queue/*.running.json
 # proof-factory:end
+
+# Regenerable solver instances and proof streams are represented by a hash manifest.
+artifacts/**/*.cnf
+artifacts/**/*.drat
