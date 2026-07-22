@@ -1,0 +1,124 @@
+{
+  "schema_version": 1,
+  "audited_at": "2026-07-22T13:05:00Z",
+  "problem": "C(12,6,4)",
+  "status": {
+    "maintained_range": "40 <= C(12,6,4) <= 41",
+    "finding": "The designated La Jolla Covering Repository page still reports the one-bit gap and prints a 41-block witness.",
+    "scope_warning": "The search found no newer exact-value publication, but absence from a bounded web search is not proof of novelty or nonpublication. The successor repository entry for these exact parameters was not independently extracted from its dynamic interface."
+  },
+  "authoritative_sources": [
+    {
+      "url": "https://ljcr.dmgordon.org/cover/show_cover.php?v=12&k=6&t=4",
+      "role": "designated maintained status and 41-block witness",
+      "observed": "40 <= C(12,6,4) <= 41; construction credited to Nurmela and Ostergard simulated annealing; lower bound credited to Schonheim"
+    },
+    {
+      "url": "https://ljcr.dmgordon.org/cover/show_cover.php?v=11&k=5&t=3",
+      "role": "recursive lower-bound input",
+      "observed": "C(11,5,3)=20"
+    },
+    {
+      "url": "https://ljcr.dmgordon.org/cover/show_cover.php?v=10&k=4&t=2",
+      "role": "pair-multiplicity lower-bound input",
+      "observed": "C(10,4,2)=9"
+    },
+    {
+      "url": "https://doi.org/10.5281/zenodo.19735294",
+      "role": "frozen La Jolla dataset version 1.2",
+      "observed": "Published 2026-04-24; contains best-known coverings and improvement history through the frozen database"
+    },
+    {
+      "url": "https://www.coveringrepository.com/",
+      "role": "successor maintained repository",
+      "observed": "Imports historical (v,k,t) data through March 2026 and tracks later improvements"
+    }
+  ],
+  "historical_method_map": [
+    {
+      "method": "recursive counting lower bound",
+      "source": "https://msp.org/pjm/1964/14-4/pjm-v14-n4-p29-p.pdf",
+      "relevance": "Schon's/Schoenheim's covering recurrence underlies the maintained lower-bound chain"
+    },
+    {
+      "method": "simulated annealing upper-bound construction",
+      "source": "https://www.tcs.hut.fi/Publications/info/bibdb.HUT-TCS-B10.shtml",
+      "relevance": "The maintained page attributes the 41-block construction to Nurmela and Ostergard's simulated-annealing work"
+    },
+    {
+      "method": "greedy and synthesized covering constructions",
+      "source": "https://arxiv.org/abs/math/9502238",
+      "relevance": "Historical construction framework and small-parameter upper-bound tables; not an exact exclusion method for this case"
+    },
+    {
+      "method": "covering-design lower-bound and classification survey",
+      "source": "https://www.dmgordon.org/papers/hcd.pdf",
+      "relevance": "Defines the covering number, states the Schoenheim recurrence, and notes that individual exact lower bounds often require case analysis or computation"
+    },
+    {
+      "method": "isomorph-free exhaustive classification",
+      "source": "https://researchportal.helsinki.fi/en/publications/classification-algorithms-for-codes-and-designs/",
+      "relevance": "General canonical augmentation and classification methodology applicable to a negative certificate"
+    }
+  ],
+  "verification_tooling": [
+    {
+      "tool": "CaDiCaL",
+      "source": "https://github.com/arminbiere/cadical/releases/tag/rel-1.7.3",
+      "workspace_observation": "/usr/bin/cadical reports 1.7.3 and SHA-256 7b73df0a6d9cf3c751a1948300e5baff8e82c4d39bcd88f0c063b5f5cfb8b33e"
+    },
+    {
+      "tool": "DRAT-trim",
+      "source": "https://github.com/marijnheule/drat-trim",
+      "workspace_observation": "The replay wrapper exists, but no project-scoped or system drat-trim binary/source is present in this checkout; proof replay cannot currently be reproduced here"
+    },
+    {
+      "tool": "PySAT cardinality encodings",
+      "source": "https://pysathq.github.io/docs/html/api/card.html",
+      "workspace_observation": "Pinned python-sat 1.9.dev7 is installed; official API documents seqcounter, totalizer, mtotalizer, and kmtotalizer"
+    },
+    {
+      "tool": "nauty/Traces",
+      "source": "https://users.cecs.anu.edu.au/~bdm/nauty/",
+      "workspace_observation": "Candidate canonical-labeling tool; not installed or used in the baseline audit"
+    }
+  ],
+  "local_prior_art_register": {
+    "covering_c1264_entries": [],
+    "nearest_method_ids": ["none-found"],
+    "note": "The supplied compact registry and filesystem contain no C(12,6,4) prior-art registry entry. This is a registry gap, not a novelty finding."
+  },
+  "bounded_searches": [
+    {
+      "source": "web search",
+      "query": "\"C(12,6,4)\" covering design",
+      "finding": "Recovered the maintained repository, historical construction material, and unrelated balanced 3-(12,6,4)/4-(12,6,4) design literature; no exact-value settlement located"
+    },
+    {
+      "source": "web search",
+      "query": "Nurmela Ostergard Upper bounds for covering designs by simulated annealing C(12,6,4)",
+      "finding": "Recovered the institutional technical-report record and journal metadata for the construction method"
+    },
+    {
+      "source": "web search",
+      "query": "covering designs SAT exact covering number computational proof",
+      "finding": "Found modern SAT-based work on other covering problems but no primary source applying a certified exhaustive SAT proof to C(12,6,4)"
+    },
+    {
+      "source": "local repository search",
+      "query": "C(12,6,4) prior-art registry and strategy entries",
+      "finding": "No problem-specific stable prior-art ID exists; only the campaign's internal pilot artifacts were present"
+    }
+  ],
+  "preexisting_internal_artifacts": {
+    "classification": "unpublished internal controls and scoped pilot evidence",
+    "summary": "The existing campaign summary records four link orbits excluded by residual checks, 189 replay receipts, and 47 open frontier nodes; direct depth-7 sampling provisionally closed 10/128 cubes. These do not establish an exact value.",
+    "reproducibility_gap": "Pilot receipts refer to a Mac project-scoped CaDiCaL/DRAT-trim toolchain not present in this checkout. Hashes remain recorded, but fresh replay on this host is blocked until a pinned checker is restored."
+  },
+  "external_acceptance_path": {
+    "primary_recipient": "Covering Repository maintainers",
+    "url": "https://www.coveringrepository.com/cr_contact.aspx",
+    "positive_result": "Submit the 40-block list plus direct all-495-subset checker receipt for repository verification.",
+    "negative_result": "First obtain independent proof-log/cube-cover validation and specialist review; then report the exact-value result and public certificate archive to the maintainers."
+  }
+}

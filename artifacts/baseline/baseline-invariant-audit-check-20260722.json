@@ -1,0 +1,22 @@
+{
+  "checks": {
+    "block_classes": true,
+    "candidate_count": true,
+    "incidence_double_count": true,
+    "matching_quotient": true,
+    "negative_control": true,
+    "pair_excess": true,
+    "point_forcing": true,
+    "positive_control": true,
+    "root_split": true,
+    "target_count": true,
+    "witness_hash": true
+  },
+  "claim_limit": "Checks only the baseline audit and 41-block control, not C(12,6,4)=40 or 41.",
+  "result_path": "artifacts/baseline/baseline-invariant-audit-20260722.json",
+  "result_sha256": "19eeec3e000fdb6e82083e3d13ed6f7638538a6d074f3ba528e305fa98d4e0c6",
+  "schema_version": 1,
+  "status": "valid-independent-check",
+  "witness_path": "sources/ljcr-c1264-41.txt",
+  "witness_sha256": "395bc870e7eb9e84a472873db97de553afc34afdb666545824944e89047913e5"
+}

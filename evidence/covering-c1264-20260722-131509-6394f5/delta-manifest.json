@@ -1,0 +1,563 @@
+{
+  "schema_version": 1,
+  "kind": "proof-factory-attempt-delta-manifest",
+  "attempt_id": "covering-c1264-20260722-131509-6394f5",
+  "created_at": "2026-07-22T13:15:10.480386+00:00",
+  "workspace": "/root/proof-factory/research/covering-c1264/workspace",
+  "mutable_projection_patterns": [
+    ".delegates/**",
+    ".git/**",
+    ".pytest_cache/**",
+    ".venv/**",
+    "CHECKPOINT.md",
+    "README.md",
+    "__pycache__/**",
+    "docs/DOSSIER.md",
+    "lab-archive/**",
+    "lab-queue/**",
+    "records/problem.json",
+    "records/research-state.json",
+    "venv/**"
+  ],
+  "claimed_evidence_paths": [
+    ".proof-experiments/20260722-130405-e8f38c/experiment.json",
+    ".proof-experiments/20260722-130405-e8f38c/stdout.txt",
+    ".proof-experiments/20260722-130801-6879ad/experiment.json",
+    ".proof-experiments/20260722-130801-6879ad/stderr.txt",
+    "artifacts/baseline/baseline-invariant-audit-20260722.json",
+    "artifacts/baseline/baseline-invariant-audit-check-20260722.json",
+    "artifacts/pilot/direct-no-r0-r1-frontier-depth7.json",
+    "artifacts/pilot/direct-r0-frontier-depth7.json",
+    "artifacts/pilot/link-orbit-incremental-tertiary-pilot-1000conflicts/audit.json",
+    "artifacts/pilot/link-orbit-incremental-tertiary-pilot-1000conflicts/result.json",
+    "artifacts/pilot/sample-r0-000-032/results.jsonl",
+    "artifacts/pilot/sample-r0-064-096/results.jsonl",
+    "artifacts/pilot/sample-r0-audit.json",
+    "artifacts/pilot/sample-r1-000-032/results.jsonl",
+    "artifacts/pilot/sample-r1-064-096/results.jsonl",
+    "artifacts/pilot/sample-r1-audit.json",
+    "checkers/verify_baseline_invariants.py",
+    "lab-runs/lab-covering-c1264-574a0e8c0206/segment-000001/20260722-125433-2364b6/experiment.json",
+    "lab-runs/lab-covering-c1264-574a0e8c0206/segment-000001/20260722-125433-2364b6/stdout.txt",
+    "records/labs/lab-covering-c1264-574a0e8c0206-completed-awaiting-review-segment-01.json",
+    "scripts/audit_baseline_invariants.py",
+    "scripts/run_baseline_epoch_experiment.py",
+    "sources/baseline-literature-audit-20260722.json",
+    "sources/ljcr-c1264-41.txt",
+    "sources/source-receipt.json",
+    "tests/test_baseline_invariant_audit.py"
+  ],
+  "artifact_count": 39,
+  "artifacts": [
+    {
+      "path": ".delegates/20260722-125509-06267b/experiment-verification/memo.md",
+      "role": "immutable_artifact",
+      "change": "added",
+      "claimed_evidence": false,
+      "after": {
+        "kind": "file",
+        "sha256": "eb0f2975f009ccb893b9629054c26caf577a8b5d9bfabb980fcbb7d680862d0d",
+        "size": 3825
+      }
+    },
+    {
+      "path": ".git/index",
+      "role": "mutable_projection",
+      "change": "modified",
+      "claimed_evidence": false,
+      "before": {
+        "kind": "file",
+        "sha256": "39e3adf2b47cefee3eafd485db937a4c6543791c6b414e87ef9c14e611a0a020",
+        "size": 177840
+      },
+      "after": {
+        "kind": "file",
+        "sha256": "80f0375d8f9b3a62abe7bb63d4c4fa90ea448c43596335d333008b1f681a3e24",
+        "size": 177840
+      }
+    },
+    {
+      "path": ".proof-experiments/20260722-130345-27836e/experiment.json",
+      "role": "immutable_artifact",
+      "change": "added",
+      "claimed_evidence": false,
+      "after": {
+        "kind": "file",
+        "sha256": "2c85e59d53aa010e00b7b3b14339a9ee7a9ecc89b7bf217d9db7f6916e3b04f1",
+        "size": 1928
+      }
+    },
+    {
+      "path": ".proof-experiments/20260722-130345-27836e/stderr.txt",
+      "role": "immutable_artifact",
+      "change": "added",
+      "claimed_evidence": false,
+      "after": {
+        "kind": "file",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "size": 0
+      }
+    },
+    {
+      "path": ".proof-experiments/20260722-130345-27836e/stdout.txt",
+      "role": "immutable_artifact",
+      "change": "added",
+      "claimed_evidence": false,
+      "after": {
+        "kind": "file",
+        "sha256": "3da897f6216e6924916696ac4d8c9e7e695619bdc6f07c62904cec597105cc4c",
+        "size": 1287
+      }
+    },
+    {
+      "path": ".proof-experiments/20260722-130405-e8f38c/experiment.json",
+      "role": "immutable_artifact",
+      "change": "added",
+      "claimed_evidence": true,
+      "after": {
+        "kind": "file",
+        "sha256": "88048998f13678fb092fa22e2167709ecef2f10a7a2f04cdcc9e7c118fcb9e74",
+        "size": 2769
+      }
+    },
+    {
+      "path": ".proof-experiments/20260722-130405-e8f38c/stderr.txt",
+      "role": "immutable_artifact",
+      "change": "added",
+      "claimed_evidence": false,
+      "after": {
+        "kind": "file",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "size": 0
+      }
+    },
+    {
+      "path": ".proof-experiments/20260722-130405-e8f38c/stdout.txt",
+      "role": "immutable_artifact",
+      "change": "added",
+      "claimed_evidence": true,
+      "after": {
+        "kind": "file",
+        "sha256": "d27f8f615d0f3c26bd0b06c07acd9a7665a4c77bd484e9c59ebc80ac2cbb6367",
+        "size": 1708
+      }
+    },
+    {
+      "path": ".proof-experiments/20260722-130801-6879ad/experiment.json",
+      "role": "immutable_artifact",
+      "change": "added",
+      "claimed_evidence": true,
+      "after": {
+        "kind": "file",
+        "sha256": "02b3511eab2ec4b136ce65b979fe726b49ea62f761d149cba89e216dd05e2d89",
+        "size": 1456
+      }
+    },
+    {
+      "path": ".proof-experiments/20260722-130801-6879ad/stderr.txt",
+      "role": "immutable_artifact",
+      "change": "added",
+      "claimed_evidence": true,
+      "after": {
+        "kind": "file",
+        "sha256": "dc220fb50b39f51328949386707cae0ab15356a1f63c7e211ea7979bad676f58",
+        "size": 6725
+      }
+    },
+    {
+      "path": ".proof-experiments/20260722-130801-6879ad/stdout.txt",
+      "role": "immutable_artifact",
+      "change": "added",
+      "claimed_evidence": false,
+      "after": {
+        "kind": "file",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "size": 0
+      }
+    },
+    {
+      "path": "artifacts/baseline/baseline-invariant-audit-20260722.json",
+      "role": "immutable_artifact",
+      "change": "added",
+      "claimed_evidence": true,
+      "after": {
+        "kind": "file",
+        "sha256": "19eeec3e000fdb6e82083e3d13ed6f7638538a6d074f3ba528e305fa98d4e0c6",
+        "size": 16154
+      }
+    },
+    {
+      "path": "artifacts/baseline/baseline-invariant-audit-check-20260722.json",
+      "role": "immutable_artifact",
+      "change": "added",
+      "claimed_evidence": true,
+      "after": {
+        "kind": "file",
+        "sha256": "47d01df56c03ce82e0a6c14e3ed4bd0a5f5f2ba7dfcdd2a955a2a7f28b9326f7",
+        "size": 791
+      }
+    },
+    {
+      "path": "artifacts/pilot/direct-no-r0-r1-frontier-depth7.json",
+      "role": "immutable_artifact",
+      "change": "unchanged",
+      "claimed_evidence": true,
+      "before": {
+        "kind": "file",
+        "sha256": "e814185778b468bffc58c4b13fdcd92c58a0cc1ccdd50633b1fc34ce0648483c",
+        "size": 22670
+      },
+      "after": {
+        "kind": "file",
+        "sha256": "e814185778b468bffc58c4b13fdcd92c58a0cc1ccdd50633b1fc34ce0648483c",
+        "size": 22670
+      }
+    },
+    {
+      "path": "artifacts/pilot/direct-r0-frontier-depth7.json",
+      "role": "immutable_artifact",
+      "change": "unchanged",
+      "claimed_evidence": true,
+      "before": {
+        "kind": "file",
+        "sha256": "2a23aa4d163a9097c64390b2944377bdb2f0584ba6c340785879f24c5d9ba3ca",
+        "size": 22656
+      },
+      "after": {
+        "kind": "file",
+        "sha256": "2a23aa4d163a9097c64390b2944377bdb2f0584ba6c340785879f24c5d9ba3ca",
+        "size": 22656
+      }
+    },
+    {
+      "path": "artifacts/pilot/link-orbit-incremental-tertiary-pilot-1000conflicts/audit.json",
+      "role": "immutable_artifact",
+      "change": "unchanged",
+      "claimed_evidence": true,
+      "before": {
+        "kind": "file",
+        "sha256": "50c21195c01fa4744d0f3c9f535e3da7211d6ffeb6939c6df787dbb83fd15842",
+        "size": 3145
+      },
+      "after": {
+        "kind": "file",
+        "sha256": "50c21195c01fa4744d0f3c9f535e3da7211d6ffeb6939c6df787dbb83fd15842",
+        "size": 3145
+      }
+    },
+    {
+      "path": "artifacts/pilot/link-orbit-incremental-tertiary-pilot-1000conflicts/result.json",
+      "role": "immutable_artifact",
+      "change": "unchanged",
+      "claimed_evidence": true,
+      "before": {
+        "kind": "file",
+        "sha256": "b9270db1b0e69f5f4e4c153f2421c429ec902accf0159b522e4f41c6ef281b1f",
+        "size": 25622
+      },
+      "after": {
+        "kind": "file",
+        "sha256": "b9270db1b0e69f5f4e4c153f2421c429ec902accf0159b522e4f41c6ef281b1f",
+        "size": 25622
+      }
+    },
+    {
+      "path": "artifacts/pilot/sample-r0-000-032/results.jsonl",
+      "role": "immutable_artifact",
+      "change": "unchanged",
+      "claimed_evidence": true,
+      "before": {
+        "kind": "file",
+        "sha256": "e48f962be19690a5d5912186accf49d772195c941aea65c8961d65d1cd46d5d1",
+        "size": 3790
+      },
+      "after": {
+        "kind": "file",
+        "sha256": "e48f962be19690a5d5912186accf49d772195c941aea65c8961d65d1cd46d5d1",
+        "size": 3790
+      }
+    },
+    {
+      "path": "artifacts/pilot/sample-r0-064-096/results.jsonl",
+      "role": "immutable_artifact",
+      "change": "unchanged",
+      "claimed_evidence": true,
+      "before": {
+        "kind": "file",
+        "sha256": "9b75843f8a05ba4edfcfbcdcf5d9f158c193376f1285ed75055999b1160868f0",
+        "size": 3791
+      },
+      "after": {
+        "kind": "file",
+        "sha256": "9b75843f8a05ba4edfcfbcdcf5d9f158c193376f1285ed75055999b1160868f0",
+        "size": 3791
+      }
+    },
+    {
+      "path": "artifacts/pilot/sample-r0-audit.json",
+      "role": "immutable_artifact",
+      "change": "unchanged",
+      "claimed_evidence": true,
+      "before": {
+        "kind": "file",
+        "sha256": "99daa2d698828d60a7fcbc6cf64ec3f1e7e37143cb305dccb156c1c756fc2319",
+        "size": 1579
+      },
+      "after": {
+        "kind": "file",
+        "sha256": "99daa2d698828d60a7fcbc6cf64ec3f1e7e37143cb305dccb156c1c756fc2319",
+        "size": 1579
+      }
+    },
+    {
+      "path": "artifacts/pilot/sample-r1-000-032/results.jsonl",
+      "role": "immutable_artifact",
+      "change": "unchanged",
+      "claimed_evidence": true,
+      "before": {
+        "kind": "file",
+        "sha256": "50b84fce5c125d1977ea3283d3e562d886e1c3460622d70d155de91fecc15148",
+        "size": 3789
+      },
+      "after": {
+        "kind": "file",
+        "sha256": "50b84fce5c125d1977ea3283d3e562d886e1c3460622d70d155de91fecc15148",
+        "size": 3789
+      }
+    },
+    {
+      "path": "artifacts/pilot/sample-r1-064-096/results.jsonl",
+      "role": "immutable_artifact",
+      "change": "unchanged",
+      "claimed_evidence": true,
+      "before": {
+        "kind": "file",
+        "sha256": "154aef2395c5e136e083b35c9c3819668d9fab9d5691c3cf9e2faf0cdaa653e8",
+        "size": 3795
+      },
+      "after": {
+        "kind": "file",
+        "sha256": "154aef2395c5e136e083b35c9c3819668d9fab9d5691c3cf9e2faf0cdaa653e8",
+        "size": 3795
+      }
+    },
+    {
+      "path": "artifacts/pilot/sample-r1-audit.json",
+      "role": "immutable_artifact",
+      "change": "unchanged",
+      "claimed_evidence": true,
+      "before": {
+        "kind": "file",
+        "sha256": "99105b6b514a03a9df7f83f72404be3aeb57c1c11606c16049169cb69431ca87",
+        "size": 1591
+      },
+      "after": {
+        "kind": "file",
+        "sha256": "99105b6b514a03a9df7f83f72404be3aeb57c1c11606c16049169cb69431ca87",
+        "size": 1591
+      }
+    },
+    {
+      "path": "checkers/__pycache__/verify_baseline_invariants.cpython-312.pyc",
+      "role": "mutable_projection",
+      "change": "added",
+      "claimed_evidence": false,
+      "after": {
+        "kind": "file",
+        "sha256": "73f3d55d219ff86e49352b1b3f5557c3ca236452147cf270edd773cf331ef248",
+        "size": 10050
+      }
+    },
+    {
+      "path": "checkers/verify_baseline_invariants.py",
+      "role": "immutable_artifact",
+      "change": "added",
+      "claimed_evidence": true,
+      "after": {
+        "kind": "file",
+        "sha256": "2823c4e34d8d28612e34325a64a9a8b4b76b65eff88c2b6ed69ebe910464aa4d",
+        "size": 5925
+      }
+    },
+    {
+      "path": "lab-runs/lab-covering-c1264-574a0e8c0206/segment-000001/20260722-125433-2364b6/experiment.json",
+      "role": "immutable_artifact",
+      "change": "unchanged",
+      "claimed_evidence": true,
+      "before": {
+        "kind": "file",
+        "sha256": "296001722667f1ca9d72571b1fccb4712178d5c0d40022f6905610aa2dd816fd",
+        "size": 1962
+      },
+      "after": {
+        "kind": "file",
+        "sha256": "296001722667f1ca9d72571b1fccb4712178d5c0d40022f6905610aa2dd816fd",
+        "size": 1962
+      }
+    },
+    {
+      "path": "lab-runs/lab-covering-c1264-574a0e8c0206/segment-000001/20260722-125433-2364b6/stdout.txt",
+      "role": "immutable_artifact",
+      "change": "unchanged",
+      "claimed_evidence": true,
+      "before": {
+        "kind": "file",
+        "sha256": "4feab1e8d5ba1d1e5ecf15e1d3cece2f516cfb8b7e50b9d7a2fbf0031399b478",
+        "size": 594
+      },
+      "after": {
+        "kind": "file",
+        "sha256": "4feab1e8d5ba1d1e5ecf15e1d3cece2f516cfb8b7e50b9d7a2fbf0031399b478",
+        "size": 594
+      }
+    },
+    {
+      "path": "records/attempts/20260722-epoch-0001-baseline-checkpoint.json",
+      "role": "immutable_artifact",
+      "change": "added",
+      "claimed_evidence": false,
+      "after": {
+        "kind": "file",
+        "sha256": "de641053e8a4dacadd919a45a6e9697da83277ef12fa261d2f3861e92505be73",
+        "size": 3775
+      }
+    },
+    {
+      "path": "records/attempts/20260722-epoch-0001-proof-result.json",
+      "role": "immutable_artifact",
+      "change": "added",
+      "claimed_evidence": false,
+      "after": {
+        "kind": "file",
+        "sha256": "c6aa61a3e492a8a0958d530007c581c5e2d54893e6db99ccf97c9d748484e385",
+        "size": 28214
+      }
+    },
+    {
+      "path": "records/labs/lab-covering-c1264-574a0e8c0206-completed-awaiting-review-segment-01.json",
+      "role": "immutable_artifact",
+      "change": "unchanged",
+      "claimed_evidence": true,
+      "before": {
+        "kind": "file",
+        "sha256": "58132993f5451b74f0b1f048754d4b0ab7bb93a67e5a0288b3b40310bc89e245",
+        "size": 6923
+      },
+      "after": {
+        "kind": "file",
+        "sha256": "58132993f5451b74f0b1f048754d4b0ab7bb93a67e5a0288b3b40310bc89e245",
+        "size": 6923
+      }
+    },
+    {
+      "path": "scripts/__pycache__/audit_baseline_invariants.cpython-312.pyc",
+      "role": "mutable_projection",
+      "change": "added",
+      "claimed_evidence": false,
+      "after": {
+        "kind": "file",
+        "sha256": "9b0cef5fe6d0a7bfd6b0d28817973817064ba58d91939fb1cfc649adc715d1d6",
+        "size": 10925
+      }
+    },
+    {
+      "path": "scripts/__pycache__/run_baseline_epoch_experiment.cpython-312.pyc",
+      "role": "mutable_projection",
+      "change": "added",
+      "claimed_evidence": false,
+      "after": {
+        "kind": "file",
+        "sha256": "08a640d47700376064ca0d030c8de608e033a67991dbe06b6af34754ab7e5bc1",
+        "size": 3087
+      }
+    },
+    {
+      "path": "scripts/audit_baseline_invariants.py",
+      "role": "immutable_artifact",
+      "change": "added",
+      "claimed_evidence": true,
+      "after": {
+        "kind": "file",
+        "sha256": "d5232895433829c0f6daf14b69a922eaa182a0ae3edfca6836ac935cc2131e73",
+        "size": 6823
+      }
+    },
+    {
+      "path": "scripts/run_baseline_epoch_experiment.py",
+      "role": "immutable_artifact",
+      "change": "added",
+      "claimed_evidence": true,
+      "after": {
+        "kind": "file",
+        "sha256": "798afe499acb979b81be6854b02e2f0255120f64cf9faf00847357d6dcf2454e",
+        "size": 2202
+      }
+    },
+    {
+      "path": "sources/baseline-literature-audit-20260722.json",
+      "role": "immutable_artifact",
+      "change": "added",
+      "claimed_evidence": true,
+      "after": {
+        "kind": "file",
+        "sha256": "f0655c86283b4b8fb7fccd8f2c39636eb84cfa65b2764471c9ad7491ce8ea717",
+        "size": 6679
+      }
+    },
+    {
+      "path": "sources/ljcr-c1264-41.txt",
+      "role": "immutable_artifact",
+      "change": "unchanged",
+      "claimed_evidence": true,
+      "before": {
+        "kind": "file",
+        "sha256": "395bc870e7eb9e84a472873db97de553afc34afdb666545824944e89047913e5",
+        "size": 554
+      },
+      "after": {
+        "kind": "file",
+        "sha256": "395bc870e7eb9e84a472873db97de553afc34afdb666545824944e89047913e5",
+        "size": 554
+      }
+    },
+    {
+      "path": "sources/source-receipt.json",
+      "role": "immutable_artifact",
+      "change": "unchanged",
+      "claimed_evidence": true,
+      "before": {
+        "kind": "file",
+        "sha256": "75dd59da4df80379d35de2f9acef88c9b8e6943fcbc3d4524454a7518f483eb2",
+        "size": 522
+      },
+      "after": {
+        "kind": "file",
+        "sha256": "75dd59da4df80379d35de2f9acef88c9b8e6943fcbc3d4524454a7518f483eb2",
+        "size": 522
+      }
+    },
+    {
+      "path": "tests/__pycache__/test_baseline_invariant_audit.cpython-312.pyc",
+      "role": "mutable_projection",
+      "change": "added",
+      "claimed_evidence": false,
+      "after": {
+        "kind": "file",
+        "sha256": "943dd8c750dc17e195e5adaa2f3d0c620fcf9afdcf05daf3506108f8d31430b7",
+        "size": 4012
+      }
+    },
+    {
+      "path": "tests/test_baseline_invariant_audit.py",
+      "role": "immutable_artifact",
+      "change": "added",
+      "claimed_evidence": true,
+      "after": {
+        "kind": "file",
+        "sha256": "000dcbb794d048fd105207baba1c5fe19a118fef42d4afc7f6c4662898f81a94",
+        "size": 1849
+      }
+    }
+  ],
+  "content_sha256": "165ed06de26bde35a8231f7ef99ab9e72738f46c7f9243e3245ebf6f5536a080"
+}

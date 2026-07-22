@@ -1,0 +1,377 @@
+{
+  "outcome": "progress",
+  "approach": "Mandatory source-and-reproducibility baseline plus an independently checked audit of the forced perfect-matching quotient for any hypothetical 40-block cover",
+  "strategy": {
+    "family": "baseline invariant and symmetry audit",
+    "fingerprint": "c1264-baseline-perfect-matching-audit-v1",
+    "mechanism": "Source verification, incidence double counting, exact matching enumeration, fixed-matching block classification, and a separately implemented bitmask replay",
+    "parent_ids": [],
+    "route_evaluation": {
+      "gate_proximity": 0.2,
+      "contribution_value": 0.25,
+      "decisiveness": 0.35,
+      "novelty_confidence": 0.05,
+      "novelty_risk": 0.85,
+      "scope": 0.4,
+      "reuse_value": 0.8,
+      "model_cost": 0.2,
+      "cpu_cost": 0.01
+    }
+  },
+  "hypothesis": "The maintained 40..41 status, published 41-block witness, and every arithmetic step forcing a unique excess perfect matching in a hypothetical 40-cover replay exactly under two materially different implementations.",
+  "discriminating_test": "Enumerate all 924 candidate blocks and 495 targets, check the 41-block witness and a delete-one negative control, enumerate all perfect matchings, classify blocks by complete fixed pairs, then independently recompute every result using 12-bit masks and a matching recurrence.",
+  "search_efficiency": {
+    "naive_space": "binom(924,40) = 22043617793153091129533388844582057001295550372019052408588012868316124 labelled 40-block families; the bottleneck is certified global coverage/exclusion, not generating the 924 blocks.",
+    "reductions_considered": [
+      "forced point and pair multiplicities",
+      "quotient by all 10,395 perfect matchings",
+      "canonical r=0/r=1 root split",
+      "point-link decomposition",
+      "canonical augmentation under C2 wr S5",
+      "bitset incidence kernels",
+      "cube decomposition",
+      "incremental learned-clause reuse",
+      "alternative cardinality encodings",
+      "proof-prefix and blocker reuse"
+    ],
+    "chosen_mechanism": "Prove and independently check the forced excess matching, fix one canonical matching, and split the fixed-matching family into the exhaustive r=0-present and no-r=0/r=1-present roots before any solver search.",
+    "estimated_or_measured_savings": "Exact 10,395-to-1 reduction in matching-indexed families; the 924 blocks split as 64, 480, 360, and 20 for r=0,1,2,3. No runtime speedup was measured in this baseline epoch.",
+    "soundness_guard": "The producer enumerates matchings and set incidences; the checker uses bitmasks, a dynamic matching recurrence, independent profile enumeration, and a failing delete-one witness control. All 47 repository unittests passed."
+  },
+  "space_reduction": {
+    "ambient_space": "binom(924,40) labelled 40-block families",
+    "represented_space_before": "10,395 matching-indexed exact pair-multiplicity families forced by the six excess pairs",
+    "eliminated_or_quotiented": "Relabel-equivalent choices of the unique multiplicity-10 perfect matching",
+    "represented_space_after": "one canonical fixed-matching family, exhaustively split into two root families: r=0 present; or r=0 absent and r=1 present",
+    "reduction_factor": "exactly 10,395 on the matching-family index; not claimed as a 10,395 reduction of all labelled block assignments",
+    "measurement_status": "exact",
+    "unit": "families",
+    "coverage_scope": "all hypothetical 40-block C(12,6,4) covers, up to relabeling of the 12 points",
+    "soundness_basis": "Every point has degree 20; every pair has multiplicity at least 9; the six total excess incidences give excess degree one at every point, hence a unique perfect matching. S12 is transitive on perfect matchings, and every feasible r-profile contains r=0 or, if not, r=1.",
+    "remaining_unknown": "Whether either fixed-matching root contains a 40-block cover; no global search or exclusion was run.",
+    "next_bulk_elimination": "After proof-checker restoration, use point-link canonical augmentation under C2 wr S5 and a matched sequential-counter versus kmtotalizer discriminator."
+  },
+  "tactical_learning": {
+    "prediction": "Both independent implementations will reproduce 924 candidates, 495 targets, a valid 41-cover, 10,395 matchings, and fixed-matching r-class counts [64,480,360,20].",
+    "observation": "Every predicted value matched; deleting the first published block left 485/495 targets covered, so the negative control failed as intended. The current checkout unexpectedly lacked a DRAT-trim executable/source.",
+    "surprise": "The mathematical baseline matched prediction; the proof-replay toolchain recorded by older Mac pilot receipts is not portable to this checkout.",
+    "failure_signature": "A hash-bound solver receipt can remain non-replayable on a new host when its pinned checker binary/source was never promoted into the problem workspace.",
+    "bottleneck_update": "Before testing the 47-node inherited link frontier, restore and control-test a pinned project-scoped proof checker; after that, propagation strength of the cardinality encoding is the main measured uncertainty.",
+    "reusable_assets": [
+      {
+        "name": "baseline invariant producer",
+        "use": "rebuild all forced-matching arithmetic and positive/negative controls",
+        "evidence": "scripts/audit_baseline_invariants.py sha256 d5232895433829c0f6daf14b69a922eaa182a0ae3edfca6836ac935cc2131e73"
+      },
+      {
+        "name": "independent bitmask checker",
+        "use": "fail-closed replay without sharing the producer's set representation or matching enumerator",
+        "evidence": "checkers/verify_baseline_invariants.py sha256 2823c4e34d8d28612e34325a64a9a8b4b76b65eff88c2b6ed69ebe910464aa4d"
+      },
+      {
+        "name": "source and method audit",
+        "use": "status, historical methods, tooling, searches, and acceptance path",
+        "evidence": "sources/baseline-literature-audit-20260722.json"
+      }
+    ],
+    "constraints_learned": [
+      {
+        "constraint": "Every hypothetical 40-cover has point degree 20 at all 12 points.",
+        "scope": "C(12,6,4) covers with exactly 40 blocks",
+        "evidence": "C(11,5,3)=20 plus 40*6=240, replayed in baseline result/checker"
+      },
+      {
+        "constraint": "Pair multiplicities are 10 on a perfect matching and 9 on the other 60 pairs.",
+        "scope": "C(12,6,4) covers with exactly 40 blocks",
+        "evidence": "C(10,4,2)=9, 40*15=600, and local excess degree 100-99=1"
+      },
+      {
+        "constraint": "Relative to the fixed matching, all 40-block profiles satisfy n0+n1+n2+n3=40 and n1+2n2+3n3=60, hence n0>0 or n1>0.",
+        "scope": "fixed-matching representation of hypothetical 40-covers",
+        "evidence": "221 feasible profiles exhaustively enumerated by both implementations"
+      }
+    ],
+    "route_decision": "redirect",
+    "next_discriminator": "Restore official pinned DRAT-trim, replay one small known UNSAT control and one existing leaf receipt, then dry-build/audit sequential and kmtotalizer link constraints before any matched solver tranche."
+  },
+  "prior_art_check": {
+    "nearest_method_ids": [
+      "none-found"
+    ],
+    "classification": "replication_control",
+    "exact_delta": "No new covering bound is claimed. The delta is a deterministic, independently checked baseline packet that binds the maintained witness to the exact perfect-matching and root-split reductions and records a proof-toolchain portability gap.",
+    "duplicate_risk": "The mathematical reductions are elementary and likely known to specialists or already implicit in internal pilots; presenting them as novel would be rediscovery.",
+    "comparison_test": "Compare exact status and witness against the maintained La Jolla page, the C(11,5,3) and C(10,4,2) dependency pages, and recompute every invariant independently.",
+    "decision": "control_only",
+    "source_urls": [
+      "https://ljcr.dmgordon.org/cover/show_cover.php?v=12&k=6&t=4",
+      "https://ljcr.dmgordon.org/cover/show_cover.php?v=11&k=5&t=3",
+      "https://ljcr.dmgordon.org/cover/show_cover.php?v=10&k=4&t=2",
+      "https://msp.org/pjm/1964/14-4/pjm-v14-n4-p29-p.pdf",
+      "https://www.tcs.hut.fi/Publications/info/bibdb.HUT-TCS-B10.shtml"
+    ]
+  },
+  "field_progress_assessment": {
+    "status": "not_met",
+    "gate_id": "Use the sourced contribution and verification contract.",
+    "contribution_class": "verified research-software and baseline artifact",
+    "closest_prior_result": "maintained 40 <= C(12,6,4) <= 41 with a 41-block simulated-annealing cover",
+    "measurable_improvement": "none to the covering-number bound; exact 10,395-fold matching-family quotient and two-root coverage were independently replayed as infrastructure",
+    "independent_validation": "checkers/verify_baseline_invariants.py passed all checks; repository unittest discovery passed 47/47 tests",
+    "external_audience": "Covering Repository maintainers for a future exact result; this baseline alone is not submission-worthy",
+    "remains_unproved": "existence or nonexistence of a 40-block cover",
+    "route_recommendation": "redirect to the proof-toolchain gate, then continue only with the predeclared matched cardinality-encoding discriminator because deeper unchanged branching and the prior incremental wrapper lack a positive signal"
+  },
+  "lab_review": {
+    "job_id": "lab-covering-c1264-574a0e8c0206",
+    "decision": "continue",
+    "reason": "Segment 1 hash-binds the 41-block witness, passed the exact all-495-target check, wrote a valid 1/2 checkpoint, exceeded the throughput floor, stayed below artifact-growth limits, and predeclared segment 2 as the final lifecycle test.",
+    "evidence": [
+      "records/labs/lab-covering-c1264-574a0e8c0206-completed-awaiting-review-segment-01.json sha256 58132993f5451b74f0b1f048754d4b0ab7bb93a67e5a0288b3b40310bc89e245",
+      "lab-runs/lab-covering-c1264-574a0e8c0206/segment-000001/20260722-125433-2364b6/experiment.json sha256 296001722667f1ca9d72571b1fccb4712178d5c0d40022f6905610aa2dd816fd",
+      "lab stdout reports 41 blocks, 495 covered targets, complete=false, completed_units=1/2"
+    ]
+  },
+  "strategy_status": "exhausted",
+  "summary": "The mandatory baseline is complete. The designated current source still reports 40 <= C(12,6,4) <= 41; the preserved 41-block witness covers all 495 four-subsets. A deterministic producer and materially different bitmask checker established the exact forced perfect-matching quotient and two-root split for any hypothetical 40-cover. No frontier search was run and the exact value remains open. The audit also found that this checkout lacks DRAT-trim, so historical Mac proof receipts cannot yet be freshly replayed here.",
+  "rationale": "Outcome is progress, not candidate: the epoch produced reproducible source, script, checker, result, negative control, tests, method map, acceptance path, and continuation gate, but neither a 40-block witness nor a complete UNSAT certificate. The maintained status is supported by the [La Jolla Covering Repository](https://ljcr.dmgordon.org/cover/show_cover.php?v=12&k=6&t=4), while the successor [Covering Repository](https://www.coveringrepository.com/) provides the credible external reporting channel.",
+  "claims": [
+    "The preserved 41-block source witness contains 41 distinct 6-subsets and covers all 495 4-subsets of a 12-set.",
+    "Conditional on a 40-block cover existing, every point degree is 20 and the multiplicity-10 pairs form a perfect matching; every other pair has multiplicity 9.",
+    "There are exactly 10,395 perfect matchings on 12 labelled points and the stabilizer of a fixed matching has order 46,080.",
+    "For a fixed matching the 924 blocks have r-class counts [64,480,360,20], and the r=0-present/no-r=0-r=1-present split covers every feasible 40-block profile.",
+    "No exact-value improvement or novelty claim is made."
+  ],
+  "evidence": [
+    "python3 /root/proof-factory/skills/computational-researcher/scripts/run_experiment.py ... c1264-baseline-invariant-audit-v2 returned 0 in 0.34 s",
+    "artifacts/baseline/baseline-invariant-audit-20260722.json sha256 19eeec3e000fdb6e82083e3d13ed6f7638538a6d074f3ba528e305fa98d4e0c6",
+    "artifacts/baseline/baseline-invariant-audit-check-20260722.json sha256 47d01df56c03ce82e0a6c14e3ed4bd0a5f5f2ba7dfcdd2a955a2a7f28b9326f7",
+    ".venv/bin/python -m unittest discover -s tests -p test_*.py -v passed 47/47 tests in the recorded regression experiment",
+    "source receipt binds the maintained 41-block witness at sha256 395bc870e7eb9e84a472873db97de553afc34afdb666545824944e89047913e5"
+  ],
+  "evidence_files": [
+    "sources/source-receipt.json",
+    "sources/ljcr-c1264-41.txt",
+    "sources/baseline-literature-audit-20260722.json",
+    "scripts/audit_baseline_invariants.py",
+    "scripts/run_baseline_epoch_experiment.py",
+    "checkers/verify_baseline_invariants.py",
+    "tests/test_baseline_invariant_audit.py",
+    "artifacts/baseline/baseline-invariant-audit-20260722.json",
+    "artifacts/baseline/baseline-invariant-audit-check-20260722.json",
+    ".proof-experiments/20260722-130405-e8f38c/experiment.json",
+    ".proof-experiments/20260722-130405-e8f38c/stdout.txt",
+    ".proof-experiments/20260722-130801-6879ad/experiment.json",
+    ".proof-experiments/20260722-130801-6879ad/stderr.txt",
+    "artifacts/pilot/direct-r0-frontier-depth7.json",
+    "artifacts/pilot/direct-no-r0-r1-frontier-depth7.json",
+    "artifacts/pilot/sample-r0-000-032/results.jsonl",
+    "artifacts/pilot/sample-r0-064-096/results.jsonl",
+    "artifacts/pilot/sample-r1-000-032/results.jsonl",
+    "artifacts/pilot/sample-r1-064-096/results.jsonl",
+    "artifacts/pilot/sample-r0-audit.json",
+    "artifacts/pilot/sample-r1-audit.json",
+    "artifacts/pilot/link-orbit-incremental-tertiary-pilot-1000conflicts/result.json",
+    "artifacts/pilot/link-orbit-incremental-tertiary-pilot-1000conflicts/audit.json",
+    "records/labs/lab-covering-c1264-574a0e8c0206-completed-awaiting-review-segment-01.json",
+    "lab-runs/lab-covering-c1264-574a0e8c0206/segment-000001/20260722-125433-2364b6/experiment.json",
+    "lab-runs/lab-covering-c1264-574a0e8c0206/segment-000001/20260722-125433-2364b6/stdout.txt"
+  ],
+  "next_steps": [
+    "Restore DRAT-trim from its official source at a pinned revision inside the problem workspace; record source, binary, and build hashes.",
+    "Replay a small known UNSAT control and one existing leaf proof; stop on any semantic, hash, or verdict mismatch.",
+    "Build sequential-counter and kmtotalizer versions of the same 11 link-degree equalities and add a structurally independent totalizer auditor plus non-cardinality clause diff.",
+    "Only after those gates, run the predeclared 20-leaf cold matched discriminator; promote only at 8/20 replayed closures with acceptable proof growth."
+  ],
+  "citations": [
+    "https://ljcr.dmgordon.org/cover/show_cover.php?v=12&k=6&t=4",
+    "https://ljcr.dmgordon.org/cover/show_cover.php?v=11&k=5&t=3",
+    "https://ljcr.dmgordon.org/cover/show_cover.php?v=10&k=4&t=2",
+    "https://msp.org/pjm/1964/14-4/pjm-v14-n4-p29-p.pdf",
+    "https://www.tcs.hut.fi/Publications/info/bibdb.HUT-TCS-B10.shtml",
+    "https://arxiv.org/abs/math/9502238",
+    "https://doi.org/10.5281/zenodo.19735294",
+    "https://www.coveringrepository.com/",
+    "https://www.coveringrepository.com/cr_contact.aspx",
+    "https://github.com/arminbiere/cadical/releases/tag/rel-1.7.3",
+    "https://github.com/marijnheule/drat-trim",
+    "https://pysathq.github.io/docs/html/api/card.html"
+  ],
+  "techniques": [
+    "incidence double counting",
+    "forced degree and multiplicity analysis",
+    "perfect-matching symmetry quotient",
+    "fixed-matching block classification",
+    "exhaustive integer-profile enumeration",
+    "bitmask independent checking",
+    "deterministic experiment capture",
+    "negative-control mutation",
+    "bounded prior-art search"
+  ],
+  "research_mode": "hybrid",
+  "experiments": [
+    ".proof-experiments/20260722-130405-e8f38c: baseline invariant audit passed producer and independent checker; 924 candidates, 495 targets, valid 41-cover, delete-one control uncovered 10 targets, 10,395 matchings, r-counts [64,480,360,20]",
+    ".proof-experiments/20260722-130801-6879ad: all 47 repository unittest cases passed in 15.63 seconds"
+  ],
+  "independent_checker": "checkers/verify_baseline_invariants.py uses 12-bit subset masks, a dynamic perfect-matching recurrence, and independent profile enumeration rather than the producer's tuple/set incidence and recursive matching enumeration.",
+  "transfer_insights": [],
+  "established_facts": [
+    {
+      "claim": "The preserved 41-block witness covers all 495 four-subsets.",
+      "evidence": "producer and independent bitmask checker; witness sha256 395bc870e7eb9e84a472873db97de553afc34afdb666545824944e89047913e5",
+      "scope": "the exact block list in sources/ljcr-c1264-41.txt",
+      "status": "computed"
+    },
+    {
+      "claim": "Any 40-block C(12,6,4) cover has point degrees all 20 and pair multiplicities 10 on a perfect matching and 9 elsewhere.",
+      "evidence": "double counting from maintained C(11,5,3)=20 and C(10,4,2)=9; independently replayed arithmetic",
+      "scope": "conditional on existence of a 40-block cover",
+      "status": "proved"
+    },
+    {
+      "claim": "The fixed-matching r classes contain 64, 480, 360, and 20 blocks, and the two root cases cover all 221 feasible r-profiles.",
+      "evidence": "complete enumeration in producer and independent bitmask checker",
+      "scope": "all 924 six-subsets relative to the canonical matching and all nonnegative profiles satisfying the two incidence equations",
+      "status": "computed"
+    }
+  ],
+  "ruled_out": [
+    {
+      "claim_or_route": "Scale shallow depth-7 direct cubing unchanged under the prior 10-second leaf policy.",
+      "scope": "the pre-existing deterministic 64+64 sampled cubes across the two fixed-matching root CNFs",
+      "reason": "Only 10/128 leaves closed provisionally, 7.8125%, below the declared continuation threshold, and no leaf proofs were preserved/replayed in that sample.",
+      "evidence": "artifacts/pilot/sample-r0-audit.json and sample-r1-audit.json with four hash-bound results.jsonl inputs",
+      "reopen_condition": "A materially stronger branching/encoding mechanism with a predeclared matched sample and replayed proofs."
+    },
+    {
+      "claim_or_route": "Scale the prior Glucose4 incremental-assumption wrapper unchanged.",
+      "scope": "ten selected inherited hard-tail leaves under the recorded best-effort 1,000-conflict policy",
+      "reason": "Both cold and incremental modes closed 0/10, resource work was not matched, and the wrapper could overshoot limits; this is not evidence against incremental solving in general.",
+      "evidence": "artifacts/pilot/link-orbit-incremental-tertiary-pilot-1000conflicts/result.json and audit.json",
+      "reopen_condition": "A reliably interruptible backend and resource-matched cold/incremental protocol with exact parent-plus-assumption equivalence."
+    }
+  ],
+  "open_leads": [
+    {
+      "description": "Restore a portable proof-replay toolchain before any UNSAT-producing frontier work.",
+      "rationale": "It is the cheapest fail-closed test and prevents solver-to-CNF receipts from becoming non-reproducible on this host.",
+      "next_experiment": "Pin official DRAT-trim source, build locally, hash it, and replay one small known proof plus one existing leaf receipt.",
+      "priority": "high",
+      "status": "open"
+    },
+    {
+      "description": "Matched kmtotalizer versus sequential-counter discriminator on inherited open link leaves.",
+      "rationale": "It changes the propagation/encoding mechanism while retaining the strongest verified symmetry decomposition; PySAT officially exposes both encodings.",
+      "next_experiment": "After the toolchain gate, dry-build both forms, independently audit totalizer structure and identical non-cardinality clauses, then run the deterministic 20-leaf paired tranche.",
+      "priority": "high",
+      "status": "open"
+    },
+    {
+      "description": "Positive search specialized to the forced matching and exact pair degrees.",
+      "rationale": "A 40-block witness has a compact acceptance certificate and may be cheaper than a global negative proof.",
+      "next_experiment": "Design a deterministic multi-seed local-search pilot whose moves preserve 40 blocks and score uncovered four-sets plus pair-degree violations; compare with unconstrained set-cover local search on a small fixed budget.",
+      "priority": "normal",
+      "status": "open"
+    }
+  ],
+  "blocker": "No 40-block witness is known and no exhaustive negative certificate exists. Practically, this checkout also lacks the pinned DRAT checker needed to reproduce UNSAT leaves before testing the inherited 47-node link frontier.",
+  "reopen_condition": "Reopen this completed baseline only if the maintained status changes, a cited source contradicts an invariant, or the independent checker disagrees after an environment change.",
+  "reopen_evidence": "",
+  "continuation": {
+    "objective": "Make proof replay portable, then determine whether kmtotalizer materially increases replayed closure on the inherited link frontier.",
+    "first_action": "Acquire the official DRAT-trim source at a pinned revision into a project-scoped toolchain and run checkers/replay_drat.py on a small known UNSAT CNF/proof pair.",
+    "stop_condition": "Stop or redirect if toolchain hashes/verdicts disagree, cardinality/non-cardinality audits fail, the matched encoding tranche closes fewer than 8/20 leaves, or proof growth projects above 30 GB."
+  },
+  "campaign_assessment": {
+    "decision": "hold",
+    "close_signal": "",
+    "reason": "The one-bit target and exact symmetry quotient remain attractive, but frontier compute should wait for a portable proof checker and a successful bounded encoding discriminator."
+  },
+  "strategy_proposals": [
+    {
+      "family": "cardinality-encoding portfolio",
+      "mechanism": "Replace only the 11 link-degree sequential counters with kmtotalizer while byte-comparing every other clause and replaying cold CaDiCaL proofs.",
+      "hypothesis": "kmtotalizer closes at least 8 of 20 deterministically selected open link leaves within 10 seconds each, with replayable proof growth below 30 GB projected total.",
+      "discriminating_test": "Paired cold 20-leaf benchmark after a structural totalizer audit and proof-toolchain control.",
+      "rationale": "It changes propagation and approximately halves auxiliary-variable burden in the advisory dry-build, without changing the verified decomposition; the dry-build claim still requires Sol-side reproduction."
+    },
+    {
+      "family": "degree-preserving positive local search",
+      "mechanism": "Search only 40-block families under the fixed matching, using swaps biased toward maintaining exact point/pair multiplicities and bitset delta scores for uncovered four-sets.",
+      "hypothesis": "Constraint-preserving moves reach strictly fewer uncovered four-sets than an unconstrained 40-block local-search control over the same deterministic seed budget.",
+      "discriminating_test": "Twenty fixed seeds at a short equal move budget; direct checker validates any zero-defect witness.",
+      "rationale": "A positive result needs only a compact block list, whereas an UNSAT campaign requires complete proof coverage."
+    }
+  ],
+  "synthesis_candidates": [
+    {
+      "family": "canonical-link plus alternative-cardinality synthesis",
+      "mechanism": "Keep the perfect-matching and C2 wr S5 canonical link decomposition, catalog blockers, and residual checker, but substitute a structurally audited kmtotalizer only for exact link degrees.",
+      "parent_strategy_ids": [
+        "internal-link-canonical-augmentation",
+        "pysat-kmtotalizer"
+      ],
+      "source_inputs": [
+        "pre-existing four-orbit link campaign",
+        "PySAT cardinality encoding API",
+        "Terra advisory dry-build memo"
+      ],
+      "transfer_hypothesis": "The hard tail is limited more by sequential-counter propagation/auxiliary structure than by the link decomposition itself, so changing only cardinality encoding should alter closure rates while preserving exact case coverage.",
+      "discriminating_test": "Independent dry-build equivalence audit followed by 20 matched cold leaves with replayed UNSAT proofs.",
+      "falsification_signal": "Any semantic mismatch, fewer than 8/20 replayed closures, or unacceptable proof growth.",
+      "rationale": "This combines a verified domain reduction with a different CNF information mechanism; it is not deeper branching under a renamed route."
+    }
+  ],
+  "candidate_profile": {
+    "contribution_class": "research_artifact",
+    "scholarly_question": "What is the exact value of C(12,6,4), currently maintained between 40 and 41?",
+    "meaningful_delta": "No mathematical bound delta; independently reproducible baseline and symmetry-reduction packet only.",
+    "acceptance_test": "For a terminal positive result, 40 distinct 6-subsets must cover all 495 4-subsets; for a terminal negative result, every symmetry-reduced leaf needs independently checked coverage and replayable proof logs.",
+    "closest_prior_work": [
+      {
+        "url": "https://ljcr.dmgordon.org/cover/show_cover.php?v=12&k=6&t=4",
+        "difference": "The source supplies the maintained range and 41-cover; this epoch adds no better bound."
+      },
+      {
+        "url": "https://www.tcs.hut.fi/Publications/info/bibdb.HUT-TCS-B10.shtml",
+        "difference": "Historical simulated annealing constructs upper bounds; this epoch audits the exact finite baseline and a negative-search symmetry quotient."
+      }
+    ],
+    "novelty_searches": [
+      {
+        "source": "web search",
+        "query": "\"C(12,6,4)\" covering design",
+        "url": "https://ljcr.dmgordon.org/cover/show_cover.php?v=12&k=6&t=4",
+        "finding": "No exact-value settlement located; this bounded search is not proof of novelty."
+      },
+      {
+        "source": "Zenodo La Jolla dataset",
+        "query": "C(12,6,4) maintained bound and history",
+        "url": "https://doi.org/10.5281/zenodo.19735294",
+        "finding": "Current frozen dataset identified; exact JSON entry was not extracted in the network-restricted workspace."
+      },
+      {
+        "source": "local anti-rediscovery registry",
+        "query": "problem-specific C(12,6,4) entries",
+        "url": "https://www.coveringrepository.com/",
+        "finding": "No stable local prior-art method ID exists; this is a registry gap rather than novelty evidence."
+      }
+    ],
+    "external_channel": {
+      "recipient": "Covering Repository maintainers",
+      "url": "https://www.coveringrepository.com/cr_contact.aspx",
+      "acceptance_path": "Submit a checked 40-block witness directly, or first obtain independent specialist validation of a complete public UNSAT certificate and then report the exact result."
+    },
+    "independent_validations": [],
+    "relevance": {
+      "settles_exact_open_target": false,
+      "improves_best_known_result": false,
+      "source_explicitly_requests_result": false,
+      "expert_interest_confirmed": false,
+      "new_structural_result": false,
+      "evidence_url": "https://ljcr.dmgordon.org/cover/show_cover.php?v=12&k=6&t=4"
+    },
+    "arbitrary_cutoff_extension": false
+  },
+  "tool_disclosure": "GPT-5.6 Sol principal performed source synthesis, experiment design, code review, and interpretation. A pre-existing gpt-5.6-terra experiment-verification memo was treated only as advisory and not as independent evidence. Deterministic work used Python 3.12.3 standard library, python-sat 1.9.dev7 only in inherited tests/artifacts, the repository's 47-test unittest suite, and web search/open for primary-source auditing. System CaDiCaL 1.7.3 was version/hash inspected but not used to solve this epoch; DRAT-trim was not present and no proof assistant, CAS, SAT frontier search, or external human validator was used."
+}

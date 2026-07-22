@@ -1,0 +1,43 @@
+{
+  "schema_version": 1,
+  "id": "20260722-130345-27836e",
+  "name": "c1264-baseline-invariant-audit",
+  "hypothesis": "The maintained 40-41 baseline, 41-block witness, and forced perfect-matching reduction replay exactly under independent encodings.",
+  "expected_signal": "Producer and bitmask checker agree on 924 blocks, 495 targets, valid 41-cover, failing delete-one control, 10395 matchings, and [64,480,360,20] r-classes.",
+  "command": [
+    "python3",
+    "scripts/run_baseline_epoch_experiment.py",
+    "--witness",
+    "sources/ljcr-c1264-41.txt",
+    "--result",
+    "artifacts/baseline/baseline-invariant-audit-20260722.json",
+    "--check",
+    "artifacts/baseline/baseline-invariant-audit-check-20260722.json"
+  ],
+  "cwd": "/root/proof-factory/research/covering-c1264/workspace",
+  "seed": 0,
+  "timeout_seconds": 60,
+  "memory_limit_mb": 256,
+  "memory_limit_enforced": true,
+  "started_at": "2026-07-22T13:03:45.713852+00:00",
+  "finished_at": "2026-07-22T13:03:45.997662+00:00",
+  "duration_seconds": 0.284,
+  "returncode": 0,
+  "timed_out": false,
+  "python": "3.12.3",
+  "platform": "Linux-6.8.0-124-generic-x86_64-with-glibc2.39",
+  "git_commit": "084014675cb43d36190d9a73d3935c40b7412a03",
+  "source_urls": [
+    "https://ljcr.dmgordon.org/cover/show_cover.php?v=12&k=6&t=4"
+  ],
+  "input_artifacts": {
+    "/root/proof-factory/research/covering-c1264/workspace/scripts/run_baseline_epoch_experiment.py": "d5e0a021495e7225c42d98c2309fa64596c159700a440f8ce3125cbcdcd47e74",
+    "/root/proof-factory/research/covering-c1264/workspace/sources/ljcr-c1264-41.txt": "395bc870e7eb9e84a472873db97de553afc34afdb666545824944e89047913e5"
+  },
+  "peak_child_memory_rusage": 17920,
+  "peak_child_memory_unit": "kilobytes",
+  "artifacts": {
+    "stdout.txt": "3da897f6216e6924916696ac4d8c9e7e695619bdc6f07c62904cec597105cc4c",
+    "stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  }
+}

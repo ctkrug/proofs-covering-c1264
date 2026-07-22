@@ -1,0 +1,54 @@
+{
+  "schema_version": 1,
+  "epoch": 1,
+  "recorded_at": "2026-07-22T13:05:00Z",
+  "phase": "mandatory-baseline",
+  "outcome": "progress",
+  "claim_limit": "No 40-block search or global exclusion was attempted. C(12,6,4) remains open in the maintained range 40..41.",
+  "established": [
+    "The designated current page reports 40 <= C(12,6,4) <= 41 and its 41 blocks cover all 495 four-subsets.",
+    "A hypothetical 40-block cover has all point degrees 20 and pair multiplicities 9 except for a unique perfect matching of six multiplicity-10 pairs.",
+    "There are exactly 10,395 possible perfect matchings; relabeling fixes one matching, leaving a stabilizer of order 46,080.",
+    "Relative to the fixed matching the 924 blocks split by complete-pair count r as 64, 480, 360, 20; every feasible 40-block r-profile has an r=0 block or, if none, an r=1 block."
+  ],
+  "baseline_experiment": {
+    "id": "20260722-130405-e8f38c",
+    "result": "artifacts/baseline/baseline-invariant-audit-20260722.json",
+    "result_sha256": "19eeec3e000fdb6e82083e3d13ed6f7638538a6d074f3ba528e305fa98d4e0c6",
+    "checker": "artifacts/baseline/baseline-invariant-audit-check-20260722.json",
+    "checker_sha256": "47d01df56c03ce82e0a6c14e3ed4bd0a5f5f2ba7dfcdd2a955a2a7f28b9326f7",
+    "negative_control": "Deleting the first published block leaves 485/495 targets covered, so the control correctly fails."
+  },
+  "scoped_internal_state": {
+    "direct_depth7_sample": "10/128 provisional closures; no retained/replayed proofs in that sample, so no exclusions promoted",
+    "link_campaign": "four catalogued link orbits with residual exclusions; 189 recorded replay receipts; 47 canonical frontier nodes still open",
+    "stopped_unchanged_routes": [
+      "deeper fourth-layer first-child branching without a representative matched sample",
+      "Glucose4 incremental reuse under the prior best-effort wrapper/caps"
+    ]
+  },
+  "tooling_gate": {
+    "available": "system CaDiCaL 1.7.3, SHA-256 7b73df0a6d9cf3c751a1948300e5baff8e82c4d39bcd88f0c063b5f5cfb8b33e; python-sat 1.9.dev7",
+    "missing": "No DRAT-trim binary/source is present in this problem checkout, although a replay wrapper and historical receipts exist.",
+    "required_before_frontier": "Restore a pinned project-scoped proof checker from the official source and replay a small known UNSAT control plus one existing leaf receipt. Fail closed on any hash or verdict mismatch."
+  },
+  "next_route": {
+    "family": "matched cardinality-encoding discriminator",
+    "proposal": "After the tooling gate, compare kmtotalizer against the existing sequential counter on 20 deterministically selected open link-frontier leaves, cold CaDiCaL 1.7.3 at 10 seconds each.",
+    "controls": [
+      "same primary-variable order and identical non-cardinality clauses",
+      "separate structural totalizer auditor rather than PySAT-shared checking",
+      "hash-bound catalog-4 blocker rebuilt and audited",
+      "UNSAT counts only after proof replay; SAT goes to direct link/orbit/residual checks",
+      "published 41-block witness remains the positive end-to-end control"
+    ],
+    "success_signal": "At least 8/20 replayed closures, no semantic disagreement, and projected proof storage below 30 GB.",
+    "stop_signal": "Fewer than 8/20 replayed closures, any audit mismatch, or excessive proof growth; do not deepen or raise timeouts unchanged."
+  },
+  "lab_review": {
+    "job_id": "lab-covering-c1264-574a0e8c0206",
+    "decision": "continue",
+    "reason": "Segment 1 passed its exact 41-cover check, checkpoint, throughput, correctness, and artifact-growth thresholds; segment 2 is the predeclared final lifecycle control.",
+    "scope": "orchestration validation only, not mathematical progress toward excluding 40"
+  }
+}

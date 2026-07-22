@@ -1,0 +1,43 @@
+{
+  "schema_version": 1,
+  "id": "20260722-130801-6879ad",
+  "name": "c1264-baseline-regression-suite",
+  "hypothesis": "The new baseline audit composes with all existing bounded campaign auditors without regression.",
+  "expected_signal": "All 47 unittest cases pass, including producer/checker agreement and existing symmetry/CNF auditors.",
+  "command": [
+    ".venv/bin/python",
+    "-m",
+    "unittest",
+    "discover",
+    "-s",
+    "tests",
+    "-p",
+    "test_*.py",
+    "-v"
+  ],
+  "cwd": "/root/proof-factory/research/covering-c1264/workspace",
+  "seed": 0,
+  "timeout_seconds": 60,
+  "memory_limit_mb": 512,
+  "memory_limit_enforced": true,
+  "started_at": "2026-07-22T13:08:01.055469+00:00",
+  "finished_at": "2026-07-22T13:08:16.685253+00:00",
+  "duration_seconds": 15.63,
+  "returncode": 0,
+  "timed_out": false,
+  "python": "3.12.3",
+  "platform": "Linux-6.8.0-124-generic-x86_64-with-glibc2.39",
+  "git_commit": "084014675cb43d36190d9a73d3935c40b7412a03",
+  "source_urls": [
+    "https://ljcr.dmgordon.org/cover/show_cover.php?v=12&k=6&t=4"
+  ],
+  "input_artifacts": {
+    "/usr/bin/python3.12": "1643dacd9feaedc58f3cc581e4d22577dfe25c09b10282936186ccf0f2e61118"
+  },
+  "peak_child_memory_rusage": 71124,
+  "peak_child_memory_unit": "kilobytes",
+  "artifacts": {
+    "stdout.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr.txt": "dc220fb50b39f51328949386707cae0ab15356a1f63c7e211ea7979bad676f58"
+  }
+}
