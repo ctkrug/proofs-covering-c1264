@@ -1,0 +1,32 @@
+{
+  "schema_version": 1,
+  "problem_id": "covering-c1264",
+  "phase": "baseline-and-pilot-design",
+  "naive_cost": "choose 40 of 924 blocks, approximately 2.20e70 subsets",
+  "chosen_reductions": [
+    "force all point degrees to 20",
+    "force pair multiplicity 10 on a perfect matching and 9 elsewhere",
+    "fix one of 10395 equivalent perfect matchings",
+    "split into two exhaustive canonical root cases r0-present and no-r0-r1-present",
+    "use bitsets for the 495 coverage constraints",
+    "use deterministic cube ranges with independently checked coverage",
+    "reuse learned clauses only under an identical variable map",
+    "stream and hash compressed proof artifacts"
+  ],
+  "expected_throughput_gain": "at least the exact 10395-fold matching quotient before solver-dependent gains; root and cube gains must be measured",
+  "soundness_basis": "double-counted point and pair incidences plus the action of S12; full derivation is in docs/BASELINE.md",
+  "uncompressed_remainder": "the two canonical root cases and all leaves of their independently checked cube frontier",
+  "pilot_core_hours": {"minimum": 1, "maximum": 4},
+  "green_gate": {
+    "controls_and_proof_replay": "pass",
+    "shared_determinate_cases": 32,
+    "sampled_cubes": 128,
+    "minimum_fraction_closed": 0.8,
+    "maximum_projected_core_hours": 250,
+    "maximum_projected_proof_gb": 30
+  },
+  "yellow_gate": "20-80% sampled cubes close or projection is 250-1000 core-hours; permit one bounded redesign tranche",
+  "red_gate": "semantic disagreement, orbit/proof-replay failure, projection above 1000 core-hours after redesign, or proof growth above 30 GB",
+  "resource_gate": "do not compete with the active R(5,5) census or residual SAT on the droplet",
+  "decision_value": "either settle an exact classical covering number or produce reusable proof-producing covering-design infrastructure"
+}
