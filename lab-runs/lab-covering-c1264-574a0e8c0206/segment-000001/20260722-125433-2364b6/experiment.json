@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "id": "20260722-125433-2364b6",
+  "name": "C(12,6,4) checkpoint lifecycle canary segment 1/2",
+  "hypothesis": "Two bounded exact 41-cover checks survive a durable review boundary and produce a final completion event.",
+  "expected_signal": "Segment 1 records 1/2 correct with checkpoint; after continue, segment 2 records 2/2 complete; both bind the known witness.",
+  "command": [
+    "python3",
+    "scripts/run_24_7_lifecycle_canary.py",
+    "--checker",
+    "checkers/verify_cover.py",
+    "--witness",
+    "sources/ljcr-c1264-41.txt",
+    "--run-id",
+    "c1264-24x7-20260722"
+  ],
+  "cwd": "/root/proof-factory/research/covering-c1264/workspace",
+  "seed": 0,
+  "timeout_seconds": 60,
+  "memory_limit_mb": 128,
+  "memory_limit_enforced": true,
+  "started_at": "2026-07-22T12:54:33.965291+00:00",
+  "finished_at": "2026-07-22T12:54:34.093684+00:00",
+  "duration_seconds": 0.128,
+  "returncode": 0,
+  "timed_out": false,
+  "python": "3.12.3",
+  "platform": "Linux-6.8.0-124-generic-x86_64-with-glibc2.39",
+  "git_commit": "a208bac1b8842145ec77d607d6812a5b5c55eed0",
+  "source_urls": [
+    "https://ljcr.dmgordon.org/cover/show_cover.php?v=12&k=6&t=4"
+  ],
+  "input_artifacts": {
+    "/root/proof-factory/research/covering-c1264/workspace/scripts/run_24_7_lifecycle_canary.py": "3da40e13595c77ab8923a22dfb5943a52f95acd00d9a94c6a06df781873d3d79",
+    "/root/proof-factory/research/covering-c1264/workspace/checkers/verify_cover.py": "933123332c559cfd545f60a9f29f5b4d00fad6a79e79678a7aebceab68024888",
+    "/root/proof-factory/research/covering-c1264/workspace/sources/ljcr-c1264-41.txt": "395bc870e7eb9e84a472873db97de553afc34afdb666545824944e89047913e5"
+  },
+  "peak_child_memory_rusage": 17920,
+  "peak_child_memory_unit": "kilobytes",
+  "artifacts": {
+    "stdout.txt": "4feab1e8d5ba1d1e5ecf15e1d3cece2f516cfb8b7e50b9d7a2fbf0031399b478",
+    "stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  }
+}
