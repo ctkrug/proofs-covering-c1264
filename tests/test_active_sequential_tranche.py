@@ -18,8 +18,8 @@ SPEC.loader.exec_module(builder)
 
 class ActiveSequentialTrancheTests(unittest.TestCase):
     def setUp(self) -> None:
-        self.portfolio = json.loads((ROOT / builder.PORTFOLIO).read_text(encoding="utf-8"))
-        self.manifest = builder.build()
+        self.manifest = json.loads((ROOT / builder.OUTPUT).read_text(encoding="utf-8"))
+        self.portfolio = json.loads((ROOT / self.manifest["portfolio_snapshot"]["path"]).read_text(encoding="utf-8"))
 
     def test_exact_seven_orbit_job_resolves_before_execution(self) -> None:
         builder.validate(self.manifest, self.portfolio)

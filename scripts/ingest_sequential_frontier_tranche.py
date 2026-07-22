@@ -25,9 +25,19 @@ def receipt(path: Path) -> dict[str, str]:
     return {"path": str(path), "sha256": sha(ROOT / path)}
 
 
-def ingest(checkpoint_path: Path = CHECKPOINT, run_id: str = RUN_ID) -> dict:
+def ingest(checkpoint_path: Path = CHECKPOINT, run_id: str = RUN_ID,
+           tranche_audit_path: Path | None = None) -> dict:
     manifest = json.loads(MANIFEST.read_text())
     checkpoint = json.loads((ROOT / checkpoint_path).read_text())
+    tranche_audit = None
+    audited = {}
+    if tranche_audit_path is not None:
+        tranche_audit = json.loads((ROOT / tranche_audit_path).read_text())
+        if tranche_audit.get("status") != "valid":
+            raise ValueError("frozen-tranche independent audit is not valid")
+        if tranche_audit["checkpoint"]["sha256"] != sha(ROOT / checkpoint_path):
+            raise ValueError("frozen-tranche independent audit is bound to another checkpoint")
+        audited = {row["leaf_id"]: row for row in tranche_audit["results"]}
     nodes = {row["id"]: row for row in manifest["nodes"]}
     before = {row["id"] for row in manifest["nodes"] if row["final_coverage_status"] != "open"}
     sources = []
@@ -67,11 +77,19 @@ def ingest(checkpoint_path: Path = CHECKPOINT, run_id: str = RUN_ID) -> dict:
             proof = result["proof"]
             if validation.get("status") != "verified" or validation["proof"]["sha256"] != proof["sha256"]:
                 raise ValueError(f"proof replay disagreement for {node['id']}")
+            if tranche_audit is None:
+                raise ValueError("refusing to ingest UNSAT without a post-tranche independent audit")
+            independent = audited.get(node["id"])
+            if not independent or independent.get("independent_replay") != "verified":
+                raise ValueError(f"post-tranche independent replay missing for {node['id']}")
+            if independent.get("proof_sha256") != proof["sha256"]:
+                raise ValueError(f"post-tranche proof hash disagreement for {node['id']}")
             outcome.update({
                 "status": "unsat_certified",
                 "proof_sha256": proof["sha256"],
                 "proof_bytes": int(proof["bytes"]),
                 "replay_receipt": receipt(validation_path),
+                "post_tranche_independent_replay_receipt": receipt(tranche_audit_path),
             })
             proof_bytes += int(proof["bytes"])
             certified.append(node["id"])
@@ -147,8 +165,9 @@ def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("--checkpoint", type=Path, default=CHECKPOINT)
     parser.add_argument("--run-id", default=RUN_ID)
+    parser.add_argument("--tranche-audit", type=Path, required=True)
     args = parser.parse_args()
-    value = ingest(args.checkpoint, args.run_id)
+    value = ingest(args.checkpoint, args.run_id, args.tranche_audit)
     MANIFEST.write_text(json.dumps(value, indent=2, sort_keys=True) + "\n")
     print(f"updated {MANIFEST}: {value['counts']['closed']}/47 closed")
 

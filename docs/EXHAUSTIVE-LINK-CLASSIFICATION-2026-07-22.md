@@ -39,7 +39,7 @@ certificates and add no coverage.
 The SAT results at `t-16` and `t-17` discovered two new link orbits. They are structural discoveries,
 not closed frontier nodes. Their residual extension to a 40-cover remains a separate required test.
 
-## Bounded next gate
+## Bounded tranche result
 
 The first classification tranche contains exactly the 12 audited open nodes never measured by
 sequential search, ordered by inherited CNF clause count. Each receives a cold 60-second CaDiCaL run,
@@ -50,3 +50,38 @@ canonicalized; a new orbit stops the tranche and triggers catalogue/blocker/fron
 The tranche manifest is rejected before execution if it contains a certified node, has a duplicate or
 unknown node, omits the complete certified-node preservation set, or binds any blocker other than the
 hash-pinned active 2,576-clause blocker.
+
+The frozen tranche completed all 12 cases without a protocol change. Six cases closed by fresh
+independently replayed UNSAT certificates: `t-21`, `t-22`, `t-23`, `t-25`, `t-28`, and `t-31`.
+The other six reached the fixed 60-second cap. A separate post-tranche checker reconstructed every
+CNF binding, checked the seven-orbit blocker hash, hashed every result and proof, and replayed all six
+proofs. Portfolio verification and the blocker-monotonicity/frontier audit then passed. The corrected
+global ledger is therefore **32/47**, with 15 audited nodes open.
+
+The open set partitions exactly into:
+
+- one never-measured node: `s-r0-1`;
+- twelve fixed-cap timeout nodes: `s-r0-2`, `s-r0-3`, `s-r0-4`, `s-r0-5`, `s-r1-0`, `s-r1-1`,
+  `s-r1-15`, `s-r1-2`, `s-r1-3`, `s-r1-4`, `t-1`, and `t-10`;
+- two nodes whose earlier SAT outcomes discovered newly blocked orbits and therefore require
+  remeasurement under the current blocker: `t-16` and `t-17`.
+
+## Sixth- and seventh-orbit extension tests
+
+Each new orbit received a separately bounded 300-second exact residual-extension test. Both formulas
+were UNSAT well inside the cap. The in-process proof for `t-16` failed replay and was rejected; a fresh
+external CaDiCaL proof was generated and independently replayed instead. The `t-17` proof replayed
+directly. Independent checkers validated each 20-block link, reconstructed the 230 uncovered-four-set
+clauses and all 55 exact residual pair equalities, compared the complete CNF, and replayed the proof.
+Thus both known new orbits are certified unable to extend to a 40-cover. This does **not** make the
+seven-orbit catalogue exhaustive.
+
+## Review decision and next discriminator
+
+Do not launch another generic sweep. The cheapest theorem-relevant next experiment is a frozen
+three-node active-blocker cleanup: remeasure `t-16` and `t-17` under the seven-orbit blocker, where a
+SAT result would necessarily expose an eighth orbit, and measure the sole never-tested node
+`s-r0-1`. Use the existing sequential encoding and 60-second cap only as a discriminator. Stop after
+those three results and review. If either stale-orbit node is SAT, validate and rebuild immediately;
+if they close and `s-r0-1` closes, direct subsequent effort to a structurally stratified sample of the
+12-case timeout cluster rather than raising every timeout uniformly.

@@ -1,0 +1,37 @@
+{
+  "checker": {
+    "path": ".venv/sat-audit-tools/drat-trim/drat-trim",
+    "sha256": "f58f63b0f76945d4c4c9ff6e87afaf870f579e67c0f7cca589492df8fc7ebd47"
+  },
+  "claim_limit": "Excludes extension of this one independently validated link orbit; does not exhaust all link orbits.",
+  "cnf": {
+    "clauses": 144814,
+    "coverage_constraints": 230,
+    "pair_equalities": 55,
+    "path": "artifacts/experiments/link-orbit-t-16-extension-300s-20260722/instance.cnf",
+    "sha256": "d769e2b73b84e2249332f375cf8f4fbae24e9eeb4103ce9361fed31cdfc65a88",
+    "variables": 72754
+  },
+  "link": {
+    "path": "artifacts/sequential-frontier-sweep/sequential-unmeasured-frontier-24-v5-20260722/t-16/sequential/witness.txt",
+    "sha256": "92b42459ddffa9d911ec9d15d3c12837838b440136921de323220765948533ef"
+  },
+  "orbit": {
+    "canonical_sha256": "31fb7b6b50ebbab8a549bad171c3e42c20448c88a1ec1c0f95a167188f974374",
+    "path": "artifacts/discoveries/link-orbit-t-16/orbit.json",
+    "sha256": "a92ef704b34a39a8cc645c356c704f123192d4e134ea3553fc54aa5fb0e15bfd"
+  },
+  "proof": {
+    "bytes": 23441579,
+    "path": "artifacts/experiments/link-orbit-t-16-extension-300s-20260722/external.drat",
+    "sha256": "82a85183d8a0af12d55228875d4b130269398288b90e5e91b0b87817a3c0fc65"
+  },
+  "replay_exit_code": 0,
+  "result": {
+    "path": "artifacts/experiments/link-orbit-t-16-extension-300s-20260722/result.json",
+    "sha256": "397088276023fa031cb47786a8d2f4eeaa01eaaa2296b35778f726b00ffea12f"
+  },
+  "schema_version": 1,
+  "status": "verified_unsat_fixed_link_extension",
+  "verdict": "s VERIFIED"
+}

@@ -78,7 +78,10 @@ def verify(manifest_path: Path) -> None:
                 assert outcome.get("direct_cover_receipt") and outcome.get("canonicalization_receipt")
             else:
                 assert outcome.get("status") in {"unknown", "provisional_unsat", "provisional_sat", "error"}
-            for receipt_key in ("result_receipt", "replay_receipt", "independent_audit_receipt"):
+            for receipt_key in (
+                "result_receipt", "replay_receipt", "independent_audit_receipt",
+                "post_tranche_independent_replay_receipt",
+            ):
                 receipt = outcome.get(receipt_key)
                 if receipt:
                     assert digest(ROOT / receipt["path"]) == receipt["sha256"], f"{receipt_key} hash mismatch"
