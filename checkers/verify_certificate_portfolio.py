@@ -89,6 +89,7 @@ def verify(manifest_path: Path) -> None:
 
     closed = sum(row["final_coverage_status"] != "open" for row in nodes)
     assert manifest["counts"] == {"total": 47, "closed": closed, "open": 47 - closed}
+    cumulative = []
     for tranche in manifest["tranches"]:
         if "source_results" in tranche:
             assert len(tranche["source_results"]) == tranche["completed_solver_runs"]
@@ -97,7 +98,10 @@ def verify(manifest_path: Path) -> None:
         else:
             source = tranche["source_checkpoint"]
             assert digest(ROOT / source["path"]) == source["sha256"], "tranche checkpoint hash mismatch"
-        assert tranche["cumulative_closed_out_of_47"] == f"{closed}/47"
+        tranche_closed = int(tranche["cumulative_closed_out_of_47"].split("/", 1)[0])
+        assert tranche["cumulative_closed_out_of_47"].endswith("/47") and tranche_closed <= closed
+        cumulative.append(tranche_closed)
+    assert cumulative == sorted(cumulative) and (not cumulative or cumulative[-1] == closed)
     identity = [{key: row[key] for key in ("id", "kind", "root_index", "secondary_index",
         "tertiary_index", "source_path", "inherited_result_sha256")} for row in nodes]
     assert canonical_hash(identity) == manifest["frontier_definition_sha256"]

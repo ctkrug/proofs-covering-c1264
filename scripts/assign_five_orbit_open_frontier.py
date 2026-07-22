@@ -13,6 +13,7 @@ from build_certificate_portfolio import canonical_hash
 ROOT = Path(__file__).resolve().parents[1]
 MANIFEST = Path("artifacts/portfolio/frontier-manifest-v1.json")
 CHECKPOINT = Path("artifacts/cardinality-encoding-benchmark/cardinality-encoding-20-leaf-20260722/checkpoint.json")
+CONTINUATION = Path("artifacts/experiments/sequential-open-frontier-30-v5-native-replay-20260722/manifest.json")
 OUTPUT = Path("artifacts/portfolio/five-orbit-dynamic-assignment.json")
 
 
@@ -29,21 +30,24 @@ def assign() -> tuple[dict, dict]:
     manifest = json.loads((ROOT / MANIFEST).read_text())
     checkpoint = json.loads((ROOT / CHECKPOINT).read_text())
     sequential = {row["leaf_id"]: row for row in checkpoint["results"] if row["encoding"] == "sequential"}
+    continuation = json.loads((ROOT / CONTINUATION).read_text())
+    preserved = {row["leaf_id"] for row in continuation["predecessor_completed_units"]["preserved_results"]}
     assignments = []
     for node in manifest["nodes"]:
         if node["final_coverage_status"] != "open":
             continue
         methods = node["assigned_methods"]
         measured = sequential.get(node["id"])
-        if measured is None:
-            append_once(methods, "sequential")
-            hard_class = "unmeasured_five_orbit_frontier"
-            rationale = "default cheap harvester at the frozen short cap"
-        elif measured["status"] == "SAT_NEW_ORBIT":
+        sequential_outcomes = [row for row in node["outcomes"] if row.get("method") == "sequential"]
+        if node["id"] == "s-r1-3":
             append_once(methods, "alternative_cubing")
             append_once(methods, "forced_matching_exact_degree_40_block_witness")
             hard_class = "fifth_orbit_structural_constructive"
             rationale = "new link orbit and replayed residual obstruction merit structural branching and direct witness work"
+        elif measured is None and not sequential_outcomes and node["id"] not in preserved:
+            append_once(methods, "sequential")
+            hard_class = "unmeasured_five_orbit_frontier"
+            rationale = "default cheap harvester at the frozen short cap"
         else:
             append_once(methods, "alternative_cubing")
             append_once(methods, "pb_cp_sat")
@@ -52,7 +56,12 @@ def assign() -> tuple[dict, dict]:
         assignments.append({
             "node_id": node["id"],
             "structural_class": hard_class,
-            "next_methods": methods[2:] if node["id"] in sequential else methods,
+            "next_methods": (
+                ["sequential"] if hard_class == "unmeasured_five_orbit_frontier"
+                else ["alternative_cubing", "forced_matching_exact_degree_40_block_witness"]
+                if hard_class == "fifth_orbit_structural_constructive"
+                else ["alternative_cubing", "pb_cp_sat"]
+            ),
             "rationale": rationale,
         })
     assert len(assignments) == manifest["counts"]["open"]

@@ -3,19 +3,21 @@
   "assignments": [
     {
       "next_methods": [
-        "sequential"
+        "alternative_cubing",
+        "pb_cp_sat"
       ],
       "node_id": "s-r0-1",
-      "rationale": "default cheap harvester at the frozen short cap",
-      "structural_class": "unmeasured_five_orbit_frontier"
+      "rationale": "do not repeat the same short sequential run; diversify formulation and branching",
+      "structural_class": "sequential_short_cap_survivor"
     },
     {
       "next_methods": [
-        "sequential"
+        "alternative_cubing",
+        "pb_cp_sat"
       ],
       "node_id": "s-r0-2",
-      "rationale": "default cheap harvester at the frozen short cap",
-      "structural_class": "unmeasured_five_orbit_frontier"
+      "rationale": "do not repeat the same short sequential run; diversify formulation and branching",
+      "structural_class": "sequential_short_cap_survivor"
     },
     {
       "next_methods": [
@@ -218,57 +220,17 @@
       "next_methods": [
         "sequential"
       ],
-      "node_id": "t-3",
-      "rationale": "default cheap harvester at the frozen short cap",
-      "structural_class": "unmeasured_five_orbit_frontier"
-    },
-    {
-      "next_methods": [
-        "sequential"
-      ],
       "node_id": "t-31",
-      "rationale": "default cheap harvester at the frozen short cap",
-      "structural_class": "unmeasured_five_orbit_frontier"
-    },
-    {
-      "next_methods": [
-        "sequential"
-      ],
-      "node_id": "t-4",
-      "rationale": "default cheap harvester at the frozen short cap",
-      "structural_class": "unmeasured_five_orbit_frontier"
-    },
-    {
-      "next_methods": [
-        "sequential"
-      ],
-      "node_id": "t-7",
-      "rationale": "default cheap harvester at the frozen short cap",
-      "structural_class": "unmeasured_five_orbit_frontier"
-    },
-    {
-      "next_methods": [
-        "sequential"
-      ],
-      "node_id": "t-8",
-      "rationale": "default cheap harvester at the frozen short cap",
-      "structural_class": "unmeasured_five_orbit_frontier"
-    },
-    {
-      "next_methods": [
-        "sequential"
-      ],
-      "node_id": "t-9",
       "rationale": "default cheap harvester at the frozen short cap",
       "structural_class": "unmeasured_five_orbit_frontier"
     }
   ],
   "class_counts": {
     "fifth_orbit_structural_constructive": 1,
-    "sequential_short_cap_survivor": 4,
-    "unmeasured_five_orbit_frontier": 27
+    "sequential_short_cap_survivor": 6,
+    "unmeasured_five_orbit_frontier": 20
   },
-  "open_nodes": 32,
+  "open_nodes": 27,
   "policy": {
     "constructive": "s-r1-3 remains a first-class direct-witness and structural target",
     "hard_tail": "diversify after a short-cap survivor; no symmetry reruns",

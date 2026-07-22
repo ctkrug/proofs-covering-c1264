@@ -28,7 +28,7 @@ auditor = load("audit_five_orbit_frontier", ROOT / "checkers" / "audit_five_orbi
 class FiveOrbitFrontierTests(unittest.TestCase):
     def test_rebind_preserves_honest_global_count_and_audits(self) -> None:
         value = producer.rebind(Path("artifacts/portfolio/frontier-manifest-v1.json"))
-        self.assertEqual(value["counts"], {"total": 47, "closed": 15, "open": 32})
+        self.assertEqual(value["counts"], {"total": 47, "closed": 20, "open": 27})
         self.assertEqual(value["blocker_monotonicity"]["added_clauses"], 160)
         with tempfile.TemporaryDirectory() as raw:
             path = Path(raw) / "manifest.json"

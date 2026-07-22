@@ -21,7 +21,7 @@ def verify(manifest_path: Path) -> dict[str, object]:
         raise ValueError(f"refusing superseded sweep manifest: {reason}")
     manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
     expected = int(manifest.get("expected_leaf_count", 0))
-    if manifest.get("method") != "sequential" or expected not in {30, 32} or len(manifest.get("leaves", [])) != expected:
+    if manifest.get("method") != "sequential" or not 1 <= expected <= 32 or len(manifest.get("leaves", [])) != expected:
         raise ValueError("manifest must specify the declared audited sweep or versioned continuation")
     if len({row["id"] for row in manifest["leaves"]}) != expected:
         raise ValueError("duplicate leaf ID")

@@ -1,0 +1,53 @@
+{
+  "cnf_sha256": "0e99839fd63f965c0af06cf943f47b94616dcb792f5ebd673bbe90f0aed5903b",
+  "command": [
+    ".venv/sat-audit-tools/cadical/build/cadical",
+    "-t",
+    "60",
+    "--no-binary",
+    "/Users/Krug/Desktop/ChatGPT/proofs/research/covering-c1264/workspace/artifacts/sequential-frontier-sweep/sequential-open-frontier-30-v5-native-replay-20260722/t-4/sequential/instance.cnf",
+    "/Users/Krug/Desktop/ChatGPT/proofs/research/covering-c1264/workspace/artifacts/sequential-frontier-sweep/sequential-open-frontier-30-v5-native-replay-20260722/t-4/sequential/proof.drat"
+  ],
+  "completed_at": "2026-07-22T18:25:06.818179+00:00",
+  "encoding": "sequential",
+  "leaf_id": "t-4",
+  "proof": {
+    "bytes": 84449815,
+    "sha256": "abc2f6c6354ce3f25408e7defe9af333ec99437248b845037abe03985b62463b"
+  },
+  "schema_version": 1,
+  "seconds_cap": 60,
+  "solver_elapsed_seconds": 28.58788495900808,
+  "solver_exit_code": 20,
+  "solver_sha256": "d2f7e3fc9577de8548125b11c7c37772df32438bf86ffdadb9f45a11e643dd64",
+  "status": "UNSAT_VERIFIED",
+  "validation": {
+    "checked_at": "2026-07-22T18:25:06.470516+00:00",
+    "checker": {
+      "path": "/Users/Krug/Desktop/ChatGPT/proofs/research/covering-c1264/workspace/.venv/sat-audit-tools/drat-trim/drat-trim",
+      "sha256": "f58f63b0f76945d4c4c9ff6e87afaf870f579e67c0f7cca589492df8fc7ebd47"
+    },
+    "cnf": {
+      "path": "/Users/Krug/Desktop/ChatGPT/proofs/research/covering-c1264/workspace/artifacts/sequential-frontier-sweep/sequential-open-frontier-30-v5-native-replay-20260722/t-4/sequential/instance.cnf",
+      "sha256": "0e99839fd63f965c0af06cf943f47b94616dcb792f5ebd673bbe90f0aed5903b"
+    },
+    "command": [
+      "/Users/Krug/Desktop/ChatGPT/proofs/research/covering-c1264/workspace/.venv/sat-audit-tools/drat-trim/drat-trim",
+      "/Users/Krug/Desktop/ChatGPT/proofs/research/covering-c1264/workspace/artifacts/sequential-frontier-sweep/sequential-open-frontier-30-v5-native-replay-20260722/t-4/sequential/instance.cnf",
+      "/Users/Krug/Desktop/ChatGPT/proofs/research/covering-c1264/workspace/artifacts/sequential-frontier-sweep/sequential-open-frontier-30-v5-native-replay-20260722/t-4/sequential/proof.drat"
+    ],
+    "exit_code": 0,
+    "log": {
+      "path": "/Users/Krug/Desktop/ChatGPT/proofs/research/covering-c1264/workspace/artifacts/sequential-frontier-sweep/sequential-open-frontier-30-v5-native-replay-20260722/t-4/sequential/validation.json.log",
+      "sha256": "d0ea3a9eda2c10e6b769cf32192830275e6ddb67764a395ec15bcca58023d6cc"
+    },
+    "proof": {
+      "path": "/Users/Krug/Desktop/ChatGPT/proofs/research/covering-c1264/workspace/artifacts/sequential-frontier-sweep/sequential-open-frontier-30-v5-native-replay-20260722/t-4/sequential/proof.drat",
+      "sha256": "abc2f6c6354ce3f25408e7defe9af333ec99437248b845037abe03985b62463b"
+    },
+    "schema_version": 1,
+    "seconds_cap": 600,
+    "status": "verified",
+    "verdict": "s VERIFIED"
+  }
+}

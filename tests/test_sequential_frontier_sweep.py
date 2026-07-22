@@ -25,7 +25,7 @@ runner = load("run_sequential_frontier_sweep", "scripts/run_sequential_frontier_
 
 class SequentialFrontierSweepTests(unittest.TestCase):
     def test_builder_selects_exactly_the_open_frontier(self):
-        value = builder.build()
+        value = json.loads(builder.OUT.read_text())
         ids = [row["id"] for row in value["leaves"]]
         self.assertEqual(32, len(ids))
         self.assertEqual(32, len(set(ids)))
@@ -35,9 +35,12 @@ class SequentialFrontierSweepTests(unittest.TestCase):
         self.assertEqual("sequential", value["method"])
 
     def test_profiler_removes_only_replayed_closures(self):
-        manifest = builder.build()
+        manifest = json.loads(builder.OUT.read_text())
         with tempfile.TemporaryDirectory(dir=ROOT / "artifacts") as temporary:
             base = Path(temporary)
+            portfolio_path = base / "portfolio.json"
+            portfolio_path.write_text(builder.PORTFOLIO.read_text(), encoding="utf-8")
+            manifest["portfolio_manifest_sha256"] = profiler.sha(portfolio_path)
             manifest_path = base / "manifest.json"
             manifest_path.write_text(json.dumps(manifest), encoding="utf-8")
             checkpoint_path = base / "checkpoint.json"
@@ -49,19 +52,15 @@ class SequentialFrontierSweepTests(unittest.TestCase):
                 ],
             }
             checkpoint_path.write_text(json.dumps(checkpoint), encoding="utf-8")
-            result = profiler.profile(manifest_path, checkpoint_path, builder.PORTFOLIO)
+            result = profiler.profile(manifest_path, checkpoint_path, portfolio_path)
         self.assertEqual(31, result["survivor_count"])
         self.assertNotIn(manifest["leaves"][0]["id"], {row["id"] for row in result["survivors"]})
         self.assertIn(manifest["leaves"][1]["id"], {row["id"] for row in result["survivors"]})
         self.assertGreater(len(result["classes"]), 0)
 
-    def test_runner_accepts_rebuilt_five_orbit_manifest(self):
-        manifest = builder.build()
-        with tempfile.TemporaryDirectory(dir=ROOT / "artifacts") as temporary:
-            path = Path(temporary) / "manifest.json"
-            path.write_text(json.dumps(manifest), encoding="utf-8")
-            verified = runner.verify(path)
-        self.assertEqual(len(verified["leaves"]), 32)
+    def test_builder_refuses_to_overwrite_historical_32_node_sweep(self):
+        with self.assertRaisesRegex(ValueError, "32 audited open nodes"):
+            builder.build()
 
 
 if __name__ == "__main__":

@@ -39,8 +39,8 @@ class CertificatePortfolioTests(unittest.TestCase):
 
     def test_completed_benchmark_ingestion_records_net_new_certificates(self):
         manifest = ingest()
-        self.assertEqual(manifest["counts"], {"total": 47, "closed": 15, "open": 32})
-        tranche = manifest["tranches"][0]
+        self.assertEqual(manifest["counts"], {"total": 47, "closed": 20, "open": 27})
+        tranche = next(row for row in manifest["tranches"] if row["id"].endswith("-final"))
         self.assertEqual(len(tranche["newly_closed_nodes"]), 15)
         self.assertEqual(tranche["method_stats"]["sequential"]["net_new_closures"], 15)
         self.assertEqual(tranche["method_stats"]["kmtotalizer"]["net_new_closures"], 0)
