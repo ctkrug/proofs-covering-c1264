@@ -1,0 +1,2830 @@
+{
+  "active_link_blocker": {
+    "bytes": 249479,
+    "path": "artifacts/discoveries/link-orbit-catalog-7-blocking.cnf",
+    "sha256": "d173df1b0b6cb781723d2a334fd756044ff6b3113a3f4cd3edec5eddb042e4fa"
+  },
+  "active_link_catalog": {
+    "bytes": 3112,
+    "path": "artifacts/discoveries/link-orbit-catalog-7.json",
+    "sha256": "66c76abae4675acb74f624fdff8ec64a416d59c0bc2ef15fbe83ab70376effc1"
+  },
+  "active_link_catalog_audit": {
+    "bytes": 1509,
+    "path": "artifacts/discoveries/link-orbit-catalog-7-audit.json",
+    "sha256": "a21010df8845c8201a3461638d916f1f40d439112a3a522117fab0fbcd80a77a"
+  },
+  "active_resolution_routes": {
+    "canonical_47_node_certified_exclusion": {
+      "kind": "negative",
+      "status": "active",
+      "success_certificate": "47/47 certified closures and independent global coverage validation",
+      "tranches": []
+    },
+    "forced_matching_exact_degree_40_block_witness": {
+      "kind": "constructive",
+      "status": "active",
+      "success_certificate": "directly and independently verified 40-block cover",
+      "tranches": []
+    }
+  },
+  "blocker_history": [
+    {
+      "active_link_blocker": {
+        "bytes": 171951,
+        "path": "artifacts/discoveries/link-orbit-catalog-5-blocking.cnf",
+        "sha256": "ca2ebe74048cea4593e5fc377e441a7d51a10199bba8bc0c0ef7578f5a91eb2f"
+      },
+      "active_link_catalog": {
+        "bytes": 2309,
+        "path": "artifacts/discoveries/link-orbit-catalog-5.json",
+        "sha256": "1b20916c7298dda7c172f2d435bc9e357026044c18a821f645aa82ec5e8fa2c6"
+      },
+      "active_link_catalog_audit": {
+        "bytes": 1032,
+        "path": "artifacts/discoveries/link-orbit-catalog-5-audit.json",
+        "sha256": "19505d8c26f11184c9231f420993714d162f68f16af35f83cbcdb9dd16bdc671"
+      },
+      "blocker_monotonicity": {
+        "active_clauses": 1776,
+        "added_clauses": 160,
+        "consequence": "Every certified UNSAT result under the weaker predecessor blocker remains UNSAT under the active stronger blocker; no proof is counted twice.",
+        "predecessor_clauses": 1616,
+        "status": "strict_superset_verified"
+      },
+      "frontier_rebuild": {
+        "discovery_leaf": "s-r1-3",
+        "discovery_leaf_status": "open; resume with active five-orbit blocker",
+        "secondary_nodes": 14,
+        "status": "rebuilt_pending_independent_audit",
+        "structural_partition": "unchanged 47-node canonical partition",
+        "tertiary_nodes": 33
+      },
+      "frontier_revision": 2,
+      "predecessor_link_blocker": {
+        "bytes": 156455,
+        "path": "artifacts/pilot/link-orbit-catalog-4-blocking.cnf",
+        "sha256": "d68f1de5f99cf6e56480a3778dd270e8abca276d192fdf19b354375422d6cad4"
+      }
+    }
+  ],
+  "blocker_monotonicity": {
+    "active_clauses": 2576,
+    "added_clauses": 800,
+    "consequence": "Every certified UNSAT result under the predecessor blocker remains UNSAT under this stronger blocker; result and replay receipts are immutable.",
+    "predecessor_clauses": 1776,
+    "status": "strict_superset_verified"
+  },
+  "counts": {
+    "closed": 32,
+    "open": 15,
+    "total": 47
+  },
+  "first_measurement": {
+    "path": "artifacts/experiments/cardinality-encoding-20-leaf-20260722/manifest.json",
+    "sha256": "5d52e2f8f1831e918b23ea7752addf0e684ad267b6634ccd2a750f93bea11242"
+  },
+  "frontier_definition_sha256": "8ccf62d23382db6d79298f470b640c8b188c6e80a32e6b02b1d66b3663467e92",
+  "frontier_rebuild": {
+    "discovery_leaf_status": "open; new link orbits validated locally and added to the active blocker",
+    "discovery_leaves": [
+      "t-16",
+      "t-17"
+    ],
+    "secondary_nodes": 14,
+    "status": "rebuilt_pending_independent_audit",
+    "structural_partition": "unchanged 47-node canonical partition",
+    "tertiary_nodes": 33
+  },
+  "frontier_revision": 3,
+  "frontier_source": {
+    "path": "artifacts/pilot/link-campaign-summary.json",
+    "sha256": "1a9ff4abe35470308876496219ec6cf93d64e6b10ceafb942a3dd43b5dd3139f"
+  },
+  "global_uncertainty": "C(12,6,4) is 40 or 41",
+  "manifest_payload_sha256": "3541ae39e68895cfeb958bf70bc65840863ff07056f07bb23f9cc41f7edfd6e6",
+  "method_registry": {
+    "alternative_cardinality": {
+      "semantic_gate": "required",
+      "status": "candidate"
+    },
+    "alternative_cubing": {
+      "semantic_gate": "required",
+      "status": "candidate"
+    },
+    "forced_matching_exact_degree_40_block_witness": {
+      "semantic_gate": "direct witness validation required",
+      "status": "active"
+    },
+    "ilp": {
+      "semantic_gate": "required",
+      "status": "candidate"
+    },
+    "kmtotalizer": {
+      "semantic_gate": "passed by fixed benchmark preflight",
+      "status": "active_first_measurement"
+    },
+    "pb_cp_sat": {
+      "semantic_gate": "required",
+      "status": "candidate"
+    },
+    "sequential": {
+      "semantic_gate": "passed by fixed benchmark preflight",
+      "status": "active_first_measurement"
+    }
+  },
+  "nodes": [
+    {
+      "active_blocker_sha256": "d173df1b0b6cb781723d2a334fd756044ff6b3113a3f4cd3edec5eddb042e4fa",
+      "assigned_methods": [
+        "sequential",
+        "alternative_cubing",
+        "pb_cp_sat"
+      ],
+      "final_coverage_status": "open",
+      "id": "s-r0-1",
+      "inherited_result_sha256": "0edfb0e3139d0e28a2ce9f9b831f8fff6aa59409ddb29c58fa61f00c7ac2251e",
+      "kind": "secondary",
+      "outcomes": [],
+      "root_index": 0,
+      "secondary_index": 1,
+      "source_path": "artifacts/pilot/link-orbit-root0-secondary-1-60s",
+      "tertiary_index": null
+    },
+    {
+      "active_blocker_sha256": "d173df1b0b6cb781723d2a334fd756044ff6b3113a3f4cd3edec5eddb042e4fa",
+      "assigned_methods": [
+        "sequential",
+        "alternative_cubing",
+        "pb_cp_sat"
+      ],
+      "final_coverage_status": "open",
+      "id": "s-r0-2",
+      "inherited_result_sha256": "4d718f55e94c456fa55a1a4c9e5777e126c5e582e67097aca8fda8c9d59db4a9",
+      "kind": "secondary",
+      "outcomes": [
+        {
+          "cnf_encoding_revision": "sequential-open-frontier-30-v5-native-replay-20260722:sequential:schema-2",
+          "cnf_sha256": "97d0df3f1d4ac231d4b8d9139820d46ecd267151d55c45f62e83a58720a6e126",
+          "cpu_seconds": 60.046997541969176,
+          "independent_audit_receipt": {
+            "path": "artifacts/sequential-frontier-sweep/sequential-open-frontier-30-v5-native-replay-20260722/s-r0-2/sequential/cnf-audit.json",
+            "sha256": "42561d404d321b447fc7213a34933ec9c230b8643aef8d42df0b91fffb40bd11"
+          },
+          "method": "sequential",
+          "result_receipt": {
+            "path": "artifacts/sequential-frontier-sweep/sequential-open-frontier-30-v5-native-replay-20260722/s-r0-2/sequential/result.json",
+            "sha256": "b94a68c21aded069b18ab44d862c81e2e86c24ec8685bfaa2d1cff2b9c9bb435"
+          },
+          "run_id": "sequential-open-frontier-30-v5-native-replay-20260722",
+          "runtime_seconds": 60.046997541969176,
+          "status": "unknown"
+        }
+      ],
+      "root_index": 0,
+      "secondary_index": 2,
+      "source_path": "artifacts/pilot/link-orbit-root0-secondary-2-60s",
+      "tertiary_index": null
+    },
+    {
+      "active_blocker_sha256": "d173df1b0b6cb781723d2a334fd756044ff6b3113a3f4cd3edec5eddb042e4fa",
+      "assigned_methods": [
+        "sequential",
+        "kmtotalizer",
+        "alternative_cubing",
+        "pb_cp_sat"
+      ],
+      "final_coverage_status": "open",
+      "id": "s-r0-3",
+      "inherited_result_sha256": "fc920e0c25180f59f820514baa566c7371951b51361028bce936b3fda0de56e8",
+      "kind": "secondary",
+      "outcomes": [
+        {
+          "cnf_encoding_revision": "cardinality-encoding-20-leaf-20260722:kmtotalizer:schema-1",
+          "cnf_sha256": "c045a87f01b5b1e7baa3f88bcf92c09572371427b9e169a6f8d4ad59f0884bd0",
+          "cpu_seconds": 60.025428232969716,
+          "independent_audit_receipt": {
+            "path": "artifacts/cardinality-encoding-benchmark/cardinality-encoding-20-leaf-20260722/s-r0-3/kmtotalizer/cnf-audit.json",
+            "sha256": "3ad242f8ca8d98b150a030c98eaad74a80be27711660969513b87366bdd5cc02"
+          },
+          "method": "kmtotalizer",
+          "result_receipt": {
+            "path": "artifacts/cardinality-encoding-benchmark/cardinality-encoding-20-leaf-20260722/s-r0-3/kmtotalizer/result.json",
+            "sha256": "93919e0fe8a157b581fae33c6654bf154f3c9356549f852441101a5be4389d0f"
+          },
+          "run_id": "cardinality-encoding-20-leaf-20260722",
+          "runtime_seconds": 60.025428232969716,
+          "status": "unknown"
+        },
+        {
+          "cnf_encoding_revision": "cardinality-encoding-20-leaf-20260722:sequential:schema-1",
+          "cnf_sha256": "7973b36f40648bb8045541d9a8357d02bd0830765c4cbc7bb48c00ffbc929995",
+          "cpu_seconds": 60.05935862008482,
+          "independent_audit_receipt": {
+            "path": "artifacts/cardinality-encoding-benchmark/cardinality-encoding-20-leaf-20260722/s-r0-3/sequential/cnf-audit.json",
+            "sha256": "b05d201f94fab9415e78247f357e1c5cf455ca38cfe537b83c0fccdda7352e11"
+          },
+          "method": "sequential",
+          "result_receipt": {
+            "path": "artifacts/cardinality-encoding-benchmark/cardinality-encoding-20-leaf-20260722/s-r0-3/sequential/result.json",
+            "sha256": "c83a194eb7684bf482807affeb6e6c66423376fe27b532199da91fb3b92a338a"
+          },
+          "run_id": "cardinality-encoding-20-leaf-20260722",
+          "runtime_seconds": 60.05935862008482,
+          "status": "unknown"
+        }
+      ],
+      "root_index": 0,
+      "secondary_index": 3,
+      "source_path": "artifacts/pilot/link-orbit-root0-secondary-3-60s",
+      "tertiary_index": null
+    },
+    {
+      "active_blocker_sha256": "d173df1b0b6cb781723d2a334fd756044ff6b3113a3f4cd3edec5eddb042e4fa",
+      "assigned_methods": [
+        "sequential",
+        "kmtotalizer",
+        "alternative_cubing",
+        "pb_cp_sat"
+      ],
+      "final_coverage_status": "open",
+      "id": "s-r0-4",
+      "inherited_result_sha256": "0d5433f5018804695d33acd2da291e36c9355824a618c1dd168bc5c4f909df0f",
+      "kind": "secondary",
+      "outcomes": [
+        {
+          "cnf_encoding_revision": "cardinality-encoding-20-leaf-20260722:kmtotalizer:schema-1",
+          "cnf_sha256": "8e18e424956e158fe40220613917802240f2a2ec213b87126ea371287cb5c49e",
+          "cpu_seconds": 60.041396751999855,
+          "independent_audit_receipt": {
+            "path": "artifacts/cardinality-encoding-benchmark/cardinality-encoding-20-leaf-20260722/s-r0-4/kmtotalizer/cnf-audit.json",
+            "sha256": "32a1e9ded90d8ef9cc1c9ac552f8d651441248b899ba164cad8f2836b57f791e"
+          },
+          "method": "kmtotalizer",
+          "result_receipt": {
+            "path": "artifacts/cardinality-encoding-benchmark/cardinality-encoding-20-leaf-20260722/s-r0-4/kmtotalizer/result.json",
+            "sha256": "e52bf8df50e9833c59c9111c9c1d45c8279c9d6d8bcdea2975dc4b7d0447382d"
+          },
+          "run_id": "cardinality-encoding-20-leaf-20260722",
+          "runtime_seconds": 60.041396751999855,
+          "status": "unknown"
+        },
+        {
+          "cnf_encoding_revision": "cardinality-encoding-20-leaf-20260722:sequential:schema-1",
+          "cnf_sha256": "40fde1e6b9e3d209bfe40c7414b7b1d2f5b414ce976ae128f734080af3e37b7b",
+          "cpu_seconds": 60.02122072200291,
+          "independent_audit_receipt": {
+            "path": "artifacts/cardinality-encoding-benchmark/cardinality-encoding-20-leaf-20260722/s-r0-4/sequential/cnf-audit.json",
+            "sha256": "f4d056eee61e7abe9efee3b79c06950bda9f7571084bc9d1a243f38b61887d81"
+          },
+          "method": "sequential",
+          "result_receipt": {
+            "path": "artifacts/cardinality-encoding-benchmark/cardinality-encoding-20-leaf-20260722/s-r0-4/sequential/result.json",
+            "sha256": "135dea864d67ada24d04e00399def460dbd2a92cbf2718209c89bb07b3441413"
+          },
+          "run_id": "cardinality-encoding-20-leaf-20260722",
+          "runtime_seconds": 60.02122072200291,
+          "status": "unknown"
+        }
+      ],
+      "root_index": 0,
+      "secondary_index": 4,
+      "source_path": "artifacts/pilot/link-orbit-root0-secondary-4-60s",
+      "tertiary_index": null
+    },
+    {
+      "active_blocker_sha256": "d173df1b0b6cb781723d2a334fd756044ff6b3113a3f4cd3edec5eddb042e4fa",
+      "assigned_methods": [
+        "sequential"
+      ],
+      "final_coverage_status": "open",
+      "id": "s-r0-5",
+      "inherited_result_sha256": "de6498fd228fe6a9b0b2518be013878d48659395aba113be52a36cbd4c910625",
+      "kind": "secondary",
+      "outcomes": [
+        {
+          "cnf_encoding_revision": "sequential-unmeasured-frontier-12-v7-20260722:sequential:schema-2",
+          "cnf_sha256": "727679ce8248b73267a90e539f8e8bc8c3e09c6a0694f21d950bd6f1161ee34c",
+          "cpu_seconds": 60.049059853190556,
+          "independent_audit_receipt": {
+            "path": "artifacts/sequential-frontier-sweep/sequential-unmeasured-frontier-12-v7-20260722/s-r0-5/sequential/cnf-audit.json",
+            "sha256": "7c039a717959cb08139e8fd0dace270df7de799594ab29c0766ec5d26330f7c0"
+          },
+          "method": "sequential",
+          "result_receipt": {
+            "path": "artifacts/sequential-frontier-sweep/sequential-unmeasured-frontier-12-v7-20260722/s-r0-5/sequential/result.json",
+            "sha256": "d55f9dc1f0626a37f96c7782403ab9926ffd2402f0b989e1b22277a5319af9e9"
+          },
+          "run_id": "sequential-unmeasured-frontier-12-v7-20260722",
+          "runtime_seconds": 60.049059853190556,
+          "status": "unknown"
+        }
+      ],
+      "root_index": 0,
+      "secondary_index": 5,
+      "source_path": "artifacts/pilot/link-orbit-root0-secondary-5-60s",
+      "tertiary_index": null
+    },
+    {
+      "active_blocker_sha256": "d173df1b0b6cb781723d2a334fd756044ff6b3113a3f4cd3edec5eddb042e4fa",
+      "assigned_methods": [
+        "sequential",
+        "kmtotalizer"
+      ],
+      "final_coverage_status": "closed_unsat",
+      "id": "s-r0-6",
+      "inherited_result_sha256": "20d23e5e3e95367f24aa59b50aadf593f877a4f67377141065bd9005366009f4",
+      "kind": "secondary",
+      "outcomes": [
+        {
+          "cnf_encoding_revision": "cardinality-encoding-20-leaf-20260722:kmtotalizer:schema-1",
+          "cnf_sha256": "5f3f0702aeef4b75924bd000178f2893d0f79b113e3cc38c00c1ab344c7e06b0",
+          "cpu_seconds": 27.39602767000906,
+          "independent_audit_receipt": {
+            "path": "artifacts/cardinality-encoding-benchmark/cardinality-encoding-20-leaf-20260722/s-r0-6/kmtotalizer/cnf-audit.json",
+            "sha256": "a82b556c00a4cc7ffdf5f14bdad9deaf830a9f91177ba0e54a05ecd2bf213149"
+          },
+          "method": "kmtotalizer",
+          "proof_bytes": 78601389,
+          "proof_sha256": "58becf791f9eaaf526ae6f9dd7330702fd63f02afc87b7765381e7a1af8ff7c8",
+          "replay_receipt": {
+            "path": "artifacts/cardinality-encoding-benchmark/cardinality-encoding-20-leaf-20260722/s-r0-6/kmtotalizer/validation.json",
+            "sha256": "52100f0aa8318e5004963b56c089efc4c9faa224f110e98f87fe9bd039b5e08a"
+          },
+          "result_receipt": {
+            "path": "artifacts/cardinality-encoding-benchmark/cardinality-encoding-20-leaf-20260722/s-r0-6/kmtotalizer/result.json",
+            "sha256": "474b7f8582897785a9a4c8e43f6fc7372318501baf7a11ff90461c09089df0a0"
+          },
+          "run_id": "cardinality-encoding-20-leaf-20260722",
+          "runtime_seconds": 27.39602767000906,
+          "status": "unsat_certified"
+        },
+        {
+          "cnf_encoding_revision": "cardinality-encoding-20-leaf-20260722:sequential:schema-1",
+          "cnf_sha256": "2d57df472b496c72507da5e800eaf464e24c63f5387a23acc23ee92dd64b52de",
+          "cpu_seconds": 14.662423338042572,
+          "independent_audit_receipt": {
+            "path": "artifacts/cardinality-encoding-benchmark/cardinality-encoding-20-leaf-20260722/s-r0-6/sequential/cnf-audit.json",
+            "sha256": "d14805641757c98de9bc3c81006d90fabb1b095f7edea92587051b6ada3a86d5"
+          },
+          "method": "sequential",
+          "proof_bytes": 54135669,
+          "proof_sha256": "d5c8ea45c3d1a5be069065120a9c12be7526935c85188ec1d77981a7657eecff",
+          "replay_receipt": {
+            "path": "artifacts/cardinality-encoding-benchmark/cardinality-encoding-20-leaf-20260722/s-r0-6/sequential/validation.json",
+            "sha256": "71c375e6f0ccc1ceff18147ca2edf1dccda592e99292abd2bc741e885aa61943"
+          },
+          "result_receipt": {
+            "path": "artifacts/cardinality-encoding-benchmark/cardinality-encoding-20-leaf-20260722/s-r0-6/sequential/result.json",
+            "sha256": "28c11bd2871e34adbd905c9c24d6df82c8ae8725611de336e8d897825ef04d23"
+          },
+          "run_id": "cardinality-encoding-20-leaf-20260722",
+          "runtime_seconds": 14.662423338042572,
+          "status": "unsat_certified"
+        }
+      ],
+      "root_index": 0,
+      "secondary_index": 6,
+      "source_path": "artifacts/pilot/link-orbit-root0-secondary-6-60s",
+      "tertiary_index": null
+    },
+    {
+      "active_blocker_sha256": "d173df1b0b6cb781723d2a334fd756044ff6b3113a3f4cd3edec5eddb042e4fa",
+      "assigned_methods": [
+        "sequential"
+      ],
+      "final_coverage_status": "open",
+      "id": "s-r1-0",
+      "inherited_result_sha256": "5a89dbc9ca79c6af6b30169865fc18049eccba6c7f7dd9471d3a697469093a5d",
+      "kind": "secondary",
+      "outcomes": [
+        {
+          "cnf_encoding_revision": "sequential-unmeasured-frontier-12-v7-20260722:sequential:schema-2",
+          "cnf_sha256": "883a3ad0533f712303c6779c77463a37f3158d0821faa315343ec1b9d29706d5",
+          "cpu_seconds": 60.0183130458463,
+          "independent_audit_receipt": {
+            "path": "artifacts/sequential-frontier-sweep/sequential-unmeasured-frontier-12-v7-20260722/s-r1-0/sequential/cnf-audit.json",
+            "sha256": "911f0251d58cb5d6062566ffe84e06dde6ce73ba128a8f07b3a60e2b433f8b10"
+          },
+          "method": "sequential",
+          "result_receipt": {
+            "path": "artifacts/sequential-frontier-sweep/sequential-unmeasured-frontier-12-v7-20260722/s-r1-0/sequential/result.json",
+            "sha256": "ab5bdde48ed217384994dbff822db38f24a79429f351ed5284db3953e8aab516"
+          },
+          "run_id": "sequential-unmeasured-frontier-12-v7-20260722",
+          "runtime_seconds": 60.0183130458463,
+          "status": "unknown"
+        }
+      ],
+      "root_index": 1,
+      "secondary_index": 0,
+      "source_path": "artifacts/pilot/link-orbit-root1-secondary-0-60s",
+      "tertiary_index": null
+    },
+    {
+      "active_blocker_sha256": "d173df1b0b6cb781723d2a334fd756044ff6b3113a3f4cd3edec5eddb042e4fa",
+      "assigned_methods": [
+        "sequential"
+      ],
+      "final_coverage_status": "open",
+      "id": "s-r1-1",
+      "inherited_result_sha256": "5102c7021615d9dbc2a21465bba2da71142de52b020678e0af2a831a4426eeb4",
+      "kind": "secondary",
+      "outcomes": [
+        {
+          "cnf_encoding_revision": "sequential-unmeasured-frontier-12-v7-20260722:sequential:schema-2",
+          "cnf_sha256": "e607e4dd936400bb026d1aa6a7e6696bdb83f9119cca155b69ede3f58d1cb9fa",
+          "cpu_seconds": 60.02444556890987,
+          "independent_audit_receipt": {
+            "path": "artifacts/sequential-frontier-sweep/sequential-unmeasured-frontier-12-v7-20260722/s-r1-1/sequential/cnf-audit.json",
+            "sha256": "72a03e97d3193aff8cc5ff490b2cf9c63ea16fd3361a87e954fde70339173c47"
+          },
+          "method": "sequential",
+          "result_receipt": {
+            "path": "artifacts/sequential-frontier-sweep/sequential-unmeasured-frontier-12-v7-20260722/s-r1-1/sequential/result.json",
+            "sha256": "5a03fd1e472b170f5b9f8b787d42a27401d5ec8176eb4307f495f22cbced2dfd"
+          },
+          "run_id": "sequential-unmeasured-frontier-12-v7-20260722",
+          "runtime_seconds": 60.02444556890987,
+          "status": "unknown"
+        }
+      ],
+      "root_index": 1,
+      "secondary_index": 1,
+      "source_path": "artifacts/pilot/link-orbit-root1-secondary-1-60s",
+      "tertiary_index": null
+    },
+    {
+      "active_blocker_sha256": "d173df1b0b6cb781723d2a334fd756044ff6b3113a3f4cd3edec5eddb042e4fa",
+      "assigned_methods": [
+        "sequential"
+      ],
+      "final_coverage_status": "open",
+      "id": "s-r1-15",
+      "inherited_result_sha256": "7dc4b405ebd86cbb0440b18116e06f4fa5e5f1aad876a90692efc1e671559f44",
+      "kind": "secondary",
+      "outcomes": [
+        {
+          "cnf_encoding_revision": "sequential-unmeasured-frontier-12-v7-20260722:sequential:schema-2",
+          "cnf_sha256": "193b33f8edcaa8c9f2d209919fe6db48150652ec8e2f17254a21067b567044f1",
+          "cpu_seconds": 60.01761649805121,
+          "independent_audit_receipt": {
+            "path": "artifacts/sequential-frontier-sweep/sequential-unmeasured-frontier-12-v7-20260722/s-r1-15/sequential/cnf-audit.json",
+            "sha256": "1c74a33e3ca7f114fff42bb339eda87420f381f008ebaad20ba2e7729f531f68"
+          },
+          "method": "sequential",
+          "result_receipt": {
+            "path": "artifacts/sequential-frontier-sweep/sequential-unmeasured-frontier-12-v7-20260722/s-r1-15/sequential/result.json",
+            "sha256": "907fd78043da2e46d47cd7b7600096b56e3ab0661a6064af2bc4e07ad2fd6886"
+          },
+          "run_id": "sequential-unmeasured-frontier-12-v7-20260722",
+          "runtime_seconds": 60.01761649805121,
+          "status": "unknown"
+        }
+      ],
+      "root_index": 1,
+      "secondary_index": 15,
+      "source_path": "artifacts/pilot/link-orbit-root1-secondary-15-60s",
+      "tertiary_index": null
+    },
+    {
+      "active_blocker_sha256": "d173df1b0b6cb781723d2a334fd756044ff6b3113a3f4cd3edec5eddb042e4fa",
+      "assigned_methods": [
+        "sequential"
+      ],
+      "final_coverage_status": "open",
+      "id": "s-r1-2",
+      "inherited_result_sha256": "a32080d2927b0a95a595f3c8ca082e0d3e8747ca6bb1e65d5c805e83e2a4b86a",
+      "kind": "secondary",
+      "outcomes": [
+        {
+          "cnf_encoding_revision": "sequential-unmeasured-frontier-12-v7-20260722:sequential:schema-2",
+          "cnf_sha256": "a591ccb9c243f6b0272f31d69d9354b8e94494c0a1aa1c29bad18d91d886776b",
+          "cpu_seconds": 60.017519051907584,
+          "independent_audit_receipt": {
+            "path": "artifacts/sequential-frontier-sweep/sequential-unmeasured-frontier-12-v7-20260722/s-r1-2/sequential/cnf-audit.json",
+            "sha256": "abe6e7aabec1cc89eebdab4e955f83f9c1a79d67172a5dbbacc8c353be75fd3b"
+          },
+          "method": "sequential",
+          "result_receipt": {
+            "path": "artifacts/sequential-frontier-sweep/sequential-unmeasured-frontier-12-v7-20260722/s-r1-2/sequential/result.json",
+            "sha256": "bf408700a86e6744eea96b2dd1b52bb9e0add624722f1fdfa64c8e45a7dbe56b"
+          },
+          "run_id": "sequential-unmeasured-frontier-12-v7-20260722",
+          "runtime_seconds": 60.017519051907584,
+          "status": "unknown"
+        }
+      ],
+      "root_index": 1,
+      "secondary_index": 2,
+      "source_path": "artifacts/pilot/link-orbit-root1-secondary-2-60s",
+      "tertiary_index": null
+    },
+    {
+      "active_blocker_sha256": "d173df1b0b6cb781723d2a334fd756044ff6b3113a3f4cd3edec5eddb042e4fa",
+      "assigned_methods": [
+        "sequential",
+        "kmtotalizer",
+        "alternative_cubing",
+        "forced_matching_exact_degree_40_block_witness"
+      ],
+      "final_coverage_status": "open",
+      "id": "s-r1-3",
+      "inherited_result_sha256": "373f2879beb9cf6fae6562bb4eb1b2ca8ec1d55dcb740f0261f4edd91751b4c0",
+      "kind": "secondary",
+      "outcomes": [
+        {
+          "cnf_encoding_revision": "cardinality-encoding-20-leaf-20260722:kmtotalizer:schema-1",
+          "cnf_sha256": "6cfd749310e408f0b53f824288c26066fc4b31e6f364b3f071cbe498a2291f46",
+          "cpu_seconds": 60.02099911891855,
+          "independent_audit_receipt": {
+            "path": "artifacts/cardinality-encoding-benchmark/cardinality-encoding-20-leaf-20260722/s-r1-3/kmtotalizer/cnf-audit.json",
+            "sha256": "ca8cab44a7d841e4e67f0ae58ef944c565d3b03ae0fb45407ec08c7568a0782f"
+          },
+          "method": "kmtotalizer",
+          "result_receipt": {
+            "path": "artifacts/cardinality-encoding-benchmark/cardinality-encoding-20-leaf-20260722/s-r1-3/kmtotalizer/result.json",
+            "sha256": "4c0374acf73e3be9f2295c2499be592c9dbc89bd38e832e2410b2a17be0e5dc0"
+          },
+          "run_id": "cardinality-encoding-20-leaf-20260722",
+          "runtime_seconds": 60.02099911891855,
+          "status": "unknown"
+        },
+        {
+          "cnf_encoding_revision": "cardinality-encoding-20-leaf-20260722:sequential:schema-1",
+          "cnf_sha256": "fd073005a1e0107b5f9fb214a23a5bd6c06da74bc6116219d135dbdfa9e2ad7b",
+          "cpu_seconds": 17.744328930042684,
+          "independent_audit_receipt": {
+            "path": "artifacts/cardinality-encoding-benchmark/cardinality-encoding-20-leaf-20260722/s-r1-3/sequential/cnf-audit.json",
+            "sha256": "529532def82b3f4ddeeb9d1213d7fbccad7e673a15feecf04c47bb3cb96b65c6"
+          },
+          "method": "sequential",
+          "result_receipt": {
+            "path": "artifacts/cardinality-encoding-benchmark/cardinality-encoding-20-leaf-20260722/s-r1-3/sequential/result.json",
+            "sha256": "adaf7eafdecd05dc04c6c2681a534fe0ee4c58ec245e8f2f3fe16d6c864b4fda"
+          },
+          "run_id": "cardinality-encoding-20-leaf-20260722",
+          "runtime_seconds": 17.744328930042684,
+          "status": "unknown"
+        }
+      ],
+      "root_index": 1,
+      "secondary_index": 3,
+      "source_path": "artifacts/pilot/link-orbit-root1-secondary-3-60s",
+      "tertiary_index": null
+    },
+    {
+      "active_blocker_sha256": "d173df1b0b6cb781723d2a334fd756044ff6b3113a3f4cd3edec5eddb042e4fa",
+      "assigned_methods": [
+        "sequential"
+      ],
+      "final_coverage_status": "open",
+      "id": "s-r1-4",
+      "inherited_result_sha256": "7be9efd96519384ddd6e19a2e56dd4021a66cefa884cae40d959bda76d7c6471",
+      "kind": "secondary",
+      "outcomes": [
+        {
+          "cnf_encoding_revision": "sequential-unmeasured-frontier-12-v7-20260722:sequential:schema-2",
+          "cnf_sha256": "5f2195c744ea1301822deed247e95d11adc3106761d474ea4d656f8893e213d4",
+          "cpu_seconds": 60.03835228201933,
+          "independent_audit_receipt": {
+            "path": "artifacts/sequential-frontier-sweep/sequential-unmeasured-frontier-12-v7-20260722/s-r1-4/sequential/cnf-audit.json",
+            "sha256": "477bdb68c2efa9731f46bcaae359012da0db31fa9d789e596768eb4f9fcdabc3"
+          },
+          "method": "sequential",
+          "result_receipt": {
+            "path": "artifacts/sequential-frontier-sweep/sequential-unmeasured-frontier-12-v7-20260722/s-r1-4/sequential/result.json",
+            "sha256": "0289ba7683e4fe0c98dadb7ab0166046f18ffa6356fcbc555617d0e52d8d0fa0"
+          },
+          "run_id": "sequential-unmeasured-frontier-12-v7-20260722",
+          "runtime_seconds": 60.03835228201933,
+          "status": "unknown"
+        }
+      ],
+      "root_index": 1,
+      "secondary_index": 4,
+      "source_path": "artifacts/pilot/link-orbit-root1-secondary-4-catalog4-60s",
+      "tertiary_index": null
+    },
+    {
+      "active_blocker_sha256": "d173df1b0b6cb781723d2a334fd756044ff6b3113a3f4cd3edec5eddb042e4fa",
+      "assigned_methods": [
+        "sequential",
+        "kmtotalizer"
+      ],
+      "final_coverage_status": "closed_unsat",
+      "id": "s-r1-5",
+      "inherited_result_sha256": "ed9969f866e730ecfa391622575dc4b27ecf81e7038f40ad9dce4905c29f0195",
+      "kind": "secondary",
+      "outcomes": [
+        {
+          "cnf_encoding_revision": "cardinality-encoding-20-leaf-20260722:kmtotalizer:schema-1",
+          "cnf_sha256": "c49f4e201f49ab80bb80f8bebc48648990176f03ee281ce4d690f70790c1bc2f",
+          "cpu_seconds": 60.016700110863894,
+          "independent_audit_receipt": {
+            "path": "artifacts/cardinality-encoding-benchmark/cardinality-encoding-20-leaf-20260722/s-r1-5/kmtotalizer/cnf-audit.json",
+            "sha256": "5fe19ee787482793c3db436201fb24045625b30904a31e731e0f629b80253424"
+          },
+          "method": "kmtotalizer",
+          "result_receipt": {
+            "path": "artifacts/cardinality-encoding-benchmark/cardinality-encoding-20-leaf-20260722/s-r1-5/kmtotalizer/result.json",
+            "sha256": "fafededad363f46d4aa63639d80e359d0ab2d5cdaf68712ef90f510e8cedb968"
+          },
+          "run_id": "cardinality-encoding-20-leaf-20260722",
+          "runtime_seconds": 60.016700110863894,
+          "status": "unknown"
+        },
+        {
+          "cnf_encoding_revision": "cardinality-encoding-20-leaf-20260722:sequential:schema-1",
+          "cnf_sha256": "db59087651089d05727aa2f8384f3b4f48e3530489a384257b29aa9768f0f8c4",
+          "cpu_seconds": 49.55574635299854,
+          "independent_audit_receipt": {
+            "path": "artifacts/cardinality-encoding-benchmark/cardinality-encoding-20-leaf-20260722/s-r1-5/sequential/cnf-audit.json",
+            "sha256": "d04ef5669f63798743ff538d71e79255dda91b4c014f780372a01d143fdbbb92"
+          },
+          "method": "sequential",
+          "proof_bytes": 116474143,
+          "proof_sha256": "5afcae6950a3eda4ea5ee7042c6a595e656fc4bc38598f531fd64259a8a12be7",
+          "replay_receipt": {
+            "path": "artifacts/cardinality-encoding-benchmark/cardinality-encoding-20-leaf-20260722/s-r1-5/sequential/validation.json",
+            "sha256": "088126e486414790242a967d59295f8f7cb8bdcf1ded2fc836d4e44cfc0dbf0e"
+          },
+          "result_receipt": {
+            "path": "artifacts/cardinality-encoding-benchmark/cardinality-encoding-20-leaf-20260722/s-r1-5/sequential/result.json",
+            "sha256": "706dd44b6a04809682ee8e2883741dca12a0c600dc4783efbd4f84a860223cd0"
+          },
+          "run_id": "cardinality-encoding-20-leaf-20260722",
+          "runtime_seconds": 49.55574635299854,
+          "status": "unsat_certified"
+        }
+      ],
+      "root_index": 1,
+      "secondary_index": 5,
+      "source_path": "artifacts/pilot/link-orbit-root1-secondary-5-60s",
+      "tertiary_index": null
+    },
+    {
+      "active_blocker_sha256": "d173df1b0b6cb781723d2a334fd756044ff6b3113a3f4cd3edec5eddb042e4fa",
+      "assigned_methods": [
+        "sequential",
+        "kmtotalizer"
+      ],
+      "final_coverage_status": "closed_unsat",
+      "id": "s-r1-8",
+      "inherited_result_sha256": "b60a5e27d4d8f778b907ccc2214bfc0b3e2ba69337e33e25dfe9a08f71ed2677",
+      "kind": "secondary",
+      "outcomes": [
+        {
+          "cnf_encoding_revision": "cardinality-encoding-20-leaf-20260722:kmtotalizer:schema-1",
+          "cnf_sha256": "7c46ee108f370e3db044984eaef200f72f57d1ec707ac64873ed8bed4a99c7c2",
+          "cpu_seconds": 60.01502854982391,
+          "independent_audit_receipt": {
+            "path": "artifacts/cardinality-encoding-benchmark/cardinality-encoding-20-leaf-20260722/s-r1-8/kmtotalizer/cnf-audit.json",
+            "sha256": "e659910599fdf150b88560f192b1004c8b1d87893d0efc4f13369fb2fb2f800f"
+          },
+          "method": "kmtotalizer",
+          "result_receipt": {
+            "path": "artifacts/cardinality-encoding-benchmark/cardinality-encoding-20-leaf-20260722/s-r1-8/kmtotalizer/result.json",
+            "sha256": "38e2e2d18f1b28af02230562768d3dc35c869fe51ef3a09b1703bff9ea717902"
+          },
+          "run_id": "cardinality-encoding-20-leaf-20260722",
+          "runtime_seconds": 60.01502854982391,
+          "status": "unknown"
+        },
+        {
+          "cnf_encoding_revision": "cardinality-encoding-20-leaf-20260722:sequential:schema-1",
+          "cnf_sha256": "0b7c83a9061ee4ffc6fbcee36809783db71dbb959ef353e92709ff274073409b",
+          "cpu_seconds": 46.30979149788618,
+          "independent_audit_receipt": {
+            "path": "artifacts/cardinality-encoding-benchmark/cardinality-encoding-20-leaf-20260722/s-r1-8/sequential/cnf-audit.json",
+            "sha256": "1c2bea2d777b762140d8ed6f7735c82d8c5a3d66f187550f915f09389545bf8b"
+          },
+          "method": "sequential",
+          "proof_bytes": 164736008,
+          "proof_sha256": "83543e8e14a8d80c168dcbc07a08c473be620ff16530132a43c7b7a69788e0d2",
+          "replay_receipt": {
+            "path": "artifacts/cardinality-encoding-benchmark/cardinality-encoding-20-leaf-20260722/s-r1-8/sequential/validation.json",
+            "sha256": "7092e0243ee4260d4a0ae5481ed5e8a0062e6a07932941f4e28b54e3fdc710d4"
+          },
+          "result_receipt": {
+            "path": "artifacts/cardinality-encoding-benchmark/cardinality-encoding-20-leaf-20260722/s-r1-8/sequential/result.json",
+            "sha256": "d9a29def7d3a59ed963e5b2cbdfa50c33a3752e5ab6332b3f598df916043661d"
+          },
+          "run_id": "cardinality-encoding-20-leaf-20260722",
+          "runtime_seconds": 46.30979149788618,
+          "status": "unsat_certified"
+        }
+      ],
+      "root_index": 1,
+      "secondary_index": 8,
+      "source_path": "artifacts/pilot/link-orbit-root1-secondary-8-catalog4-60s",
+      "tertiary_index": null
+    },
+    {
+      "active_blocker_sha256": "d173df1b0b6cb781723d2a334fd756044ff6b3113a3f4cd3edec5eddb042e4fa",
+      "assigned_methods": [
+        "sequential",
+        "kmtotalizer"
+      ],
+      "final_coverage_status": "closed_unsat",
+      "id": "t-0",
+      "inherited_result_sha256": "7394664f196d00b52215c79a957d1c6a10792bbe40f193c23d55fed067a84191",
+      "kind": "tertiary",
+      "outcomes": [
+        {
+          "cnf_encoding_revision": "cardinality-encoding-20-leaf-20260722:kmtotalizer:schema-1",
+          "cnf_sha256": "5190f145479fe0ed3c952cbc92f9b8f73778f3323d8ab620ae1670fae9453f4d",
+          "cpu_seconds": 48.84893015702255,
+          "independent_audit_receipt": {
+            "path": "artifacts/cardinality-encoding-benchmark/cardinality-encoding-20-leaf-20260722/t-0/kmtotalizer/cnf-audit.json",
+            "sha256": "485c44647f907bf5bcce026d226a1a0856475183181d5ff444e9d4875d86ad2d"
+          },
+          "method": "kmtotalizer",
+          "proof_bytes": 117593845,
+          "proof_sha256": "c0cd1d6e8727fc0fa0b86d9bbfcb7d2d08aa5709c5c84c5f3458a05b0f483062",
+          "replay_receipt": {
+            "path": "artifacts/cardinality-encoding-benchmark/cardinality-encoding-20-leaf-20260722/t-0/kmtotalizer/validation.json",
+            "sha256": "a4dbc1b2b878dc6af697e48360d5f0d6f8742e1eaa9702ea4610338e8bf5de5e"
+          },
+          "result_receipt": {
+            "path": "artifacts/cardinality-encoding-benchmark/cardinality-encoding-20-leaf-20260722/t-0/kmtotalizer/result.json",
+            "sha256": "323ed4b12d35b01528152dbc35d2d2e84ddf30436b2748fd2e4c00e8c3f5ea78"
+          },
+          "run_id": "cardinality-encoding-20-leaf-20260722",
+          "runtime_seconds": 48.84893015702255,
+          "status": "unsat_certified"
+        },
+        {
+          "cnf_encoding_revision": "cardinality-encoding-20-leaf-20260722:sequential:schema-1",
+          "cnf_sha256": "21101cf93d5308927741323aec34359fb273db20a8c7f9b2118666f5d476cc15",
+          "cpu_seconds": 39.330090787028894,
+          "independent_audit_receipt": {
+            "path": "artifacts/cardinality-encoding-benchmark/cardinality-encoding-20-leaf-20260722/t-0/sequential/cnf-audit.json",
+            "sha256": "40b6c22a224ac9c7d56f4f2f16b5a8859b278f8d5cf08fafbb2ddb4db1e299ed"
+          },
+          "method": "sequential",
+          "proof_bytes": 78586461,
+          "proof_sha256": "adfed0101ae491c3c476d79a65fe3afda04ce59ca11bc449b1cfb70193a8aad2",
+          "replay_receipt": {
+            "path": "artifacts/cardinality-encoding-benchmark/cardinality-encoding-20-leaf-20260722/t-0/sequential/validation.json",
+            "sha256": "01a4f4980051d3d29ecdc31d7420e52f56a85656e2259adffd97a4fc8b13ea83"
+          },
+          "result_receipt": {
+            "path": "artifacts/cardinality-encoding-benchmark/cardinality-encoding-20-leaf-20260722/t-0/sequential/result.json",
+            "sha256": "25c3bfc6d67c038069148b14fcecd1d772cff26d0ea7ff09a7d54b533dba515c"
+          },
+          "run_id": "cardinality-encoding-20-leaf-20260722",
+          "runtime_seconds": 39.330090787028894,
+          "status": "unsat_certified"
+        }
+      ],
+      "root_index": 0,
+      "secondary_index": 0,
+      "source_path": "artifacts/pilot/link-orbit-root0-secondary-0-tertiary-0-10s",
+      "tertiary_index": 0
+    },
+    {
+      "active_blocker_sha256": "d173df1b0b6cb781723d2a334fd756044ff6b3113a3f4cd3edec5eddb042e4fa",
+      "assigned_methods": [
+        "sequential",
+        "kmtotalizer",
+        "alternative_cubing",
+        "pb_cp_sat"
+      ],
+      "final_coverage_status": "open",
+      "id": "t-1",
+      "inherited_result_sha256": "c648d99d255875732b49c33514b4cf312127e3cfcdf7508421ea3bcf784d4220",
+      "kind": "tertiary",
+      "outcomes": [
+        {
+          "cnf_encoding_revision": "cardinality-encoding-20-leaf-20260722:kmtotalizer:schema-1",
+          "cnf_sha256": "58232d27e6b1b2563b2f0f916f3e3a5a754d0c8be9136e7eb67e27c0c1633b29",
+          "cpu_seconds": 60.026468311902136,
+          "independent_audit_receipt": {
+            "path": "artifacts/cardinality-encoding-benchmark/cardinality-encoding-20-leaf-20260722/t-1/kmtotalizer/cnf-audit.json",
+            "sha256": "ae1c442cafa760774d5942d65c32922880d66a4e9bb719508dffb5db8bc43261"
+          },
+          "method": "kmtotalizer",
+          "result_receipt": {
+            "path": "artifacts/cardinality-encoding-benchmark/cardinality-encoding-20-leaf-20260722/t-1/kmtotalizer/result.json",
+            "sha256": "d595e0e7c37605065990ed82fe4f175818acfd3836a83820c04b70d8f936faa5"
+          },
+          "run_id": "cardinality-encoding-20-leaf-20260722",
+          "runtime_seconds": 60.026468311902136,
+          "status": "unknown"
+        },
+        {
+          "cnf_encoding_revision": "cardinality-encoding-20-leaf-20260722:sequential:schema-1",
+          "cnf_sha256": "28bd5e5ecd7ed96240ff18a84355d6fae92151ec24ad3691a043248c0d3d69b3",
+          "cpu_seconds": 60.039619150105864,
+          "independent_audit_receipt": {
+            "path": "artifacts/cardinality-encoding-benchmark/cardinality-encoding-20-leaf-20260722/t-1/sequential/cnf-audit.json",
+            "sha256": "c2bb5debfbca2c6a32547136ca98f956458c223b6f72390b2ab73c86c61a4606"
+          },
+          "method": "sequential",
+          "result_receipt": {
+            "path": "artifacts/cardinality-encoding-benchmark/cardinality-encoding-20-leaf-20260722/t-1/sequential/result.json",
+            "sha256": "fecf500a948ff4d691d3dd37460db9ab5c25dba0025cb38664afb492f5de94d3"
+          },
+          "run_id": "cardinality-encoding-20-leaf-20260722",
+          "runtime_seconds": 60.039619150105864,
+          "status": "unknown"
+        }
+      ],
+      "root_index": 0,
+      "secondary_index": 0,
+      "source_path": "artifacts/pilot/link-orbit-root0-secondary-0-tertiary-1-10s",
+      "tertiary_index": 1
+    },
+    {
+      "active_blocker_sha256": "d173df1b0b6cb781723d2a334fd756044ff6b3113a3f4cd3edec5eddb042e4fa",
+      "assigned_methods": [
+        "sequential",
+        "kmtotalizer",
+        "alternative_cubing",
+        "pb_cp_sat"
+      ],
+      "final_coverage_status": "open",
+      "id": "t-10",
+      "inherited_result_sha256": "fd3ade9d5898c0f346252d1e6f6f67dcfaebbec4f1983885533ecbde91b08006",
+      "kind": "tertiary",
+      "outcomes": [
+        {
+          "cnf_encoding_revision": "cardinality-encoding-20-leaf-20260722:kmtotalizer:schema-1",
+          "cnf_sha256": "a633e5278f1de6ad560c2d01f3189f0e5a621135be47f56bdfd7ae90cd29c6d9",
+          "cpu_seconds": 60.060786072863266,
+          "independent_audit_receipt": {
+            "path": "artifacts/cardinality-encoding-benchmark/cardinality-encoding-20-leaf-20260722/t-10/kmtotalizer/cnf-audit.json",
+            "sha256": "46503cd281be96be581e2907e0c479d9dc97d0e2d504078e0c9dda0e85ccd3fc"
+          },
+          "method": "kmtotalizer",
+          "result_receipt": {
+            "path": "artifacts/cardinality-encoding-benchmark/cardinality-encoding-20-leaf-20260722/t-10/kmtotalizer/result.json",
+            "sha256": "aa9bdd9e45d513efddb72419e8d9286d54882321416c75cbca840d5dc3b7b0a0"
+          },
+          "run_id": "cardinality-encoding-20-leaf-20260722",
+          "runtime_seconds": 60.060786072863266,
+          "status": "unknown"
+        },
+        {
+          "cnf_encoding_revision": "cardinality-encoding-20-leaf-20260722:sequential:schema-1",
+          "cnf_sha256": "565838a7eb0ec986f504d50aabacff27191943b7385f3958bee2c95de38f7b69",
+          "cpu_seconds": 60.102987363003194,
+          "independent_audit_receipt": {
+            "path": "artifacts/cardinality-encoding-benchmark/cardinality-encoding-20-leaf-20260722/t-10/sequential/cnf-audit.json",
+            "sha256": "29c3053f5da4c753d35334efd16efead9ca011860ac36472acbf5d9d3bd4a238"
+          },
+          "method": "sequential",
+          "result_receipt": {
+            "path": "artifacts/cardinality-encoding-benchmark/cardinality-encoding-20-leaf-20260722/t-10/sequential/result.json",
+            "sha256": "be3404e90c4612537ac75e1412715d6afa0b1d29ae121b0ed1a5726b4da78d6a"
+          },
+          "run_id": "cardinality-encoding-20-leaf-20260722",
+          "runtime_seconds": 60.102987363003194,
+          "status": "unknown"
+        }
+      ],
+      "root_index": 0,
+      "secondary_index": 0,
+      "source_path": "artifacts/pilot/link-orbit-root0-secondary-0-tertiary-10-10s",
+      "tertiary_index": 10
+    },
+    {
+      "active_blocker_sha256": "d173df1b0b6cb781723d2a334fd756044ff6b3113a3f4cd3edec5eddb042e4fa",
+      "assigned_methods": [
+        "sequential",
+        "kmtotalizer"
+      ],
+      "final_coverage_status": "closed_unsat",
+      "id": "t-11",
+      "inherited_result_sha256": "d790600c4d0c4ca11cedc46ea48536d7e8b7083ef033e13c8809139a2f332b7d",
+      "kind": "tertiary",
+      "outcomes": [
+        {
+          "cnf_encoding_revision": "cardinality-encoding-20-leaf-20260722:kmtotalizer:schema-1",
+          "cnf_sha256": "f404a63323223ecd2fe57f4315d2738bbdb9a78b4a89270b3a2a623abf9bdf3c",
+          "cpu_seconds": 60.01572133391164,
+          "independent_audit_receipt": {
+            "path": "artifacts/cardinality-encoding-benchmark/cardinality-encoding-20-leaf-20260722/t-11/kmtotalizer/cnf-audit.json",
+            "sha256": "0959d06a00ce15fe5e6b2458b5f62bd41dfff8af04480fed0aa985ee3054bd0b"
+          },
+          "method": "kmtotalizer",
+          "result_receipt": {
+            "path": "artifacts/cardinality-encoding-benchmark/cardinality-encoding-20-leaf-20260722/t-11/kmtotalizer/result.json",
+            "sha256": "321dad83fda6e5752d522ea0683c17703ef51700213d0a7ea53750366a9e66d7"
+          },
+          "run_id": "cardinality-encoding-20-leaf-20260722",
+          "runtime_seconds": 60.01572133391164,
+          "status": "unknown"
+        },
+        {
+          "cnf_encoding_revision": "cardinality-encoding-20-leaf-20260722:sequential:schema-1",
+          "cnf_sha256": "3e9d684c3149837fea82df1d5d49e005e128d40e532750dbe88b3246b848047e",
+          "cpu_seconds": 43.11737560713664,
+          "independent_audit_receipt": {
+            "path": "artifacts/cardinality-encoding-benchmark/cardinality-encoding-20-leaf-20260722/t-11/sequential/cnf-audit.json",
+            "sha256": "07e2e190d34987680de1ee61d5077ac6c1b0fbad9b0677a742e468b7471dce9d"
+          },
+          "method": "sequential",
+          "proof_bytes": 137655576,
+          "proof_sha256": "0cd39ef34eef0a244016208e38f7f946248842033a9b974d4fa41cfa8de7c137",
+          "replay_receipt": {
+            "path": "artifacts/cardinality-encoding-benchmark/cardinality-encoding-20-leaf-20260722/t-11/sequential/validation.json",
+            "sha256": "2e65c275606cee932307625790acc085c889b950df749c7006084099971eed57"
+          },
+          "result_receipt": {
+            "path": "artifacts/cardinality-encoding-benchmark/cardinality-encoding-20-leaf-20260722/t-11/sequential/result.json",
+            "sha256": "44eb442e9d73e04c4f29fc3f4ebdbe40d8e676101996afca61874c186a625a5e"
+          },
+          "run_id": "cardinality-encoding-20-leaf-20260722",
+          "runtime_seconds": 43.11737560713664,
+          "status": "unsat_certified"
+        }
+      ],
+      "root_index": 0,
+      "secondary_index": 0,
+      "source_path": "artifacts/pilot/link-orbit-root0-secondary-0-tertiary-11-10s",
+      "tertiary_index": 11
+    },
+    {
+      "active_blocker_sha256": "d173df1b0b6cb781723d2a334fd756044ff6b3113a3f4cd3edec5eddb042e4fa",
+      "assigned_methods": [
+        "sequential"
+      ],
+      "final_coverage_status": "closed_unsat",
+      "id": "t-12",
+      "inherited_result_sha256": "705f5eee214ce5d2805f7e1986d67c9912d9033412f364838a3e5fe5965c17e4",
+      "kind": "tertiary",
+      "outcomes": [
+        {
+          "cnf_encoding_revision": "sequential-unmeasured-frontier-24-v5-20260722:sequential:schema-2",
+          "cnf_sha256": "6c123a44b627cac6c1007d47b4e43b8f5d8034cafbad87e325fefda8152d542d",
+          "cpu_seconds": 50.39422766602365,
+          "independent_audit_receipt": {
+            "path": "artifacts/sequential-frontier-sweep/sequential-unmeasured-frontier-24-v5-20260722/t-12/sequential/cnf-audit.json",
+            "sha256": "9e621e5b27e16dbc2bb60231f021bf4e811a13cfbdfee2d740a52c3fa01c2f04"
+          },
+          "method": "sequential",
+          "proof_bytes": 92626474,
+          "proof_sha256": "cfde72a85743964926e03d183bc05b9957b16841b112af9a622887897ec57e83",
+          "replay_receipt": {
+            "path": "artifacts/sequential-frontier-sweep/sequential-unmeasured-frontier-24-v5-20260722/t-12/sequential/validation.json",
+            "sha256": "af7252965debeebe58b4d9df304065d56379e61ad12b597e8987ed2fe7078329"
+          },
+          "result_receipt": {
+            "path": "artifacts/sequential-frontier-sweep/sequential-unmeasured-frontier-24-v5-20260722/t-12/sequential/result.json",
+            "sha256": "9263544732eba8626e2a36e112dea8714b2dce8709e088fa064a1f5e9418cd33"
+          },
+          "run_id": "sequential-unmeasured-frontier-24-v5-20260722",
+          "runtime_seconds": 50.39422766602365,
+          "status": "unsat_certified"
+        }
+      ],
+      "root_index": 0,
+      "secondary_index": 0,
+      "source_path": "artifacts/pilot/link-orbit-root0-secondary-0-tertiary-12-10s",
+      "tertiary_index": 12
+    },
+    {
+      "active_blocker_sha256": "d173df1b0b6cb781723d2a334fd756044ff6b3113a3f4cd3edec5eddb042e4fa",
+      "assigned_methods": [
+        "sequential"
+      ],
+      "final_coverage_status": "closed_unsat",
+      "id": "t-13",
+      "inherited_result_sha256": "96d9d45248ef3f9ca96ab583ae93edb33ee4d65aaeee082447f29a3ce100ae36",
+      "kind": "tertiary",
+      "outcomes": [
+        {
+          "cnf_encoding_revision": "sequential-unmeasured-frontier-24-v5-20260722:sequential:schema-2",
+          "cnf_sha256": "d736639d587c0d79f67b1f5d03d628840901ef30de896f5a052b42c6fdbee84b",
+          "cpu_seconds": 16.603876458015293,
+          "independent_audit_receipt": {
+            "path": "artifacts/sequential-frontier-sweep/sequential-unmeasured-frontier-24-v5-20260722/t-13/sequential/cnf-audit.json",
+            "sha256": "acc68b1eb3fc535a361774c14e6b62977d42de78b26b6cee7c4bf9d9e857f6ab"
+          },
+          "method": "sequential",
+          "proof_bytes": 30879794,
+          "proof_sha256": "a4344af29e3cce7068296378753cb20e30996511b54daea4a8c731780088bc62",
+          "replay_receipt": {
+            "path": "artifacts/sequential-frontier-sweep/sequential-unmeasured-frontier-24-v5-20260722/t-13/sequential/validation.json",
+            "sha256": "f906fa561f6fd41bd93d286e2fbe30eb27ceb61ea7aa76e4e11682d15a0cc906"
+          },
+          "result_receipt": {
+            "path": "artifacts/sequential-frontier-sweep/sequential-unmeasured-frontier-24-v5-20260722/t-13/sequential/result.json",
+            "sha256": "cc510e94dfa80de2bef66c96796f2c2239a5095796b87031bdf6a36e1105e6ce"
+          },
+          "run_id": "sequential-unmeasured-frontier-24-v5-20260722",
+          "runtime_seconds": 16.603876458015293,
+          "status": "unsat_certified"
+        }
+      ],
+      "root_index": 0,
+      "secondary_index": 0,
+      "source_path": "artifacts/pilot/link-orbit-root0-secondary-0-tertiary-13-10s",
+      "tertiary_index": 13
+    },
+    {
+      "active_blocker_sha256": "d173df1b0b6cb781723d2a334fd756044ff6b3113a3f4cd3edec5eddb042e4fa",
+      "assigned_methods": [
+        "sequential"
+      ],
+      "final_coverage_status": "closed_unsat",
+      "id": "t-14",
+      "inherited_result_sha256": "4148bd4522f6642bb751d09b59aed0d7e21ae5976928dca6b38588461999e274",
+      "kind": "tertiary",
+      "outcomes": [
+        {
+          "cnf_encoding_revision": "sequential-unmeasured-frontier-24-v5-20260722:sequential:schema-2",
+          "cnf_sha256": "4f5fe9b0f31399e88bb3bdf7ca3073e3ce67d77d6632f7811ef07c050d6d7f2a",
+          "cpu_seconds": 10.927277875016443,
+          "independent_audit_receipt": {
+            "path": "artifacts/sequential-frontier-sweep/sequential-unmeasured-frontier-24-v5-20260722/t-14/sequential/cnf-audit.json",
+            "sha256": "f992c00ff415fb917035b3e998c7911da359a2bb9d72fdf49d471c738d0163df"
+          },
+          "method": "sequential",
+          "proof_bytes": 25180631,
+          "proof_sha256": "78ae99921aa080d6acf24fc31032cbb8a48ae08959a58f5368d8b309ea523c40",
+          "replay_receipt": {
+            "path": "artifacts/sequential-frontier-sweep/sequential-unmeasured-frontier-24-v5-20260722/t-14/sequential/validation.json",
+            "sha256": "a03c480000ee23f5b13bfca52d3d1fc205faf2c1a48e3d0bce5cdd25dbcfc69f"
+          },
+          "result_receipt": {
+            "path": "artifacts/sequential-frontier-sweep/sequential-unmeasured-frontier-24-v5-20260722/t-14/sequential/result.json",
+            "sha256": "a63cf9f39d00c0ffe179178cd8b87dea5655587855abeb22a730044235a48e30"
+          },
+          "run_id": "sequential-unmeasured-frontier-24-v5-20260722",
+          "runtime_seconds": 10.927277875016443,
+          "status": "unsat_certified"
+        }
+      ],
+      "root_index": 0,
+      "secondary_index": 0,
+      "source_path": "artifacts/pilot/link-orbit-root0-secondary-0-tertiary-14-10s",
+      "tertiary_index": 14
+    },
+    {
+      "active_blocker_sha256": "d173df1b0b6cb781723d2a334fd756044ff6b3113a3f4cd3edec5eddb042e4fa",
+      "assigned_methods": [
+        "sequential",
+        "kmtotalizer"
+      ],
+      "final_coverage_status": "closed_unsat",
+      "id": "t-15",
+      "inherited_result_sha256": "c7b1209fb9124d813277645948eed4a5f16f997e866d54106e829bd541cfa5be",
+      "kind": "tertiary",
+      "outcomes": [
+        {
+          "cnf_encoding_revision": "cardinality-encoding-20-leaf-20260722:kmtotalizer:schema-1",
+          "cnf_sha256": "31c2e63321e99510fce2c1721b7d17e11b8019fa9f4a7d872652a20ef283156a",
+          "cpu_seconds": 60.0141908088699,
+          "independent_audit_receipt": {
+            "path": "artifacts/cardinality-encoding-benchmark/cardinality-encoding-20-leaf-20260722/t-15/kmtotalizer/cnf-audit.json",
+            "sha256": "5a459ae4f3fe28a6454548eb853fb9cd853cbfdde6e19d24c1f380d2be4a79f0"
+          },
+          "method": "kmtotalizer",
+          "result_receipt": {
+            "path": "artifacts/cardinality-encoding-benchmark/cardinality-encoding-20-leaf-20260722/t-15/kmtotalizer/result.json",
+            "sha256": "73a789493691f71123d70d4823badf7dfc039e9ab4d42f63e5ce558277a7bbc9"
+          },
+          "run_id": "cardinality-encoding-20-leaf-20260722",
+          "runtime_seconds": 60.0141908088699,
+          "status": "unknown"
+        },
+        {
+          "cnf_encoding_revision": "cardinality-encoding-20-leaf-20260722:sequential:schema-1",
+          "cnf_sha256": "717ea05e61e0dea6566c2e5db4215bf000fd57160ecd787f538653de4ea4e3da",
+          "cpu_seconds": 4.6624781710561365,
+          "independent_audit_receipt": {
+            "path": "artifacts/cardinality-encoding-benchmark/cardinality-encoding-20-leaf-20260722/t-15/sequential/cnf-audit.json",
+            "sha256": "b8504f372401e7394ce58d3edf540a95376bb2a997a3e16ede090b970b78b482"
+          },
+          "method": "sequential",
+          "proof_bytes": 17864687,
+          "proof_sha256": "e2cde3ec668a6fb403d5ea6eb2f74241cd5c1d70b94a81b9879a51575a1f90c7",
+          "replay_receipt": {
+            "path": "artifacts/cardinality-encoding-benchmark/cardinality-encoding-20-leaf-20260722/t-15/sequential/validation.json",
+            "sha256": "8c61206a5128dcc238a466829f518a5c30b986eff197a2e2345cb89a42fd7fdc"
+          },
+          "result_receipt": {
+            "path": "artifacts/cardinality-encoding-benchmark/cardinality-encoding-20-leaf-20260722/t-15/sequential/result.json",
+            "sha256": "916a245327595b3fea8a861d76c394e470366a39b7b6e02464c1dd31dd2dd4da"
+          },
+          "run_id": "cardinality-encoding-20-leaf-20260722",
+          "runtime_seconds": 4.6624781710561365,
+          "status": "unsat_certified"
+        }
+      ],
+      "root_index": 0,
+      "secondary_index": 0,
+      "source_path": "artifacts/pilot/link-orbit-root0-secondary-0-tertiary-15-10s",
+      "tertiary_index": 15
+    },
+    {
+      "active_blocker_sha256": "d173df1b0b6cb781723d2a334fd756044ff6b3113a3f4cd3edec5eddb042e4fa",
+      "assigned_methods": [
+        "sequential",
+        "alternative_cubing",
+        "forced_matching_exact_degree_40_block_witness"
+      ],
+      "final_coverage_status": "open",
+      "id": "t-16",
+      "inherited_result_sha256": "2eccccad0f7ef41e5ccd88486c2f4f76fde373b62c811297ee314a640da0de66",
+      "kind": "tertiary",
+      "outcomes": [
+        {
+          "canonical_link_sha256": "31fb7b6b50ebbab8a549bad171c3e42c20448c88a1ec1c0f95a167188f974374",
+          "cnf_encoding_revision": "sequential-unmeasured-frontier-24-v5-20260722:sequential:schema-2",
+          "cnf_sha256": "5faf9e02c30fa60bf87f293c85b3a1883ede6d1ee0ea23eccdc9af70c08ad86f",
+          "cpu_seconds": 22.99234312499175,
+          "independent_audit_receipt": {
+            "path": "artifacts/sequential-frontier-sweep/sequential-unmeasured-frontier-24-v5-20260722/t-16/sequential/cnf-audit.json",
+            "sha256": "7b81baaaa4272805aa64716e5fbd48cefb984fc2cdfdbe3716823338c8114eac"
+          },
+          "link_validation_receipt": {
+            "path": "artifacts/sequential-frontier-sweep/sequential-unmeasured-frontier-24-v5-20260722/t-16/sequential/validation.json",
+            "sha256": "c35bd8679ebe88ab5644ac6e3e0670e207e898974662e39660a5d4109dbf7572"
+          },
+          "link_witness_receipt": {
+            "path": "artifacts/sequential-frontier-sweep/sequential-unmeasured-frontier-24-v5-20260722/t-16/sequential/witness.txt",
+            "sha256": "92b42459ddffa9d911ec9d15d3c12837838b440136921de323220765948533ef"
+          },
+          "local_claim": "validated exact-degree C(11,5,3) link outside the active catalogue; not a 40-cover",
+          "method": "sequential",
+          "result_receipt": {
+            "path": "artifacts/sequential-frontier-sweep/sequential-unmeasured-frontier-24-v5-20260722/t-16/sequential/result.json",
+            "sha256": "fe3482b15a8a3c001f9ca8e90625a7e8765067e7a733a3ca9b41e2cf292ecbf9"
+          },
+          "run_id": "sequential-unmeasured-frontier-24-v5-20260722",
+          "runtime_seconds": 22.99234312499175,
+          "status": "provisional_sat"
+        }
+      ],
+      "root_index": 0,
+      "secondary_index": 0,
+      "source_path": "artifacts/pilot/link-orbit-root0-secondary-0-tertiary-16-10s",
+      "tertiary_index": 16
+    },
+    {
+      "active_blocker_sha256": "d173df1b0b6cb781723d2a334fd756044ff6b3113a3f4cd3edec5eddb042e4fa",
+      "assigned_methods": [
+        "sequential",
+        "alternative_cubing",
+        "forced_matching_exact_degree_40_block_witness"
+      ],
+      "final_coverage_status": "open",
+      "id": "t-17",
+      "inherited_result_sha256": "07dd19e1b1ceb4cd4bd3fd8d6a0c3c7a9b4510628eeb27cb00ae9a712460b662",
+      "kind": "tertiary",
+      "outcomes": [
+        {
+          "canonical_link_sha256": "c01d7d4a45ca96b3a442a87d5df422c45f6d3ce5a83ca450c3ee7c4e647837ca",
+          "cnf_encoding_revision": "sequential-unmeasured-frontier-24-v5-20260722:sequential:schema-2",
+          "cnf_sha256": "f330fc3c6643643e78b1f25f6729ec7a4efedfa8f3a767d025037873ad601e32",
+          "cpu_seconds": 13.158019000024069,
+          "independent_audit_receipt": {
+            "path": "artifacts/sequential-frontier-sweep/sequential-unmeasured-frontier-24-v5-20260722/t-17/sequential/cnf-audit.json",
+            "sha256": "a04b21d18ba38b723cef1511ecdf18dfadf94ef6d9c2aa8f2d13f6b330dbed78"
+          },
+          "link_validation_receipt": {
+            "path": "artifacts/sequential-frontier-sweep/sequential-unmeasured-frontier-24-v5-20260722/t-17/sequential/validation.json",
+            "sha256": "4b794a2673deca47f3f88a2b8a03f0a9e1206fa7377af97fa288f6cdc4cfe7af"
+          },
+          "link_witness_receipt": {
+            "path": "artifacts/sequential-frontier-sweep/sequential-unmeasured-frontier-24-v5-20260722/t-17/sequential/witness.txt",
+            "sha256": "c01d7d4a45ca96b3a442a87d5df422c45f6d3ce5a83ca450c3ee7c4e647837ca"
+          },
+          "local_claim": "validated exact-degree C(11,5,3) link outside the active catalogue; not a 40-cover",
+          "method": "sequential",
+          "result_receipt": {
+            "path": "artifacts/sequential-frontier-sweep/sequential-unmeasured-frontier-24-v5-20260722/t-17/sequential/result.json",
+            "sha256": "2e272c139b4baae3b96ad54ede56da82c2b57226107295a84d72e6d7e4ff1002"
+          },
+          "run_id": "sequential-unmeasured-frontier-24-v5-20260722",
+          "runtime_seconds": 13.158019000024069,
+          "status": "provisional_sat"
+        }
+      ],
+      "root_index": 0,
+      "secondary_index": 0,
+      "source_path": "artifacts/pilot/link-orbit-root0-secondary-0-tertiary-17-10s",
+      "tertiary_index": 17
+    },
+    {
+      "active_blocker_sha256": "d173df1b0b6cb781723d2a334fd756044ff6b3113a3f4cd3edec5eddb042e4fa",
+      "assigned_methods": [
+        "sequential"
+      ],
+      "final_coverage_status": "closed_unsat",
+      "id": "t-18",
+      "inherited_result_sha256": "62347d53de2a8c0e166a4a0bad254422b7ff1f0d75836af76c2287a0c6dd4704",
+      "kind": "tertiary",
+      "outcomes": [
+        {
+          "cnf_encoding_revision": "sequential-unmeasured-frontier-24-v5-20260722:sequential:schema-2",
+          "cnf_sha256": "dab666aa885c55b13d9d7b9eb06dc18b350d0eaee010927abbde63dfdee13b7f",
+          "cpu_seconds": 20.962414208974224,
+          "independent_audit_receipt": {
+            "path": "artifacts/sequential-frontier-sweep/sequential-unmeasured-frontier-24-v5-20260722/t-18/sequential/cnf-audit.json",
+            "sha256": "74133ccb82053b948f5bd88e2ffa71d3e4da61d1d563dbe690bca6a1cd12b3b0"
+          },
+          "method": "sequential",
+          "proof_bytes": 47449570,
+          "proof_sha256": "a5366e8f163ea64dbc1188b45b0ead32d9dcf351ccc2f93627d59961593ba383",
+          "replay_receipt": {
+            "path": "artifacts/sequential-frontier-sweep/sequential-unmeasured-frontier-24-v5-20260722/t-18/sequential/validation.json",
+            "sha256": "b4f9b6c82a0d672298002d797b9f6f4bde2f5416f02463ba23d03658c55d5cab"
+          },
+          "result_receipt": {
+            "path": "artifacts/sequential-frontier-sweep/sequential-unmeasured-frontier-24-v5-20260722/t-18/sequential/result.json",
+            "sha256": "92bf7f1bef0e27d2e8c52e205c05328f3126a3f7ab4afeb129b46d95e2a3cdd3"
+          },
+          "run_id": "sequential-unmeasured-frontier-24-v5-20260722",
+          "runtime_seconds": 20.962414208974224,
+          "status": "unsat_certified"
+        }
+      ],
+      "root_index": 0,
+      "secondary_index": 0,
+      "source_path": "artifacts/pilot/link-orbit-root0-secondary-0-tertiary-18-10s",
+      "tertiary_index": 18
+    },
+    {
+      "active_blocker_sha256": "d173df1b0b6cb781723d2a334fd756044ff6b3113a3f4cd3edec5eddb042e4fa",
+      "assigned_methods": [
+        "sequential"
+      ],
+      "final_coverage_status": "closed_unsat",
+      "id": "t-19",
+      "inherited_result_sha256": "ee82129d9dc8bf75285f443d6d6fa8f01eb623eeff89c692ed2c8c356393c579",
+      "kind": "tertiary",
+      "outcomes": [
+        {
+          "cnf_encoding_revision": "sequential-unmeasured-frontier-24-v5-20260722:sequential:schema-2",
+          "cnf_sha256": "5280cd03f8acdbd7bf2c97a9e60696ebc611ce52dc21f4321f4f37af2081c86a",
+          "cpu_seconds": 12.50433724996401,
+          "independent_audit_receipt": {
+            "path": "artifacts/sequential-frontier-sweep/sequential-unmeasured-frontier-24-v5-20260722/t-19/sequential/cnf-audit.json",
+            "sha256": "1fc4137ad1a77ad48d1182e65a8e23961c4a309fce3dfa9426859dd8de52b556"
+          },
+          "method": "sequential",
+          "proof_bytes": 33476862,
+          "proof_sha256": "8ff9c86f67a39b39ce08d7811d389489e86b6cc5336615c58919d7f816321f67",
+          "replay_receipt": {
+            "path": "artifacts/sequential-frontier-sweep/sequential-unmeasured-frontier-24-v5-20260722/t-19/sequential/validation.json",
+            "sha256": "bc3f2bb68b50b0e630adddfbe076e46fc5703e96e7c6b5bd81be2cbc5e6d6713"
+          },
+          "result_receipt": {
+            "path": "artifacts/sequential-frontier-sweep/sequential-unmeasured-frontier-24-v5-20260722/t-19/sequential/result.json",
+            "sha256": "8ec8ae6e24d63e3541e8babdd31bfbe47eadff3a5445c6d5b213054f1f4a027a"
+          },
+          "run_id": "sequential-unmeasured-frontier-24-v5-20260722",
+          "runtime_seconds": 12.50433724996401,
+          "status": "unsat_certified"
+        }
+      ],
+      "root_index": 0,
+      "secondary_index": 0,
+      "source_path": "artifacts/pilot/link-orbit-root0-secondary-0-tertiary-19-10s",
+      "tertiary_index": 19
+    },
+    {
+      "active_blocker_sha256": "d173df1b0b6cb781723d2a334fd756044ff6b3113a3f4cd3edec5eddb042e4fa",
+      "assigned_methods": [
+        "sequential",
+        "kmtotalizer"
+      ],
+      "final_coverage_status": "closed_unsat",
+      "id": "t-2",
+      "inherited_result_sha256": "a8bcd9bc0b77ff4b345504041f47f0aa29da1d33e46b8fdf70727590ed09fdd4",
+      "kind": "tertiary",
+      "outcomes": [
+        {
+          "cnf_encoding_revision": "cardinality-encoding-20-leaf-20260722:kmtotalizer:schema-1",
+          "cnf_sha256": "de614f636b355f5e9e9f910251549b93167b59bf0a13dada66cc988f6b802362",
+          "cpu_seconds": 60.015379681950435,
+          "independent_audit_receipt": {
+            "path": "artifacts/cardinality-encoding-benchmark/cardinality-encoding-20-leaf-20260722/t-2/kmtotalizer/cnf-audit.json",
+            "sha256": "810f928aab16bb05df9b23e0d115c18e5f1fcaf25b4fc82ab3ada00ee1bfa069"
+          },
+          "method": "kmtotalizer",
+          "result_receipt": {
+            "path": "artifacts/cardinality-encoding-benchmark/cardinality-encoding-20-leaf-20260722/t-2/kmtotalizer/result.json",
+            "sha256": "b7465df15cc32c9c04ecd2b03a62682cd2810b25be36c0559fd163acd653fa8f"
+          },
+          "run_id": "cardinality-encoding-20-leaf-20260722",
+          "runtime_seconds": 60.015379681950435,
+          "status": "unknown"
+        },
+        {
+          "cnf_encoding_revision": "cardinality-encoding-20-leaf-20260722:sequential:schema-1",
+          "cnf_sha256": "c4a29166e7b0be28a90c8dff2f3767e4aaa858b38d60fbdf8971aa1f0cee5935",
+          "cpu_seconds": 37.844042759155855,
+          "independent_audit_receipt": {
+            "path": "artifacts/cardinality-encoding-benchmark/cardinality-encoding-20-leaf-20260722/t-2/sequential/cnf-audit.json",
+            "sha256": "35ffbb63c71caca414a5203d18711433f44768d1a88da85067d3cd840e64b21c"
+          },
+          "method": "sequential",
+          "proof_bytes": 101080595,
+          "proof_sha256": "cfe7aba017b149b9604d009ffee788867e5ac3bc6a01425e63304babf208372f",
+          "replay_receipt": {
+            "path": "artifacts/cardinality-encoding-benchmark/cardinality-encoding-20-leaf-20260722/t-2/sequential/validation.json",
+            "sha256": "c4fab0595f4c74c95cc6dd62336170cffb9ac0787c0dc9deb725b9b5821009c3"
+          },
+          "result_receipt": {
+            "path": "artifacts/cardinality-encoding-benchmark/cardinality-encoding-20-leaf-20260722/t-2/sequential/result.json",
+            "sha256": "1118434ef550c87eb8cf905cb35d2b7e8a581e641e70e24ff65c0af08b640c18"
+          },
+          "run_id": "cardinality-encoding-20-leaf-20260722",
+          "runtime_seconds": 37.844042759155855,
+          "status": "unsat_certified"
+        }
+      ],
+      "root_index": 0,
+      "secondary_index": 0,
+      "source_path": "artifacts/pilot/link-orbit-root0-secondary-0-tertiary-2-10s",
+      "tertiary_index": 2
+    },
+    {
+      "active_blocker_sha256": "d173df1b0b6cb781723d2a334fd756044ff6b3113a3f4cd3edec5eddb042e4fa",
+      "assigned_methods": [
+        "sequential"
+      ],
+      "final_coverage_status": "closed_unsat",
+      "id": "t-20",
+      "inherited_result_sha256": "0cfabdb6fa780a98da726f679ab6f97536569af40e36445e63ebbc0035e7e5f0",
+      "kind": "tertiary",
+      "outcomes": [
+        {
+          "cnf_encoding_revision": "sequential-unmeasured-frontier-24-v5-20260722:sequential:schema-2",
+          "cnf_sha256": "c9c4a9708c2438d3ad7f63d53fe09652827d19b4732f1310372d6e49262b255a",
+          "cpu_seconds": 5.355836957984138,
+          "independent_audit_receipt": {
+            "path": "artifacts/sequential-frontier-sweep/sequential-unmeasured-frontier-24-v5-20260722/t-20/sequential/cnf-audit.json",
+            "sha256": "21d3b0b728772b4fed0fd0a3f4f19b9b44c3fcfec4f91eed81e8fcad9c99ff1d"
+          },
+          "method": "sequential",
+          "proof_bytes": 17669801,
+          "proof_sha256": "8f6dbd16afab9c535ecabff63e6e99aa23b8b2e2e87ca05ba89898a8960de72c",
+          "replay_receipt": {
+            "path": "artifacts/sequential-frontier-sweep/sequential-unmeasured-frontier-24-v5-20260722/t-20/sequential/validation.json",
+            "sha256": "0e546697b3c37259f9a26fefc227b59d5376f4ddafceee9b868005da9d258f8a"
+          },
+          "result_receipt": {
+            "path": "artifacts/sequential-frontier-sweep/sequential-unmeasured-frontier-24-v5-20260722/t-20/sequential/result.json",
+            "sha256": "c72dadc40fc5fe32dbbba2d0f13dadd1a791f19a013bb529985212c79c7ede89"
+          },
+          "run_id": "sequential-unmeasured-frontier-24-v5-20260722",
+          "runtime_seconds": 5.355836957984138,
+          "status": "unsat_certified"
+        }
+      ],
+      "root_index": 0,
+      "secondary_index": 0,
+      "source_path": "artifacts/pilot/link-orbit-root0-secondary-0-tertiary-20-10s",
+      "tertiary_index": 20
+    },
+    {
+      "active_blocker_sha256": "d173df1b0b6cb781723d2a334fd756044ff6b3113a3f4cd3edec5eddb042e4fa",
+      "assigned_methods": [
+        "sequential"
+      ],
+      "final_coverage_status": "closed_unsat",
+      "id": "t-21",
+      "inherited_result_sha256": "ddca90e6822a3db17e4dd7dd2c237dd5baaf75c0029993ecea7dc6b2e6e893f3",
+      "kind": "tertiary",
+      "outcomes": [
+        {
+          "cnf_encoding_revision": "sequential-unmeasured-frontier-12-v7-20260722:sequential:schema-2",
+          "cnf_sha256": "daa93e6be6c288ea765462cecd8d4c7d81dc1ad4e79b66fb0300f659163af805",
+          "cpu_seconds": 12.525233594002202,
+          "independent_audit_receipt": {
+            "path": "artifacts/sequential-frontier-sweep/sequential-unmeasured-frontier-12-v7-20260722/t-21/sequential/cnf-audit.json",
+            "sha256": "0f74ea75a1704cf469db81d44a767670fecbbd54d6db9d03f9491d918b7fb45c"
+          },
+          "method": "sequential",
+          "post_tranche_independent_replay_receipt": {
+            "path": "artifacts/classification/exhaustive-link-v1/sequential-tranche-12-independent-audit.json",
+            "sha256": "3b5e91da4fbeb56913223f8845586a081a70b50d83dfe5a3143a5104673f0f67"
+          },
+          "proof_bytes": 44619606,
+          "proof_sha256": "4810a95547191d3ef0e551584f904c9030270a891e5c4cf55ce48be21ad6093d",
+          "replay_receipt": {
+            "path": "artifacts/sequential-frontier-sweep/sequential-unmeasured-frontier-12-v7-20260722/t-21/sequential/validation.json",
+            "sha256": "15fbcd74a10c8efd25730bd8fd95fdd77cbc53e53a98e4813d1614aa5545987b"
+          },
+          "result_receipt": {
+            "path": "artifacts/sequential-frontier-sweep/sequential-unmeasured-frontier-12-v7-20260722/t-21/sequential/result.json",
+            "sha256": "83c77cca76627eae841ef7f82e06f2d49b15989b03eb3d21fca8b28c20a4e5d8"
+          },
+          "run_id": "sequential-unmeasured-frontier-12-v7-20260722",
+          "runtime_seconds": 12.525233594002202,
+          "status": "unsat_certified"
+        }
+      ],
+      "root_index": 0,
+      "secondary_index": 0,
+      "source_path": "artifacts/pilot/link-orbit-root0-secondary-0-tertiary-21-10s",
+      "tertiary_index": 21
+    },
+    {
+      "active_blocker_sha256": "d173df1b0b6cb781723d2a334fd756044ff6b3113a3f4cd3edec5eddb042e4fa",
+      "assigned_methods": [
+        "sequential"
+      ],
+      "final_coverage_status": "closed_unsat",
+      "id": "t-22",
+      "inherited_result_sha256": "061f0fdda72dc942660a38f67dd43f381bfa889fd4a1312994b265d1b06f5782",
+      "kind": "tertiary",
+      "outcomes": [
+        {
+          "cnf_encoding_revision": "sequential-unmeasured-frontier-12-v7-20260722:sequential:schema-2",
+          "cnf_sha256": "570c566664ec0c97fb7f45d492de6d523f384da66c2841c11f727b5f442991d7",
+          "cpu_seconds": 8.658559055067599,
+          "independent_audit_receipt": {
+            "path": "artifacts/sequential-frontier-sweep/sequential-unmeasured-frontier-12-v7-20260722/t-22/sequential/cnf-audit.json",
+            "sha256": "7c50edf6949ac5e455736054bec334e40cca2d97bed0bf04a16663d5a779219a"
+          },
+          "method": "sequential",
+          "post_tranche_independent_replay_receipt": {
+            "path": "artifacts/classification/exhaustive-link-v1/sequential-tranche-12-independent-audit.json",
+            "sha256": "3b5e91da4fbeb56913223f8845586a081a70b50d83dfe5a3143a5104673f0f67"
+          },
+          "proof_bytes": 29312291,
+          "proof_sha256": "d3c5b22ac4ebfb7933b561147856f2c8f5eb461378c0dc0bdf86d5be759484e1",
+          "replay_receipt": {
+            "path": "artifacts/sequential-frontier-sweep/sequential-unmeasured-frontier-12-v7-20260722/t-22/sequential/validation.json",
+            "sha256": "6a21fa186dfb292ea101f17b3c66ceddd1d2f24c6131acab1c630bc4908ef8c3"
+          },
+          "result_receipt": {
+            "path": "artifacts/sequential-frontier-sweep/sequential-unmeasured-frontier-12-v7-20260722/t-22/sequential/result.json",
+            "sha256": "19511430710c0937ddc2e90e6ff0d3965e78d60ab1b7d434e77d4ab223b24465"
+          },
+          "run_id": "sequential-unmeasured-frontier-12-v7-20260722",
+          "runtime_seconds": 8.658559055067599,
+          "status": "unsat_certified"
+        }
+      ],
+      "root_index": 0,
+      "secondary_index": 0,
+      "source_path": "artifacts/pilot/link-orbit-root0-secondary-0-tertiary-22-10s",
+      "tertiary_index": 22
+    },
+    {
+      "active_blocker_sha256": "d173df1b0b6cb781723d2a334fd756044ff6b3113a3f4cd3edec5eddb042e4fa",
+      "assigned_methods": [
+        "sequential"
+      ],
+      "final_coverage_status": "closed_unsat",
+      "id": "t-23",
+      "inherited_result_sha256": "7e6cbcf4b49998ca1533d4524c2060a10b07a874f27d1d475a835efcbe611846",
+      "kind": "tertiary",
+      "outcomes": [
+        {
+          "cnf_encoding_revision": "sequential-unmeasured-frontier-12-v7-20260722:sequential:schema-2",
+          "cnf_sha256": "7eefe63df37730f6194a54b7f1c3f62470b4fe1db35ed31887346569f7d37bdc",
+          "cpu_seconds": 11.698644503951073,
+          "independent_audit_receipt": {
+            "path": "artifacts/sequential-frontier-sweep/sequential-unmeasured-frontier-12-v7-20260722/t-23/sequential/cnf-audit.json",
+            "sha256": "218a3798b3e164698a50edd6f7d2db7717674bcdcb30626a95c49befa1489ff9"
+          },
+          "method": "sequential",
+          "post_tranche_independent_replay_receipt": {
+            "path": "artifacts/classification/exhaustive-link-v1/sequential-tranche-12-independent-audit.json",
+            "sha256": "3b5e91da4fbeb56913223f8845586a081a70b50d83dfe5a3143a5104673f0f67"
+          },
+          "proof_bytes": 37484172,
+          "proof_sha256": "30f5e07428ac15cdffbae3e454eb124057cc0092fdf28e373bace9ffb66ae4b9",
+          "replay_receipt": {
+            "path": "artifacts/sequential-frontier-sweep/sequential-unmeasured-frontier-12-v7-20260722/t-23/sequential/validation.json",
+            "sha256": "6af2a7a33ddbfc631bdb7a2a5f35f0da91d28fc46b00cd3b5bc762a1b0a6fc88"
+          },
+          "result_receipt": {
+            "path": "artifacts/sequential-frontier-sweep/sequential-unmeasured-frontier-12-v7-20260722/t-23/sequential/result.json",
+            "sha256": "20777e4d9ea743a94a132cd9f7e3ff08467937d506e2abb997432190e629951a"
+          },
+          "run_id": "sequential-unmeasured-frontier-12-v7-20260722",
+          "runtime_seconds": 11.698644503951073,
+          "status": "unsat_certified"
+        }
+      ],
+      "root_index": 0,
+      "secondary_index": 0,
+      "source_path": "artifacts/pilot/link-orbit-root0-secondary-0-tertiary-23-10s",
+      "tertiary_index": 23
+    },
+    {
+      "active_blocker_sha256": "d173df1b0b6cb781723d2a334fd756044ff6b3113a3f4cd3edec5eddb042e4fa",
+      "assigned_methods": [
+        "sequential",
+        "kmtotalizer"
+      ],
+      "final_coverage_status": "closed_unsat",
+      "id": "t-24",
+      "inherited_result_sha256": "115535b982efecce294056f90dfcbb9f96413d2e4e21878ae67359d8057294b5",
+      "kind": "tertiary",
+      "outcomes": [
+        {
+          "cnf_encoding_revision": "cardinality-encoding-20-leaf-20260722:kmtotalizer:schema-1",
+          "cnf_sha256": "19d188fe529f15716dcfe04d16997125ab37b012fb18258c8d5eb5fed3494d31",
+          "cpu_seconds": 50.35563337197527,
+          "independent_audit_receipt": {
+            "path": "artifacts/cardinality-encoding-benchmark/cardinality-encoding-20-leaf-20260722/t-24/kmtotalizer/cnf-audit.json",
+            "sha256": "7020fe4c2becc53f0142afb52e88e02d676096063e11813f2c0aef44545668b8"
+          },
+          "method": "kmtotalizer",
+          "proof_bytes": 126279404,
+          "proof_sha256": "bc745601667f4e353cc100429e642c1760e045e500258121bee3b889ba8ec25c",
+          "replay_receipt": {
+            "path": "artifacts/cardinality-encoding-benchmark/cardinality-encoding-20-leaf-20260722/t-24/kmtotalizer/validation.json",
+            "sha256": "88b4fbf940d483027fd4991a7889d4356c5f8c7fcb1f6bf6fa715c7b0a19b094"
+          },
+          "result_receipt": {
+            "path": "artifacts/cardinality-encoding-benchmark/cardinality-encoding-20-leaf-20260722/t-24/kmtotalizer/result.json",
+            "sha256": "4200ed9ff6b1b5e8b87ebf797a5abfc9f105fc350d0dad119b48c52b46205c6b"
+          },
+          "run_id": "cardinality-encoding-20-leaf-20260722",
+          "runtime_seconds": 50.35563337197527,
+          "status": "unsat_certified"
+        },
+        {
+          "cnf_encoding_revision": "cardinality-encoding-20-leaf-20260722:sequential:schema-1",
+          "cnf_sha256": "ebe741db01dd2fcef2ca84873ded42a030162028f1f10401730c5ec33ea4e2ad",
+          "cpu_seconds": 8.249422766966745,
+          "independent_audit_receipt": {
+            "path": "artifacts/cardinality-encoding-benchmark/cardinality-encoding-20-leaf-20260722/t-24/sequential/cnf-audit.json",
+            "sha256": "e783b16f8bfc17e6e992fc05d15eeaab0adf243078155d2586d5b4676add1518"
+          },
+          "method": "sequential",
+          "proof_bytes": 36422241,
+          "proof_sha256": "8ccad2b29db9b17eaf3368a895fa43058af602b101efd648acb4091aab66ff6b",
+          "replay_receipt": {
+            "path": "artifacts/cardinality-encoding-benchmark/cardinality-encoding-20-leaf-20260722/t-24/sequential/validation.json",
+            "sha256": "92419a224233529eb5e745e497f1f3838146e5b2fb38841d5062a9117b92161b"
+          },
+          "result_receipt": {
+            "path": "artifacts/cardinality-encoding-benchmark/cardinality-encoding-20-leaf-20260722/t-24/sequential/result.json",
+            "sha256": "74783a4a1b36ac993fa9d94be28aa1aa6563504c05149f2af0de4e75237eb93d"
+          },
+          "run_id": "cardinality-encoding-20-leaf-20260722",
+          "runtime_seconds": 8.249422766966745,
+          "status": "unsat_certified"
+        }
+      ],
+      "root_index": 0,
+      "secondary_index": 0,
+      "source_path": "artifacts/pilot/link-orbit-root0-secondary-0-tertiary-24-10s",
+      "tertiary_index": 24
+    },
+    {
+      "active_blocker_sha256": "d173df1b0b6cb781723d2a334fd756044ff6b3113a3f4cd3edec5eddb042e4fa",
+      "assigned_methods": [
+        "sequential"
+      ],
+      "final_coverage_status": "closed_unsat",
+      "id": "t-25",
+      "inherited_result_sha256": "87460e3e215493c5c0c3aa1288853a204c3a0cd034672e883f5db9abab8bc48d",
+      "kind": "tertiary",
+      "outcomes": [
+        {
+          "cnf_encoding_revision": "sequential-unmeasured-frontier-12-v7-20260722:sequential:schema-2",
+          "cnf_sha256": "a2d61eaf0e2893863cdc6c3a4bbbc64b68b8828fe1c049cc64f07eb16c071303",
+          "cpu_seconds": 3.8222312219440937,
+          "independent_audit_receipt": {
+            "path": "artifacts/sequential-frontier-sweep/sequential-unmeasured-frontier-12-v7-20260722/t-25/sequential/cnf-audit.json",
+            "sha256": "d3806e01107705e2d4b7ba63aac228ec908a09cc8173aa584ba70fb45da436b2"
+          },
+          "method": "sequential",
+          "post_tranche_independent_replay_receipt": {
+            "path": "artifacts/classification/exhaustive-link-v1/sequential-tranche-12-independent-audit.json",
+            "sha256": "3b5e91da4fbeb56913223f8845586a081a70b50d83dfe5a3143a5104673f0f67"
+          },
+          "proof_bytes": 13604107,
+          "proof_sha256": "1ca7cac9bda23cbc7f4c48dbd3200a1e4555c1318feb50780ad710076a5597e2",
+          "replay_receipt": {
+            "path": "artifacts/sequential-frontier-sweep/sequential-unmeasured-frontier-12-v7-20260722/t-25/sequential/validation.json",
+            "sha256": "2dc1f7d0c08a30ce1881cae2a4d197798c977218853b127bc1577911543f6959"
+          },
+          "result_receipt": {
+            "path": "artifacts/sequential-frontier-sweep/sequential-unmeasured-frontier-12-v7-20260722/t-25/sequential/result.json",
+            "sha256": "6974d80cff874daeb64c67b088e2c6c5394a018435a374901258842c7bdf0ae5"
+          },
+          "run_id": "sequential-unmeasured-frontier-12-v7-20260722",
+          "runtime_seconds": 3.8222312219440937,
+          "status": "unsat_certified"
+        }
+      ],
+      "root_index": 0,
+      "secondary_index": 0,
+      "source_path": "artifacts/pilot/link-orbit-root0-secondary-0-tertiary-25-10s",
+      "tertiary_index": 25
+    },
+    {
+      "active_blocker_sha256": "d173df1b0b6cb781723d2a334fd756044ff6b3113a3f4cd3edec5eddb042e4fa",
+      "assigned_methods": [
+        "sequential",
+        "kmtotalizer"
+      ],
+      "final_coverage_status": "closed_unsat",
+      "id": "t-26",
+      "inherited_result_sha256": "a9723060afe8611ea5d743b6225b793fb095e1a1c2f3adb64f11a1fec079efcc",
+      "kind": "tertiary",
+      "outcomes": [
+        {
+          "cnf_encoding_revision": "cardinality-encoding-20-leaf-20260722:kmtotalizer:schema-1",
+          "cnf_sha256": "da3ec10921e9242949ebd64c7281796349b3aa66f421dedf0f3d7b08bfbd08ff",
+          "cpu_seconds": 9.517389281885698,
+          "independent_audit_receipt": {
+            "path": "artifacts/cardinality-encoding-benchmark/cardinality-encoding-20-leaf-20260722/t-26/kmtotalizer/cnf-audit.json",
+            "sha256": "47d63016dab12f053b9e66e140b2dbd30337b122e9aab1f55f0b4158a1e351ea"
+          },
+          "method": "kmtotalizer",
+          "proof_bytes": 33963939,
+          "proof_sha256": "c7d70b4c23bcaeb0959a6c108f5f2366cb4f042a3d24992b95f2a9488567c9a1",
+          "replay_receipt": {
+            "path": "artifacts/cardinality-encoding-benchmark/cardinality-encoding-20-leaf-20260722/t-26/kmtotalizer/validation.json",
+            "sha256": "b16dfeb4d1390f14c5e3f423d4c8bc11dee4d21f7c531da822524e1276ca0699"
+          },
+          "result_receipt": {
+            "path": "artifacts/cardinality-encoding-benchmark/cardinality-encoding-20-leaf-20260722/t-26/kmtotalizer/result.json",
+            "sha256": "fa17572dd1a154510c9ecc52cbc12932da82940d16ac0d77d35bb1f0654340d6"
+          },
+          "run_id": "cardinality-encoding-20-leaf-20260722",
+          "runtime_seconds": 9.517389281885698,
+          "status": "unsat_certified"
+        },
+        {
+          "cnf_encoding_revision": "cardinality-encoding-20-leaf-20260722:sequential:schema-1",
+          "cnf_sha256": "6a14b5f6c938c2412884a821a13b51d94b3a434afa46250ef4d71a855a65709f",
+          "cpu_seconds": 2.952820026082918,
+          "independent_audit_receipt": {
+            "path": "artifacts/cardinality-encoding-benchmark/cardinality-encoding-20-leaf-20260722/t-26/sequential/cnf-audit.json",
+            "sha256": "58e2d31de9e648aaafcbd7f8378235401e7e16274335a0268af827e5afb26b29"
+          },
+          "method": "sequential",
+          "proof_bytes": 16418396,
+          "proof_sha256": "eff461d55f12de2c4676c28015fe132efdbf943980455d73c2b0e55aa09ad0b1",
+          "replay_receipt": {
+            "path": "artifacts/cardinality-encoding-benchmark/cardinality-encoding-20-leaf-20260722/t-26/sequential/validation.json",
+            "sha256": "84c64a35c2316ce4ca2d186bfec17d76a0b471e621e8396e4d4e99e221c1a980"
+          },
+          "result_receipt": {
+            "path": "artifacts/cardinality-encoding-benchmark/cardinality-encoding-20-leaf-20260722/t-26/sequential/result.json",
+            "sha256": "98aeacfa963fdec6be4017a1130aa0e37a86fed3a23fc5ae9844ba43a85040f6"
+          },
+          "run_id": "cardinality-encoding-20-leaf-20260722",
+          "runtime_seconds": 2.952820026082918,
+          "status": "unsat_certified"
+        }
+      ],
+      "root_index": 0,
+      "secondary_index": 0,
+      "source_path": "artifacts/pilot/link-orbit-root0-secondary-0-tertiary-26-10s",
+      "tertiary_index": 26
+    },
+    {
+      "active_blocker_sha256": "d173df1b0b6cb781723d2a334fd756044ff6b3113a3f4cd3edec5eddb042e4fa",
+      "assigned_methods": [
+        "sequential",
+        "kmtotalizer"
+      ],
+      "final_coverage_status": "closed_unsat",
+      "id": "t-27",
+      "inherited_result_sha256": "43340c20a011abfc2b96b03005861a90cca08e5f0e26d16ac6d9e43bf87868cf",
+      "kind": "tertiary",
+      "outcomes": [
+        {
+          "cnf_encoding_revision": "cardinality-encoding-20-leaf-20260722:kmtotalizer:schema-1",
+          "cnf_sha256": "51e23e7eea8fa3072cb0648fae20746726b4da189b6a06655a75ed5fabdd9e2c",
+          "cpu_seconds": 55.89055839390494,
+          "independent_audit_receipt": {
+            "path": "artifacts/cardinality-encoding-benchmark/cardinality-encoding-20-leaf-20260722/t-27/kmtotalizer/cnf-audit.json",
+            "sha256": "159e5b929ede461f1fb45d1567ef51331525a272eaa46c97a12fe43aadfe4ee1"
+          },
+          "method": "kmtotalizer",
+          "proof_bytes": 55116348,
+          "proof_sha256": "ecc0434de4793064c9b4de27209475f5f302e837480a39e94d5347fedd8c56eb",
+          "replay_receipt": {
+            "path": "artifacts/cardinality-encoding-benchmark/cardinality-encoding-20-leaf-20260722/t-27/kmtotalizer/validation.json",
+            "sha256": "ca9cb68aaa0151d24dec2dc18bb42f946f7b6a2b846a7ec4783322c3f0d8de9c"
+          },
+          "result_receipt": {
+            "path": "artifacts/cardinality-encoding-benchmark/cardinality-encoding-20-leaf-20260722/t-27/kmtotalizer/result.json",
+            "sha256": "a65d866625e69a1ae42843d8076d8b6c446b4b83a2dec8d9a149dc642b4c0466"
+          },
+          "run_id": "cardinality-encoding-20-leaf-20260722",
+          "runtime_seconds": 55.89055839390494,
+          "status": "unsat_certified"
+        },
+        {
+          "cnf_encoding_revision": "cardinality-encoding-20-leaf-20260722:sequential:schema-1",
+          "cnf_sha256": "71ba65cdc01e12edd7206a9e9cb8edf9db6d0455779d1f0cc2cd80316d7d1a6c",
+          "cpu_seconds": 15.456603019032627,
+          "independent_audit_receipt": {
+            "path": "artifacts/cardinality-encoding-benchmark/cardinality-encoding-20-leaf-20260722/t-27/sequential/cnf-audit.json",
+            "sha256": "3072c80efae2119b98921b53e5c0fa3cff0ea9616cd495cfa53c6a45cec62801"
+          },
+          "method": "sequential",
+          "proof_bytes": 19236843,
+          "proof_sha256": "c20e23e458f79c4eef7b0b43daa98eb660b72a1d7b2c1a8e5e62d8e333413726",
+          "replay_receipt": {
+            "path": "artifacts/cardinality-encoding-benchmark/cardinality-encoding-20-leaf-20260722/t-27/sequential/validation.json",
+            "sha256": "1f1e98d9111b71ec7f999572ab855bd7a00835b5700661347b721901f7977cb9"
+          },
+          "result_receipt": {
+            "path": "artifacts/cardinality-encoding-benchmark/cardinality-encoding-20-leaf-20260722/t-27/sequential/result.json",
+            "sha256": "243f8f62cf6ff4b03fe47c15660178d7ecd2ca51fe230c62162832220e90478a"
+          },
+          "run_id": "cardinality-encoding-20-leaf-20260722",
+          "runtime_seconds": 15.456603019032627,
+          "status": "unsat_certified"
+        }
+      ],
+      "root_index": 0,
+      "secondary_index": 0,
+      "source_path": "artifacts/pilot/link-orbit-root0-secondary-0-tertiary-27-10s",
+      "tertiary_index": 27
+    },
+    {
+      "active_blocker_sha256": "d173df1b0b6cb781723d2a334fd756044ff6b3113a3f4cd3edec5eddb042e4fa",
+      "assigned_methods": [
+        "sequential"
+      ],
+      "final_coverage_status": "closed_unsat",
+      "id": "t-28",
+      "inherited_result_sha256": "4ad6e3924be845fef10a537af0c056715d5d852439b5a3378f55722305aee402",
+      "kind": "tertiary",
+      "outcomes": [
+        {
+          "cnf_encoding_revision": "sequential-unmeasured-frontier-12-v7-20260722:sequential:schema-2",
+          "cnf_sha256": "3832632ec5fdee1e9574c439a468b064f2989755efd096166840e91604144203",
+          "cpu_seconds": 3.9193122580181807,
+          "independent_audit_receipt": {
+            "path": "artifacts/sequential-frontier-sweep/sequential-unmeasured-frontier-12-v7-20260722/t-28/sequential/cnf-audit.json",
+            "sha256": "489805c7e9c242a2a43dea31cf04516971eead04cb758a311e181892a1fba045"
+          },
+          "method": "sequential",
+          "post_tranche_independent_replay_receipt": {
+            "path": "artifacts/classification/exhaustive-link-v1/sequential-tranche-12-independent-audit.json",
+            "sha256": "3b5e91da4fbeb56913223f8845586a081a70b50d83dfe5a3143a5104673f0f67"
+          },
+          "proof_bytes": 16916262,
+          "proof_sha256": "72a8a54bb5d11ed381662b2e2a8644f24fd920dfbb5d931f940c9003f726fc32",
+          "replay_receipt": {
+            "path": "artifacts/sequential-frontier-sweep/sequential-unmeasured-frontier-12-v7-20260722/t-28/sequential/validation.json",
+            "sha256": "18d7b41a40296c8146ec62ae8e8f93103f43e76f152e6f9334d650b86610de30"
+          },
+          "result_receipt": {
+            "path": "artifacts/sequential-frontier-sweep/sequential-unmeasured-frontier-12-v7-20260722/t-28/sequential/result.json",
+            "sha256": "465759b2eaf0c3828fdad507df36f3df1adeefce766ed7487e71e77a7f3fff22"
+          },
+          "run_id": "sequential-unmeasured-frontier-12-v7-20260722",
+          "runtime_seconds": 3.9193122580181807,
+          "status": "unsat_certified"
+        }
+      ],
+      "root_index": 0,
+      "secondary_index": 0,
+      "source_path": "artifacts/pilot/link-orbit-root0-secondary-0-tertiary-28-10s",
+      "tertiary_index": 28
+    },
+    {
+      "active_blocker_sha256": "d173df1b0b6cb781723d2a334fd756044ff6b3113a3f4cd3edec5eddb042e4fa",
+      "assigned_methods": [
+        "sequential",
+        "kmtotalizer"
+      ],
+      "final_coverage_status": "closed_unsat",
+      "id": "t-29",
+      "inherited_result_sha256": "bac5988b02557aac3faa9ad264c0ba6e7e6daf398241a9574d1c12622e6d826b",
+      "kind": "tertiary",
+      "outcomes": [
+        {
+          "cnf_encoding_revision": "cardinality-encoding-20-leaf-20260722:kmtotalizer:schema-1",
+          "cnf_sha256": "93b1168b02522ac2842fbae9eefa4daa1fddeb80cf32b25b83b348a2be4e2ed2",
+          "cpu_seconds": 2.267126001883298,
+          "independent_audit_receipt": {
+            "path": "artifacts/cardinality-encoding-benchmark/cardinality-encoding-20-leaf-20260722/t-29/kmtotalizer/cnf-audit.json",
+            "sha256": "d4c80bc09aa0ba789ed7dc1bfe6d5ddefcc46133c088db8d64828278b436dae0"
+          },
+          "method": "kmtotalizer",
+          "proof_bytes": 10203169,
+          "proof_sha256": "7aa58220c7df880c1902ddc9bfa0d250e921ab43324d6bcdf4d8afce1ffd169c",
+          "replay_receipt": {
+            "path": "artifacts/cardinality-encoding-benchmark/cardinality-encoding-20-leaf-20260722/t-29/kmtotalizer/validation.json",
+            "sha256": "c64fddfca6fe82f3d0e3283edaa05bca573a996019b41771086c19b1f30a22ae"
+          },
+          "result_receipt": {
+            "path": "artifacts/cardinality-encoding-benchmark/cardinality-encoding-20-leaf-20260722/t-29/kmtotalizer/result.json",
+            "sha256": "7949fa7b3889e92f509ec140173069af0722bc707146f8322f2cbf49b4750b7d"
+          },
+          "run_id": "cardinality-encoding-20-leaf-20260722",
+          "runtime_seconds": 2.267126001883298,
+          "status": "unsat_certified"
+        },
+        {
+          "cnf_encoding_revision": "cardinality-encoding-20-leaf-20260722:sequential:schema-1",
+          "cnf_sha256": "185e237644dadeff10af0f222bd40f645c9b8f661e4b54f23396e53b3b70d86a",
+          "cpu_seconds": 3.1027091939467937,
+          "independent_audit_receipt": {
+            "path": "artifacts/cardinality-encoding-benchmark/cardinality-encoding-20-leaf-20260722/t-29/sequential/cnf-audit.json",
+            "sha256": "ec925180ece64fb64b3cb1c91b647d5a7e9465b00c5c0958891b67a61a1c282c"
+          },
+          "method": "sequential",
+          "proof_bytes": 17119259,
+          "proof_sha256": "71bc74cef25261387cbc6de5f578f1ddc6cc5cc4b107bfbeca15b2e8e8518efa",
+          "replay_receipt": {
+            "path": "artifacts/cardinality-encoding-benchmark/cardinality-encoding-20-leaf-20260722/t-29/sequential/validation.json",
+            "sha256": "eb0aababca8dcdb8ed4753052fbaf9c77f91af38f3c918f23a41226bb756b849"
+          },
+          "result_receipt": {
+            "path": "artifacts/cardinality-encoding-benchmark/cardinality-encoding-20-leaf-20260722/t-29/sequential/result.json",
+            "sha256": "818354bc59a431987c84121db20295a1e8dc65a7a12ad32eb866b37ec9de1e80"
+          },
+          "run_id": "cardinality-encoding-20-leaf-20260722",
+          "runtime_seconds": 3.1027091939467937,
+          "status": "unsat_certified"
+        }
+      ],
+      "root_index": 0,
+      "secondary_index": 0,
+      "source_path": "artifacts/pilot/link-orbit-root0-secondary-0-tertiary-29-10s",
+      "tertiary_index": 29
+    },
+    {
+      "active_blocker_sha256": "d173df1b0b6cb781723d2a334fd756044ff6b3113a3f4cd3edec5eddb042e4fa",
+      "assigned_methods": [
+        "sequential"
+      ],
+      "final_coverage_status": "closed_unsat",
+      "id": "t-3",
+      "inherited_result_sha256": "6098ad35988fbadcd267e72d92fb793c21bcccafa26076eb846879ea99470f76",
+      "kind": "tertiary",
+      "outcomes": [
+        {
+          "cnf_encoding_revision": "sequential-open-frontier-30-v5-native-replay-20260722:sequential:schema-2",
+          "cnf_sha256": "de5319d40fedc0643045d7fbd196eac4296f6e6e765f8d193a0943f0266dad5c",
+          "cpu_seconds": 34.810377041983884,
+          "independent_audit_receipt": {
+            "path": "artifacts/sequential-frontier-sweep/sequential-open-frontier-30-v5-native-replay-20260722/t-3/sequential/cnf-audit.json",
+            "sha256": "c50943a67167f29b9633e4b83f1df46c2533a4a440827e14642f42db18b66c7c"
+          },
+          "method": "sequential",
+          "proof_bytes": 61747738,
+          "proof_sha256": "5bb014ebadd554ea7bd5e7b7c3734ac45fba5aad77a3c65b470579804f6dc11d",
+          "replay_receipt": {
+            "path": "artifacts/sequential-frontier-sweep/sequential-open-frontier-30-v5-native-replay-20260722/t-3/sequential/validation.json",
+            "sha256": "aa863692c796b5131f7d856253c22b4bed182ae2c6455978516a7e3775a2708c"
+          },
+          "result_receipt": {
+            "path": "artifacts/sequential-frontier-sweep/sequential-open-frontier-30-v5-native-replay-20260722/t-3/sequential/result.json",
+            "sha256": "5dc5cf4f82ecca570b133672dc7a755a4de66657e13921ccde73b921a6dc8225"
+          },
+          "run_id": "sequential-open-frontier-30-v5-native-replay-20260722",
+          "runtime_seconds": 34.810377041983884,
+          "status": "unsat_certified"
+        }
+      ],
+      "root_index": 0,
+      "secondary_index": 0,
+      "source_path": "artifacts/pilot/link-orbit-root0-secondary-0-tertiary-3-10s",
+      "tertiary_index": 3
+    },
+    {
+      "active_blocker_sha256": "d173df1b0b6cb781723d2a334fd756044ff6b3113a3f4cd3edec5eddb042e4fa",
+      "assigned_methods": [
+        "sequential",
+        "kmtotalizer"
+      ],
+      "final_coverage_status": "closed_unsat",
+      "id": "t-30",
+      "inherited_result_sha256": "a37166a8614f8b254f2be0ef7c71f3e9ce96dfd78269a535daf334b0ccd3936a",
+      "kind": "tertiary",
+      "outcomes": [
+        {
+          "cnf_encoding_revision": "cardinality-encoding-20-leaf-20260722:kmtotalizer:schema-1",
+          "cnf_sha256": "5f25f5132a9a37fd236b1be57461260d0a60e37b1bef1f89d7dd280bb71bfe81",
+          "cpu_seconds": 8.565276428125799,
+          "independent_audit_receipt": {
+            "path": "artifacts/cardinality-encoding-benchmark/cardinality-encoding-20-leaf-20260722/t-30/kmtotalizer/cnf-audit.json",
+            "sha256": "4ebcb5f15fde57a090fb56c05446210f38516c878fdec12583cbf086e117d30b"
+          },
+          "method": "kmtotalizer",
+          "proof_bytes": 29799767,
+          "proof_sha256": "5c8c91e0d8cbf3771fd4db792eaeca52db2538ad3cb166de575361ce8e3b9706",
+          "replay_receipt": {
+            "path": "artifacts/cardinality-encoding-benchmark/cardinality-encoding-20-leaf-20260722/t-30/kmtotalizer/validation.json",
+            "sha256": "22e9743a054d2fcc5caa24f5759bee7b5b1fa5bf169c59198d2566293f1666c5"
+          },
+          "result_receipt": {
+            "path": "artifacts/cardinality-encoding-benchmark/cardinality-encoding-20-leaf-20260722/t-30/kmtotalizer/result.json",
+            "sha256": "9bfb17252999b1d16cef3e2722d7f847ea50d99b15be94b5ebcc4e7dbb64fb3a"
+          },
+          "run_id": "cardinality-encoding-20-leaf-20260722",
+          "runtime_seconds": 8.565276428125799,
+          "status": "unsat_certified"
+        },
+        {
+          "cnf_encoding_revision": "cardinality-encoding-20-leaf-20260722:sequential:schema-1",
+          "cnf_sha256": "f227f8e7e2b12df55252bf68042725cea35eab2d338859558d4832c00c32817e",
+          "cpu_seconds": 1.80472875200212,
+          "independent_audit_receipt": {
+            "path": "artifacts/cardinality-encoding-benchmark/cardinality-encoding-20-leaf-20260722/t-30/sequential/cnf-audit.json",
+            "sha256": "36ea09c0e383982d9642fb01afabe647c1372a99c566f076fa1dcaf2b1197d44"
+          },
+          "method": "sequential",
+          "proof_bytes": 10295485,
+          "proof_sha256": "5d56049c825eb4ffc0039946d2dbaaf79af405af439033038de6092200358a9f",
+          "replay_receipt": {
+            "path": "artifacts/cardinality-encoding-benchmark/cardinality-encoding-20-leaf-20260722/t-30/sequential/validation.json",
+            "sha256": "e695f7e91baca88a1bba4ffe2801e680e28db5f226081fdea577f1ba6884ecbc"
+          },
+          "result_receipt": {
+            "path": "artifacts/cardinality-encoding-benchmark/cardinality-encoding-20-leaf-20260722/t-30/sequential/result.json",
+            "sha256": "b8a13ab4510461d82c11e80d1a90f0941ae58709ffc4cc7acb1bd28511f04492"
+          },
+          "run_id": "cardinality-encoding-20-leaf-20260722",
+          "runtime_seconds": 1.80472875200212,
+          "status": "unsat_certified"
+        }
+      ],
+      "root_index": 0,
+      "secondary_index": 0,
+      "source_path": "artifacts/pilot/link-orbit-root0-secondary-0-tertiary-30-10s",
+      "tertiary_index": 30
+    },
+    {
+      "active_blocker_sha256": "d173df1b0b6cb781723d2a334fd756044ff6b3113a3f4cd3edec5eddb042e4fa",
+      "assigned_methods": [
+        "sequential"
+      ],
+      "final_coverage_status": "closed_unsat",
+      "id": "t-31",
+      "inherited_result_sha256": "931b397e4a3c500d0de193278ba9a9f372391863381aaed1a6625ac579caca81",
+      "kind": "tertiary",
+      "outcomes": [
+        {
+          "cnf_encoding_revision": "sequential-unmeasured-frontier-12-v7-20260722:sequential:schema-2",
+          "cnf_sha256": "2298d186f6b4855b8f251402a46b2c4a6227943b2cce4defd28692e4065c1a39",
+          "cpu_seconds": 2.290601162938401,
+          "independent_audit_receipt": {
+            "path": "artifacts/sequential-frontier-sweep/sequential-unmeasured-frontier-12-v7-20260722/t-31/sequential/cnf-audit.json",
+            "sha256": "0b4b5a838727b2b8fff397c23b46c810980ad86966a9200ce00a8d6e448d6598"
+          },
+          "method": "sequential",
+          "post_tranche_independent_replay_receipt": {
+            "path": "artifacts/classification/exhaustive-link-v1/sequential-tranche-12-independent-audit.json",
+            "sha256": "3b5e91da4fbeb56913223f8845586a081a70b50d83dfe5a3143a5104673f0f67"
+          },
+          "proof_bytes": 11436557,
+          "proof_sha256": "dcb8c1a665662288282f200915ab6789570abff0fa9bf9f2d1dc6eaebeaface7",
+          "replay_receipt": {
+            "path": "artifacts/sequential-frontier-sweep/sequential-unmeasured-frontier-12-v7-20260722/t-31/sequential/validation.json",
+            "sha256": "5bdb8bde865b131f384a41bb769d5555a7c6e3068cf16052236dde5baab85339"
+          },
+          "result_receipt": {
+            "path": "artifacts/sequential-frontier-sweep/sequential-unmeasured-frontier-12-v7-20260722/t-31/sequential/result.json",
+            "sha256": "4716b53a8972653439a628dec4b7ad669d9aefcffa5e2e8da1157669fb1d1fd0"
+          },
+          "run_id": "sequential-unmeasured-frontier-12-v7-20260722",
+          "runtime_seconds": 2.290601162938401,
+          "status": "unsat_certified"
+        }
+      ],
+      "root_index": 0,
+      "secondary_index": 0,
+      "source_path": "artifacts/pilot/link-orbit-root0-secondary-0-tertiary-31-10s",
+      "tertiary_index": 31
+    },
+    {
+      "active_blocker_sha256": "d173df1b0b6cb781723d2a334fd756044ff6b3113a3f4cd3edec5eddb042e4fa",
+      "assigned_methods": [
+        "sequential",
+        "kmtotalizer"
+      ],
+      "final_coverage_status": "closed_unsat",
+      "id": "t-32",
+      "inherited_result_sha256": "36a52b2cef9bdf1ffdda3d9f46ced0c22c7fc5bbc0da992b116b31d262f7f266",
+      "kind": "tertiary",
+      "outcomes": [
+        {
+          "cnf_encoding_revision": "cardinality-encoding-20-leaf-20260722:kmtotalizer:schema-1",
+          "cnf_sha256": "9e20a34d1bb54a33670150a63cfc1936f4d6205b99b90bbde6b19999f650d7d1",
+          "cpu_seconds": 10.38451839494519,
+          "independent_audit_receipt": {
+            "path": "artifacts/cardinality-encoding-benchmark/cardinality-encoding-20-leaf-20260722/t-32/kmtotalizer/cnf-audit.json",
+            "sha256": "8881706bfd3f6aa315c956e9d6c0b7afeb5624665818fb05c5d5012cf51ecfd7"
+          },
+          "method": "kmtotalizer",
+          "proof_bytes": 39816074,
+          "proof_sha256": "dc52e78ef864402c631302fe47fe204356d5b39d1ef3b36cfddc9dbffe49ce29",
+          "replay_receipt": {
+            "path": "artifacts/cardinality-encoding-benchmark/cardinality-encoding-20-leaf-20260722/t-32/kmtotalizer/validation.json",
+            "sha256": "ba2e50e1f3ebcceba0384b73a2284e0bbad99c21b71463fbfee56e56d18bbf9b"
+          },
+          "result_receipt": {
+            "path": "artifacts/cardinality-encoding-benchmark/cardinality-encoding-20-leaf-20260722/t-32/kmtotalizer/result.json",
+            "sha256": "e8f6ec7e7cebb84ef9c9caee487dfc152f310eabbc107bff43aebf306707454c"
+          },
+          "run_id": "cardinality-encoding-20-leaf-20260722",
+          "runtime_seconds": 10.38451839494519,
+          "status": "unsat_certified"
+        },
+        {
+          "cnf_encoding_revision": "cardinality-encoding-20-leaf-20260722:sequential:schema-1",
+          "cnf_sha256": "add76481451a3ca4b3d7f80820a8aacb59a9de51ef045248d092cd1e85cc12e9",
+          "cpu_seconds": 2.690549463033676,
+          "independent_audit_receipt": {
+            "path": "artifacts/cardinality-encoding-benchmark/cardinality-encoding-20-leaf-20260722/t-32/sequential/cnf-audit.json",
+            "sha256": "8d1a6072f10b71f374cd051c4dc11ff0f195199112664b38b4e22e84e44e19cd"
+          },
+          "method": "sequential",
+          "proof_bytes": 14992424,
+          "proof_sha256": "26a62ecebe5de973eca9c9d8b0b969a32a2efe90845d510a88bd91cc9427c610",
+          "replay_receipt": {
+            "path": "artifacts/cardinality-encoding-benchmark/cardinality-encoding-20-leaf-20260722/t-32/sequential/validation.json",
+            "sha256": "46e3a66fa0f3e875ba4c6d5f1bdc8e04777b1a8d2bf6cdbe04f3df3abec12cb8"
+          },
+          "result_receipt": {
+            "path": "artifacts/cardinality-encoding-benchmark/cardinality-encoding-20-leaf-20260722/t-32/sequential/result.json",
+            "sha256": "9c4a55de3ad601318ca1e5f561318e93ef596f01fbd877e89ef26c0169e032a4"
+          },
+          "run_id": "cardinality-encoding-20-leaf-20260722",
+          "runtime_seconds": 2.690549463033676,
+          "status": "unsat_certified"
+        }
+      ],
+      "root_index": 0,
+      "secondary_index": 0,
+      "source_path": "artifacts/pilot/link-orbit-root0-secondary-0-tertiary-32-10s",
+      "tertiary_index": 32
+    },
+    {
+      "active_blocker_sha256": "d173df1b0b6cb781723d2a334fd756044ff6b3113a3f4cd3edec5eddb042e4fa",
+      "assigned_methods": [
+        "sequential"
+      ],
+      "final_coverage_status": "closed_unsat",
+      "id": "t-4",
+      "inherited_result_sha256": "045e10a68c0335fc1185ab59a2ea7566476c8e78d3ee0d6f10c9dd95e55e4e14",
+      "kind": "tertiary",
+      "outcomes": [
+        {
+          "cnf_encoding_revision": "sequential-open-frontier-30-v5-native-replay-20260722:sequential:schema-2",
+          "cnf_sha256": "0e99839fd63f965c0af06cf943f47b94616dcb792f5ebd673bbe90f0aed5903b",
+          "cpu_seconds": 28.58788495900808,
+          "independent_audit_receipt": {
+            "path": "artifacts/sequential-frontier-sweep/sequential-open-frontier-30-v5-native-replay-20260722/t-4/sequential/cnf-audit.json",
+            "sha256": "7988a7b91e33de30bf2336502d971c37eb0bb87d1cf045423f978dc8713bc1d7"
+          },
+          "method": "sequential",
+          "proof_bytes": 84449815,
+          "proof_sha256": "abc2f6c6354ce3f25408e7defe9af333ec99437248b845037abe03985b62463b",
+          "replay_receipt": {
+            "path": "artifacts/sequential-frontier-sweep/sequential-open-frontier-30-v5-native-replay-20260722/t-4/sequential/validation.json",
+            "sha256": "e948392396de6b30059f3979accb6fbcb7a26c628aabe20d2c7b1a15e14847ce"
+          },
+          "result_receipt": {
+            "path": "artifacts/sequential-frontier-sweep/sequential-open-frontier-30-v5-native-replay-20260722/t-4/sequential/result.json",
+            "sha256": "8591ff37b526f191b7e24e63349b650889c59ea0ccc67117ce3e88f14a0f9897"
+          },
+          "run_id": "sequential-open-frontier-30-v5-native-replay-20260722",
+          "runtime_seconds": 28.58788495900808,
+          "status": "unsat_certified"
+        }
+      ],
+      "root_index": 0,
+      "secondary_index": 0,
+      "source_path": "artifacts/pilot/link-orbit-root0-secondary-0-tertiary-4-10s",
+      "tertiary_index": 4
+    },
+    {
+      "active_blocker_sha256": "d173df1b0b6cb781723d2a334fd756044ff6b3113a3f4cd3edec5eddb042e4fa",
+      "assigned_methods": [
+        "sequential",
+        "kmtotalizer"
+      ],
+      "final_coverage_status": "closed_unsat",
+      "id": "t-5",
+      "inherited_result_sha256": "283d85e125e53a2254765e147fa57ca9a63d20493d411d05ac4cbcbf6c31746a",
+      "kind": "tertiary",
+      "outcomes": [
+        {
+          "cnf_encoding_revision": "cardinality-encoding-20-leaf-20260722:kmtotalizer:schema-1",
+          "cnf_sha256": "dfd22edcec9a6f717eb69a74a6b062a8b2978de1a5e8459f3a326a8ff75cc7d0",
+          "cpu_seconds": 60.017614955082536,
+          "independent_audit_receipt": {
+            "path": "artifacts/cardinality-encoding-benchmark/cardinality-encoding-20-leaf-20260722/t-5/kmtotalizer/cnf-audit.json",
+            "sha256": "d16549c3df973b11ab771048baba2b506817b2a6f63d8e67a998135987cf6645"
+          },
+          "method": "kmtotalizer",
+          "result_receipt": {
+            "path": "artifacts/cardinality-encoding-benchmark/cardinality-encoding-20-leaf-20260722/t-5/kmtotalizer/result.json",
+            "sha256": "b57c181657eb13022c95481ca109af5003f229eccf3d7af0b6249e02b456114e"
+          },
+          "run_id": "cardinality-encoding-20-leaf-20260722",
+          "runtime_seconds": 60.017614955082536,
+          "status": "unknown"
+        },
+        {
+          "cnf_encoding_revision": "cardinality-encoding-20-leaf-20260722:sequential:schema-1",
+          "cnf_sha256": "69cfc4fbe3c9f92c5baf5f8112a5c79c53bb9b08cc6be55251579f7325f7d04b",
+          "cpu_seconds": 26.434489270905033,
+          "independent_audit_receipt": {
+            "path": "artifacts/cardinality-encoding-benchmark/cardinality-encoding-20-leaf-20260722/t-5/sequential/cnf-audit.json",
+            "sha256": "3c338467a387b27cd5b2aefb3f2bef99c2a32c97429b1f420fd08f0c6308a87a"
+          },
+          "method": "sequential",
+          "proof_bytes": 68950125,
+          "proof_sha256": "520075344ae5a55dddbcc68dfa0d1ce0a9e88360388eb873d6298457668c11a5",
+          "replay_receipt": {
+            "path": "artifacts/cardinality-encoding-benchmark/cardinality-encoding-20-leaf-20260722/t-5/sequential/validation.json",
+            "sha256": "3b3ca0ce568538b25cf2a74b2c2b60699cf5b304fdc151c5948dc225f01437f1"
+          },
+          "result_receipt": {
+            "path": "artifacts/cardinality-encoding-benchmark/cardinality-encoding-20-leaf-20260722/t-5/sequential/result.json",
+            "sha256": "7358356fed7d05406e6d428e172876442c54afa8673e3466f73582490668a615"
+          },
+          "run_id": "cardinality-encoding-20-leaf-20260722",
+          "runtime_seconds": 26.434489270905033,
+          "status": "unsat_certified"
+        }
+      ],
+      "root_index": 0,
+      "secondary_index": 0,
+      "source_path": "artifacts/pilot/link-orbit-root0-secondary-0-tertiary-5-10s",
+      "tertiary_index": 5
+    },
+    {
+      "active_blocker_sha256": "d173df1b0b6cb781723d2a334fd756044ff6b3113a3f4cd3edec5eddb042e4fa",
+      "assigned_methods": [
+        "sequential",
+        "kmtotalizer"
+      ],
+      "final_coverage_status": "closed_unsat",
+      "id": "t-6",
+      "inherited_result_sha256": "9305a18f7cc774936a24f5093b7de0ab919ef714ff4fdc30e10876b719e5a03b",
+      "kind": "tertiary",
+      "outcomes": [
+        {
+          "cnf_encoding_revision": "cardinality-encoding-20-leaf-20260722:kmtotalizer:schema-1",
+          "cnf_sha256": "d03ab7b81567ae205d6c777f036bc5b4d031821a83b83be671030a7882c0c123",
+          "cpu_seconds": 60.02455227682367,
+          "independent_audit_receipt": {
+            "path": "artifacts/cardinality-encoding-benchmark/cardinality-encoding-20-leaf-20260722/t-6/kmtotalizer/cnf-audit.json",
+            "sha256": "557c4fc0d0f8996dac23e66c8f0f661bb8e19c2bf0da4a5fda74e09a83525668"
+          },
+          "method": "kmtotalizer",
+          "result_receipt": {
+            "path": "artifacts/cardinality-encoding-benchmark/cardinality-encoding-20-leaf-20260722/t-6/kmtotalizer/result.json",
+            "sha256": "33dc92bcd17c21a8fb8c4e5c2f07dd7bfa9a2ee36bf5c7f1479b11e8a32fb155"
+          },
+          "run_id": "cardinality-encoding-20-leaf-20260722",
+          "runtime_seconds": 60.02455227682367,
+          "status": "unknown"
+        },
+        {
+          "cnf_encoding_revision": "cardinality-encoding-20-leaf-20260722:sequential:schema-1",
+          "cnf_sha256": "d40f6dbd2265d1afad94f125714deb3c840992342260dec30e563f2a975dc1e5",
+          "cpu_seconds": 44.03150949906558,
+          "independent_audit_receipt": {
+            "path": "artifacts/cardinality-encoding-benchmark/cardinality-encoding-20-leaf-20260722/t-6/sequential/cnf-audit.json",
+            "sha256": "55fb58c4a9ecef30ff0d88fc895ce5c21c533b22e1d8046ab257cb379e16c631"
+          },
+          "method": "sequential",
+          "proof_bytes": 116708914,
+          "proof_sha256": "908102ebcee89b7e05ab577accefc2f9b5fbffadb2b8e5938a16e6d6dad7b605",
+          "replay_receipt": {
+            "path": "artifacts/cardinality-encoding-benchmark/cardinality-encoding-20-leaf-20260722/t-6/sequential/validation.json",
+            "sha256": "afba5756e8e0076b539c8e1169c07783077ca2c349e2706f979503f696412f31"
+          },
+          "result_receipt": {
+            "path": "artifacts/cardinality-encoding-benchmark/cardinality-encoding-20-leaf-20260722/t-6/sequential/result.json",
+            "sha256": "bdac9472566f02f57df5e7a20b8b68f41d0c5c567c9c34d581debc81fdd5e1b7"
+          },
+          "run_id": "cardinality-encoding-20-leaf-20260722",
+          "runtime_seconds": 44.03150949906558,
+          "status": "unsat_certified"
+        }
+      ],
+      "root_index": 0,
+      "secondary_index": 0,
+      "source_path": "artifacts/pilot/link-orbit-root0-secondary-0-tertiary-6-10s",
+      "tertiary_index": 6
+    },
+    {
+      "active_blocker_sha256": "d173df1b0b6cb781723d2a334fd756044ff6b3113a3f4cd3edec5eddb042e4fa",
+      "assigned_methods": [
+        "sequential"
+      ],
+      "final_coverage_status": "closed_unsat",
+      "id": "t-7",
+      "inherited_result_sha256": "c75b388e6faf671f888aa6d2a01c75e574e998e35f7ce4b117a362574f9ac6a4",
+      "kind": "tertiary",
+      "outcomes": [
+        {
+          "cnf_encoding_revision": "sequential-open-frontier-30-v5-native-replay-20260722:sequential:schema-2",
+          "cnf_sha256": "2fa46b91d3ff461093436353a0db12732dc93c1ab245fa58e06c01a5b4211d21",
+          "cpu_seconds": 12.950658834015485,
+          "independent_audit_receipt": {
+            "path": "artifacts/sequential-frontier-sweep/sequential-open-frontier-30-v5-native-replay-20260722/t-7/sequential/cnf-audit.json",
+            "sha256": "cff46c72d82c634b637a783ef06e3cb080577370119cc5ac3e9aefc77b2627c6"
+          },
+          "method": "sequential",
+          "proof_bytes": 40428419,
+          "proof_sha256": "2cf6ec54d75ff4c0cfe26ac9e7eae3f7870927831ffc69b73bb20cdd6ce94836",
+          "replay_receipt": {
+            "path": "artifacts/sequential-frontier-sweep/sequential-open-frontier-30-v5-native-replay-20260722/t-7/sequential/validation.json",
+            "sha256": "4511002cc29af1cbcacf313b9432bb2e2ca6e10a4e4da1883e8f17abb8cd2e1f"
+          },
+          "result_receipt": {
+            "path": "artifacts/sequential-frontier-sweep/sequential-open-frontier-30-v5-native-replay-20260722/t-7/sequential/result.json",
+            "sha256": "545933198bf4f0b3eafc8b6abba6a68cf7ae557e18eab9344e6b87033f0bf1d0"
+          },
+          "run_id": "sequential-open-frontier-30-v5-native-replay-20260722",
+          "runtime_seconds": 12.950658834015485,
+          "status": "unsat_certified"
+        }
+      ],
+      "root_index": 0,
+      "secondary_index": 0,
+      "source_path": "artifacts/pilot/link-orbit-root0-secondary-0-tertiary-7-10s",
+      "tertiary_index": 7
+    },
+    {
+      "active_blocker_sha256": "d173df1b0b6cb781723d2a334fd756044ff6b3113a3f4cd3edec5eddb042e4fa",
+      "assigned_methods": [
+        "sequential"
+      ],
+      "final_coverage_status": "closed_unsat",
+      "id": "t-8",
+      "inherited_result_sha256": "59d30e0f1f2777dc80c4a4b354a99f2756a6fc55ed8b79e0fe5bde2c3a4a0d2b",
+      "kind": "tertiary",
+      "outcomes": [
+        {
+          "cnf_encoding_revision": "sequential-open-frontier-30-v5-native-replay-20260722:sequential:schema-2",
+          "cnf_sha256": "e6f9337a69c6f4bccca3c787c341ab632f1988fd288e73a0b6600e28ed2f581c",
+          "cpu_seconds": 35.30371412500972,
+          "independent_audit_receipt": {
+            "path": "artifacts/sequential-frontier-sweep/sequential-open-frontier-30-v5-native-replay-20260722/t-8/sequential/cnf-audit.json",
+            "sha256": "2e96de7cba8f2a0fcc1674c83e08622eaa66861e1373d6c423b1b8ce58a3cc95"
+          },
+          "method": "sequential",
+          "proof_bytes": 85055742,
+          "proof_sha256": "9f5270bca3f5531bc16dcc301cab1966cf8d89f1a2c55ffc54d4d5b02ab627f1",
+          "replay_receipt": {
+            "path": "artifacts/sequential-frontier-sweep/sequential-open-frontier-30-v5-native-replay-20260722/t-8/sequential/validation.json",
+            "sha256": "27dea63faa4501b887852c2e048f74472b782778dac49cb361486a8af41ff9ab"
+          },
+          "result_receipt": {
+            "path": "artifacts/sequential-frontier-sweep/sequential-open-frontier-30-v5-native-replay-20260722/t-8/sequential/result.json",
+            "sha256": "0ebbd1bdba32da6f1c2c26601383a11d3e148f364551ad2b24ef5f776ce36f69"
+          },
+          "run_id": "sequential-open-frontier-30-v5-native-replay-20260722",
+          "runtime_seconds": 35.30371412500972,
+          "status": "unsat_certified"
+        }
+      ],
+      "root_index": 0,
+      "secondary_index": 0,
+      "source_path": "artifacts/pilot/link-orbit-root0-secondary-0-tertiary-8-10s",
+      "tertiary_index": 8
+    },
+    {
+      "active_blocker_sha256": "d173df1b0b6cb781723d2a334fd756044ff6b3113a3f4cd3edec5eddb042e4fa",
+      "assigned_methods": [
+        "sequential"
+      ],
+      "final_coverage_status": "closed_unsat",
+      "id": "t-9",
+      "inherited_result_sha256": "bad5c05235ed5a828efb6c510e19891429b956adc0eac27ed7ea68dc631d4702",
+      "kind": "tertiary",
+      "outcomes": [
+        {
+          "cnf_encoding_revision": "sequential-open-frontier-30-v5-native-replay-20260722:sequential:schema-2",
+          "cnf_sha256": "80e4862be59255d1d31e3404a3e1cab815d78e7eadb648d76b0e65694438e8f5",
+          "cpu_seconds": 29.820115750015248,
+          "independent_audit_receipt": {
+            "path": "artifacts/sequential-frontier-sweep/sequential-open-frontier-30-v5-native-replay-20260722/t-9/sequential/cnf-audit.json",
+            "sha256": "bef2344ad683cbdedeea1e1a75b90951badb38d758d4018eea5a30e4c29dcc74"
+          },
+          "method": "sequential",
+          "proof_bytes": 104290429,
+          "proof_sha256": "ebbc67a0f602a1de4049257dddd0b2911930bb4f817ce59c8d8a62ac34a061b3",
+          "replay_receipt": {
+            "path": "artifacts/sequential-frontier-sweep/sequential-open-frontier-30-v5-native-replay-20260722/t-9/sequential/validation.json",
+            "sha256": "02f774ead2dd83c0c6d7b22ab58299365eca905f31763e27cd9883878210b23b"
+          },
+          "result_receipt": {
+            "path": "artifacts/sequential-frontier-sweep/sequential-open-frontier-30-v5-native-replay-20260722/t-9/sequential/result.json",
+            "sha256": "de068b0af230268ccd24d77f7507471137711bb82b384848c3db7a2229f7e84d"
+          },
+          "run_id": "sequential-open-frontier-30-v5-native-replay-20260722",
+          "runtime_seconds": 29.820115750015248,
+          "status": "unsat_certified"
+        }
+      ],
+      "root_index": 0,
+      "secondary_index": 0,
+      "source_path": "artifacts/pilot/link-orbit-root0-secondary-0-tertiary-9-10s",
+      "tertiary_index": 9
+    }
+  ],
+  "policy": {
+    "path": "docs/CERTIFICATE-PORTFOLIO-POLICY.json",
+    "sha256": "8345e37ec4d053853ef69ccfbe9a5f8e17a3e2a3c06e47745118e5db13d23fad"
+  },
+  "predecessor_link_blocker": {
+    "bytes": 171951,
+    "path": "artifacts/discoveries/link-orbit-catalog-5-blocking.cnf",
+    "sha256": "ca2ebe74048cea4593e5fc377e441a7d51a10199bba8bc0c0ef7578f5a91eb2f"
+  },
+  "problem_id": "covering-c1264",
+  "resolution_status": "open",
+  "schema_version": 1,
+  "success_criterion": "an independently validated 40-block cover, or 47/47 valid closures across the portfolio followed by independent global coverage validation",
+  "tranches": [
+    {
+      "blocker_transfer": {
+        "active_blocker": {
+          "bytes": 171951,
+          "path": "artifacts/discoveries/link-orbit-catalog-5-blocking.cnf",
+          "sha256": "ca2ebe74048cea4593e5fc377e441a7d51a10199bba8bc0c0ef7578f5a91eb2f"
+        },
+        "added_clauses": 160,
+        "consequence": "UNSAT under the predecessor blocker remains UNSAT under the active stronger blocker",
+        "predecessor_blocker": {
+          "bytes": 156455,
+          "path": "artifacts/pilot/link-orbit-catalog-4-blocking.cnf",
+          "sha256": "d68f1de5f99cf6e56480a3778dd270e8abca276d192fdf19b354375422d6cad4"
+        },
+        "status": "strict_superset_verified"
+      },
+      "certificate_and_replay_status": {
+        "certified_unsat_outcomes": 23,
+        "distinct_certified_nodes": 15,
+        "proof_replays": "all certified UNSAT outcomes verified",
+        "semantic_audits": "all ingested outcomes valid"
+      },
+      "completed_solver_runs": 40,
+      "cost_per_new_closure": {
+        "cpu_seconds": 102.112801,
+        "proof_bytes": 97470050.733333
+      },
+      "cpu_seconds": 1531.692021,
+      "cumulative_closed_out_of_47": "15/47",
+      "id": "cardinality-encoding-20-leaf-20260722-final",
+      "method_stats": {
+        "kmtotalizer": {
+          "certified_unsat": 8,
+          "cpu_seconds": 933.519726,
+          "net_new_closures": 0,
+          "net_new_closures_per_cpu_hour": 0.0,
+          "proof_bytes": 491373935,
+          "tested": 20
+        },
+        "sequential": {
+          "certified_unsat": 15,
+          "cpu_seconds": 598.172295,
+          "net_new_closures": 15,
+          "net_new_closures_per_cpu_hour": 90.274993,
+          "proof_bytes": 970676826,
+          "tested": 20
+        }
+      },
+      "newly_closed_nodes": [
+        "s-r0-6",
+        "s-r1-5",
+        "s-r1-8",
+        "t-0",
+        "t-11",
+        "t-15",
+        "t-2",
+        "t-24",
+        "t-26",
+        "t-27",
+        "t-29",
+        "t-30",
+        "t-32",
+        "t-5",
+        "t-6"
+      ],
+      "next_method_by_hard_tail_class": {
+        "constructive_global_uncertainty": "forced-matching exact-degree 40-block witness search remains active",
+        "fixed_benchmark_sample": "complete; do not expand kmtotalizer because it earned zero unique closures",
+        "unclosed_secondary": "sequential default, with structural/constructive exceptions assigned by the dynamic plan",
+        "unclosed_tertiary": "sequential default, with structural/constructive exceptions assigned by the dynamic plan"
+      },
+      "proof_storage_bytes": 1462050761,
+      "remaining_node_classes": {
+        "secondary": 11,
+        "tertiary": 21
+      },
+      "source_results": [
+        {
+          "path": "artifacts/cardinality-encoding-benchmark/cardinality-encoding-20-leaf-20260722/s-r0-3/kmtotalizer/result.json",
+          "sha256": "93919e0fe8a157b581fae33c6654bf154f3c9356549f852441101a5be4389d0f"
+        },
+        {
+          "path": "artifacts/cardinality-encoding-benchmark/cardinality-encoding-20-leaf-20260722/s-r0-3/sequential/result.json",
+          "sha256": "c83a194eb7684bf482807affeb6e6c66423376fe27b532199da91fb3b92a338a"
+        },
+        {
+          "path": "artifacts/cardinality-encoding-benchmark/cardinality-encoding-20-leaf-20260722/s-r0-4/kmtotalizer/result.json",
+          "sha256": "e52bf8df50e9833c59c9111c9c1d45c8279c9d6d8bcdea2975dc4b7d0447382d"
+        },
+        {
+          "path": "artifacts/cardinality-encoding-benchmark/cardinality-encoding-20-leaf-20260722/s-r0-4/sequential/result.json",
+          "sha256": "135dea864d67ada24d04e00399def460dbd2a92cbf2718209c89bb07b3441413"
+        },
+        {
+          "path": "artifacts/cardinality-encoding-benchmark/cardinality-encoding-20-leaf-20260722/s-r0-6/kmtotalizer/result.json",
+          "sha256": "474b7f8582897785a9a4c8e43f6fc7372318501baf7a11ff90461c09089df0a0"
+        },
+        {
+          "path": "artifacts/cardinality-encoding-benchmark/cardinality-encoding-20-leaf-20260722/s-r0-6/sequential/result.json",
+          "sha256": "28c11bd2871e34adbd905c9c24d6df82c8ae8725611de336e8d897825ef04d23"
+        },
+        {
+          "path": "artifacts/cardinality-encoding-benchmark/cardinality-encoding-20-leaf-20260722/s-r1-3/kmtotalizer/result.json",
+          "sha256": "4c0374acf73e3be9f2295c2499be592c9dbc89bd38e832e2410b2a17be0e5dc0"
+        },
+        {
+          "path": "artifacts/cardinality-encoding-benchmark/cardinality-encoding-20-leaf-20260722/s-r1-3/sequential/result.json",
+          "sha256": "adaf7eafdecd05dc04c6c2681a534fe0ee4c58ec245e8f2f3fe16d6c864b4fda"
+        },
+        {
+          "path": "artifacts/cardinality-encoding-benchmark/cardinality-encoding-20-leaf-20260722/s-r1-5/kmtotalizer/result.json",
+          "sha256": "fafededad363f46d4aa63639d80e359d0ab2d5cdaf68712ef90f510e8cedb968"
+        },
+        {
+          "path": "artifacts/cardinality-encoding-benchmark/cardinality-encoding-20-leaf-20260722/s-r1-5/sequential/result.json",
+          "sha256": "706dd44b6a04809682ee8e2883741dca12a0c600dc4783efbd4f84a860223cd0"
+        },
+        {
+          "path": "artifacts/cardinality-encoding-benchmark/cardinality-encoding-20-leaf-20260722/s-r1-8/kmtotalizer/result.json",
+          "sha256": "38e2e2d18f1b28af02230562768d3dc35c869fe51ef3a09b1703bff9ea717902"
+        },
+        {
+          "path": "artifacts/cardinality-encoding-benchmark/cardinality-encoding-20-leaf-20260722/s-r1-8/sequential/result.json",
+          "sha256": "d9a29def7d3a59ed963e5b2cbdfa50c33a3752e5ab6332b3f598df916043661d"
+        },
+        {
+          "path": "artifacts/cardinality-encoding-benchmark/cardinality-encoding-20-leaf-20260722/t-0/kmtotalizer/result.json",
+          "sha256": "323ed4b12d35b01528152dbc35d2d2e84ddf30436b2748fd2e4c00e8c3f5ea78"
+        },
+        {
+          "path": "artifacts/cardinality-encoding-benchmark/cardinality-encoding-20-leaf-20260722/t-0/sequential/result.json",
+          "sha256": "25c3bfc6d67c038069148b14fcecd1d772cff26d0ea7ff09a7d54b533dba515c"
+        },
+        {
+          "path": "artifacts/cardinality-encoding-benchmark/cardinality-encoding-20-leaf-20260722/t-1/kmtotalizer/result.json",
+          "sha256": "d595e0e7c37605065990ed82fe4f175818acfd3836a83820c04b70d8f936faa5"
+        },
+        {
+          "path": "artifacts/cardinality-encoding-benchmark/cardinality-encoding-20-leaf-20260722/t-1/sequential/result.json",
+          "sha256": "fecf500a948ff4d691d3dd37460db9ab5c25dba0025cb38664afb492f5de94d3"
+        },
+        {
+          "path": "artifacts/cardinality-encoding-benchmark/cardinality-encoding-20-leaf-20260722/t-10/kmtotalizer/result.json",
+          "sha256": "aa9bdd9e45d513efddb72419e8d9286d54882321416c75cbca840d5dc3b7b0a0"
+        },
+        {
+          "path": "artifacts/cardinality-encoding-benchmark/cardinality-encoding-20-leaf-20260722/t-10/sequential/result.json",
+          "sha256": "be3404e90c4612537ac75e1412715d6afa0b1d29ae121b0ed1a5726b4da78d6a"
+        },
+        {
+          "path": "artifacts/cardinality-encoding-benchmark/cardinality-encoding-20-leaf-20260722/t-11/kmtotalizer/result.json",
+          "sha256": "321dad83fda6e5752d522ea0683c17703ef51700213d0a7ea53750366a9e66d7"
+        },
+        {
+          "path": "artifacts/cardinality-encoding-benchmark/cardinality-encoding-20-leaf-20260722/t-11/sequential/result.json",
+          "sha256": "44eb442e9d73e04c4f29fc3f4ebdbe40d8e676101996afca61874c186a625a5e"
+        },
+        {
+          "path": "artifacts/cardinality-encoding-benchmark/cardinality-encoding-20-leaf-20260722/t-15/kmtotalizer/result.json",
+          "sha256": "73a789493691f71123d70d4823badf7dfc039e9ab4d42f63e5ce558277a7bbc9"
+        },
+        {
+          "path": "artifacts/cardinality-encoding-benchmark/cardinality-encoding-20-leaf-20260722/t-15/sequential/result.json",
+          "sha256": "916a245327595b3fea8a861d76c394e470366a39b7b6e02464c1dd31dd2dd4da"
+        },
+        {
+          "path": "artifacts/cardinality-encoding-benchmark/cardinality-encoding-20-leaf-20260722/t-2/kmtotalizer/result.json",
+          "sha256": "b7465df15cc32c9c04ecd2b03a62682cd2810b25be36c0559fd163acd653fa8f"
+        },
+        {
+          "path": "artifacts/cardinality-encoding-benchmark/cardinality-encoding-20-leaf-20260722/t-2/sequential/result.json",
+          "sha256": "1118434ef550c87eb8cf905cb35d2b7e8a581e641e70e24ff65c0af08b640c18"
+        },
+        {
+          "path": "artifacts/cardinality-encoding-benchmark/cardinality-encoding-20-leaf-20260722/t-24/kmtotalizer/result.json",
+          "sha256": "4200ed9ff6b1b5e8b87ebf797a5abfc9f105fc350d0dad119b48c52b46205c6b"
+        },
+        {
+          "path": "artifacts/cardinality-encoding-benchmark/cardinality-encoding-20-leaf-20260722/t-24/sequential/result.json",
+          "sha256": "74783a4a1b36ac993fa9d94be28aa1aa6563504c05149f2af0de4e75237eb93d"
+        },
+        {
+          "path": "artifacts/cardinality-encoding-benchmark/cardinality-encoding-20-leaf-20260722/t-26/kmtotalizer/result.json",
+          "sha256": "fa17572dd1a154510c9ecc52cbc12932da82940d16ac0d77d35bb1f0654340d6"
+        },
+        {
+          "path": "artifacts/cardinality-encoding-benchmark/cardinality-encoding-20-leaf-20260722/t-26/sequential/result.json",
+          "sha256": "98aeacfa963fdec6be4017a1130aa0e37a86fed3a23fc5ae9844ba43a85040f6"
+        },
+        {
+          "path": "artifacts/cardinality-encoding-benchmark/cardinality-encoding-20-leaf-20260722/t-27/kmtotalizer/result.json",
+          "sha256": "a65d866625e69a1ae42843d8076d8b6c446b4b83a2dec8d9a149dc642b4c0466"
+        },
+        {
+          "path": "artifacts/cardinality-encoding-benchmark/cardinality-encoding-20-leaf-20260722/t-27/sequential/result.json",
+          "sha256": "243f8f62cf6ff4b03fe47c15660178d7ecd2ca51fe230c62162832220e90478a"
+        },
+        {
+          "path": "artifacts/cardinality-encoding-benchmark/cardinality-encoding-20-leaf-20260722/t-29/kmtotalizer/result.json",
+          "sha256": "7949fa7b3889e92f509ec140173069af0722bc707146f8322f2cbf49b4750b7d"
+        },
+        {
+          "path": "artifacts/cardinality-encoding-benchmark/cardinality-encoding-20-leaf-20260722/t-29/sequential/result.json",
+          "sha256": "818354bc59a431987c84121db20295a1e8dc65a7a12ad32eb866b37ec9de1e80"
+        },
+        {
+          "path": "artifacts/cardinality-encoding-benchmark/cardinality-encoding-20-leaf-20260722/t-30/kmtotalizer/result.json",
+          "sha256": "9bfb17252999b1d16cef3e2722d7f847ea50d99b15be94b5ebcc4e7dbb64fb3a"
+        },
+        {
+          "path": "artifacts/cardinality-encoding-benchmark/cardinality-encoding-20-leaf-20260722/t-30/sequential/result.json",
+          "sha256": "b8a13ab4510461d82c11e80d1a90f0941ae58709ffc4cc7acb1bd28511f04492"
+        },
+        {
+          "path": "artifacts/cardinality-encoding-benchmark/cardinality-encoding-20-leaf-20260722/t-32/kmtotalizer/result.json",
+          "sha256": "e8f6ec7e7cebb84ef9c9caee487dfc152f310eabbc107bff43aebf306707454c"
+        },
+        {
+          "path": "artifacts/cardinality-encoding-benchmark/cardinality-encoding-20-leaf-20260722/t-32/sequential/result.json",
+          "sha256": "9c4a55de3ad601318ca1e5f561318e93ef596f01fbd877e89ef26c0169e032a4"
+        },
+        {
+          "path": "artifacts/cardinality-encoding-benchmark/cardinality-encoding-20-leaf-20260722/t-5/kmtotalizer/result.json",
+          "sha256": "b57c181657eb13022c95481ca109af5003f229eccf3d7af0b6249e02b456114e"
+        },
+        {
+          "path": "artifacts/cardinality-encoding-benchmark/cardinality-encoding-20-leaf-20260722/t-5/sequential/result.json",
+          "sha256": "7358356fed7d05406e6d428e172876442c54afa8673e3466f73582490668a615"
+        },
+        {
+          "path": "artifacts/cardinality-encoding-benchmark/cardinality-encoding-20-leaf-20260722/t-6/kmtotalizer/result.json",
+          "sha256": "33dc92bcd17c21a8fb8c4e5c2f07dd7bfa9a2ee36bf5c7f1479b11e8a32fb155"
+        },
+        {
+          "path": "artifacts/cardinality-encoding-benchmark/cardinality-encoding-20-leaf-20260722/t-6/sequential/result.json",
+          "sha256": "bdac9472566f02f57df5e7a20b8b68f41d0c5c567c9c34d581debc81fdd5e1b7"
+        }
+      ],
+      "superseded_mutable_checkpoint": {
+        "final_sha256": "e04b9e94ed6f745f40fee8d5efcc30730babacf50a9774ae821527c143e5c69a",
+        "path": "artifacts/cardinality-encoding-benchmark/cardinality-encoding-20-leaf-20260722/checkpoint.json",
+        "reason": "checkpoint advanced in place during the frozen benchmark; immutable result receipts are authoritative"
+      }
+    },
+    {
+      "certificate_and_replay_status": {
+        "certified_unsat_outcomes": 5,
+        "proof_replays": "all five UNSAT outcomes independently verified",
+        "semantic_audits": "all six continuation outcomes valid"
+      },
+      "completed_solver_runs": 6,
+      "cost_per_new_closure": {
+        "cpu_seconds": 40.30395,
+        "proof_bytes": 75194428.6
+      },
+      "cpu_seconds": 201.519748,
+      "cumulative_closed_out_of_47": "20/47",
+      "id": "sequential-open-frontier-30-v5-native-replay-20260722-segment-01",
+      "method_stats": {
+        "sequential": {
+          "certified_unsat": 5,
+          "cpu_seconds": 201.519748,
+          "net_new_closures": 5,
+          "net_new_closures_per_cpu_hour": 89.321271,
+          "proof_bytes": 375972143,
+          "tested": 6
+        }
+      },
+      "newly_closed_nodes": [
+        "t-3",
+        "t-4",
+        "t-7",
+        "t-8",
+        "t-9"
+      ],
+      "next_method_by_hard_tail_class": {
+        "fifth_orbit_tree_case": "structural lemma/branch analysis; do not blindly raise timeout",
+        "sequential_timeout": "classify structurally before any longer or alternative run",
+        "unmeasured_open": "continue ordered sequential harvest at the same fixed cap"
+      },
+      "proof_storage_bytes": 375972143,
+      "remaining_node_classes": {
+        "secondary": 11,
+        "tertiary": 16
+      },
+      "source_results": [
+        {
+          "path": "artifacts/sequential-frontier-sweep/sequential-open-frontier-30-v5-native-replay-20260722/s-r0-2/sequential/result.json",
+          "sha256": "b94a68c21aded069b18ab44d862c81e2e86c24ec8685bfaa2d1cff2b9c9bb435"
+        },
+        {
+          "path": "artifacts/sequential-frontier-sweep/sequential-open-frontier-30-v5-native-replay-20260722/t-3/sequential/result.json",
+          "sha256": "5dc5cf4f82ecca570b133672dc7a755a4de66657e13921ccde73b921a6dc8225"
+        },
+        {
+          "path": "artifacts/sequential-frontier-sweep/sequential-open-frontier-30-v5-native-replay-20260722/t-4/sequential/result.json",
+          "sha256": "8591ff37b526f191b7e24e63349b650889c59ea0ccc67117ce3e88f14a0f9897"
+        },
+        {
+          "path": "artifacts/sequential-frontier-sweep/sequential-open-frontier-30-v5-native-replay-20260722/t-7/sequential/result.json",
+          "sha256": "545933198bf4f0b3eafc8b6abba6a68cf7ae557e18eab9344e6b87033f0bf1d0"
+        },
+        {
+          "path": "artifacts/sequential-frontier-sweep/sequential-open-frontier-30-v5-native-replay-20260722/t-8/sequential/result.json",
+          "sha256": "0ebbd1bdba32da6f1c2c26601383a11d3e148f364551ad2b24ef5f776ce36f69"
+        },
+        {
+          "path": "artifacts/sequential-frontier-sweep/sequential-open-frontier-30-v5-native-replay-20260722/t-9/sequential/result.json",
+          "sha256": "de068b0af230268ccd24d77f7507471137711bb82b384848c3db7a2229f7e84d"
+        }
+      ]
+    },
+    {
+      "certificate_and_replay_status": {
+        "certified_unsat_outcomes": 6,
+        "proof_replays": "all 6 UNSAT outcomes independently verified",
+        "semantic_audits": "all 8 outcomes passed their declared semantic gate"
+      },
+      "completed_solver_runs": 8,
+      "cost_per_new_closure": {
+        "cpu_seconds": 25.483055,
+        "proof_bytes": 41213855.333333
+      },
+      "cpu_seconds": 152.898333,
+      "cumulative_closed_out_of_47": "26/47",
+      "id": "sequential-unmeasured-frontier-24-v5-20260722-segment-01",
+      "method_stats": {
+        "sequential": {
+          "certified_unsat": 6,
+          "cpu_seconds": 152.898333,
+          "net_new_closures": 6,
+          "net_new_closures_per_cpu_hour": 141.270344,
+          "proof_bytes": 247283132,
+          "tested": 8
+        }
+      },
+      "newly_closed_nodes": [
+        "t-12",
+        "t-13",
+        "t-14",
+        "t-18",
+        "t-19",
+        "t-20"
+      ],
+      "next_method_by_hard_tail_class": {
+        "fifth_orbit_tree_case": "structural lemma/branch analysis; do not blindly raise timeout",
+        "sequential_timeout": "classify structurally before any longer or alternative run",
+        "unmeasured_open": "continue ordered sequential harvest at the same fixed cap"
+      },
+      "proof_storage_bytes": 247283132,
+      "remaining_node_classes": {
+        "secondary": 11,
+        "tertiary": 10
+      },
+      "source_results": [
+        {
+          "path": "artifacts/sequential-frontier-sweep/sequential-unmeasured-frontier-24-v5-20260722/t-12/sequential/result.json",
+          "sha256": "9263544732eba8626e2a36e112dea8714b2dce8709e088fa064a1f5e9418cd33"
+        },
+        {
+          "path": "artifacts/sequential-frontier-sweep/sequential-unmeasured-frontier-24-v5-20260722/t-13/sequential/result.json",
+          "sha256": "cc510e94dfa80de2bef66c96796f2c2239a5095796b87031bdf6a36e1105e6ce"
+        },
+        {
+          "path": "artifacts/sequential-frontier-sweep/sequential-unmeasured-frontier-24-v5-20260722/t-14/sequential/result.json",
+          "sha256": "a63cf9f39d00c0ffe179178cd8b87dea5655587855abeb22a730044235a48e30"
+        },
+        {
+          "path": "artifacts/sequential-frontier-sweep/sequential-unmeasured-frontier-24-v5-20260722/t-16/sequential/result.json",
+          "sha256": "fe3482b15a8a3c001f9ca8e90625a7e8765067e7a733a3ca9b41e2cf292ecbf9"
+        },
+        {
+          "path": "artifacts/sequential-frontier-sweep/sequential-unmeasured-frontier-24-v5-20260722/t-17/sequential/result.json",
+          "sha256": "2e272c139b4baae3b96ad54ede56da82c2b57226107295a84d72e6d7e4ff1002"
+        },
+        {
+          "path": "artifacts/sequential-frontier-sweep/sequential-unmeasured-frontier-24-v5-20260722/t-18/sequential/result.json",
+          "sha256": "92bf7f1bef0e27d2e8c52e205c05328f3126a3f7ab4afeb129b46d95e2a3cdd3"
+        },
+        {
+          "path": "artifacts/sequential-frontier-sweep/sequential-unmeasured-frontier-24-v5-20260722/t-19/sequential/result.json",
+          "sha256": "8ec8ae6e24d63e3541e8babdd31bfbe47eadff3a5445c6d5b213054f1f4a027a"
+        },
+        {
+          "path": "artifacts/sequential-frontier-sweep/sequential-unmeasured-frontier-24-v5-20260722/t-20/sequential/result.json",
+          "sha256": "c72dadc40fc5fe32dbbba2d0f13dadd1a791f19a013bb529985212c79c7ede89"
+        }
+      ]
+    },
+    {
+      "certificate_and_replay_status": {
+        "certified_unsat_outcomes": 6,
+        "proof_replays": "all 6 UNSAT outcomes independently verified",
+        "semantic_audits": "all 12 outcomes passed their declared semantic gate"
+      },
+      "completed_solver_runs": 12,
+      "cost_per_new_closure": {
+        "cpu_seconds": 67.179981,
+        "proof_bytes": 25562165.833333
+      },
+      "cpu_seconds": 403.079888,
+      "cumulative_closed_out_of_47": "32/47",
+      "id": "sequential-unmeasured-frontier-12-v7-20260722-segment-01",
+      "method_stats": {
+        "sequential": {
+          "certified_unsat": 6,
+          "cpu_seconds": 403.079888,
+          "net_new_closures": 6,
+          "net_new_closures_per_cpu_hour": 53.587392,
+          "proof_bytes": 153372995,
+          "tested": 12
+        }
+      },
+      "newly_closed_nodes": [
+        "t-21",
+        "t-22",
+        "t-23",
+        "t-25",
+        "t-28",
+        "t-31"
+      ],
+      "next_method_by_hard_tail_class": {
+        "fifth_orbit_tree_case": "structural lemma/branch analysis; do not blindly raise timeout",
+        "sequential_timeout": "classify structurally before any longer or alternative run",
+        "unmeasured_open": "continue ordered sequential harvest at the same fixed cap"
+      },
+      "proof_storage_bytes": 153372995,
+      "remaining_node_classes": {
+        "secondary": 11,
+        "tertiary": 4
+      },
+      "source_results": [
+        {
+          "path": "artifacts/sequential-frontier-sweep/sequential-unmeasured-frontier-12-v7-20260722/s-r0-5/sequential/result.json",
+          "sha256": "d55f9dc1f0626a37f96c7782403ab9926ffd2402f0b989e1b22277a5319af9e9"
+        },
+        {
+          "path": "artifacts/sequential-frontier-sweep/sequential-unmeasured-frontier-12-v7-20260722/s-r1-0/sequential/result.json",
+          "sha256": "ab5bdde48ed217384994dbff822db38f24a79429f351ed5284db3953e8aab516"
+        },
+        {
+          "path": "artifacts/sequential-frontier-sweep/sequential-unmeasured-frontier-12-v7-20260722/s-r1-1/sequential/result.json",
+          "sha256": "5a03fd1e472b170f5b9f8b787d42a27401d5ec8176eb4307f495f22cbced2dfd"
+        },
+        {
+          "path": "artifacts/sequential-frontier-sweep/sequential-unmeasured-frontier-12-v7-20260722/s-r1-15/sequential/result.json",
+          "sha256": "907fd78043da2e46d47cd7b7600096b56e3ab0661a6064af2bc4e07ad2fd6886"
+        },
+        {
+          "path": "artifacts/sequential-frontier-sweep/sequential-unmeasured-frontier-12-v7-20260722/s-r1-2/sequential/result.json",
+          "sha256": "bf408700a86e6744eea96b2dd1b52bb9e0add624722f1fdfa64c8e45a7dbe56b"
+        },
+        {
+          "path": "artifacts/sequential-frontier-sweep/sequential-unmeasured-frontier-12-v7-20260722/s-r1-4/sequential/result.json",
+          "sha256": "0289ba7683e4fe0c98dadb7ab0166046f18ffa6356fcbc555617d0e52d8d0fa0"
+        },
+        {
+          "path": "artifacts/sequential-frontier-sweep/sequential-unmeasured-frontier-12-v7-20260722/t-21/sequential/result.json",
+          "sha256": "83c77cca76627eae841ef7f82e06f2d49b15989b03eb3d21fca8b28c20a4e5d8"
+        },
+        {
+          "path": "artifacts/sequential-frontier-sweep/sequential-unmeasured-frontier-12-v7-20260722/t-22/sequential/result.json",
+          "sha256": "19511430710c0937ddc2e90e6ff0d3965e78d60ab1b7d434e77d4ab223b24465"
+        },
+        {
+          "path": "artifacts/sequential-frontier-sweep/sequential-unmeasured-frontier-12-v7-20260722/t-23/sequential/result.json",
+          "sha256": "20777e4d9ea743a94a132cd9f7e3ff08467937d506e2abb997432190e629951a"
+        },
+        {
+          "path": "artifacts/sequential-frontier-sweep/sequential-unmeasured-frontier-12-v7-20260722/t-25/sequential/result.json",
+          "sha256": "6974d80cff874daeb64c67b088e2c6c5394a018435a374901258842c7bdf0ae5"
+        },
+        {
+          "path": "artifacts/sequential-frontier-sweep/sequential-unmeasured-frontier-12-v7-20260722/t-28/sequential/result.json",
+          "sha256": "465759b2eaf0c3828fdad507df36f3df1adeefce766ed7487e71e77a7f3fff22"
+        },
+        {
+          "path": "artifacts/sequential-frontier-sweep/sequential-unmeasured-frontier-12-v7-20260722/t-31/sequential/result.json",
+          "sha256": "4716b53a8972653439a628dec4b7ad669d9aefcffa5e2e8da1157669fb1d1fd0"
+        }
+      ]
+    }
+  ]
+}
