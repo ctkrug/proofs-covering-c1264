@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "id": "20260722-203339-aef407",
+  "name": "Exact residual extension tests for link orbits 8 and 9 (runtime retry) segment 1/1",
+  "hypothesis": "One of the two newly validated point-link orbits may extend to a directly verifiable 40-block cover; otherwise replayed UNSAT will exclude each orbit locally.",
+  "expected_signal": "Exactly two fixed-link results at 300 seconds each, with direct cover verification for SAT and reconstructed CNF plus replayable proof for UNSAT.",
+  "command": [
+    "python3",
+    "scripts/run_two_new_orbit_extension_tranche.py",
+    "--manifest",
+    "artifacts/experiments/link-orbits-8-9-extension-300s-20260722/manifest.json",
+    "--checkpoint",
+    "artifacts/experiments/link-orbits-8-9-extension-300s-20260722/checkpoint.json",
+    "--progress",
+    "artifacts/experiments/link-orbits-8-9-extension-300s-20260722/progress.json"
+  ],
+  "cwd": "/root/proof-factory/research/covering-c1264/workspace",
+  "seed": 0,
+  "timeout_seconds": 700,
+  "memory_limit_mb": 4096,
+  "memory_limit_enforced": true,
+  "started_at": "2026-07-22T20:33:39.575268+00:00",
+  "finished_at": "2026-07-22T20:33:39.752335+00:00",
+  "duration_seconds": 0.177,
+  "returncode": 1,
+  "timed_out": false,
+  "python": "3.12.3",
+  "platform": "Linux-6.8.0-124-generic-x86_64-with-glibc2.39",
+  "git_commit": "5116e1c88a96f0c2962ab667835f43f778c34471",
+  "source_urls": [],
+  "input_artifacts": {
+    "/root/proof-factory/research/covering-c1264/workspace/scripts/run_two_new_orbit_extension_tranche.py": "9584bacf5dfeb3505c03e175dbd03ca6a250c3ee14fd08a0a489078fe5dfb56f",
+    "/root/proof-factory/research/covering-c1264/workspace/artifacts/experiments/link-orbits-8-9-extension-300s-20260722/manifest.json": "f5be754bea2051c5204a972c75a21cb2bb69fcaf2ec6095243d5e66b6e8b3d3d"
+  },
+  "peak_child_memory_rusage": 17920,
+  "peak_child_memory_unit": "kilobytes",
+  "artifacts": {
+    "stdout.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr.txt": "7ac9670355b9c6b36e58e384804f199b1391bf0c890200ab02ad953a8e006d87"
+  }
+}
