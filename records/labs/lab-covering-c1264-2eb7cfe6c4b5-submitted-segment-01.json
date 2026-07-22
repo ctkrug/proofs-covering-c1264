@@ -1,0 +1,59 @@
+{
+  "event": "submitted",
+  "schema_version": 2,
+  "id": "lab-covering-c1264-2eb7cfe6c4b5",
+  "problem_id": "covering-c1264",
+  "name": "Seven-orbit three-case review tranche",
+  "hypothesis": "Under the active seven-orbit blocker, t-16 and t-17 close or expose another orbit, while s-r0-1 yields the sole first measurement at the fixed cap.",
+  "expected_signal": "Exactly three hash-bound sequential results: reconstructed-CNF audit for each, independent replay for every UNSAT, and direct validation plus canonicalization for every SAT.",
+  "decision_value": "Closes stale frontier leaves or exposes an eighth orbit; classifies the sole never-measured case before any structural hard-tail discriminator is selected.",
+  "efficiency_design": {
+    "naive_cost": "A generic pass over all 15 open nodes would spend up to 900 solver-seconds and mix stale-orbit cleanup, an unmeasured case, and twelve established timeouts before review.",
+    "opportunities_considered": [
+      "Remeasure the two stale orbit-discovery leaves under the active blocker.",
+      "Measure the sole never-tested active-frontier node.",
+      "Increase timeouts uniformly on the twelve-node hard tail.",
+      "Resume broad sequential harvesting or kmtotalizer."
+    ],
+    "chosen_reductions": "Run exactly t-16, t-17, and s-r0-1 once with sequential encoding at 60 seconds each. The selected set is disjoint from the complete 32-certificate index and bound to the audited seven-orbit blocker and frontier hashes.",
+    "expected_throughput_gain": "Avoids all twelve known timeout cases until their shared structure is profiled; resolves the two stale catalogue interactions and sole unmeasured case in at most 180 solver-seconds.",
+    "soundness_basis": "The complete durable certificate index, 47-node frontier identity, 2,576-clause active blocker, exact three-node selection, and immutable manifest hashes pass independent preflight. Every UNSAT requires CNF audit and DRAT replay; every SAT requires direct validation and canonicalization.",
+    "remains_uncompressed": "The twelve established timeout cases remain a structural hard-tail problem. The seven-orbit catalogue remains non-exhaustive even if all three selected leaves close."
+  },
+  "source_urls": [],
+  "command": [
+    "python3",
+    "scripts/run_sequential_frontier_sweep.py",
+    "--manifest",
+    "artifacts/experiments/sequential-three-case-review-v7-20260722/manifest.json",
+    "--run-id",
+    "sequential-three-case-review-v7-20260722",
+    "--checkpoint",
+    "artifacts/sequential-frontier-sweep/sequential-three-case-review-v7-20260722/checkpoint.json",
+    "--progress",
+    "artifacts/sequential-frontier-sweep/sequential-three-case-review-v7-20260722/progress.json",
+    "--units-per-invocation",
+    "3"
+  ],
+  "seed": 0,
+  "segment_seconds": 600,
+  "memory_mb": 4096,
+  "max_segments": 1,
+  "segment": 1,
+  "pilot_segments": 1,
+  "review_every_segments": 1,
+  "checkpoint_path": "artifacts/sequential-frontier-sweep/sequential-three-case-review-v7-20260722/checkpoint.json",
+  "progress_path": "artifacts/sequential-frontier-sweep/sequential-three-case-review-v7-20260722/progress.json",
+  "continuation_thresholds": {
+    "min_throughput_per_second": 0.003,
+    "max_artifact_growth_bytes": 5000000000,
+    "require_correctness_checks": true
+  },
+  "submitted_at": "2026-07-22T20:09:50.874925+00:00",
+  "workspace_git_commit": "1ef75e9f55c852715bb5341231387a58d37ddcfd",
+  "input_sha256": {
+    "artifacts/experiments/sequential-three-case-review-v7-20260722/manifest.json": "bf6dd78a2283e7c51e8b39298445d2230e322f9bc0061cbc6fa6dc30231a43f8",
+    "scripts/run_sequential_frontier_sweep.py": "f9dd9b4e07ae3f242187a59e7a9c33de49596439c09e3cadc8df405b1d19a3d7"
+  },
+  "spec_sha256": "18c76b5158de067e60d27642f511b7c73388a1d836054890267600db0523d44c"
+}
