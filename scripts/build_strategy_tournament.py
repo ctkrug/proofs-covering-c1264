@@ -102,6 +102,7 @@ IMPLEMENTED = {
     ("sat_cardinality", "kmtotalizer"): "frozen_predecessor_in_progress",
     ("sat_search", "cadical-default"): "prior_direct_pilot_unknown",
     ("sat_search", "near-cover-core-repair"): "initial_constructive_discriminator_complete",
+    ("constructive_local_search", "two-block-swap"): "degree_preserving_two_block_discriminator_complete",
     ("constructive_local_search", "uncovered-quadruple-repair"): "initial_constructive_discriminator_complete",
     ("symmetry_representation", "fixed-perfect-matching"): "validated_reduction_available",
     ("structural_reduction", "point-degree-profile"): "validated_reduction_available",
@@ -257,6 +258,26 @@ def build() -> tuple[dict, dict, dict]:
                 "method_id": method_by_variant[("sat_search", "near-cover-core-repair")],
                 "result": file_binding(Path("artifacts/constructive/sat-repair-seed126444-4x15s/result.json")),
                 "outcome": "no witness; all four cores timed out; allocation signal only"
+            },
+            {
+                "method_id": method_by_variant[("constructive_local_search", "two-block-swap")],
+                "result": file_binding(Path("artifacts/constructive/two-block-seed126450-180s/result.json")),
+                "outcome": "no witness; the exact-degree six-defect warm start was a strict direct-trade basin and accepted no move at the original temperature"
+            },
+            {
+                "method_id": method_by_variant[("constructive_local_search", "two-block-swap")],
+                "result": file_binding(Path("artifacts/constructive/two-block-seed126451-180s/result.json")),
+                "outcome": "no witness; independently seeded replication accepted no direct trade at the original temperature"
+            },
+            {
+                "method_id": method_by_variant[("constructive_local_search", "two-block-swap")],
+                "result": file_binding(Path("artifacts/constructive/two-block-barrier-seed126452-180s/result.json")),
+                "outcome": "no witness; 17,501 barrier-crossing degree-preserving trades accepted, but best remained six uncovered quadruples"
+            },
+            {
+                "method_id": method_by_variant[("constructive_local_search", "two-block-swap")],
+                "result": file_binding(Path("artifacts/constructive/two-block-barrier-seed126453-180s/result.json")),
+                "outcome": "no witness; 17,499 barrier-crossing degree-preserving trades accepted, but best remained six uncovered quadruples"
             }
         ]
     }

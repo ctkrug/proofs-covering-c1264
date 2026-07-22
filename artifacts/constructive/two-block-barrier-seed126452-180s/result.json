@@ -1,0 +1,30 @@
+{
+  "accepted_moves": 17501,
+  "best_metrics": {
+    "pair_deficit_below_9": 12,
+    "pair_excess_above_10": 0,
+    "point_degree_deviation": 0,
+    "uncovered_quadruples": 6
+  },
+  "candidate": {
+    "blocks": 40,
+    "path": "artifacts/constructive/two-block-barrier-seed126452-180s/best-candidate.txt",
+    "sha256": "4321dea0f828f30bf5cb1d3c54b4a94349e9bc3f54bd25ea23dbac79ae030a07"
+  },
+  "claim_limit": "Only WITNESS_CANDIDATE followed by independent direct checking can change the upper bound; NO_WITNESS is non-exhaustive.",
+  "elapsed_seconds": 180.00294375000522,
+  "improving_moves": 0,
+  "initial_temperature": 6000.0,
+  "iterations": 309547,
+  "method": "annealed genuine two-block degree-preserving trades",
+  "schema_version": 1,
+  "scope": "unrestricted 40 distinct six-subsets from an exact-degree source; heuristic and non-exhaustive",
+  "seconds_cap": 180.0,
+  "seed": 126452,
+  "source": {
+    "path": "artifacts/constructive/repair-seed126442-30s/best-candidate.txt",
+    "sha256": "4321dea0f828f30bf5cb1d3c54b4a94349e9bc3f54bd25ea23dbac79ae030a07"
+  },
+  "status": "NO_WITNESS",
+  "trade_signature_classes": 56233
+}

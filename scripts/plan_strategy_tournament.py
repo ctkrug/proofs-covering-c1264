@@ -104,8 +104,8 @@ def build_plan() -> dict:
         "open_leaf_assignments": assignments,
         "global_constructive_assignment": {
             "status": "active_measured_route",
-            "initial_signal": "one of two additional unrestricted repair seeds improved to six uncovered quadruples with exact point degrees; exact-repair follow-up produced only UNKNOWN results, while earlier local CORE_UNSAT statuses remain unreplayed allocation signals",
-            "next_gate": "the improvement gate passed for local search but the hybrid did not: validate and test a materially different two-block or large-neighborhood champion before spending a longer tranche"
+            "initial_signal": "one-block repair improved to six uncovered quadruples with exact point degrees; four degree-preserving two-block tranches found no improvement, including two barrier-crossing runs with 35,000 accepted trades; exact-repair follow-up produced only UNKNOWN results, while earlier local CORE_UNSAT statuses remain unreplayed allocation signals",
+            "next_gate": "demote exact-degree two-block repair for this basin; validate a larger neighborhood that temporarily permits degree slack or repairs at least three blocks before spending a longer tranche"
         },
         "recompute_when": "frozen predecessor completes, a semantic gate changes, or a new independently validated matrix cell is recorded"
     }

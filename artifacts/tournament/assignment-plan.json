@@ -12,8 +12,8 @@
     "structural_reduction-02",
     "symmetry_representation-01"
   ],
-  "candidate_registry_sha256": "43725997a8abb093d9b5452f0e4c3600a36a6806d824b120ec86d83140a2077f",
-  "coverage_matrix_sha256": "d5e5e9df88b9878425683354b5051ffc630ec3d0b319e2a76429cc9e0df67079",
+  "candidate_registry_sha256": "57d4f953db16bd6888d97c16956d5e8708aaf29374daa18ac000477fc77993af",
+  "coverage_matrix_sha256": "663a241bf5e5801ba045d4c8e8e31502d2fdac8471f63f6025b0d636da5e5711",
   "family_champions": {
     "constructive_local_search": "constructive_local_search-04",
     "constructive_metaheuristic": "constructive_metaheuristic-09",
@@ -27,8 +27,8 @@
     "symmetry_representation": "symmetry_representation-01"
   },
   "global_constructive_assignment": {
-    "initial_signal": "one of two additional unrestricted repair seeds improved to six uncovered quadruples with exact point degrees; exact-repair follow-up produced only UNKNOWN results, while earlier local CORE_UNSAT statuses remain unreplayed allocation signals",
-    "next_gate": "the improvement gate passed for local search but the hybrid did not: validate and test a materially different two-block or large-neighborhood champion before spending a longer tranche",
+    "initial_signal": "one-block repair improved to six uncovered quadruples with exact point degrees; four degree-preserving two-block tranches found no improvement, including two barrier-crossing runs with 35,000 accepted trades; exact-repair follow-up produced only UNKNOWN results, while earlier local CORE_UNSAT statuses remain unreplayed allocation signals",
+    "next_gate": "demote exact-degree two-block repair for this basin; validate a larger neighborhood that temporarily permits degree slack or repairs at least three blocks before spending a longer tranche",
     "status": "active_measured_route"
   },
   "maximum_parallel_searches": 1,
@@ -44,7 +44,7 @@
     },
     {
       "closures_per_cpu_hour": 0.0,
-      "decision": "semantic_gate",
+      "decision": "screen",
       "family": "constructive_local_search",
       "method_id": "constructive_local_search-02",
       "observed_cpu_seconds": 0,
@@ -1347,7 +1347,6 @@
   ],
   "parked_family_variant_expansion_queue": [
     "constructive_local_search-01",
-    "constructive_local_search-02",
     "constructive_local_search-03",
     "constructive_local_search-05",
     "constructive_local_search-06",
@@ -1434,10 +1433,10 @@
     "symmetry_representation-09",
     "symmetry_representation-10"
   ],
-  "plan_payload_sha256": "98c956febff0e9417ac38fd7975a7fd56bb3340d2254cbaeca09cbfd004495dd",
+  "plan_payload_sha256": "841f31616addf6e3db654841d0d1f14bd422bc762c3910081524fa3e81d9aec2",
   "recompute_when": "frozen predecessor completes, a semantic gate changes, or a new independently validated matrix cell is recorded",
   "schema_version": 1,
-  "screening_manifest_sha256": "8947cafb40c8fb63913609ba931a039605078ed1d52f07292b14a06eb8a2caed",
+  "screening_manifest_sha256": "0d33bd5c224b370c5fc23344d4dfdb0c5393a9c58f87890c3fb1cf0650ff22be",
   "separate_local_workstation_constructive_searches": 2,
   "stage": "parallel_constructive_sprint_and_finish_frozen_predecessor"
 }

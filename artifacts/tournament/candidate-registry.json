@@ -28,7 +28,7 @@
     {
       "applicable_targets": "eight fixed seeds plus any returned global witness",
       "family": "constructive_local_search",
-      "implementation_status": "design_candidate",
+      "implementation_status": "available",
       "material_signature": {
         "family": "constructive_local_search",
         "route_kind": "constructive",
@@ -43,10 +43,10 @@
         "search_seconds_per_unit": 5,
         "units": 8
       },
-      "screen_status": "blocked_pending_semantic_gate",
+      "screen_status": "degree_preserving_two_block_discriminator_complete",
       "semantic_gate": "every candidate state has 40 distinct blocks, preserves declared forced constraints, and is checked directly for all 495 quadruples",
       "success_certificate": "independently validated 40-block cover",
-      "validation_status": "pending",
+      "validation_status": "passed",
       "variant": "two-block-swap"
     },
     {
@@ -2412,6 +2412,6 @@
     "sha256": "2badf458f03e9a400b034352a0ec9060cc962f6dec97b94b873995f26a0236a8"
   },
   "problem_id": "covering-c1264",
-  "registry_payload_sha256": "43725997a8abb093d9b5452f0e4c3600a36a6806d824b120ec86d83140a2077f",
+  "registry_payload_sha256": "57d4f953db16bd6888d97c16956d5e8708aaf29374daa18ac000477fc77993af",
   "schema_version": 1
 }

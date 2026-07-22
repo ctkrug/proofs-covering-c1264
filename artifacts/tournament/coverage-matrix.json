@@ -1,5 +1,5 @@
 {
-  "candidate_registry_sha256": "43725997a8abb093d9b5452f0e4c3600a36a6806d824b120ec86d83140a2077f",
+  "candidate_registry_sha256": "57d4f953db16bd6888d97c16956d5e8708aaf29374daa18ac000477fc77993af",
   "cells": [
     {
       "cpu_seconds": 60.05935862008482,
@@ -122,6 +122,38 @@
         "path": "artifacts/constructive/sat-repair-seed126444-4x15s/result.json",
         "sha256": "6fcd91dea303055d2f8f86caf5b5c03b47f9f8fe83ec9d1202b63014cc3188d9"
       }
+    },
+    {
+      "method_id": "constructive_local_search-02",
+      "outcome": "no witness; the exact-degree six-defect warm start was a strict direct-trade basin and accepted no move at the original temperature",
+      "result": {
+        "path": "artifacts/constructive/two-block-seed126450-180s/result.json",
+        "sha256": "993450d8e637d6f243ffeefd383cd86e77cbce145acf6851bca74eef2cff5fc3"
+      }
+    },
+    {
+      "method_id": "constructive_local_search-02",
+      "outcome": "no witness; independently seeded replication accepted no direct trade at the original temperature",
+      "result": {
+        "path": "artifacts/constructive/two-block-seed126451-180s/result.json",
+        "sha256": "6f6433978ef88f562a834f92dfe1810dbd1d52b145b46d2e54491c62ebc17533"
+      }
+    },
+    {
+      "method_id": "constructive_local_search-02",
+      "outcome": "no witness; 17,501 barrier-crossing degree-preserving trades accepted, but best remained six uncovered quadruples",
+      "result": {
+        "path": "artifacts/constructive/two-block-barrier-seed126452-180s/result.json",
+        "sha256": "438657016b99262e33645f9f195ce1b51506009ecc2e4dd1a6497fb6939deb75"
+      }
+    },
+    {
+      "method_id": "constructive_local_search-02",
+      "outcome": "no witness; 17,499 barrier-crossing degree-preserving trades accepted, but best remained six uncovered quadruples",
+      "result": {
+        "path": "artifacts/constructive/two-block-barrier-seed126453-180s/result.json",
+        "sha256": "ca1ac75fc356e491cf874e8ba9c8543764277431913bf0f538ef1c060e0a5351"
+      }
     }
   ],
   "covered_frontier_targets": [
@@ -131,7 +163,7 @@
   ],
   "frontier_definition_sha256": "8ccf62d23382db6d79298f470b640c8b188c6e80a32e6b02b1d66b3663467e92",
   "global_witness_status": "open",
-  "matrix_payload_sha256": "d5e5e9df88b9878425683354b5051ffc630ec3d0b319e2a76429cc9e0df67079",
+  "matrix_payload_sha256": "663a241bf5e5801ba045d4c8e8e31502d2fdac8471f63f6025b0d636da5e5711",
   "problem_id": "covering-c1264",
   "protected_incomplete_methods": [
     {

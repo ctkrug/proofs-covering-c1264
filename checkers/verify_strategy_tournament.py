@@ -73,7 +73,7 @@ def verify() -> None:
     assert all(1 <= len(row["shortlist"]) <= 3 for row in plan["open_leaf_assignments"])
     plan_payload = dict(plan); plan_hash = plan_payload.pop("plan_payload_sha256")
     assert canonical_hash(plan_payload) == plan_hash
-    assert len(matrix["constructive_measurements"]) == 5
+    assert len(matrix["constructive_measurements"]) == 9
     for measurement in matrix["constructive_measurements"]:
         bound = ROOT / measurement["result"]["path"]
         assert hashlib.sha256(bound.read_bytes()).hexdigest() == measurement["result"]["sha256"]

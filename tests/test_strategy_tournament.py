@@ -20,7 +20,7 @@ class StrategyTournamentTests(unittest.TestCase):
     def test_pending_candidate_cannot_enter_screen(self):
         registry, _, _ = build()
         pending = [row for row in registry["candidates"] if row["validation_status"] == "pending"]
-        self.assertEqual(len(pending), 92)
+        self.assertEqual(len(pending), 91)
         self.assertTrue(all(row["screen_status"] == "blocked_pending_semantic_gate" for row in pending))
 
     def test_registry_hash_detects_mutation(self):
