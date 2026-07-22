@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "status": "resolved_with_external_replacement_proofs",
+  "incident": "PySAT CaDiCaL returned UNSAT for both fixed-link CNFs, but its extracted proof streams failed independent drat-trim replay. The original streams are preserved and are not valid evidence.",
+  "original_proofs": [
+    {
+      "id": "orbit-8-t-16",
+      "path": "artifacts/experiments/link-orbits-8-9-extension-300s-20260722/orbit-8-t-16/proof.drat",
+      "sha256": "e9146ed7ee9f7428a32e3853f32de60a7e12adf95aac7bc95043dc821ddbfa35",
+      "drat_trim_verdict": "s NOT VERIFIED",
+      "diagnostic": "c ERROR: no conflict"
+    },
+    {
+      "id": "orbit-9-t-17",
+      "path": "artifacts/experiments/link-orbits-8-9-extension-300s-20260722/orbit-9-t-17/proof.drat",
+      "sha256": "50463c29c3bae1132abb3fbfc135253d8e9e519bd40cc3411d7080704d7c8a9e",
+      "drat_trim_verdict": "s NOT VERIFIED",
+      "diagnostic": "c conflict claimed, but not detected"
+    }
+  ],
+  "repair": "Ran the external cadical executable on each exact, unchanged CNF within the original 300-second cap, then replayed each replacement proof with the independently hashed drat-trim checker.",
+  "claim_policy": "Only independent-validation.json and its external-replacement.drat hash count as valid evidence."
+}

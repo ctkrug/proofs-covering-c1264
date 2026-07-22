@@ -1,0 +1,78 @@
+{
+  "checkpoint": {
+    "bytes": 1439,
+    "path": "artifacts/experiments/link-orbits-8-9-extension-300s-20260722/checkpoint.json",
+    "sha256": "4243a941750f0136fdc8fa82e9277879ee9d045793e475ddbc733deb2589f421"
+  },
+  "claim_limit": "Each certificate excludes extension of one independently validated link orbit to a 40-block cover. Neither certificate closes the stale t-16/t-17 frontier leaf, exhausts point-link orbits, or changes the 32/47 global ledger.",
+  "global_ledger": {
+    "changed_by_this_result": false,
+    "closed": 32,
+    "total": 47
+  },
+  "manifest": {
+    "bytes": 2893,
+    "path": "artifacts/experiments/link-orbits-8-9-extension-300s-20260722/manifest.json",
+    "sha256": "44fbd747159f5909fce698a4c7228d89c677673783bcaf89bb94f147aa5897bd"
+  },
+  "receipts": [
+    {
+      "canonical_sha256": "7291235f9679362212e69d3e7eb50dbcfc445bb1da66a14bd0d01135a56a7894",
+      "cnf": {
+        "clauses": 144798,
+        "coverage_constraints": 230,
+        "pair_equalities": 55,
+        "path": "artifacts/experiments/link-orbits-8-9-extension-300s-20260722/orbit-8-t-16/instance.cnf",
+        "sha256": "c4575a3fec27bec4c021b6be53b6724e9eceb986e87f03c61b4c6962ee38435b",
+        "variables": 72746
+      },
+      "external_replacement_proof": {
+        "bytes": 11757698,
+        "path": "artifacts/experiments/link-orbits-8-9-extension-300s-20260722/orbit-8-t-16/external-replacement.drat",
+        "sha256": "ba7e18d967d7db3affcc2d0ac68fce8cced507200aa896ce14e5266ef1e41430"
+      },
+      "id": "orbit-8-t-16",
+      "independent_validation": {
+        "bytes": 1619,
+        "path": "artifacts/experiments/link-orbits-8-9-extension-300s-20260722/orbit-8-t-16/independent-validation.json",
+        "sha256": "5eb0b49757c3c334b346c0e4af543a86b2b5b3af03be98fd689819886ae0dfa1"
+      },
+      "result": {
+        "bytes": 6869,
+        "path": "artifacts/experiments/link-orbits-8-9-extension-300s-20260722/orbit-8-t-16/result.json",
+        "sha256": "3f5f3a852e57c974ffd076cf3cf40e8882994db771607fa7eef9c29d963fee34"
+      },
+      "verdict": "s VERIFIED"
+    },
+    {
+      "canonical_sha256": "a2b4fb1c04cc3944b697840bb50d5cd55d89348f539bf48d6c8cb8a1a5e953d1",
+      "cnf": {
+        "clauses": 144806,
+        "coverage_constraints": 230,
+        "pair_equalities": 55,
+        "path": "artifacts/experiments/link-orbits-8-9-extension-300s-20260722/orbit-9-t-17/instance.cnf",
+        "sha256": "8b2e4134d52cf536675e5ef807f739570e22f5f36b964481d6433550523a7cc2",
+        "variables": 72750
+      },
+      "external_replacement_proof": {
+        "bytes": 11947257,
+        "path": "artifacts/experiments/link-orbits-8-9-extension-300s-20260722/orbit-9-t-17/external-replacement.drat",
+        "sha256": "b100f7079f458192c5fd042ae581346d3fed96c47d8e4d20b86a0b4bb77560e0"
+      },
+      "id": "orbit-9-t-17",
+      "independent_validation": {
+        "bytes": 1619,
+        "path": "artifacts/experiments/link-orbits-8-9-extension-300s-20260722/orbit-9-t-17/independent-validation.json",
+        "sha256": "00d6b37682da20c99f1c16e15de39ffc39b3ddc7b379391869d478f1399a214d"
+      },
+      "result": {
+        "bytes": 6869,
+        "path": "artifacts/experiments/link-orbits-8-9-extension-300s-20260722/orbit-9-t-17/result.json",
+        "sha256": "f033a3afc33672b6391a9066eda935c9dc9195818231c085ea6fdc2ff7ceae03"
+      },
+      "verdict": "s VERIFIED"
+    }
+  ],
+  "schema_version": 1,
+  "status": "verified_two_fixed_link_nonextensions"
+}

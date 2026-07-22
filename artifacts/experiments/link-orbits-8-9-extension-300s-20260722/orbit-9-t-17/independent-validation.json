@@ -1,0 +1,37 @@
+{
+  "checker": {
+    "path": "toolchains/drat-trim/drat-trim",
+    "sha256": "92f0aa9575ed519d66a99b8b1b3dde6ece4618ae4c202a3a4b200265dda0aa7a"
+  },
+  "claim_limit": "Excludes extension of this one independently validated link orbit; does not exhaust all link orbits.",
+  "cnf": {
+    "clauses": 144806,
+    "coverage_constraints": 230,
+    "pair_equalities": 55,
+    "path": "artifacts/experiments/link-orbits-8-9-extension-300s-20260722/orbit-9-t-17/instance.cnf",
+    "sha256": "8b2e4134d52cf536675e5ef807f739570e22f5f36b964481d6433550523a7cc2",
+    "variables": 72750
+  },
+  "link": {
+    "path": "artifacts/sequential-frontier-sweep/sequential-three-case-review-v7-20260722/t-17/sequential/witness.txt",
+    "sha256": "e2f8ebbfb6535e1fb187d1f5bd4d4dbc5be48d583b56b8da0018b8dcae8c5b97"
+  },
+  "orbit": {
+    "canonical_sha256": "a2b4fb1c04cc3944b697840bb50d5cd55d89348f539bf48d6c8cb8a1a5e953d1",
+    "path": "artifacts/discoveries/link-orbit-9-t-17/orbit.json",
+    "sha256": "e6e5c7f7fb17bf9556325a09e1a52fb0a43109ab5b67fc77782cb106db4feb71"
+  },
+  "proof": {
+    "bytes": 11947257,
+    "path": "artifacts/experiments/link-orbits-8-9-extension-300s-20260722/orbit-9-t-17/external-replacement.drat",
+    "sha256": "b100f7079f458192c5fd042ae581346d3fed96c47d8e4d20b86a0b4bb77560e0"
+  },
+  "replay_exit_code": 0,
+  "result": {
+    "path": "artifacts/experiments/link-orbits-8-9-extension-300s-20260722/orbit-9-t-17/result.json",
+    "sha256": "f033a3afc33672b6391a9066eda935c9dc9195818231c085ea6fdc2ff7ceae03"
+  },
+  "schema_version": 1,
+  "status": "verified_unsat_fixed_link_extension",
+  "verdict": "s VERIFIED"
+}

@@ -1,0 +1,37 @@
+{
+  "checker": {
+    "path": "toolchains/drat-trim/drat-trim",
+    "sha256": "92f0aa9575ed519d66a99b8b1b3dde6ece4618ae4c202a3a4b200265dda0aa7a"
+  },
+  "claim_limit": "Excludes extension of this one independently validated link orbit; does not exhaust all link orbits.",
+  "cnf": {
+    "clauses": 144798,
+    "coverage_constraints": 230,
+    "pair_equalities": 55,
+    "path": "artifacts/experiments/link-orbits-8-9-extension-300s-20260722/orbit-8-t-16/instance.cnf",
+    "sha256": "c4575a3fec27bec4c021b6be53b6724e9eceb986e87f03c61b4c6962ee38435b",
+    "variables": 72746
+  },
+  "link": {
+    "path": "artifacts/sequential-frontier-sweep/sequential-three-case-review-v7-20260722/t-16/sequential/witness.txt",
+    "sha256": "7dd3d5229bff88ccadf0e5168ca5a27194ecc26b582f60c61e6b39d94ada0fa7"
+  },
+  "orbit": {
+    "canonical_sha256": "7291235f9679362212e69d3e7eb50dbcfc445bb1da66a14bd0d01135a56a7894",
+    "path": "artifacts/discoveries/link-orbit-8-t-16/orbit.json",
+    "sha256": "8b19a9d9f3b09b51337ab02c755ec9b4dc07abf07dbe7ead9ef561b7bc8093af"
+  },
+  "proof": {
+    "bytes": 11757698,
+    "path": "artifacts/experiments/link-orbits-8-9-extension-300s-20260722/orbit-8-t-16/external-replacement.drat",
+    "sha256": "ba7e18d967d7db3affcc2d0ac68fce8cced507200aa896ce14e5266ef1e41430"
+  },
+  "replay_exit_code": 0,
+  "result": {
+    "path": "artifacts/experiments/link-orbits-8-9-extension-300s-20260722/orbit-8-t-16/result.json",
+    "sha256": "3f5f3a852e57c974ffd076cf3cf40e8882994db771607fa7eef9c29d963fee34"
+  },
+  "schema_version": 1,
+  "status": "verified_unsat_fixed_link_extension",
+  "verdict": "s VERIFIED"
+}
