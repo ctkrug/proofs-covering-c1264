@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "problem_id": "covering-c1264",
+  "effective_date": "2026-07-22",
+  "objective": "Settle the 40-versus-41 uncertainty by either a directly validated 40-block witness or a sound union closing the canonical 47-node exclusion frontier, followed by independent global coverage validation.",
+  "success_criterion": "Either an independently validated 40-block cover, or 47/47 frontier nodes with valid closures across the portfolio and independent global coverage validation; no single exclusion method must close every node.",
+  "active_resolution_routes": [
+    {
+      "id": "forced-matching-exact-degree-40-block-witness",
+      "kind": "constructive",
+      "success_certificate": "40 distinct 6-subsets directly checked to cover all 495 four-subsets, with the forced-matching and exact-degree assumptions independently audited",
+      "status": "active"
+    },
+    {
+      "id": "canonical-47-node-certified-exclusion",
+      "kind": "negative",
+      "success_certificate": "47/47 replayable node closures plus an independent canonical-partition coverage audit",
+      "status": "active"
+    }
+  ],
+  "first_measurement": {
+    "run_id": "cardinality-encoding-20-leaf-20260722",
+    "manifest": "artifacts/experiments/cardinality-encoding-20-leaf-20260722/manifest.json",
+    "instruction": "Do not alter, interrupt, or reinterpret the fixed 20-leaf sequential-versus-kmtotalizer protocol. Preserve its original hypothesis and acceptance rule as a method comparison, not a campaign-wide stop gate."
+  },
+  "portfolio_eligibility": {
+    "minimum_net_new_independently_replayed_unsat_closures": 1,
+    "within_fixed_budget": true,
+    "acceptable_proof_size_required": true,
+    "semantic_or_audit_disagreement_allowed": false
+  },
+  "ranking": [
+    "net-new certified closures per CPU-hour",
+    "proof-storage cost",
+    "replay reliability",
+    "complementarity on nodes left open by other methods"
+  ],
+  "next_experiment_rule": "After each bounded tranche, choose the experiment maximizing expected certified coverage of the currently unclosed frontier, not average closure rate over already tested nodes.",
+  "allowed_method_families": [
+    "alternative cardinality encodings",
+    "alternative branching or cubing schemes",
+    "PB or CP-SAT formulations",
+    "ILP formulations",
+    "forced-matching exact-degree 40-block positive witness search"
+  ],
+  "admission_gate": "Every new formulation or search family must first pass a cheap semantic-equivalence check or direct-witness validation gate.",
+  "duplication_rule": "Do not scale a variant that only duplicates closures obtained by a better method, except for explicitly assigned independent validation.",
+  "certificate_rules": {
+    "solver_status": "provisional",
+    "unsat": [
+      "reconstructed CNF bound to an encoding revision and SHA-256",
+      "replayable proof bound by SHA-256",
+      "successful replay receipt",
+      "independent audit receipt with no semantic disagreement"
+    ],
+    "sat": [
+      "direct cover verification receipt",
+      "canonicalization receipt against the full catalog"
+    ]
+  },
+  "required_tranche_report": [
+    "newly_closed_nodes",
+    "cumulative_closed_out_of_47",
+    "remaining_node_classes",
+    "certificate_and_replay_status",
+    "cost_per_new_closure",
+    "next_method_by_hard_tail_class"
+  ]
+}

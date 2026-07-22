@@ -1,0 +1,697 @@
+{
+  "active_resolution_routes": {
+    "canonical_47_node_certified_exclusion": {
+      "kind": "negative",
+      "status": "active",
+      "success_certificate": "47/47 certified closures and independent global coverage validation",
+      "tranches": []
+    },
+    "forced_matching_exact_degree_40_block_witness": {
+      "kind": "constructive",
+      "status": "active",
+      "success_certificate": "directly and independently verified 40-block cover",
+      "tranches": []
+    }
+  },
+  "counts": {
+    "closed": 0,
+    "open": 47,
+    "total": 47
+  },
+  "first_measurement": {
+    "path": "artifacts/experiments/cardinality-encoding-20-leaf-20260722/manifest.json",
+    "sha256": "5d52e2f8f1831e918b23ea7752addf0e684ad267b6634ccd2a750f93bea11242"
+  },
+  "frontier_definition_sha256": "8ccf62d23382db6d79298f470b640c8b188c6e80a32e6b02b1d66b3663467e92",
+  "frontier_source": {
+    "path": "artifacts/pilot/link-campaign-summary.json",
+    "sha256": "1a9ff4abe35470308876496219ec6cf93d64e6b10ceafb942a3dd43b5dd3139f"
+  },
+  "global_uncertainty": "C(12,6,4) is 40 or 41",
+  "manifest_payload_sha256": "bb165b728ca619987250e211670f4ac52cffe94ddb4a32118802baa8004ef932",
+  "method_registry": {
+    "alternative_cardinality": {
+      "semantic_gate": "required",
+      "status": "candidate"
+    },
+    "alternative_cubing": {
+      "semantic_gate": "required",
+      "status": "candidate"
+    },
+    "forced_matching_exact_degree_40_block_witness": {
+      "semantic_gate": "direct witness validation required",
+      "status": "active"
+    },
+    "ilp": {
+      "semantic_gate": "required",
+      "status": "candidate"
+    },
+    "kmtotalizer": {
+      "semantic_gate": "passed by fixed benchmark preflight",
+      "status": "active_first_measurement"
+    },
+    "pb_cp_sat": {
+      "semantic_gate": "required",
+      "status": "candidate"
+    },
+    "sequential": {
+      "semantic_gate": "passed by fixed benchmark preflight",
+      "status": "active_first_measurement"
+    }
+  },
+  "nodes": [
+    {
+      "assigned_methods": [],
+      "final_coverage_status": "open",
+      "id": "s-r0-1",
+      "inherited_result_sha256": "0edfb0e3139d0e28a2ce9f9b831f8fff6aa59409ddb29c58fa61f00c7ac2251e",
+      "kind": "secondary",
+      "outcomes": [],
+      "root_index": 0,
+      "secondary_index": 1,
+      "source_path": "artifacts/pilot/link-orbit-root0-secondary-1-60s",
+      "tertiary_index": null
+    },
+    {
+      "assigned_methods": [],
+      "final_coverage_status": "open",
+      "id": "s-r0-2",
+      "inherited_result_sha256": "4d718f55e94c456fa55a1a4c9e5777e126c5e582e67097aca8fda8c9d59db4a9",
+      "kind": "secondary",
+      "outcomes": [],
+      "root_index": 0,
+      "secondary_index": 2,
+      "source_path": "artifacts/pilot/link-orbit-root0-secondary-2-60s",
+      "tertiary_index": null
+    },
+    {
+      "assigned_methods": [
+        "sequential",
+        "kmtotalizer"
+      ],
+      "final_coverage_status": "open",
+      "id": "s-r0-3",
+      "inherited_result_sha256": "fc920e0c25180f59f820514baa566c7371951b51361028bce936b3fda0de56e8",
+      "kind": "secondary",
+      "outcomes": [],
+      "root_index": 0,
+      "secondary_index": 3,
+      "source_path": "artifacts/pilot/link-orbit-root0-secondary-3-60s",
+      "tertiary_index": null
+    },
+    {
+      "assigned_methods": [
+        "sequential",
+        "kmtotalizer"
+      ],
+      "final_coverage_status": "open",
+      "id": "s-r0-4",
+      "inherited_result_sha256": "0d5433f5018804695d33acd2da291e36c9355824a618c1dd168bc5c4f909df0f",
+      "kind": "secondary",
+      "outcomes": [],
+      "root_index": 0,
+      "secondary_index": 4,
+      "source_path": "artifacts/pilot/link-orbit-root0-secondary-4-60s",
+      "tertiary_index": null
+    },
+    {
+      "assigned_methods": [],
+      "final_coverage_status": "open",
+      "id": "s-r0-5",
+      "inherited_result_sha256": "de6498fd228fe6a9b0b2518be013878d48659395aba113be52a36cbd4c910625",
+      "kind": "secondary",
+      "outcomes": [],
+      "root_index": 0,
+      "secondary_index": 5,
+      "source_path": "artifacts/pilot/link-orbit-root0-secondary-5-60s",
+      "tertiary_index": null
+    },
+    {
+      "assigned_methods": [
+        "sequential",
+        "kmtotalizer"
+      ],
+      "final_coverage_status": "open",
+      "id": "s-r0-6",
+      "inherited_result_sha256": "20d23e5e3e95367f24aa59b50aadf593f877a4f67377141065bd9005366009f4",
+      "kind": "secondary",
+      "outcomes": [],
+      "root_index": 0,
+      "secondary_index": 6,
+      "source_path": "artifacts/pilot/link-orbit-root0-secondary-6-60s",
+      "tertiary_index": null
+    },
+    {
+      "assigned_methods": [],
+      "final_coverage_status": "open",
+      "id": "s-r1-0",
+      "inherited_result_sha256": "5a89dbc9ca79c6af6b30169865fc18049eccba6c7f7dd9471d3a697469093a5d",
+      "kind": "secondary",
+      "outcomes": [],
+      "root_index": 1,
+      "secondary_index": 0,
+      "source_path": "artifacts/pilot/link-orbit-root1-secondary-0-60s",
+      "tertiary_index": null
+    },
+    {
+      "assigned_methods": [],
+      "final_coverage_status": "open",
+      "id": "s-r1-1",
+      "inherited_result_sha256": "5102c7021615d9dbc2a21465bba2da71142de52b020678e0af2a831a4426eeb4",
+      "kind": "secondary",
+      "outcomes": [],
+      "root_index": 1,
+      "secondary_index": 1,
+      "source_path": "artifacts/pilot/link-orbit-root1-secondary-1-60s",
+      "tertiary_index": null
+    },
+    {
+      "assigned_methods": [],
+      "final_coverage_status": "open",
+      "id": "s-r1-15",
+      "inherited_result_sha256": "7dc4b405ebd86cbb0440b18116e06f4fa5e5f1aad876a90692efc1e671559f44",
+      "kind": "secondary",
+      "outcomes": [],
+      "root_index": 1,
+      "secondary_index": 15,
+      "source_path": "artifacts/pilot/link-orbit-root1-secondary-15-60s",
+      "tertiary_index": null
+    },
+    {
+      "assigned_methods": [],
+      "final_coverage_status": "open",
+      "id": "s-r1-2",
+      "inherited_result_sha256": "a32080d2927b0a95a595f3c8ca082e0d3e8747ca6bb1e65d5c805e83e2a4b86a",
+      "kind": "secondary",
+      "outcomes": [],
+      "root_index": 1,
+      "secondary_index": 2,
+      "source_path": "artifacts/pilot/link-orbit-root1-secondary-2-60s",
+      "tertiary_index": null
+    },
+    {
+      "assigned_methods": [
+        "sequential",
+        "kmtotalizer"
+      ],
+      "final_coverage_status": "open",
+      "id": "s-r1-3",
+      "inherited_result_sha256": "373f2879beb9cf6fae6562bb4eb1b2ca8ec1d55dcb740f0261f4edd91751b4c0",
+      "kind": "secondary",
+      "outcomes": [],
+      "root_index": 1,
+      "secondary_index": 3,
+      "source_path": "artifacts/pilot/link-orbit-root1-secondary-3-60s",
+      "tertiary_index": null
+    },
+    {
+      "assigned_methods": [],
+      "final_coverage_status": "open",
+      "id": "s-r1-4",
+      "inherited_result_sha256": "7be9efd96519384ddd6e19a2e56dd4021a66cefa884cae40d959bda76d7c6471",
+      "kind": "secondary",
+      "outcomes": [],
+      "root_index": 1,
+      "secondary_index": 4,
+      "source_path": "artifacts/pilot/link-orbit-root1-secondary-4-catalog4-60s",
+      "tertiary_index": null
+    },
+    {
+      "assigned_methods": [
+        "sequential",
+        "kmtotalizer"
+      ],
+      "final_coverage_status": "open",
+      "id": "s-r1-5",
+      "inherited_result_sha256": "ed9969f866e730ecfa391622575dc4b27ecf81e7038f40ad9dce4905c29f0195",
+      "kind": "secondary",
+      "outcomes": [],
+      "root_index": 1,
+      "secondary_index": 5,
+      "source_path": "artifacts/pilot/link-orbit-root1-secondary-5-60s",
+      "tertiary_index": null
+    },
+    {
+      "assigned_methods": [
+        "sequential",
+        "kmtotalizer"
+      ],
+      "final_coverage_status": "open",
+      "id": "s-r1-8",
+      "inherited_result_sha256": "b60a5e27d4d8f778b907ccc2214bfc0b3e2ba69337e33e25dfe9a08f71ed2677",
+      "kind": "secondary",
+      "outcomes": [],
+      "root_index": 1,
+      "secondary_index": 8,
+      "source_path": "artifacts/pilot/link-orbit-root1-secondary-8-catalog4-60s",
+      "tertiary_index": null
+    },
+    {
+      "assigned_methods": [
+        "sequential",
+        "kmtotalizer"
+      ],
+      "final_coverage_status": "open",
+      "id": "t-0",
+      "inherited_result_sha256": "7394664f196d00b52215c79a957d1c6a10792bbe40f193c23d55fed067a84191",
+      "kind": "tertiary",
+      "outcomes": [],
+      "root_index": 0,
+      "secondary_index": 0,
+      "source_path": "artifacts/pilot/link-orbit-root0-secondary-0-tertiary-0-10s",
+      "tertiary_index": 0
+    },
+    {
+      "assigned_methods": [
+        "sequential",
+        "kmtotalizer"
+      ],
+      "final_coverage_status": "open",
+      "id": "t-1",
+      "inherited_result_sha256": "c648d99d255875732b49c33514b4cf312127e3cfcdf7508421ea3bcf784d4220",
+      "kind": "tertiary",
+      "outcomes": [],
+      "root_index": 0,
+      "secondary_index": 0,
+      "source_path": "artifacts/pilot/link-orbit-root0-secondary-0-tertiary-1-10s",
+      "tertiary_index": 1
+    },
+    {
+      "assigned_methods": [
+        "sequential",
+        "kmtotalizer"
+      ],
+      "final_coverage_status": "open",
+      "id": "t-10",
+      "inherited_result_sha256": "fd3ade9d5898c0f346252d1e6f6f67dcfaebbec4f1983885533ecbde91b08006",
+      "kind": "tertiary",
+      "outcomes": [],
+      "root_index": 0,
+      "secondary_index": 0,
+      "source_path": "artifacts/pilot/link-orbit-root0-secondary-0-tertiary-10-10s",
+      "tertiary_index": 10
+    },
+    {
+      "assigned_methods": [
+        "sequential",
+        "kmtotalizer"
+      ],
+      "final_coverage_status": "open",
+      "id": "t-11",
+      "inherited_result_sha256": "d790600c4d0c4ca11cedc46ea48536d7e8b7083ef033e13c8809139a2f332b7d",
+      "kind": "tertiary",
+      "outcomes": [],
+      "root_index": 0,
+      "secondary_index": 0,
+      "source_path": "artifacts/pilot/link-orbit-root0-secondary-0-tertiary-11-10s",
+      "tertiary_index": 11
+    },
+    {
+      "assigned_methods": [],
+      "final_coverage_status": "open",
+      "id": "t-12",
+      "inherited_result_sha256": "705f5eee214ce5d2805f7e1986d67c9912d9033412f364838a3e5fe5965c17e4",
+      "kind": "tertiary",
+      "outcomes": [],
+      "root_index": 0,
+      "secondary_index": 0,
+      "source_path": "artifacts/pilot/link-orbit-root0-secondary-0-tertiary-12-10s",
+      "tertiary_index": 12
+    },
+    {
+      "assigned_methods": [],
+      "final_coverage_status": "open",
+      "id": "t-13",
+      "inherited_result_sha256": "96d9d45248ef3f9ca96ab583ae93edb33ee4d65aaeee082447f29a3ce100ae36",
+      "kind": "tertiary",
+      "outcomes": [],
+      "root_index": 0,
+      "secondary_index": 0,
+      "source_path": "artifacts/pilot/link-orbit-root0-secondary-0-tertiary-13-10s",
+      "tertiary_index": 13
+    },
+    {
+      "assigned_methods": [],
+      "final_coverage_status": "open",
+      "id": "t-14",
+      "inherited_result_sha256": "4148bd4522f6642bb751d09b59aed0d7e21ae5976928dca6b38588461999e274",
+      "kind": "tertiary",
+      "outcomes": [],
+      "root_index": 0,
+      "secondary_index": 0,
+      "source_path": "artifacts/pilot/link-orbit-root0-secondary-0-tertiary-14-10s",
+      "tertiary_index": 14
+    },
+    {
+      "assigned_methods": [
+        "sequential",
+        "kmtotalizer"
+      ],
+      "final_coverage_status": "open",
+      "id": "t-15",
+      "inherited_result_sha256": "c7b1209fb9124d813277645948eed4a5f16f997e866d54106e829bd541cfa5be",
+      "kind": "tertiary",
+      "outcomes": [],
+      "root_index": 0,
+      "secondary_index": 0,
+      "source_path": "artifacts/pilot/link-orbit-root0-secondary-0-tertiary-15-10s",
+      "tertiary_index": 15
+    },
+    {
+      "assigned_methods": [],
+      "final_coverage_status": "open",
+      "id": "t-16",
+      "inherited_result_sha256": "2eccccad0f7ef41e5ccd88486c2f4f76fde373b62c811297ee314a640da0de66",
+      "kind": "tertiary",
+      "outcomes": [],
+      "root_index": 0,
+      "secondary_index": 0,
+      "source_path": "artifacts/pilot/link-orbit-root0-secondary-0-tertiary-16-10s",
+      "tertiary_index": 16
+    },
+    {
+      "assigned_methods": [],
+      "final_coverage_status": "open",
+      "id": "t-17",
+      "inherited_result_sha256": "07dd19e1b1ceb4cd4bd3fd8d6a0c3c7a9b4510628eeb27cb00ae9a712460b662",
+      "kind": "tertiary",
+      "outcomes": [],
+      "root_index": 0,
+      "secondary_index": 0,
+      "source_path": "artifacts/pilot/link-orbit-root0-secondary-0-tertiary-17-10s",
+      "tertiary_index": 17
+    },
+    {
+      "assigned_methods": [],
+      "final_coverage_status": "open",
+      "id": "t-18",
+      "inherited_result_sha256": "62347d53de2a8c0e166a4a0bad254422b7ff1f0d75836af76c2287a0c6dd4704",
+      "kind": "tertiary",
+      "outcomes": [],
+      "root_index": 0,
+      "secondary_index": 0,
+      "source_path": "artifacts/pilot/link-orbit-root0-secondary-0-tertiary-18-10s",
+      "tertiary_index": 18
+    },
+    {
+      "assigned_methods": [],
+      "final_coverage_status": "open",
+      "id": "t-19",
+      "inherited_result_sha256": "ee82129d9dc8bf75285f443d6d6fa8f01eb623eeff89c692ed2c8c356393c579",
+      "kind": "tertiary",
+      "outcomes": [],
+      "root_index": 0,
+      "secondary_index": 0,
+      "source_path": "artifacts/pilot/link-orbit-root0-secondary-0-tertiary-19-10s",
+      "tertiary_index": 19
+    },
+    {
+      "assigned_methods": [
+        "sequential",
+        "kmtotalizer"
+      ],
+      "final_coverage_status": "open",
+      "id": "t-2",
+      "inherited_result_sha256": "a8bcd9bc0b77ff4b345504041f47f0aa29da1d33e46b8fdf70727590ed09fdd4",
+      "kind": "tertiary",
+      "outcomes": [],
+      "root_index": 0,
+      "secondary_index": 0,
+      "source_path": "artifacts/pilot/link-orbit-root0-secondary-0-tertiary-2-10s",
+      "tertiary_index": 2
+    },
+    {
+      "assigned_methods": [],
+      "final_coverage_status": "open",
+      "id": "t-20",
+      "inherited_result_sha256": "0cfabdb6fa780a98da726f679ab6f97536569af40e36445e63ebbc0035e7e5f0",
+      "kind": "tertiary",
+      "outcomes": [],
+      "root_index": 0,
+      "secondary_index": 0,
+      "source_path": "artifacts/pilot/link-orbit-root0-secondary-0-tertiary-20-10s",
+      "tertiary_index": 20
+    },
+    {
+      "assigned_methods": [],
+      "final_coverage_status": "open",
+      "id": "t-21",
+      "inherited_result_sha256": "ddca90e6822a3db17e4dd7dd2c237dd5baaf75c0029993ecea7dc6b2e6e893f3",
+      "kind": "tertiary",
+      "outcomes": [],
+      "root_index": 0,
+      "secondary_index": 0,
+      "source_path": "artifacts/pilot/link-orbit-root0-secondary-0-tertiary-21-10s",
+      "tertiary_index": 21
+    },
+    {
+      "assigned_methods": [],
+      "final_coverage_status": "open",
+      "id": "t-22",
+      "inherited_result_sha256": "061f0fdda72dc942660a38f67dd43f381bfa889fd4a1312994b265d1b06f5782",
+      "kind": "tertiary",
+      "outcomes": [],
+      "root_index": 0,
+      "secondary_index": 0,
+      "source_path": "artifacts/pilot/link-orbit-root0-secondary-0-tertiary-22-10s",
+      "tertiary_index": 22
+    },
+    {
+      "assigned_methods": [],
+      "final_coverage_status": "open",
+      "id": "t-23",
+      "inherited_result_sha256": "7e6cbcf4b49998ca1533d4524c2060a10b07a874f27d1d475a835efcbe611846",
+      "kind": "tertiary",
+      "outcomes": [],
+      "root_index": 0,
+      "secondary_index": 0,
+      "source_path": "artifacts/pilot/link-orbit-root0-secondary-0-tertiary-23-10s",
+      "tertiary_index": 23
+    },
+    {
+      "assigned_methods": [
+        "sequential",
+        "kmtotalizer"
+      ],
+      "final_coverage_status": "open",
+      "id": "t-24",
+      "inherited_result_sha256": "115535b982efecce294056f90dfcbb9f96413d2e4e21878ae67359d8057294b5",
+      "kind": "tertiary",
+      "outcomes": [],
+      "root_index": 0,
+      "secondary_index": 0,
+      "source_path": "artifacts/pilot/link-orbit-root0-secondary-0-tertiary-24-10s",
+      "tertiary_index": 24
+    },
+    {
+      "assigned_methods": [],
+      "final_coverage_status": "open",
+      "id": "t-25",
+      "inherited_result_sha256": "87460e3e215493c5c0c3aa1288853a204c3a0cd034672e883f5db9abab8bc48d",
+      "kind": "tertiary",
+      "outcomes": [],
+      "root_index": 0,
+      "secondary_index": 0,
+      "source_path": "artifacts/pilot/link-orbit-root0-secondary-0-tertiary-25-10s",
+      "tertiary_index": 25
+    },
+    {
+      "assigned_methods": [
+        "sequential",
+        "kmtotalizer"
+      ],
+      "final_coverage_status": "open",
+      "id": "t-26",
+      "inherited_result_sha256": "a9723060afe8611ea5d743b6225b793fb095e1a1c2f3adb64f11a1fec079efcc",
+      "kind": "tertiary",
+      "outcomes": [],
+      "root_index": 0,
+      "secondary_index": 0,
+      "source_path": "artifacts/pilot/link-orbit-root0-secondary-0-tertiary-26-10s",
+      "tertiary_index": 26
+    },
+    {
+      "assigned_methods": [
+        "sequential",
+        "kmtotalizer"
+      ],
+      "final_coverage_status": "open",
+      "id": "t-27",
+      "inherited_result_sha256": "43340c20a011abfc2b96b03005861a90cca08e5f0e26d16ac6d9e43bf87868cf",
+      "kind": "tertiary",
+      "outcomes": [],
+      "root_index": 0,
+      "secondary_index": 0,
+      "source_path": "artifacts/pilot/link-orbit-root0-secondary-0-tertiary-27-10s",
+      "tertiary_index": 27
+    },
+    {
+      "assigned_methods": [],
+      "final_coverage_status": "open",
+      "id": "t-28",
+      "inherited_result_sha256": "4ad6e3924be845fef10a537af0c056715d5d852439b5a3378f55722305aee402",
+      "kind": "tertiary",
+      "outcomes": [],
+      "root_index": 0,
+      "secondary_index": 0,
+      "source_path": "artifacts/pilot/link-orbit-root0-secondary-0-tertiary-28-10s",
+      "tertiary_index": 28
+    },
+    {
+      "assigned_methods": [
+        "sequential",
+        "kmtotalizer"
+      ],
+      "final_coverage_status": "open",
+      "id": "t-29",
+      "inherited_result_sha256": "bac5988b02557aac3faa9ad264c0ba6e7e6daf398241a9574d1c12622e6d826b",
+      "kind": "tertiary",
+      "outcomes": [],
+      "root_index": 0,
+      "secondary_index": 0,
+      "source_path": "artifacts/pilot/link-orbit-root0-secondary-0-tertiary-29-10s",
+      "tertiary_index": 29
+    },
+    {
+      "assigned_methods": [],
+      "final_coverage_status": "open",
+      "id": "t-3",
+      "inherited_result_sha256": "6098ad35988fbadcd267e72d92fb793c21bcccafa26076eb846879ea99470f76",
+      "kind": "tertiary",
+      "outcomes": [],
+      "root_index": 0,
+      "secondary_index": 0,
+      "source_path": "artifacts/pilot/link-orbit-root0-secondary-0-tertiary-3-10s",
+      "tertiary_index": 3
+    },
+    {
+      "assigned_methods": [
+        "sequential",
+        "kmtotalizer"
+      ],
+      "final_coverage_status": "open",
+      "id": "t-30",
+      "inherited_result_sha256": "a37166a8614f8b254f2be0ef7c71f3e9ce96dfd78269a535daf334b0ccd3936a",
+      "kind": "tertiary",
+      "outcomes": [],
+      "root_index": 0,
+      "secondary_index": 0,
+      "source_path": "artifacts/pilot/link-orbit-root0-secondary-0-tertiary-30-10s",
+      "tertiary_index": 30
+    },
+    {
+      "assigned_methods": [],
+      "final_coverage_status": "open",
+      "id": "t-31",
+      "inherited_result_sha256": "931b397e4a3c500d0de193278ba9a9f372391863381aaed1a6625ac579caca81",
+      "kind": "tertiary",
+      "outcomes": [],
+      "root_index": 0,
+      "secondary_index": 0,
+      "source_path": "artifacts/pilot/link-orbit-root0-secondary-0-tertiary-31-10s",
+      "tertiary_index": 31
+    },
+    {
+      "assigned_methods": [
+        "sequential",
+        "kmtotalizer"
+      ],
+      "final_coverage_status": "open",
+      "id": "t-32",
+      "inherited_result_sha256": "36a52b2cef9bdf1ffdda3d9f46ced0c22c7fc5bbc0da992b116b31d262f7f266",
+      "kind": "tertiary",
+      "outcomes": [],
+      "root_index": 0,
+      "secondary_index": 0,
+      "source_path": "artifacts/pilot/link-orbit-root0-secondary-0-tertiary-32-10s",
+      "tertiary_index": 32
+    },
+    {
+      "assigned_methods": [],
+      "final_coverage_status": "open",
+      "id": "t-4",
+      "inherited_result_sha256": "045e10a68c0335fc1185ab59a2ea7566476c8e78d3ee0d6f10c9dd95e55e4e14",
+      "kind": "tertiary",
+      "outcomes": [],
+      "root_index": 0,
+      "secondary_index": 0,
+      "source_path": "artifacts/pilot/link-orbit-root0-secondary-0-tertiary-4-10s",
+      "tertiary_index": 4
+    },
+    {
+      "assigned_methods": [
+        "sequential",
+        "kmtotalizer"
+      ],
+      "final_coverage_status": "open",
+      "id": "t-5",
+      "inherited_result_sha256": "283d85e125e53a2254765e147fa57ca9a63d20493d411d05ac4cbcbf6c31746a",
+      "kind": "tertiary",
+      "outcomes": [],
+      "root_index": 0,
+      "secondary_index": 0,
+      "source_path": "artifacts/pilot/link-orbit-root0-secondary-0-tertiary-5-10s",
+      "tertiary_index": 5
+    },
+    {
+      "assigned_methods": [
+        "sequential",
+        "kmtotalizer"
+      ],
+      "final_coverage_status": "open",
+      "id": "t-6",
+      "inherited_result_sha256": "9305a18f7cc774936a24f5093b7de0ab919ef714ff4fdc30e10876b719e5a03b",
+      "kind": "tertiary",
+      "outcomes": [],
+      "root_index": 0,
+      "secondary_index": 0,
+      "source_path": "artifacts/pilot/link-orbit-root0-secondary-0-tertiary-6-10s",
+      "tertiary_index": 6
+    },
+    {
+      "assigned_methods": [],
+      "final_coverage_status": "open",
+      "id": "t-7",
+      "inherited_result_sha256": "c75b388e6faf671f888aa6d2a01c75e574e998e35f7ce4b117a362574f9ac6a4",
+      "kind": "tertiary",
+      "outcomes": [],
+      "root_index": 0,
+      "secondary_index": 0,
+      "source_path": "artifacts/pilot/link-orbit-root0-secondary-0-tertiary-7-10s",
+      "tertiary_index": 7
+    },
+    {
+      "assigned_methods": [],
+      "final_coverage_status": "open",
+      "id": "t-8",
+      "inherited_result_sha256": "59d30e0f1f2777dc80c4a4b354a99f2756a6fc55ed8b79e0fe5bde2c3a4a0d2b",
+      "kind": "tertiary",
+      "outcomes": [],
+      "root_index": 0,
+      "secondary_index": 0,
+      "source_path": "artifacts/pilot/link-orbit-root0-secondary-0-tertiary-8-10s",
+      "tertiary_index": 8
+    },
+    {
+      "assigned_methods": [],
+      "final_coverage_status": "open",
+      "id": "t-9",
+      "inherited_result_sha256": "bad5c05235ed5a828efb6c510e19891429b956adc0eac27ed7ea68dc631d4702",
+      "kind": "tertiary",
+      "outcomes": [],
+      "root_index": 0,
+      "secondary_index": 0,
+      "source_path": "artifacts/pilot/link-orbit-root0-secondary-0-tertiary-9-10s",
+      "tertiary_index": 9
+    }
+  ],
+  "policy": {
+    "path": "docs/CERTIFICATE-PORTFOLIO-POLICY.json",
+    "sha256": "8345e37ec4d053853ef69ccfbe9a5f8e17a3e2a3c06e47745118e5db13d23fad"
+  },
+  "problem_id": "covering-c1264",
+  "resolution_status": "open",
+  "schema_version": 1,
+  "success_criterion": "an independently validated 40-block cover, or 47/47 valid closures across the portfolio followed by independent global coverage validation",
+  "tranches": []
+}
