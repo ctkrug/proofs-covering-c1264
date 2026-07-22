@@ -1,0 +1,69 @@
+{
+  "id": "covering-c1264",
+  "title": "Exact covering number C(12,6,4)",
+  "lane": "hard",
+  "difficulty": 7,
+  "status": "active",
+  "problem_state": "open finite exact value",
+  "statement": "Determine the minimum number of 6-subsets of a 12-point set needed to cover every 4-subset. The maintained range is 40 <= C(12,6,4) <= 41; either a verified 40-block cover or a complete independently checked exclusion of 40 settles the exact value.",
+  "source_url": "https://ljcr.dmgordon.org/cover/show_cover.php?v=12&k=6&t=4",
+  "source_name": "La Jolla Covering Repository, cross-checked against the maintained Covering Repository",
+  "formalization_url": "",
+  "verifiability": "A positive result is a 40-block list checked directly against all 495 four-subsets. A negative result requires a deterministic symmetry-reduced encoding, an independently checked exhaustive cube/orbit cover, and replayable proof logs for every UNSAT leaf.",
+  "rationale": "This is a meaningful one-bit exact design problem with 924 candidate blocks, strong forced point and pair multiplicities, a sound 10,395-fold perfect-matching quotient, compact positive certificates, and standard proof-producing SAT routes. It is the preferred easier-hard successor to R(5,5).",
+  "techniques": [
+    "covering designs",
+    "SAT and pseudo-Boolean solving",
+    "perfect-matching symmetry quotient",
+    "canonical augmentation",
+    "cube-and-conquer",
+    "DRAT/LRAT verification"
+  ],
+  "contribution_type": "exact optimum",
+  "external_channel": "La Jolla Covering Repository / Covering Repository; combinatorial-design and proof-computation venues",
+  "external_url": "https://www.coveringrepository.com/",
+  "estimated_success_probability": 0.775,
+  "probability_basis": "Post-pilot judgment range 0.70-0.85 for a field-usable contribution; 0.775 is a planning midpoint, not a calibrated probability. Four exact link orbits have independently checked residual exclusions and the symmetry campaign has closed 189 proof-bearing frontier leaves. Two later hard-tail diagnostics produced no closure signal but added reusable audited partition and assumption infrastructure.",
+  "estimated_exact_resolution_probability": 0.5,
+  "exact_resolution_probability_basis": "Post-hard-tail judgment range 0.40-0.60. Forty-seven canonical frontier nodes remain; biased fourth-layer smoke cases and best-effort Glucose4 incremental reuse both produced 10 UNKNOWN results, and a second independent cardinality translation is still required for a publication-grade global exclusion.",
+  "verification_score": 5,
+  "contribution_score": 4,
+  "review_cost": 3,
+  "novelty_risk": 2,
+  "attempt_count": 1,
+  "research_attempt_count": 1,
+  "created_at": "2026-07-22T01:42:24Z",
+  "accepted_result": false,
+  "last_attempt_at": "2026-07-22T04:39:00Z",
+  "priority": 110,
+  "phase0_status": "link_route_promoted_checkpointed_campaign_active",
+  "phase0_evidence": "Published controls pass. Direct depth-7 cubing closed only 10/128 sampled leaves (7.8125%) and was stopped. The link-first campaign has four audited C(11,5,3) orbit classes, all four excluded by reconstructed residual CNFs and replayed external proofs; exact primary/secondary/tertiary partitions contain 189 validated proof receipts and 47 open canonical frontier nodes. A biased quaternary child-zero smoke test returned 10 UNKNOWN results; a schema-2, independently audited Glucose4 incremental diagnostic also closed 0/10 under explicitly best-effort caps. Neither is route-gate eligible and both policies are stopped unchanged.",
+  "campaign_summary_sha256": "1a9ff4abe35470308876496219ec6cf93d64e6b10ceafb942a3dd43b5dd3139f",
+  "campaign_repository_commit": "5aa660c48e79962a7e8a62ef2706289d39e71193",
+  "automation_eligible": true,
+  "manual_scope_approved_by": "Charlie Krug",
+  "manual_scope_approved_at": "2026-07-22T01:42:24Z",
+  "manual_scope": "Continuously operate the checkpointed C(12,6,4) campaign through bounded canonical-frontier and materially different propagation/cardinality discriminators. Preserve independent reconstruction and proof replay, serialize heavy work on the current host, pause at declared information-value gates, provision no paid burst capacity, and make no exact-value claim before complete coverage and a second cardinality validation route.",
+  "research_authorization": {
+    "approved": true,
+    "approved_by": "Charlie Krug",
+    "approved_at": "2026-07-22T12:45:18Z",
+    "scope": "Run the evidence-gated, checkpointed C(12,6,4) campaign continuously under existing CPU, memory, disk, correctness, and information-value limits. Completed artifacts remain durable until reviewed; no paid scaling or public mathematical claim is authorized.",
+    "prerequisites": [
+      {
+        "kind": "problem_field",
+        "problem_id": "ramsey-r55",
+        "field": "phase5_status",
+        "allowed_values": [
+          "validated",
+          "maintenance"
+        ]
+      },
+      {
+        "kind": "artifact_sha256",
+        "path": "research/ramsey-r55/workspace/artifacts/known-class-embedding-census-v3/validation-receipt.json",
+        "sha256": "4eb03f4a2cfac40bcd352101d36bcfa80125badce1ddaedcd424f5753449d04d"
+      }
+    ]
+  }
+}

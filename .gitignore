@@ -1,3 +1,8 @@
+# Regenerable solver instances and proof streams are represented by a hash manifest.
+artifacts/**/*.cnf
+artifacts/**/*.drat
+# Raw solver/checker streams are local evidence inputs; compact JSON receipts retain their hashes.
+artifacts/**/*.log
 # proof-factory:start
 # Reproducible research belongs in Git; local environments, caches, and in-flight queue names do not.
 .DS_Store
@@ -11,9 +16,3 @@ node_modules/
 *.tmp
 lab-queue/*.running.json
 # proof-factory:end
-
-# Regenerable solver instances and proof streams are represented by a hash manifest.
-artifacts/**/*.cnf
-artifacts/**/*.drat
-# Raw solver/checker streams are local evidence inputs; compact JSON receipts retain their hashes.
-artifacts/**/*.log
