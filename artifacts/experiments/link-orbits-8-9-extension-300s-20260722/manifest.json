@@ -1,0 +1,51 @@
+{
+  "candidate_audit": {
+    "path": "artifacts/classification/exhaustive-link-v1/three-case-review-new-orbits-independent-audit.json",
+    "sha256": "4df077a6af4dc920f710e27699d2ba802817923dbdce2b6672ded952f7d05d8f"
+  },
+  "catalog": {
+    "path": "artifacts/discoveries/link-orbit-catalog-9.json",
+    "sha256": "03af431918c7a7f7ede227ebf5b6732bde71c7386609ff84aaa29c93b7b531b9"
+  },
+  "catalog_audit": {
+    "path": "artifacts/discoveries/link-orbit-catalog-9-audit.json",
+    "sha256": "18369c1f85bc81dc918628e0d1191e475adb0f7b1cf2ed39783c820268bce1df"
+  },
+  "claim_limit": "Tests extension of exactly two validated point-link representatives; it does not exhaust all point links.",
+  "decision_rule": "SAT triggers immediate independent direct 40-cover verification. UNSAT remains provisional until fresh CNF reconstruction and external DRAT replay. UNKNOWN is inconclusive.",
+  "input_sha256": {
+    "artifacts/classification/exhaustive-link-v1/three-case-review-new-orbits-independent-audit.json": "4df077a6af4dc920f710e27699d2ba802817923dbdce2b6672ded952f7d05d8f",
+    "artifacts/discoveries/link-orbit-catalog-9-audit.json": "18369c1f85bc81dc918628e0d1191e475adb0f7b1cf2ed39783c820268bce1df",
+    "artifacts/discoveries/link-orbit-catalog-9.json": "03af431918c7a7f7ede227ebf5b6732bde71c7386609ff84aaa29c93b7b531b9",
+    "checkers/audit_link_residual_cnf.py": "dcf32abd534de634e40e5c8b3348d9f5343da1d71d688bfd549a5753e79b4ecc",
+    "scripts/run_link_residual_pilot.py": "fe6015fc705c6f4226e787cebcc992eff52346aa419003d207bd28d3ea7faad0",
+    "scripts/run_two_new_orbit_extension_tranche.py": "fcd74d9105b3d26046ce9cf5f290c3a769447a2a1947a01e96e4d8ac97209144"
+  },
+  "maximum_units": 2,
+  "method": "fixed-link residual sequential-counter CNF with CaDiCaL proof logging",
+  "ordered_units": [
+    {
+      "canonical_sha256": "7291235f9679362212e69d3e7eb50dbcfc445bb1da66a14bd0d01135a56a7894",
+      "id": "orbit-8-t-16",
+      "output": "artifacts/experiments/link-orbits-8-9-extension-300s-20260722/orbit-8-t-16",
+      "seconds_cap": 300,
+      "witness": {
+        "path": "artifacts/sequential-frontier-sweep/sequential-three-case-review-v7-20260722/t-16/sequential/witness.txt",
+        "sha256": "7dd3d5229bff88ccadf0e5168ca5a27194ecc26b582f60c61e6b39d94ada0fa7"
+      }
+    },
+    {
+      "canonical_sha256": "a2b4fb1c04cc3944b697840bb50d5cd55d89348f539bf48d6c8cb8a1a5e953d1",
+      "id": "orbit-9-t-17",
+      "output": "artifacts/experiments/link-orbits-8-9-extension-300s-20260722/orbit-9-t-17",
+      "seconds_cap": 300,
+      "witness": {
+        "path": "artifacts/sequential-frontier-sweep/sequential-three-case-review-v7-20260722/t-17/sequential/witness.txt",
+        "sha256": "e2f8ebbfb6535e1fb187d1f5bd4d4dbc5be48d583b56b8da0018b8dcae8c5b97"
+      }
+    }
+  ],
+  "run_id": "link-orbits-8-9-extension-300s-20260722",
+  "schema_version": 1,
+  "seconds_per_unit": 300
+}

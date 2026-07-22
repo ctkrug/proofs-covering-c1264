@@ -20,7 +20,8 @@ def sha(path: Path) -> str:
     return hashlib.sha256(path.read_bytes()).hexdigest()
 
 
-def validate(manifest: dict[str, object], portfolio: dict[str, object], index: dict[str, object]) -> None:
+def validate(manifest: dict[str, object], portfolio: dict[str, object], index: dict[str, object],
+             portfolio_path: Path = PORTFOLIO) -> None:
     if manifest.get("run_id") != "sequential-three-case-review-v7-20260722":
         raise ValueError("unexpected run ID")
     if manifest.get("method") != "sequential" or manifest.get("seconds_per_run") != 60:
@@ -28,7 +29,7 @@ def validate(manifest: dict[str, object], portfolio: dict[str, object], index: d
     leaf_ids = [row["id"] for row in manifest.get("leaves", [])]
     if leaf_ids != SELECTED or manifest.get("expected_leaf_count") != 3:
         raise ValueError("exact three-case order changed")
-    if index["status"] != "valid" or index["manifest"]["sha256"] != sha(ROOT / PORTFOLIO):
+    if index["status"] != "valid" or index["manifest"]["sha256"] != sha(ROOT / portfolio_path):
         raise ValueError("certificate index is stale")
     closed = set(index["closed_node_ids"])
     if closed != {row["id"] for row in portfolio["nodes"] if row["final_coverage_status"] != "open"}:
@@ -57,12 +58,13 @@ def validate(manifest: dict[str, object], portfolio: dict[str, object], index: d
         raise ValueError("certificate index hash mismatch")
 
 
-def build() -> dict[str, object]:
-    portfolio = json.loads((ROOT / PORTFOLIO).read_text())
+def build(portfolio_path: Path = PORTFOLIO, write_snapshot: bool = True) -> dict[str, object]:
+    portfolio = json.loads((ROOT / portfolio_path).read_text())
     index = json.loads((ROOT / INDEX).read_text())
     if portfolio["counts"] != {"total": 47, "closed": 32, "open": 15} or portfolio["frontier_revision"] != 3:
         raise ValueError("portfolio is not at the audited 32/47 seven-orbit checkpoint")
-    (ROOT / SNAPSHOT).write_text(json.dumps(portfolio, indent=2, sort_keys=True) + "\n")
+    if write_snapshot:
+        (ROOT / SNAPSHOT).write_text(json.dumps(portfolio, indent=2, sort_keys=True) + "\n")
     nodes = {row["id"]: row for row in portfolio["nodes"]}
     leaves = []
     for priority, node_id in enumerate(SELECTED, 1):
@@ -101,7 +103,7 @@ def build() -> dict[str, object]:
         "incident_policy": "The rejected original t-16 residual proof remains an incident only; valid structural evidence uses the external replacement receipt indexed in the certificate index.",
         "claim_limit": "This three-case frontier tranche cannot establish exhaustive link classification without 47/47 closure or another validated orbit and rebuilt audit chain.",
     }
-    validate(value, portfolio, index)
+    validate(value, portfolio, index, portfolio_path)
     return value
 
 

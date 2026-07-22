@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Classify every open seven-orbit frontier node after a frozen tranche."""
+"""Classify every open active-frontier node after a frozen tranche."""
 
 from __future__ import annotations
 
@@ -25,14 +25,13 @@ def main() -> None:
     output = args.output if args.output.is_absolute() else ROOT / args.output
     manifest = json.loads(manifest_path.read_text())
     classes = {"never_measured": [], "fixed_cap_timeout": [], "blocked_by_newly_discovered_orbit": []}
-    discoveries = {"t-16", "t-17"}
     for node in manifest["nodes"]:
         if node["final_coverage_status"] != "open":
             continue
         statuses = [row.get("status") for row in node["outcomes"]]
-        if node["id"] in discoveries and "provisional_sat" in statuses:
+        if "blocked_by_newly_discovered_orbit" in statuses or "provisional_sat" in statuses:
             category = "blocked_by_newly_discovered_orbit"
-            reason = "the measured SAT witness became a catalogued orbit; this leaf needs remeasurement under the seven-orbit blocker"
+            reason = "the measured SAT witness became a catalogued orbit; this leaf needs remeasurement under the active stronger blocker"
         elif "unknown" in statuses:
             category = "fixed_cap_timeout"
             reason = "at least one sound fixed-cap run returned UNKNOWN and no certified closure exists"
@@ -50,7 +49,7 @@ def main() -> None:
     payload = {
         "schema_version": 1,
         "status": "valid",
-        "claim_limit": "Operational classification of the open audited seven-orbit frontier; not an exhaustive-link theorem.",
+        "claim_limit": "Operational classification of the open audited active frontier; not an exhaustive-link theorem.",
         "manifest": {"path": str(manifest_path.relative_to(ROOT)), "sha256": sha(manifest_path)},
         "global_ledger": f"{manifest['counts']['closed']}/47",
         "open_total": manifest["counts"]["open"],

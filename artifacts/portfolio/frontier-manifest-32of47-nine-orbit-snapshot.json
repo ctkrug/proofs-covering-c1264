@@ -143,7 +143,7 @@
     "sha256": "1a9ff4abe35470308876496219ec6cf93d64e6b10ceafb942a3dd43b5dd3139f"
   },
   "global_uncertainty": "C(12,6,4) is 40 or 41",
-  "manifest_payload_sha256": "eab748b780e9e7ebc37c96ee1ee90641195ad73a95e4dc3c333dbd0a4bbc6914",
+  "manifest_payload_sha256": "e44c50841162c2a1b9d347c9975bccab67622c63b50715a0b5f883d35210a4da",
   "method_registry": {
     "alternative_cardinality": {
       "semantic_gate": "required",
@@ -186,31 +186,7 @@
       "id": "s-r0-1",
       "inherited_result_sha256": "0edfb0e3139d0e28a2ce9f9b831f8fff6aa59409ddb29c58fa61f00c7ac2251e",
       "kind": "secondary",
-      "outcomes": [
-        {
-          "blocker_sha256_at_execution": "d173df1b0b6cb781723d2a334fd756044ff6b3113a3f4cd3edec5eddb042e4fa",
-          "classification": "fixed_cap_timeout_under_predecessor_blocker",
-          "cnf_encoding_revision": "sequential-three-case-review-v7-20260722:sequential:schema-2:seven-orbit-blocker",
-          "cnf_sha256": "146310f81d7337fd194228e0d26a956e27ef620084ee5569a4be2d57657ef8f9",
-          "cpu_seconds": 60.06335262814537,
-          "independent_cnf_audit_receipt": {
-            "bytes": 749,
-            "path": "artifacts/sequential-frontier-sweep/sequential-three-case-review-v7-20260722/s-r0-1/sequential/cnf-audit.json",
-            "sha256": "c4a5ee475c71731621a84772d893796c0ab93d3f466a9c13199364ab3ac779e1"
-          },
-          "local_claim": "First measurement reached the unchanged 60-second cap; no mathematical conclusion.",
-          "method": "sequential",
-          "result_receipt": {
-            "bytes": 875,
-            "path": "artifacts/sequential-frontier-sweep/sequential-three-case-review-v7-20260722/s-r0-1/sequential/result.json",
-            "sha256": "e4860f812bba8f6ddaef802f24582eece27240205a792343d052556216b9f3d3"
-          },
-          "run_id": "sequential-three-case-review-v7-20260722",
-          "runtime_seconds": 60.06335262814537,
-          "seconds_cap": 60,
-          "status": "unknown"
-        }
-      ],
+      "outcomes": [],
       "root_index": 0,
       "secondary_index": 1,
       "source_path": "artifacts/pilot/link-orbit-root0-secondary-1-60s",
@@ -616,8 +592,6 @@
           "status": "unknown"
         },
         {
-          "canonical_link_sha256": "b470049c5444b5f9bdd253d6e096e42e52e42c3512e545b43a4ad8f9346bb49c",
-          "classification": "blocked_by_newly_discovered_orbit",
           "cnf_encoding_revision": "cardinality-encoding-20-leaf-20260722:sequential:schema-1",
           "cnf_sha256": "fd073005a1e0107b5f9fb214a23a5bd6c06da74bc6116219d135dbdfa9e2ad7b",
           "cpu_seconds": 17.744328930042684,
@@ -625,17 +599,6 @@
             "path": "artifacts/cardinality-encoding-benchmark/cardinality-encoding-20-leaf-20260722/s-r1-3/sequential/cnf-audit.json",
             "sha256": "529532def82b3f4ddeeb9d1213d7fbccad7e673a15feecf04c47bb3cb96b65c6"
           },
-          "link_validation_receipt": {
-            "bytes": 305,
-            "path": "artifacts/cardinality-encoding-benchmark/cardinality-encoding-20-leaf-20260722/s-r1-3/sequential/validation.json",
-            "sha256": "1eeca39d6fcc825cdc4df0a733d20ff7a0551c39b21bcee821b04e35bdd4ded9"
-          },
-          "link_witness_receipt": {
-            "bytes": 218,
-            "path": "artifacts/cardinality-encoding-benchmark/cardinality-encoding-20-leaf-20260722/s-r1-3/sequential/witness.txt",
-            "sha256": "efca42168a5be71be13bbe9b30f7767530eac29f9340dd1720316d1818aafe7d"
-          },
-          "local_claim": "Validated fifth point-link orbit now included in the active blocker; not a 40-cover or a closed frontier leaf.",
           "method": "sequential",
           "result_receipt": {
             "path": "artifacts/cardinality-encoding-benchmark/cardinality-encoding-20-leaf-20260722/s-r1-3/sequential/result.json",
@@ -643,7 +606,7 @@
           },
           "run_id": "cardinality-encoding-20-leaf-20260722",
           "runtime_seconds": 17.744328930042684,
-          "status": "provisional_sat"
+          "status": "unknown"
         }
       ],
       "root_index": 1,
@@ -1211,39 +1174,6 @@
       "kind": "tertiary",
       "outcomes": [
         {
-          "blocker_sha256_at_execution": "d173df1b0b6cb781723d2a334fd756044ff6b3113a3f4cd3edec5eddb042e4fa",
-          "canonical_link_sha256": "7291235f9679362212e69d3e7eb50dbcfc445bb1da66a14bd0d01135a56a7894",
-          "classification": "blocked_by_newly_discovered_orbit",
-          "cnf_encoding_revision": "sequential-three-case-review-v7-20260722:sequential:schema-2:seven-orbit-blocker",
-          "cnf_sha256": "327a6f4f97b81e45cd494d56a5fc7093e4299bd9e7de97cc9a4d4a499767cabf",
-          "cpu_seconds": 23.94384188600816,
-          "independent_cnf_audit_receipt": {
-            "bytes": 749,
-            "path": "artifacts/sequential-frontier-sweep/sequential-three-case-review-v7-20260722/t-16/sequential/cnf-audit.json",
-            "sha256": "dbd833a9bd108d5e49f76bd5de9fd911fe01cee7f66f3573c32a1ffebb9c65b7"
-          },
-          "independent_orbit_audit_receipt": {
-            "bytes": 1939,
-            "path": "artifacts/classification/exhaustive-link-v1/three-case-review-new-orbits-independent-audit.json",
-            "sha256": "4df077a6af4dc920f710e27699d2ba802817923dbdce2b6672ded952f7d05d8f"
-          },
-          "link_witness_receipt": {
-            "path": "artifacts/sequential-frontier-sweep/sequential-three-case-review-v7-20260722/t-16/sequential/witness.txt",
-            "sha256": "7dd3d5229bff88ccadf0e5168ca5a27194ecc26b582f60c61e6b39d94ada0fa7"
-          },
-          "local_claim": "Valid new point-link orbit under the seven-orbit blocker; now included in the nine-orbit blocker. It is not a 40-cover or a closed frontier leaf.",
-          "method": "sequential",
-          "result_receipt": {
-            "bytes": 1186,
-            "path": "artifacts/sequential-frontier-sweep/sequential-three-case-review-v7-20260722/t-16/sequential/result.json",
-            "sha256": "cf57c4231cbed107ec604a7cac5018fd5fba58b84ecacbb30116995896ca0cab"
-          },
-          "run_id": "sequential-three-case-review-v7-20260722",
-          "runtime_seconds": 23.94384188600816,
-          "seconds_cap": 60,
-          "status": "provisional_sat"
-        },
-        {
           "canonical_link_sha256": "31fb7b6b50ebbab8a549bad171c3e42c20448c88a1ec1c0f95a167188f974374",
           "cnf_encoding_revision": "sequential-unmeasured-frontier-24-v5-20260722:sequential:schema-2",
           "cnf_sha256": "5faf9e02c30fa60bf87f293c85b3a1883ede6d1ee0ea23eccdc9af70c08ad86f",
@@ -1288,39 +1218,6 @@
       "inherited_result_sha256": "07dd19e1b1ceb4cd4bd3fd8d6a0c3c7a9b4510628eeb27cb00ae9a712460b662",
       "kind": "tertiary",
       "outcomes": [
-        {
-          "blocker_sha256_at_execution": "d173df1b0b6cb781723d2a334fd756044ff6b3113a3f4cd3edec5eddb042e4fa",
-          "canonical_link_sha256": "a2b4fb1c04cc3944b697840bb50d5cd55d89348f539bf48d6c8cb8a1a5e953d1",
-          "classification": "blocked_by_newly_discovered_orbit",
-          "cnf_encoding_revision": "sequential-three-case-review-v7-20260722:sequential:schema-2:seven-orbit-blocker",
-          "cnf_sha256": "bb17d043ab15f77a428cdc62890aae0f8f76677d56bf9b8e1d3e462e9e4a6dbb",
-          "cpu_seconds": 40.33362593408674,
-          "independent_cnf_audit_receipt": {
-            "bytes": 749,
-            "path": "artifacts/sequential-frontier-sweep/sequential-three-case-review-v7-20260722/t-17/sequential/cnf-audit.json",
-            "sha256": "a2bf9f46a58a466caaa00c6300459175600a9a6d660d1ce58fdab8effcc5abdf"
-          },
-          "independent_orbit_audit_receipt": {
-            "bytes": 1939,
-            "path": "artifacts/classification/exhaustive-link-v1/three-case-review-new-orbits-independent-audit.json",
-            "sha256": "4df077a6af4dc920f710e27699d2ba802817923dbdce2b6672ded952f7d05d8f"
-          },
-          "link_witness_receipt": {
-            "path": "artifacts/sequential-frontier-sweep/sequential-three-case-review-v7-20260722/t-17/sequential/witness.txt",
-            "sha256": "e2f8ebbfb6535e1fb187d1f5bd4d4dbc5be48d583b56b8da0018b8dcae8c5b97"
-          },
-          "local_claim": "Valid new point-link orbit under the seven-orbit blocker; now included in the nine-orbit blocker. It is not a 40-cover or a closed frontier leaf.",
-          "method": "sequential",
-          "result_receipt": {
-            "bytes": 1186,
-            "path": "artifacts/sequential-frontier-sweep/sequential-three-case-review-v7-20260722/t-17/sequential/result.json",
-            "sha256": "d939ee103709ab260f9a505889000eda7cc5bbe3a2bc55cf0b8d4c5a237a3701"
-          },
-          "run_id": "sequential-three-case-review-v7-20260722",
-          "runtime_seconds": 40.33362593408674,
-          "seconds_cap": 60,
-          "status": "provisional_sat"
-        },
         {
           "canonical_link_sha256": "c01d7d4a45ca96b3a442a87d5df422c45f6d3ce5a83ca450c3ee7c4e647837ca",
           "cnf_encoding_revision": "sequential-unmeasured-frontier-24-v5-20260722:sequential:schema-2",
@@ -2969,64 +2866,6 @@
           "sha256": "4716b53a8972653439a628dec4b7ad669d9aefcffa5e2e8da1157669fb1d1fd0"
         }
       ]
-    },
-    {
-      "accepted_t16_external_replacement": {
-        "path": "artifacts/experiments/link-orbit-t-16-extension-300s-20260722/independent-validation.json",
-        "sha256": "3a5211c51318ee77a64137ade4d33e1269d53600fb19abab4b56b4723ded1a87"
-      },
-      "bookkeeping_correction": "s-r1-3 sequential immutable SAT_NEW_ORBIT receipt was normalized from an erroneous stored UNKNOWN label to provisional_sat; no closure count changed.",
-      "claim_limit": "Two point-link orbits were discovered and one case timed out. None is a global closure; the ledger remains 32/47.",
-      "completed_solver_runs": 3,
-      "cumulative_closed_out_of_47": "32/47",
-      "id": "sequential-three-case-review-v7-20260722-segment-01-route-switch",
-      "independent_orbit_audit": {
-        "bytes": 1939,
-        "path": "artifacts/classification/exhaustive-link-v1/three-case-review-new-orbits-independent-audit.json",
-        "sha256": "4df077a6af4dc920f710e27699d2ba802817923dbdce2b6672ded952f7d05d8f"
-      },
-      "newly_closed_nodes": [],
-      "nine_orbit_catalog": {
-        "bytes": 3905,
-        "path": "artifacts/discoveries/link-orbit-catalog-9.json",
-        "sha256": "03af431918c7a7f7ede227ebf5b6732bde71c7386609ff84aaa29c93b7b531b9"
-      },
-      "outcomes": {
-        "certified_unsat": 0,
-        "fixed_cap_timeouts": 1,
-        "new_link_orbits": 2
-      },
-      "preserved_t16_proof_incident": {
-        "path": "artifacts/experiments/link-orbit-t-16-extension-300s-20260722/PROOF-INCIDENT.json",
-        "sha256": "e3f59869a954f074b268c8981fff66916306fc93dab9c09a3db5f23a4f112a88"
-      },
-      "protocol": {
-        "method": "sequential",
-        "ordered_nodes": [
-          "t-16",
-          "t-17",
-          "s-r0-1"
-        ],
-        "seconds_per_run": 60
-      },
-      "source_results": [
-        {
-          "bytes": 1186,
-          "path": "artifacts/sequential-frontier-sweep/sequential-three-case-review-v7-20260722/t-16/sequential/result.json",
-          "sha256": "cf57c4231cbed107ec604a7cac5018fd5fba58b84ecacbb30116995896ca0cab"
-        },
-        {
-          "bytes": 1186,
-          "path": "artifacts/sequential-frontier-sweep/sequential-three-case-review-v7-20260722/t-17/sequential/result.json",
-          "sha256": "d939ee103709ab260f9a505889000eda7cc5bbe3a2bc55cf0b8d4c5a237a3701"
-        },
-        {
-          "bytes": 875,
-          "path": "artifacts/sequential-frontier-sweep/sequential-three-case-review-v7-20260722/s-r0-1/sequential/result.json",
-          "sha256": "e4860f812bba8f6ddaef802f24582eece27240205a792343d052556216b9f3d3"
-        }
-      ],
-      "status": "reviewed_route_switch_new_orbits"
     }
   ]
 }

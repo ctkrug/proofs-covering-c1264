@@ -1,0 +1,41 @@
+{
+  "candidate_count": 2,
+  "candidates": [
+    {
+      "canonical_sha256": "7291235f9679362212e69d3e7eb50dbcfc445bb1da66a14bd0d01135a56a7894",
+      "orbit_size": 240,
+      "result": {
+        "path": "artifacts/sequential-frontier-sweep/sequential-three-case-review-v7-20260722/t-16/sequential/result.json",
+        "sha256": "cf57c4231cbed107ec604a7cac5018fd5fba58b84ecacbb30116995896ca0cab"
+      },
+      "stabilizer_order": 16,
+      "status": "valid-new-link-orbit",
+      "witness": {
+        "path": "artifacts/sequential-frontier-sweep/sequential-three-case-review-v7-20260722/t-16/sequential/witness.txt",
+        "sha256": "7dd3d5229bff88ccadf0e5168ca5a27194ecc26b582f60c61e6b39d94ada0fa7"
+      }
+    },
+    {
+      "canonical_sha256": "a2b4fb1c04cc3944b697840bb50d5cd55d89348f539bf48d6c8cb8a1a5e953d1",
+      "orbit_size": 960,
+      "result": {
+        "path": "artifacts/sequential-frontier-sweep/sequential-three-case-review-v7-20260722/t-17/sequential/result.json",
+        "sha256": "d939ee103709ab260f9a505889000eda7cc5bbe3a2bc55cf0b8d4c5a237a3701"
+      },
+      "stabilizer_order": 4,
+      "status": "valid-new-link-orbit",
+      "witness": {
+        "path": "artifacts/sequential-frontier-sweep/sequential-three-case-review-v7-20260722/t-17/sequential/witness.txt",
+        "sha256": "e2f8ebbfb6535e1fb187d1f5bd4d4dbc5be48d583b56b8da0018b8dcae8c5b97"
+      }
+    }
+  ],
+  "claim_limit": "Validates and distinguishes the supplied link orbits; it does not show that any extends to a 40-block cover or exhaust all link orbits.",
+  "independence_basis": "Fresh direct link validation and full C2 wr S5 orbit enumeration, independent of the SAT encoding and runner validation.",
+  "prior_catalog": {
+    "path": "artifacts/discoveries/link-orbit-catalog-7.json",
+    "sha256": "66c76abae4675acb74f624fdff8ec64a416d59c0bc2ef15fbe83ab70376effc1"
+  },
+  "schema_version": 1,
+  "status": "valid-distinct-new-link-orbits"
+}
