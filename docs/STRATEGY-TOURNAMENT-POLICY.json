@@ -2,7 +2,7 @@
   "schema_version": 1,
   "problem_id": "covering-c1264",
   "effective_date": "2026-07-22",
-  "objective": "Accumulate a valid resolution with a staged tournament of materially distinct methods while spending screening compute only after semantic validation.",
+  "objective": "Accumulate a valid resolution with family-champion successive halving while spending screening compute only after semantic validation.",
   "candidate_count": 100,
   "stages": [
     {
@@ -11,11 +11,11 @@
     },
     {
       "id": "cheap_screen",
-      "rule": "Give each admitted candidate a fixed five-second search cap on each of eight frozen stratified leaves, or eight fixed seeds for a global constructive method. Proof replay and direct witness checking are separate validation work and do not weaken the search cap."
+      "rule": "Screen one representative champion from each materially distinct family before expanding variants within any family. Give each admitted champion a fixed five-second search cap on each of eight frozen stratified leaves, or eight fixed seeds for a global constructive method. Proof replay and direct witness checking are separate validation work and do not weaken the search cap."
     },
     {
       "id": "retain_net_new",
-      "rule": "Retain immediately when a method supplies at least one independently validated target not already covered by an earlier retained method. Stop after the screen when it supplies zero net-new coverage, except while completing an explicitly frozen pre-existing protocol or an assigned independent-validation control."
+      "rule": "Retain immediately when a method supplies at least one independently validated target not already covered by an earlier retained method. Zero coverage demotes a method for the tested structural class; it does not globally eliminate the family unless its validated representative test was sufficiently matched."
     },
     {
       "id": "leaf_assignment",
@@ -30,7 +30,9 @@
   "hardware_rule": {
     "maximum_parallel_searches": 1,
     "basis": "The live shared host has one useful SAT core allocation and 4 GB RAM; proof jobs remain serial so nominal parallelism cannot create contention or invalid matched budgets.",
-    "reassess_before_each_tranche": true
+    "reassess_before_each_tranche": true,
+    "separate_local_workstation_constructive_searches": 2,
+    "separation_rule": "Local constructive searches may run concurrently with the live-host benchmark because they use separate hardware and cannot change its fixed protocol or resource measurements."
   },
   "frozen_predecessor": {
     "run_id": "cardinality-encoding-20-leaf-20260722",

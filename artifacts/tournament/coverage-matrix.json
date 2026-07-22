@@ -1,5 +1,5 @@
 {
-  "candidate_registry_sha256": "0d08b859c728cef87acc1f5ee3c46d99951939f706a845f58bacec22f4959233",
+  "candidate_registry_sha256": "43725997a8abb093d9b5452f0e4c3600a36a6806d824b120ec86d83140a2077f",
   "cells": [
     {
       "cpu_seconds": 60.05935862008482,
@@ -82,6 +82,48 @@
       "target_id": "s-r1-8"
     }
   ],
+  "constructive_measurements": [
+    {
+      "method_id": "constructive_local_search-04",
+      "outcome": "no witness; best candidate has seven uncovered quadruples",
+      "result": {
+        "path": "artifacts/constructive/repair-seed126440-10s/result.json",
+        "sha256": "fd898f58855c68576e5274fb10ecfa29a091ddb304978b75726521d76e9d65f1"
+      }
+    },
+    {
+      "method_id": "sat_search-07",
+      "outcome": "no witness; cores 32, 28, and 24 were solver-reported UNSAT without replayed proofs; core 20 timed out; allocation signal only",
+      "result": {
+        "path": "artifacts/constructive/sat-repair-seed126441-4x10s/result.json",
+        "sha256": "46bf05e842f89ac8bd342444f8f19c45a4baad85cf2b8fcb792c4973a7b6ee04"
+      }
+    },
+    {
+      "method_id": "constructive_local_search-04",
+      "outcome": "no witness; improved to six uncovered quadruples with exact point degrees",
+      "result": {
+        "path": "artifacts/constructive/repair-seed126442-30s/result.json",
+        "sha256": "7d740def2bc9c5d1285b3de07247ef6402b27aec0e11bc7b43ecb9f0ea0cb104"
+      }
+    },
+    {
+      "method_id": "constructive_local_search-04",
+      "outcome": "no witness; best remained seven uncovered quadruples",
+      "result": {
+        "path": "artifacts/constructive/repair-seed126443-30s/result.json",
+        "sha256": "0ee8fbef9136702f4d0296279607ddd601f9df0e26e8502d0917bc11471253fa"
+      }
+    },
+    {
+      "method_id": "sat_search-07",
+      "outcome": "no witness; all four cores timed out; allocation signal only",
+      "result": {
+        "path": "artifacts/constructive/sat-repair-seed126444-4x15s/result.json",
+        "sha256": "6fcd91dea303055d2f8f86caf5b5c03b47f9f8fe83ec9d1202b63014cc3188d9"
+      }
+    }
+  ],
   "covered_frontier_targets": [
     "s-r0-6",
     "s-r1-5",
@@ -89,7 +131,7 @@
   ],
   "frontier_definition_sha256": "8ccf62d23382db6d79298f470b640c8b188c6e80a32e6b02b1d66b3663467e92",
   "global_witness_status": "open",
-  "matrix_payload_sha256": "81e640e2f51a2fe40b06b7e0f0f035df0a21509f67fe6d7c3492c7a8f4188d7f",
+  "matrix_payload_sha256": "d5e5e9df88b9878425683354b5051ffc630ec3d0b319e2a76429cc9e0df67079",
   "problem_id": "covering-c1264",
   "protected_incomplete_methods": [
     {

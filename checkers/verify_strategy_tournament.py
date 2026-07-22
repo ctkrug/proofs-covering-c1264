@@ -62,13 +62,22 @@ def verify() -> None:
     assert plan["screening_manifest_sha256"] == screen_hash
     assert plan["coverage_matrix_sha256"] == matrix_hash
     assert plan["maximum_parallel_searches"] == 1 and len(plan["active_searches"]) <= 1
-    assert plan["admitted_screen_methods"] == []
-    assert len(plan["next_semantic_validation_queue"]) == 98
+    assert plan["separate_local_workstation_constructive_searches"] == 2
+    assert len(plan["family_champions"]) == 10 and len(set(plan["family_champions"].values())) == 10
+    assert 1 <= len(plan["next_semantic_validation_queue"]) < 10
+    assert len(plan["next_semantic_validation_queue"]) + len(plan["parked_family_variant_expansion_queue"]) == sum(
+        row["validation_status"] != "passed" for row in methods
+    )
+    assert "constructive_local_search-04" in plan["admitted_screen_methods"]
     assert len(plan["open_leaf_assignments"]) == portfolio["counts"]["open"]
     assert all(1 <= len(row["shortlist"]) <= 3 for row in plan["open_leaf_assignments"])
     plan_payload = dict(plan); plan_hash = plan_payload.pop("plan_payload_sha256")
     assert canonical_hash(plan_payload) == plan_hash
-    print(f"PASS: 100 distinct candidates; {len(sample)}-leaf screen; {len(matrix['covered_frontier_targets'])}/47 inherited coverage; serial plan")
+    assert len(matrix["constructive_measurements"]) == 5
+    for measurement in matrix["constructive_measurements"]:
+        bound = ROOT / measurement["result"]["path"]
+        assert hashlib.sha256(bound.read_bytes()).hexdigest() == measurement["result"]["sha256"]
+    print(f"PASS: 100 distinct candidates; 10 family champions; {len(sample)}-leaf screen; {len(matrix['covered_frontier_targets'])}/47 certified coverage; split-host plan")
 
 
 if __name__ == "__main__":

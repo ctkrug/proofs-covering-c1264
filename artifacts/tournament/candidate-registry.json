@@ -76,7 +76,7 @@
     {
       "applicable_targets": "eight fixed seeds plus any returned global witness",
       "family": "constructive_local_search",
-      "implementation_status": "design_candidate",
+      "implementation_status": "available",
       "material_signature": {
         "family": "constructive_local_search",
         "route_kind": "constructive",
@@ -91,10 +91,10 @@
         "search_seconds_per_unit": 5,
         "units": 8
       },
-      "screen_status": "blocked_pending_semantic_gate",
+      "screen_status": "initial_constructive_discriminator_complete",
       "semantic_gate": "every candidate state has 40 distinct blocks, preserves declared forced constraints, and is checked directly for all 495 quadruples",
       "success_certificate": "independently validated 40-block cover",
-      "validation_status": "pending",
+      "validation_status": "passed",
       "variant": "uncovered-quadruple-repair"
     },
     {
@@ -1682,241 +1682,241 @@
       "variant": "tertiary-prefix"
     },
     {
-      "applicable_targets": "eight frozen leaves",
+      "applicable_targets": "bounded parent plus downstream leaves after coverage validation",
       "family": "sat_search",
-      "implementation_status": "design_candidate",
+      "implementation_status": "available",
       "material_signature": {
         "family": "sat_search",
-        "route_kind": "negative",
-        "semantic_gate": "same frozen CNF hash and proof-producing solver control on one known UNSAT leaf",
+        "route_kind": "negative_or_constructive",
+        "semantic_gate": "independent CNF reconstruction; direct validation of every witness; proof replay for any promoted UNSAT result",
         "variant": "cadical-default"
       },
-      "mechanism_fingerprint": "4fe56177cfbe3e1ffc356880b85cc45a66aede1782e8f5d453442b450e563b29",
+      "mechanism_fingerprint": "1fa9de675a516003ffb716de66a984d8dcbbc51dcddb99b64bdd82a0d103a700",
       "method_id": "sat_search-01",
-      "route_kind": "negative",
+      "route_kind": "negative_or_constructive",
       "screen_budget": {
         "maximum_search_cpu_seconds": 40,
         "search_seconds_per_unit": 5,
         "units": 8
       },
-      "screen_status": "blocked_pending_semantic_gate",
-      "semantic_gate": "same frozen CNF hash and proof-producing solver control on one known UNSAT leaf",
+      "screen_status": "prior_direct_pilot_unknown",
+      "semantic_gate": "independent CNF reconstruction; direct validation of every witness; proof replay for any promoted UNSAT result",
       "success_certificate": "net-new reconstructed and replayed UNSAT leaf, or directly validated 40-block cover",
-      "validation_status": "pending",
+      "validation_status": "passed",
       "variant": "cadical-default"
     },
     {
-      "applicable_targets": "eight frozen leaves",
+      "applicable_targets": "bounded parent plus downstream leaves after coverage validation",
       "family": "sat_search",
       "implementation_status": "design_candidate",
       "material_signature": {
         "family": "sat_search",
-        "route_kind": "negative",
-        "semantic_gate": "same frozen CNF hash and proof-producing solver control on one known UNSAT leaf",
+        "route_kind": "negative_or_constructive",
+        "semantic_gate": "independent CNF reconstruction; direct validation of every witness; proof replay for any promoted UNSAT result",
         "variant": "stable-only"
       },
-      "mechanism_fingerprint": "17a02a558083f199809c4af757719e8896feb6f481f9ad71c3b047e30aabccc4",
+      "mechanism_fingerprint": "f07a611605e5e2fce31260ebb5612d586008946fab5101f3fe4f752752d76c7d",
       "method_id": "sat_search-02",
-      "route_kind": "negative",
+      "route_kind": "negative_or_constructive",
       "screen_budget": {
         "maximum_search_cpu_seconds": 40,
         "search_seconds_per_unit": 5,
         "units": 8
       },
       "screen_status": "blocked_pending_semantic_gate",
-      "semantic_gate": "same frozen CNF hash and proof-producing solver control on one known UNSAT leaf",
+      "semantic_gate": "independent CNF reconstruction; direct validation of every witness; proof replay for any promoted UNSAT result",
       "success_certificate": "net-new reconstructed and replayed UNSAT leaf, or directly validated 40-block cover",
       "validation_status": "pending",
       "variant": "stable-only"
     },
     {
-      "applicable_targets": "eight frozen leaves",
+      "applicable_targets": "bounded parent plus downstream leaves after coverage validation",
       "family": "sat_search",
       "implementation_status": "design_candidate",
       "material_signature": {
         "family": "sat_search",
-        "route_kind": "negative",
-        "semantic_gate": "same frozen CNF hash and proof-producing solver control on one known UNSAT leaf",
+        "route_kind": "negative_or_constructive",
+        "semantic_gate": "independent CNF reconstruction; direct validation of every witness; proof replay for any promoted UNSAT result",
         "variant": "focused-only"
       },
-      "mechanism_fingerprint": "b2a9d58a47ffda675c08701dbe3a9d73f5ba040bb456b48f60ecdd357a6237e6",
+      "mechanism_fingerprint": "da120130817900c78ee0f2ae30a16180a5924db383d8d8566a9f9c5aeb12d5cf",
       "method_id": "sat_search-03",
-      "route_kind": "negative",
+      "route_kind": "negative_or_constructive",
       "screen_budget": {
         "maximum_search_cpu_seconds": 40,
         "search_seconds_per_unit": 5,
         "units": 8
       },
       "screen_status": "blocked_pending_semantic_gate",
-      "semantic_gate": "same frozen CNF hash and proof-producing solver control on one known UNSAT leaf",
+      "semantic_gate": "independent CNF reconstruction; direct validation of every witness; proof replay for any promoted UNSAT result",
       "success_certificate": "net-new reconstructed and replayed UNSAT leaf, or directly validated 40-block cover",
       "validation_status": "pending",
       "variant": "focused-only"
     },
     {
-      "applicable_targets": "eight frozen leaves",
+      "applicable_targets": "bounded parent plus downstream leaves after coverage validation",
       "family": "sat_search",
       "implementation_status": "design_candidate",
       "material_signature": {
         "family": "sat_search",
-        "route_kind": "negative",
-        "semantic_gate": "same frozen CNF hash and proof-producing solver control on one known UNSAT leaf",
+        "route_kind": "negative_or_constructive",
+        "semantic_gate": "independent CNF reconstruction; direct validation of every witness; proof replay for any promoted UNSAT result",
         "variant": "phase-false"
       },
-      "mechanism_fingerprint": "7dd3659ba7b2d1f219b919acc8b13ecebefc5d3d406e5576a2d44baf48cb2fda",
+      "mechanism_fingerprint": "72d39a4cd3ecf1e3214f78114cbac169922a7a9449d23523b107bca2524e659f",
       "method_id": "sat_search-04",
-      "route_kind": "negative",
+      "route_kind": "negative_or_constructive",
       "screen_budget": {
         "maximum_search_cpu_seconds": 40,
         "search_seconds_per_unit": 5,
         "units": 8
       },
       "screen_status": "blocked_pending_semantic_gate",
-      "semantic_gate": "same frozen CNF hash and proof-producing solver control on one known UNSAT leaf",
+      "semantic_gate": "independent CNF reconstruction; direct validation of every witness; proof replay for any promoted UNSAT result",
       "success_certificate": "net-new reconstructed and replayed UNSAT leaf, or directly validated 40-block cover",
       "validation_status": "pending",
       "variant": "phase-false"
     },
     {
-      "applicable_targets": "eight frozen leaves",
+      "applicable_targets": "bounded parent plus downstream leaves after coverage validation",
       "family": "sat_search",
       "implementation_status": "design_candidate",
       "material_signature": {
         "family": "sat_search",
-        "route_kind": "negative",
-        "semantic_gate": "same frozen CNF hash and proof-producing solver control on one known UNSAT leaf",
+        "route_kind": "negative_or_constructive",
+        "semantic_gate": "independent CNF reconstruction; direct validation of every witness; proof replay for any promoted UNSAT result",
         "variant": "phase-true"
       },
-      "mechanism_fingerprint": "ff5f3975ebe66513faf6b8fe81521f672f460caf5b06a0433db66425089a838d",
+      "mechanism_fingerprint": "fa1e3f347af75646e455233c38e185802fe611331297b71cdea06ea54c07fa7a",
       "method_id": "sat_search-05",
-      "route_kind": "negative",
+      "route_kind": "negative_or_constructive",
       "screen_budget": {
         "maximum_search_cpu_seconds": 40,
         "search_seconds_per_unit": 5,
         "units": 8
       },
       "screen_status": "blocked_pending_semantic_gate",
-      "semantic_gate": "same frozen CNF hash and proof-producing solver control on one known UNSAT leaf",
+      "semantic_gate": "independent CNF reconstruction; direct validation of every witness; proof replay for any promoted UNSAT result",
       "success_certificate": "net-new reconstructed and replayed UNSAT leaf, or directly validated 40-block cover",
       "validation_status": "pending",
       "variant": "phase-true"
     },
     {
-      "applicable_targets": "eight frozen leaves",
+      "applicable_targets": "bounded parent plus downstream leaves after coverage validation",
       "family": "sat_search",
       "implementation_status": "design_candidate",
       "material_signature": {
         "family": "sat_search",
-        "route_kind": "negative",
-        "semantic_gate": "same frozen CNF hash and proof-producing solver control on one known UNSAT leaf",
+        "route_kind": "negative_or_constructive",
+        "semantic_gate": "independent CNF reconstruction; direct validation of every witness; proof replay for any promoted UNSAT result",
         "variant": "random-phase"
       },
-      "mechanism_fingerprint": "855d99c8cb6f845a1c93b6faef27c5a9eed4ad06a19bb0aabde646d546ec01b1",
+      "mechanism_fingerprint": "de017e874c0e12cca8ecf1341800598c09eeb791e33e38bc8d3a6bee3c5a6242",
       "method_id": "sat_search-06",
-      "route_kind": "negative",
+      "route_kind": "negative_or_constructive",
       "screen_budget": {
         "maximum_search_cpu_seconds": 40,
         "search_seconds_per_unit": 5,
         "units": 8
       },
       "screen_status": "blocked_pending_semantic_gate",
-      "semantic_gate": "same frozen CNF hash and proof-producing solver control on one known UNSAT leaf",
+      "semantic_gate": "independent CNF reconstruction; direct validation of every witness; proof replay for any promoted UNSAT result",
       "success_certificate": "net-new reconstructed and replayed UNSAT leaf, or directly validated 40-block cover",
       "validation_status": "pending",
       "variant": "random-phase"
     },
     {
-      "applicable_targets": "eight frozen leaves",
+      "applicable_targets": "bounded parent plus downstream leaves after coverage validation",
       "family": "sat_search",
-      "implementation_status": "design_candidate",
+      "implementation_status": "available",
       "material_signature": {
         "family": "sat_search",
-        "route_kind": "negative",
-        "semantic_gate": "same frozen CNF hash and proof-producing solver control on one known UNSAT leaf",
-        "variant": "walk-initialized"
+        "route_kind": "negative_or_constructive",
+        "semantic_gate": "independent CNF reconstruction; direct validation of every witness; proof replay for any promoted UNSAT result",
+        "variant": "near-cover-core-repair"
       },
-      "mechanism_fingerprint": "a4efeca504e8f717aceb7cdd679f2d55767c8d15367c0fa46aba2a76765c5f34",
+      "mechanism_fingerprint": "097101a2df131bc2a52b19fb2c0641d5b6b55d7d0c3df8ebf6ec8f45f6b5d199",
       "method_id": "sat_search-07",
-      "route_kind": "negative",
+      "route_kind": "negative_or_constructive",
       "screen_budget": {
         "maximum_search_cpu_seconds": 40,
         "search_seconds_per_unit": 5,
         "units": 8
       },
-      "screen_status": "blocked_pending_semantic_gate",
-      "semantic_gate": "same frozen CNF hash and proof-producing solver control on one known UNSAT leaf",
+      "screen_status": "initial_constructive_discriminator_complete",
+      "semantic_gate": "independent CNF reconstruction; direct validation of every witness; proof replay for any promoted UNSAT result",
       "success_certificate": "net-new reconstructed and replayed UNSAT leaf, or directly validated 40-block cover",
-      "validation_status": "pending",
-      "variant": "walk-initialized"
+      "validation_status": "passed",
+      "variant": "near-cover-core-repair"
     },
     {
-      "applicable_targets": "eight frozen leaves",
+      "applicable_targets": "bounded parent plus downstream leaves after coverage validation",
       "family": "sat_search",
       "implementation_status": "design_candidate",
       "material_signature": {
         "family": "sat_search",
-        "route_kind": "negative",
-        "semantic_gate": "same frozen CNF hash and proof-producing solver control on one known UNSAT leaf",
+        "route_kind": "negative_or_constructive",
+        "semantic_gate": "independent CNF reconstruction; direct validation of every witness; proof replay for any promoted UNSAT result",
         "variant": "restart-aggressive"
       },
-      "mechanism_fingerprint": "d404d359f8367e1e95d03b9565fce0188aa4c1ff1a73a59d2e5d2288a8ffb92e",
+      "mechanism_fingerprint": "c3faa987b4e9ab016c3ae1a27bc6bb6ec6643ee0cee6bc291c20940500719bbf",
       "method_id": "sat_search-08",
-      "route_kind": "negative",
+      "route_kind": "negative_or_constructive",
       "screen_budget": {
         "maximum_search_cpu_seconds": 40,
         "search_seconds_per_unit": 5,
         "units": 8
       },
       "screen_status": "blocked_pending_semantic_gate",
-      "semantic_gate": "same frozen CNF hash and proof-producing solver control on one known UNSAT leaf",
+      "semantic_gate": "independent CNF reconstruction; direct validation of every witness; proof replay for any promoted UNSAT result",
       "success_certificate": "net-new reconstructed and replayed UNSAT leaf, or directly validated 40-block cover",
       "validation_status": "pending",
       "variant": "restart-aggressive"
     },
     {
-      "applicable_targets": "eight frozen leaves",
+      "applicable_targets": "bounded parent plus downstream leaves after coverage validation",
       "family": "sat_search",
       "implementation_status": "design_candidate",
       "material_signature": {
         "family": "sat_search",
-        "route_kind": "negative",
-        "semantic_gate": "same frozen CNF hash and proof-producing solver control on one known UNSAT leaf",
+        "route_kind": "negative_or_constructive",
+        "semantic_gate": "independent CNF reconstruction; direct validation of every witness; proof replay for any promoted UNSAT result",
         "variant": "restart-conservative"
       },
-      "mechanism_fingerprint": "53259282fe17eecfd28f615d28b5f7a2d86da5c262ad4d26ffa27b8a3b37b209",
+      "mechanism_fingerprint": "9de0459300f277adbe2bb2e7bcf69c6d5072448c4291ab43030ec42cae01de89",
       "method_id": "sat_search-09",
-      "route_kind": "negative",
+      "route_kind": "negative_or_constructive",
       "screen_budget": {
         "maximum_search_cpu_seconds": 40,
         "search_seconds_per_unit": 5,
         "units": 8
       },
       "screen_status": "blocked_pending_semantic_gate",
-      "semantic_gate": "same frozen CNF hash and proof-producing solver control on one known UNSAT leaf",
+      "semantic_gate": "independent CNF reconstruction; direct validation of every witness; proof replay for any promoted UNSAT result",
       "success_certificate": "net-new reconstructed and replayed UNSAT leaf, or directly validated 40-block cover",
       "validation_status": "pending",
       "variant": "restart-conservative"
     },
     {
-      "applicable_targets": "eight frozen leaves",
+      "applicable_targets": "bounded parent plus downstream leaves after coverage validation",
       "family": "sat_search",
       "implementation_status": "design_candidate",
       "material_signature": {
         "family": "sat_search",
-        "route_kind": "negative",
-        "semantic_gate": "same frozen CNF hash and proof-producing solver control on one known UNSAT leaf",
+        "route_kind": "negative_or_constructive",
+        "semantic_gate": "independent CNF reconstruction; direct validation of every witness; proof replay for any promoted UNSAT result",
         "variant": "proof-core-variable-order"
       },
-      "mechanism_fingerprint": "cefdd709ae87c44c9860cd89f3c56c395fb8dfb38e3f7db6003343c66a8515bb",
+      "mechanism_fingerprint": "6a1a1c047a9931e9c1da4d4b2ee9df2ddaa01264d208d65de5619c535a268abd",
       "method_id": "sat_search-10",
-      "route_kind": "negative",
+      "route_kind": "negative_or_constructive",
       "screen_budget": {
         "maximum_search_cpu_seconds": 40,
         "search_seconds_per_unit": 5,
         "units": 8
       },
       "screen_status": "blocked_pending_semantic_gate",
-      "semantic_gate": "same frozen CNF hash and proof-producing solver control on one known UNSAT leaf",
+      "semantic_gate": "independent CNF reconstruction; direct validation of every witness; proof replay for any promoted UNSAT result",
       "success_certificate": "net-new reconstructed and replayed UNSAT leaf, or directly validated 40-block cover",
       "validation_status": "pending",
       "variant": "proof-core-variable-order"
@@ -1924,7 +1924,7 @@
     {
       "applicable_targets": "bounded parent plus downstream leaves after coverage validation",
       "family": "structural_reduction",
-      "implementation_status": "design_candidate",
+      "implementation_status": "available",
       "material_signature": {
         "family": "structural_reduction",
         "route_kind": "reduction",
@@ -1939,16 +1939,16 @@
         "search_seconds_per_unit": 5,
         "units": 8
       },
-      "screen_status": "blocked_pending_semantic_gate",
+      "screen_status": "validated_reduction_available",
       "semantic_gate": "independent derivation or exhaustive bounded counterexample search for the proposed reduction",
       "success_certificate": "net-new reconstructed and replayed UNSAT leaf, or directly validated 40-block cover",
-      "validation_status": "pending",
+      "validation_status": "passed",
       "variant": "point-degree-profile"
     },
     {
       "applicable_targets": "bounded parent plus downstream leaves after coverage validation",
       "family": "structural_reduction",
-      "implementation_status": "design_candidate",
+      "implementation_status": "available",
       "material_signature": {
         "family": "structural_reduction",
         "route_kind": "reduction",
@@ -1963,10 +1963,10 @@
         "search_seconds_per_unit": 5,
         "units": 8
       },
-      "screen_status": "blocked_pending_semantic_gate",
+      "screen_status": "validated_reduction_available",
       "semantic_gate": "independent derivation or exhaustive bounded counterexample search for the proposed reduction",
       "success_certificate": "net-new reconstructed and replayed UNSAT leaf, or directly validated 40-block cover",
-      "validation_status": "pending",
+      "validation_status": "passed",
       "variant": "pair-frequency-profile"
     },
     {
@@ -2164,7 +2164,7 @@
     {
       "applicable_targets": "bounded parent plus downstream leaves after coverage validation",
       "family": "symmetry_representation",
-      "implementation_status": "design_candidate",
+      "implementation_status": "available",
       "material_signature": {
         "family": "symmetry_representation",
         "route_kind": "reduction",
@@ -2179,10 +2179,10 @@
         "search_seconds_per_unit": 5,
         "units": 8
       },
-      "screen_status": "blocked_pending_semantic_gate",
+      "screen_status": "validated_reduction_available",
       "semantic_gate": "independent orbit/canonicalization implementation and exhaustive coverage check on a bounded parent",
       "success_certificate": "net-new reconstructed and replayed UNSAT leaf, or directly validated 40-block cover",
-      "validation_status": "pending",
+      "validation_status": "passed",
       "variant": "fixed-perfect-matching"
     },
     {
@@ -2405,13 +2405,13 @@
   "family_count": 10,
   "policy": {
     "path": "docs/STRATEGY-TOURNAMENT-POLICY.json",
-    "sha256": "d64c05bbae7567da7b0ef3d75e9e8a64394b0f4e7f6b8a223379a6b841216943"
+    "sha256": "3780803f89306592451d4c5a7a90dcaf830f55a4fb9e5dec3918c2a491b36800"
   },
   "portfolio_manifest": {
     "path": "artifacts/portfolio/frontier-manifest-v1.json",
     "sha256": "2badf458f03e9a400b034352a0ec9060cc962f6dec97b94b873995f26a0236a8"
   },
   "problem_id": "covering-c1264",
-  "registry_payload_sha256": "0d08b859c728cef87acc1f5ee3c46d99951939f706a845f58bacec22f4959233",
+  "registry_payload_sha256": "43725997a8abb093d9b5452f0e4c3600a36a6806d824b120ec86d83140a2077f",
   "schema_version": 1
 }

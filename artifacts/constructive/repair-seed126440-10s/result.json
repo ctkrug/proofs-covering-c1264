@@ -1,0 +1,28 @@
+{
+  "accepted_moves": 1458,
+  "best_metrics": {
+    "pair_deficit_below_9": 9,
+    "pair_excess_above_10": 0,
+    "point_degree_deviation": 4,
+    "uncovered_quadruples": 7
+  },
+  "candidate": {
+    "blocks": 40,
+    "path": "artifacts/constructive/repair-seed126440-10s/best-candidate.txt",
+    "sha256": "bd523f1511550ce53882438b6f9bb4b6505f99ee045cbdc2491af127baa657e3"
+  },
+  "claim_limit": "Only WITNESS_CANDIDATE followed by the independent direct checker can change the upper bound; NO_WITNESS is non-exhaustive.",
+  "elapsed_seconds": 10.036121791985352,
+  "iterations": 46554,
+  "method": "published-41-cover deletion warm starts plus annealed one-block repair",
+  "restarts": 2,
+  "schema_version": 1,
+  "scope": "unrestricted 40 distinct six-subsets; heuristic and non-exhaustive",
+  "seconds_cap": 10.0,
+  "seed": 126440,
+  "source": {
+    "path": "sources/ljcr-c1264-41.txt",
+    "sha256": "395bc870e7eb9e84a472873db97de553afc34afdb666545824944e89047913e5"
+  },
+  "status": "NO_WITNESS"
+}

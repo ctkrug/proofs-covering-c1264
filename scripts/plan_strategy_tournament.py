@@ -12,6 +12,18 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 TOURNAMENT = ROOT / "artifacts/tournament"
 PORTFOLIO = ROOT / "artifacts/portfolio/frontier-manifest-v1.json"
+FAMILY_CHAMPIONS = {
+    "sat_cardinality": "sat_cardinality-02",
+    "sat_cubing": "sat_cubing-02",
+    "sat_search": "sat_search-07",
+    "pseudo_boolean": "pseudo_boolean-01",
+    "cp_sat": "cp_sat-10",
+    "integer_programming": "integer_programming-02",
+    "constructive_local_search": "constructive_local_search-04",
+    "constructive_metaheuristic": "constructive_metaheuristic-09",
+    "symmetry_representation": "symmetry_representation-01",
+    "structural_reduction": "structural_reduction-02",
+}
 
 
 def canonical_hash(value: object) -> str:
@@ -46,16 +58,17 @@ def build_plan() -> dict:
                 "semantic_gate" if method["validation_status"] != "passed" else "screen"
         })
 
-    # Round-robin families prevents one easy-to-implement family from monopolizing validation.
-    pending_by_family = defaultdict(list)
-    for row in registry["candidates"]:
-        if row["validation_status"] != "passed":
-            pending_by_family[row["family"]].append(row["method_id"])
-    validation_queue = []
-    for index in range(max(map(len, pending_by_family.values()), default=0)):
-        for family in sorted(pending_by_family):
-            if index < len(pending_by_family[family]):
-                validation_queue.append(pending_by_family[family][index])
+    # Successive halving: validate one champion per family first. Variants in a
+    # family remain parked until its champion earns a reason to expand.
+    validation_queue = [
+        method_id for family, method_id in sorted(FAMILY_CHAMPIONS.items())
+        if methods[method_id]["validation_status"] != "passed"
+    ]
+    champion_ids = set(FAMILY_CHAMPIONS.values())
+    expansion_queue = [
+        row["method_id"] for row in registry["candidates"]
+        if row["validation_status"] != "passed" and row["method_id"] not in champion_ids
+    ]
 
     open_nodes = [row for row in portfolio["nodes"] if row["final_coverage_status"] == "open"]
     retained_ids = [row["method_id"] for row in matrix["retained_methods"]]
@@ -71,22 +84,28 @@ def build_plan() -> dict:
         })
     plan = {
         "schema_version": 1,
-        "stage": "finish_frozen_predecessor",
+        "stage": "parallel_constructive_sprint_and_finish_frozen_predecessor",
         "candidate_registry_sha256": registry["registry_payload_sha256"],
         "screening_manifest_sha256": screening["screening_payload_sha256"],
         "coverage_matrix_sha256": matrix["matrix_payload_sha256"],
         "maximum_parallel_searches": screening["maximum_parallel_searches"],
+        "separate_local_workstation_constructive_searches": 2,
         "active_searches": [{
             "run_id": "cardinality-encoding-20-leaf-20260722",
-            "instruction": "continue unchanged from checkpoint; do not launch tournament screens concurrently"
+            "instruction": "continue unchanged on the live host; do not launch other live-host tournament screens concurrently"
         }],
         "next_semantic_validation_queue": validation_queue,
-        "admitted_screen_methods": [],
+        "parked_family_variant_expansion_queue": expansion_queue,
+        "family_champions": FAMILY_CHAMPIONS,
+        "admitted_screen_methods": sorted(
+            method_id for method_id in champion_ids if methods[method_id]["validation_status"] == "passed"
+        ),
         "method_scores": scores,
         "open_leaf_assignments": assignments,
         "global_constructive_assignment": {
-            "status": "active_design_route",
-            "next_gate": "validate the first forced-matching exact-degree constructive implementation before its eight fixed-seed screen"
+            "status": "active_measured_route",
+            "initial_signal": "one of two additional unrestricted repair seeds improved to six uncovered quadruples with exact point degrees; exact-repair follow-up produced only UNKNOWN results, while earlier local CORE_UNSAT statuses remain unreplayed allocation signals",
+            "next_gate": "the improvement gate passed for local search but the hybrid did not: validate and test a materially different two-block or large-neighborhood champion before spending a longer tranche"
         },
         "recompute_when": "frozen predecessor completes, a semantic gate changes, or a new independently validated matrix cell is recorded"
     }

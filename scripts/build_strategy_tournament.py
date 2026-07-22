@@ -32,12 +32,12 @@ FAMILIES = {
         "gate": "independent proof that generated cubes are disjoint and exhaust the parent leaf"
     },
     "sat_search": {
-        "route_kind": "negative",
+        "route_kind": "negative_or_constructive",
         "variants": [
             "cadical-default", "stable-only", "focused-only", "phase-false", "phase-true",
-            "random-phase", "walk-initialized", "restart-aggressive", "restart-conservative", "proof-core-variable-order"
+            "random-phase", "near-cover-core-repair", "restart-aggressive", "restart-conservative", "proof-core-variable-order"
         ],
-        "gate": "same frozen CNF hash and proof-producing solver control on one known UNSAT leaf"
+        "gate": "independent CNF reconstruction; direct validation of every witness; proof replay for any promoted UNSAT result"
     },
     "pseudo_boolean": {
         "route_kind": "negative",
@@ -97,6 +97,17 @@ FAMILIES = {
     }
 }
 
+IMPLEMENTED = {
+    ("sat_cardinality", "sequential-counter"): "frozen_predecessor_in_progress",
+    ("sat_cardinality", "kmtotalizer"): "frozen_predecessor_in_progress",
+    ("sat_search", "cadical-default"): "prior_direct_pilot_unknown",
+    ("sat_search", "near-cover-core-repair"): "initial_constructive_discriminator_complete",
+    ("constructive_local_search", "uncovered-quadruple-repair"): "initial_constructive_discriminator_complete",
+    ("symmetry_representation", "fixed-perfect-matching"): "validated_reduction_available",
+    ("structural_reduction", "point-degree-profile"): "validated_reduction_available",
+    ("structural_reduction", "pair-frequency-profile"): "validated_reduction_available",
+}
+
 
 def canonical_hash(value: object) -> str:
     raw = json.dumps(value, sort_keys=True, separators=(",", ":"), ensure_ascii=False).encode()
@@ -118,7 +129,7 @@ def candidates() -> list[dict]:
                 "semantic_gate": definition["gate"]
             }
             method_id = f"{family}-{index:02d}"
-            inherited = family == "sat_cardinality" and variant in {"sequential-counter", "kmtotalizer"}
+            implemented = (family, variant) in IMPLEMENTED
             rows.append({
                 "method_id": method_id,
                 "family": family,
@@ -131,9 +142,9 @@ def candidates() -> list[dict]:
                     else "net-new reconstructed and replayed UNSAT leaf, or directly validated 40-block cover"
                 ),
                 "semantic_gate": definition["gate"],
-                "implementation_status": "available" if inherited else "design_candidate",
-                "validation_status": "passed" if inherited else "pending",
-                "screen_status": "frozen_predecessor_in_progress" if inherited else "blocked_pending_semantic_gate",
+                "implementation_status": "available" if implemented else "design_candidate",
+                "validation_status": "passed" if implemented else "pending",
+                "screen_status": IMPLEMENTED[(family, variant)] if implemented else "blocked_pending_semantic_gate",
                 "screen_budget": {"units": 8, "search_seconds_per_unit": 5, "maximum_search_cpu_seconds": 40},
                 "applicable_targets": "eight frozen leaves" if definition["route_kind"] == "negative" else
                     "eight fixed seeds plus any returned global witness" if definition["route_kind"] == "constructive" else
@@ -186,7 +197,8 @@ def build() -> tuple[dict, dict, dict]:
         "maximum_search_cpu_seconds_per_candidate": 40,
         "maximum_parallel_searches": 1,
         "admission_rule": "validation_status must be passed before any screen unit runs",
-        "retention_rule": "retain one or more net-new independently validated targets; otherwise stop after the fixed screen",
+        "retention_rule": "retain unique validated coverage; zero coverage demotes only for the matched tested class unless the family-level gate supports broader elimination",
+        "selection_rule": "successive halving: validate and screen one champion per family before expanding variants in a winning family",
         "frozen_predecessor_exception": "sequential-counter and kmtotalizer finish cardinality-encoding-20-leaf-20260722 unchanged"
     }
     screening["screening_payload_sha256"] = canonical_hash(screening)
@@ -219,7 +231,34 @@ def build() -> tuple[dict, dict, dict]:
         "protected_incomplete_methods": [{
             "method_id": method_by_variant[("sat_cardinality", "kmtotalizer")],
             "basis": "must finish frozen predecessor protocol before stop/retain decision"
-        }]
+        }],
+        "constructive_measurements": [
+            {
+                "method_id": method_by_variant[("constructive_local_search", "uncovered-quadruple-repair")],
+                "result": file_binding(Path("artifacts/constructive/repair-seed126440-10s/result.json")),
+                "outcome": "no witness; best candidate has seven uncovered quadruples"
+            },
+            {
+                "method_id": method_by_variant[("sat_search", "near-cover-core-repair")],
+                "result": file_binding(Path("artifacts/constructive/sat-repair-seed126441-4x10s/result.json")),
+                "outcome": "no witness; cores 32, 28, and 24 were solver-reported UNSAT without replayed proofs; core 20 timed out; allocation signal only"
+            },
+            {
+                "method_id": method_by_variant[("constructive_local_search", "uncovered-quadruple-repair")],
+                "result": file_binding(Path("artifacts/constructive/repair-seed126442-30s/result.json")),
+                "outcome": "no witness; improved to six uncovered quadruples with exact point degrees"
+            },
+            {
+                "method_id": method_by_variant[("constructive_local_search", "uncovered-quadruple-repair")],
+                "result": file_binding(Path("artifacts/constructive/repair-seed126443-30s/result.json")),
+                "outcome": "no witness; best remained seven uncovered quadruples"
+            },
+            {
+                "method_id": method_by_variant[("sat_search", "near-cover-core-repair")],
+                "result": file_binding(Path("artifacts/constructive/sat-repair-seed126444-4x15s/result.json")),
+                "outcome": "no witness; all four cores timed out; allocation signal only"
+            }
+        ]
     }
     matrix["matrix_payload_sha256"] = canonical_hash(matrix)
     return registry, screening, matrix

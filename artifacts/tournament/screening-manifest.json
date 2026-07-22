@@ -1,6 +1,6 @@
 {
   "admission_rule": "validation_status must be passed before any screen unit runs",
-  "candidate_registry_sha256": "0d08b859c728cef87acc1f5ee3c46d99951939f706a845f58bacec22f4959233",
+  "candidate_registry_sha256": "43725997a8abb093d9b5452f0e4c3600a36a6806d824b120ec86d83140a2077f",
   "constructive_seed_ids": [
     "seed-00",
     "seed-01",
@@ -25,9 +25,10 @@
   "maximum_parallel_searches": 1,
   "maximum_search_cpu_seconds_per_candidate": 40,
   "maximum_units_per_candidate": 8,
-  "retention_rule": "retain one or more net-new independently validated targets; otherwise stop after the fixed screen",
+  "retention_rule": "retain unique validated coverage; zero coverage demotes only for the matched tested class unless the family-level gate supports broader elimination",
   "schema_version": 1,
-  "screening_payload_sha256": "a1b2c5a2a23566b59c3bc4d29987e386022276a98851e5211d3d01e13de0b8eb",
+  "screening_payload_sha256": "8947cafb40c8fb63913609ba931a039605078ed1d52f07292b14a06eb8a2caed",
   "search_seconds_per_unit": 5,
+  "selection_rule": "successive halving: validate and screen one champion per family before expanding variants in a winning family",
   "stage": "semantic_gate_then_cheap_screen"
 }

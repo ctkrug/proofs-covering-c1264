@@ -20,7 +20,7 @@ class StrategyTournamentTests(unittest.TestCase):
     def test_pending_candidate_cannot_enter_screen(self):
         registry, _, _ = build()
         pending = [row for row in registry["candidates"] if row["validation_status"] == "pending"]
-        self.assertEqual(len(pending), 98)
+        self.assertEqual(len(pending), 92)
         self.assertTrue(all(row["screen_status"] == "blocked_pending_semantic_gate" for row in pending))
 
     def test_registry_hash_detects_mutation(self):
@@ -30,12 +30,14 @@ class StrategyTournamentTests(unittest.TestCase):
         altered["candidates"][0]["variant"] = "renamed-without-new-mechanism"
         self.assertNotEqual(canonical_hash(altered), recorded)
 
-    def test_plan_is_serial_and_gates_all_unvalidated_candidates(self):
+    def test_plan_preserves_serial_live_host_and_uses_family_champions(self):
         plan = build_plan()
         self.assertEqual(plan["maximum_parallel_searches"], 1)
         self.assertEqual(len(plan["active_searches"]), 1)
-        self.assertEqual(plan["admitted_screen_methods"], [])
-        self.assertEqual(len(plan["next_semantic_validation_queue"]), 98)
+        self.assertEqual(plan["separate_local_workstation_constructive_searches"], 2)
+        self.assertEqual(len(plan["family_champions"]), 10)
+        self.assertLess(len(plan["next_semantic_validation_queue"]), 10)
+        self.assertIn("constructive_local_search-04", plan["admitted_screen_methods"])
         self.assertEqual(len(plan["open_leaf_assignments"]), 44)
 
 
