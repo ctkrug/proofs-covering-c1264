@@ -1,0 +1,27 @@
+{
+  "cnf_sha256": "327a6f4f97b81e45cd494d56a5fc7093e4299bd9e7de97cc9a4d4a499767cabf",
+  "command": [
+    "/usr/bin/cadical",
+    "-t",
+    "60",
+    "--no-binary",
+    "/root/proof-factory/research/covering-c1264/workspace/artifacts/sequential-frontier-sweep/sequential-three-case-review-v7-20260722/t-16/sequential/instance.cnf",
+    "/root/proof-factory/research/covering-c1264/workspace/artifacts/sequential-frontier-sweep/sequential-three-case-review-v7-20260722/t-16/sequential/proof.drat"
+  ],
+  "completed_at": "2026-07-22T20:12:05.540616+00:00",
+  "encoding": "sequential",
+  "leaf_id": "t-16",
+  "proof": null,
+  "schema_version": 1,
+  "seconds_cap": 60,
+  "solver_elapsed_seconds": 23.94384188600816,
+  "solver_exit_code": 10,
+  "solver_sha256": "7b73df0a6d9cf3c751a1948300e5baff8e82c4d39bcd88f0c063b5f5cfb8b33e",
+  "status": "SAT_NEW_ORBIT",
+  "validation": {
+    "canonical_sha256": "7291235f9679362212e69d3e7eb50dbcfc445bb1da66a14bd0d01135a56a7894",
+    "catalog_sha256": "66c76abae4675acb74f624fdff8ec64a416d59c0bc2ef15fbe83ab70376effc1",
+    "status": "valid-new-link-orbit",
+    "witness_sha256": "7dd3d5229bff88ccadf0e5168ca5a27194ecc26b582f60c61e6b39d94ada0fa7"
+  }
+}

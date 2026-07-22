@@ -1,0 +1,93 @@
+{
+  "completed": [
+    "t-16--sequential",
+    "t-17--sequential",
+    "s-r0-1--sequential"
+  ],
+  "manifest_sha256": "bf6dd78a2283e7c51e8b39298445d2230e322f9bc0061cbc6fa6dc30231a43f8",
+  "projected_proof_bytes": 0,
+  "results": [
+    {
+      "cnf_sha256": "327a6f4f97b81e45cd494d56a5fc7093e4299bd9e7de97cc9a4d4a499767cabf",
+      "command": [
+        "/usr/bin/cadical",
+        "-t",
+        "60",
+        "--no-binary",
+        "/root/proof-factory/research/covering-c1264/workspace/artifacts/sequential-frontier-sweep/sequential-three-case-review-v7-20260722/t-16/sequential/instance.cnf",
+        "/root/proof-factory/research/covering-c1264/workspace/artifacts/sequential-frontier-sweep/sequential-three-case-review-v7-20260722/t-16/sequential/proof.drat"
+      ],
+      "completed_at": "2026-07-22T20:12:05.540616+00:00",
+      "encoding": "sequential",
+      "leaf_id": "t-16",
+      "path": "artifacts/sequential-frontier-sweep/sequential-three-case-review-v7-20260722/t-16/sequential",
+      "proof": null,
+      "schema_version": 1,
+      "seconds_cap": 60,
+      "solver_elapsed_seconds": 23.94384188600816,
+      "solver_exit_code": 10,
+      "solver_sha256": "7b73df0a6d9cf3c751a1948300e5baff8e82c4d39bcd88f0c063b5f5cfb8b33e",
+      "status": "SAT_NEW_ORBIT",
+      "validation": {
+        "canonical_sha256": "7291235f9679362212e69d3e7eb50dbcfc445bb1da66a14bd0d01135a56a7894",
+        "catalog_sha256": "66c76abae4675acb74f624fdff8ec64a416d59c0bc2ef15fbe83ab70376effc1",
+        "status": "valid-new-link-orbit",
+        "witness_sha256": "7dd3d5229bff88ccadf0e5168ca5a27194ecc26b582f60c61e6b39d94ada0fa7"
+      }
+    },
+    {
+      "cnf_sha256": "bb17d043ab15f77a428cdc62890aae0f8f76677d56bf9b8e1d3e462e9e4a6dbb",
+      "command": [
+        "/usr/bin/cadical",
+        "-t",
+        "60",
+        "--no-binary",
+        "/root/proof-factory/research/covering-c1264/workspace/artifacts/sequential-frontier-sweep/sequential-three-case-review-v7-20260722/t-17/sequential/instance.cnf",
+        "/root/proof-factory/research/covering-c1264/workspace/artifacts/sequential-frontier-sweep/sequential-three-case-review-v7-20260722/t-17/sequential/proof.drat"
+      ],
+      "completed_at": "2026-07-22T20:12:49.155615+00:00",
+      "encoding": "sequential",
+      "leaf_id": "t-17",
+      "path": "artifacts/sequential-frontier-sweep/sequential-three-case-review-v7-20260722/t-17/sequential",
+      "proof": null,
+      "schema_version": 1,
+      "seconds_cap": 60,
+      "solver_elapsed_seconds": 40.33362593408674,
+      "solver_exit_code": 10,
+      "solver_sha256": "7b73df0a6d9cf3c751a1948300e5baff8e82c4d39bcd88f0c063b5f5cfb8b33e",
+      "status": "SAT_NEW_ORBIT",
+      "validation": {
+        "canonical_sha256": "a2b4fb1c04cc3944b697840bb50d5cd55d89348f539bf48d6c8cb8a1a5e953d1",
+        "catalog_sha256": "66c76abae4675acb74f624fdff8ec64a416d59c0bc2ef15fbe83ab70376effc1",
+        "status": "valid-new-link-orbit",
+        "witness_sha256": "e2f8ebbfb6535e1fb187d1f5bd4d4dbc5be48d583b56b8da0018b8dcae8c5b97"
+      }
+    },
+    {
+      "cnf_sha256": "146310f81d7337fd194228e0d26a956e27ef620084ee5569a4be2d57657ef8f9",
+      "command": [
+        "/usr/bin/cadical",
+        "-t",
+        "60",
+        "--no-binary",
+        "/root/proof-factory/research/covering-c1264/workspace/artifacts/sequential-frontier-sweep/sequential-three-case-review-v7-20260722/s-r0-1/sequential/instance.cnf",
+        "/root/proof-factory/research/covering-c1264/workspace/artifacts/sequential-frontier-sweep/sequential-three-case-review-v7-20260722/s-r0-1/sequential/proof.drat"
+      ],
+      "completed_at": "2026-07-22T20:13:51.760234+00:00",
+      "encoding": "sequential",
+      "leaf_id": "s-r0-1",
+      "path": "artifacts/sequential-frontier-sweep/sequential-three-case-review-v7-20260722/s-r0-1/sequential",
+      "proof": null,
+      "schema_version": 1,
+      "seconds_cap": 60,
+      "solver_elapsed_seconds": 60.06335262814537,
+      "solver_exit_code": 0,
+      "solver_sha256": "7b73df0a6d9cf3c751a1948300e5baff8e82c4d39bcd88f0c063b5f5cfb8b33e",
+      "status": "UNKNOWN",
+      "validation": null
+    }
+  ],
+  "schema_version": 1,
+  "stop_reason": "",
+  "stopped": false
+}

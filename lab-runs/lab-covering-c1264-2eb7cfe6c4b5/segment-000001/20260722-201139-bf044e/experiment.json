@@ -1,0 +1,45 @@
+{
+  "schema_version": 1,
+  "id": "20260722-201139-bf044e",
+  "name": "Seven-orbit three-case review tranche segment 1/1",
+  "hypothesis": "Under the active seven-orbit blocker, t-16 and t-17 close or expose another orbit, while s-r0-1 yields the sole first measurement at the fixed cap.",
+  "expected_signal": "Exactly three hash-bound sequential results: reconstructed-CNF audit for each, independent replay for every UNSAT, and direct validation plus canonicalization for every SAT.",
+  "command": [
+    "python3",
+    "scripts/run_sequential_frontier_sweep.py",
+    "--manifest",
+    "artifacts/experiments/sequential-three-case-review-v7-20260722/manifest.json",
+    "--run-id",
+    "sequential-three-case-review-v7-20260722",
+    "--checkpoint",
+    "artifacts/sequential-frontier-sweep/sequential-three-case-review-v7-20260722/checkpoint.json",
+    "--progress",
+    "artifacts/sequential-frontier-sweep/sequential-three-case-review-v7-20260722/progress.json",
+    "--units-per-invocation",
+    "3"
+  ],
+  "cwd": "/root/proof-factory/research/covering-c1264/workspace",
+  "seed": 0,
+  "timeout_seconds": 600,
+  "memory_limit_mb": 4096,
+  "memory_limit_enforced": true,
+  "started_at": "2026-07-22T20:11:39.191706+00:00",
+  "finished_at": "2026-07-22T20:13:51.806515+00:00",
+  "duration_seconds": 132.615,
+  "returncode": 0,
+  "timed_out": false,
+  "python": "3.12.3",
+  "platform": "Linux-6.8.0-124-generic-x86_64-with-glibc2.39",
+  "git_commit": "0ed48acaa31103ed1e735f9ed2e8b5b3a537ee0d",
+  "source_urls": [],
+  "input_artifacts": {
+    "/root/proof-factory/research/covering-c1264/workspace/scripts/run_sequential_frontier_sweep.py": "f9dd9b4e07ae3f242187a59e7a9c33de49596439c09e3cadc8df405b1d19a3d7",
+    "/root/proof-factory/research/covering-c1264/workspace/artifacts/experiments/sequential-three-case-review-v7-20260722/manifest.json": "bf6dd78a2283e7c51e8b39298445d2230e322f9bc0061cbc6fa6dc30231a43f8"
+  },
+  "peak_child_memory_rusage": 60560,
+  "peak_child_memory_unit": "kilobytes",
+  "artifacts": {
+    "stdout.txt": "53fa01ce77d520ab7ad7e5944c4dfddc3284abe03067d2a443d0582bfd70583f",
+    "stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  }
+}
