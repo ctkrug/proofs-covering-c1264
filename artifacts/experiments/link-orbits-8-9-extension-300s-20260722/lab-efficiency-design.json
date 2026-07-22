@@ -1,5 +1,16 @@
 {
   "decision_value": "A directly verified SAT extension settles C(12,6,4)=40; replayed UNSAT excludes one newly validated link orbit and determines whether frontier work remains relevant.",
+  "naive_cost": "Returning immediately to the 12-node exclusion hard tail could spend at least 720 solver-seconds without testing whether either new orbit supplies a decisive positive 40-cover.",
+  "opportunities_considered": [
+    "Exact fixed-link residual extension for each of the two new orbits.",
+    "A stratified three-node nine-orbit frontier discriminator.",
+    "Generic constructive local search.",
+    "Uniform timeout increases or kmtotalizer."
+  ],
+  "chosen_reductions": "Condition on each independently validated 20-block point link, leaving only the exact residual 20-block completion problem. Test exactly two representatives and stop immediately on SAT.",
+  "expected_throughput_gain": "Two conditioned residual searches directly test theorem-settling witnesses in at most 600 solver-seconds and avoid unrelated frontier or generic local-search work.",
+  "soundness_basis": "Both point links passed fresh direct validation and complete C2 wr S5 canonicalization. SAT is checked directly over all 495 quadruples; UNSAT requires independent CNF reconstruction and external DRAT replay before acceptance.",
+  "remains_uncompressed": "The point-link catalogue is still not exhaustive, and the 12 genuine timeout leaves remain open if both fixed-link extensions are excluded.",
   "expected_artifact_growth_bytes": 100000000,
   "expected_runtime_seconds": 660,
   "fixed_protocol": "Exactly orbit-8-t-16 then orbit-9-t-17, 300 seconds each, fixed residual sequential encoding; stop after SAT or two results.",
