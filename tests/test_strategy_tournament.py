@@ -15,7 +15,7 @@ class StrategyTournamentTests(unittest.TestCase):
         self.assertEqual(len({row["mechanism_fingerprint"] for row in registry["candidates"]}), 100)
         self.assertEqual(len(screening["frozen_stratified_leaf_sample"]), 8)
         self.assertEqual(screening["maximum_parallel_searches"], 1)
-        self.assertEqual(matrix["covered_frontier_targets"], ["s-r0-6", "s-r1-5", "s-r1-8"])
+        self.assertEqual(len(matrix["covered_frontier_targets"]), 15)
 
     def test_pending_candidate_cannot_enter_screen(self):
         registry, _, _ = build()
@@ -38,7 +38,7 @@ class StrategyTournamentTests(unittest.TestCase):
         self.assertEqual(len(plan["family_champions"]), 10)
         self.assertLess(len(plan["next_semantic_validation_queue"]), 10)
         self.assertIn("constructive_local_search-04", plan["admitted_screen_methods"])
-        self.assertEqual(len(plan["open_leaf_assignments"]), 44)
+        self.assertEqual(len(plan["open_leaf_assignments"]), 32)
 
 
 if __name__ == "__main__":

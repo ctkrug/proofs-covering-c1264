@@ -1,0 +1,47 @@
+{
+  "schema_version": 1,
+  "id": "20260722-173957-6c7001",
+  "name": "fifth-orbit-core-checkpointed-pair-first",
+  "hypothesis": "At least one of the 27 pair-equality groups in the replay-certified 161-group obstruction is redundant under the remaining semantic constraints.",
+  "expected_signal": "A checkpointed smaller core, with every removed group justified by an exact UNSAT deletion test; timeouts remain explicitly unresolved.",
+  "command": [
+    ".venv/bin/python",
+    "scripts/minimize_link_residual_core_checkpointed.py",
+    "artifacts/discoveries/link-orbit-s-r1-3/witness.txt",
+    "artifacts/discoveries/link-orbit-s-r1-3/residual-extension/semantic-core.json",
+    "--output",
+    "artifacts/discoveries/link-orbit-s-r1-3/residual-extension/semantic-core-checkpointed.json",
+    "--core-cnf",
+    "artifacts/discoveries/link-orbit-s-r1-3/residual-extension/semantic-core-checkpointed.cnf",
+    "--seconds-per-test",
+    "20",
+    "--total-seconds",
+    "600"
+  ],
+  "cwd": "/Users/Krug/Desktop/ChatGPT/proofs/research/covering-c1264/workspace",
+  "seed": 0,
+  "timeout_seconds": 660,
+  "memory_limit_mb": 4096,
+  "memory_limit_enforced": false,
+  "started_at": "2026-07-22T17:39:57.281217+00:00",
+  "finished_at": "2026-07-22T17:49:58.204566+00:00",
+  "duration_seconds": 600.894,
+  "returncode": 0,
+  "timed_out": false,
+  "python": "3.14.6",
+  "platform": "macOS-26.5.2-arm64-arm-64bit-Mach-O",
+  "git_commit": "d88e362ef0813959dca0300bb5263226014c30bf",
+  "source_urls": [],
+  "input_artifacts": {
+    "/opt/homebrew/Cellar/python@3.14/3.14.6/Frameworks/Python.framework/Versions/3.14/bin/python3.14": "b502cb4c5b46b8d4192ec6bcb600ce8922f1afc396fcf646e8765c6eba74a0bf",
+    "/Users/Krug/Desktop/ChatGPT/proofs/research/covering-c1264/workspace/scripts/minimize_link_residual_core_checkpointed.py": "18068a62d9c7ddc0dacb6215d0ceab6260e6f1b0c3332cac8652d2739ea60778",
+    "/Users/Krug/Desktop/ChatGPT/proofs/research/covering-c1264/workspace/artifacts/discoveries/link-orbit-s-r1-3/witness.txt": "efca42168a5be71be13bbe9b30f7767530eac29f9340dd1720316d1818aafe7d",
+    "/Users/Krug/Desktop/ChatGPT/proofs/research/covering-c1264/workspace/artifacts/discoveries/link-orbit-s-r1-3/residual-extension/semantic-core.json": "7b1d0ce39f75a31c59cf370d4c4d68982abac273b343fd3f74f9726528b45451"
+  },
+  "peak_child_memory_rusage": 211992576,
+  "peak_child_memory_unit": "bytes",
+  "artifacts": {
+    "stdout.txt": "e58134c0874d9b49e7415d07400f598d5bbf5493515c2aa148834c2ac85a4788",
+    "stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  }
+}

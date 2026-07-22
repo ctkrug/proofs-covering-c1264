@@ -27,8 +27,9 @@ class SequentialFrontierSweepTests(unittest.TestCase):
     def test_builder_selects_exactly_the_open_frontier(self):
         value = builder.build()
         ids = [row["id"] for row in value["leaves"]]
-        self.assertEqual(44, len(ids))
-        self.assertEqual(44, len(set(ids)))
+        self.assertEqual(32, len(ids))
+        self.assertEqual(32, len(set(ids)))
+        self.assertEqual(value["leaves"][0]["id"], "s-r1-3")
         self.assertTrue(set(value["preserved_certified_nodes"]).isdisjoint(ids))
         self.assertEqual(60, value["seconds_per_run"])
         self.assertEqual("sequential", value["method"])
@@ -49,14 +50,18 @@ class SequentialFrontierSweepTests(unittest.TestCase):
             }
             checkpoint_path.write_text(json.dumps(checkpoint), encoding="utf-8")
             result = profiler.profile(manifest_path, checkpoint_path, builder.PORTFOLIO)
-        self.assertEqual(43, result["survivor_count"])
+        self.assertEqual(31, result["survivor_count"])
         self.assertNotIn(manifest["leaves"][0]["id"], {row["id"] for row in result["survivors"]})
         self.assertIn(manifest["leaves"][1]["id"], {row["id"] for row in result["survivors"]})
         self.assertGreater(len(result["classes"]), 0)
 
-    def test_runner_refuses_superseded_four_orbit_manifest(self):
-        with self.assertRaisesRegex(ValueError, "fifth exact-degree link orbit"):
-            runner.verify(builder.OUT)
+    def test_runner_accepts_rebuilt_five_orbit_manifest(self):
+        manifest = builder.build()
+        with tempfile.TemporaryDirectory(dir=ROOT / "artifacts") as temporary:
+            path = Path(temporary) / "manifest.json"
+            path.write_text(json.dumps(manifest), encoding="utf-8")
+            verified = runner.verify(path)
+        self.assertEqual(len(verified["leaves"]), 32)
 
 
 if __name__ == "__main__":

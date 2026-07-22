@@ -37,12 +37,12 @@ class CertificatePortfolioTests(unittest.TestCase):
         finally:
             path.unlink()
 
-    def test_first_tranche_ingestion_records_net_new_certificates(self):
+    def test_completed_benchmark_ingestion_records_net_new_certificates(self):
         manifest = ingest()
-        self.assertEqual(manifest["counts"], {"total": 47, "closed": 3, "open": 44})
+        self.assertEqual(manifest["counts"], {"total": 47, "closed": 15, "open": 32})
         tranche = manifest["tranches"][0]
-        self.assertEqual(tranche["newly_closed_nodes"], ["s-r0-6", "s-r1-5", "s-r1-8"])
-        self.assertEqual(tranche["method_stats"]["sequential"]["net_new_closures"], 3)
+        self.assertEqual(len(tranche["newly_closed_nodes"]), 15)
+        self.assertEqual(tranche["method_stats"]["sequential"]["net_new_closures"], 15)
         self.assertEqual(tranche["method_stats"]["kmtotalizer"]["net_new_closures"], 0)
 
 

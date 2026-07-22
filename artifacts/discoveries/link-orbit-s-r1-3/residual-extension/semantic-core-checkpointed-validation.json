@@ -1,0 +1,29 @@
+{
+  "checked_at": "2026-07-22T17:50:50.228048+00:00",
+  "checker": {
+    "path": ".venv/sat-audit-tools/drat-trim/drat-trim",
+    "sha256": "f58f63b0f76945d4c4c9ff6e87afaf870f579e67c0f7cca589492df8fc7ebd47"
+  },
+  "cnf": {
+    "path": "artifacts/discoveries/link-orbit-s-r1-3/residual-extension/semantic-core-checkpointed.cnf",
+    "sha256": "4d2d1c2bda9de7b27e616c13ddae357d4d005a2962c459a4752e874c72e6e196"
+  },
+  "command": [
+    ".venv/sat-audit-tools/drat-trim/drat-trim",
+    "artifacts/discoveries/link-orbit-s-r1-3/residual-extension/semantic-core-checkpointed.cnf",
+    "artifacts/discoveries/link-orbit-s-r1-3/residual-extension/semantic-core-checkpointed.drat"
+  ],
+  "exit_code": 0,
+  "log": {
+    "path": "artifacts/discoveries/link-orbit-s-r1-3/residual-extension/semantic-core-checkpointed-validation.json.log",
+    "sha256": "a10c5e7c219d3717f327ff31bf7ce91a94a3588a5df0f501562c552b99637b20"
+  },
+  "proof": {
+    "path": "artifacts/discoveries/link-orbit-s-r1-3/residual-extension/semantic-core-checkpointed.drat",
+    "sha256": "c1ddcfd16b8e98ca38debb9cdf7f9b23a5da632746c0a0989a16e17a82a20f4e"
+  },
+  "schema_version": 1,
+  "seconds_cap": 600,
+  "status": "verified",
+  "verdict": "s VERIFIED"
+}

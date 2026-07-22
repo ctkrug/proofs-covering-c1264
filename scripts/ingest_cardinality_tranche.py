@@ -16,6 +16,7 @@ MANIFEST = ROOT / "artifacts/portfolio/frontier-manifest-v1.json"
 RUN_ROOT = Path("artifacts/cardinality-encoding-benchmark/cardinality-encoding-20-leaf-20260722")
 CHECKPOINT = RUN_ROOT / "checkpoint.json"
 RUN_ID = "cardinality-encoding-20-leaf-20260722"
+TRANCHE_ID = f"{RUN_ID}-final"
 
 
 def sha(path: Path) -> str:
@@ -29,6 +30,11 @@ def receipt(path: Path) -> dict[str, str]:
 def ingest() -> dict:
     manifest = json.loads(MANIFEST.read_text())
     checkpoint = json.loads((ROOT / CHECKPOINT).read_text())
+    if len(checkpoint.get("results", [])) != 40 or len(checkpoint.get("completed", [])) != 40:
+        raise ValueError("the frozen 20-leaf/2-method benchmark is not complete")
+    monotonicity = manifest.get("blocker_monotonicity", {})
+    if monotonicity.get("status") != "strict_superset_verified":
+        raise ValueError("active five-orbit blocker has not passed monotonic-transfer audit")
     nodes = {row["id"]: row for row in manifest["nodes"]}
     for node in nodes.values():
         node["outcomes"] = [row for row in node["outcomes"] if row.get("run_id") != RUN_ID]
@@ -108,9 +114,25 @@ def ingest() -> dict:
         stats["net_new_closures_per_cpu_hour"] = round(
             stats["net_new_closures"] / (stats["cpu_seconds"] / 3600), 6
         ) if stats["net_new_closures"] else 0.0
+    source_results = []
+    for result in checkpoint["results"]:
+        result_path = RUN_ROOT / result["leaf_id"] / result["encoding"] / "result.json"
+        source_results.append(receipt(result_path))
     tranche = {
-        "id": f"{RUN_ID}-segment-01",
-        "source_checkpoint": receipt(CHECKPOINT),
+        "id": TRANCHE_ID,
+        "source_results": sorted(source_results, key=lambda row: row["path"]),
+        "superseded_mutable_checkpoint": {
+            "path": str(CHECKPOINT),
+            "final_sha256": sha(ROOT / CHECKPOINT),
+            "reason": "checkpoint advanced in place during the frozen benchmark; immutable result receipts are authoritative",
+        },
+        "blocker_transfer": {
+            "status": monotonicity["status"],
+            "predecessor_blocker": manifest["predecessor_link_blocker"],
+            "active_blocker": manifest["active_link_blocker"],
+            "added_clauses": monotonicity["added_clauses"],
+            "consequence": "UNSAT under the predecessor blocker remains UNSAT under the active stronger blocker",
+        },
         "completed_solver_runs": len(checkpoint["results"]),
         "newly_closed_nodes": sorted(newly_closed),
         "cumulative_closed_out_of_47": f"{closed}/47",
@@ -132,13 +154,16 @@ def ingest() -> dict:
         },
         "method_stats": method_stats,
         "next_method_by_hard_tail_class": {
-            "fixed_benchmark_sample": "continue the unchanged sequential-versus-kmtotalizer protocol",
-            "unclosed_secondary": "await the complete fixed benchmark before adaptive reassignment",
-            "unclosed_tertiary": "await the complete fixed benchmark before adaptive reassignment",
+            "fixed_benchmark_sample": "complete; do not expand kmtotalizer because it earned zero unique closures",
+            "unclosed_secondary": "sequential default, with structural/constructive exceptions assigned by the dynamic plan",
+            "unclosed_tertiary": "sequential default, with structural/constructive exceptions assigned by the dynamic plan",
             "constructive_global_uncertainty": "forced-matching exact-degree 40-block witness search remains active"
         }
     }
-    manifest["tranches"] = [row for row in manifest["tranches"] if row.get("id") != tranche["id"]] + [tranche]
+    manifest["tranches"] = [
+        row for row in manifest["tranches"]
+        if row.get("id") not in {tranche["id"], f"{RUN_ID}-segment-01"}
+    ] + [tranche]
     manifest.pop("manifest_payload_sha256", None)
     manifest["manifest_payload_sha256"] = canonical_hash(manifest)
     return manifest

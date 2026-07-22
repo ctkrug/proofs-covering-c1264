@@ -1,6 +1,12 @@
 {
   "catalog_sha256": "1b20916c7298dda7c172f2d435bc9e357026044c18a821f645aa82ec5e8fa2c6",
   "claim_limit": "These are exact structural invariants of the supplied five orbits, not an exhaustive classification or a causal proof of nonextension.",
+  "conditional_low_graph_lemma": {
+    "conclusion": "the fixed point is isolated in the multiplicity-3 graph and the other ten vertices form a 4-regular graph with 20 edges",
+    "hypotheses": "an exact-degree (10,9,...,9) link in which every pair multiplicity is 3 or 4",
+    "proof_basis": "triple coverage gives pair multiplicity at least 3; degree-count sums are 40 at the fixed point and 36 elsewhere, forcing 0 and 4 incident multiplicity-3 pairs respectively under the 3-or-4 hypothesis",
+    "scope_limit": "The 3-or-4 hypothesis and triangle-freeness are observed for all five supplied orbits but are not yet proved for every feasible link."
+  },
   "fifth_orbit_semantic_core": {
     "core_cnf": {
       "clauses": 66854,
@@ -12,6 +18,27 @@
     "groups": 161,
     "pair_equality_groups": 27,
     "receipt_sha256": "7b1d0ce39f75a31c59cf370d4c4d68982abac273b343fd3f74f9726528b45451"
+  },
+  "matching_alignment_branch": {
+    "definition": "number of multiplicity-3 pairs among the five matching pairs (2,3),(4,5),(6,7),(8,9),(10,11)",
+    "observed_values": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "orbit_images_exhaustively_checked": 1776,
+    "possible_values": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "proof_basis": "Every element of C2 wr S5 preserves the five matching pairs as a set and preserves pair multiplicity, so the intersection count is orbit-invariant.",
+    "recommended_use": "Add this six-way invariant as a structural class and branch-priority feature, not as a completeness assumption; values 4 and 5 remain unobserved rather than excluded.",
+    "status": "valid_canonical_branch_invariant"
   },
   "observation": "All five links share the forced 20-edge, triangle-free, 4-regular low-pair graph on ten nonexceptional points, but the fifth orbit has two low-pair edges aligned with the forced matching; the earlier orbits realize zero, one, or three.",
   "orbits": [

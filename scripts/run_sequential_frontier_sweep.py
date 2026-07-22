@@ -20,9 +20,9 @@ def verify(manifest_path: Path) -> dict[str, object]:
         reason = json.loads(superseded.read_text(encoding="utf-8")).get("reason", "manifest superseded")
         raise ValueError(f"refusing superseded sweep manifest: {reason}")
     manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
-    if manifest.get("method") != "sequential" or len(manifest.get("leaves", [])) != 44:
-        raise ValueError("manifest must specify sequential over exactly 44 leaves")
-    if len({row["id"] for row in manifest["leaves"]}) != 44:
+    if manifest.get("method") != "sequential" or len(manifest.get("leaves", [])) != 32:
+        raise ValueError("manifest must specify sequential over exactly 32 audited open leaves")
+    if len({row["id"] for row in manifest["leaves"]}) != 32:
         raise ValueError("duplicate leaf ID")
     for path_text, expected in manifest["input_sha256"].items():
         path = shared.validate_under_root(Path(path_text))

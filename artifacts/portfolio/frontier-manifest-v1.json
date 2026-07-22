@@ -1,4 +1,19 @@
 {
+  "active_link_blocker": {
+    "bytes": 171951,
+    "path": "artifacts/discoveries/link-orbit-catalog-5-blocking.cnf",
+    "sha256": "ca2ebe74048cea4593e5fc377e441a7d51a10199bba8bc0c0ef7578f5a91eb2f"
+  },
+  "active_link_catalog": {
+    "bytes": 2309,
+    "path": "artifacts/discoveries/link-orbit-catalog-5.json",
+    "sha256": "1b20916c7298dda7c172f2d435bc9e357026044c18a821f645aa82ec5e8fa2c6"
+  },
+  "active_link_catalog_audit": {
+    "bytes": 1032,
+    "path": "artifacts/discoveries/link-orbit-catalog-5-audit.json",
+    "sha256": "19505d8c26f11184c9231f420993714d162f68f16af35f83cbcdb9dd16bdc671"
+  },
   "active_resolution_routes": {
     "canonical_47_node_certified_exclusion": {
       "kind": "negative",
@@ -13,22 +28,42 @@
       "tranches": []
     }
   },
+  "blocker_monotonicity": {
+    "active_clauses": 1776,
+    "added_clauses": 160,
+    "consequence": "Every certified UNSAT result under the weaker predecessor blocker remains UNSAT under the active stronger blocker; no proof is counted twice.",
+    "predecessor_clauses": 1616,
+    "status": "strict_superset_verified"
+  },
   "counts": {
-    "closed": 3,
-    "open": 44,
+    "closed": 15,
+    "open": 32,
     "total": 47
+  },
+  "dynamic_assignment": {
+    "path": "artifacts/portfolio/five-orbit-dynamic-assignment.json",
+    "sha256": "c7bd4f4dcefacd0cd4dc7d49802fb229ba5d34006939d7e153701fb62ad67500"
   },
   "first_measurement": {
     "path": "artifacts/experiments/cardinality-encoding-20-leaf-20260722/manifest.json",
     "sha256": "5d52e2f8f1831e918b23ea7752addf0e684ad267b6634ccd2a750f93bea11242"
   },
   "frontier_definition_sha256": "8ccf62d23382db6d79298f470b640c8b188c6e80a32e6b02b1d66b3663467e92",
+  "frontier_rebuild": {
+    "discovery_leaf": "s-r1-3",
+    "discovery_leaf_status": "open; resume with active five-orbit blocker",
+    "secondary_nodes": 14,
+    "status": "rebuilt_pending_independent_audit",
+    "structural_partition": "unchanged 47-node canonical partition",
+    "tertiary_nodes": 33
+  },
+  "frontier_revision": 2,
   "frontier_source": {
     "path": "artifacts/pilot/link-campaign-summary.json",
     "sha256": "1a9ff4abe35470308876496219ec6cf93d64e6b10ceafb942a3dd43b5dd3139f"
   },
   "global_uncertainty": "C(12,6,4) is 40 or 41",
-  "manifest_payload_sha256": "8fa624423cba3a460ba16017055657331e1f08f75ca341f16ae1b0e2a79d07ee",
+  "manifest_payload_sha256": "b2c9c7e676196be819d00a8cf9e4b366b7c75b4d1613300731f942e7f458db6d",
   "method_registry": {
     "alternative_cardinality": {
       "semantic_gate": "required",
@@ -61,7 +96,10 @@
   },
   "nodes": [
     {
-      "assigned_methods": [],
+      "active_blocker_sha256": "ca2ebe74048cea4593e5fc377e441a7d51a10199bba8bc0c0ef7578f5a91eb2f",
+      "assigned_methods": [
+        "sequential"
+      ],
       "final_coverage_status": "open",
       "id": "s-r0-1",
       "inherited_result_sha256": "0edfb0e3139d0e28a2ce9f9b831f8fff6aa59409ddb29c58fa61f00c7ac2251e",
@@ -73,7 +111,10 @@
       "tertiary_index": null
     },
     {
-      "assigned_methods": [],
+      "active_blocker_sha256": "ca2ebe74048cea4593e5fc377e441a7d51a10199bba8bc0c0ef7578f5a91eb2f",
+      "assigned_methods": [
+        "sequential"
+      ],
       "final_coverage_status": "open",
       "id": "s-r0-2",
       "inherited_result_sha256": "4d718f55e94c456fa55a1a4c9e5777e126c5e582e67097aca8fda8c9d59db4a9",
@@ -85,9 +126,12 @@
       "tertiary_index": null
     },
     {
+      "active_blocker_sha256": "ca2ebe74048cea4593e5fc377e441a7d51a10199bba8bc0c0ef7578f5a91eb2f",
       "assigned_methods": [
         "sequential",
-        "kmtotalizer"
+        "kmtotalizer",
+        "alternative_cubing",
+        "pb_cp_sat"
       ],
       "final_coverage_status": "open",
       "id": "s-r0-3",
@@ -135,9 +179,12 @@
       "tertiary_index": null
     },
     {
+      "active_blocker_sha256": "ca2ebe74048cea4593e5fc377e441a7d51a10199bba8bc0c0ef7578f5a91eb2f",
       "assigned_methods": [
         "sequential",
-        "kmtotalizer"
+        "kmtotalizer",
+        "alternative_cubing",
+        "pb_cp_sat"
       ],
       "final_coverage_status": "open",
       "id": "s-r0-4",
@@ -185,7 +232,10 @@
       "tertiary_index": null
     },
     {
-      "assigned_methods": [],
+      "active_blocker_sha256": "ca2ebe74048cea4593e5fc377e441a7d51a10199bba8bc0c0ef7578f5a91eb2f",
+      "assigned_methods": [
+        "sequential"
+      ],
       "final_coverage_status": "open",
       "id": "s-r0-5",
       "inherited_result_sha256": "de6498fd228fe6a9b0b2518be013878d48659395aba113be52a36cbd4c910625",
@@ -197,6 +247,7 @@
       "tertiary_index": null
     },
     {
+      "active_blocker_sha256": "ca2ebe74048cea4593e5fc377e441a7d51a10199bba8bc0c0ef7578f5a91eb2f",
       "assigned_methods": [
         "sequential",
         "kmtotalizer"
@@ -259,7 +310,10 @@
       "tertiary_index": null
     },
     {
-      "assigned_methods": [],
+      "active_blocker_sha256": "ca2ebe74048cea4593e5fc377e441a7d51a10199bba8bc0c0ef7578f5a91eb2f",
+      "assigned_methods": [
+        "sequential"
+      ],
       "final_coverage_status": "open",
       "id": "s-r1-0",
       "inherited_result_sha256": "5a89dbc9ca79c6af6b30169865fc18049eccba6c7f7dd9471d3a697469093a5d",
@@ -271,7 +325,10 @@
       "tertiary_index": null
     },
     {
-      "assigned_methods": [],
+      "active_blocker_sha256": "ca2ebe74048cea4593e5fc377e441a7d51a10199bba8bc0c0ef7578f5a91eb2f",
+      "assigned_methods": [
+        "sequential"
+      ],
       "final_coverage_status": "open",
       "id": "s-r1-1",
       "inherited_result_sha256": "5102c7021615d9dbc2a21465bba2da71142de52b020678e0af2a831a4426eeb4",
@@ -283,7 +340,10 @@
       "tertiary_index": null
     },
     {
-      "assigned_methods": [],
+      "active_blocker_sha256": "ca2ebe74048cea4593e5fc377e441a7d51a10199bba8bc0c0ef7578f5a91eb2f",
+      "assigned_methods": [
+        "sequential"
+      ],
       "final_coverage_status": "open",
       "id": "s-r1-15",
       "inherited_result_sha256": "7dc4b405ebd86cbb0440b18116e06f4fa5e5f1aad876a90692efc1e671559f44",
@@ -295,7 +355,10 @@
       "tertiary_index": null
     },
     {
-      "assigned_methods": [],
+      "active_blocker_sha256": "ca2ebe74048cea4593e5fc377e441a7d51a10199bba8bc0c0ef7578f5a91eb2f",
+      "assigned_methods": [
+        "sequential"
+      ],
       "final_coverage_status": "open",
       "id": "s-r1-2",
       "inherited_result_sha256": "a32080d2927b0a95a595f3c8ca082e0d3e8747ca6bb1e65d5c805e83e2a4b86a",
@@ -307,22 +370,63 @@
       "tertiary_index": null
     },
     {
+      "active_blocker_sha256": "ca2ebe74048cea4593e5fc377e441a7d51a10199bba8bc0c0ef7578f5a91eb2f",
       "assigned_methods": [
         "sequential",
-        "kmtotalizer"
+        "kmtotalizer",
+        "alternative_cubing",
+        "forced_matching_exact_degree_40_block_witness"
       ],
       "final_coverage_status": "open",
       "id": "s-r1-3",
       "inherited_result_sha256": "373f2879beb9cf6fae6562bb4eb1b2ca8ec1d55dcb740f0261f4edd91751b4c0",
       "kind": "secondary",
-      "outcomes": [],
+      "outcomes": [
+        {
+          "cnf_encoding_revision": "cardinality-encoding-20-leaf-20260722:kmtotalizer:schema-1",
+          "cnf_sha256": "6cfd749310e408f0b53f824288c26066fc4b31e6f364b3f071cbe498a2291f46",
+          "cpu_seconds": 60.02099911891855,
+          "independent_audit_receipt": {
+            "path": "artifacts/cardinality-encoding-benchmark/cardinality-encoding-20-leaf-20260722/s-r1-3/kmtotalizer/cnf-audit.json",
+            "sha256": "ca8cab44a7d841e4e67f0ae58ef944c565d3b03ae0fb45407ec08c7568a0782f"
+          },
+          "method": "kmtotalizer",
+          "result_receipt": {
+            "path": "artifacts/cardinality-encoding-benchmark/cardinality-encoding-20-leaf-20260722/s-r1-3/kmtotalizer/result.json",
+            "sha256": "4c0374acf73e3be9f2295c2499be592c9dbc89bd38e832e2410b2a17be0e5dc0"
+          },
+          "run_id": "cardinality-encoding-20-leaf-20260722",
+          "runtime_seconds": 60.02099911891855,
+          "status": "unknown"
+        },
+        {
+          "cnf_encoding_revision": "cardinality-encoding-20-leaf-20260722:sequential:schema-1",
+          "cnf_sha256": "fd073005a1e0107b5f9fb214a23a5bd6c06da74bc6116219d135dbdfa9e2ad7b",
+          "cpu_seconds": 17.744328930042684,
+          "independent_audit_receipt": {
+            "path": "artifacts/cardinality-encoding-benchmark/cardinality-encoding-20-leaf-20260722/s-r1-3/sequential/cnf-audit.json",
+            "sha256": "529532def82b3f4ddeeb9d1213d7fbccad7e673a15feecf04c47bb3cb96b65c6"
+          },
+          "method": "sequential",
+          "result_receipt": {
+            "path": "artifacts/cardinality-encoding-benchmark/cardinality-encoding-20-leaf-20260722/s-r1-3/sequential/result.json",
+            "sha256": "adaf7eafdecd05dc04c6c2681a534fe0ee4c58ec245e8f2f3fe16d6c864b4fda"
+          },
+          "run_id": "cardinality-encoding-20-leaf-20260722",
+          "runtime_seconds": 17.744328930042684,
+          "status": "unknown"
+        }
+      ],
       "root_index": 1,
       "secondary_index": 3,
       "source_path": "artifacts/pilot/link-orbit-root1-secondary-3-60s",
       "tertiary_index": null
     },
     {
-      "assigned_methods": [],
+      "active_blocker_sha256": "ca2ebe74048cea4593e5fc377e441a7d51a10199bba8bc0c0ef7578f5a91eb2f",
+      "assigned_methods": [
+        "sequential"
+      ],
       "final_coverage_status": "open",
       "id": "s-r1-4",
       "inherited_result_sha256": "7be9efd96519384ddd6e19a2e56dd4021a66cefa884cae40d959bda76d7c6471",
@@ -334,6 +438,7 @@
       "tertiary_index": null
     },
     {
+      "active_blocker_sha256": "ca2ebe74048cea4593e5fc377e441a7d51a10199bba8bc0c0ef7578f5a91eb2f",
       "assigned_methods": [
         "sequential",
         "kmtotalizer"
@@ -390,6 +495,7 @@
       "tertiary_index": null
     },
     {
+      "active_blocker_sha256": "ca2ebe74048cea4593e5fc377e441a7d51a10199bba8bc0c0ef7578f5a91eb2f",
       "assigned_methods": [
         "sequential",
         "kmtotalizer"
@@ -446,67 +552,236 @@
       "tertiary_index": null
     },
     {
+      "active_blocker_sha256": "ca2ebe74048cea4593e5fc377e441a7d51a10199bba8bc0c0ef7578f5a91eb2f",
       "assigned_methods": [
         "sequential",
         "kmtotalizer"
       ],
-      "final_coverage_status": "open",
+      "final_coverage_status": "closed_unsat",
       "id": "t-0",
       "inherited_result_sha256": "7394664f196d00b52215c79a957d1c6a10792bbe40f193c23d55fed067a84191",
       "kind": "tertiary",
-      "outcomes": [],
+      "outcomes": [
+        {
+          "cnf_encoding_revision": "cardinality-encoding-20-leaf-20260722:kmtotalizer:schema-1",
+          "cnf_sha256": "5190f145479fe0ed3c952cbc92f9b8f73778f3323d8ab620ae1670fae9453f4d",
+          "cpu_seconds": 48.84893015702255,
+          "independent_audit_receipt": {
+            "path": "artifacts/cardinality-encoding-benchmark/cardinality-encoding-20-leaf-20260722/t-0/kmtotalizer/cnf-audit.json",
+            "sha256": "485c44647f907bf5bcce026d226a1a0856475183181d5ff444e9d4875d86ad2d"
+          },
+          "method": "kmtotalizer",
+          "proof_bytes": 117593845,
+          "proof_sha256": "c0cd1d6e8727fc0fa0b86d9bbfcb7d2d08aa5709c5c84c5f3458a05b0f483062",
+          "replay_receipt": {
+            "path": "artifacts/cardinality-encoding-benchmark/cardinality-encoding-20-leaf-20260722/t-0/kmtotalizer/validation.json",
+            "sha256": "a4dbc1b2b878dc6af697e48360d5f0d6f8742e1eaa9702ea4610338e8bf5de5e"
+          },
+          "result_receipt": {
+            "path": "artifacts/cardinality-encoding-benchmark/cardinality-encoding-20-leaf-20260722/t-0/kmtotalizer/result.json",
+            "sha256": "323ed4b12d35b01528152dbc35d2d2e84ddf30436b2748fd2e4c00e8c3f5ea78"
+          },
+          "run_id": "cardinality-encoding-20-leaf-20260722",
+          "runtime_seconds": 48.84893015702255,
+          "status": "unsat_certified"
+        },
+        {
+          "cnf_encoding_revision": "cardinality-encoding-20-leaf-20260722:sequential:schema-1",
+          "cnf_sha256": "21101cf93d5308927741323aec34359fb273db20a8c7f9b2118666f5d476cc15",
+          "cpu_seconds": 39.330090787028894,
+          "independent_audit_receipt": {
+            "path": "artifacts/cardinality-encoding-benchmark/cardinality-encoding-20-leaf-20260722/t-0/sequential/cnf-audit.json",
+            "sha256": "40b6c22a224ac9c7d56f4f2f16b5a8859b278f8d5cf08fafbb2ddb4db1e299ed"
+          },
+          "method": "sequential",
+          "proof_bytes": 78586461,
+          "proof_sha256": "adfed0101ae491c3c476d79a65fe3afda04ce59ca11bc449b1cfb70193a8aad2",
+          "replay_receipt": {
+            "path": "artifacts/cardinality-encoding-benchmark/cardinality-encoding-20-leaf-20260722/t-0/sequential/validation.json",
+            "sha256": "01a4f4980051d3d29ecdc31d7420e52f56a85656e2259adffd97a4fc8b13ea83"
+          },
+          "result_receipt": {
+            "path": "artifacts/cardinality-encoding-benchmark/cardinality-encoding-20-leaf-20260722/t-0/sequential/result.json",
+            "sha256": "25c3bfc6d67c038069148b14fcecd1d772cff26d0ea7ff09a7d54b533dba515c"
+          },
+          "run_id": "cardinality-encoding-20-leaf-20260722",
+          "runtime_seconds": 39.330090787028894,
+          "status": "unsat_certified"
+        }
+      ],
       "root_index": 0,
       "secondary_index": 0,
       "source_path": "artifacts/pilot/link-orbit-root0-secondary-0-tertiary-0-10s",
       "tertiary_index": 0
     },
     {
+      "active_blocker_sha256": "ca2ebe74048cea4593e5fc377e441a7d51a10199bba8bc0c0ef7578f5a91eb2f",
       "assigned_methods": [
         "sequential",
-        "kmtotalizer"
+        "kmtotalizer",
+        "alternative_cubing",
+        "pb_cp_sat"
       ],
       "final_coverage_status": "open",
       "id": "t-1",
       "inherited_result_sha256": "c648d99d255875732b49c33514b4cf312127e3cfcdf7508421ea3bcf784d4220",
       "kind": "tertiary",
-      "outcomes": [],
+      "outcomes": [
+        {
+          "cnf_encoding_revision": "cardinality-encoding-20-leaf-20260722:kmtotalizer:schema-1",
+          "cnf_sha256": "58232d27e6b1b2563b2f0f916f3e3a5a754d0c8be9136e7eb67e27c0c1633b29",
+          "cpu_seconds": 60.026468311902136,
+          "independent_audit_receipt": {
+            "path": "artifacts/cardinality-encoding-benchmark/cardinality-encoding-20-leaf-20260722/t-1/kmtotalizer/cnf-audit.json",
+            "sha256": "ae1c442cafa760774d5942d65c32922880d66a4e9bb719508dffb5db8bc43261"
+          },
+          "method": "kmtotalizer",
+          "result_receipt": {
+            "path": "artifacts/cardinality-encoding-benchmark/cardinality-encoding-20-leaf-20260722/t-1/kmtotalizer/result.json",
+            "sha256": "d595e0e7c37605065990ed82fe4f175818acfd3836a83820c04b70d8f936faa5"
+          },
+          "run_id": "cardinality-encoding-20-leaf-20260722",
+          "runtime_seconds": 60.026468311902136,
+          "status": "unknown"
+        },
+        {
+          "cnf_encoding_revision": "cardinality-encoding-20-leaf-20260722:sequential:schema-1",
+          "cnf_sha256": "28bd5e5ecd7ed96240ff18a84355d6fae92151ec24ad3691a043248c0d3d69b3",
+          "cpu_seconds": 60.039619150105864,
+          "independent_audit_receipt": {
+            "path": "artifacts/cardinality-encoding-benchmark/cardinality-encoding-20-leaf-20260722/t-1/sequential/cnf-audit.json",
+            "sha256": "c2bb5debfbca2c6a32547136ca98f956458c223b6f72390b2ab73c86c61a4606"
+          },
+          "method": "sequential",
+          "result_receipt": {
+            "path": "artifacts/cardinality-encoding-benchmark/cardinality-encoding-20-leaf-20260722/t-1/sequential/result.json",
+            "sha256": "fecf500a948ff4d691d3dd37460db9ab5c25dba0025cb38664afb492f5de94d3"
+          },
+          "run_id": "cardinality-encoding-20-leaf-20260722",
+          "runtime_seconds": 60.039619150105864,
+          "status": "unknown"
+        }
+      ],
       "root_index": 0,
       "secondary_index": 0,
       "source_path": "artifacts/pilot/link-orbit-root0-secondary-0-tertiary-1-10s",
       "tertiary_index": 1
     },
     {
+      "active_blocker_sha256": "ca2ebe74048cea4593e5fc377e441a7d51a10199bba8bc0c0ef7578f5a91eb2f",
       "assigned_methods": [
         "sequential",
-        "kmtotalizer"
+        "kmtotalizer",
+        "alternative_cubing",
+        "pb_cp_sat"
       ],
       "final_coverage_status": "open",
       "id": "t-10",
       "inherited_result_sha256": "fd3ade9d5898c0f346252d1e6f6f67dcfaebbec4f1983885533ecbde91b08006",
       "kind": "tertiary",
-      "outcomes": [],
+      "outcomes": [
+        {
+          "cnf_encoding_revision": "cardinality-encoding-20-leaf-20260722:kmtotalizer:schema-1",
+          "cnf_sha256": "a633e5278f1de6ad560c2d01f3189f0e5a621135be47f56bdfd7ae90cd29c6d9",
+          "cpu_seconds": 60.060786072863266,
+          "independent_audit_receipt": {
+            "path": "artifacts/cardinality-encoding-benchmark/cardinality-encoding-20-leaf-20260722/t-10/kmtotalizer/cnf-audit.json",
+            "sha256": "46503cd281be96be581e2907e0c479d9dc97d0e2d504078e0c9dda0e85ccd3fc"
+          },
+          "method": "kmtotalizer",
+          "result_receipt": {
+            "path": "artifacts/cardinality-encoding-benchmark/cardinality-encoding-20-leaf-20260722/t-10/kmtotalizer/result.json",
+            "sha256": "aa9bdd9e45d513efddb72419e8d9286d54882321416c75cbca840d5dc3b7b0a0"
+          },
+          "run_id": "cardinality-encoding-20-leaf-20260722",
+          "runtime_seconds": 60.060786072863266,
+          "status": "unknown"
+        },
+        {
+          "cnf_encoding_revision": "cardinality-encoding-20-leaf-20260722:sequential:schema-1",
+          "cnf_sha256": "565838a7eb0ec986f504d50aabacff27191943b7385f3958bee2c95de38f7b69",
+          "cpu_seconds": 60.102987363003194,
+          "independent_audit_receipt": {
+            "path": "artifacts/cardinality-encoding-benchmark/cardinality-encoding-20-leaf-20260722/t-10/sequential/cnf-audit.json",
+            "sha256": "29c3053f5da4c753d35334efd16efead9ca011860ac36472acbf5d9d3bd4a238"
+          },
+          "method": "sequential",
+          "result_receipt": {
+            "path": "artifacts/cardinality-encoding-benchmark/cardinality-encoding-20-leaf-20260722/t-10/sequential/result.json",
+            "sha256": "be3404e90c4612537ac75e1412715d6afa0b1d29ae121b0ed1a5726b4da78d6a"
+          },
+          "run_id": "cardinality-encoding-20-leaf-20260722",
+          "runtime_seconds": 60.102987363003194,
+          "status": "unknown"
+        }
+      ],
       "root_index": 0,
       "secondary_index": 0,
       "source_path": "artifacts/pilot/link-orbit-root0-secondary-0-tertiary-10-10s",
       "tertiary_index": 10
     },
     {
+      "active_blocker_sha256": "ca2ebe74048cea4593e5fc377e441a7d51a10199bba8bc0c0ef7578f5a91eb2f",
       "assigned_methods": [
         "sequential",
         "kmtotalizer"
       ],
-      "final_coverage_status": "open",
+      "final_coverage_status": "closed_unsat",
       "id": "t-11",
       "inherited_result_sha256": "d790600c4d0c4ca11cedc46ea48536d7e8b7083ef033e13c8809139a2f332b7d",
       "kind": "tertiary",
-      "outcomes": [],
+      "outcomes": [
+        {
+          "cnf_encoding_revision": "cardinality-encoding-20-leaf-20260722:kmtotalizer:schema-1",
+          "cnf_sha256": "f404a63323223ecd2fe57f4315d2738bbdb9a78b4a89270b3a2a623abf9bdf3c",
+          "cpu_seconds": 60.01572133391164,
+          "independent_audit_receipt": {
+            "path": "artifacts/cardinality-encoding-benchmark/cardinality-encoding-20-leaf-20260722/t-11/kmtotalizer/cnf-audit.json",
+            "sha256": "0959d06a00ce15fe5e6b2458b5f62bd41dfff8af04480fed0aa985ee3054bd0b"
+          },
+          "method": "kmtotalizer",
+          "result_receipt": {
+            "path": "artifacts/cardinality-encoding-benchmark/cardinality-encoding-20-leaf-20260722/t-11/kmtotalizer/result.json",
+            "sha256": "321dad83fda6e5752d522ea0683c17703ef51700213d0a7ea53750366a9e66d7"
+          },
+          "run_id": "cardinality-encoding-20-leaf-20260722",
+          "runtime_seconds": 60.01572133391164,
+          "status": "unknown"
+        },
+        {
+          "cnf_encoding_revision": "cardinality-encoding-20-leaf-20260722:sequential:schema-1",
+          "cnf_sha256": "3e9d684c3149837fea82df1d5d49e005e128d40e532750dbe88b3246b848047e",
+          "cpu_seconds": 43.11737560713664,
+          "independent_audit_receipt": {
+            "path": "artifacts/cardinality-encoding-benchmark/cardinality-encoding-20-leaf-20260722/t-11/sequential/cnf-audit.json",
+            "sha256": "07e2e190d34987680de1ee61d5077ac6c1b0fbad9b0677a742e468b7471dce9d"
+          },
+          "method": "sequential",
+          "proof_bytes": 137655576,
+          "proof_sha256": "0cd39ef34eef0a244016208e38f7f946248842033a9b974d4fa41cfa8de7c137",
+          "replay_receipt": {
+            "path": "artifacts/cardinality-encoding-benchmark/cardinality-encoding-20-leaf-20260722/t-11/sequential/validation.json",
+            "sha256": "2e65c275606cee932307625790acc085c889b950df749c7006084099971eed57"
+          },
+          "result_receipt": {
+            "path": "artifacts/cardinality-encoding-benchmark/cardinality-encoding-20-leaf-20260722/t-11/sequential/result.json",
+            "sha256": "44eb442e9d73e04c4f29fc3f4ebdbe40d8e676101996afca61874c186a625a5e"
+          },
+          "run_id": "cardinality-encoding-20-leaf-20260722",
+          "runtime_seconds": 43.11737560713664,
+          "status": "unsat_certified"
+        }
+      ],
       "root_index": 0,
       "secondary_index": 0,
       "source_path": "artifacts/pilot/link-orbit-root0-secondary-0-tertiary-11-10s",
       "tertiary_index": 11
     },
     {
-      "assigned_methods": [],
+      "active_blocker_sha256": "ca2ebe74048cea4593e5fc377e441a7d51a10199bba8bc0c0ef7578f5a91eb2f",
+      "assigned_methods": [
+        "sequential"
+      ],
       "final_coverage_status": "open",
       "id": "t-12",
       "inherited_result_sha256": "705f5eee214ce5d2805f7e1986d67c9912d9033412f364838a3e5fe5965c17e4",
@@ -518,7 +793,10 @@
       "tertiary_index": 12
     },
     {
-      "assigned_methods": [],
+      "active_blocker_sha256": "ca2ebe74048cea4593e5fc377e441a7d51a10199bba8bc0c0ef7578f5a91eb2f",
+      "assigned_methods": [
+        "sequential"
+      ],
       "final_coverage_status": "open",
       "id": "t-13",
       "inherited_result_sha256": "96d9d45248ef3f9ca96ab583ae93edb33ee4d65aaeee082447f29a3ce100ae36",
@@ -530,7 +808,10 @@
       "tertiary_index": 13
     },
     {
-      "assigned_methods": [],
+      "active_blocker_sha256": "ca2ebe74048cea4593e5fc377e441a7d51a10199bba8bc0c0ef7578f5a91eb2f",
+      "assigned_methods": [
+        "sequential"
+      ],
       "final_coverage_status": "open",
       "id": "t-14",
       "inherited_result_sha256": "4148bd4522f6642bb751d09b59aed0d7e21ae5976928dca6b38588461999e274",
@@ -542,22 +823,67 @@
       "tertiary_index": 14
     },
     {
+      "active_blocker_sha256": "ca2ebe74048cea4593e5fc377e441a7d51a10199bba8bc0c0ef7578f5a91eb2f",
       "assigned_methods": [
         "sequential",
         "kmtotalizer"
       ],
-      "final_coverage_status": "open",
+      "final_coverage_status": "closed_unsat",
       "id": "t-15",
       "inherited_result_sha256": "c7b1209fb9124d813277645948eed4a5f16f997e866d54106e829bd541cfa5be",
       "kind": "tertiary",
-      "outcomes": [],
+      "outcomes": [
+        {
+          "cnf_encoding_revision": "cardinality-encoding-20-leaf-20260722:kmtotalizer:schema-1",
+          "cnf_sha256": "31c2e63321e99510fce2c1721b7d17e11b8019fa9f4a7d872652a20ef283156a",
+          "cpu_seconds": 60.0141908088699,
+          "independent_audit_receipt": {
+            "path": "artifacts/cardinality-encoding-benchmark/cardinality-encoding-20-leaf-20260722/t-15/kmtotalizer/cnf-audit.json",
+            "sha256": "5a459ae4f3fe28a6454548eb853fb9cd853cbfdde6e19d24c1f380d2be4a79f0"
+          },
+          "method": "kmtotalizer",
+          "result_receipt": {
+            "path": "artifacts/cardinality-encoding-benchmark/cardinality-encoding-20-leaf-20260722/t-15/kmtotalizer/result.json",
+            "sha256": "73a789493691f71123d70d4823badf7dfc039e9ab4d42f63e5ce558277a7bbc9"
+          },
+          "run_id": "cardinality-encoding-20-leaf-20260722",
+          "runtime_seconds": 60.0141908088699,
+          "status": "unknown"
+        },
+        {
+          "cnf_encoding_revision": "cardinality-encoding-20-leaf-20260722:sequential:schema-1",
+          "cnf_sha256": "717ea05e61e0dea6566c2e5db4215bf000fd57160ecd787f538653de4ea4e3da",
+          "cpu_seconds": 4.6624781710561365,
+          "independent_audit_receipt": {
+            "path": "artifacts/cardinality-encoding-benchmark/cardinality-encoding-20-leaf-20260722/t-15/sequential/cnf-audit.json",
+            "sha256": "b8504f372401e7394ce58d3edf540a95376bb2a997a3e16ede090b970b78b482"
+          },
+          "method": "sequential",
+          "proof_bytes": 17864687,
+          "proof_sha256": "e2cde3ec668a6fb403d5ea6eb2f74241cd5c1d70b94a81b9879a51575a1f90c7",
+          "replay_receipt": {
+            "path": "artifacts/cardinality-encoding-benchmark/cardinality-encoding-20-leaf-20260722/t-15/sequential/validation.json",
+            "sha256": "8c61206a5128dcc238a466829f518a5c30b986eff197a2e2345cb89a42fd7fdc"
+          },
+          "result_receipt": {
+            "path": "artifacts/cardinality-encoding-benchmark/cardinality-encoding-20-leaf-20260722/t-15/sequential/result.json",
+            "sha256": "916a245327595b3fea8a861d76c394e470366a39b7b6e02464c1dd31dd2dd4da"
+          },
+          "run_id": "cardinality-encoding-20-leaf-20260722",
+          "runtime_seconds": 4.6624781710561365,
+          "status": "unsat_certified"
+        }
+      ],
       "root_index": 0,
       "secondary_index": 0,
       "source_path": "artifacts/pilot/link-orbit-root0-secondary-0-tertiary-15-10s",
       "tertiary_index": 15
     },
     {
-      "assigned_methods": [],
+      "active_blocker_sha256": "ca2ebe74048cea4593e5fc377e441a7d51a10199bba8bc0c0ef7578f5a91eb2f",
+      "assigned_methods": [
+        "sequential"
+      ],
       "final_coverage_status": "open",
       "id": "t-16",
       "inherited_result_sha256": "2eccccad0f7ef41e5ccd88486c2f4f76fde373b62c811297ee314a640da0de66",
@@ -569,7 +895,10 @@
       "tertiary_index": 16
     },
     {
-      "assigned_methods": [],
+      "active_blocker_sha256": "ca2ebe74048cea4593e5fc377e441a7d51a10199bba8bc0c0ef7578f5a91eb2f",
+      "assigned_methods": [
+        "sequential"
+      ],
       "final_coverage_status": "open",
       "id": "t-17",
       "inherited_result_sha256": "07dd19e1b1ceb4cd4bd3fd8d6a0c3c7a9b4510628eeb27cb00ae9a712460b662",
@@ -581,7 +910,10 @@
       "tertiary_index": 17
     },
     {
-      "assigned_methods": [],
+      "active_blocker_sha256": "ca2ebe74048cea4593e5fc377e441a7d51a10199bba8bc0c0ef7578f5a91eb2f",
+      "assigned_methods": [
+        "sequential"
+      ],
       "final_coverage_status": "open",
       "id": "t-18",
       "inherited_result_sha256": "62347d53de2a8c0e166a4a0bad254422b7ff1f0d75836af76c2287a0c6dd4704",
@@ -593,7 +925,10 @@
       "tertiary_index": 18
     },
     {
-      "assigned_methods": [],
+      "active_blocker_sha256": "ca2ebe74048cea4593e5fc377e441a7d51a10199bba8bc0c0ef7578f5a91eb2f",
+      "assigned_methods": [
+        "sequential"
+      ],
       "final_coverage_status": "open",
       "id": "t-19",
       "inherited_result_sha256": "ee82129d9dc8bf75285f443d6d6fa8f01eb623eeff89c692ed2c8c356393c579",
@@ -605,22 +940,67 @@
       "tertiary_index": 19
     },
     {
+      "active_blocker_sha256": "ca2ebe74048cea4593e5fc377e441a7d51a10199bba8bc0c0ef7578f5a91eb2f",
       "assigned_methods": [
         "sequential",
         "kmtotalizer"
       ],
-      "final_coverage_status": "open",
+      "final_coverage_status": "closed_unsat",
       "id": "t-2",
       "inherited_result_sha256": "a8bcd9bc0b77ff4b345504041f47f0aa29da1d33e46b8fdf70727590ed09fdd4",
       "kind": "tertiary",
-      "outcomes": [],
+      "outcomes": [
+        {
+          "cnf_encoding_revision": "cardinality-encoding-20-leaf-20260722:kmtotalizer:schema-1",
+          "cnf_sha256": "de614f636b355f5e9e9f910251549b93167b59bf0a13dada66cc988f6b802362",
+          "cpu_seconds": 60.015379681950435,
+          "independent_audit_receipt": {
+            "path": "artifacts/cardinality-encoding-benchmark/cardinality-encoding-20-leaf-20260722/t-2/kmtotalizer/cnf-audit.json",
+            "sha256": "810f928aab16bb05df9b23e0d115c18e5f1fcaf25b4fc82ab3ada00ee1bfa069"
+          },
+          "method": "kmtotalizer",
+          "result_receipt": {
+            "path": "artifacts/cardinality-encoding-benchmark/cardinality-encoding-20-leaf-20260722/t-2/kmtotalizer/result.json",
+            "sha256": "b7465df15cc32c9c04ecd2b03a62682cd2810b25be36c0559fd163acd653fa8f"
+          },
+          "run_id": "cardinality-encoding-20-leaf-20260722",
+          "runtime_seconds": 60.015379681950435,
+          "status": "unknown"
+        },
+        {
+          "cnf_encoding_revision": "cardinality-encoding-20-leaf-20260722:sequential:schema-1",
+          "cnf_sha256": "c4a29166e7b0be28a90c8dff2f3767e4aaa858b38d60fbdf8971aa1f0cee5935",
+          "cpu_seconds": 37.844042759155855,
+          "independent_audit_receipt": {
+            "path": "artifacts/cardinality-encoding-benchmark/cardinality-encoding-20-leaf-20260722/t-2/sequential/cnf-audit.json",
+            "sha256": "35ffbb63c71caca414a5203d18711433f44768d1a88da85067d3cd840e64b21c"
+          },
+          "method": "sequential",
+          "proof_bytes": 101080595,
+          "proof_sha256": "cfe7aba017b149b9604d009ffee788867e5ac3bc6a01425e63304babf208372f",
+          "replay_receipt": {
+            "path": "artifacts/cardinality-encoding-benchmark/cardinality-encoding-20-leaf-20260722/t-2/sequential/validation.json",
+            "sha256": "c4fab0595f4c74c95cc6dd62336170cffb9ac0787c0dc9deb725b9b5821009c3"
+          },
+          "result_receipt": {
+            "path": "artifacts/cardinality-encoding-benchmark/cardinality-encoding-20-leaf-20260722/t-2/sequential/result.json",
+            "sha256": "1118434ef550c87eb8cf905cb35d2b7e8a581e641e70e24ff65c0af08b640c18"
+          },
+          "run_id": "cardinality-encoding-20-leaf-20260722",
+          "runtime_seconds": 37.844042759155855,
+          "status": "unsat_certified"
+        }
+      ],
       "root_index": 0,
       "secondary_index": 0,
       "source_path": "artifacts/pilot/link-orbit-root0-secondary-0-tertiary-2-10s",
       "tertiary_index": 2
     },
     {
-      "assigned_methods": [],
+      "active_blocker_sha256": "ca2ebe74048cea4593e5fc377e441a7d51a10199bba8bc0c0ef7578f5a91eb2f",
+      "assigned_methods": [
+        "sequential"
+      ],
       "final_coverage_status": "open",
       "id": "t-20",
       "inherited_result_sha256": "0cfabdb6fa780a98da726f679ab6f97536569af40e36445e63ebbc0035e7e5f0",
@@ -632,7 +1012,10 @@
       "tertiary_index": 20
     },
     {
-      "assigned_methods": [],
+      "active_blocker_sha256": "ca2ebe74048cea4593e5fc377e441a7d51a10199bba8bc0c0ef7578f5a91eb2f",
+      "assigned_methods": [
+        "sequential"
+      ],
       "final_coverage_status": "open",
       "id": "t-21",
       "inherited_result_sha256": "ddca90e6822a3db17e4dd7dd2c237dd5baaf75c0029993ecea7dc6b2e6e893f3",
@@ -644,7 +1027,10 @@
       "tertiary_index": 21
     },
     {
-      "assigned_methods": [],
+      "active_blocker_sha256": "ca2ebe74048cea4593e5fc377e441a7d51a10199bba8bc0c0ef7578f5a91eb2f",
+      "assigned_methods": [
+        "sequential"
+      ],
       "final_coverage_status": "open",
       "id": "t-22",
       "inherited_result_sha256": "061f0fdda72dc942660a38f67dd43f381bfa889fd4a1312994b265d1b06f5782",
@@ -656,7 +1042,10 @@
       "tertiary_index": 22
     },
     {
-      "assigned_methods": [],
+      "active_blocker_sha256": "ca2ebe74048cea4593e5fc377e441a7d51a10199bba8bc0c0ef7578f5a91eb2f",
+      "assigned_methods": [
+        "sequential"
+      ],
       "final_coverage_status": "open",
       "id": "t-23",
       "inherited_result_sha256": "7e6cbcf4b49998ca1533d4524c2060a10b07a874f27d1d475a835efcbe611846",
@@ -668,22 +1057,73 @@
       "tertiary_index": 23
     },
     {
+      "active_blocker_sha256": "ca2ebe74048cea4593e5fc377e441a7d51a10199bba8bc0c0ef7578f5a91eb2f",
       "assigned_methods": [
         "sequential",
         "kmtotalizer"
       ],
-      "final_coverage_status": "open",
+      "final_coverage_status": "closed_unsat",
       "id": "t-24",
       "inherited_result_sha256": "115535b982efecce294056f90dfcbb9f96413d2e4e21878ae67359d8057294b5",
       "kind": "tertiary",
-      "outcomes": [],
+      "outcomes": [
+        {
+          "cnf_encoding_revision": "cardinality-encoding-20-leaf-20260722:kmtotalizer:schema-1",
+          "cnf_sha256": "19d188fe529f15716dcfe04d16997125ab37b012fb18258c8d5eb5fed3494d31",
+          "cpu_seconds": 50.35563337197527,
+          "independent_audit_receipt": {
+            "path": "artifacts/cardinality-encoding-benchmark/cardinality-encoding-20-leaf-20260722/t-24/kmtotalizer/cnf-audit.json",
+            "sha256": "7020fe4c2becc53f0142afb52e88e02d676096063e11813f2c0aef44545668b8"
+          },
+          "method": "kmtotalizer",
+          "proof_bytes": 126279404,
+          "proof_sha256": "bc745601667f4e353cc100429e642c1760e045e500258121bee3b889ba8ec25c",
+          "replay_receipt": {
+            "path": "artifacts/cardinality-encoding-benchmark/cardinality-encoding-20-leaf-20260722/t-24/kmtotalizer/validation.json",
+            "sha256": "88b4fbf940d483027fd4991a7889d4356c5f8c7fcb1f6bf6fa715c7b0a19b094"
+          },
+          "result_receipt": {
+            "path": "artifacts/cardinality-encoding-benchmark/cardinality-encoding-20-leaf-20260722/t-24/kmtotalizer/result.json",
+            "sha256": "4200ed9ff6b1b5e8b87ebf797a5abfc9f105fc350d0dad119b48c52b46205c6b"
+          },
+          "run_id": "cardinality-encoding-20-leaf-20260722",
+          "runtime_seconds": 50.35563337197527,
+          "status": "unsat_certified"
+        },
+        {
+          "cnf_encoding_revision": "cardinality-encoding-20-leaf-20260722:sequential:schema-1",
+          "cnf_sha256": "ebe741db01dd2fcef2ca84873ded42a030162028f1f10401730c5ec33ea4e2ad",
+          "cpu_seconds": 8.249422766966745,
+          "independent_audit_receipt": {
+            "path": "artifacts/cardinality-encoding-benchmark/cardinality-encoding-20-leaf-20260722/t-24/sequential/cnf-audit.json",
+            "sha256": "e783b16f8bfc17e6e992fc05d15eeaab0adf243078155d2586d5b4676add1518"
+          },
+          "method": "sequential",
+          "proof_bytes": 36422241,
+          "proof_sha256": "8ccad2b29db9b17eaf3368a895fa43058af602b101efd648acb4091aab66ff6b",
+          "replay_receipt": {
+            "path": "artifacts/cardinality-encoding-benchmark/cardinality-encoding-20-leaf-20260722/t-24/sequential/validation.json",
+            "sha256": "92419a224233529eb5e745e497f1f3838146e5b2fb38841d5062a9117b92161b"
+          },
+          "result_receipt": {
+            "path": "artifacts/cardinality-encoding-benchmark/cardinality-encoding-20-leaf-20260722/t-24/sequential/result.json",
+            "sha256": "74783a4a1b36ac993fa9d94be28aa1aa6563504c05149f2af0de4e75237eb93d"
+          },
+          "run_id": "cardinality-encoding-20-leaf-20260722",
+          "runtime_seconds": 8.249422766966745,
+          "status": "unsat_certified"
+        }
+      ],
       "root_index": 0,
       "secondary_index": 0,
       "source_path": "artifacts/pilot/link-orbit-root0-secondary-0-tertiary-24-10s",
       "tertiary_index": 24
     },
     {
-      "assigned_methods": [],
+      "active_blocker_sha256": "ca2ebe74048cea4593e5fc377e441a7d51a10199bba8bc0c0ef7578f5a91eb2f",
+      "assigned_methods": [
+        "sequential"
+      ],
       "final_coverage_status": "open",
       "id": "t-25",
       "inherited_result_sha256": "87460e3e215493c5c0c3aa1288853a204c3a0cd034672e883f5db9abab8bc48d",
@@ -695,37 +1135,136 @@
       "tertiary_index": 25
     },
     {
+      "active_blocker_sha256": "ca2ebe74048cea4593e5fc377e441a7d51a10199bba8bc0c0ef7578f5a91eb2f",
       "assigned_methods": [
         "sequential",
         "kmtotalizer"
       ],
-      "final_coverage_status": "open",
+      "final_coverage_status": "closed_unsat",
       "id": "t-26",
       "inherited_result_sha256": "a9723060afe8611ea5d743b6225b793fb095e1a1c2f3adb64f11a1fec079efcc",
       "kind": "tertiary",
-      "outcomes": [],
+      "outcomes": [
+        {
+          "cnf_encoding_revision": "cardinality-encoding-20-leaf-20260722:kmtotalizer:schema-1",
+          "cnf_sha256": "da3ec10921e9242949ebd64c7281796349b3aa66f421dedf0f3d7b08bfbd08ff",
+          "cpu_seconds": 9.517389281885698,
+          "independent_audit_receipt": {
+            "path": "artifacts/cardinality-encoding-benchmark/cardinality-encoding-20-leaf-20260722/t-26/kmtotalizer/cnf-audit.json",
+            "sha256": "47d63016dab12f053b9e66e140b2dbd30337b122e9aab1f55f0b4158a1e351ea"
+          },
+          "method": "kmtotalizer",
+          "proof_bytes": 33963939,
+          "proof_sha256": "c7d70b4c23bcaeb0959a6c108f5f2366cb4f042a3d24992b95f2a9488567c9a1",
+          "replay_receipt": {
+            "path": "artifacts/cardinality-encoding-benchmark/cardinality-encoding-20-leaf-20260722/t-26/kmtotalizer/validation.json",
+            "sha256": "b16dfeb4d1390f14c5e3f423d4c8bc11dee4d21f7c531da822524e1276ca0699"
+          },
+          "result_receipt": {
+            "path": "artifacts/cardinality-encoding-benchmark/cardinality-encoding-20-leaf-20260722/t-26/kmtotalizer/result.json",
+            "sha256": "fa17572dd1a154510c9ecc52cbc12932da82940d16ac0d77d35bb1f0654340d6"
+          },
+          "run_id": "cardinality-encoding-20-leaf-20260722",
+          "runtime_seconds": 9.517389281885698,
+          "status": "unsat_certified"
+        },
+        {
+          "cnf_encoding_revision": "cardinality-encoding-20-leaf-20260722:sequential:schema-1",
+          "cnf_sha256": "6a14b5f6c938c2412884a821a13b51d94b3a434afa46250ef4d71a855a65709f",
+          "cpu_seconds": 2.952820026082918,
+          "independent_audit_receipt": {
+            "path": "artifacts/cardinality-encoding-benchmark/cardinality-encoding-20-leaf-20260722/t-26/sequential/cnf-audit.json",
+            "sha256": "58e2d31de9e648aaafcbd7f8378235401e7e16274335a0268af827e5afb26b29"
+          },
+          "method": "sequential",
+          "proof_bytes": 16418396,
+          "proof_sha256": "eff461d55f12de2c4676c28015fe132efdbf943980455d73c2b0e55aa09ad0b1",
+          "replay_receipt": {
+            "path": "artifacts/cardinality-encoding-benchmark/cardinality-encoding-20-leaf-20260722/t-26/sequential/validation.json",
+            "sha256": "84c64a35c2316ce4ca2d186bfec17d76a0b471e621e8396e4d4e99e221c1a980"
+          },
+          "result_receipt": {
+            "path": "artifacts/cardinality-encoding-benchmark/cardinality-encoding-20-leaf-20260722/t-26/sequential/result.json",
+            "sha256": "98aeacfa963fdec6be4017a1130aa0e37a86fed3a23fc5ae9844ba43a85040f6"
+          },
+          "run_id": "cardinality-encoding-20-leaf-20260722",
+          "runtime_seconds": 2.952820026082918,
+          "status": "unsat_certified"
+        }
+      ],
       "root_index": 0,
       "secondary_index": 0,
       "source_path": "artifacts/pilot/link-orbit-root0-secondary-0-tertiary-26-10s",
       "tertiary_index": 26
     },
     {
+      "active_blocker_sha256": "ca2ebe74048cea4593e5fc377e441a7d51a10199bba8bc0c0ef7578f5a91eb2f",
       "assigned_methods": [
         "sequential",
         "kmtotalizer"
       ],
-      "final_coverage_status": "open",
+      "final_coverage_status": "closed_unsat",
       "id": "t-27",
       "inherited_result_sha256": "43340c20a011abfc2b96b03005861a90cca08e5f0e26d16ac6d9e43bf87868cf",
       "kind": "tertiary",
-      "outcomes": [],
+      "outcomes": [
+        {
+          "cnf_encoding_revision": "cardinality-encoding-20-leaf-20260722:kmtotalizer:schema-1",
+          "cnf_sha256": "51e23e7eea8fa3072cb0648fae20746726b4da189b6a06655a75ed5fabdd9e2c",
+          "cpu_seconds": 55.89055839390494,
+          "independent_audit_receipt": {
+            "path": "artifacts/cardinality-encoding-benchmark/cardinality-encoding-20-leaf-20260722/t-27/kmtotalizer/cnf-audit.json",
+            "sha256": "159e5b929ede461f1fb45d1567ef51331525a272eaa46c97a12fe43aadfe4ee1"
+          },
+          "method": "kmtotalizer",
+          "proof_bytes": 55116348,
+          "proof_sha256": "ecc0434de4793064c9b4de27209475f5f302e837480a39e94d5347fedd8c56eb",
+          "replay_receipt": {
+            "path": "artifacts/cardinality-encoding-benchmark/cardinality-encoding-20-leaf-20260722/t-27/kmtotalizer/validation.json",
+            "sha256": "ca9cb68aaa0151d24dec2dc18bb42f946f7b6a2b846a7ec4783322c3f0d8de9c"
+          },
+          "result_receipt": {
+            "path": "artifacts/cardinality-encoding-benchmark/cardinality-encoding-20-leaf-20260722/t-27/kmtotalizer/result.json",
+            "sha256": "a65d866625e69a1ae42843d8076d8b6c446b4b83a2dec8d9a149dc642b4c0466"
+          },
+          "run_id": "cardinality-encoding-20-leaf-20260722",
+          "runtime_seconds": 55.89055839390494,
+          "status": "unsat_certified"
+        },
+        {
+          "cnf_encoding_revision": "cardinality-encoding-20-leaf-20260722:sequential:schema-1",
+          "cnf_sha256": "71ba65cdc01e12edd7206a9e9cb8edf9db6d0455779d1f0cc2cd80316d7d1a6c",
+          "cpu_seconds": 15.456603019032627,
+          "independent_audit_receipt": {
+            "path": "artifacts/cardinality-encoding-benchmark/cardinality-encoding-20-leaf-20260722/t-27/sequential/cnf-audit.json",
+            "sha256": "3072c80efae2119b98921b53e5c0fa3cff0ea9616cd495cfa53c6a45cec62801"
+          },
+          "method": "sequential",
+          "proof_bytes": 19236843,
+          "proof_sha256": "c20e23e458f79c4eef7b0b43daa98eb660b72a1d7b2c1a8e5e62d8e333413726",
+          "replay_receipt": {
+            "path": "artifacts/cardinality-encoding-benchmark/cardinality-encoding-20-leaf-20260722/t-27/sequential/validation.json",
+            "sha256": "1f1e98d9111b71ec7f999572ab855bd7a00835b5700661347b721901f7977cb9"
+          },
+          "result_receipt": {
+            "path": "artifacts/cardinality-encoding-benchmark/cardinality-encoding-20-leaf-20260722/t-27/sequential/result.json",
+            "sha256": "243f8f62cf6ff4b03fe47c15660178d7ecd2ca51fe230c62162832220e90478a"
+          },
+          "run_id": "cardinality-encoding-20-leaf-20260722",
+          "runtime_seconds": 15.456603019032627,
+          "status": "unsat_certified"
+        }
+      ],
       "root_index": 0,
       "secondary_index": 0,
       "source_path": "artifacts/pilot/link-orbit-root0-secondary-0-tertiary-27-10s",
       "tertiary_index": 27
     },
     {
-      "assigned_methods": [],
+      "active_blocker_sha256": "ca2ebe74048cea4593e5fc377e441a7d51a10199bba8bc0c0ef7578f5a91eb2f",
+      "assigned_methods": [
+        "sequential"
+      ],
       "final_coverage_status": "open",
       "id": "t-28",
       "inherited_result_sha256": "4ad6e3924be845fef10a537af0c056715d5d852439b5a3378f55722305aee402",
@@ -737,22 +1276,73 @@
       "tertiary_index": 28
     },
     {
+      "active_blocker_sha256": "ca2ebe74048cea4593e5fc377e441a7d51a10199bba8bc0c0ef7578f5a91eb2f",
       "assigned_methods": [
         "sequential",
         "kmtotalizer"
       ],
-      "final_coverage_status": "open",
+      "final_coverage_status": "closed_unsat",
       "id": "t-29",
       "inherited_result_sha256": "bac5988b02557aac3faa9ad264c0ba6e7e6daf398241a9574d1c12622e6d826b",
       "kind": "tertiary",
-      "outcomes": [],
+      "outcomes": [
+        {
+          "cnf_encoding_revision": "cardinality-encoding-20-leaf-20260722:kmtotalizer:schema-1",
+          "cnf_sha256": "93b1168b02522ac2842fbae9eefa4daa1fddeb80cf32b25b83b348a2be4e2ed2",
+          "cpu_seconds": 2.267126001883298,
+          "independent_audit_receipt": {
+            "path": "artifacts/cardinality-encoding-benchmark/cardinality-encoding-20-leaf-20260722/t-29/kmtotalizer/cnf-audit.json",
+            "sha256": "d4c80bc09aa0ba789ed7dc1bfe6d5ddefcc46133c088db8d64828278b436dae0"
+          },
+          "method": "kmtotalizer",
+          "proof_bytes": 10203169,
+          "proof_sha256": "7aa58220c7df880c1902ddc9bfa0d250e921ab43324d6bcdf4d8afce1ffd169c",
+          "replay_receipt": {
+            "path": "artifacts/cardinality-encoding-benchmark/cardinality-encoding-20-leaf-20260722/t-29/kmtotalizer/validation.json",
+            "sha256": "c64fddfca6fe82f3d0e3283edaa05bca573a996019b41771086c19b1f30a22ae"
+          },
+          "result_receipt": {
+            "path": "artifacts/cardinality-encoding-benchmark/cardinality-encoding-20-leaf-20260722/t-29/kmtotalizer/result.json",
+            "sha256": "7949fa7b3889e92f509ec140173069af0722bc707146f8322f2cbf49b4750b7d"
+          },
+          "run_id": "cardinality-encoding-20-leaf-20260722",
+          "runtime_seconds": 2.267126001883298,
+          "status": "unsat_certified"
+        },
+        {
+          "cnf_encoding_revision": "cardinality-encoding-20-leaf-20260722:sequential:schema-1",
+          "cnf_sha256": "185e237644dadeff10af0f222bd40f645c9b8f661e4b54f23396e53b3b70d86a",
+          "cpu_seconds": 3.1027091939467937,
+          "independent_audit_receipt": {
+            "path": "artifacts/cardinality-encoding-benchmark/cardinality-encoding-20-leaf-20260722/t-29/sequential/cnf-audit.json",
+            "sha256": "ec925180ece64fb64b3cb1c91b647d5a7e9465b00c5c0958891b67a61a1c282c"
+          },
+          "method": "sequential",
+          "proof_bytes": 17119259,
+          "proof_sha256": "71bc74cef25261387cbc6de5f578f1ddc6cc5cc4b107bfbeca15b2e8e8518efa",
+          "replay_receipt": {
+            "path": "artifacts/cardinality-encoding-benchmark/cardinality-encoding-20-leaf-20260722/t-29/sequential/validation.json",
+            "sha256": "eb0aababca8dcdb8ed4753052fbaf9c77f91af38f3c918f23a41226bb756b849"
+          },
+          "result_receipt": {
+            "path": "artifacts/cardinality-encoding-benchmark/cardinality-encoding-20-leaf-20260722/t-29/sequential/result.json",
+            "sha256": "818354bc59a431987c84121db20295a1e8dc65a7a12ad32eb866b37ec9de1e80"
+          },
+          "run_id": "cardinality-encoding-20-leaf-20260722",
+          "runtime_seconds": 3.1027091939467937,
+          "status": "unsat_certified"
+        }
+      ],
       "root_index": 0,
       "secondary_index": 0,
       "source_path": "artifacts/pilot/link-orbit-root0-secondary-0-tertiary-29-10s",
       "tertiary_index": 29
     },
     {
-      "assigned_methods": [],
+      "active_blocker_sha256": "ca2ebe74048cea4593e5fc377e441a7d51a10199bba8bc0c0ef7578f5a91eb2f",
+      "assigned_methods": [
+        "sequential"
+      ],
       "final_coverage_status": "open",
       "id": "t-3",
       "inherited_result_sha256": "6098ad35988fbadcd267e72d92fb793c21bcccafa26076eb846879ea99470f76",
@@ -764,22 +1354,73 @@
       "tertiary_index": 3
     },
     {
+      "active_blocker_sha256": "ca2ebe74048cea4593e5fc377e441a7d51a10199bba8bc0c0ef7578f5a91eb2f",
       "assigned_methods": [
         "sequential",
         "kmtotalizer"
       ],
-      "final_coverage_status": "open",
+      "final_coverage_status": "closed_unsat",
       "id": "t-30",
       "inherited_result_sha256": "a37166a8614f8b254f2be0ef7c71f3e9ce96dfd78269a535daf334b0ccd3936a",
       "kind": "tertiary",
-      "outcomes": [],
+      "outcomes": [
+        {
+          "cnf_encoding_revision": "cardinality-encoding-20-leaf-20260722:kmtotalizer:schema-1",
+          "cnf_sha256": "5f25f5132a9a37fd236b1be57461260d0a60e37b1bef1f89d7dd280bb71bfe81",
+          "cpu_seconds": 8.565276428125799,
+          "independent_audit_receipt": {
+            "path": "artifacts/cardinality-encoding-benchmark/cardinality-encoding-20-leaf-20260722/t-30/kmtotalizer/cnf-audit.json",
+            "sha256": "4ebcb5f15fde57a090fb56c05446210f38516c878fdec12583cbf086e117d30b"
+          },
+          "method": "kmtotalizer",
+          "proof_bytes": 29799767,
+          "proof_sha256": "5c8c91e0d8cbf3771fd4db792eaeca52db2538ad3cb166de575361ce8e3b9706",
+          "replay_receipt": {
+            "path": "artifacts/cardinality-encoding-benchmark/cardinality-encoding-20-leaf-20260722/t-30/kmtotalizer/validation.json",
+            "sha256": "22e9743a054d2fcc5caa24f5759bee7b5b1fa5bf169c59198d2566293f1666c5"
+          },
+          "result_receipt": {
+            "path": "artifacts/cardinality-encoding-benchmark/cardinality-encoding-20-leaf-20260722/t-30/kmtotalizer/result.json",
+            "sha256": "9bfb17252999b1d16cef3e2722d7f847ea50d99b15be94b5ebcc4e7dbb64fb3a"
+          },
+          "run_id": "cardinality-encoding-20-leaf-20260722",
+          "runtime_seconds": 8.565276428125799,
+          "status": "unsat_certified"
+        },
+        {
+          "cnf_encoding_revision": "cardinality-encoding-20-leaf-20260722:sequential:schema-1",
+          "cnf_sha256": "f227f8e7e2b12df55252bf68042725cea35eab2d338859558d4832c00c32817e",
+          "cpu_seconds": 1.80472875200212,
+          "independent_audit_receipt": {
+            "path": "artifacts/cardinality-encoding-benchmark/cardinality-encoding-20-leaf-20260722/t-30/sequential/cnf-audit.json",
+            "sha256": "36ea09c0e383982d9642fb01afabe647c1372a99c566f076fa1dcaf2b1197d44"
+          },
+          "method": "sequential",
+          "proof_bytes": 10295485,
+          "proof_sha256": "5d56049c825eb4ffc0039946d2dbaaf79af405af439033038de6092200358a9f",
+          "replay_receipt": {
+            "path": "artifacts/cardinality-encoding-benchmark/cardinality-encoding-20-leaf-20260722/t-30/sequential/validation.json",
+            "sha256": "e695f7e91baca88a1bba4ffe2801e680e28db5f226081fdea577f1ba6884ecbc"
+          },
+          "result_receipt": {
+            "path": "artifacts/cardinality-encoding-benchmark/cardinality-encoding-20-leaf-20260722/t-30/sequential/result.json",
+            "sha256": "b8a13ab4510461d82c11e80d1a90f0941ae58709ffc4cc7acb1bd28511f04492"
+          },
+          "run_id": "cardinality-encoding-20-leaf-20260722",
+          "runtime_seconds": 1.80472875200212,
+          "status": "unsat_certified"
+        }
+      ],
       "root_index": 0,
       "secondary_index": 0,
       "source_path": "artifacts/pilot/link-orbit-root0-secondary-0-tertiary-30-10s",
       "tertiary_index": 30
     },
     {
-      "assigned_methods": [],
+      "active_blocker_sha256": "ca2ebe74048cea4593e5fc377e441a7d51a10199bba8bc0c0ef7578f5a91eb2f",
+      "assigned_methods": [
+        "sequential"
+      ],
       "final_coverage_status": "open",
       "id": "t-31",
       "inherited_result_sha256": "931b397e4a3c500d0de193278ba9a9f372391863381aaed1a6625ac579caca81",
@@ -791,22 +1432,73 @@
       "tertiary_index": 31
     },
     {
+      "active_blocker_sha256": "ca2ebe74048cea4593e5fc377e441a7d51a10199bba8bc0c0ef7578f5a91eb2f",
       "assigned_methods": [
         "sequential",
         "kmtotalizer"
       ],
-      "final_coverage_status": "open",
+      "final_coverage_status": "closed_unsat",
       "id": "t-32",
       "inherited_result_sha256": "36a52b2cef9bdf1ffdda3d9f46ced0c22c7fc5bbc0da992b116b31d262f7f266",
       "kind": "tertiary",
-      "outcomes": [],
+      "outcomes": [
+        {
+          "cnf_encoding_revision": "cardinality-encoding-20-leaf-20260722:kmtotalizer:schema-1",
+          "cnf_sha256": "9e20a34d1bb54a33670150a63cfc1936f4d6205b99b90bbde6b19999f650d7d1",
+          "cpu_seconds": 10.38451839494519,
+          "independent_audit_receipt": {
+            "path": "artifacts/cardinality-encoding-benchmark/cardinality-encoding-20-leaf-20260722/t-32/kmtotalizer/cnf-audit.json",
+            "sha256": "8881706bfd3f6aa315c956e9d6c0b7afeb5624665818fb05c5d5012cf51ecfd7"
+          },
+          "method": "kmtotalizer",
+          "proof_bytes": 39816074,
+          "proof_sha256": "dc52e78ef864402c631302fe47fe204356d5b39d1ef3b36cfddc9dbffe49ce29",
+          "replay_receipt": {
+            "path": "artifacts/cardinality-encoding-benchmark/cardinality-encoding-20-leaf-20260722/t-32/kmtotalizer/validation.json",
+            "sha256": "ba2e50e1f3ebcceba0384b73a2284e0bbad99c21b71463fbfee56e56d18bbf9b"
+          },
+          "result_receipt": {
+            "path": "artifacts/cardinality-encoding-benchmark/cardinality-encoding-20-leaf-20260722/t-32/kmtotalizer/result.json",
+            "sha256": "e8f6ec7e7cebb84ef9c9caee487dfc152f310eabbc107bff43aebf306707454c"
+          },
+          "run_id": "cardinality-encoding-20-leaf-20260722",
+          "runtime_seconds": 10.38451839494519,
+          "status": "unsat_certified"
+        },
+        {
+          "cnf_encoding_revision": "cardinality-encoding-20-leaf-20260722:sequential:schema-1",
+          "cnf_sha256": "add76481451a3ca4b3d7f80820a8aacb59a9de51ef045248d092cd1e85cc12e9",
+          "cpu_seconds": 2.690549463033676,
+          "independent_audit_receipt": {
+            "path": "artifacts/cardinality-encoding-benchmark/cardinality-encoding-20-leaf-20260722/t-32/sequential/cnf-audit.json",
+            "sha256": "8d1a6072f10b71f374cd051c4dc11ff0f195199112664b38b4e22e84e44e19cd"
+          },
+          "method": "sequential",
+          "proof_bytes": 14992424,
+          "proof_sha256": "26a62ecebe5de973eca9c9d8b0b969a32a2efe90845d510a88bd91cc9427c610",
+          "replay_receipt": {
+            "path": "artifacts/cardinality-encoding-benchmark/cardinality-encoding-20-leaf-20260722/t-32/sequential/validation.json",
+            "sha256": "46e3a66fa0f3e875ba4c6d5f1bdc8e04777b1a8d2bf6cdbe04f3df3abec12cb8"
+          },
+          "result_receipt": {
+            "path": "artifacts/cardinality-encoding-benchmark/cardinality-encoding-20-leaf-20260722/t-32/sequential/result.json",
+            "sha256": "9c4a55de3ad601318ca1e5f561318e93ef596f01fbd877e89ef26c0169e032a4"
+          },
+          "run_id": "cardinality-encoding-20-leaf-20260722",
+          "runtime_seconds": 2.690549463033676,
+          "status": "unsat_certified"
+        }
+      ],
       "root_index": 0,
       "secondary_index": 0,
       "source_path": "artifacts/pilot/link-orbit-root0-secondary-0-tertiary-32-10s",
       "tertiary_index": 32
     },
     {
-      "assigned_methods": [],
+      "active_blocker_sha256": "ca2ebe74048cea4593e5fc377e441a7d51a10199bba8bc0c0ef7578f5a91eb2f",
+      "assigned_methods": [
+        "sequential"
+      ],
       "final_coverage_status": "open",
       "id": "t-4",
       "inherited_result_sha256": "045e10a68c0335fc1185ab59a2ea7566476c8e78d3ee0d6f10c9dd95e55e4e14",
@@ -818,37 +1510,124 @@
       "tertiary_index": 4
     },
     {
+      "active_blocker_sha256": "ca2ebe74048cea4593e5fc377e441a7d51a10199bba8bc0c0ef7578f5a91eb2f",
       "assigned_methods": [
         "sequential",
         "kmtotalizer"
       ],
-      "final_coverage_status": "open",
+      "final_coverage_status": "closed_unsat",
       "id": "t-5",
       "inherited_result_sha256": "283d85e125e53a2254765e147fa57ca9a63d20493d411d05ac4cbcbf6c31746a",
       "kind": "tertiary",
-      "outcomes": [],
+      "outcomes": [
+        {
+          "cnf_encoding_revision": "cardinality-encoding-20-leaf-20260722:kmtotalizer:schema-1",
+          "cnf_sha256": "dfd22edcec9a6f717eb69a74a6b062a8b2978de1a5e8459f3a326a8ff75cc7d0",
+          "cpu_seconds": 60.017614955082536,
+          "independent_audit_receipt": {
+            "path": "artifacts/cardinality-encoding-benchmark/cardinality-encoding-20-leaf-20260722/t-5/kmtotalizer/cnf-audit.json",
+            "sha256": "d16549c3df973b11ab771048baba2b506817b2a6f63d8e67a998135987cf6645"
+          },
+          "method": "kmtotalizer",
+          "result_receipt": {
+            "path": "artifacts/cardinality-encoding-benchmark/cardinality-encoding-20-leaf-20260722/t-5/kmtotalizer/result.json",
+            "sha256": "b57c181657eb13022c95481ca109af5003f229eccf3d7af0b6249e02b456114e"
+          },
+          "run_id": "cardinality-encoding-20-leaf-20260722",
+          "runtime_seconds": 60.017614955082536,
+          "status": "unknown"
+        },
+        {
+          "cnf_encoding_revision": "cardinality-encoding-20-leaf-20260722:sequential:schema-1",
+          "cnf_sha256": "69cfc4fbe3c9f92c5baf5f8112a5c79c53bb9b08cc6be55251579f7325f7d04b",
+          "cpu_seconds": 26.434489270905033,
+          "independent_audit_receipt": {
+            "path": "artifacts/cardinality-encoding-benchmark/cardinality-encoding-20-leaf-20260722/t-5/sequential/cnf-audit.json",
+            "sha256": "3c338467a387b27cd5b2aefb3f2bef99c2a32c97429b1f420fd08f0c6308a87a"
+          },
+          "method": "sequential",
+          "proof_bytes": 68950125,
+          "proof_sha256": "520075344ae5a55dddbcc68dfa0d1ce0a9e88360388eb873d6298457668c11a5",
+          "replay_receipt": {
+            "path": "artifacts/cardinality-encoding-benchmark/cardinality-encoding-20-leaf-20260722/t-5/sequential/validation.json",
+            "sha256": "3b3ca0ce568538b25cf2a74b2c2b60699cf5b304fdc151c5948dc225f01437f1"
+          },
+          "result_receipt": {
+            "path": "artifacts/cardinality-encoding-benchmark/cardinality-encoding-20-leaf-20260722/t-5/sequential/result.json",
+            "sha256": "7358356fed7d05406e6d428e172876442c54afa8673e3466f73582490668a615"
+          },
+          "run_id": "cardinality-encoding-20-leaf-20260722",
+          "runtime_seconds": 26.434489270905033,
+          "status": "unsat_certified"
+        }
+      ],
       "root_index": 0,
       "secondary_index": 0,
       "source_path": "artifacts/pilot/link-orbit-root0-secondary-0-tertiary-5-10s",
       "tertiary_index": 5
     },
     {
+      "active_blocker_sha256": "ca2ebe74048cea4593e5fc377e441a7d51a10199bba8bc0c0ef7578f5a91eb2f",
       "assigned_methods": [
         "sequential",
         "kmtotalizer"
       ],
-      "final_coverage_status": "open",
+      "final_coverage_status": "closed_unsat",
       "id": "t-6",
       "inherited_result_sha256": "9305a18f7cc774936a24f5093b7de0ab919ef714ff4fdc30e10876b719e5a03b",
       "kind": "tertiary",
-      "outcomes": [],
+      "outcomes": [
+        {
+          "cnf_encoding_revision": "cardinality-encoding-20-leaf-20260722:kmtotalizer:schema-1",
+          "cnf_sha256": "d03ab7b81567ae205d6c777f036bc5b4d031821a83b83be671030a7882c0c123",
+          "cpu_seconds": 60.02455227682367,
+          "independent_audit_receipt": {
+            "path": "artifacts/cardinality-encoding-benchmark/cardinality-encoding-20-leaf-20260722/t-6/kmtotalizer/cnf-audit.json",
+            "sha256": "557c4fc0d0f8996dac23e66c8f0f661bb8e19c2bf0da4a5fda74e09a83525668"
+          },
+          "method": "kmtotalizer",
+          "result_receipt": {
+            "path": "artifacts/cardinality-encoding-benchmark/cardinality-encoding-20-leaf-20260722/t-6/kmtotalizer/result.json",
+            "sha256": "33dc92bcd17c21a8fb8c4e5c2f07dd7bfa9a2ee36bf5c7f1479b11e8a32fb155"
+          },
+          "run_id": "cardinality-encoding-20-leaf-20260722",
+          "runtime_seconds": 60.02455227682367,
+          "status": "unknown"
+        },
+        {
+          "cnf_encoding_revision": "cardinality-encoding-20-leaf-20260722:sequential:schema-1",
+          "cnf_sha256": "d40f6dbd2265d1afad94f125714deb3c840992342260dec30e563f2a975dc1e5",
+          "cpu_seconds": 44.03150949906558,
+          "independent_audit_receipt": {
+            "path": "artifacts/cardinality-encoding-benchmark/cardinality-encoding-20-leaf-20260722/t-6/sequential/cnf-audit.json",
+            "sha256": "55fb58c4a9ecef30ff0d88fc895ce5c21c533b22e1d8046ab257cb379e16c631"
+          },
+          "method": "sequential",
+          "proof_bytes": 116708914,
+          "proof_sha256": "908102ebcee89b7e05ab577accefc2f9b5fbffadb2b8e5938a16e6d6dad7b605",
+          "replay_receipt": {
+            "path": "artifacts/cardinality-encoding-benchmark/cardinality-encoding-20-leaf-20260722/t-6/sequential/validation.json",
+            "sha256": "afba5756e8e0076b539c8e1169c07783077ca2c349e2706f979503f696412f31"
+          },
+          "result_receipt": {
+            "path": "artifacts/cardinality-encoding-benchmark/cardinality-encoding-20-leaf-20260722/t-6/sequential/result.json",
+            "sha256": "bdac9472566f02f57df5e7a20b8b68f41d0c5c567c9c34d581debc81fdd5e1b7"
+          },
+          "run_id": "cardinality-encoding-20-leaf-20260722",
+          "runtime_seconds": 44.03150949906558,
+          "status": "unsat_certified"
+        }
+      ],
       "root_index": 0,
       "secondary_index": 0,
       "source_path": "artifacts/pilot/link-orbit-root0-secondary-0-tertiary-6-10s",
       "tertiary_index": 6
     },
     {
-      "assigned_methods": [],
+      "active_blocker_sha256": "ca2ebe74048cea4593e5fc377e441a7d51a10199bba8bc0c0ef7578f5a91eb2f",
+      "assigned_methods": [
+        "sequential"
+      ],
       "final_coverage_status": "open",
       "id": "t-7",
       "inherited_result_sha256": "c75b388e6faf671f888aa6d2a01c75e574e998e35f7ce4b117a362574f9ac6a4",
@@ -860,7 +1639,10 @@
       "tertiary_index": 7
     },
     {
-      "assigned_methods": [],
+      "active_blocker_sha256": "ca2ebe74048cea4593e5fc377e441a7d51a10199bba8bc0c0ef7578f5a91eb2f",
+      "assigned_methods": [
+        "sequential"
+      ],
       "final_coverage_status": "open",
       "id": "t-8",
       "inherited_result_sha256": "59d30e0f1f2777dc80c4a4b354a99f2756a6fc55ed8b79e0fe5bde2c3a4a0d2b",
@@ -872,7 +1654,10 @@
       "tertiary_index": 8
     },
     {
-      "assigned_methods": [],
+      "active_blocker_sha256": "ca2ebe74048cea4593e5fc377e441a7d51a10199bba8bc0c0ef7578f5a91eb2f",
+      "assigned_methods": [
+        "sequential"
+      ],
       "final_coverage_status": "open",
       "id": "t-9",
       "inherited_result_sha256": "bad5c05235ed5a828efb6c510e19891429b956adc0eac27ed7ea68dc631d4702",
@@ -888,63 +1673,258 @@
     "path": "docs/CERTIFICATE-PORTFOLIO-POLICY.json",
     "sha256": "8345e37ec4d053853ef69ccfbe9a5f8e17a3e2a3c06e47745118e5db13d23fad"
   },
+  "predecessor_link_blocker": {
+    "bytes": 156455,
+    "path": "artifacts/pilot/link-orbit-catalog-4-blocking.cnf",
+    "sha256": "d68f1de5f99cf6e56480a3778dd270e8abca276d192fdf19b354375422d6cad4"
+  },
   "problem_id": "covering-c1264",
   "resolution_status": "open",
   "schema_version": 1,
   "success_criterion": "an independently validated 40-block cover, or 47/47 valid closures across the portfolio followed by independent global coverage validation",
   "tranches": [
     {
+      "blocker_transfer": {
+        "active_blocker": {
+          "bytes": 171951,
+          "path": "artifacts/discoveries/link-orbit-catalog-5-blocking.cnf",
+          "sha256": "ca2ebe74048cea4593e5fc377e441a7d51a10199bba8bc0c0ef7578f5a91eb2f"
+        },
+        "added_clauses": 160,
+        "consequence": "UNSAT under the predecessor blocker remains UNSAT under the active stronger blocker",
+        "predecessor_blocker": {
+          "bytes": 156455,
+          "path": "artifacts/pilot/link-orbit-catalog-4-blocking.cnf",
+          "sha256": "d68f1de5f99cf6e56480a3778dd270e8abca276d192fdf19b354375422d6cad4"
+        },
+        "status": "strict_superset_verified"
+      },
       "certificate_and_replay_status": {
-        "certified_unsat_outcomes": 4,
-        "distinct_certified_nodes": 3,
+        "certified_unsat_outcomes": 23,
+        "distinct_certified_nodes": 15,
         "proof_replays": "all certified UNSAT outcomes verified",
         "semantic_audits": "all ingested outcomes valid"
       },
-      "completed_solver_runs": 10,
+      "completed_solver_runs": 40,
       "cost_per_new_closure": {
-        "cpu_seconds": 166.034374,
-        "proof_bytes": 137982403.0
+        "cpu_seconds": 102.112801,
+        "proof_bytes": 97470050.733333
       },
-      "cpu_seconds": 498.103122,
-      "cumulative_closed_out_of_47": "3/47",
-      "id": "cardinality-encoding-20-leaf-20260722-segment-01",
+      "cpu_seconds": 1531.692021,
+      "cumulative_closed_out_of_47": "15/47",
+      "id": "cardinality-encoding-20-leaf-20260722-final",
       "method_stats": {
         "kmtotalizer": {
-          "certified_unsat": 1,
-          "cpu_seconds": 267.494581,
+          "certified_unsat": 8,
+          "cpu_seconds": 933.519726,
           "net_new_closures": 0,
           "net_new_closures_per_cpu_hour": 0.0,
-          "proof_bytes": 78601389,
-          "tested": 5
+          "proof_bytes": 491373935,
+          "tested": 20
         },
         "sequential": {
-          "certified_unsat": 3,
-          "cpu_seconds": 230.608541,
-          "net_new_closures": 3,
-          "net_new_closures_per_cpu_hour": 46.832611,
-          "proof_bytes": 335345820,
-          "tested": 5
+          "certified_unsat": 15,
+          "cpu_seconds": 598.172295,
+          "net_new_closures": 15,
+          "net_new_closures_per_cpu_hour": 90.274993,
+          "proof_bytes": 970676826,
+          "tested": 20
         }
       },
       "newly_closed_nodes": [
         "s-r0-6",
         "s-r1-5",
-        "s-r1-8"
+        "s-r1-8",
+        "t-0",
+        "t-11",
+        "t-15",
+        "t-2",
+        "t-24",
+        "t-26",
+        "t-27",
+        "t-29",
+        "t-30",
+        "t-32",
+        "t-5",
+        "t-6"
       ],
       "next_method_by_hard_tail_class": {
         "constructive_global_uncertainty": "forced-matching exact-degree 40-block witness search remains active",
-        "fixed_benchmark_sample": "continue the unchanged sequential-versus-kmtotalizer protocol",
-        "unclosed_secondary": "await the complete fixed benchmark before adaptive reassignment",
-        "unclosed_tertiary": "await the complete fixed benchmark before adaptive reassignment"
+        "fixed_benchmark_sample": "complete; do not expand kmtotalizer because it earned zero unique closures",
+        "unclosed_secondary": "sequential default, with structural/constructive exceptions assigned by the dynamic plan",
+        "unclosed_tertiary": "sequential default, with structural/constructive exceptions assigned by the dynamic plan"
       },
-      "proof_storage_bytes": 413947209,
+      "proof_storage_bytes": 1462050761,
       "remaining_node_classes": {
         "secondary": 11,
-        "tertiary": 33
+        "tertiary": 21
       },
-      "source_checkpoint": {
+      "source_results": [
+        {
+          "path": "artifacts/cardinality-encoding-benchmark/cardinality-encoding-20-leaf-20260722/s-r0-3/kmtotalizer/result.json",
+          "sha256": "93919e0fe8a157b581fae33c6654bf154f3c9356549f852441101a5be4389d0f"
+        },
+        {
+          "path": "artifacts/cardinality-encoding-benchmark/cardinality-encoding-20-leaf-20260722/s-r0-3/sequential/result.json",
+          "sha256": "c83a194eb7684bf482807affeb6e6c66423376fe27b532199da91fb3b92a338a"
+        },
+        {
+          "path": "artifacts/cardinality-encoding-benchmark/cardinality-encoding-20-leaf-20260722/s-r0-4/kmtotalizer/result.json",
+          "sha256": "e52bf8df50e9833c59c9111c9c1d45c8279c9d6d8bcdea2975dc4b7d0447382d"
+        },
+        {
+          "path": "artifacts/cardinality-encoding-benchmark/cardinality-encoding-20-leaf-20260722/s-r0-4/sequential/result.json",
+          "sha256": "135dea864d67ada24d04e00399def460dbd2a92cbf2718209c89bb07b3441413"
+        },
+        {
+          "path": "artifacts/cardinality-encoding-benchmark/cardinality-encoding-20-leaf-20260722/s-r0-6/kmtotalizer/result.json",
+          "sha256": "474b7f8582897785a9a4c8e43f6fc7372318501baf7a11ff90461c09089df0a0"
+        },
+        {
+          "path": "artifacts/cardinality-encoding-benchmark/cardinality-encoding-20-leaf-20260722/s-r0-6/sequential/result.json",
+          "sha256": "28c11bd2871e34adbd905c9c24d6df82c8ae8725611de336e8d897825ef04d23"
+        },
+        {
+          "path": "artifacts/cardinality-encoding-benchmark/cardinality-encoding-20-leaf-20260722/s-r1-3/kmtotalizer/result.json",
+          "sha256": "4c0374acf73e3be9f2295c2499be592c9dbc89bd38e832e2410b2a17be0e5dc0"
+        },
+        {
+          "path": "artifacts/cardinality-encoding-benchmark/cardinality-encoding-20-leaf-20260722/s-r1-3/sequential/result.json",
+          "sha256": "adaf7eafdecd05dc04c6c2681a534fe0ee4c58ec245e8f2f3fe16d6c864b4fda"
+        },
+        {
+          "path": "artifacts/cardinality-encoding-benchmark/cardinality-encoding-20-leaf-20260722/s-r1-5/kmtotalizer/result.json",
+          "sha256": "fafededad363f46d4aa63639d80e359d0ab2d5cdaf68712ef90f510e8cedb968"
+        },
+        {
+          "path": "artifacts/cardinality-encoding-benchmark/cardinality-encoding-20-leaf-20260722/s-r1-5/sequential/result.json",
+          "sha256": "706dd44b6a04809682ee8e2883741dca12a0c600dc4783efbd4f84a860223cd0"
+        },
+        {
+          "path": "artifacts/cardinality-encoding-benchmark/cardinality-encoding-20-leaf-20260722/s-r1-8/kmtotalizer/result.json",
+          "sha256": "38e2e2d18f1b28af02230562768d3dc35c869fe51ef3a09b1703bff9ea717902"
+        },
+        {
+          "path": "artifacts/cardinality-encoding-benchmark/cardinality-encoding-20-leaf-20260722/s-r1-8/sequential/result.json",
+          "sha256": "d9a29def7d3a59ed963e5b2cbdfa50c33a3752e5ab6332b3f598df916043661d"
+        },
+        {
+          "path": "artifacts/cardinality-encoding-benchmark/cardinality-encoding-20-leaf-20260722/t-0/kmtotalizer/result.json",
+          "sha256": "323ed4b12d35b01528152dbc35d2d2e84ddf30436b2748fd2e4c00e8c3f5ea78"
+        },
+        {
+          "path": "artifacts/cardinality-encoding-benchmark/cardinality-encoding-20-leaf-20260722/t-0/sequential/result.json",
+          "sha256": "25c3bfc6d67c038069148b14fcecd1d772cff26d0ea7ff09a7d54b533dba515c"
+        },
+        {
+          "path": "artifacts/cardinality-encoding-benchmark/cardinality-encoding-20-leaf-20260722/t-1/kmtotalizer/result.json",
+          "sha256": "d595e0e7c37605065990ed82fe4f175818acfd3836a83820c04b70d8f936faa5"
+        },
+        {
+          "path": "artifacts/cardinality-encoding-benchmark/cardinality-encoding-20-leaf-20260722/t-1/sequential/result.json",
+          "sha256": "fecf500a948ff4d691d3dd37460db9ab5c25dba0025cb38664afb492f5de94d3"
+        },
+        {
+          "path": "artifacts/cardinality-encoding-benchmark/cardinality-encoding-20-leaf-20260722/t-10/kmtotalizer/result.json",
+          "sha256": "aa9bdd9e45d513efddb72419e8d9286d54882321416c75cbca840d5dc3b7b0a0"
+        },
+        {
+          "path": "artifacts/cardinality-encoding-benchmark/cardinality-encoding-20-leaf-20260722/t-10/sequential/result.json",
+          "sha256": "be3404e90c4612537ac75e1412715d6afa0b1d29ae121b0ed1a5726b4da78d6a"
+        },
+        {
+          "path": "artifacts/cardinality-encoding-benchmark/cardinality-encoding-20-leaf-20260722/t-11/kmtotalizer/result.json",
+          "sha256": "321dad83fda6e5752d522ea0683c17703ef51700213d0a7ea53750366a9e66d7"
+        },
+        {
+          "path": "artifacts/cardinality-encoding-benchmark/cardinality-encoding-20-leaf-20260722/t-11/sequential/result.json",
+          "sha256": "44eb442e9d73e04c4f29fc3f4ebdbe40d8e676101996afca61874c186a625a5e"
+        },
+        {
+          "path": "artifacts/cardinality-encoding-benchmark/cardinality-encoding-20-leaf-20260722/t-15/kmtotalizer/result.json",
+          "sha256": "73a789493691f71123d70d4823badf7dfc039e9ab4d42f63e5ce558277a7bbc9"
+        },
+        {
+          "path": "artifacts/cardinality-encoding-benchmark/cardinality-encoding-20-leaf-20260722/t-15/sequential/result.json",
+          "sha256": "916a245327595b3fea8a861d76c394e470366a39b7b6e02464c1dd31dd2dd4da"
+        },
+        {
+          "path": "artifacts/cardinality-encoding-benchmark/cardinality-encoding-20-leaf-20260722/t-2/kmtotalizer/result.json",
+          "sha256": "b7465df15cc32c9c04ecd2b03a62682cd2810b25be36c0559fd163acd653fa8f"
+        },
+        {
+          "path": "artifacts/cardinality-encoding-benchmark/cardinality-encoding-20-leaf-20260722/t-2/sequential/result.json",
+          "sha256": "1118434ef550c87eb8cf905cb35d2b7e8a581e641e70e24ff65c0af08b640c18"
+        },
+        {
+          "path": "artifacts/cardinality-encoding-benchmark/cardinality-encoding-20-leaf-20260722/t-24/kmtotalizer/result.json",
+          "sha256": "4200ed9ff6b1b5e8b87ebf797a5abfc9f105fc350d0dad119b48c52b46205c6b"
+        },
+        {
+          "path": "artifacts/cardinality-encoding-benchmark/cardinality-encoding-20-leaf-20260722/t-24/sequential/result.json",
+          "sha256": "74783a4a1b36ac993fa9d94be28aa1aa6563504c05149f2af0de4e75237eb93d"
+        },
+        {
+          "path": "artifacts/cardinality-encoding-benchmark/cardinality-encoding-20-leaf-20260722/t-26/kmtotalizer/result.json",
+          "sha256": "fa17572dd1a154510c9ecc52cbc12932da82940d16ac0d77d35bb1f0654340d6"
+        },
+        {
+          "path": "artifacts/cardinality-encoding-benchmark/cardinality-encoding-20-leaf-20260722/t-26/sequential/result.json",
+          "sha256": "98aeacfa963fdec6be4017a1130aa0e37a86fed3a23fc5ae9844ba43a85040f6"
+        },
+        {
+          "path": "artifacts/cardinality-encoding-benchmark/cardinality-encoding-20-leaf-20260722/t-27/kmtotalizer/result.json",
+          "sha256": "a65d866625e69a1ae42843d8076d8b6c446b4b83a2dec8d9a149dc642b4c0466"
+        },
+        {
+          "path": "artifacts/cardinality-encoding-benchmark/cardinality-encoding-20-leaf-20260722/t-27/sequential/result.json",
+          "sha256": "243f8f62cf6ff4b03fe47c15660178d7ecd2ca51fe230c62162832220e90478a"
+        },
+        {
+          "path": "artifacts/cardinality-encoding-benchmark/cardinality-encoding-20-leaf-20260722/t-29/kmtotalizer/result.json",
+          "sha256": "7949fa7b3889e92f509ec140173069af0722bc707146f8322f2cbf49b4750b7d"
+        },
+        {
+          "path": "artifacts/cardinality-encoding-benchmark/cardinality-encoding-20-leaf-20260722/t-29/sequential/result.json",
+          "sha256": "818354bc59a431987c84121db20295a1e8dc65a7a12ad32eb866b37ec9de1e80"
+        },
+        {
+          "path": "artifacts/cardinality-encoding-benchmark/cardinality-encoding-20-leaf-20260722/t-30/kmtotalizer/result.json",
+          "sha256": "9bfb17252999b1d16cef3e2722d7f847ea50d99b15be94b5ebcc4e7dbb64fb3a"
+        },
+        {
+          "path": "artifacts/cardinality-encoding-benchmark/cardinality-encoding-20-leaf-20260722/t-30/sequential/result.json",
+          "sha256": "b8a13ab4510461d82c11e80d1a90f0941ae58709ffc4cc7acb1bd28511f04492"
+        },
+        {
+          "path": "artifacts/cardinality-encoding-benchmark/cardinality-encoding-20-leaf-20260722/t-32/kmtotalizer/result.json",
+          "sha256": "e8f6ec7e7cebb84ef9c9caee487dfc152f310eabbc107bff43aebf306707454c"
+        },
+        {
+          "path": "artifacts/cardinality-encoding-benchmark/cardinality-encoding-20-leaf-20260722/t-32/sequential/result.json",
+          "sha256": "9c4a55de3ad601318ca1e5f561318e93ef596f01fbd877e89ef26c0169e032a4"
+        },
+        {
+          "path": "artifacts/cardinality-encoding-benchmark/cardinality-encoding-20-leaf-20260722/t-5/kmtotalizer/result.json",
+          "sha256": "b57c181657eb13022c95481ca109af5003f229eccf3d7af0b6249e02b456114e"
+        },
+        {
+          "path": "artifacts/cardinality-encoding-benchmark/cardinality-encoding-20-leaf-20260722/t-5/sequential/result.json",
+          "sha256": "7358356fed7d05406e6d428e172876442c54afa8673e3466f73582490668a615"
+        },
+        {
+          "path": "artifacts/cardinality-encoding-benchmark/cardinality-encoding-20-leaf-20260722/t-6/kmtotalizer/result.json",
+          "sha256": "33dc92bcd17c21a8fb8c4e5c2f07dd7bfa9a2ee36bf5c7f1479b11e8a32fb155"
+        },
+        {
+          "path": "artifacts/cardinality-encoding-benchmark/cardinality-encoding-20-leaf-20260722/t-6/sequential/result.json",
+          "sha256": "bdac9472566f02f57df5e7a20b8b68f41d0c5c567c9c34d581debc81fdd5e1b7"
+        }
+      ],
+      "superseded_mutable_checkpoint": {
+        "final_sha256": "e04b9e94ed6f745f40fee8d5efcc30730babacf50a9774ae821527c143e5c69a",
         "path": "artifacts/cardinality-encoding-benchmark/cardinality-encoding-20-leaf-20260722/checkpoint.json",
-        "sha256": "238135658d1f7df5f2b31108f95d13773d5941ebadacee9f8d7d7f2304dbcdd2"
+        "reason": "checkpoint advanced in place during the frozen benchmark; immutable result receipts are authoritative"
       }
     }
   ]

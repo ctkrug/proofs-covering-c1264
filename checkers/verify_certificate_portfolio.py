@@ -46,6 +46,12 @@ def verify(manifest_path: Path) -> None:
     for binding in ("policy", "frontier_source", "first_measurement"):
         path = ROOT / manifest[binding]["path"]
         assert digest(path) == manifest[binding]["sha256"], f"{binding} hash mismatch"
+    if "dynamic_assignment" in manifest:
+        assignment_path = ROOT / manifest["dynamic_assignment"]["path"]
+        assert digest(assignment_path) == manifest["dynamic_assignment"]["sha256"], "dynamic assignment hash mismatch"
+        assignment = json.loads(assignment_path.read_text())
+        assert assignment["active_blocker_sha256"] == manifest["active_link_blocker"]["sha256"]
+        assert assignment["open_nodes"] == manifest["counts"]["open"]
     summary = json.loads((ROOT / manifest["frontier_source"]["path"]).read_text())
     expected = expected_nodes(summary)
     assert len(expected) == 47 and summary["open_frontier_count"] == 47
@@ -53,6 +59,8 @@ def verify(manifest_path: Path) -> None:
     assert len(nodes) == 47 and len({row["id"] for row in nodes}) == 47
     assert set(expected) == {row["id"] for row in nodes}
     for row in nodes:
+        if manifest.get("frontier_revision", 1) >= 2:
+            assert row.get("active_blocker_sha256") == manifest["active_link_blocker"]["sha256"]
         for key, value in expected[row["id"]].items():
             assert row[key] == value, f"{row['id']} {key} disagrees with frontier source"
         assert isinstance(row["assigned_methods"], list)
@@ -82,8 +90,13 @@ def verify(manifest_path: Path) -> None:
     closed = sum(row["final_coverage_status"] != "open" for row in nodes)
     assert manifest["counts"] == {"total": 47, "closed": closed, "open": 47 - closed}
     for tranche in manifest["tranches"]:
-        source = tranche["source_checkpoint"]
-        assert digest(ROOT / source["path"]) == source["sha256"], "tranche checkpoint hash mismatch"
+        if "source_results" in tranche:
+            assert len(tranche["source_results"]) == tranche["completed_solver_runs"]
+            for source in tranche["source_results"]:
+                assert digest(ROOT / source["path"]) == source["sha256"], "tranche result hash mismatch"
+        else:
+            source = tranche["source_checkpoint"]
+            assert digest(ROOT / source["path"]) == source["sha256"], "tranche checkpoint hash mismatch"
         assert tranche["cumulative_closed_out_of_47"] == f"{closed}/47"
     identity = [{key: row[key] for key in ("id", "kind", "root_index", "secondary_index",
         "tertiary_index", "source_path", "inherited_result_sha256")} for row in nodes]

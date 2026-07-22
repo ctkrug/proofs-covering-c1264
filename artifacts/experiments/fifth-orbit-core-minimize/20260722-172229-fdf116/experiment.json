@@ -1,0 +1,43 @@
+{
+  "schema_version": 1,
+  "id": "20260722-172229-fdf116",
+  "name": "fifth-orbit-core-minimize-900s",
+  "hypothesis": "The replay-certified 161-group fifth-orbit obstruction contains substantial semantic redundancy and can be reduced toward a deletion-irreducible core without changing the exact formulation.",
+  "expected_signal": "A smaller UNSAT semantic group set, ideally with fewer pair equalities, followed by an externally replayed proof.",
+  "command": [
+    ".venv/bin/python",
+    "scripts/extract_link_residual_semantic_core.py",
+    "artifacts/discoveries/link-orbit-s-r1-3/witness.txt",
+    "--core-cnf",
+    "artifacts/discoveries/link-orbit-s-r1-3/residual-extension/semantic-core-900s.cnf",
+    "--output",
+    "artifacts/discoveries/link-orbit-s-r1-3/residual-extension/semantic-core-900s.json",
+    "--minimize-seconds",
+    "900"
+  ],
+  "cwd": "/Users/Krug/Desktop/ChatGPT/proofs/research/covering-c1264/workspace",
+  "seed": 0,
+  "timeout_seconds": 960,
+  "memory_limit_mb": 4096,
+  "memory_limit_enforced": false,
+  "started_at": "2026-07-22T17:22:29.364307+00:00",
+  "finished_at": "2026-07-22T17:38:29.796986+00:00",
+  "duration_seconds": 960.407,
+  "returncode": 124,
+  "timed_out": true,
+  "python": "3.14.6",
+  "platform": "macOS-26.5.2-arm64-arm-64bit-Mach-O",
+  "git_commit": "d88e362ef0813959dca0300bb5263226014c30bf",
+  "source_urls": [],
+  "input_artifacts": {
+    "/opt/homebrew/Cellar/python@3.14/3.14.6/Frameworks/Python.framework/Versions/3.14/bin/python3.14": "b502cb4c5b46b8d4192ec6bcb600ce8922f1afc396fcf646e8765c6eba74a0bf",
+    "/Users/Krug/Desktop/ChatGPT/proofs/research/covering-c1264/workspace/scripts/extract_link_residual_semantic_core.py": "0292b9076815bd412935894c05c0596da102226c2b08df94bcf3fcfd0cfb99a2",
+    "/Users/Krug/Desktop/ChatGPT/proofs/research/covering-c1264/workspace/artifacts/discoveries/link-orbit-s-r1-3/witness.txt": "efca42168a5be71be13bbe9b30f7767530eac29f9340dd1720316d1818aafe7d"
+  },
+  "peak_child_memory_rusage": 220151808,
+  "peak_child_memory_unit": "bytes",
+  "artifacts": {
+    "stdout.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  }
+}

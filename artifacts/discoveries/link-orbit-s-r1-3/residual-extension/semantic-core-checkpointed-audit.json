@@ -1,0 +1,87 @@
+{
+  "certified_core_groups": 88,
+  "claim_limit": "The 88 groups are a certified sufficient UNSAT obstruction, not a globally minimal MUS; four attempted deletions timed out and 66 groups were not attempted within the bounded pass.",
+  "cnf": {
+    "clauses": 14602,
+    "path": "artifacts/discoveries/link-orbit-s-r1-3/residual-extension/semantic-core-checkpointed.cnf",
+    "sha256": "4d2d1c2bda9de7b27e616c13ddae357d4d005a2962c459a4752e874c72e6e196",
+    "variables": 55184
+  },
+  "coverage_groups": 82,
+  "deletion_statuses": {
+    "SAT": 18,
+    "UNKNOWN": 4,
+    "UNSAT_PROVISIONAL": 73
+  },
+  "minimization_attempts": 95,
+  "pair_equality_groups": 6,
+  "pair_skeleton": {
+    "degree_sequence": [
+      3,
+      2,
+      2,
+      2,
+      1,
+      1,
+      1
+    ],
+    "edges": [
+      [
+        3,
+        4
+      ],
+      [
+        3,
+        10
+      ],
+      [
+        4,
+        6
+      ],
+      [
+        5,
+        6
+      ],
+      [
+        5,
+        7
+      ],
+      [
+        6,
+        8
+      ]
+    ],
+    "kind": "tree",
+    "vertices": [
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      10
+    ]
+  },
+  "proof": {
+    "bytes": 20857572,
+    "path": "artifacts/discoveries/link-orbit-s-r1-3/residual-extension/semantic-core-checkpointed.drat",
+    "sha256": "c1ddcfd16b8e98ca38debb9cdf7f9b23a5da632746c0a0989a16e17a82a20f4e"
+  },
+  "schema_version": 1,
+  "seed_groups": 161,
+  "sources": {
+    "core": {
+      "path": "artifacts/discoveries/link-orbit-s-r1-3/residual-extension/semantic-core-checkpointed.json",
+      "sha256": "e5d918c466b8d4c9fcb1a11c41ff4b53bee130ddff18da2797fac338ad6a037e"
+    },
+    "replay": {
+      "path": "artifacts/discoveries/link-orbit-s-r1-3/residual-extension/semantic-core-checkpointed-validation.json",
+      "sha256": "f2c22009cbc48577f127f020590ec23091ba8bed86f943fbb8c5a4e02060ac9c"
+    },
+    "solver": {
+      "path": "artifacts/discoveries/link-orbit-s-r1-3/residual-extension/semantic-core-checkpointed-solver.json",
+      "sha256": "f606746f5d6302cd92ec354ec6f867c2533a32d9222aed53216169f2dab0f1aa"
+    }
+  },
+  "status": "verified_unsat_obstruction"
+}
