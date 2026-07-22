@@ -1,0 +1,9 @@
+{
+  "decision_value": "A directly verified SAT extension settles C(12,6,4)=40; replayed UNSAT excludes one newly validated link orbit and determines whether frontier work remains relevant.",
+  "expected_artifact_growth_bytes": 100000000,
+  "expected_runtime_seconds": 660,
+  "fixed_protocol": "Exactly orbit-8-t-16 then orbit-9-t-17, 300 seconds each, fixed residual sequential encoding; stop after SAT or two results.",
+  "hypothesis": "At least one newly discovered point-link orbit may extend to a valid 40-block cover, a higher-value test than generic frontier or local search.",
+  "schema_version": 1,
+  "stop_rule": "SAT stops immediately for direct validation; otherwise stop after both fixed-cap outcomes for independent replay review."
+}
