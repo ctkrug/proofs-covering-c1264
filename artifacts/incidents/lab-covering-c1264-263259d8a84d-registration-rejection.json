@@ -1,0 +1,32 @@
+{
+  "schema_version": 1,
+  "incident_id": "c1264-lab-registration-gap-20260722",
+  "job_id": "lab-covering-c1264-263259d8a84d",
+  "status": "preserved_rejection",
+  "observed_error": "ValueError: unknown lab job: lab-covering-c1264-263259d8a84d",
+  "mathematical_effect": "none; the worker rejected the job before starting a solver segment",
+  "solver_results_from_rejected_job": 0,
+  "submitted_queue_spec": {
+    "path": "lab-queue/lab-covering-c1264-263259d8a84d.json",
+    "sha256": "e24413dbc42f915c4df56ea527b80e6966a175d1bc1ee9bbac6cdf76af8e0d4d",
+    "spec_sha256": "843a027bf6a742696f8907e56f53cef4f3d598d973561ef8aac91f3f9ae53c8a",
+    "workspace_git_commit": "8ac4fa372810784ab2182cbe58b0c503757c4599"
+  },
+  "submitted_immutable_inputs": {
+    "artifacts/experiments/sequential-open-frontier-32-v5-20260722/manifest.json": "65f3e3105d146fef368f1c36f491e11d605437876fbbbaa7cf8dfaea32c28a61",
+    "scripts/run_sequential_frontier_sweep.py": "81d8941d303d2ee94826b8ffef4e573183b48a92862c45ef90a930bc93d99dfb"
+  },
+  "root_cause": {
+    "class": "cross_host_queue_state_registration_gap",
+    "detail": "Submission persisted the executable queue spec inside the problem repository and the authoritative job state in the submitter host's ignored state/labs/jobs directory. Repository sync delivered the queue spec to the cloud worker but not the host-local state record. The worker claimed the queue item, then required the missing local state via _read_state and rejected it as unknown.",
+    "excluded_causes": [
+      "solver hardness",
+      "leaf selection",
+      "manifest schema",
+      "job ID syntax",
+      "capacity admission"
+    ]
+  },
+  "repair_contract": "After canonical persisted-spec and spec-hash validation, a worker may reconstruct only a missing queued state record from that exact queue spec, recording the queue-spec hash and recovery reason before segment execution.",
+  "claim_limit": "This artifact records the orchestration rejection and its registration cause. It is not a solver result or a mathematical certificate."
+}
