@@ -1,0 +1,11 @@
+{
+  "event": "stopped_with_reason",
+  "id": "lab-covering-c1264-e9221dfd02b3",
+  "review": {
+    "decision": "redirect",
+    "reason": "The frozen benchmark completed all 40/40 runs with correctness checks passing. Sequential produced 15 replay-verified UNSAT leaves plus one independently validated new orbit; kmtotalizer produced 8 replay-verified UNSAT leaves, all overlapping sequential, and 12 UNKNOWN results. Kmtotalizer therefore earned zero unique independently verified coverage and is not expanded. Redirect post-benchmark allocation to the audited five-orbit frontier, sequential cheap harvesting, obstruction relaxations, and constructive near-cover routes.",
+    "reviewer": "codex",
+    "reviewed_at": "2026-07-22T17:43:35.065210+00:00",
+    "segment": 4
+  }
+}
