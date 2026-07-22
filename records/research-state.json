@@ -1,0 +1,315 @@
+{
+  "schema_version": 5,
+  "problem_id": "covering-c1264",
+  "objective": "Determine the minimum number of 6-subsets of a 12-point set needed to cover every 4-subset. The maintained range is 40 <= C(12,6,4) <= 41; either a verified 40-block cover or a complete independently checked exclusion of 40 settles the exact value.",
+  "completion_criteria": [
+    "A positive result is a 40-block list checked directly against all 495 four-subsets. A negative result requires a deterministic symmetry-reduced encoding, an independently checked exhaustive cube/orbit cover, and replayable proof logs for every UNSAT leaf."
+  ],
+  "non_results": [
+    "Finite computation outside its stated range is not a proof of a universal claim.",
+    "A candidate is not a solution until independent and human review are recorded.",
+    "Restating a known reduction, checking examples, or giving an unproved key lemma is not terminal success."
+  ],
+  "epoch_count": 1,
+  "last_updated": "2026-07-22T13:15:09.478653+00:00",
+  "baseline_review": {
+    "status": "complete",
+    "reviewed_at": "2026-07-22T13:15:09.478653+00:00",
+    "source_attempt_id": "covering-c1264-20260722-131509-6394f5",
+    "source_status": "open finite exact value",
+    "facts_recorded": 3,
+    "exclusions_recorded": 2,
+    "leads_recorded": 3,
+    "requirement": "Repeat when the authoritative status changes materially or the baseline is explicitly invalidated."
+  },
+  "synthesis_summary": "The mandatory baseline is complete. The designated current source still reports 40 <= C(12,6,4) <= 41; the preserved 41-block witness covers all 495 four-subsets. A deterministic producer and materially different bitmask checker established the exact forced perfect-matching quotient and two-root split for any hypothetical 40-cover. No frontier search was run and the exact value remains open. The audit also found that this checkout lacks DRAT-trim, so historical Mac proof receipts cannot yet be freshly replayed here.",
+  "established_facts": [
+    {
+      "claim": "The preserved 41-block witness covers all 495 four-subsets.",
+      "evidence": "producer and independent bitmask checker; witness sha256 395bc870e7eb9e84a472873db97de553afc34afdb666545824944e89047913e5",
+      "scope": "the exact block list in sources/ljcr-c1264-41.txt",
+      "status": "computed",
+      "source_attempt_id": "covering-c1264-20260722-131509-6394f5",
+      "updated_at": "2026-07-22T13:15:09.478653+00:00"
+    },
+    {
+      "claim": "Any 40-block C(12,6,4) cover has point degrees all 20 and pair multiplicities 10 on a perfect matching and 9 elsewhere.",
+      "evidence": "double counting from maintained C(11,5,3)=20 and C(10,4,2)=9; independently replayed arithmetic",
+      "scope": "conditional on existence of a 40-block cover",
+      "status": "proved",
+      "source_attempt_id": "covering-c1264-20260722-131509-6394f5",
+      "updated_at": "2026-07-22T13:15:09.478653+00:00"
+    },
+    {
+      "claim": "The fixed-matching r classes contain 64, 480, 360, and 20 blocks, and the two root cases cover all 221 feasible r-profiles.",
+      "evidence": "complete enumeration in producer and independent bitmask checker",
+      "scope": "all 924 six-subsets relative to the canonical matching and all nonnegative profiles satisfying the two incidence equations",
+      "status": "computed",
+      "source_attempt_id": "covering-c1264-20260722-131509-6394f5",
+      "updated_at": "2026-07-22T13:15:09.478653+00:00"
+    }
+  ],
+  "strategies": [
+    {
+      "id": "strategy-c1264-baseline-perfect-matching-audit-v1",
+      "family": "baseline invariant and symmetry audit",
+      "fingerprint": "c1264-baseline-perfect-matching-audit-v1",
+      "title": "Mandatory source-and-reproducibility baseline plus an independently checked audit of the forced perfect-matching quotient for any hypothetical 40-block cover",
+      "mechanism": "Source verification, incidence double counting, exact matching enumeration, fixed-matching block classification, and a separately implemented bitmask replay",
+      "status": "exhausted",
+      "hypothesis": "The maintained 40..41 status, published 41-block witness, and every arithmetic step forcing a unique excess perfect matching in a hypothetical 40-cover replay exactly under two materially different implementations.",
+      "discriminating_test": "Enumerate all 924 candidate blocks and 495 targets, check the 41-block witness and a delete-one negative control, enumerate all perfect matchings, classify blocks by complete fixed pairs, then independently recompute every result using 12-bit masks and a matching recurrence.",
+      "blocker": "No 40-block witness is known and no exhaustive negative certificate exists. Practically, this checkout also lacks the pinned DRAT checker needed to reproduce UNSAT leaves before testing the inherited 47-node link frontier.",
+      "reopen_condition": "Reopen this completed baseline only if the maintained status changes, a cited source contradicts an invariant, or the independent checker disagrees after an environment change.",
+      "reopen_evidence": "",
+      "last_attempt_id": "covering-c1264-20260722-131509-6394f5",
+      "attempts": 1,
+      "parent_ids": [],
+      "updated_at": "2026-07-22T13:15:09.478653+00:00",
+      "route_evaluation": {
+        "gate_proximity": 0.2,
+        "contribution_value": 0.25,
+        "decisiveness": 0.35,
+        "novelty_confidence": 0.05,
+        "novelty_risk": 0.85,
+        "scope": 0.4,
+        "reuse_value": 0.8,
+        "model_cost": 0.2,
+        "cpu_cost": 0.01
+      }
+    },
+    {
+      "family": "cardinality-encoding portfolio",
+      "mechanism": "Replace only the 11 link-degree sequential counters with kmtotalizer while byte-comparing every other clause and replaying cold CaDiCaL proofs.",
+      "hypothesis": "kmtotalizer closes at least 8 of 20 deterministically selected open link leaves within 10 seconds each, with replayable proof growth below 30 GB projected total.",
+      "discriminating_test": "Paired cold 20-leaf benchmark after a structural totalizer audit and proof-toolchain control.",
+      "rationale": "It changes propagation and approximately halves auxiliary-variable burden in the advisory dry-build, without changing the verified decomposition; the dry-build claim still requires Sol-side reproduction.",
+      "id": "strategy-253e0deb9593",
+      "fingerprint": "253e0deb9593",
+      "status": "proposed",
+      "title": "Replace only the 11 link-degree sequential counters with kmtotalizer while byte-comparing every other clause and replaying cold CaDiCaL proofs.",
+      "attempts": 0,
+      "parent_ids": [
+        "strategy-c1264-baseline-perfect-matching-audit-v1"
+      ],
+      "updated_at": "2026-07-22T13:15:09.478653+00:00"
+    },
+    {
+      "family": "degree-preserving positive local search",
+      "mechanism": "Search only 40-block families under the fixed matching, using swaps biased toward maintaining exact point/pair multiplicities and bitset delta scores for uncovered four-sets.",
+      "hypothesis": "Constraint-preserving moves reach strictly fewer uncovered four-sets than an unconstrained 40-block local-search control over the same deterministic seed budget.",
+      "discriminating_test": "Twenty fixed seeds at a short equal move budget; direct checker validates any zero-defect witness.",
+      "rationale": "A positive result needs only a compact block list, whereas an UNSAT campaign requires complete proof coverage.",
+      "id": "strategy-eadb381c69d1",
+      "fingerprint": "eadb381c69d1",
+      "status": "proposed",
+      "title": "Search only 40-block families under the fixed matching, using swaps biased toward maintaining exact point/pair multiplicities and bitset delta scores for uncovered four-sets.",
+      "attempts": 0,
+      "parent_ids": [
+        "strategy-c1264-baseline-perfect-matching-audit-v1"
+      ],
+      "updated_at": "2026-07-22T13:15:09.478653+00:00"
+    },
+    {
+      "family": "canonical-link plus alternative-cardinality synthesis",
+      "mechanism": "Keep the perfect-matching and C2 wr S5 canonical link decomposition, catalog blockers, and residual checker, but substitute a structurally audited kmtotalizer only for exact link degrees.",
+      "source_inputs": "['pre-existing four-orbit link campaign', 'PySAT cardinality encoding API', 'Terra advisory dry-build memo']",
+      "transfer_hypothesis": "The hard tail is limited more by sequential-counter propagation/auxiliary structure than by the link decomposition itself, so changing only cardinality encoding should alter closure rates while preserving exact case coverage.",
+      "discriminating_test": "Independent dry-build equivalence audit followed by 20 matched cold leaves with replayed UNSAT proofs.",
+      "falsification_signal": "Any semantic mismatch, fewer than 8/20 replayed closures, or unacceptable proof growth.",
+      "rationale": "This combines a verified domain reduction with a different CNF information mechanism; it is not deeper branching under a renamed route.",
+      "hypothesis": "The hard tail is limited more by sequential-counter propagation/auxiliary structure than by the link decomposition itself, so changing only cardinality encoding should alter closure rates while preserving exact case coverage.",
+      "origin": "cross_problem_or_cross_field_synthesis",
+      "parent_ids": [
+        "internal-link-canonical-augmentation",
+        "pysat-kmtotalizer"
+      ],
+      "id": "strategy-cdb3d7e86c91",
+      "fingerprint": "cdb3d7e86c91",
+      "status": "proposed",
+      "title": "Keep the perfect-matching and C2 wr S5 canonical link decomposition, catalog blockers, and residual checker, but substitute a structurally audited kmtotalizer only for exact link degrees.",
+      "attempts": 0,
+      "updated_at": "2026-07-22T13:15:09.478653+00:00"
+    }
+  ],
+  "open_leads": [
+    {
+      "description": "Restore a portable proof-replay toolchain before any UNSAT-producing frontier work.",
+      "rationale": "It is the cheapest fail-closed test and prevents solver-to-CNF receipts from becoming non-reproducible on this host.",
+      "next_experiment": "Pin official DRAT-trim source, build locally, hash it, and replay one small known proof plus one existing leaf receipt.",
+      "priority": "high",
+      "status": "closed",
+      "id": "lead-c62467ecb8",
+      "strategy_id": "strategy-c1264-baseline-perfect-matching-audit-v1",
+      "updated_at": "2026-07-22T13:15:09.478653+00:00",
+      "closure_reason": "terminal_strategy",
+      "closed_at": "2026-07-22T13:15:09.478653+00:00"
+    },
+    {
+      "description": "Matched kmtotalizer versus sequential-counter discriminator on inherited open link leaves.",
+      "rationale": "It changes the propagation/encoding mechanism while retaining the strongest verified symmetry decomposition; PySAT officially exposes both encodings.",
+      "next_experiment": "After the toolchain gate, dry-build both forms, independently audit totalizer structure and identical non-cardinality clauses, then run the deterministic 20-leaf paired tranche.",
+      "priority": "high",
+      "status": "closed",
+      "id": "lead-720bbbbc5e",
+      "strategy_id": "strategy-c1264-baseline-perfect-matching-audit-v1",
+      "updated_at": "2026-07-22T13:15:09.478653+00:00",
+      "closure_reason": "terminal_strategy",
+      "closed_at": "2026-07-22T13:15:09.478653+00:00"
+    },
+    {
+      "description": "Positive search specialized to the forced matching and exact pair degrees.",
+      "rationale": "A 40-block witness has a compact acceptance certificate and may be cheaper than a global negative proof.",
+      "next_experiment": "Design a deterministic multi-seed local-search pilot whose moves preserve 40 blocks and score uncovered four-sets plus pair-degree violations; compare with unconstrained set-cover local search on a small fixed budget.",
+      "priority": "normal",
+      "status": "closed",
+      "id": "lead-9d98692538",
+      "strategy_id": "strategy-c1264-baseline-perfect-matching-audit-v1",
+      "updated_at": "2026-07-22T13:15:09.478653+00:00",
+      "closure_reason": "terminal_strategy",
+      "closed_at": "2026-07-22T13:15:09.478653+00:00"
+    }
+  ],
+  "ruled_out": [
+    {
+      "claim_or_route": "Scale shallow depth-7 direct cubing unchanged under the prior 10-second leaf policy.",
+      "scope": "the pre-existing deterministic 64+64 sampled cubes across the two fixed-matching root CNFs",
+      "reason": "Only 10/128 leaves closed provisionally, 7.8125%, below the declared continuation threshold, and no leaf proofs were preserved/replayed in that sample.",
+      "evidence": "artifacts/pilot/sample-r0-audit.json and sample-r1-audit.json with four hash-bound results.jsonl inputs",
+      "reopen_condition": "A materially stronger branching/encoding mechanism with a predeclared matched sample and replayed proofs.",
+      "attempt_id": "covering-c1264-20260722-131509-6394f5",
+      "updated_at": "2026-07-22T13:15:09.478653+00:00"
+    },
+    {
+      "claim_or_route": "Scale the prior Glucose4 incremental-assumption wrapper unchanged.",
+      "scope": "ten selected inherited hard-tail leaves under the recorded best-effort 1,000-conflict policy",
+      "reason": "Both cold and incremental modes closed 0/10, resource work was not matched, and the wrapper could overshoot limits; this is not evidence against incremental solving in general.",
+      "evidence": "artifacts/pilot/link-orbit-incremental-tertiary-pilot-1000conflicts/result.json and audit.json",
+      "reopen_condition": "A reliably interruptible backend and resource-matched cold/incremental protocol with exact parent-plus-assumption equivalence.",
+      "attempt_id": "covering-c1264-20260722-131509-6394f5",
+      "updated_at": "2026-07-22T13:15:09.478653+00:00"
+    }
+  ],
+  "unresolved_questions": [],
+  "next_session": {
+    "recommended_strategy_id": "strategy-253e0deb9593",
+    "objective": "Make proof replay portable, then determine whether kmtotalizer materially increases replayed closure on the inherited link frontier.",
+    "first_action": "Acquire the official DRAT-trim source at a pinned revision into a project-scoped toolchain and run checkers/replay_drat.py on a small known UNSAT CNF/proof pair.",
+    "stop_condition": "Stop or redirect if toolchain hashes/verdicts disagree, cardinality/non-cardinality audits fail, the matched encoding tranche closes fewer than 8/20 leaves, or proof growth projects above 30 GB.",
+    "source_attempt_id": "covering-c1264-20260722-131509-6394f5"
+  },
+  "recent_attempt_ids": [
+    "covering-c1264-20260722-131509-6394f5"
+  ],
+  "tactical_memory": {
+    "current_bottleneck": "Before testing the 47-node inherited link frontier, restore and control-test a pinned project-scoped proof checker; after that, propagation strength of the cardinality encoding is the main measured uncertainty.",
+    "failure_signatures": [
+      {
+        "id": "4d2fbff3c2cc",
+        "signature": "A hash-bound solver receipt can remain non-replayable on a new host when its pinned checker binary/source was never promoted into the problem workspace.",
+        "count": 1,
+        "last_strategy_id": "strategy-c1264-baseline-perfect-matching-audit-v1",
+        "last_attempt_id": "covering-c1264-20260722-131509-6394f5",
+        "updated_at": "2026-07-22T13:15:09.478653+00:00"
+      }
+    ],
+    "reusable_assets": [
+      {
+        "name": "baseline invariant producer",
+        "use": "rebuild all forced-matching arithmetic and positive/negative controls",
+        "evidence": "scripts/audit_baseline_invariants.py sha256 d5232895433829c0f6daf14b69a922eaa182a0ae3edfca6836ac935cc2131e73",
+        "source_attempt_id": "covering-c1264-20260722-131509-6394f5",
+        "updated_at": "2026-07-22T13:15:09.478653+00:00"
+      },
+      {
+        "name": "independent bitmask checker",
+        "use": "fail-closed replay without sharing the producer's set representation or matching enumerator",
+        "evidence": "checkers/verify_baseline_invariants.py sha256 2823c4e34d8d28612e34325a64a9a8b4b76b65eff88c2b6ed69ebe910464aa4d",
+        "source_attempt_id": "covering-c1264-20260722-131509-6394f5",
+        "updated_at": "2026-07-22T13:15:09.478653+00:00"
+      },
+      {
+        "name": "source and method audit",
+        "use": "status, historical methods, tooling, searches, and acceptance path",
+        "evidence": "sources/baseline-literature-audit-20260722.json",
+        "source_attempt_id": "covering-c1264-20260722-131509-6394f5",
+        "updated_at": "2026-07-22T13:15:09.478653+00:00"
+      }
+    ],
+    "constraints_learned": [
+      {
+        "constraint": "Every hypothetical 40-cover has point degree 20 at all 12 points.",
+        "scope": "C(12,6,4) covers with exactly 40 blocks",
+        "evidence": "C(11,5,3)=20 plus 40*6=240, replayed in baseline result/checker",
+        "source_attempt_id": "covering-c1264-20260722-131509-6394f5",
+        "updated_at": "2026-07-22T13:15:09.478653+00:00"
+      },
+      {
+        "constraint": "Pair multiplicities are 10 on a perfect matching and 9 on the other 60 pairs.",
+        "scope": "C(12,6,4) covers with exactly 40 blocks",
+        "evidence": "C(10,4,2)=9, 40*15=600, and local excess degree 100-99=1",
+        "source_attempt_id": "covering-c1264-20260722-131509-6394f5",
+        "updated_at": "2026-07-22T13:15:09.478653+00:00"
+      },
+      {
+        "constraint": "Relative to the fixed matching, all 40-block profiles satisfy n0+n1+n2+n3=40 and n1+2n2+3n3=60, hence n0>0 or n1>0.",
+        "scope": "fixed-matching representation of hypothetical 40-covers",
+        "evidence": "221 feasible profiles exhaustively enumerated by both implementations",
+        "source_attempt_id": "covering-c1264-20260722-131509-6394f5",
+        "updated_at": "2026-07-22T13:15:09.478653+00:00"
+      }
+    ],
+    "decision_history": [
+      {
+        "attempt_id": "covering-c1264-20260722-131509-6394f5",
+        "strategy_id": "strategy-c1264-baseline-perfect-matching-audit-v1",
+        "decision": "redirect",
+        "prediction": "Both independent implementations will reproduce 924 candidates, 495 targets, a valid 41-cover, 10,395 matchings, and fixed-matching r-class counts [64,480,360,20].",
+        "observation": "Every predicted value matched; deleting the first published block left 485/495 targets covered, so the negative control failed as intended. The current checkout unexpectedly lacked a DRAT-trim executable/source.",
+        "surprise": "The mathematical baseline matched prediction; the proof-replay toolchain recorded by older Mac pilot receipts is not portable to this checkout.",
+        "next_discriminator": "Restore official pinned DRAT-trim, replay one small known UNSAT control and one existing leaf receipt, then dry-build/audit sequential and kmtotalizer link constraints before any matched solver tranche.",
+        "updated_at": "2026-07-22T13:15:09.478653+00:00"
+      }
+    ],
+    "reduction_ledger": [
+      {
+        "ambient_space": "binom(924,40) labelled 40-block families",
+        "represented_space_before": "10,395 matching-indexed exact pair-multiplicity families forced by the six excess pairs",
+        "eliminated_or_quotiented": "Relabel-equivalent choices of the unique multiplicity-10 perfect matching",
+        "represented_space_after": "one canonical fixed-matching family, exhaustively split into two root families: r=0 present; or r=0 absent and r=1 present",
+        "reduction_factor": "exactly 10,395 on the matching-family index; not claimed as a 10,395 reduction of all labelled block assignments",
+        "measurement_status": "exact",
+        "unit": "families",
+        "coverage_scope": "all hypothetical 40-block C(12,6,4) covers, up to relabeling of the 12 points",
+        "soundness_basis": "Every point has degree 20; every pair has multiplicity at least 9; the six total excess incidences give excess degree one at every point, hence a unique perfect matching. S12 is transitive on perfect matchings, and every feasible r-profile contains r=0 or, if not, r=1.",
+        "remaining_unknown": "Whether either fixed-matching root contains a 40-block cover; no global search or exclusion was run.",
+        "next_bulk_elimination": "After proof-checker restoration, use point-link canonical augmentation under C2 wr S5 and a matched sequential-counter versus kmtotalizer discriminator.",
+        "source_attempt_id": "covering-c1264-20260722-131509-6394f5",
+        "strategy_id": "strategy-c1264-baseline-perfect-matching-audit-v1",
+        "updated_at": "2026-07-22T13:15:09.478653+00:00"
+      }
+    ],
+    "prior_art_decisions": [
+      {
+        "attempt_id": "covering-c1264-20260722-131509-6394f5",
+        "strategy_id": "strategy-c1264-baseline-perfect-matching-audit-v1",
+        "nearest_method_ids": [
+          "none-found"
+        ],
+        "classification": "replication_control",
+        "exact_delta": "No new covering bound is claimed. The delta is a deterministic, independently checked baseline packet that binds the maintained witness to the exact perfect-matching and root-split reductions and records a proof-toolchain portability gap.",
+        "duplicate_risk": "The mathematical reductions are elementary and likely known to specialists or already implicit in internal pilots; presenting them as novel would be rediscovery.",
+        "comparison_test": "Compare exact status and witness against the maintained La Jolla page, the C(11,5,3) and C(10,4,2) dependency pages, and recompute every invariant independently.",
+        "decision": "control_only",
+        "source_urls": [
+          "https://ljcr.dmgordon.org/cover/show_cover.php?v=12&k=6&t=4",
+          "https://ljcr.dmgordon.org/cover/show_cover.php?v=11&k=5&t=3",
+          "https://ljcr.dmgordon.org/cover/show_cover.php?v=10&k=4&t=2",
+          "https://msp.org/pjm/1964/14-4/pjm-v14-n4-p29-p.pdf",
+          "https://www.tcs.hut.fi/Publications/info/bibdb.HUT-TCS-B10.shtml"
+        ],
+        "updated_at": "2026-07-22T13:15:09.478653+00:00"
+      }
+    ]
+  }
+}
