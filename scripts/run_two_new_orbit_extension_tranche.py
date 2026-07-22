@@ -12,6 +12,7 @@ from pathlib import Path
 
 
 ROOT = Path(__file__).resolve().parents[1]
+PINNED_PYTHON = Path("/root/proof-factory/.venv/bin/python")
 
 
 def sha(path: Path) -> str:
@@ -23,6 +24,11 @@ def write(path: Path, value: dict[str, object]) -> None:
     temporary = path.with_name(path.name + ".tmp")
     temporary.write_text(json.dumps(value, indent=2, sort_keys=True) + "\n")
     temporary.replace(path)
+
+
+def dependency_python() -> str:
+    """Use the lab's pinned scientific runtime when it is available."""
+    return str(PINNED_PYTHON) if PINNED_PYTHON.exists() else sys.executable
 
 
 def main() -> None:
@@ -39,17 +45,18 @@ def main() -> None:
         output = Path(unit["output"])
         if output.exists():
             raise ValueError(f"refusing to overwrite extension artifact: {output}")
-        command = [sys.executable, "scripts/run_link_residual_pilot.py", unit["witness"]["path"],
+        python = dependency_python()
+        command = [python, "scripts/run_link_residual_pilot.py", unit["witness"]["path"],
                    "--seconds", str(unit["seconds_cap"]), "--output", str(output)]
         run = subprocess.run(command, check=False)
         if run.returncode != 0:
             raise RuntimeError(f"extension runner failed for {unit['id']}: {run.returncode}")
         result_path = output / "result.json"
         result = json.loads(result_path.read_text())
-        subprocess.run([sys.executable, "checkers/audit_link_residual_cnf.py", str(result_path),
+        subprocess.run([python, "checkers/audit_link_residual_cnf.py", str(result_path),
                         "--output", str(output / "cnf-independent-audit.json")], check=True)
         if result["status"] == "SAT":
-            subprocess.run([sys.executable, "checkers/verify_cover.py", str(output / "combined-witness.txt"),
+            subprocess.run([python, "checkers/verify_cover.py", str(output / "combined-witness.txt"),
                             "--v", "12", "--k", "6", "--t", "4", "--expected-blocks", "40"], check=True)
         checkpoint["completed"].append(unit["id"])
         checkpoint["results"].append({

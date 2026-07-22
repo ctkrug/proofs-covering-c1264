@@ -1,0 +1,20 @@
+{
+  "claim_limit": "No mathematical experiment ran and no orbit-extension result was produced.",
+  "failed_job_id": "lab-covering-c1264-d1b2473adc75",
+  "failure": "The wrapper inherited the system Python executable, which lacked the pinned PySAT dependency; execution stopped during import before CNF construction.",
+  "original_archive": {
+    "path": "lab-archive/lab-covering-c1264-d1b2473adc75.json",
+    "sha256": "03968e70094b87aa362378212458783d675977bc5a84ed9b4fe42730eb843058"
+  },
+  "original_record": {
+    "path": "records/labs/lab-covering-c1264-d1b2473adc75-stopped-with-reason-segment-01.json",
+    "sha256": "e84f5e6c0d4523dccb323f12266b9a5363f6536060571dbcc1b5a0f746da496a"
+  },
+  "repair": "Select /root/proof-factory/.venv/bin/python when present for the residual runner and independent CNF checker; preserve the same two orbit witnesses and 300-second caps.",
+  "schema_version": 1,
+  "stderr": {
+    "path": "lab-runs/lab-covering-c1264-d1b2473adc75/segment-000001/20260722-203028-35ee1a/stderr.txt",
+    "sha256": "bdd8f960da266eee3e9331676aa6098c0e6f90becc1259511b8b6e37f1bc70a4"
+  },
+  "status": "preserved_pre_execution_runtime_incident"
+}
