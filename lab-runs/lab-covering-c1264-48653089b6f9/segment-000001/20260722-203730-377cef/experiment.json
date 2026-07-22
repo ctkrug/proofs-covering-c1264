@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "id": "20260722-203730-377cef",
+  "name": "Exact residual extension tests for link orbits 8 and 9 (campaign-runtime retry) segment 1/1",
+  "hypothesis": "One of the two newly validated point-link orbits may extend to a directly verifiable 40-block cover; otherwise replayed UNSAT will exclude each orbit locally.",
+  "expected_signal": "Exactly two fixed-link results at 300 seconds each, with direct cover verification for SAT and reconstructed CNF plus replayable proof for UNSAT.",
+  "command": [
+    "python3",
+    "scripts/run_two_new_orbit_extension_tranche.py",
+    "--manifest",
+    "artifacts/experiments/link-orbits-8-9-extension-300s-20260722/manifest.json",
+    "--checkpoint",
+    "artifacts/experiments/link-orbits-8-9-extension-300s-20260722/checkpoint.json",
+    "--progress",
+    "artifacts/experiments/link-orbits-8-9-extension-300s-20260722/progress.json"
+  ],
+  "cwd": "/root/proof-factory/research/covering-c1264/workspace",
+  "seed": 0,
+  "timeout_seconds": 700,
+  "memory_limit_mb": 4096,
+  "memory_limit_enforced": true,
+  "started_at": "2026-07-22T20:37:30.881087+00:00",
+  "finished_at": "2026-07-22T20:37:55.494340+00:00",
+  "duration_seconds": 24.613,
+  "returncode": 0,
+  "timed_out": false,
+  "python": "3.12.3",
+  "platform": "Linux-6.8.0-124-generic-x86_64-with-glibc2.39",
+  "git_commit": "7ef1f97932c4b9d6a21eb43a314d9a788518b27e",
+  "source_urls": [],
+  "input_artifacts": {
+    "/root/proof-factory/research/covering-c1264/workspace/scripts/run_two_new_orbit_extension_tranche.py": "0aa959ff3382d7d6a34a20d3e43bf1c688a9167b9c52251058de08a5fdfac59d",
+    "/root/proof-factory/research/covering-c1264/workspace/artifacts/experiments/link-orbits-8-9-extension-300s-20260722/manifest.json": "44fbd747159f5909fce698a4c7228d89c677673783bcaf89bb94f147aa5897bd"
+  },
+  "peak_child_memory_rusage": 215496,
+  "peak_child_memory_unit": "kilobytes",
+  "artifacts": {
+    "stdout.txt": "c3a587c4c3e9eff61028e40196a7cc812fbfe00bc0921e38b246944f3b38d7ae",
+    "stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  }
+}
