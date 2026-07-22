@@ -1,0 +1,58 @@
+{
+  "event": "submitted",
+  "schema_version": 2,
+  "id": "lab-covering-c1264-2dd58992c3b5",
+  "problem_id": "covering-c1264",
+  "name": "Nine-orbit three-class hard-tail discriminator",
+  "hypothesis": "The strengthened nine-orbit blocker separates at least one structural hard-tail class at the unchanged 60-second cap.",
+  "expected_signal": "Exactly three outcomes for s-r0-1, s-r1-15, and t-10; replayable UNSAT, validated SAT orbit, or fixed-cap timeout.",
+  "decision_value": "Distinguishes root-0 secondary, root-1 secondary, and tertiary hard-tail behavior before any broader allocation.",
+  "efficiency_design": {
+    "naive_cost": "A generic pass over all 12 hard-tail nodes would spend up to 720 solver-seconds before review.",
+    "opportunities_considered": [
+      "uniform timeout increase",
+      "generic alternative encoding",
+      "three-class sequential discriminator"
+    ],
+    "chosen_reductions": "Exactly three structurally distinct representatives at the unchanged 60-second cap.",
+    "expected_throughput_gain": "Measures blocker sensitivity and class behavior using 25% of a full hard-tail sweep.",
+    "soundness_basis": "Hash-bound nine-orbit blocker/frontier and complete 32-certificate disjointness gate; independent audit required for every decisive result.",
+    "remains_uncompressed": "Nine-node hard tail and catalogue exhaustion remain after this discriminator."
+  },
+  "source_urls": [],
+  "command": [
+    "python3",
+    "scripts/run_sequential_frontier_sweep.py",
+    "--manifest",
+    "artifacts/experiments/sequential-hard-tail-discriminator-v9-20260722/manifest.json",
+    "--run-id",
+    "sequential-hard-tail-discriminator-v9-20260722",
+    "--checkpoint",
+    "artifacts/sequential-frontier-sweep/sequential-hard-tail-discriminator-v9-20260722/checkpoint.json",
+    "--progress",
+    "artifacts/sequential-frontier-sweep/sequential-hard-tail-discriminator-v9-20260722/progress.json",
+    "--units-per-invocation",
+    "3"
+  ],
+  "seed": 0,
+  "segment_seconds": 600,
+  "memory_mb": 4096,
+  "max_segments": 1,
+  "segment": 1,
+  "pilot_segments": 1,
+  "review_every_segments": 1,
+  "checkpoint_path": "artifacts/sequential-frontier-sweep/sequential-hard-tail-discriminator-v9-20260722/checkpoint.json",
+  "progress_path": "artifacts/sequential-frontier-sweep/sequential-hard-tail-discriminator-v9-20260722/progress.json",
+  "continuation_thresholds": {
+    "min_throughput_per_second": 0.004,
+    "max_artifact_growth_bytes": 5000000000,
+    "require_correctness_checks": true
+  },
+  "submitted_at": "2026-07-22T20:55:31.537640+00:00",
+  "workspace_git_commit": "a5a36886c902878786e9074ff60f293e83e22e03",
+  "input_sha256": {
+    "artifacts/experiments/sequential-hard-tail-discriminator-v9-20260722/manifest.json": "70fa44d921c4de4ff3b27462bc300babcaf9c2e7f38eb5d8dd40e72aee5c1e6c",
+    "scripts/run_sequential_frontier_sweep.py": "f9dd9b4e07ae3f242187a59e7a9c33de49596439c09e3cadc8df405b1d19a3d7"
+  },
+  "spec_sha256": "5f1aba920f53a9044c6fce89bf6f250e4273ba072b49c54abcba8f9288ff8d91"
+}
