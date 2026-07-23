@@ -1,0 +1,6403 @@
+{
+  "base_ilp": {
+    "duals": [],
+    "elapsed_seconds": 10.099188504973426,
+    "log_sha256": "7a16c23b7b6c6c4c05b1facef8d23e8ff268db6afccd80f9ad0dd8f6fd4dcb5a",
+    "objective": 17.0,
+    "selected": [
+      143,
+      173,
+      185,
+      187,
+      209,
+      246,
+      268,
+      298,
+      315,
+      333,
+      363,
+      365,
+      375,
+      389,
+      422,
+      457,
+      461
+    ],
+    "status": "Optimal"
+  },
+  "base_weighted_certificate": {
+    "denominator": 1000000,
+    "eligible_block_count": 405,
+    "interpretation": "Every completion block has normalized weight at most one, but the uncovered triples require total normalized weight greater than the remaining number of blocks.",
+    "maximum_eligible_block_load": 999998,
+    "path": "artifacts/classification/ordinary-c1153-v1/open-fifth-deficit-partition-v2/second-live-triple-gate-v1/multi-deficit-propagation-gate-v1/ilp-forced-gate-v1/results/intersection-3-third-00-fourth-000-fifth-008-deficit-003-second-000-cube-000-000/base-weighted-certificate.json",
+    "remaining_slots": 11,
+    "schema_version": 1,
+    "sha256": "b8bedea85d8109d1c05bf3946cbc580ee0c5cb5e9682578671a0cb0d42d2557a",
+    "total_numerator": 13249950,
+    "weighted_triples": [
+      {
+        "numerator": 166666,
+        "triple": [
+          1,
+          4,
+          8
+        ]
+      },
+      {
+        "numerator": 166666,
+        "triple": [
+          1,
+          4,
+          9
+        ]
+      },
+      {
+        "numerator": 333333,
+        "triple": [
+          1,
+          5,
+          6
+        ]
+      },
+      {
+        "numerator": 166666,
+        "triple": [
+          1,
+          5,
+          7
+        ]
+      },
+      {
+        "numerator": 166666,
+        "triple": [
+          1,
+          5,
+          9
+        ]
+      },
+      {
+        "numerator": 166666,
+        "triple": [
+          1,
+          5,
+          10
+        ]
+      },
+      {
+        "numerator": 166666,
+        "triple": [
+          1,
+          5,
+          11
+        ]
+      },
+      {
+        "numerator": 166666,
+        "triple": [
+          1,
+          7,
+          8
+        ]
+      },
+      {
+        "numerator": 166666,
+        "triple": [
+          1,
+          7,
+          9
+        ]
+      },
+      {
+        "numerator": 166666,
+        "triple": [
+          1,
+          7,
+          10
+        ]
+      },
+      {
+        "numerator": 166666,
+        "triple": [
+          1,
+          7,
+          11
+        ]
+      },
+      {
+        "numerator": 166666,
+        "triple": [
+          1,
+          8,
+          9
+        ]
+      },
+      {
+        "numerator": 166666,
+        "triple": [
+          1,
+          8,
+          10
+        ]
+      },
+      {
+        "numerator": 166666,
+        "triple": [
+          1,
+          8,
+          11
+        ]
+      },
+      {
+        "numerator": 166666,
+        "triple": [
+          1,
+          9,
+          10
+        ]
+      },
+      {
+        "numerator": 166666,
+        "triple": [
+          1,
+          9,
+          11
+        ]
+      },
+      {
+        "numerator": 166666,
+        "triple": [
+          1,
+          10,
+          11
+        ]
+      },
+      {
+        "numerator": 166666,
+        "triple": [
+          2,
+          4,
+          8
+        ]
+      },
+      {
+        "numerator": 166666,
+        "triple": [
+          2,
+          4,
+          9
+        ]
+      },
+      {
+        "numerator": 333333,
+        "triple": [
+          2,
+          5,
+          6
+        ]
+      },
+      {
+        "numerator": 166666,
+        "triple": [
+          2,
+          5,
+          7
+        ]
+      },
+      {
+        "numerator": 166666,
+        "triple": [
+          2,
+          5,
+          9
+        ]
+      },
+      {
+        "numerator": 166666,
+        "triple": [
+          2,
+          5,
+          10
+        ]
+      },
+      {
+        "numerator": 166666,
+        "triple": [
+          2,
+          5,
+          11
+        ]
+      },
+      {
+        "numerator": 166666,
+        "triple": [
+          2,
+          7,
+          8
+        ]
+      },
+      {
+        "numerator": 166666,
+        "triple": [
+          2,
+          7,
+          9
+        ]
+      },
+      {
+        "numerator": 166666,
+        "triple": [
+          2,
+          7,
+          10
+        ]
+      },
+      {
+        "numerator": 166666,
+        "triple": [
+          2,
+          7,
+          11
+        ]
+      },
+      {
+        "numerator": 166666,
+        "triple": [
+          2,
+          8,
+          9
+        ]
+      },
+      {
+        "numerator": 166666,
+        "triple": [
+          2,
+          8,
+          10
+        ]
+      },
+      {
+        "numerator": 166666,
+        "triple": [
+          2,
+          8,
+          11
+        ]
+      },
+      {
+        "numerator": 166666,
+        "triple": [
+          2,
+          9,
+          10
+        ]
+      },
+      {
+        "numerator": 166666,
+        "triple": [
+          2,
+          9,
+          11
+        ]
+      },
+      {
+        "numerator": 166666,
+        "triple": [
+          2,
+          10,
+          11
+        ]
+      },
+      {
+        "numerator": 166666,
+        "triple": [
+          3,
+          4,
+          8
+        ]
+      },
+      {
+        "numerator": 166666,
+        "triple": [
+          3,
+          4,
+          9
+        ]
+      },
+      {
+        "numerator": 333333,
+        "triple": [
+          3,
+          5,
+          6
+        ]
+      },
+      {
+        "numerator": 166666,
+        "triple": [
+          3,
+          5,
+          7
+        ]
+      },
+      {
+        "numerator": 166666,
+        "triple": [
+          3,
+          5,
+          9
+        ]
+      },
+      {
+        "numerator": 166666,
+        "triple": [
+          3,
+          5,
+          10
+        ]
+      },
+      {
+        "numerator": 166666,
+        "triple": [
+          3,
+          5,
+          11
+        ]
+      },
+      {
+        "numerator": 166666,
+        "triple": [
+          3,
+          7,
+          8
+        ]
+      },
+      {
+        "numerator": 166666,
+        "triple": [
+          3,
+          7,
+          9
+        ]
+      },
+      {
+        "numerator": 166666,
+        "triple": [
+          3,
+          7,
+          10
+        ]
+      },
+      {
+        "numerator": 166666,
+        "triple": [
+          3,
+          7,
+          11
+        ]
+      },
+      {
+        "numerator": 166666,
+        "triple": [
+          3,
+          8,
+          9
+        ]
+      },
+      {
+        "numerator": 166666,
+        "triple": [
+          3,
+          8,
+          10
+        ]
+      },
+      {
+        "numerator": 166666,
+        "triple": [
+          3,
+          8,
+          11
+        ]
+      },
+      {
+        "numerator": 166666,
+        "triple": [
+          3,
+          9,
+          10
+        ]
+      },
+      {
+        "numerator": 166666,
+        "triple": [
+          3,
+          9,
+          11
+        ]
+      },
+      {
+        "numerator": 166666,
+        "triple": [
+          3,
+          10,
+          11
+        ]
+      },
+      {
+        "numerator": 83333,
+        "triple": [
+          4,
+          5,
+          6
+        ]
+      },
+      {
+        "numerator": 166666,
+        "triple": [
+          4,
+          5,
+          7
+        ]
+      },
+      {
+        "numerator": 166666,
+        "triple": [
+          4,
+          5,
+          8
+        ]
+      },
+      {
+        "numerator": 83333,
+        "triple": [
+          4,
+          5,
+          9
+        ]
+      },
+      {
+        "numerator": 166666,
+        "triple": [
+          4,
+          5,
+          10
+        ]
+      },
+      {
+        "numerator": 166666,
+        "triple": [
+          4,
+          5,
+          11
+        ]
+      },
+      {
+        "numerator": 166666,
+        "triple": [
+          4,
+          6,
+          8
+        ]
+      },
+      {
+        "numerator": 166666,
+        "triple": [
+          4,
+          6,
+          9
+        ]
+      },
+      {
+        "numerator": 83333,
+        "triple": [
+          4,
+          7,
+          8
+        ]
+      },
+      {
+        "numerator": 83333,
+        "triple": [
+          4,
+          7,
+          9
+        ]
+      },
+      {
+        "numerator": 166666,
+        "triple": [
+          4,
+          7,
+          10
+        ]
+      },
+      {
+        "numerator": 166666,
+        "triple": [
+          4,
+          7,
+          11
+        ]
+      },
+      {
+        "numerator": 83333,
+        "triple": [
+          4,
+          8,
+          10
+        ]
+      },
+      {
+        "numerator": 83333,
+        "triple": [
+          4,
+          8,
+          11
+        ]
+      },
+      {
+        "numerator": 83333,
+        "triple": [
+          4,
+          9,
+          10
+        ]
+      },
+      {
+        "numerator": 83333,
+        "triple": [
+          4,
+          9,
+          11
+        ]
+      },
+      {
+        "numerator": 166666,
+        "triple": [
+          4,
+          10,
+          11
+        ]
+      },
+      {
+        "numerator": 83333,
+        "triple": [
+          5,
+          6,
+          8
+        ]
+      },
+      {
+        "numerator": 83333,
+        "triple": [
+          5,
+          7,
+          8
+        ]
+      },
+      {
+        "numerator": 83333,
+        "triple": [
+          5,
+          8,
+          9
+        ]
+      },
+      {
+        "numerator": 83333,
+        "triple": [
+          5,
+          8,
+          10
+        ]
+      },
+      {
+        "numerator": 83333,
+        "triple": [
+          5,
+          8,
+          11
+        ]
+      },
+      {
+        "numerator": 166666,
+        "triple": [
+          6,
+          7,
+          8
+        ]
+      },
+      {
+        "numerator": 166666,
+        "triple": [
+          6,
+          7,
+          9
+        ]
+      },
+      {
+        "numerator": 166666,
+        "triple": [
+          6,
+          7,
+          10
+        ]
+      },
+      {
+        "numerator": 166666,
+        "triple": [
+          6,
+          7,
+          11
+        ]
+      },
+      {
+        "numerator": 166666,
+        "triple": [
+          6,
+          8,
+          9
+        ]
+      },
+      {
+        "numerator": 166666,
+        "triple": [
+          6,
+          8,
+          10
+        ]
+      },
+      {
+        "numerator": 166666,
+        "triple": [
+          6,
+          8,
+          11
+        ]
+      },
+      {
+        "numerator": 166666,
+        "triple": [
+          6,
+          9,
+          10
+        ]
+      },
+      {
+        "numerator": 166666,
+        "triple": [
+          6,
+          9,
+          11
+        ]
+      },
+      {
+        "numerator": 166666,
+        "triple": [
+          6,
+          10,
+          11
+        ]
+      }
+    ]
+  },
+  "branch_count_quantile": "q4",
+  "case_id": "intersection-3-third-00-fourth-000-fifth-008-deficit-003-second-000-cube-000-000",
+  "certified_weighted_obstruction_count": 9,
+  "claim_limit": "CBC outcomes are proposals. Weighted certificates and proof streams require independent audit.",
+  "cube_path": [
+    0,
+    0
+  ],
+  "cube_position": "first_depth_two_cube",
+  "domain": {
+    "available_count": 405,
+    "available_sha256": "a23485ac0f0adb3f09514454783dd7a3c41dee24e45abd1e3282e7c8efb35098",
+    "fixed_count": 9,
+    "fixed_sha256": "e91eaaf60463a0fc800723acd25c3a9e99a81a4daf057c5f8b6269099b7feee6",
+    "forbidden_count": 48,
+    "forbidden_sha256": "55479b4c9fe20d56c330e8bc9908f4d8978290d6a3c8828d80557e4cddc7141a",
+    "remaining_slots": 11,
+    "terminal_state_sha256": "566723d230eb400317168f198f649c4f82d71aa7a96e1eff5b4a0be956aa0785",
+    "uncovered_sha256": "b7633f149289827aff018903979cc25cd9c9d79a0471279a97e0ebc73672b7e1",
+    "uncovered_triple_count": 110,
+    "unit_recipe_sha256": "29c2da0f6595ad790d6f08a4b567db3d1c97516c4c9d943e00f30222e9ca1e62"
+  },
+  "formula_frontier_count": 400,
+  "formula_id": "intersection-3-third-00-fourth-000-fifth-008-deficit-003-second-000",
+  "parent_cnf_sha256": "39cae2fbf472dacfd39c5f4df5576a510754e923967ce20775e41ecb042b0197",
+  "probes": [
+    {
+      "assumption": -186,
+      "block": [
+        1,
+        5,
+        7,
+        8,
+        9
+      ],
+      "cbc_proposed_infeasible": true,
+      "direction": "ASSUME_FALSE",
+      "exact_cnf_validation": {
+        "assumption": -186,
+        "elapsed_seconds": 15.007781725842506,
+        "exact_cnf_sha256": "84da5ddeaab73b8d6c1f0ad36ddedb898913684a90cfadf8f488e912c3e4ad7f",
+        "returncode": 0,
+        "seconds_cap": 15,
+        "solver_log": {
+          "path": "artifacts/classification/ordinary-c1153-v1/open-fifth-deficit-partition-v2/second-live-triple-gate-v1/multi-deficit-propagation-gate-v1/ilp-forced-gate-v1/results/intersection-3-third-00-fourth-000-fifth-008-deficit-003-second-000-cube-000-000/assume_false-186-solver.log",
+          "sha256": "8fba55cea0f98be36fab7b65349dda867a58aabfcf974a46098f5123830ac5cb"
+        },
+        "status": "FIXED_CAP_TIMEOUT"
+      },
+      "ilp": {
+        "duals": [],
+        "elapsed_seconds": 2.0906702680513263,
+        "log_sha256": "c5ee0d9716b9db29408816414df714d4abac17ea7bbf9a6388027176b7f96d0a",
+        "objective": 16.0,
+        "selected": [
+          172,
+          183,
+          188,
+          209,
+          242,
+          259,
+          260,
+          281,
+          299,
+          303,
+          362,
+          380,
+          387,
+          411,
+          422,
+          459
+        ],
+        "status": "Optimal"
+      },
+      "residual_triple_impact": 10,
+      "variable": 186,
+      "weighted_certificate": {
+        "denominator": 1000000,
+        "eligible_block_count": 404,
+        "interpretation": "Every completion block has normalized weight at most one, but the uncovered triples require total normalized weight greater than the remaining number of blocks.",
+        "maximum_eligible_block_load": 999998,
+        "path": "artifacts/classification/ordinary-c1153-v1/open-fifth-deficit-partition-v2/second-live-triple-gate-v1/multi-deficit-propagation-gate-v1/ilp-forced-gate-v1/results/intersection-3-third-00-fourth-000-fifth-008-deficit-003-second-000-cube-000-000/assume_false-186-weighted-certificate.json",
+        "remaining_slots": 11,
+        "schema_version": 1,
+        "sha256": "9fd806625b5a95f0680ca18396c82876c3547e7b1dc6d924a4201dc3c73987ce",
+        "total_numerator": 13249950,
+        "weighted_triples": [
+          {
+            "numerator": 166666,
+            "triple": [
+              1,
+              4,
+              8
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              1,
+              4,
+              9
+            ]
+          },
+          {
+            "numerator": 333333,
+            "triple": [
+              1,
+              5,
+              6
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              1,
+              5,
+              7
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              1,
+              5,
+              9
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              1,
+              5,
+              10
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              1,
+              5,
+              11
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              1,
+              7,
+              8
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              1,
+              7,
+              9
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              1,
+              7,
+              10
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              1,
+              7,
+              11
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              1,
+              8,
+              9
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              1,
+              8,
+              10
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              1,
+              8,
+              11
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              1,
+              9,
+              10
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              1,
+              9,
+              11
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              1,
+              10,
+              11
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              2,
+              4,
+              8
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              2,
+              4,
+              9
+            ]
+          },
+          {
+            "numerator": 333333,
+            "triple": [
+              2,
+              5,
+              6
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              2,
+              5,
+              7
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              2,
+              5,
+              9
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              2,
+              5,
+              10
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              2,
+              5,
+              11
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              2,
+              7,
+              8
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              2,
+              7,
+              9
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              2,
+              7,
+              10
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              2,
+              7,
+              11
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              2,
+              8,
+              9
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              2,
+              8,
+              10
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              2,
+              8,
+              11
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              2,
+              9,
+              10
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              2,
+              9,
+              11
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              2,
+              10,
+              11
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              3,
+              4,
+              8
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              3,
+              4,
+              9
+            ]
+          },
+          {
+            "numerator": 333333,
+            "triple": [
+              3,
+              5,
+              6
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              3,
+              5,
+              7
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              3,
+              5,
+              9
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              3,
+              5,
+              10
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              3,
+              5,
+              11
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              3,
+              7,
+              8
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              3,
+              7,
+              9
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              3,
+              7,
+              10
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              3,
+              7,
+              11
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              3,
+              8,
+              9
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              3,
+              8,
+              10
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              3,
+              8,
+              11
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              3,
+              9,
+              10
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              3,
+              9,
+              11
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              3,
+              10,
+              11
+            ]
+          },
+          {
+            "numerator": 83333,
+            "triple": [
+              4,
+              5,
+              6
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              4,
+              5,
+              7
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              4,
+              5,
+              8
+            ]
+          },
+          {
+            "numerator": 83333,
+            "triple": [
+              4,
+              5,
+              9
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              4,
+              5,
+              10
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              4,
+              5,
+              11
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              4,
+              6,
+              8
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              4,
+              6,
+              9
+            ]
+          },
+          {
+            "numerator": 83333,
+            "triple": [
+              4,
+              7,
+              8
+            ]
+          },
+          {
+            "numerator": 83333,
+            "triple": [
+              4,
+              7,
+              9
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              4,
+              7,
+              10
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              4,
+              7,
+              11
+            ]
+          },
+          {
+            "numerator": 83333,
+            "triple": [
+              4,
+              8,
+              10
+            ]
+          },
+          {
+            "numerator": 83333,
+            "triple": [
+              4,
+              8,
+              11
+            ]
+          },
+          {
+            "numerator": 83333,
+            "triple": [
+              4,
+              9,
+              10
+            ]
+          },
+          {
+            "numerator": 83333,
+            "triple": [
+              4,
+              9,
+              11
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              4,
+              10,
+              11
+            ]
+          },
+          {
+            "numerator": 83333,
+            "triple": [
+              5,
+              6,
+              8
+            ]
+          },
+          {
+            "numerator": 83333,
+            "triple": [
+              5,
+              7,
+              8
+            ]
+          },
+          {
+            "numerator": 83333,
+            "triple": [
+              5,
+              8,
+              9
+            ]
+          },
+          {
+            "numerator": 83333,
+            "triple": [
+              5,
+              8,
+              10
+            ]
+          },
+          {
+            "numerator": 83333,
+            "triple": [
+              5,
+              8,
+              11
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              6,
+              7,
+              8
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              6,
+              7,
+              9
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              6,
+              7,
+              10
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              6,
+              7,
+              11
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              6,
+              8,
+              9
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              6,
+              8,
+              10
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              6,
+              8,
+              11
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              6,
+              9,
+              10
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              6,
+              9,
+              11
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              6,
+              10,
+              11
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "assumption": -187,
+      "block": [
+        1,
+        5,
+        7,
+        8,
+        10
+      ],
+      "cbc_proposed_infeasible": true,
+      "direction": "ASSUME_FALSE",
+      "exact_cnf_validation": {
+        "assumption": -187,
+        "elapsed_seconds": 15.013074975926429,
+        "exact_cnf_sha256": "8ba918b6f264c741ad06ed36bc168d8d8b4dd968a466500383e39e39dfb97805",
+        "returncode": 0,
+        "seconds_cap": 15,
+        "solver_log": {
+          "path": "artifacts/classification/ordinary-c1153-v1/open-fifth-deficit-partition-v2/second-live-triple-gate-v1/multi-deficit-propagation-gate-v1/ilp-forced-gate-v1/results/intersection-3-third-00-fourth-000-fifth-008-deficit-003-second-000-cube-000-000/assume_false-187-solver.log",
+          "sha256": "8fba55cea0f98be36fab7b65349dda867a58aabfcf974a46098f5123830ac5cb"
+        },
+        "status": "FIXED_CAP_TIMEOUT"
+      },
+      "ilp": {
+        "duals": [],
+        "elapsed_seconds": 2.195492265978828,
+        "log_sha256": "baf45101f1f699b75f7068a47cb5233c0b1b3bd5400cf4ed2c131d4e77384585",
+        "objective": 18.0,
+        "selected": [
+          169,
+          174,
+          185,
+          186,
+          200,
+          260,
+          266,
+          269,
+          277,
+          299,
+          317,
+          334,
+          337,
+          350,
+          364,
+          388,
+          413,
+          457
+        ],
+        "status": "Optimal"
+      },
+      "residual_triple_impact": 10,
+      "variable": 187,
+      "weighted_certificate": {
+        "denominator": 1000000,
+        "eligible_block_count": 404,
+        "interpretation": "Every completion block has normalized weight at most one, but the uncovered triples require total normalized weight greater than the remaining number of blocks.",
+        "maximum_eligible_block_load": 999998,
+        "path": "artifacts/classification/ordinary-c1153-v1/open-fifth-deficit-partition-v2/second-live-triple-gate-v1/multi-deficit-propagation-gate-v1/ilp-forced-gate-v1/results/intersection-3-third-00-fourth-000-fifth-008-deficit-003-second-000-cube-000-000/assume_false-187-weighted-certificate.json",
+        "remaining_slots": 11,
+        "schema_version": 1,
+        "sha256": "9fd806625b5a95f0680ca18396c82876c3547e7b1dc6d924a4201dc3c73987ce",
+        "total_numerator": 13249950,
+        "weighted_triples": [
+          {
+            "numerator": 166666,
+            "triple": [
+              1,
+              4,
+              8
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              1,
+              4,
+              9
+            ]
+          },
+          {
+            "numerator": 333333,
+            "triple": [
+              1,
+              5,
+              6
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              1,
+              5,
+              7
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              1,
+              5,
+              9
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              1,
+              5,
+              10
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              1,
+              5,
+              11
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              1,
+              7,
+              8
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              1,
+              7,
+              9
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              1,
+              7,
+              10
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              1,
+              7,
+              11
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              1,
+              8,
+              9
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              1,
+              8,
+              10
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              1,
+              8,
+              11
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              1,
+              9,
+              10
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              1,
+              9,
+              11
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              1,
+              10,
+              11
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              2,
+              4,
+              8
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              2,
+              4,
+              9
+            ]
+          },
+          {
+            "numerator": 333333,
+            "triple": [
+              2,
+              5,
+              6
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              2,
+              5,
+              7
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              2,
+              5,
+              9
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              2,
+              5,
+              10
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              2,
+              5,
+              11
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              2,
+              7,
+              8
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              2,
+              7,
+              9
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              2,
+              7,
+              10
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              2,
+              7,
+              11
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              2,
+              8,
+              9
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              2,
+              8,
+              10
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              2,
+              8,
+              11
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              2,
+              9,
+              10
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              2,
+              9,
+              11
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              2,
+              10,
+              11
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              3,
+              4,
+              8
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              3,
+              4,
+              9
+            ]
+          },
+          {
+            "numerator": 333333,
+            "triple": [
+              3,
+              5,
+              6
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              3,
+              5,
+              7
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              3,
+              5,
+              9
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              3,
+              5,
+              10
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              3,
+              5,
+              11
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              3,
+              7,
+              8
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              3,
+              7,
+              9
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              3,
+              7,
+              10
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              3,
+              7,
+              11
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              3,
+              8,
+              9
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              3,
+              8,
+              10
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              3,
+              8,
+              11
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              3,
+              9,
+              10
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              3,
+              9,
+              11
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              3,
+              10,
+              11
+            ]
+          },
+          {
+            "numerator": 83333,
+            "triple": [
+              4,
+              5,
+              6
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              4,
+              5,
+              7
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              4,
+              5,
+              8
+            ]
+          },
+          {
+            "numerator": 83333,
+            "triple": [
+              4,
+              5,
+              9
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              4,
+              5,
+              10
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              4,
+              5,
+              11
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              4,
+              6,
+              8
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              4,
+              6,
+              9
+            ]
+          },
+          {
+            "numerator": 83333,
+            "triple": [
+              4,
+              7,
+              8
+            ]
+          },
+          {
+            "numerator": 83333,
+            "triple": [
+              4,
+              7,
+              9
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              4,
+              7,
+              10
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              4,
+              7,
+              11
+            ]
+          },
+          {
+            "numerator": 83333,
+            "triple": [
+              4,
+              8,
+              10
+            ]
+          },
+          {
+            "numerator": 83333,
+            "triple": [
+              4,
+              8,
+              11
+            ]
+          },
+          {
+            "numerator": 83333,
+            "triple": [
+              4,
+              9,
+              10
+            ]
+          },
+          {
+            "numerator": 83333,
+            "triple": [
+              4,
+              9,
+              11
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              4,
+              10,
+              11
+            ]
+          },
+          {
+            "numerator": 83333,
+            "triple": [
+              5,
+              6,
+              8
+            ]
+          },
+          {
+            "numerator": 83333,
+            "triple": [
+              5,
+              7,
+              8
+            ]
+          },
+          {
+            "numerator": 83333,
+            "triple": [
+              5,
+              8,
+              9
+            ]
+          },
+          {
+            "numerator": 83333,
+            "triple": [
+              5,
+              8,
+              10
+            ]
+          },
+          {
+            "numerator": 83333,
+            "triple": [
+              5,
+              8,
+              11
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              6,
+              7,
+              8
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              6,
+              7,
+              9
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              6,
+              7,
+              10
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              6,
+              7,
+              11
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              6,
+              8,
+              9
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              6,
+              8,
+              10
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              6,
+              8,
+              11
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              6,
+              9,
+              10
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              6,
+              9,
+              11
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              6,
+              10,
+              11
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "assumption": -188,
+      "block": [
+        1,
+        5,
+        7,
+        8,
+        11
+      ],
+      "cbc_proposed_infeasible": true,
+      "direction": "ASSUME_FALSE",
+      "exact_cnf_validation": null,
+      "ilp": {
+        "duals": [],
+        "elapsed_seconds": 2.120192670961842,
+        "log_sha256": "108af8179b8bbf18abf52e365c0bc3ffbc8d8c3b559347161bbba3b6ebeae769",
+        "objective": 16.0,
+        "selected": [
+          172,
+          181,
+          190,
+          208,
+          265,
+          299,
+          308,
+          315,
+          324,
+          362,
+          375,
+          383,
+          391,
+          411,
+          422,
+          460
+        ],
+        "status": "Optimal"
+      },
+      "residual_triple_impact": 10,
+      "variable": 188,
+      "weighted_certificate": {
+        "denominator": 1000000,
+        "eligible_block_count": 404,
+        "interpretation": "Every completion block has normalized weight at most one, but the uncovered triples require total normalized weight greater than the remaining number of blocks.",
+        "maximum_eligible_block_load": 999998,
+        "path": "artifacts/classification/ordinary-c1153-v1/open-fifth-deficit-partition-v2/second-live-triple-gate-v1/multi-deficit-propagation-gate-v1/ilp-forced-gate-v1/results/intersection-3-third-00-fourth-000-fifth-008-deficit-003-second-000-cube-000-000/assume_false-188-weighted-certificate.json",
+        "remaining_slots": 11,
+        "schema_version": 1,
+        "sha256": "9fd806625b5a95f0680ca18396c82876c3547e7b1dc6d924a4201dc3c73987ce",
+        "total_numerator": 13249950,
+        "weighted_triples": [
+          {
+            "numerator": 166666,
+            "triple": [
+              1,
+              4,
+              8
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              1,
+              4,
+              9
+            ]
+          },
+          {
+            "numerator": 333333,
+            "triple": [
+              1,
+              5,
+              6
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              1,
+              5,
+              7
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              1,
+              5,
+              9
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              1,
+              5,
+              10
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              1,
+              5,
+              11
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              1,
+              7,
+              8
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              1,
+              7,
+              9
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              1,
+              7,
+              10
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              1,
+              7,
+              11
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              1,
+              8,
+              9
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              1,
+              8,
+              10
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              1,
+              8,
+              11
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              1,
+              9,
+              10
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              1,
+              9,
+              11
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              1,
+              10,
+              11
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              2,
+              4,
+              8
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              2,
+              4,
+              9
+            ]
+          },
+          {
+            "numerator": 333333,
+            "triple": [
+              2,
+              5,
+              6
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              2,
+              5,
+              7
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              2,
+              5,
+              9
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              2,
+              5,
+              10
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              2,
+              5,
+              11
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              2,
+              7,
+              8
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              2,
+              7,
+              9
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              2,
+              7,
+              10
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              2,
+              7,
+              11
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              2,
+              8,
+              9
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              2,
+              8,
+              10
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              2,
+              8,
+              11
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              2,
+              9,
+              10
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              2,
+              9,
+              11
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              2,
+              10,
+              11
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              3,
+              4,
+              8
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              3,
+              4,
+              9
+            ]
+          },
+          {
+            "numerator": 333333,
+            "triple": [
+              3,
+              5,
+              6
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              3,
+              5,
+              7
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              3,
+              5,
+              9
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              3,
+              5,
+              10
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              3,
+              5,
+              11
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              3,
+              7,
+              8
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              3,
+              7,
+              9
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              3,
+              7,
+              10
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              3,
+              7,
+              11
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              3,
+              8,
+              9
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              3,
+              8,
+              10
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              3,
+              8,
+              11
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              3,
+              9,
+              10
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              3,
+              9,
+              11
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              3,
+              10,
+              11
+            ]
+          },
+          {
+            "numerator": 83333,
+            "triple": [
+              4,
+              5,
+              6
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              4,
+              5,
+              7
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              4,
+              5,
+              8
+            ]
+          },
+          {
+            "numerator": 83333,
+            "triple": [
+              4,
+              5,
+              9
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              4,
+              5,
+              10
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              4,
+              5,
+              11
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              4,
+              6,
+              8
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              4,
+              6,
+              9
+            ]
+          },
+          {
+            "numerator": 83333,
+            "triple": [
+              4,
+              7,
+              8
+            ]
+          },
+          {
+            "numerator": 83333,
+            "triple": [
+              4,
+              7,
+              9
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              4,
+              7,
+              10
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              4,
+              7,
+              11
+            ]
+          },
+          {
+            "numerator": 83333,
+            "triple": [
+              4,
+              8,
+              10
+            ]
+          },
+          {
+            "numerator": 83333,
+            "triple": [
+              4,
+              8,
+              11
+            ]
+          },
+          {
+            "numerator": 83333,
+            "triple": [
+              4,
+              9,
+              10
+            ]
+          },
+          {
+            "numerator": 83333,
+            "triple": [
+              4,
+              9,
+              11
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              4,
+              10,
+              11
+            ]
+          },
+          {
+            "numerator": 83333,
+            "triple": [
+              5,
+              6,
+              8
+            ]
+          },
+          {
+            "numerator": 83333,
+            "triple": [
+              5,
+              7,
+              8
+            ]
+          },
+          {
+            "numerator": 83333,
+            "triple": [
+              5,
+              8,
+              9
+            ]
+          },
+          {
+            "numerator": 83333,
+            "triple": [
+              5,
+              8,
+              10
+            ]
+          },
+          {
+            "numerator": 83333,
+            "triple": [
+              5,
+              8,
+              11
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              6,
+              7,
+              8
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              6,
+              7,
+              9
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              6,
+              7,
+              10
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              6,
+              7,
+              11
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              6,
+              8,
+              9
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              6,
+              8,
+              10
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              6,
+              8,
+              11
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              6,
+              9,
+              10
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              6,
+              9,
+              11
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              6,
+              10,
+              11
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "assumption": -189,
+      "block": [
+        1,
+        5,
+        7,
+        9,
+        10
+      ],
+      "cbc_proposed_infeasible": true,
+      "direction": "ASSUME_FALSE",
+      "exact_cnf_validation": null,
+      "ilp": {
+        "duals": [],
+        "elapsed_seconds": 2.1213755970820785,
+        "log_sha256": "1e0f11dd0ec0a444a652436ef5f6406789c96489d7afb0dd0c941d6e526f2c52",
+        "objective": 18.0,
+        "selected": [
+          44,
+          62,
+          132,
+          135,
+          178,
+          194,
+          265,
+          297,
+          310,
+          312,
+          338,
+          345,
+          349,
+          399,
+          434,
+          437,
+          458,
+          461
+        ],
+        "status": "Optimal"
+      },
+      "residual_triple_impact": 10,
+      "variable": 189,
+      "weighted_certificate": {
+        "denominator": 1000000,
+        "eligible_block_count": 404,
+        "interpretation": "Every completion block has normalized weight at most one, but the uncovered triples require total normalized weight greater than the remaining number of blocks.",
+        "maximum_eligible_block_load": 999998,
+        "path": "artifacts/classification/ordinary-c1153-v1/open-fifth-deficit-partition-v2/second-live-triple-gate-v1/multi-deficit-propagation-gate-v1/ilp-forced-gate-v1/results/intersection-3-third-00-fourth-000-fifth-008-deficit-003-second-000-cube-000-000/assume_false-189-weighted-certificate.json",
+        "remaining_slots": 11,
+        "schema_version": 1,
+        "sha256": "9fd806625b5a95f0680ca18396c82876c3547e7b1dc6d924a4201dc3c73987ce",
+        "total_numerator": 13249950,
+        "weighted_triples": [
+          {
+            "numerator": 166666,
+            "triple": [
+              1,
+              4,
+              8
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              1,
+              4,
+              9
+            ]
+          },
+          {
+            "numerator": 333333,
+            "triple": [
+              1,
+              5,
+              6
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              1,
+              5,
+              7
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              1,
+              5,
+              9
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              1,
+              5,
+              10
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              1,
+              5,
+              11
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              1,
+              7,
+              8
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              1,
+              7,
+              9
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              1,
+              7,
+              10
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              1,
+              7,
+              11
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              1,
+              8,
+              9
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              1,
+              8,
+              10
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              1,
+              8,
+              11
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              1,
+              9,
+              10
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              1,
+              9,
+              11
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              1,
+              10,
+              11
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              2,
+              4,
+              8
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              2,
+              4,
+              9
+            ]
+          },
+          {
+            "numerator": 333333,
+            "triple": [
+              2,
+              5,
+              6
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              2,
+              5,
+              7
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              2,
+              5,
+              9
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              2,
+              5,
+              10
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              2,
+              5,
+              11
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              2,
+              7,
+              8
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              2,
+              7,
+              9
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              2,
+              7,
+              10
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              2,
+              7,
+              11
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              2,
+              8,
+              9
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              2,
+              8,
+              10
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              2,
+              8,
+              11
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              2,
+              9,
+              10
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              2,
+              9,
+              11
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              2,
+              10,
+              11
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              3,
+              4,
+              8
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              3,
+              4,
+              9
+            ]
+          },
+          {
+            "numerator": 333333,
+            "triple": [
+              3,
+              5,
+              6
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              3,
+              5,
+              7
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              3,
+              5,
+              9
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              3,
+              5,
+              10
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              3,
+              5,
+              11
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              3,
+              7,
+              8
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              3,
+              7,
+              9
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              3,
+              7,
+              10
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              3,
+              7,
+              11
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              3,
+              8,
+              9
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              3,
+              8,
+              10
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              3,
+              8,
+              11
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              3,
+              9,
+              10
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              3,
+              9,
+              11
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              3,
+              10,
+              11
+            ]
+          },
+          {
+            "numerator": 83333,
+            "triple": [
+              4,
+              5,
+              6
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              4,
+              5,
+              7
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              4,
+              5,
+              8
+            ]
+          },
+          {
+            "numerator": 83333,
+            "triple": [
+              4,
+              5,
+              9
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              4,
+              5,
+              10
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              4,
+              5,
+              11
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              4,
+              6,
+              8
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              4,
+              6,
+              9
+            ]
+          },
+          {
+            "numerator": 83333,
+            "triple": [
+              4,
+              7,
+              8
+            ]
+          },
+          {
+            "numerator": 83333,
+            "triple": [
+              4,
+              7,
+              9
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              4,
+              7,
+              10
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              4,
+              7,
+              11
+            ]
+          },
+          {
+            "numerator": 83333,
+            "triple": [
+              4,
+              8,
+              10
+            ]
+          },
+          {
+            "numerator": 83333,
+            "triple": [
+              4,
+              8,
+              11
+            ]
+          },
+          {
+            "numerator": 83333,
+            "triple": [
+              4,
+              9,
+              10
+            ]
+          },
+          {
+            "numerator": 83333,
+            "triple": [
+              4,
+              9,
+              11
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              4,
+              10,
+              11
+            ]
+          },
+          {
+            "numerator": 83333,
+            "triple": [
+              5,
+              6,
+              8
+            ]
+          },
+          {
+            "numerator": 83333,
+            "triple": [
+              5,
+              7,
+              8
+            ]
+          },
+          {
+            "numerator": 83333,
+            "triple": [
+              5,
+              8,
+              9
+            ]
+          },
+          {
+            "numerator": 83333,
+            "triple": [
+              5,
+              8,
+              10
+            ]
+          },
+          {
+            "numerator": 83333,
+            "triple": [
+              5,
+              8,
+              11
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              6,
+              7,
+              8
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              6,
+              7,
+              9
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              6,
+              7,
+              10
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              6,
+              7,
+              11
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              6,
+              8,
+              9
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              6,
+              8,
+              10
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              6,
+              8,
+              11
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              6,
+              9,
+              10
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              6,
+              9,
+              11
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              6,
+              10,
+              11
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "assumption": 220,
+      "block": [
+        2,
+        3,
+        4,
+        6,
+        10
+      ],
+      "cbc_proposed_infeasible": true,
+      "direction": "ASSUME_TRUE",
+      "exact_cnf_validation": null,
+      "ilp": {
+        "duals": [],
+        "elapsed_seconds": 2.1291383150964975,
+        "log_sha256": "bb4e3a1bc4f42d99d399a00247a3a04b72aa898470724cf8cd77f6d0df64b9bd",
+        "objective": 18.0,
+        "selected": [
+          60,
+          143,
+          174,
+          190,
+          206,
+          262,
+          264,
+          268,
+          301,
+          305,
+          312,
+          362,
+          374,
+          378,
+          388,
+          422,
+          458,
+          461
+        ],
+        "status": "Optimal"
+      },
+      "residual_triple_impact": 1,
+      "variable": 220,
+      "weighted_certificate": {
+        "denominator": 1000000,
+        "eligible_block_count": 404,
+        "interpretation": "Every completion block has normalized weight at most one, but the uncovered triples require total normalized weight greater than the remaining number of blocks.",
+        "maximum_eligible_block_load": 999998,
+        "path": "artifacts/classification/ordinary-c1153-v1/open-fifth-deficit-partition-v2/second-live-triple-gate-v1/multi-deficit-propagation-gate-v1/ilp-forced-gate-v1/results/intersection-3-third-00-fourth-000-fifth-008-deficit-003-second-000-cube-000-000/assume_true-220-weighted-certificate.json",
+        "remaining_slots": 10,
+        "schema_version": 1,
+        "sha256": "755c22d3e9310dad9d5d54aea6fc9f55d5f775d39cd0fe7b8e2f9d79b75d5d4d",
+        "total_numerator": 13249950,
+        "weighted_triples": [
+          {
+            "numerator": 166666,
+            "triple": [
+              1,
+              4,
+              8
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              1,
+              4,
+              9
+            ]
+          },
+          {
+            "numerator": 333333,
+            "triple": [
+              1,
+              5,
+              6
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              1,
+              5,
+              7
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              1,
+              5,
+              9
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              1,
+              5,
+              10
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              1,
+              5,
+              11
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              1,
+              7,
+              8
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              1,
+              7,
+              9
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              1,
+              7,
+              10
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              1,
+              7,
+              11
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              1,
+              8,
+              9
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              1,
+              8,
+              10
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              1,
+              8,
+              11
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              1,
+              9,
+              10
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              1,
+              9,
+              11
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              1,
+              10,
+              11
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              2,
+              4,
+              8
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              2,
+              4,
+              9
+            ]
+          },
+          {
+            "numerator": 333333,
+            "triple": [
+              2,
+              5,
+              6
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              2,
+              5,
+              7
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              2,
+              5,
+              9
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              2,
+              5,
+              10
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              2,
+              5,
+              11
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              2,
+              7,
+              8
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              2,
+              7,
+              9
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              2,
+              7,
+              10
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              2,
+              7,
+              11
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              2,
+              8,
+              9
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              2,
+              8,
+              10
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              2,
+              8,
+              11
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              2,
+              9,
+              10
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              2,
+              9,
+              11
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              2,
+              10,
+              11
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              3,
+              4,
+              8
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              3,
+              4,
+              9
+            ]
+          },
+          {
+            "numerator": 333333,
+            "triple": [
+              3,
+              5,
+              6
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              3,
+              5,
+              7
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              3,
+              5,
+              9
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              3,
+              5,
+              10
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              3,
+              5,
+              11
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              3,
+              7,
+              8
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              3,
+              7,
+              9
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              3,
+              7,
+              10
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              3,
+              7,
+              11
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              3,
+              8,
+              9
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              3,
+              8,
+              10
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              3,
+              8,
+              11
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              3,
+              9,
+              10
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              3,
+              9,
+              11
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              3,
+              10,
+              11
+            ]
+          },
+          {
+            "numerator": 83333,
+            "triple": [
+              4,
+              5,
+              6
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              4,
+              5,
+              7
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              4,
+              5,
+              8
+            ]
+          },
+          {
+            "numerator": 83333,
+            "triple": [
+              4,
+              5,
+              9
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              4,
+              5,
+              10
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              4,
+              5,
+              11
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              4,
+              6,
+              8
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              4,
+              6,
+              9
+            ]
+          },
+          {
+            "numerator": 83333,
+            "triple": [
+              4,
+              7,
+              8
+            ]
+          },
+          {
+            "numerator": 83333,
+            "triple": [
+              4,
+              7,
+              9
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              4,
+              7,
+              10
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              4,
+              7,
+              11
+            ]
+          },
+          {
+            "numerator": 83333,
+            "triple": [
+              4,
+              8,
+              10
+            ]
+          },
+          {
+            "numerator": 83333,
+            "triple": [
+              4,
+              8,
+              11
+            ]
+          },
+          {
+            "numerator": 83333,
+            "triple": [
+              4,
+              9,
+              10
+            ]
+          },
+          {
+            "numerator": 83333,
+            "triple": [
+              4,
+              9,
+              11
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              4,
+              10,
+              11
+            ]
+          },
+          {
+            "numerator": 83333,
+            "triple": [
+              5,
+              6,
+              8
+            ]
+          },
+          {
+            "numerator": 83333,
+            "triple": [
+              5,
+              7,
+              8
+            ]
+          },
+          {
+            "numerator": 83333,
+            "triple": [
+              5,
+              8,
+              9
+            ]
+          },
+          {
+            "numerator": 83333,
+            "triple": [
+              5,
+              8,
+              10
+            ]
+          },
+          {
+            "numerator": 83333,
+            "triple": [
+              5,
+              8,
+              11
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              6,
+              7,
+              8
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              6,
+              7,
+              9
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              6,
+              7,
+              10
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              6,
+              7,
+              11
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              6,
+              8,
+              9
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              6,
+              8,
+              10
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              6,
+              8,
+              11
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              6,
+              9,
+              10
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              6,
+              9,
+              11
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              6,
+              10,
+              11
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "assumption": 221,
+      "block": [
+        2,
+        3,
+        4,
+        6,
+        11
+      ],
+      "cbc_proposed_infeasible": true,
+      "direction": "ASSUME_TRUE",
+      "exact_cnf_validation": null,
+      "ilp": {
+        "duals": [],
+        "elapsed_seconds": 2.12573678791523,
+        "log_sha256": "036e8372340167a448882cfc33551dbe5d2de773c31499172893d2982df847d0",
+        "objective": 16.0,
+        "selected": [
+          172,
+          183,
+          188,
+          209,
+          266,
+          299,
+          303,
+          313,
+          316,
+          362,
+          380,
+          387,
+          390,
+          411,
+          422,
+          459
+        ],
+        "status": "Optimal"
+      },
+      "residual_triple_impact": 1,
+      "variable": 221,
+      "weighted_certificate": {
+        "denominator": 1000000,
+        "eligible_block_count": 404,
+        "interpretation": "Every completion block has normalized weight at most one, but the uncovered triples require total normalized weight greater than the remaining number of blocks.",
+        "maximum_eligible_block_load": 999998,
+        "path": "artifacts/classification/ordinary-c1153-v1/open-fifth-deficit-partition-v2/second-live-triple-gate-v1/multi-deficit-propagation-gate-v1/ilp-forced-gate-v1/results/intersection-3-third-00-fourth-000-fifth-008-deficit-003-second-000-cube-000-000/assume_true-221-weighted-certificate.json",
+        "remaining_slots": 10,
+        "schema_version": 1,
+        "sha256": "b2eafdaff07d37ab8c47633a51d9aaa12f5b2f5ce794380cac8e9e707b9e1865",
+        "total_numerator": 13249950,
+        "weighted_triples": [
+          {
+            "numerator": 166666,
+            "triple": [
+              1,
+              4,
+              8
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              1,
+              4,
+              9
+            ]
+          },
+          {
+            "numerator": 333333,
+            "triple": [
+              1,
+              5,
+              6
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              1,
+              5,
+              7
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              1,
+              5,
+              8
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              1,
+              5,
+              9
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              1,
+              5,
+              10
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              1,
+              5,
+              11
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              1,
+              7,
+              8
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              1,
+              7,
+              9
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              1,
+              7,
+              10
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              1,
+              7,
+              11
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              1,
+              8,
+              9
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              1,
+              8,
+              10
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              1,
+              8,
+              11
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              1,
+              9,
+              10
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              1,
+              9,
+              11
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              1,
+              10,
+              11
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              2,
+              4,
+              8
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              2,
+              4,
+              9
+            ]
+          },
+          {
+            "numerator": 333333,
+            "triple": [
+              2,
+              5,
+              6
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              2,
+              5,
+              7
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              2,
+              5,
+              8
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              2,
+              5,
+              9
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              2,
+              5,
+              10
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              2,
+              5,
+              11
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              2,
+              7,
+              8
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              2,
+              7,
+              9
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              2,
+              7,
+              10
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              2,
+              7,
+              11
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              2,
+              8,
+              9
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              2,
+              8,
+              10
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              2,
+              8,
+              11
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              2,
+              9,
+              10
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              2,
+              9,
+              11
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              2,
+              10,
+              11
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              3,
+              4,
+              8
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              3,
+              4,
+              9
+            ]
+          },
+          {
+            "numerator": 333333,
+            "triple": [
+              3,
+              5,
+              6
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              3,
+              5,
+              7
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              3,
+              5,
+              8
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              3,
+              5,
+              9
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              3,
+              5,
+              10
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              3,
+              5,
+              11
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              3,
+              7,
+              8
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              3,
+              7,
+              9
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              3,
+              7,
+              10
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              3,
+              7,
+              11
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              3,
+              8,
+              9
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              3,
+              8,
+              10
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              3,
+              8,
+              11
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              3,
+              9,
+              10
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              3,
+              9,
+              11
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              3,
+              10,
+              11
+            ]
+          },
+          {
+            "numerator": 83333,
+            "triple": [
+              4,
+              5,
+              6
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              4,
+              5,
+              7
+            ]
+          },
+          {
+            "numerator": 83333,
+            "triple": [
+              4,
+              5,
+              8
+            ]
+          },
+          {
+            "numerator": 83333,
+            "triple": [
+              4,
+              5,
+              9
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              4,
+              5,
+              10
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              4,
+              5,
+              11
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              4,
+              6,
+              8
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              4,
+              6,
+              9
+            ]
+          },
+          {
+            "numerator": 83333,
+            "triple": [
+              4,
+              7,
+              8
+            ]
+          },
+          {
+            "numerator": 83333,
+            "triple": [
+              4,
+              7,
+              9
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              4,
+              7,
+              10
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              4,
+              7,
+              11
+            ]
+          },
+          {
+            "numerator": 83333,
+            "triple": [
+              4,
+              8,
+              10
+            ]
+          },
+          {
+            "numerator": 83333,
+            "triple": [
+              4,
+              8,
+              11
+            ]
+          },
+          {
+            "numerator": 83333,
+            "triple": [
+              4,
+              9,
+              10
+            ]
+          },
+          {
+            "numerator": 83333,
+            "triple": [
+              4,
+              9,
+              11
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              4,
+              10,
+              11
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              6,
+              7,
+              8
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              6,
+              7,
+              9
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              6,
+              7,
+              10
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              6,
+              7,
+              11
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              6,
+              8,
+              9
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              6,
+              8,
+              10
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              6,
+              8,
+              11
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              6,
+              9,
+              10
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              6,
+              9,
+              11
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              6,
+              10,
+              11
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "assumption": 36,
+      "block": [
+        1,
+        2,
+        4,
+        6,
+        8
+      ],
+      "cbc_proposed_infeasible": true,
+      "direction": "ASSUME_TRUE",
+      "exact_cnf_validation": null,
+      "ilp": {
+        "duals": [],
+        "elapsed_seconds": 2.1671796559821814,
+        "log_sha256": "20af2cefad350502f63248e5de8898a6438c7b139d4ee59791c6d971ce160da1",
+        "objective": 17.0,
+        "selected": [
+          136,
+          170,
+          185,
+          188,
+          192,
+          232,
+          246,
+          269,
+          308,
+          326,
+          332,
+          362,
+          389,
+          406,
+          420,
+          425,
+          457
+        ],
+        "status": "Optimal"
+      },
+      "residual_triple_impact": 3,
+      "variable": 36,
+      "weighted_certificate": {
+        "denominator": 1000000,
+        "eligible_block_count": 404,
+        "interpretation": "Every completion block has normalized weight at most one, but the uncovered triples require total normalized weight greater than the remaining number of blocks.",
+        "maximum_eligible_block_load": 999998,
+        "path": "artifacts/classification/ordinary-c1153-v1/open-fifth-deficit-partition-v2/second-live-triple-gate-v1/multi-deficit-propagation-gate-v1/ilp-forced-gate-v1/results/intersection-3-third-00-fourth-000-fifth-008-deficit-003-second-000-cube-000-000/assume_true-036-weighted-certificate.json",
+        "remaining_slots": 10,
+        "schema_version": 1,
+        "sha256": "665f175f2c1dd831aa913d2a12c2738280dec91691f07c0e7406020fc9cc5420",
+        "total_numerator": 12999952,
+        "weighted_triples": [
+          {
+            "numerator": 166666,
+            "triple": [
+              1,
+              4,
+              9
+            ]
+          },
+          {
+            "numerator": 333333,
+            "triple": [
+              1,
+              5,
+              6
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              1,
+              5,
+              7
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              1,
+              5,
+              8
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              1,
+              5,
+              9
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              1,
+              5,
+              10
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              1,
+              5,
+              11
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              1,
+              7,
+              8
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              1,
+              7,
+              9
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              1,
+              7,
+              10
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              1,
+              7,
+              11
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              1,
+              8,
+              9
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              1,
+              8,
+              10
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              1,
+              8,
+              11
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              1,
+              9,
+              10
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              1,
+              9,
+              11
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              1,
+              10,
+              11
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              2,
+              4,
+              9
+            ]
+          },
+          {
+            "numerator": 333333,
+            "triple": [
+              2,
+              5,
+              6
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              2,
+              5,
+              7
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              2,
+              5,
+              8
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              2,
+              5,
+              9
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              2,
+              5,
+              10
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              2,
+              5,
+              11
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              2,
+              7,
+              8
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              2,
+              7,
+              9
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              2,
+              7,
+              10
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              2,
+              7,
+              11
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              2,
+              8,
+              9
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              2,
+              8,
+              10
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              2,
+              8,
+              11
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              2,
+              9,
+              10
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              2,
+              9,
+              11
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              2,
+              10,
+              11
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              3,
+              4,
+              9
+            ]
+          },
+          {
+            "numerator": 333333,
+            "triple": [
+              3,
+              5,
+              6
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              3,
+              5,
+              7
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              3,
+              5,
+              8
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              3,
+              5,
+              9
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              3,
+              5,
+              10
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              3,
+              5,
+              11
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              3,
+              7,
+              8
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              3,
+              7,
+              9
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              3,
+              7,
+              10
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              3,
+              7,
+              11
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              3,
+              8,
+              9
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              3,
+              8,
+              10
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              3,
+              8,
+              11
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              3,
+              9,
+              10
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              3,
+              9,
+              11
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              3,
+              10,
+              11
+            ]
+          },
+          {
+            "numerator": 333333,
+            "triple": [
+              4,
+              5,
+              6
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              4,
+              5,
+              7
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              4,
+              5,
+              8
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              4,
+              5,
+              10
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              4,
+              5,
+              11
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              4,
+              7,
+              8
+            ]
+          },
+          {
+            "numerator": 83333,
+            "triple": [
+              4,
+              7,
+              9
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              4,
+              7,
+              10
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              4,
+              7,
+              11
+            ]
+          },
+          {
+            "numerator": 83333,
+            "triple": [
+              4,
+              8,
+              9
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              4,
+              8,
+              10
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              4,
+              8,
+              11
+            ]
+          },
+          {
+            "numerator": 83333,
+            "triple": [
+              4,
+              9,
+              10
+            ]
+          },
+          {
+            "numerator": 83333,
+            "triple": [
+              4,
+              9,
+              11
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              4,
+              10,
+              11
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              6,
+              7,
+              8
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              6,
+              7,
+              9
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              6,
+              7,
+              10
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              6,
+              7,
+              11
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              6,
+              8,
+              9
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              6,
+              8,
+              10
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              6,
+              8,
+              11
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              6,
+              9,
+              10
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              6,
+              9,
+              11
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              6,
+              10,
+              11
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "assumption": 37,
+      "block": [
+        1,
+        2,
+        4,
+        6,
+        9
+      ],
+      "cbc_proposed_infeasible": true,
+      "direction": "ASSUME_TRUE",
+      "exact_cnf_validation": null,
+      "ilp": {
+        "duals": [],
+        "elapsed_seconds": 2.16129644587636,
+        "log_sha256": "2157d011507797a40ba276459149d65cebdfcbcb1885f04ed53cb3361475efb9",
+        "objective": 17.0,
+        "selected": [
+          149,
+          174,
+          184,
+          187,
+          206,
+          266,
+          268,
+          274,
+          316,
+          322,
+          330,
+          362,
+          374,
+          389,
+          404,
+          426,
+          460
+        ],
+        "status": "Optimal"
+      },
+      "residual_triple_impact": 3,
+      "variable": 37,
+      "weighted_certificate": {
+        "denominator": 1000000,
+        "eligible_block_count": 404,
+        "interpretation": "Every completion block has normalized weight at most one, but the uncovered triples require total normalized weight greater than the remaining number of blocks.",
+        "maximum_eligible_block_load": 999998,
+        "path": "artifacts/classification/ordinary-c1153-v1/open-fifth-deficit-partition-v2/second-live-triple-gate-v1/multi-deficit-propagation-gate-v1/ilp-forced-gate-v1/results/intersection-3-third-00-fourth-000-fifth-008-deficit-003-second-000-cube-000-000/assume_true-037-weighted-certificate.json",
+        "remaining_slots": 10,
+        "schema_version": 1,
+        "sha256": "a58bd936b29cc97734c25101f0bbf0da758eb6cdd4015a906a7d1cd1e3363dfd",
+        "total_numerator": 12999951,
+        "weighted_triples": [
+          {
+            "numerator": 166666,
+            "triple": [
+              1,
+              4,
+              8
+            ]
+          },
+          {
+            "numerator": 333333,
+            "triple": [
+              1,
+              5,
+              6
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              1,
+              5,
+              7
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              1,
+              5,
+              9
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              1,
+              5,
+              10
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              1,
+              5,
+              11
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              1,
+              7,
+              8
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              1,
+              7,
+              9
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              1,
+              7,
+              10
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              1,
+              7,
+              11
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              1,
+              8,
+              9
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              1,
+              8,
+              10
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              1,
+              8,
+              11
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              1,
+              9,
+              10
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              1,
+              9,
+              11
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              1,
+              10,
+              11
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              2,
+              4,
+              8
+            ]
+          },
+          {
+            "numerator": 333333,
+            "triple": [
+              2,
+              5,
+              6
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              2,
+              5,
+              7
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              2,
+              5,
+              9
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              2,
+              5,
+              10
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              2,
+              5,
+              11
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              2,
+              7,
+              8
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              2,
+              7,
+              9
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              2,
+              7,
+              10
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              2,
+              7,
+              11
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              2,
+              8,
+              9
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              2,
+              8,
+              10
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              2,
+              8,
+              11
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              2,
+              9,
+              10
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              2,
+              9,
+              11
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              2,
+              10,
+              11
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              3,
+              4,
+              8
+            ]
+          },
+          {
+            "numerator": 333333,
+            "triple": [
+              3,
+              5,
+              6
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              3,
+              5,
+              7
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              3,
+              5,
+              9
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              3,
+              5,
+              10
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              3,
+              5,
+              11
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              3,
+              7,
+              8
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              3,
+              7,
+              9
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              3,
+              7,
+              10
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              3,
+              7,
+              11
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              3,
+              8,
+              9
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              3,
+              8,
+              10
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              3,
+              8,
+              11
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              3,
+              9,
+              10
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              3,
+              9,
+              11
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              3,
+              10,
+              11
+            ]
+          },
+          {
+            "numerator": 249999,
+            "triple": [
+              4,
+              5,
+              6
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              4,
+              5,
+              7
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              4,
+              5,
+              9
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              4,
+              5,
+              10
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              4,
+              5,
+              11
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              4,
+              6,
+              8
+            ]
+          },
+          {
+            "numerator": 83333,
+            "triple": [
+              4,
+              7,
+              8
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              4,
+              7,
+              9
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              4,
+              7,
+              10
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              4,
+              7,
+              11
+            ]
+          },
+          {
+            "numerator": 83333,
+            "triple": [
+              4,
+              8,
+              9
+            ]
+          },
+          {
+            "numerator": 83333,
+            "triple": [
+              4,
+              8,
+              10
+            ]
+          },
+          {
+            "numerator": 83333,
+            "triple": [
+              4,
+              8,
+              11
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              4,
+              9,
+              10
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              4,
+              9,
+              11
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              4,
+              10,
+              11
+            ]
+          },
+          {
+            "numerator": 83333,
+            "triple": [
+              5,
+              6,
+              8
+            ]
+          },
+          {
+            "numerator": 83333,
+            "triple": [
+              5,
+              7,
+              8
+            ]
+          },
+          {
+            "numerator": 83333,
+            "triple": [
+              5,
+              8,
+              9
+            ]
+          },
+          {
+            "numerator": 83333,
+            "triple": [
+              5,
+              8,
+              10
+            ]
+          },
+          {
+            "numerator": 83333,
+            "triple": [
+              5,
+              8,
+              11
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              6,
+              7,
+              8
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              6,
+              7,
+              9
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              6,
+              7,
+              10
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              6,
+              7,
+              11
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              6,
+              8,
+              9
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              6,
+              8,
+              10
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              6,
+              8,
+              11
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              6,
+              9,
+              10
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              6,
+              9,
+              11
+            ]
+          },
+          {
+            "numerator": 166666,
+            "triple": [
+              6,
+              10,
+              11
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "protocol_sha256": "35e2aeeaf33cbe08b63f1f07f0468c5140c855954595cbdec5b09529f89679a3",
+  "rank_band": "later_rank",
+  "root_class": "intersection-3",
+  "runner_replayed_literal_count": 0,
+  "sample_category": "q4_nonzero",
+  "schema_version": 1,
+  "second_index": 0,
+  "stabilizer_tier": "mid",
+  "target_child_id": "intersection-3-third-00-fourth-000-fifth-008-deficit-003"
+}
