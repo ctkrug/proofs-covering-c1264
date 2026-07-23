@@ -1,0 +1,55 @@
+{
+  "schema_version": 1,
+  "status": "AUDITED_REVIEW_STORAGE_GATE_FAILED",
+  "campaign_result_commit": "de205889ec51ac6857c5967548d77e2bd83fc8d6",
+  "bindings": {
+    "protocol_sha256": "e9c7cfab54a0643337e40c06ee634610a281f221d287df840b39583c18a9f17e",
+    "summary_sha256": "049c5fd23dd05de2cb90e5224d5b50f17512462d2bf03d9995f879c47629bcbf",
+    "independent_audit_sha256": "8a8c05da80538ab7991711ef6c646c672d6b4870b2d8ae23fd5e8ff16a1997b8"
+  },
+  "measured_result": {
+    "selected": 96,
+    "completed": 96,
+    "independently_checked_weighted_obstructions": 96,
+    "open_no_certificate": 0,
+    "sat": 0,
+    "minimum_margin_over_remaining_slots": 1.192891,
+    "maximum_margin_over_remaining_slots": 2.491624,
+    "median_runtime_seconds": 0.029242,
+    "maximum_runtime_seconds": 0.08168,
+    "formula_strata_with_complete_certification": 12,
+    "formula_strata_total": 12
+  },
+  "success_gate": {
+    "certificate_count_passed": true,
+    "independent_audit_passed": true,
+    "runtime_passed": true,
+    "storage_passed": false,
+    "projected_artifact_bytes_before_aggregate_summary": 164521953,
+    "maximum_projected_artifact_bytes": 50000000
+  },
+  "storage_boundary": {
+    "projected_certificate_payload_bytes": 42817520,
+    "projected_per_case_result_bytes": 111610005,
+    "projected_solver_log_bytes": 6527478,
+    "explanation": "The exact certificate payload alone is near but below the cap. The failed projection is caused by duplicating certificate and LP-dual payloads inside per-case results and again inside the aggregate summary. The existing immutable artifacts remain preserved."
+  },
+  "ledger_effect": {
+    "new_exact_depth_two_semantic_closures": 96,
+    "cumulative_weighted_depth_two_semantic_closures": 102,
+    "new_parent_formula_closures": 0,
+    "new_fifth_leaf_closures": 0,
+    "new_fourth_parent_closures": 0,
+    "global_extension_ledger": "33/47"
+  },
+  "next_experiment": {
+    "name": "compact-weighted-certificate-storage-audit",
+    "work": "Build a non-destructive compact receipt schema over the existing 96 immutable results: retain each exact certificate once; replace embedded certificate and full LP-dual payloads with content hashes and scalar measurements; replace aggregate outcome duplication with case-id/status/hash rows. Independently compare all 96 compact receipts against the full source artifacts and rerun the exact arithmetic checker.",
+    "compute": "No new LP, SAT, PB, or proof search.",
+    "success_gate": "All 96 compact receipts bind byte-exactly to the existing certificates, all 96 arithmetic checks pass, and the measured projection for all 4,402 cubes including compact receipts, certificates, indices, and safety margin is below 50 MB.",
+    "route_if_passed": "Freeze a segmented arithmetic-certificate scale over the 4,300 still-open cubes in the audited 4,402-cube paired partition; stop for review before running it.",
+    "route_if_failed": "Keep the 102 certified cubes and redesign the certificate representation itself; do not scale while storage remains above the declared cap."
+  },
+  "claim_limit": "The 96 sampled exact cubes are independently certified arithmetic contradictions. No containing formula, fifth leaf, fourth parent, ordinary classification, or C(12,6,4) theorem claim follows.",
+  "completed_at": "2026-07-23T09:12:00Z"
+}
