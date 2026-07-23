@@ -1,0 +1,49 @@
+{
+  "schema_version": 1,
+  "status": "AUDITED_GATE_COMPLETE",
+  "completed_at": "2026-07-23T08:05:00Z",
+  "campaign_result_commit": "1fb82130a9ad70eafeb18ab03e0419795cd09d02",
+  "bindings": {
+    "protocol_sha256": "35e2aeeaf33cbe08b63f1f07f0468c5140c855954595cbdec5b09529f89679a3",
+    "summary_sha256": "2e1e9ee95cbc9516fa8f83bb834f1f1494761b166a82d767484bbc5803f9aae0",
+    "independent_audit_sha256": "360b373305e066fc0292adfaf7802e000efe247cd9b5fe5f1d3949e66b245128"
+  },
+  "measured_result": {
+    "selected_base_cubes": 6,
+    "root_category_cells": 6,
+    "sat": 0,
+    "base_weighted_obstructions": 6,
+    "probe_weighted_obstructions": 48,
+    "independently_checked_weighted_obstructions": 54,
+    "runner_replayed_literal_proofs": 0,
+    "success_gate_passed": true,
+    "remaining_block_budget_per_cube": 11,
+    "certified_weighted_lower_bound_range": [
+      12.741287,
+      13.717837
+    ],
+    "integer_minimum_additional_block_range_reported_by_cbc": [
+      16,
+      18
+    ]
+  },
+  "theorem_relevant_object": "For each of the six sampled exact residual cubes, a checked nonnegative integer weighting of still-uncovered triples has total normalized weight greater than 11, while every eligible residual block has normalized weight at most one. Therefore each sampled cube is arithmetically impossible, independently of CBC status.",
+  "interpretation": "The hard tail is not merely a SAT branching artifact. Global overlap among uncovered triples creates a set-cover lower bound that local unit propagation cannot see. The six base arithmetic receipts are terminal semantic certificates for those exact cubes, but they do not close any source formula or ancestor because the remaining depth-two cubes are unmeasured.",
+  "unchanged_ledgers": {
+    "c1264_global_extension_certified": "33/47",
+    "ordinary_replay_certified_fifth_leaves": 32611,
+    "ordinary_semantic_zero_child_leaves": 8476,
+    "ordinary_aggregation_closed_fourth_parents": "216/384"
+  },
+  "next_experiment": {
+    "name": "96-cube weighted-obstruction generalization gate",
+    "target_count": 96,
+    "selection": "Eight deterministic quantile-spaced, previously unmeasured depth-two frontier cubes from each of the 12 audited formulas; exclude all six cubes certified in this gate and all 24 prior timeout cases.",
+    "method": "Run only the continuous residual set-cover relaxation, rationalize its dual downward to an exact integer weighting, and independently check every inequality. Do not run binary ILP probes, CaDiCaL, or generic deeper branching.",
+    "fixed_budget": "One second of CBC LP time per cube, sequential cloud generation, compact base certificate only.",
+    "success_observable": "At least 90 of 96 exact weighted obstructions, 100 percent independent checker agreement, median generation below 0.5 seconds, and projected storage below 50 MB for all 4,402 cubes.",
+    "scale_gate": "Only after the 96-case audit passes may the same arithmetic-certificate method cover the remaining audited 4,402-cube partition. A certificate failure remains open and must not be inferred UNSAT.",
+    "failure_observable": "More than six uncertified cubes, checker disagreement, or poor runtime/storage projection; then classify the failed residuals and do not scale uniformly."
+  },
+  "claim_limit": "Six exact depth-two cubes are semantically closed. No formula, fifth leaf, fourth parent, ordinary classification, or C(12,6,4) theorem ledger changes."
+}
