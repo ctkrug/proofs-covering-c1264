@@ -1,0 +1,38 @@
+{
+  "claim_limit": "Future-policy solver UNSATs are provisional until exhaustive replay; sampled immediate QA is operational only. No fourth parent is closed here.",
+  "completed": 256,
+  "compressed_proof_bytes": 28710382,
+  "counts": {
+    "PROVISIONAL_UNSAT_PROOF_RETAINED": 256
+  },
+  "counts_by_position": {
+    "first_quartile": {
+      "PROVISIONAL_UNSAT_PROOF_RETAINED": 84
+    },
+    "last_quartile": {
+      "PROVISIONAL_UNSAT_PROOF_RETAINED": 78
+    },
+    "middle_quartile": {
+      "PROVISIONAL_UNSAT_PROOF_RETAINED": 94
+    }
+  },
+  "remaining_route_branches_after_completed": 32341,
+  "schema_version": 1,
+  "segment": 60,
+  "segment_manifest": {
+    "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-fifth-split/segments/segment-0060/manifest.json",
+    "sha256": "539b2c3e8e37bdf758b367fa55859a570c0c744c7dea2e932e1934f7454e91ba"
+  },
+  "selected": 256,
+  "selection_audit": {
+    "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-fifth-split/suffix-scale-independent-audit.json",
+    "sha256": "1fd3e9087619fd6569ed1efa8c1b05ecf5b33ce3d28c4adddc713c8b1c53cf6c"
+  },
+  "status": "COMPLETE_PENDING_INDEPENDENT_AUDIT",
+  "verification_policy": {
+    "full_runner_replay": false,
+    "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-fifth-split/suffix-scale-verification-policy-v2.json",
+    "sha256": "e62dc1c5456bd933131d4fbcfbe7ff8725bfea938e7ff65fa0d47529a5624e3c"
+  },
+  "wall_seconds": 15.176983749999977
+}
