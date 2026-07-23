@@ -1,0 +1,57 @@
+{
+  "benchmark": {
+    "case_ids_sha256": "45d9ce0494601cf04c265363b7b23cbe39f786836838e35f3fdd835ecb7a85b8",
+    "command": "nice -n 10 /private/tmp/c1264-performance-py312/bin/python scripts/profile_ordinary_c1153_shallow_weighted_backend.py optimized --workers 1",
+    "formula_count": 2048,
+    "git_revision": "804aabfe3315538b932313439a8c5444a8f6de65",
+    "platform": "macOS-26.5.2-arm64-arm-64bit",
+    "proposal_engine": "highspy==1.11.0",
+    "python": "3.12.13 (main, Mar  3 2026, 15:35:03) [Clang 21.1.4 ]",
+    "reference_archive_sha256": "d5c0e4cbe5dc5fc65ee28b9b161697f2cb06c87de4022002c9b65184fd82e0a5",
+    "segment_id": "shallow-weighted-scale-002",
+    "workers": 1
+  },
+  "chunks": [
+    {
+      "archive_bytes": 1567805,
+      "archive_sha256": "a8f0ba32adce7d2eabbd550cdf3b8fd532be20c3b2c61bb84695268c9c17c702",
+      "chunk_index": 0,
+      "count": 2048,
+      "first_case_id": "intersection-3-third-00-fourth-002-fifth-006-deficit-001-second-007",
+      "last_case_id": "intersection-3-third-00-fourth-003-fifth-001-deficit-000-second-012",
+      "stages": {
+        "certificate_normalization": 33.780220419917896,
+        "independent_exact_verification": 16.567075422164635,
+        "lp_certificate_proposal": 69.86661828280194,
+        "residual_domain_construction": 13.904595800951938,
+        "serialization_compression_write": 3.071409374999348
+      },
+      "terminal": 2043
+    }
+  ],
+  "purpose": "Performance-only run on copied segment 002; no theorem-evidence or ledger effect.",
+  "results": {
+    "aggregate_index_bytes": 375,
+    "chunk_count": 1,
+    "compressed_bytes": 1567805,
+    "deterministic_aggregation_wall_seconds": 0.7394707080020453,
+    "domain_hash_agreement": 2048,
+    "exact_checker_acceptances": 2043,
+    "hierarchy_reconstruction_wall_seconds": 10.507457749998139,
+    "maximum_child_resident_kib": 252182528,
+    "nonterminal": 5,
+    "terminal": 2043,
+    "total_cpu_seconds": 106.079555,
+    "total_wall_seconds": 155.20910441700107,
+    "verdict_agreement": 2048,
+    "worker_stage_cpu_wall_seconds": {
+      "certificate_normalization": 33.780220419917896,
+      "independent_exact_verification": 16.567075422164635,
+      "lp_certificate_proposal": 69.86661828280194,
+      "residual_domain_construction": 13.904595800951938,
+      "serialization_compression_write": 3.071409374999348
+    }
+  },
+  "schema_version": 1,
+  "status": "VALID_OPTIMIZED_BENCHMARK"
+}
