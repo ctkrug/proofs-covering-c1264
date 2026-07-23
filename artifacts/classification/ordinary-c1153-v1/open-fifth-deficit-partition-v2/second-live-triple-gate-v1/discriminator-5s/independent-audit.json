@@ -1,0 +1,85 @@
+{
+  "claim_limit": "Exact 48-child sample only. No unsampled child or ancestor closes from this audit.",
+  "complete_target_child_count": 0,
+  "complete_target_children": [],
+  "compressed_proof_bytes": {},
+  "counts": {
+    "FIXED_CAP_TIMEOUT": 48
+  },
+  "counts_by_dimension": {
+    "branch_count_quantile": {
+      "q3": {
+        "FIXED_CAP_TIMEOUT": 16
+      },
+      "q4": {
+        "FIXED_CAP_TIMEOUT": 32
+      }
+    },
+    "rank_band": {
+      "later_rank": {
+        "FIXED_CAP_TIMEOUT": 16
+      },
+      "rank_one": {
+        "FIXED_CAP_TIMEOUT": 8
+      },
+      "rank_zero": {
+        "FIXED_CAP_TIMEOUT": 24
+      }
+    },
+    "root_class": {
+      "intersection-3": {
+        "FIXED_CAP_TIMEOUT": 24
+      },
+      "intersection-4": {
+        "FIXED_CAP_TIMEOUT": 24
+      }
+    },
+    "sample_category": {
+      "q3_nonzero": {
+        "FIXED_CAP_TIMEOUT": 12
+      },
+      "q4_nonzero": {
+        "FIXED_CAP_TIMEOUT": 12
+      },
+      "rank_zero": {
+        "FIXED_CAP_TIMEOUT": 24
+      }
+    },
+    "second_position": {
+      "first_second_orbit": {
+        "FIXED_CAP_TIMEOUT": 24
+      },
+      "last_second_orbit": {
+        "FIXED_CAP_TIMEOUT": 24
+      }
+    },
+    "stabilizer_tier": {
+      "high": {
+        "FIXED_CAP_TIMEOUT": 14
+      },
+      "low": {
+        "FIXED_CAP_TIMEOUT": 18
+      },
+      "mid": {
+        "FIXED_CAP_TIMEOUT": 16
+      }
+    }
+  },
+  "independent_replay_seconds": {},
+  "independently_replayed_unsat": 0,
+  "protocol_sha256": "fe5b48a423174450b6929e4c50e2fb4b3be7f4552a5a36358086c3190393eef5",
+  "sample_count": 48,
+  "schema_version": 1,
+  "solver_elapsed_seconds": {
+    "count": 48,
+    "max": 5.083884482039139,
+    "min": 5.0145471431314945,
+    "p50": 5.031962459906936,
+    "p90": 5.048861226066947,
+    "p95": 5.056054122978821,
+    "total": 241.69197743828408
+  },
+  "status": "VALID",
+  "summary_sha256": "c5a36640704c8ef33131c7160bbc9f34bd4db17d08b98b2828b21a1062238eca",
+  "uncompressed_proof_bytes": {}
+}
