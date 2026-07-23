@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "status": "LOCAL_GENERATION_AND_INDEPENDENT_AUDIT_VALID_PENDING_CLOUD_CROSS_CHECK",
+  "campaign_revision": "6a96c80b882b88a4247a234295d5f1d815326ddb",
+  "source_generation_revision": "c720a49d89d47e687687942213f3e914b903aee7",
+  "manifest_sha256": "bb06b660377ad6cc8132c41132867602366210b918f940d12fb156bac078c3f4",
+  "segment_id": "shallow-weighted-scale-002",
+  "host": "local-mac",
+  "selected": 2048,
+  "weighted_certificates": 2043,
+  "open_no_certificate": 5,
+  "generator_sha256": "8165521d5440cc108335a10b380d53882478edd3d6bd19fdbd23488413c28920",
+  "checker_sha256": "161319de67fcae2c430101b70086d61af512046166d7a379abeff6e18ba2a68a",
+  "outcome_archive_sha256": "d5c0e4cbe5dc5fc65ee28b9b161697f2cb06c87de4022002c9b65184fd82e0a5",
+  "independent_audit_sha256": "12a9e2c73c68959f6afd608a867d3d01f926352b81e1c8a29f394702cd43bf80",
+  "format_agreement": {
+    "cloud_reference_segment": "shallow-weighted-scale-000",
+    "top_level_keys_identical": true,
+    "domain_keys_identical": true,
+    "certificate_keys_identical": true,
+    "canonical_json_and_deterministic_gzip_format_identical": true
+  },
+  "toolchain": {
+    "python": "3.14.6",
+    "pulp": "2.7.0",
+    "cbc": "2.10.3",
+    "note": "The cloud uses Python 3.12.3, PuLP 2.7.0, and CBC 2.10.11. Exact arithmetic checking, not LP solver identity, determines terminal status."
+  },
+  "timing_seconds": {
+    "generation_wall": 324.92,
+    "generation_user_cpu": 250.19,
+    "generation_system_cpu": 42.27,
+    "independent_audit_wall": 145.21,
+    "independent_audit_user_cpu": 130.02,
+    "independent_audit_system_cpu": 3.45,
+    "combined_wall": 470.13
+  },
+  "resources": {
+    "generation_maximum_resident_bytes": 375521280,
+    "audit_maximum_resident_bytes": 329252864,
+    "generation_peak_memory_footprint_bytes": 368068416,
+    "audit_peak_memory_footprint_bytes": 408209344,
+    "swaps": 0,
+    "retained_segment_bytes": 1524599,
+    "free_disk_after_kib": 15481356
+  },
+  "certificate_canonical_json_bytes": {
+    "minimum": 1301,
+    "first_quartile": 1708,
+    "median": 1740,
+    "third_quartile": 1770,
+    "maximum": 1944,
+    "sum": 3546787
+  },
+  "claim_limit": "This receipt validates one local immutable benchmark segment only. It does not assign further work or close any ancestor."
+}
