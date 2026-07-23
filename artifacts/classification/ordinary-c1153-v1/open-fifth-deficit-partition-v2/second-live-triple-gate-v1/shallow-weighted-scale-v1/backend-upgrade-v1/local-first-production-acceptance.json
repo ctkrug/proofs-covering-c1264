@@ -1,0 +1,72 @@
+{
+  "schema_version": 1,
+  "status": "VALID_LOCAL_V2_ACCEPTANCE",
+  "decision": "Both local ranges may continue automatically with backend v2 inside their immutable assigned ranges.",
+  "frozen_manifest_sha256": "bb06b660377ad6cc8132c41132867602366210b918f940d12fb156bac078c3f4",
+  "v2_generator_sha256": "ec3492d733e4f1a9f10dbad634338a738e768128d7f9ba654a2256388429bb8d",
+  "v2_backend_sha256": "157044493dd014ff077cda1f51ba4f492ec74419dec4926c62cfeb00815fdba8",
+  "unchanged_checker_sha256": "161319de67fcae2c430101b70086d61af512046166d7a379abeff6e18ba2a68a",
+  "workers": [
+    {
+      "worker_id": "local-a",
+      "owned_range": [31, 57],
+      "first_v2_segment": 36,
+      "producer_commit": "e5327f3dc4a4582413721e5dfad0a6386333e46b",
+      "producer_audit_status": "VALID_GATE_FAILED",
+      "central_import_status": "VALID_CENTRAL_IMPORT",
+      "formula_count": 2048,
+      "weighted_certificate_count": 1564,
+      "open_no_certificate_count": 484,
+      "residual_domain_vector_sha256": "2952aea3ec87f09c1bd5782662f8ba7d7092400cde9e3516f5ec65be34cc1567",
+      "generator_wall_seconds": 55.41450362499745,
+      "generator_worker_elapsed_sum_seconds": 107.61611741699744,
+      "end_to_end_generation_and_audit_seconds": 257.19351641699905,
+      "segment_artifact_bytes": 2563692,
+      "immediately_preceding_v1_segment": {
+        "segment": 35,
+        "producer_commit": "a0e3257035315fcba3186d1bbeafa792e153c9f6",
+        "weighted_certificate_count": 1679,
+        "open_no_certificate_count": 369,
+        "median_formula_lp_seconds": 0.08866247900004964
+      },
+      "v2_median_formula_lp_seconds": 0.02438714600430103,
+      "median_formula_lp_speedup_vs_preceding_v1": 3.635623413433155
+    },
+    {
+      "worker_id": "local-b",
+      "owned_range": [58, 84],
+      "first_v2_segment": 63,
+      "producer_commit": "a795b93a4e3d520f39e18d7a05e084640903a31c",
+      "producer_audit_status": "VALID_GATE_FAILED",
+      "central_import_status": "VALID_CENTRAL_IMPORT",
+      "formula_count": 2048,
+      "weighted_certificate_count": 2046,
+      "open_no_certificate_count": 2,
+      "residual_domain_vector_sha256": "788347452808011a0c4d551cd74d3a5e499a3fbd2f11945f861d17754d9a43d3",
+      "generator_wall_seconds": 69.55063379099738,
+      "generator_worker_elapsed_sum_seconds": 136.24173799999699,
+      "end_to_end_generation_and_audit_seconds": 272.0087371249974,
+      "segment_artifact_bytes": 2862192,
+      "immediately_preceding_v1_segment": {
+        "segment": 62,
+        "producer_commit": "32c785aa577adf2b83102df8723b68e940f4dd8d",
+        "weighted_certificate_count": 2046,
+        "open_no_certificate_count": 2,
+        "median_formula_lp_seconds": 0.0935088124970207
+      },
+      "v2_median_formula_lp_seconds": 0.031215833503665635,
+      "median_formula_lp_speedup_vs_preceding_v1": 2.9955571260347758
+    }
+  ],
+  "resource_observations": {
+    "combined_local_formula_workers": 4,
+    "sampled_swap_peak_bytes": 2480668672,
+    "sampled_swap_growth_during_first_v2_audits_bytes": 0,
+    "free_disk_bytes_at_acceptance_gate": 15000000000,
+    "peak_process_ram_bytes": null,
+    "kernel_cpu_seconds": null,
+    "measurement_limit": "The frozen first-production runner recorded exact chunk elapsed and end-to-end wall times, but not kernel CPU or high-water RSS. Those values are not reconstructed or invented after the fact. Process samples showed no RAM pressure and swap did not grow."
+  },
+  "compatibility_rule": "Heterogeneous v1/v2 receipts are accepted only after exact frozen membership, source-domain reconstruction, version/hash binding, chunk partition verification for v2, and unchanged independent block-by-block certificate checking.",
+  "claim_limit": "This accepts an execution backend and terminal formula receipts. It does not close an ancestor or change the global 33/47 C(12,6,4) ledger."
+}

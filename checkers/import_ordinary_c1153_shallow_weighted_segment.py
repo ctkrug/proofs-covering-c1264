@@ -83,6 +83,29 @@ def write(path: Path, value: object) -> None:
     os.replace(temporary, path)
 
 
+def load_or_run_audit(segment: int, evidence: str | None) -> tuple[dict[str, object], dict[str, object]]:
+    """Return an exact checker report and preserve how it was obtained.
+
+    ``--audit-evidence`` is only for a checker invocation already completed in
+    this canonical worktree.  The report is copied into the immutable import
+    namespace and subjected to all of the same scalar/hash consistency checks
+    below.  This avoids repeating an expensive block-by-block checker run
+    solely because receipt generation was added after that run completed.
+    """
+    if evidence is None:
+        return audit(segment), {"mode": "INLINE_EXACT_CHECKER_RUN"}
+    source = Path(evidence).resolve()
+    if not source.is_file():
+        raise ValueError(f"central audit evidence is absent: {source}")
+    report = json.loads(source.read_text())
+    evidence_path = OUT.parent / "audit-evidence" / f"shallow-weighted-scale-{segment:03d}.json"
+    write(evidence_path, report)
+    return report, {
+        "mode": "PRESERVED_PRIOR_EXACT_CHECKER_RUN",
+        "report": ref(evidence_path),
+    }
+
+
 def verify_v2_chunks(folder: Path, expected_ids: list[str]) -> dict[str, object]:
     execution_path = folder / "backend-v2/execution-receipt.json"
     execution = json.loads(execution_path.read_text())
@@ -135,6 +158,10 @@ def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("--segment", type=int, required=True)
     parser.add_argument("--source-commit", required=True)
+    parser.add_argument(
+        "--audit-evidence",
+        help="JSON stdout from a prior exact checker run in this canonical worktree",
+    )
     args = parser.parse_args()
 
     if sha(MANIFEST) != EXPECTED_MANIFEST or sha(ASSIGNMENT) != EXPECTED_ASSIGNMENT:
@@ -172,7 +199,9 @@ def main() -> None:
 
     # This reconstructs every exact residual domain and checks every retained
     # certificate against every eligible block.
-    audit_report = audit(args.segment)
+    audit_report, audit_execution = load_or_run_audit(
+        args.segment, args.audit_evidence
+    )
     if audit_report["status"] not in {"VALID", "VALID_GATE_FAILED"}:
         raise ValueError("central exact segment audit failed")
     summary_path = folder / "summary.json"
@@ -210,6 +239,7 @@ def main() -> None:
             "independently_checked_weighted_formulas"
         ],
         "open_no_certificate": audit_report["open_no_certificate_count"],
+        "central_audit_execution": audit_execution,
         "v2_chunk_verification": v2_details,
         "claim_limit": (
             "This imports exact terminal formula receipts only. Ancestor closure requires "
