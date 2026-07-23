@@ -1,0 +1,31 @@
+{
+  "schema_version": 1,
+  "experiment": "ordinary C(11,5,3) fourth-level reconstruction and inventory gate",
+  "predeclared_hypothesis": "The immutable 790-branch partition and all 406 claimed UNSAT closures reconstruct and replay, but exact accounting leaves 352 unmeasured plus 32 timeout branches, not 416 open branches.",
+  "decisive_observable": "Exact hashes for 5 top-level and 42 third-level CNFs; 790 independently reconstructed fourth-level recipes; one-to-one status counts 406/32/352; 406 successful DRAT replays; one altered-unit replay rejected.",
+  "success_signal": "Every reconstruction and replay passes, the altered-unit negative control fails, and the inventory has exactly 790 unique IDs.",
+  "failure_signal": "Any semantic reconstruction, manifest hash, recipe, protocol binding, proof hash, replay, or accounting mismatch.",
+  "redirect_signal": "A SAT status or nonisomorphic ordinary 20-block cover pauses the exclusion route for direct validation.",
+  "naive_space": {
+    "unit": "eligible labelled fourth blocks across the 13 timeout parents",
+    "count": 5246,
+    "dominant_operation": "repeating the shared 46-thousand-clause ordinary-cover CNF and replaying leaf proofs"
+  },
+  "reductions_considered": [
+    "cell-signature stabilizer quotient",
+    "canonical first-present orbit representatives",
+    "shared parent CNFs with unit recipes",
+    "four-worker bounded proof replay",
+    "compressed proof streaming",
+    "protocol-bound status deduplication"
+  ],
+  "chosen_mechanism": "Reconstruct the shared semantic CNF once, regenerate only 5 top and 42 third-level hashes, retain 13 parent byte strings, and instantiate measured children transiently from hash-bound unit recipes.",
+  "expected_reduction": "5246 eligible labelled fourth blocks to 790 canonical branches, eliminating 4456 representatives (84.94%); avoid materializing roughly one gigabyte of duplicate child CNFs.",
+  "soundness_guard": "A separately structured membership-cell stabilizer implementation reconstructs every orbit and recipe; exact CNF hashes bind the solver inputs; drat-trim independently replays every proof; deleting one canonical positive unit must change the hash and invalidate replay.",
+  "resource_limits": {
+    "workers": 4,
+    "per_replay_timeout_seconds": 120,
+    "memory_mb": 2048,
+    "epoch_timeout_seconds": 600
+  }
+}

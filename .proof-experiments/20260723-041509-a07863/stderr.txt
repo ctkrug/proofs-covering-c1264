@@ -1,0 +1,17 @@
+Traceback (most recent call last):
+  File "/usr/lib/python3.12/pathlib.py", line 1313, in mkdir
+    os.mkdir(self, mode)
+FileNotFoundError: [Errno 2] No such file or directory: '/root/proof-factory/research/covering-c1264/workspace/artifacts/audits/ordinary-c1153-fourth-inventory-20260723-v3'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/root/proof-factory/research/covering-c1264/workspace/checkers/audit_ordinary_c1153_fourth_inventory.py", line 585, in <module>
+    main()
+  File "/root/proof-factory/research/covering-c1264/workspace/checkers/audit_ordinary_c1153_fourth_inventory.py", line 579, in main
+    output.parent.mkdir(parents=True, exist_ok=False)
+  File "/usr/lib/python3.12/pathlib.py", line 1317, in mkdir
+    self.parent.mkdir(parents=True, exist_ok=True)
+  File "/usr/lib/python3.12/pathlib.py", line 1313, in mkdir
+    os.mkdir(self, mode)
+PermissionError: [Errno 13] Permission denied: '/root/proof-factory/research/covering-c1264/workspace/artifacts/audits'

@@ -1,0 +1,79 @@
+{
+  "schema_version": 1,
+  "attempt_id": "covering-c1264-20260723-041752-ordinary-fourth-inventory",
+  "epoch": 6,
+  "created_at": "2026-07-23T04:17:52.456543+00:00",
+  "starting_commit": "eab709546028de0c7b07de12421892fef4af5da7",
+  "observed_concurrent_head_after_run": "e13f728ad45a551d47e2dfde477cdb21cecc5be5",
+  "strategy_id": "strategy-ordinary-c1153-fourth-inventory-audit-v1",
+  "family": "ordinary C(11,5,3) canonical classification",
+  "outcome": "progress",
+  "status": "VALID_SCOPED_FRONTIER_AUDIT",
+  "claim": "The legacy 13-parent fourth-level ordinary-cover partition has 790 unique branches: 406 replayed UNSAT, 32 measured timeouts, and 352 unmeasured, hence 384 open at that layer.",
+  "claim_limit": "This independently validates the fourth-level ledger that later committed fifth-level work builds on. It does not supersede the newer fifth-level frontier, prove C(11,5,3) uniqueness, or determine C(12,6,4).",
+  "hypothesis": "All recorded fourth-level structure and 406 UNSAT closures reconstruct, but the exact legacy open count is 384 rather than 416.",
+  "decisive_result": {
+    "top_level_cnf_hashes_regenerated": 5,
+    "third_level_cnf_hashes_regenerated": 42,
+    "fourth_level_parents": 13,
+    "eligible_labelled_fourth_blocks": 5246,
+    "canonical_branches": 790,
+    "unsat_replayed": 406,
+    "fixed_cap_timeouts": 32,
+    "unmeasured": 352,
+    "open_at_fourth_level": 384,
+    "negative_control": "Removing the canonical positive unit from intersection-4-third-04-fourth-014 changed the exact-CNF hash and DRAT-trim returned 1."
+  },
+  "experiment": {
+    "id": "20260723-041643-858cc9",
+    "path": ".proof-experiments/20260723-041643-858cc9/experiment.json",
+    "sha256": "107314eac225e359a9919561daf00c7bca538cf3731dba9673eb5d693c085c2f",
+    "duration_seconds": 69.22,
+    "peak_child_memory_kilobytes": 147540
+  },
+  "evidence": {
+    "audit": {
+      "path": "evidence/ordinary-c1153-fourth-inventory-20260723-v4/audit.json",
+      "sha256": "643d0c5c4beb6db13c8cd3e0cd9d4b673285f9dee9aa148e90dbab47f392f65f"
+    },
+    "checker": {
+      "path": "checkers/audit_ordinary_c1153_fourth_inventory.py",
+      "sha256": "06636d493a71a97eedd0f3b35ad510780adaa5ff5399305b29b967ca82725a6d"
+    },
+    "efficiency_design": {
+      "path": "docs/ORDINARY-C1153-FOURTH-INVENTORY-EFFICIENCY-20260723.json",
+      "sha256": "722d2e46a9a836f2c415e4ce1d9665e6314845efafce77f073b569184c62c50c"
+    },
+    "source_status": {
+      "path": "sources/source-status-20260723.json",
+      "sha256": "128bf6b103cb7f9cce0816adc137644071a12facca3d3ba5c9c1d6049b4e7e76"
+    }
+  },
+  "failed_controls": [
+    {
+      "experiment_id": "20260723-041142-ba3d54",
+      "finding": "The initially selected leaf's proof also verified after its canonical positive unit was removed; the control leaf was unsuitable, while all positive replays passed."
+    },
+    {
+      "experiment_id": "20260723-041347-13419e",
+      "finding": "The DRAT-trim rejection text contained NOT VERIFIED; a substring parser incorrectly treated it as success."
+    },
+    {
+      "experiment_id": "20260723-041509-a07863",
+      "finding": "All mathematical checks passed, but writing a new artifacts/audits directory was denied by the workspace ownership boundary."
+    }
+  ],
+  "search_efficiency": {
+    "before": "5246 eligible labelled fourth blocks across 13 parents",
+    "after": "790 canonical first-present stabilizer-orbit branches",
+    "eliminated": 4456,
+    "reduction_percent": 84.94090735722455,
+    "soundness": "Independent cell-membership stabilizers, exact CNF hashes, full recipe coverage, and proof replay."
+  },
+  "next_session": {
+    "objective": "Audit the newer committed fifth-level and deficit-partition receipts against this independently validated fourth-level base before allocating more solve work.",
+    "first_action": "Read the immutable fifth-level/deficit audit manifests introduced by commits d42ef10 and 76547fe, verify every parent binding resolves to one of this receipt's 384 open fourth-level IDs, then identify the exact current certified/open frontier.",
+    "stop_condition": "Stop or repair on any parent-ID, CNF hash, recipe, proof, or aggregate-accounting mismatch; a directly validated nonisomorphic ordinary cover immediately redirects the route."
+  },
+  "tool_disclosure": "GPT-5 Sol principal designed and executed the audit. One injected GPT-5.6 Terra delegate memo supplied advisory reconnaissance; every relied-on claim was independently regenerated. Deterministic Python 3.12.3, python-sat 1.9.dev7 for DIMACS compatibility, and the pinned local DRAT-trim binary performed the checks. Web search rechecked the official source and primary bibliographic pages."
+}

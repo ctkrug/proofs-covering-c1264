@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "id": "20260723-041643-858cc9",
+  "name": "ordinary-c1153-fourth-inventory-audit-v4",
+  "hypothesis": "The 790-branch partition and all 406 UNSAT closures reconstruct and replay, while exact accounting leaves 352 unmeasured plus 32 timeout branches.",
+  "expected_signal": "5 top and 42 third CNF hashes match; 790 recipes reconstruct; inventory is 406 replayed UNSAT, 32 timeout, 352 unmeasured; the preselected intersection-4-third-04-fourth-014 altered-unit replay returns nonzero.",
+  "command": [
+    ".venv/bin/python",
+    "checkers/audit_ordinary_c1153_fourth_inventory.py",
+    "--workers",
+    "4",
+    "--output",
+    "evidence/ordinary-c1153-fourth-inventory-20260723-v4/audit.json"
+  ],
+  "cwd": "/root/proof-factory/research/covering-c1264/workspace",
+  "seed": 0,
+  "timeout_seconds": 600,
+  "memory_limit_mb": 2048,
+  "memory_limit_enforced": true,
+  "started_at": "2026-07-23T04:16:43.236507+00:00",
+  "finished_at": "2026-07-23T04:17:52.456543+00:00",
+  "duration_seconds": 69.22,
+  "returncode": 0,
+  "timed_out": false,
+  "python": "3.12.3",
+  "platform": "Linux-6.8.0-124-generic-x86_64-with-glibc2.39",
+  "git_commit": "eab709546028de0c7b07de12421892fef4af5da7",
+  "source_urls": [
+    "https://ljcr.dmgordon.org/cover/show_cover.php?v=12&k=6&t=4"
+  ],
+  "input_artifacts": {
+    "/usr/bin/python3.12": "1643dacd9feaedc58f3cc581e4d22577dfe25c09b10282936186ccf0f2e61118",
+    "/root/proof-factory/research/covering-c1264/workspace/checkers/audit_ordinary_c1153_fourth_inventory.py": "06636d493a71a97eedd0f3b35ad510780adaa5ff5399305b29b967ca82725a6d"
+  },
+  "peak_child_memory_rusage": 147540,
+  "peak_child_memory_unit": "kilobytes",
+  "artifacts": {
+    "stdout.txt": "643d0c5c4beb6db13c8cd3e0cd9d4b673285f9dee9aa148e90dbab47f392f65f",
+    "stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  }
+}

@@ -1,0 +1,12 @@
+Traceback (most recent call last):
+  File "/root/proof-factory/research/covering-c1264/workspace/checkers/audit_ordinary_c1153_fourth_inventory.py", line 586, in <module>
+    main()
+  File "/root/proof-factory/research/covering-c1264/workspace/checkers/audit_ordinary_c1153_fourth_inventory.py", line 576, in main
+    result = audit(args.workers)
+             ^^^^^^^^^^^^^^^^^^^
+  File "/root/proof-factory/research/covering-c1264/workspace/checkers/audit_ordinary_c1153_fourth_inventory.py", line 500, in audit
+    control = negative_control(measured, branch_index, control_parent, temporary)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/proof-factory/research/covering-c1264/workspace/checkers/audit_ordinary_c1153_fourth_inventory.py", line 445, in negative_control
+    raise ValueError("altered-unit negative control unexpectedly verified")
+ValueError: altered-unit negative control unexpectedly verified

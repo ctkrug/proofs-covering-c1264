@@ -10,8 +10,8 @@
     "A candidate is not a solution until independent and human review are recorded.",
     "Restating a known reduction, checking examples, or giving an unproved key lemma is not terminal success."
   ],
-  "epoch_count": 5,
-  "last_updated": "2026-07-23T00:22:58.065027+00:00",
+  "epoch_count": 6,
+  "last_updated": "2026-07-23T04:26:00.364019+00:00",
   "baseline_review": {
     "status": "complete",
     "reviewed_at": "2026-07-22T13:15:09.478653+00:00",
@@ -22,7 +22,7 @@
     "leads_recorded": 3,
     "requirement": "Repeat when the authoritative status changes materially or the baseline is explicitly invalidated."
   },
-  "synthesis_summary": "The four-exchange sampler worked semantically but failed its mathematical signal. Independent replay validated 2,000 exact-degree returns, 1,990 indecomposable endpoints, and 13 accepted persistent moves in one seed; no endpoint improved the six-defect warm start. No cover, lower bound, or global exclusion was obtained.",
+  "synthesis_summary": "A deterministic 69.22-second audit independently reconstructed the legacy ordinary-cover hierarchy and replayed its entire available proof portfolio. It validates 406 closed branches and corrects the legacy open count to 384. It neither proves uniqueness nor changes the maintained 40-to-41 range.",
   "established_facts": [
     {
       "claim": "The preserved 41-block witness covers all 495 four-subsets.",
@@ -95,6 +95,14 @@
       "status": "computed",
       "source_attempt_id": "covering-c1264-20260723-002258-5c2382",
       "updated_at": "2026-07-23T00:22:58.065027+00:00"
+    },
+    {
+      "claim": "The legacy fourth-level ordinary C(11,5,3) partition has 790 branches with status counts 406 replayed UNSAT, 32 timeout, and 352 unmeasured.",
+      "evidence": "evidence/ordinary-c1153-fourth-inventory-20260723-v4/audit.json, SHA-256 643d0c5c4beb6db13c8cd3e0cd9d4b673285f9dee9aa148e90dbab47f392f65f",
+      "scope": "The exact fourth-level manifest with SHA-256 bf7051f0e3515e0e145def6c1612487a9ff9aa01b6e94f040a42441e09677045",
+      "status": "computed",
+      "source_attempt_id": "covering-c1264-20260723-042600-a864b7",
+      "updated_at": "2026-07-23T04:26:00.364019+00:00"
     }
   ],
   "strategies": [
@@ -276,6 +284,89 @@
         "model_cost": 0.25,
         "cpu_cost": 0.05
       }
+    },
+    {
+      "id": "strategy-ordinary-c1153-fourth-inventory-audit-v1",
+      "family": "ordinary C(11,5,3) canonical classification",
+      "fingerprint": "ordinary-c1153-fourth-inventory-audit-v1",
+      "title": "Fresh semantic reconstruction and complete DRAT replay of the legacy 790-branch ordinary C(11,5,3) fourth-level classification layer",
+      "mechanism": "Regenerate the normalized covering CNF from triples and exact cardinality, independently reconstruct stabilizers through point-membership cells, bind frozen protocols to unique branch IDs, and replay every claimed UNSAT proof with pinned DRAT-trim.",
+      "status": "promising",
+      "hypothesis": "All recorded fourth-level structure and 406 UNSAT closures reconstruct exactly, while one-to-one accounting leaves 352 unmeasured plus 32 timeout branches, hence 384 rather than 416 open branches.",
+      "discriminating_test": "Require exact hashes for five top-level and 42 third-level CNFs, independent reconstruction of all 790 fourth-level recipes, a unique 406/32/352 status inventory, successful replay of all 406 proofs, and rejection of a preselected altered-unit proof.",
+      "blocker": "The current fifth-level and deficit-partition frontier introduced by concurrent commits has not yet been independently reconciled with the certified 384-parent base. No 40-block witness or complete ordinary-link classification is established.",
+      "reopen_condition": "Retry or extend fourth-level solving only after the newer descendant receipts are audited and the exact surviving parent set is recomputed.",
+      "reopen_evidence": "",
+      "last_attempt_id": "covering-c1264-20260723-042600-a864b7",
+      "attempts": 1,
+      "parent_ids": [
+        "internal-ordinary-c1153-classification"
+      ],
+      "updated_at": "2026-07-23T04:26:00.364019+00:00",
+      "route_evaluation": {
+        "gate_proximity": 0.55,
+        "contribution_value": 0.35,
+        "decisiveness": 0.8,
+        "novelty_confidence": 0.05,
+        "novelty_risk": 0.9,
+        "scope": 0.45,
+        "reuse_value": 0.9,
+        "model_cost": 0.2,
+        "cpu_cost": 0.15
+      }
+    },
+    {
+      "family": "descendant certificate-chain audit",
+      "mechanism": "Cross-bind fifth-level and deficit partitions to the immutable 790-row fourth-level receipt, then replay aggregate certificates from leaves upward.",
+      "hypothesis": "The newer committed descendant receipts form a complete, hash-consistent refinement of exactly the 384 legacy open parents.",
+      "discriminating_test": "Require exact parent-set equality and replay one stratified proof from every certificate batch before aggregate validation.",
+      "rationale": "It validates already-computed information and can kill a hidden accounting or binding error more cheaply than new solving.",
+      "id": "strategy-913b281ce8b7",
+      "fingerprint": "913b281ce8b7",
+      "status": "proposed",
+      "title": "Cross-bind fifth-level and deficit partitions to the immutable 790-row fourth-level receipt, then replay aggregate certificates from leaves upward.",
+      "attempts": 0,
+      "parent_ids": [
+        "strategy-ordinary-c1153-fourth-inventory-audit-v1"
+      ],
+      "updated_at": "2026-07-23T04:26:00.364019+00:00"
+    },
+    {
+      "family": "direct exact optimization witness search",
+      "mechanism": "Use the forced matching and exact pair multiplicities in an independently audited CP-SAT or pseudo-Boolean formulation, returning only directly checked 40-block models.",
+      "hypothesis": "A global exact formulation reaches a different basin than the stalled local-search generators.",
+      "discriminating_test": "A short deterministic multi-seed gate that either yields a directly checked candidate below six defects or shows no improvement over the warm start.",
+      "rationale": "It preserves the compact positive certificate route while changing the search mechanism materially.",
+      "id": "strategy-c4b666c7e3c6",
+      "fingerprint": "c4b666c7e3c6",
+      "status": "proposed",
+      "title": "Use the forced matching and exact pair multiplicities in an independently audited CP-SAT or pseudo-Boolean formulation, returning only directly checked 40-block models.",
+      "attempts": 0,
+      "parent_ids": [
+        "strategy-ordinary-c1153-fourth-inventory-audit-v1"
+      ],
+      "updated_at": "2026-07-23T04:26:00.364019+00:00"
+    },
+    {
+      "family": "fourth-level receipt plus descendant deficit certification",
+      "mechanism": "Use the certified 384-parent inventory as the domain certificate for the newer fifth-level orbit split, then use deficit partitions only inside descendants whose parent binding is independently verified.",
+      "source_inputs": "['the new 790-row fourth-level receipt', 'commits d42ef10 and 76547fe', 'existing fifth-level and deficit audit checkers']",
+      "transfer_hypothesis": "A complete parent-domain receipt turns descendant proof batches into a composable classification certificate rather than disconnected local closures.",
+      "discriminating_test": "Exact equality between the descendant parent set and the 384 open IDs, followed by stratified proof replay.",
+      "falsification_signal": "Any missing, duplicate, closed, or hash-inconsistent parent in the descendant manifests.",
+      "rationale": "This combines independently certified domain coverage with later proof work; it is not a renamed deeper-splitting search.",
+      "hypothesis": "A complete parent-domain receipt turns descendant proof batches into a composable classification certificate rather than disconnected local closures.",
+      "origin": "cross_problem_or_cross_field_synthesis",
+      "parent_ids": [
+        "strategy-ordinary-c1153-fourth-inventory-audit-v1",
+        "internal-fifth-level-deficit-partition"
+      ],
+      "id": "strategy-f47ecc049728",
+      "fingerprint": "f47ecc049728",
+      "status": "proposed",
+      "title": "Use the certified 384-parent inventory as the domain certificate for the newer fifth-level orbit split, then use deficit partitions only inside descendants whose parent binding is independently verified.",
+      "attempts": 0,
+      "updated_at": "2026-07-23T04:26:00.364019+00:00"
     }
   ],
   "open_leads": [
@@ -362,6 +453,26 @@
       "updated_at": "2026-07-23T00:22:58.065027+00:00",
       "closure_reason": "terminal_strategy",
       "closed_at": "2026-07-23T00:22:58.065027+00:00"
+    },
+    {
+      "description": "Bind the committed fifth-level split to the independently validated fourth-level base.",
+      "rationale": "This is the cheapest way to determine whether the newer, much larger certificate portfolio is trustworthy and what frontier actually remains.",
+      "next_experiment": "Run the fifth-level auditor with a fail-closed 384-parent ID/hash cross-check against the new receipt.",
+      "priority": "high",
+      "status": "open",
+      "id": "lead-c0b6e0cec8",
+      "strategy_id": "strategy-ordinary-c1153-fourth-inventory-audit-v1",
+      "updated_at": "2026-07-23T04:26:00.364019+00:00"
+    },
+    {
+      "description": "Retain constructive 40-block witness search only for a materially different basin or formulation.",
+      "rationale": "A witness remains the smallest terminal certificate, but unchanged local search has repeatedly stalled at six defects.",
+      "next_experiment": "Semantic-gate an exact optimization or independently sourced new basin before allocating a multi-seed tranche.",
+      "priority": "normal",
+      "status": "open",
+      "id": "lead-58a9cc91b0",
+      "strategy_id": "strategy-ordinary-c1153-fourth-inventory-audit-v1",
+      "updated_at": "2026-07-23T04:26:00.364019+00:00"
     }
   ],
   "ruled_out": [
@@ -400,25 +511,44 @@
       "reopen_condition": "A different basin, materially different endpoint selector, or exhaustive neighborhood classification producing a structural result",
       "attempt_id": "covering-c1264-20260723-002258-5c2382",
       "updated_at": "2026-07-23T00:22:58.065027+00:00"
+    },
+    {
+      "claim_or_route": "The legacy fourth-level layer has 416 open branches.",
+      "scope": "The exact 790-branch manifest and three frozen measurement protocols",
+      "reason": "406 replayed closures leave 384 open; the open set partitions into 32 timeouts and 352 unmeasured branches.",
+      "evidence": "Immutable 790-row audit receipt",
+      "reopen_condition": "A protocol-binding or branch-ID error demonstrated against the receipt",
+      "attempt_id": "covering-c1264-20260723-042600-a864b7",
+      "updated_at": "2026-07-23T04:26:00.364019+00:00"
+    },
+    {
+      "claim_or_route": "Use intersection-3-third-00-fourth-031 as an altered-unit rejection control.",
+      "scope": "That proof and the deletion of its canonical positive unit",
+      "reason": "The proof still verifies, establishing a stronger prefix contradiction.",
+      "evidence": "Failed diagnostic experiment 20260723-041142-ba3d54",
+      "reopen_condition": "A different weakening shown to invalidate that proof",
+      "attempt_id": "covering-c1264-20260723-042600-a864b7",
+      "updated_at": "2026-07-23T04:26:00.364019+00:00"
     }
   ],
   "unresolved_questions": [],
   "next_session": {
-    "recommended_strategy_id": "strategy-ffdc9e0256f9",
-    "objective": "Independently settle ordinary C(11,5,3)=20 uniqueness and thereby validate or falsify the exhaustive 20-link reduction.",
-    "first_action": "Audit the immutable 790-branch fourth-level partition and its 406 replayed UNSAT closures.",
-    "stop_condition": "Stop or repartition if coverage reconstruction fails or a matched hard-prefix pilot yields no replayed closure; a second valid nonisomorphic cover immediately falsifies uniqueness.",
-    "source_attempt_id": "covering-c1264-20260723-002258-5c2382"
+    "recommended_strategy_id": "strategy-ordinary-c1153-fourth-inventory-audit-v1",
+    "objective": "Independently validate the descendant fifth-level and deficit-partition certificate chain.",
+    "first_action": ".venv/bin/python checkers/audit_ordinary_c1153_fifth_split.py, augmented or wrapped to require every parent binding to occur in evidence/ordinary-c1153-fourth-inventory-20260723-v4/audit.json.",
+    "stop_condition": "Any parent-ID, CNF-hash, orbit-recipe, proof-replay, or aggregate-accounting mismatch; or discovery of a directly valid nonisomorphic ordinary cover.",
+    "source_attempt_id": "covering-c1264-20260723-042600-a864b7"
   },
   "recent_attempt_ids": [
     "covering-c1264-20260722-131509-6394f5",
     "covering-c1264-20260722-151254-64a392",
     "covering-c1264-20260722-162852-2f041d",
     "covering-c1264-20260722-202640-1e718a",
-    "covering-c1264-20260723-002258-5c2382"
+    "covering-c1264-20260723-002258-5c2382",
+    "covering-c1264-20260723-042600-a864b7"
   ],
   "tactical_memory": {
-    "current_bottleneck": "The highest-leverage bottleneck is now the independently certified ordinary-link classification, not another unchanged local-search tranche.",
+    "current_bottleneck": "The fourth-level base is independently certified; the next bottleneck is binding newer fifth-level and deficit receipts to its 384 exact open parent IDs.",
     "failure_signatures": [
       {
         "id": "4d2fbff3c2cc",
@@ -451,6 +581,14 @@
         "last_strategy_id": "strategy-ffdc9e0256f9",
         "last_attempt_id": "covering-c1264-20260723-002258-5c2382",
         "updated_at": "2026-07-23T00:22:58.065027+00:00"
+      },
+      {
+        "id": "1807cdeefc57",
+        "signature": "Substring-based proof-status parsing is unsafe, and a negative-control leaf may prove a stronger formula than its recorded branch.",
+        "count": 1,
+        "last_strategy_id": "strategy-ordinary-c1153-fourth-inventory-audit-v1",
+        "last_attempt_id": "covering-c1264-20260723-042600-a864b7",
+        "updated_at": "2026-07-23T04:26:00.364019+00:00"
       }
     ],
     "reusable_assets": [
@@ -509,6 +647,20 @@
         "evidence": "checkers/audit_slack_chain_discriminator.py; SHA-256 843f0a515c204ee46057831a4760b1dd74ad79bc56a3324c63813249429dcfc2",
         "source_attempt_id": "covering-c1264-20260723-002258-5c2382",
         "updated_at": "2026-07-23T00:22:58.065027+00:00"
+      },
+      {
+        "name": "portable fourth-level semantic reconstructor and proof auditor",
+        "use": "Regenerate ignored parent CNFs, audit all orbit recipes, produce a complete status ledger, and replay the proof portfolio without the missing historical virtual environment.",
+        "evidence": "checkers/audit_ordinary_c1153_fourth_inventory.py; SHA-256 06636d493a71a97eedd0f3b35ad510780adaa5ff5399305b29b967ca82725a6d",
+        "source_attempt_id": "covering-c1264-20260723-042600-a864b7",
+        "updated_at": "2026-07-23T04:26:00.364019+00:00"
+      },
+      {
+        "name": "immutable 790-row audit receipt",
+        "use": "Serve as the parent-binding reference for fifth-level audits.",
+        "evidence": "evidence/ordinary-c1153-fourth-inventory-20260723-v4/audit.json; SHA-256 643d0c5c4beb6db13c8cd3e0cd9d4b673285f9dee9aa148e90dbab47f392f65f",
+        "source_attempt_id": "covering-c1264-20260723-042600-a864b7",
+        "updated_at": "2026-07-23T04:26:00.364019+00:00"
       }
     ],
     "constraints_learned": [
@@ -546,6 +698,27 @@
         "evidence": "artifacts/constructive/slack-chain-discriminator-20260723-v2/audit.json",
         "source_attempt_id": "covering-c1264-20260723-002258-5c2382",
         "updated_at": "2026-07-23T00:22:58.065027+00:00"
+      },
+      {
+        "constraint": "The legacy partition contains exactly 790 unique branch IDs.",
+        "scope": "The bound 13-parent fourth-level manifest",
+        "evidence": "Independent orbit and recipe reconstruction",
+        "source_attempt_id": "covering-c1264-20260723-042600-a864b7",
+        "updated_at": "2026-07-23T04:26:00.364019+00:00"
+      },
+      {
+        "constraint": "Exactly 406 branches have replayed UNSAT proofs, 32 are measured timeouts, and 352 are unmeasured.",
+        "scope": "The three frozen fourth-level protocols and their one-to-one result bindings",
+        "evidence": "The immutable 790-row audit receipt",
+        "source_attempt_id": "covering-c1264-20260723-042600-a864b7",
+        "updated_at": "2026-07-23T04:26:00.364019+00:00"
+      },
+      {
+        "constraint": "The legacy open count is 384, not 416.",
+        "scope": "The fourth-level layer before later fifth-level refinement",
+        "evidence": "790 - 406 = 384 and 32 + 352 = 384",
+        "source_attempt_id": "covering-c1264-20260723-042600-a864b7",
+        "updated_at": "2026-07-23T04:26:00.364019+00:00"
       }
     ],
     "decision_history": [
@@ -588,6 +761,16 @@
         "surprise": "Exact return generation was not the bottleneck; abundant distinct returns and persistent movement still produced no improvement.",
         "next_discriminator": "Audit the frozen 790-branch ordinary C(11,5,3) partition and its 406 replayed closures, then pilot a fifth-level split on representative open early-prefix branches.",
         "updated_at": "2026-07-23T00:22:58.065027+00:00"
+      },
+      {
+        "attempt_id": "covering-c1264-20260723-042600-a864b7",
+        "strategy_id": "strategy-ordinary-c1153-fourth-inventory-audit-v1",
+        "decision": "continue",
+        "prediction": "All 406 claims would replay and exact inventory would produce 384 open branches.",
+        "observation": "All five top-level and 42 third-level CNF hashes matched, all 790 recipes reconstructed, all 406 proofs replayed, and inventory was exactly 406 UNSAT, 32 timeout, and 352 unmeasured.",
+        "surprise": "The initially selected negative-control proof remained valid after removing its positive unit, showing that the proof established a stronger prefix contradiction. A second control exposed a parser error because the text NOT VERIFIED contains VERIFIED. A concurrently advancing repository also added later fifth-level work during the run.",
+        "next_discriminator": "Run the existing fifth-level structural auditor while independently requiring every parent ID and parent-CNF hash to resolve through the new 790-row receipt.",
+        "updated_at": "2026-07-23T04:26:00.364019+00:00"
       }
     ],
     "reduction_ledger": [
@@ -654,6 +837,22 @@
         "source_attempt_id": "covering-c1264-20260723-002258-5c2382",
         "strategy_id": "strategy-ffdc9e0256f9",
         "updated_at": "2026-07-23T00:22:58.065027+00:00"
+      },
+      {
+        "ambient_space": "5,246 eligible labelled fourth-block choices across the 13 legacy ordinary-cover timeout parents",
+        "represented_space_before": "5,246 labelled fourth-block choices",
+        "eliminated_or_quotiented": "4,456 choices identified within exact stabilizer orbits under the three fixed blocks",
+        "represented_space_after": "790 canonical first-present fourth-block orbit branches",
+        "reduction_factor": "5,246/790 = 6.640506329113924 average; 84.94090735722455% eliminated",
+        "measurement_status": "exact",
+        "unit": "labelled assignments",
+        "coverage_scope": "The exact 13 parents in artifacts/classification/ordinary-c1153-v1/hard-tail-fourth-split/manifest.json",
+        "soundness_basis": "Independent cell-membership stabilizers reconstructed every orbit, canonical representative, prefix-negative recipe, and exact parent-CNF hash.",
+        "remaining_unknown": "At this legacy layer, 384 branches remained open. Newer committed fifth-level and deficit-partition work appeared concurrently and was not validated by this receipt.",
+        "next_bulk_elimination": "Bind every newer fifth-level and deficit-partition parent to the exact 384-parent open set, then recompute the current certified frontier.",
+        "source_attempt_id": "covering-c1264-20260723-042600-a864b7",
+        "strategy_id": "strategy-ordinary-c1153-fourth-inventory-audit-v1",
+        "updated_at": "2026-07-23T04:26:00.364019+00:00"
       }
     ],
     "prior_art_decisions": [
@@ -729,6 +928,24 @@
           "https://combinatorialpress.com/um/vol41/"
         ],
         "updated_at": "2026-07-23T00:22:58.065027+00:00"
+      },
+      {
+        "attempt_id": "covering-c1264-20260723-042600-a864b7",
+        "strategy_id": "strategy-ordinary-c1153-fourth-inventory-audit-v1",
+        "nearest_method_ids": [
+          "none-found"
+        ],
+        "classification": "replication_control",
+        "exact_delta": "A portable semantic reconstructor and full proof replay independently certify an internal legacy layer and correct its accounting. This is reproducibility infrastructure, not a new covering bound or claimed new classification theorem.",
+        "duplicate_risk": "The 384 correction and later fifth-level work appeared in concurrent internal commits, so presenting the correction itself as externally novel would be duplication.",
+        "comparison_test": "Compare regenerated hashes, recipes, status IDs, and replay results against the frozen manifests and protocol summaries.",
+        "decision": "control_only",
+        "source_urls": [
+          "https://ljcr.dmgordon.org/cover/show_cover.php?v=12&k=6&t=4",
+          "https://combinatorialpress.com/um/vol41/",
+          "https://combinatorialpress.com/article/jcmcc/Volume%2016/vol-16-paper%202.pdf"
+        ],
+        "updated_at": "2026-07-23T04:26:00.364019+00:00"
       }
     ]
   }
