@@ -128,16 +128,28 @@ def start(command: list[str], metrics: Path) -> Monitored:
     return Monitored(command, metrics)
 
 
+def expected_segment_count(number: int) -> int:
+    """Return the frozen manifest's exact count, including its short final segment."""
+    manifest = json.loads(MANIFEST.read_text())
+    if number < 0 or number >= len(manifest["segments"]):
+        raise ValueError(f"segment {number}: outside frozen manifest")
+    segment = manifest["segments"][number]
+    if segment["segment_id"] != f"shallow-weighted-scale-{number:03d}":
+        raise ValueError(f"segment {number}: frozen segment ID mismatch")
+    return int(segment["case_count"])
+
+
 def validate_generation(number: int) -> tuple[Path, dict[str, object]]:
     folder = SEGMENTS / f"shallow-weighted-scale-{number:03d}"
     summary = json.loads((folder / "summary.json").read_text())
     index = json.loads((folder / "backend-v2/index.json").read_text())
+    expected_count = expected_segment_count(number)
     if (
         summary["status"] != "COMPLETE_PENDING_INDEPENDENT_AUDIT"
-        or summary["selected"] != 2048
+        or summary["selected"] != expected_count
         or index["generator"]["sha256"] != EXPECTED[RUNNER]
         or index["backend"]["sha256"] != EXPECTED[BACKEND]
-        or sum(row["case_count"] for row in index["chunks"]) != 2048
+        or sum(row["case_count"] for row in index["chunks"]) != expected_count
     ):
         raise ValueError(f"segment {number}: pending generation binding failed")
     return folder, summary
@@ -147,7 +159,7 @@ def validate_audit(number: int, folder: Path, summary: dict[str, object]) -> dic
     audit = json.loads((folder / "independent-audit.json").read_text())
     if (
         audit["status"] not in {"VALID", "VALID_GATE_FAILED"}
-        or audit["selected"] != 2048
+        or audit["selected"] != expected_segment_count(number)
         or audit["summary_sha256"] != sha(folder / "summary.json")
         or audit["independently_checked_weighted_formulas"]
         != summary["weighted_certificate_count"]
