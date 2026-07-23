@@ -83,7 +83,10 @@ def audit() -> dict:
         if base.sha_bytes(raw) != reference["uncompressed_sha256"]:
             raise ValueError(f"{job['case_id']}: certificate content mismatch")
         margin = checker.check_certificate(
-            raw, domain["uncovered"], domain["available"], domain["remaining_slots"]
+            raw,
+            [tuple(triple) for triple in domain["uncovered"]],
+            domain["available"],
+            domain["remaining_slots"],
         )
         if abs(margin - receipt["margin_over_remaining_slots"]) > 1e-12:
             raise ValueError(f"{job['case_id']}: arithmetic margin mismatch")
