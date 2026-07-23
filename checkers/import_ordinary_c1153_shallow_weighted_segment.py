@@ -71,6 +71,26 @@ def git_contains(branch: str, commit: str) -> None:
     )
 
 
+def resolve_owner(assignment: dict[str, object], segment: int) -> dict[str, str]:
+    """Resolve both frozen ranges and the three pre-split completed segments."""
+    for row in assignment["assignments"]:
+        if row["first_segment"] <= segment <= row["last_segment"]:
+            return {
+                "branch": row["branch"],
+                "worker_id": row["worker_id"],
+            }
+    for row in assignment["completed_before_split"]:
+        if segment in row["segments"]:
+            # These immutable commits predate the range branches.  They are
+            # already ancestors of canonical origin/main, which is therefore
+            # the source-commit containment boundary for central import.
+            return {
+                "branch": "main",
+                "worker_id": row["host"],
+            }
+    raise ValueError(f"segment {segment:03d} has no frozen assignment owner")
+
+
 def write(path: Path, value: object) -> None:
     raw = (json.dumps(value, sort_keys=True, separators=(",", ":")) + "\n").encode()
     path.parent.mkdir(parents=True, exist_ok=True)
@@ -179,11 +199,7 @@ def main() -> None:
         raise ValueError("frozen segment membership mismatch")
 
     assignment = json.loads(ASSIGNMENT.read_text())
-    owner = next(
-        row
-        for row in assignment["assignments"]
-        if row["first_segment"] <= args.segment <= row["last_segment"]
-    )
+    owner = resolve_owner(assignment, args.segment)
     git_contains(owner["branch"], args.source_commit)
     for path in (folder / "summary.json", folder / "independent-audit.json", folder / "outcomes.jsonl.gz"):
         if sha_bytes(git_bytes(args.source_commit, path)) != sha(path):
