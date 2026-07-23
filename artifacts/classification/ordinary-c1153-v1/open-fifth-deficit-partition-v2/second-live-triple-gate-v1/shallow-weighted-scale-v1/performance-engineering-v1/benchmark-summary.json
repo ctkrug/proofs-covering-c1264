@@ -1,0 +1,97 @@
+{
+  "schema_version": 1,
+  "status": "VALID_PERFORMANCE_GATE_COMPLETE",
+  "purpose": "Performance engineering on a copied completed segment only; no mathematical ledger effect and no modification of the frozen 85-segment scale.",
+  "input": {
+    "segment_id": "shallow-weighted-scale-002",
+    "formula_count": 2048,
+    "reference_archive_sha256": "d5c0e4cbe5dc5fc65ee28b9b161697f2cb06c87de4022002c9b65184fd82e0a5",
+    "terminal_reference_count": 2043,
+    "nonterminal_reference_count": 5
+  },
+  "source_bindings": {
+    "base_revision": "804aabfe3315538b932313439a8c5444a8f6de65",
+    "backend_v2_sha256": "157044493dd014ff077cda1f51ba4f492ec74419dec4926c62cfeb00815fdba8",
+    "independent_checker_sha256": "0218e24c7d708e38d0f9940c6a20e9028ec8ddb957c9fc83e74fe919d08d52f1",
+    "profiler_sha256": "97c0acbc3e38728e21aaef9684ecd01d384e15592bb910761ee9844ccfe96d9e",
+    "regression_test_sha256": "a0de74aeb260937548ae01a72269773cafb41f3fcab8676f9fb930cd091d5198"
+  },
+  "baseline": {
+    "wall_seconds": 627.2308836660013,
+    "cpu_seconds": 284.55024199999997,
+    "maximum_resident_bytes": 395968512,
+    "swaps": 0,
+    "stage_wall_seconds": {
+      "hierarchy_reconstruction": 11.079558124998584,
+      "residual_cnf_unit_and_domain_reconstruction": 227.55969060495408,
+      "lp_certificate_proposal": 337.14736285011895,
+      "rational_integer_certificate_normalization": 27.798786044077133,
+      "independent_block_by_block_verification": 14.167478424977162,
+      "compression_filesystem_write": 3.3473366250036634
+    },
+    "git_status_wall_seconds": 0.99
+  },
+  "optimized_worker_benchmarks": [
+    {
+      "workers": 1,
+      "wall_seconds": 155.20910441700107,
+      "cpu_seconds": 106.079555,
+      "speedup_over_measured_baseline": 4.041199205683545
+    },
+    {
+      "workers": 2,
+      "wall_seconds": 80.26744375000271,
+      "cpu_seconds": 95.376045,
+      "speedup_over_measured_baseline": 7.814264939581926
+    },
+    {
+      "workers": 4,
+      "wall_seconds": 52.506929374998435,
+      "cpu_seconds": 92.312625,
+      "speedup_over_measured_baseline": 11.945677311400515
+    },
+    {
+      "workers": 6,
+      "wall_seconds": 52.818338875003974,
+      "cpu_seconds": 92.339091,
+      "speedup_over_measured_baseline": 11.87522809994672
+    }
+  ],
+  "selected_backend": {
+    "workers": 4,
+    "reason": "Four workers nearly minimize wall time; six workers are slightly slower and provide no throughput benefit.",
+    "formula_coverage_agreement": "2048/2048",
+    "residual_domain_hash_agreement": "2048/2048",
+    "terminal_nonterminal_verdict_agreement": "2048/2048",
+    "exact_checker_acceptance": "2043/2043 terminal formulas",
+    "full_independent_audit_sha256": "2722958378b8a00a3753735cd6c8b3c0cc3c6705601edaccfea8d3d3d14b97cc",
+    "full_independent_audit_wall_seconds": 176.90,
+    "unique_exact_residual_matrices": 2048,
+    "certificate_bytes": {
+      "minimum": 1301,
+      "q1": 1708,
+      "median": 1740,
+      "q3": 1770,
+      "maximum": 1944,
+      "sum": 3547184
+    },
+    "compressed_chunk_bytes": 1570680,
+    "aggregate_index_bytes": 910,
+    "benchmark_artifact_tree_bytes_approximate": 6400000,
+    "maximum_resident_bytes": 394477568,
+    "swaps": 0
+  },
+  "safety": {
+    "proposal_engine": "highspy==1.11.0 continuous LP",
+    "acceptance_gate": "Exact integer weighted-certificate check against every eligible block.",
+    "cache_scope": "Parent CNF unit parses only after immutable byte identity and SHA-256 binding.",
+    "matrix_reuse": "None: all 2048 checked residual matrix identities were unique; no certificate or verdict was reused.",
+    "output_layout": "Deterministic contiguous chunks, immutable compressed per-chunk output, deterministic merge order, per-formula domain and certificate bindings.",
+    "campaign_activation": "FORBIDDEN_ON_FROZEN_SCALE; future newly created residual work only after review."
+  },
+  "ledger_effect": {
+    "global_c1264_extension_ledger": "unchanged 33/47",
+    "ordinary_classification_closures": 0,
+    "theorem_claims": 0
+  }
+}
