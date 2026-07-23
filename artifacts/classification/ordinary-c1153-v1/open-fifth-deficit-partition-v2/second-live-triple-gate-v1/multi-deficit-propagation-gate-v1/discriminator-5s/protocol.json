@@ -1,0 +1,437 @@
+{
+  "audit": {
+    "path": "artifacts/classification/ordinary-c1153-v1/open-fifth-deficit-partition-v2/second-live-triple-gate-v1/multi-deficit-propagation-gate-v1/independent-audit.json",
+    "sha256": "f94e8a5598b4ff69ddf287a11daaaf89ca79604eff697bc232193e6445f4f792"
+  },
+  "claim_limit": "A frozen discriminator only; an UNSAT cube does not close its formula or any ancestor.",
+  "decision_gate": "Stop after exactly 24 results, or immediately on SAT, proof/audit failure, hash mismatch, or resource failure.",
+  "fixed_protocol": {
+    "independent_replay": "required for every runner-UNSAT",
+    "parallelism": 4,
+    "proof": "DRAT",
+    "runner_replay": "pinned repository drat-trim",
+    "seconds_cap": 5,
+    "solver": "CaDiCaL system package"
+  },
+  "hypothesis": "Exact two-step coverage/cardinality propagation turns representative rank-zero and q3/q4 hard formulas into short replayable exclusions.",
+  "manifest": {
+    "path": "artifacts/classification/ordinary-c1153-v1/open-fifth-deficit-partition-v2/second-live-triple-gate-v1/multi-deficit-propagation-gate-v1/manifest.json",
+    "sha256": "79cf5b0dfeecffd1aa558efda5b65b8ff5dd67ffb0cbc25c0a9a23cd895399ef"
+  },
+  "material_signal": "At least 8/24 independently replayed UNSAT, including at least one in each of rank_zero, q3_nonzero, and q4_nonzero.",
+  "sample": [
+    {
+      "branch_count_quantile": "q3",
+      "case_id": "intersection-3-third-00-fourth-000-fifth-000-deficit-000-second-000-cube-000-000",
+      "cube_path": [
+        0,
+        0
+      ],
+      "cube_position": "first_depth_two_cube",
+      "formula_frontier_count": 509,
+      "formula_id": "intersection-3-third-00-fourth-000-fifth-000-deficit-000-second-000",
+      "rank_band": "rank_zero",
+      "root_class": "intersection-3",
+      "sample_category": "rank_zero",
+      "second_index": 0,
+      "stabilizer_tier": "high",
+      "target_child_id": "intersection-3-third-00-fourth-000-fifth-000-deficit-000"
+    },
+    {
+      "branch_count_quantile": "q3",
+      "case_id": "intersection-3-third-00-fourth-000-fifth-000-deficit-000-second-000-cube-024-017",
+      "cube_path": [
+        24,
+        17
+      ],
+      "cube_position": "last_depth_two_cube",
+      "formula_frontier_count": 509,
+      "formula_id": "intersection-3-third-00-fourth-000-fifth-000-deficit-000-second-000",
+      "rank_band": "rank_zero",
+      "root_class": "intersection-3",
+      "sample_category": "rank_zero",
+      "second_index": 0,
+      "stabilizer_tier": "high",
+      "target_child_id": "intersection-3-third-00-fourth-000-fifth-000-deficit-000"
+    },
+    {
+      "branch_count_quantile": "q3",
+      "case_id": "intersection-3-third-00-fourth-000-fifth-000-deficit-000-second-016-cube-000-000",
+      "cube_path": [
+        0,
+        0
+      ],
+      "cube_position": "first_depth_two_cube",
+      "formula_frontier_count": 188,
+      "formula_id": "intersection-3-third-00-fourth-000-fifth-000-deficit-000-second-016",
+      "rank_band": "rank_zero",
+      "root_class": "intersection-3",
+      "sample_category": "rank_zero",
+      "second_index": 16,
+      "stabilizer_tier": "high",
+      "target_child_id": "intersection-3-third-00-fourth-000-fifth-000-deficit-000"
+    },
+    {
+      "branch_count_quantile": "q3",
+      "case_id": "intersection-3-third-00-fourth-000-fifth-000-deficit-000-second-016-cube-013-009",
+      "cube_path": [
+        13,
+        9
+      ],
+      "cube_position": "last_depth_two_cube",
+      "formula_frontier_count": 188,
+      "formula_id": "intersection-3-third-00-fourth-000-fifth-000-deficit-000-second-016",
+      "rank_band": "rank_zero",
+      "root_class": "intersection-3",
+      "sample_category": "rank_zero",
+      "second_index": 16,
+      "stabilizer_tier": "high",
+      "target_child_id": "intersection-3-third-00-fourth-000-fifth-000-deficit-000"
+    },
+    {
+      "branch_count_quantile": "q3",
+      "case_id": "intersection-3-third-00-fourth-000-fifth-000-deficit-001-second-000-cube-000-000",
+      "cube_path": [
+        0,
+        0
+      ],
+      "cube_position": "first_depth_two_cube",
+      "formula_frontier_count": 525,
+      "formula_id": "intersection-3-third-00-fourth-000-fifth-000-deficit-001-second-000",
+      "rank_band": "rank_one",
+      "root_class": "intersection-3",
+      "sample_category": "q3_nonzero",
+      "second_index": 0,
+      "stabilizer_tier": "high",
+      "target_child_id": "intersection-3-third-00-fourth-000-fifth-000-deficit-001"
+    },
+    {
+      "branch_count_quantile": "q3",
+      "case_id": "intersection-3-third-00-fourth-000-fifth-000-deficit-001-second-000-cube-024-019",
+      "cube_path": [
+        24,
+        19
+      ],
+      "cube_position": "last_depth_two_cube",
+      "formula_frontier_count": 525,
+      "formula_id": "intersection-3-third-00-fourth-000-fifth-000-deficit-001-second-000",
+      "rank_band": "rank_one",
+      "root_class": "intersection-3",
+      "sample_category": "q3_nonzero",
+      "second_index": 0,
+      "stabilizer_tier": "high",
+      "target_child_id": "intersection-3-third-00-fourth-000-fifth-000-deficit-001"
+    },
+    {
+      "branch_count_quantile": "q3",
+      "case_id": "intersection-3-third-00-fourth-000-fifth-000-deficit-001-second-019-cube-000-000",
+      "cube_path": [
+        0,
+        0
+      ],
+      "cube_position": "first_depth_two_cube",
+      "formula_frontier_count": 227,
+      "formula_id": "intersection-3-third-00-fourth-000-fifth-000-deficit-001-second-019",
+      "rank_band": "rank_one",
+      "root_class": "intersection-3",
+      "sample_category": "q3_nonzero",
+      "second_index": 19,
+      "stabilizer_tier": "high",
+      "target_child_id": "intersection-3-third-00-fourth-000-fifth-000-deficit-001"
+    },
+    {
+      "branch_count_quantile": "q3",
+      "case_id": "intersection-3-third-00-fourth-000-fifth-000-deficit-001-second-019-cube-014-010",
+      "cube_path": [
+        14,
+        10
+      ],
+      "cube_position": "last_depth_two_cube",
+      "formula_frontier_count": 227,
+      "formula_id": "intersection-3-third-00-fourth-000-fifth-000-deficit-001-second-019",
+      "rank_band": "rank_one",
+      "root_class": "intersection-3",
+      "sample_category": "q3_nonzero",
+      "second_index": 19,
+      "stabilizer_tier": "high",
+      "target_child_id": "intersection-3-third-00-fourth-000-fifth-000-deficit-001"
+    },
+    {
+      "branch_count_quantile": "q4",
+      "case_id": "intersection-3-third-00-fourth-000-fifth-008-deficit-003-second-000-cube-000-000",
+      "cube_path": [
+        0,
+        0
+      ],
+      "cube_position": "first_depth_two_cube",
+      "formula_frontier_count": 400,
+      "formula_id": "intersection-3-third-00-fourth-000-fifth-008-deficit-003-second-000",
+      "rank_band": "later_rank",
+      "root_class": "intersection-3",
+      "sample_category": "q4_nonzero",
+      "second_index": 0,
+      "stabilizer_tier": "mid",
+      "target_child_id": "intersection-3-third-00-fourth-000-fifth-008-deficit-003"
+    },
+    {
+      "branch_count_quantile": "q4",
+      "case_id": "intersection-3-third-00-fourth-000-fifth-008-deficit-003-second-000-cube-019-019",
+      "cube_path": [
+        19,
+        19
+      ],
+      "cube_position": "last_depth_two_cube",
+      "formula_frontier_count": 400,
+      "formula_id": "intersection-3-third-00-fourth-000-fifth-008-deficit-003-second-000",
+      "rank_band": "later_rank",
+      "root_class": "intersection-3",
+      "sample_category": "q4_nonzero",
+      "second_index": 0,
+      "stabilizer_tier": "mid",
+      "target_child_id": "intersection-3-third-00-fourth-000-fifth-008-deficit-003"
+    },
+    {
+      "branch_count_quantile": "q4",
+      "case_id": "intersection-3-third-00-fourth-000-fifth-008-deficit-003-second-019-cube-000-000",
+      "cube_path": [
+        0,
+        0
+      ],
+      "cube_position": "first_depth_two_cube",
+      "formula_frontier_count": 385,
+      "formula_id": "intersection-3-third-00-fourth-000-fifth-008-deficit-003-second-019",
+      "rank_band": "later_rank",
+      "root_class": "intersection-3",
+      "sample_category": "q4_nonzero",
+      "second_index": 19,
+      "stabilizer_tier": "mid",
+      "target_child_id": "intersection-3-third-00-fourth-000-fifth-008-deficit-003"
+    },
+    {
+      "branch_count_quantile": "q4",
+      "case_id": "intersection-3-third-00-fourth-000-fifth-008-deficit-003-second-019-cube-019-018",
+      "cube_path": [
+        19,
+        18
+      ],
+      "cube_position": "last_depth_two_cube",
+      "formula_frontier_count": 385,
+      "formula_id": "intersection-3-third-00-fourth-000-fifth-008-deficit-003-second-019",
+      "rank_band": "later_rank",
+      "root_class": "intersection-3",
+      "sample_category": "q4_nonzero",
+      "second_index": 19,
+      "stabilizer_tier": "mid",
+      "target_child_id": "intersection-3-third-00-fourth-000-fifth-008-deficit-003"
+    },
+    {
+      "branch_count_quantile": "q3",
+      "case_id": "intersection-4-third-01-fourth-002-fifth-003-deficit-002-second-000-cube-000-000",
+      "cube_path": [
+        0,
+        0
+      ],
+      "cube_position": "first_depth_two_cube",
+      "formula_frontier_count": 421,
+      "formula_id": "intersection-4-third-01-fourth-002-fifth-003-deficit-002-second-000",
+      "rank_band": "later_rank",
+      "root_class": "intersection-4",
+      "sample_category": "q3_nonzero",
+      "second_index": 0,
+      "stabilizer_tier": "high",
+      "target_child_id": "intersection-4-third-01-fourth-002-fifth-003-deficit-002"
+    },
+    {
+      "branch_count_quantile": "q3",
+      "case_id": "intersection-4-third-01-fourth-002-fifth-003-deficit-002-second-000-cube-020-020",
+      "cube_path": [
+        20,
+        20
+      ],
+      "cube_position": "last_depth_two_cube",
+      "formula_frontier_count": 421,
+      "formula_id": "intersection-4-third-01-fourth-002-fifth-003-deficit-002-second-000",
+      "rank_band": "later_rank",
+      "root_class": "intersection-4",
+      "sample_category": "q3_nonzero",
+      "second_index": 0,
+      "stabilizer_tier": "high",
+      "target_child_id": "intersection-4-third-01-fourth-002-fifth-003-deficit-002"
+    },
+    {
+      "branch_count_quantile": "q3",
+      "case_id": "intersection-4-third-01-fourth-002-fifth-003-deficit-002-second-015-cube-000-000",
+      "cube_path": [
+        0,
+        0
+      ],
+      "cube_position": "first_depth_two_cube",
+      "formula_frontier_count": 282,
+      "formula_id": "intersection-4-third-01-fourth-002-fifth-003-deficit-002-second-015",
+      "rank_band": "later_rank",
+      "root_class": "intersection-4",
+      "sample_category": "q3_nonzero",
+      "second_index": 15,
+      "stabilizer_tier": "high",
+      "target_child_id": "intersection-4-third-01-fourth-002-fifth-003-deficit-002"
+    },
+    {
+      "branch_count_quantile": "q3",
+      "case_id": "intersection-4-third-01-fourth-002-fifth-003-deficit-002-second-015-cube-015-010",
+      "cube_path": [
+        15,
+        10
+      ],
+      "cube_position": "last_depth_two_cube",
+      "formula_frontier_count": 282,
+      "formula_id": "intersection-4-third-01-fourth-002-fifth-003-deficit-002-second-015",
+      "rank_band": "later_rank",
+      "root_class": "intersection-4",
+      "sample_category": "q3_nonzero",
+      "second_index": 15,
+      "stabilizer_tier": "high",
+      "target_child_id": "intersection-4-third-01-fourth-002-fifth-003-deficit-002"
+    },
+    {
+      "branch_count_quantile": "q4",
+      "case_id": "intersection-4-third-01-fourth-002-fifth-004-deficit-000-second-000-cube-000-000",
+      "cube_path": [
+        0,
+        0
+      ],
+      "cube_position": "first_depth_two_cube",
+      "formula_frontier_count": 421,
+      "formula_id": "intersection-4-third-01-fourth-002-fifth-004-deficit-000-second-000",
+      "rank_band": "rank_zero",
+      "root_class": "intersection-4",
+      "sample_category": "rank_zero",
+      "second_index": 0,
+      "stabilizer_tier": "high",
+      "target_child_id": "intersection-4-third-01-fourth-002-fifth-004-deficit-000"
+    },
+    {
+      "branch_count_quantile": "q4",
+      "case_id": "intersection-4-third-01-fourth-002-fifth-004-deficit-000-second-000-cube-020-020",
+      "cube_path": [
+        20,
+        20
+      ],
+      "cube_position": "last_depth_two_cube",
+      "formula_frontier_count": 421,
+      "formula_id": "intersection-4-third-01-fourth-002-fifth-004-deficit-000-second-000",
+      "rank_band": "rank_zero",
+      "root_class": "intersection-4",
+      "sample_category": "rank_zero",
+      "second_index": 0,
+      "stabilizer_tier": "high",
+      "target_child_id": "intersection-4-third-01-fourth-002-fifth-004-deficit-000"
+    },
+    {
+      "branch_count_quantile": "q4",
+      "case_id": "intersection-4-third-01-fourth-002-fifth-004-deficit-000-second-015-cube-000-000",
+      "cube_path": [
+        0,
+        0
+      ],
+      "cube_position": "first_depth_two_cube",
+      "formula_frontier_count": 416,
+      "formula_id": "intersection-4-third-01-fourth-002-fifth-004-deficit-000-second-015",
+      "rank_band": "rank_zero",
+      "root_class": "intersection-4",
+      "sample_category": "rank_zero",
+      "second_index": 15,
+      "stabilizer_tier": "high",
+      "target_child_id": "intersection-4-third-01-fourth-002-fifth-004-deficit-000"
+    },
+    {
+      "branch_count_quantile": "q4",
+      "case_id": "intersection-4-third-01-fourth-002-fifth-004-deficit-000-second-015-cube-020-019",
+      "cube_path": [
+        20,
+        19
+      ],
+      "cube_position": "last_depth_two_cube",
+      "formula_frontier_count": 416,
+      "formula_id": "intersection-4-third-01-fourth-002-fifth-004-deficit-000-second-015",
+      "rank_band": "rank_zero",
+      "root_class": "intersection-4",
+      "sample_category": "rank_zero",
+      "second_index": 15,
+      "stabilizer_tier": "high",
+      "target_child_id": "intersection-4-third-01-fourth-002-fifth-004-deficit-000"
+    },
+    {
+      "branch_count_quantile": "q4",
+      "case_id": "intersection-4-third-02-fourth-000-fifth-000-deficit-003-second-000-cube-000-000",
+      "cube_path": [
+        0,
+        0
+      ],
+      "cube_position": "first_depth_two_cube",
+      "formula_frontier_count": 430,
+      "formula_id": "intersection-4-third-02-fourth-000-fifth-000-deficit-003-second-000",
+      "rank_band": "later_rank",
+      "root_class": "intersection-4",
+      "sample_category": "q4_nonzero",
+      "second_index": 0,
+      "stabilizer_tier": "high",
+      "target_child_id": "intersection-4-third-02-fourth-000-fifth-000-deficit-003"
+    },
+    {
+      "branch_count_quantile": "q4",
+      "case_id": "intersection-4-third-02-fourth-000-fifth-000-deficit-003-second-000-cube-021-016",
+      "cube_path": [
+        21,
+        16
+      ],
+      "cube_position": "last_depth_two_cube",
+      "formula_frontier_count": 430,
+      "formula_id": "intersection-4-third-02-fourth-000-fifth-000-deficit-003-second-000",
+      "rank_band": "later_rank",
+      "root_class": "intersection-4",
+      "sample_category": "q4_nonzero",
+      "second_index": 0,
+      "stabilizer_tier": "high",
+      "target_child_id": "intersection-4-third-02-fourth-000-fifth-000-deficit-003"
+    },
+    {
+      "branch_count_quantile": "q4",
+      "case_id": "intersection-4-third-02-fourth-000-fifth-000-deficit-003-second-019-cube-000-000",
+      "cube_path": [
+        0,
+        0
+      ],
+      "cube_position": "first_depth_two_cube",
+      "formula_frontier_count": 198,
+      "formula_id": "intersection-4-third-02-fourth-000-fifth-000-deficit-003-second-019",
+      "rank_band": "later_rank",
+      "root_class": "intersection-4",
+      "sample_category": "q4_nonzero",
+      "second_index": 19,
+      "stabilizer_tier": "high",
+      "target_child_id": "intersection-4-third-02-fourth-000-fifth-000-deficit-003"
+    },
+    {
+      "branch_count_quantile": "q4",
+      "case_id": "intersection-4-third-02-fourth-000-fifth-000-deficit-003-second-019-cube-013-008",
+      "cube_path": [
+        13,
+        8
+      ],
+      "cube_position": "last_depth_two_cube",
+      "formula_frontier_count": 198,
+      "formula_id": "intersection-4-third-02-fourth-000-fifth-000-deficit-003-second-019",
+      "rank_band": "later_rank",
+      "root_class": "intersection-4",
+      "sample_category": "q4_nonzero",
+      "second_index": 19,
+      "stabilizer_tier": "high",
+      "target_child_id": "intersection-4-third-02-fourth-000-fifth-000-deficit-003"
+    }
+  ],
+  "sample_sha256": "8710fd2e5bd836311074f2ea99bb58f1a758ecc6cc32bc25603ffa76dac3789f",
+  "sample_size": 24,
+  "schema_version": 1,
+  "selection_rule": "Lexicographically first and last audited depth-two frontier path from each of the 12 frozen paired formulas.",
+  "status": "FROZEN_NOT_RUN"
+}
