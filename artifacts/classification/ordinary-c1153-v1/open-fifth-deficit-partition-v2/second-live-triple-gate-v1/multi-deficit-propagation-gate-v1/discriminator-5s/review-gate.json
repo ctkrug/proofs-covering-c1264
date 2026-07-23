@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "status": "AUDITED_GATE_COMPLETE",
+  "completed_at": "2026-07-23T06:58:00Z",
+  "campaign_result_commit": "a2d81ba29607a99b62d296b6c1fa6128113f62f9",
+  "bindings": {
+    "structural_manifest_sha256": "79cf5b0dfeecffd1aa558efda5b65b8ff5dd67ffb0cbc25c0a9a23cd895399ef",
+    "protocol_sha256": "9d5709512259ea973726c7b748b255016c8f85ca217f10af78bea189edda7dfa",
+    "summary_sha256": "c68bd6c0a503520d3aa472c5818c17aeb5150813e9cf3d92da2ac9605a7a2e2a",
+    "independent_audit_sha256": "509110feb4d685fd8780d952703703e18169778f16e40e1ce07eb27c952d915e"
+  },
+  "measured_result": {
+    "selected": 24,
+    "completed": 24,
+    "fixed_cap_timeouts": 24,
+    "sat": 0,
+    "runner_unsat": 0,
+    "independently_replayed_unsat": 0,
+    "material_signal_passed": false,
+    "solver_seconds_total": 120.8114975928329,
+    "solver_seconds_max": 5.0583740880247205
+  },
+  "interpretation": "The audited two-step exact coverage/cardinality propagation gives a large combinatorial partition reduction but does not expose a cheap first/last cube suffix at the unchanged five-second cap. This falsifies the frozen discriminator hypothesis and forbids scaling the 4,402 cubes unchanged.",
+  "unchanged_ledgers": {
+    "c1264_global_extension_certified": "33/47",
+    "ordinary_replay_certified_fifth_leaves": 32611,
+    "ordinary_semantic_zero_child_leaves": 8476,
+    "ordinary_aggregation_closed_fourth_parents": "216/384"
+  },
+  "next_experiment": {
+    "name": "tiny exact-cover ILP/PB forced-substructure discriminator",
+    "target_count": 6,
+    "selection": "The lexicographically first depth-two cube in each root_class x sample_category cell: two roots times rank_zero, q3_nonzero, and q4_nonzero.",
+    "hypothesis": "The remaining difficulty is global exact-20 and overlapping-triple coupling that unit coverage/cardinality propagation cannot see; integer presolve will expose a small common forced or forbidden block set.",
+    "method": "Build the exact binary covering model for each frozen CNF residual. Use CBC only to propose forced literals or a compact infeasible subconfiguration. Validate every proposed forced literal by solving the opposite exact CNF assumption and requiring an external replayable DRAT proof; validate every claimed subconfiguration with an independent checker. CBC status alone is never a certificate.",
+    "success_observable": "At least one independently certified forced literal or compact infeasible subconfiguration shared by paired strata, yielding a sound smaller canonical partition or replayable closure path.",
+    "failure_observable": "No auditable forced literal or compact core in the fixed tiny gate; then abandon propagation-depth scaling and change formalism rather than increasing generic caps.",
+    "solver_allocation": "Cloud only; local remains structural/checker/publication only while local disk is below the 20-percent free-space gate."
+  },
+  "claim_limit": "This review gate adds no ordinary-classification closure and no C(12,6,4) theorem progress."
+}
