@@ -1,0 +1,148 @@
+{
+  "bindings": {
+    "prior_audit": {
+      "path": "artifacts/classification/ordinary-c1153-v1/open-fifth-deficit-partition-v2/second-live-triple-gate-v1/multi-deficit-propagation-gate-v1/discriminator-5s/independent-audit.json",
+      "sha256": "509110feb4d685fd8780d952703703e18169778f16e40e1ce07eb27c952d915e"
+    },
+    "prior_protocol": {
+      "path": "artifacts/classification/ordinary-c1153-v1/open-fifth-deficit-partition-v2/second-live-triple-gate-v1/multi-deficit-propagation-gate-v1/discriminator-5s/protocol.json",
+      "sha256": "9d5709512259ea973726c7b748b255016c8f85ca217f10af78bea189edda7dfa"
+    },
+    "prior_review": {
+      "path": "artifacts/classification/ordinary-c1153-v1/open-fifth-deficit-partition-v2/second-live-triple-gate-v1/multi-deficit-propagation-gate-v1/discriminator-5s/review-gate.json",
+      "sha256": "daf11b588d54347c0fd1c4a6806cde379a7f03ab9c11a3d4d874633922e72f31"
+    },
+    "structural_audit": {
+      "path": "artifacts/classification/ordinary-c1153-v1/open-fifth-deficit-partition-v2/second-live-triple-gate-v1/multi-deficit-propagation-gate-v1/independent-audit.json",
+      "sha256": "f94e8a5598b4ff69ddf287a11daaaf89ca79604eff697bc232193e6445f4f792"
+    },
+    "structural_manifest": {
+      "path": "artifacts/classification/ordinary-c1153-v1/open-fifth-deficit-partition-v2/second-live-triple-gate-v1/multi-deficit-propagation-gate-v1/manifest.json",
+      "sha256": "79cf5b0dfeecffd1aa558efda5b65b8ff5dd67ffb0cbc25c0a9a23cd895399ef"
+    }
+  },
+  "candidate_rule": "Probe exclusion of the four eligible blocks covering the most residual triples and inclusion of the four covering the fewest. CBC infeasibility is only a proposal.",
+  "case_count": 6,
+  "case_ids_sha256": "45cce2507599fe5b2ba62dd75fcb09b06b71aadf0f91e5bd1af7239327bd12ab",
+  "cases": [
+    {
+      "branch_count_quantile": "q3",
+      "case_id": "intersection-3-third-00-fourth-000-fifth-000-deficit-000-second-000-cube-000-000",
+      "cube_path": [
+        0,
+        0
+      ],
+      "cube_position": "first_depth_two_cube",
+      "formula_frontier_count": 509,
+      "formula_id": "intersection-3-third-00-fourth-000-fifth-000-deficit-000-second-000",
+      "rank_band": "rank_zero",
+      "root_class": "intersection-3",
+      "sample_category": "rank_zero",
+      "second_index": 0,
+      "stabilizer_tier": "high",
+      "target_child_id": "intersection-3-third-00-fourth-000-fifth-000-deficit-000"
+    },
+    {
+      "branch_count_quantile": "q3",
+      "case_id": "intersection-3-third-00-fourth-000-fifth-000-deficit-001-second-000-cube-000-000",
+      "cube_path": [
+        0,
+        0
+      ],
+      "cube_position": "first_depth_two_cube",
+      "formula_frontier_count": 525,
+      "formula_id": "intersection-3-third-00-fourth-000-fifth-000-deficit-001-second-000",
+      "rank_band": "rank_one",
+      "root_class": "intersection-3",
+      "sample_category": "q3_nonzero",
+      "second_index": 0,
+      "stabilizer_tier": "high",
+      "target_child_id": "intersection-3-third-00-fourth-000-fifth-000-deficit-001"
+    },
+    {
+      "branch_count_quantile": "q4",
+      "case_id": "intersection-3-third-00-fourth-000-fifth-008-deficit-003-second-000-cube-000-000",
+      "cube_path": [
+        0,
+        0
+      ],
+      "cube_position": "first_depth_two_cube",
+      "formula_frontier_count": 400,
+      "formula_id": "intersection-3-third-00-fourth-000-fifth-008-deficit-003-second-000",
+      "rank_band": "later_rank",
+      "root_class": "intersection-3",
+      "sample_category": "q4_nonzero",
+      "second_index": 0,
+      "stabilizer_tier": "mid",
+      "target_child_id": "intersection-3-third-00-fourth-000-fifth-008-deficit-003"
+    },
+    {
+      "branch_count_quantile": "q4",
+      "case_id": "intersection-4-third-01-fourth-002-fifth-004-deficit-000-second-000-cube-000-000",
+      "cube_path": [
+        0,
+        0
+      ],
+      "cube_position": "first_depth_two_cube",
+      "formula_frontier_count": 421,
+      "formula_id": "intersection-4-third-01-fourth-002-fifth-004-deficit-000-second-000",
+      "rank_band": "rank_zero",
+      "root_class": "intersection-4",
+      "sample_category": "rank_zero",
+      "second_index": 0,
+      "stabilizer_tier": "high",
+      "target_child_id": "intersection-4-third-01-fourth-002-fifth-004-deficit-000"
+    },
+    {
+      "branch_count_quantile": "q3",
+      "case_id": "intersection-4-third-01-fourth-002-fifth-003-deficit-002-second-000-cube-000-000",
+      "cube_path": [
+        0,
+        0
+      ],
+      "cube_position": "first_depth_two_cube",
+      "formula_frontier_count": 421,
+      "formula_id": "intersection-4-third-01-fourth-002-fifth-003-deficit-002-second-000",
+      "rank_band": "later_rank",
+      "root_class": "intersection-4",
+      "sample_category": "q3_nonzero",
+      "second_index": 0,
+      "stabilizer_tier": "high",
+      "target_child_id": "intersection-4-third-01-fourth-002-fifth-003-deficit-002"
+    },
+    {
+      "branch_count_quantile": "q4",
+      "case_id": "intersection-4-third-02-fourth-000-fifth-000-deficit-003-second-000-cube-000-000",
+      "cube_path": [
+        0,
+        0
+      ],
+      "cube_position": "first_depth_two_cube",
+      "formula_frontier_count": 430,
+      "formula_id": "intersection-4-third-02-fourth-000-fifth-000-deficit-003-second-000",
+      "rank_band": "later_rank",
+      "root_class": "intersection-4",
+      "sample_category": "q4_nonzero",
+      "second_index": 0,
+      "stabilizer_tier": "high",
+      "target_child_id": "intersection-4-third-02-fourth-000-fifth-000-deficit-003"
+    }
+  ],
+  "certificate_rule": "A compact arithmetic certificate assigns nonnegative integer weights to uncovered triples, total weight greater than remaining_slots * denominator, while every eligible block has weight at most denominator. Forced/forbidden literal claims additionally require an opposite-assumption exact-CNF DRAT proof with external replay.",
+  "claim_limit": "A six-case structural discriminator only. No ancestor closes unless a complete audited child aggregation separately passes.",
+  "fixed_budget": {
+    "base_ilp_seconds_per_case": 10,
+    "exact_cnf_proof_seconds_per_proposal": 15,
+    "forbidden_direction_probes_per_case": 4,
+    "forced_direction_probes_per_case": 4,
+    "max_exact_cnf_proof_proposals_per_case": 2,
+    "parallelism": 1,
+    "probe_ilp_seconds": 2
+  },
+  "mathematical_model": "Binary eligible-block variables; minimize additional blocks subject to covering every triple not covered by inherited fixed blocks. A completion exists iff this minimum is at most 20 minus the fixed-block count.",
+  "schema_version": 1,
+  "selection_rule": "Exactly the lexicographically first depth-two cube in each root_class x sample_category cell.",
+  "status": "FROZEN_NOT_RUN",
+  "stop_rule": "Stop after exactly six cases, or immediately on SAT, hash/reconstruction/replay failure, or resource failure. Never scale or raise generic caps from this gate.",
+  "success_gate": "At least one independently checked weighted obstruction or one opposite-assumption replayed proof yielding a sound forced/forbidden literal."
+}

@@ -1,0 +1,20 @@
+{
+  "cloud": {
+    "case_ids": [
+      "intersection-3-third-00-fourth-000-fifth-000-deficit-000-second-000-cube-000-000",
+      "intersection-3-third-00-fourth-000-fifth-000-deficit-001-second-000-cube-000-000",
+      "intersection-3-third-00-fourth-000-fifth-008-deficit-003-second-000-cube-000-000",
+      "intersection-4-third-01-fourth-002-fifth-004-deficit-000-second-000-cube-000-000",
+      "intersection-4-third-01-fourth-002-fifth-003-deficit-002-second-000-cube-000-000",
+      "intersection-4-third-02-fourth-000-fifth-000-deficit-003-second-000-cube-000-000"
+    ],
+    "role": "EXCLUSIVE_ILP_AND_PROOF_OWNER"
+  },
+  "exclusivity": "Every case is assigned exactly once to cloud; local may not solve or retain proof streams.",
+  "local": {
+    "case_ids": [],
+    "role": "FREEZE_CHECK_AND_PUBLICATION_ONLY"
+  },
+  "protocol_object_sha256": "2dfce69cf392dbc8c608b59000568851050e63a4e7c5f90294c13b20dd6f664c",
+  "schema_version": 1
+}
