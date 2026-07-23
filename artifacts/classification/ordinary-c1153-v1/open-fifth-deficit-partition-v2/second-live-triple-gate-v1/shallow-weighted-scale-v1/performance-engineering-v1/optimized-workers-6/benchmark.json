@@ -1,0 +1,137 @@
+{
+  "benchmark": {
+    "case_ids_sha256": "45d9ce0494601cf04c265363b7b23cbe39f786836838e35f3fdd835ecb7a85b8",
+    "command": "nice -n 10 /private/tmp/c1264-performance-py312/bin/python scripts/profile_ordinary_c1153_shallow_weighted_backend.py optimized --workers 6",
+    "formula_count": 2048,
+    "git_revision": "804aabfe3315538b932313439a8c5444a8f6de65",
+    "platform": "macOS-26.5.2-arm64-arm-64bit",
+    "proposal_engine": "highspy==1.11.0",
+    "python": "3.12.13 (main, Mar  3 2026, 15:35:03) [Clang 21.1.4 ]",
+    "reference_archive_sha256": "d5c0e4cbe5dc5fc65ee28b9b161697f2cb06c87de4022002c9b65184fd82e0a5",
+    "segment_id": "shallow-weighted-scale-002",
+    "workers": 6
+  },
+  "chunks": [
+    {
+      "archive_bytes": 262668,
+      "archive_sha256": "4bf6fa2b2736b4efd8c953458f19e23a1acfcb6686f5177be32aa51c4cbf8ae0",
+      "chunk_index": 0,
+      "count": 342,
+      "first_case_id": "intersection-3-third-00-fourth-002-fifth-006-deficit-001-second-007",
+      "last_case_id": "intersection-3-third-00-fourth-002-fifth-008-deficit-000-second-003",
+      "stages": {
+        "certificate_normalization": 10.372426086934865,
+        "independent_exact_verification": 5.098978542016994,
+        "lp_certificate_proposal": 21.8727804040318,
+        "residual_domain_construction": 1.6296837450645398,
+        "serialization_compression_write": 0.4486610829990241
+      },
+      "terminal": 342
+    },
+    {
+      "archive_bytes": 265761,
+      "archive_sha256": "2415ae5066a1b6b825c5344b54dbd5fa3c71e82dece4061db8d472d4a6d9bed0",
+      "chunk_index": 1,
+      "count": 342,
+      "first_case_id": "intersection-3-third-00-fourth-002-fifth-008-deficit-000-second-004",
+      "last_case_id": "intersection-3-third-00-fourth-002-fifth-009-deficit-009-second-007",
+      "stages": {
+        "certificate_normalization": 10.417407660963363,
+        "independent_exact_verification": 5.125806616895716,
+        "lp_certificate_proposal": 21.327801509985875,
+        "residual_domain_construction": 1.7208136259578168,
+        "serialization_compression_write": 0.43152125000051456
+      },
+      "terminal": 342
+    },
+    {
+      "archive_bytes": 274206,
+      "archive_sha256": "ee6fbbd0a6db18a9a49d6c4ad2299957f85d6296b053814dd2fca0013ad9ea65",
+      "chunk_index": 2,
+      "count": 342,
+      "first_case_id": "intersection-3-third-00-fourth-002-fifth-009-deficit-009-second-008",
+      "last_case_id": "intersection-3-third-00-fourth-002-fifth-012-deficit-004-second-006",
+      "stages": {
+        "certificate_normalization": 10.571960336092161,
+        "independent_exact_verification": 5.263470618039719,
+        "lp_certificate_proposal": 19.696102372916357,
+        "residual_domain_construction": 1.809374631040555,
+        "serialization_compression_write": 0.660643582996272
+      },
+      "terminal": 342
+    },
+    {
+      "archive_bytes": 272569,
+      "archive_sha256": "f2f93f7330b7af3f5cb1a03f27ea9d8fe949b6d20a4651d78a48227d40655942",
+      "chunk_index": 3,
+      "count": 342,
+      "first_case_id": "intersection-3-third-00-fourth-002-fifth-012-deficit-005-second-000",
+      "last_case_id": "intersection-3-third-00-fourth-002-fifth-014-deficit-008-second-007",
+      "stages": {
+        "certificate_normalization": 10.228876953937288,
+        "independent_exact_verification": 4.606103799058474,
+        "lp_certificate_proposal": 18.942506710038288,
+        "residual_domain_construction": 2.1240476700404542,
+        "serialization_compression_write": 1.1143853749963455
+      },
+      "terminal": 342
+    },
+    {
+      "archive_bytes": 256525,
+      "archive_sha256": "7e22e6bc78c8f8ceb81547cc8afe07948fd683fc70120b4c827a91fee8bdd207",
+      "chunk_index": 4,
+      "count": 342,
+      "first_case_id": "intersection-3-third-00-fourth-002-fifth-014-deficit-008-second-008",
+      "last_case_id": "intersection-3-third-00-fourth-002-fifth-017-deficit-007-second-000",
+      "stages": {
+        "certificate_normalization": 9.894551668025088,
+        "independent_exact_verification": 4.765819493943127,
+        "lp_certificate_proposal": 20.491421535050904,
+        "residual_domain_construction": 2.1277853740830324,
+        "serialization_compression_write": 0.7577083750002203
+      },
+      "terminal": 340
+    },
+    {
+      "archive_bytes": 240445,
+      "archive_sha256": "49ea270ef3696178bb53a0ff20f602569506fb6833e17b236812ebe210bfa6a5",
+      "chunk_index": 5,
+      "count": 338,
+      "first_case_id": "intersection-3-third-00-fourth-002-fifth-017-deficit-007-second-001",
+      "last_case_id": "intersection-3-third-00-fourth-003-fifth-001-deficit-000-second-012",
+      "stages": {
+        "certificate_normalization": 9.921029422046558,
+        "independent_exact_verification": 4.824687078973511,
+        "lp_certificate_proposal": 22.59400574403844,
+        "residual_domain_construction": 1.6341567079289234,
+        "serialization_compression_write": 0.39117650000116555
+      },
+      "terminal": 335
+    }
+  ],
+  "purpose": "Performance-only run on copied segment 002; no theorem-evidence or ledger effect.",
+  "results": {
+    "aggregate_index_bytes": 1268,
+    "chunk_count": 6,
+    "compressed_bytes": 1572174,
+    "deterministic_aggregation_wall_seconds": 0.8303925410000375,
+    "domain_hash_agreement": 2048,
+    "exact_checker_acceptances": 2043,
+    "hierarchy_reconstruction_wall_seconds": 10.191306958004134,
+    "maximum_child_resident_kib": 58392576,
+    "nonterminal": 5,
+    "terminal": 2043,
+    "total_cpu_seconds": 92.339091,
+    "total_wall_seconds": 52.818338875003974,
+    "verdict_agreement": 2048,
+    "worker_stage_cpu_wall_seconds": {
+      "certificate_normalization": 61.40625212799932,
+      "independent_exact_verification": 29.68486614892754,
+      "lp_certificate_proposal": 124.92461827606166,
+      "residual_domain_construction": 11.045861754115322,
+      "serialization_compression_write": 3.804096165993542
+    }
+  },
+  "schema_version": 1,
+  "status": "VALID_OPTIMIZED_BENCHMARK"
+}
