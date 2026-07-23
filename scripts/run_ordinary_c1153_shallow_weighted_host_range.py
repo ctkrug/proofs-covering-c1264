@@ -13,6 +13,7 @@ import hashlib
 import json
 import shutil
 import subprocess
+import sys
 from pathlib import Path
 
 
@@ -73,8 +74,8 @@ def main() -> None:
         if shutil.disk_usage(ROOT).free < MINIMUM_FREE_BYTES:
             raise RuntimeError(f"{segment_id}: free disk fell below 5 GB")
 
-        command("python3", str(RUNNER), "run", "--segment", str(number))
-        command("python3", str(CHECKER), "--segment", str(number))
+        command(sys.executable, str(RUNNER), "run", "--segment", str(number))
+        command(sys.executable, str(CHECKER), "--segment", str(number))
 
         summary = json.loads((folder / "summary.json").read_text())
         audit = json.loads((folder / "independent-audit.json").read_text())
