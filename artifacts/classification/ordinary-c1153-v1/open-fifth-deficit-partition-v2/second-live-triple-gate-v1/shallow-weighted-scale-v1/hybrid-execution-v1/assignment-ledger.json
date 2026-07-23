@@ -1,0 +1,73 @@
+{
+  "schema_version": 1,
+  "status": "FROZEN",
+  "base_revision": "f5516c14",
+  "manifest_sha256": "bb06b660377ad6cc8132c41132867602366210b918f940d12fb156bac078c3f4",
+  "generator_sha256": "8165521d5440cc108335a10b380d53882478edd3d6bd19fdbd23488413c28920",
+  "checker_sha256": "161319de67fcae2c430101b70086d61af512046166d7a379abeff6e18ba2a68a",
+  "completed_before_split": [
+    {
+      "host": "cloud",
+      "segments": [0, 1]
+    },
+    {
+      "host": "local-mac-benchmark",
+      "segments": [2]
+    }
+  ],
+  "assignments": [
+    {
+      "worker_id": "cloud-a",
+      "host": "root@164.92.117.90",
+      "workspace": "/root/proof-factory/research/covering-c1264/workspace-cloud-range-003-030",
+      "branch": "shallow-scale-cloud-003-030",
+      "first_segment": 3,
+      "last_segment": 30,
+      "segment_count": 28,
+      "parallel_segment_workers": 1
+    },
+    {
+      "worker_id": "local-a",
+      "host": "local-mac",
+      "workspace": "/Users/Krug/.codex/worktrees/c1264-hybrid-overnight",
+      "branch": "shallow-scale-local-031-057",
+      "first_segment": 31,
+      "last_segment": 57,
+      "segment_count": 27,
+      "parallel_segment_workers": 1
+    },
+    {
+      "worker_id": "local-b",
+      "host": "local-mac",
+      "workspace": "/Users/Krug/.codex/worktrees/c1264-local-range-058-084",
+      "branch": "shallow-scale-local-058-084",
+      "first_segment": 58,
+      "last_segment": 84,
+      "segment_count": 27,
+      "parallel_segment_workers": 1
+    }
+  ],
+  "combined_parallelism": {
+    "cloud_segment_workers": 1,
+    "local_segment_workers": 2,
+    "reason": "The benchmark used well under 0.5 GB RSS per generator/checker and no swap. Two local lanes use only a modest fraction of eight logical CPUs while avoiding shared writes."
+  },
+  "unassigned_segment_ids": [],
+  "duplicate_segment_ids": [],
+  "chatgpt_vm": {
+    "assigned": false,
+    "reason": "No distinct persistent VM filesystem/toolchain was available for the mandatory one-segment benchmark."
+  },
+  "write_policy": "Each worker writes only its exclusively assigned immutable segment directories on its own Git branch and pushes every independently audited segment commit before starting the next.",
+  "aggregation_policy": "A separate deterministic importer must verify ownership, manifest and code hashes, exact segment membership, formula-domain bindings, certificates, audits, duplicates, and omissions before merging receipts and running bottom-up aggregation.",
+  "stop_conditions": [
+    "SAT",
+    "certificate/checker disagreement",
+    "manifest or source hash mismatch",
+    "duplicate or pre-existing assigned segment",
+    "free disk below 5 GB",
+    "RAM or swap pressure",
+    "push failure"
+  ],
+  "claim_limit": "The assignment ledger authorizes disjoint execution only. Formula and ancestor closures require imported immutable receipts plus independent aggregation audits."
+}
