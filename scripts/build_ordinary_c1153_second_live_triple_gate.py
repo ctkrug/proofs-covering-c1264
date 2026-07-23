@@ -9,9 +9,11 @@ first-deficit rank zero OR parent split-size quantile q3/q4.
 from __future__ import annotations
 
 import hashlib
+import io
 import itertools
 import json
 import math
+import sys
 from collections import Counter, defaultdict
 from pathlib import Path
 
@@ -28,6 +30,8 @@ AUDIT = BASE / "independent-audit.json"
 SUMMARY = BASE / "discriminator-v2/summary.json"
 RESULT_AUDIT = BASE / "discriminator-v2/independent-audit.json"
 TARGET = BASE / "second-live-triple-gate-v1"
+sys.path.insert(0, str(ROOT / "checkers"))
+from audit_ordinary_c1153_fourth_inventory import reconstruct_hierarchy  # noqa: E402
 
 
 def sha(path: Path) -> str:
@@ -42,10 +46,10 @@ def clause_sha(values: list[int]) -> str:
     return hashlib.sha256((" ".join(map(str, values)) + (" " if values else "") + "0\n").encode()).hexdigest()
 
 
-def parent_primary_units(path: Path) -> tuple[set[int], set[int]]:
+def parent_primary_units(raw: bytes) -> tuple[set[int], set[int]]:
     positive: set[int] = set()
     negative: set[int] = set()
-    with path.open() as source:
+    with io.StringIO(raw.decode("ascii")) as source:
         for line in source:
             if not line or line[0] in "cp%0":
                 continue
@@ -125,6 +129,7 @@ def residual(
     case: dict[str, object],
     deficit_index: int,
     parent_cache: dict[str, tuple[set[int], set[int]]],
+    reconstructed_parents: dict[str, bytes],
 ) -> tuple[tuple[tuple[int, ...], ...], list[int], set[int], set[int], set[int]]:
     first_orbit = case["covering_block_orbits"][deficit_index]
     fixed = (*tuple(tuple(block) for block in case["fixed_blocks"]), BLOCKS[first_orbit["canonical_variable"] - 1])
@@ -132,9 +137,10 @@ def residual(
     path = ROOT / case["third_level_parent_cnf"]["path"]
     key = str(path)
     if key not in parent_cache:
-        if sha(path) != case["third_level_parent_cnf"]["sha256"]:
+        raw = path.read_bytes() if path.exists() else reconstructed_parents[path.parent.name]
+        if hashlib.sha256(raw).hexdigest() != case["third_level_parent_cnf"]["sha256"]:
             raise ValueError(f"{case['id']}: parent CNF hash mismatch")
-        parent_cache[key] = parent_primary_units(path)
+        parent_cache[key] = parent_primary_units(raw)
     parent_positive, parent_negative = parent_cache[key]
     inherited_positive = {value for value in units if value > 0}
     inherited_negative = {-value for value in units if value < 0}
@@ -170,6 +176,7 @@ def build() -> dict[str, object]:
         raise ValueError("discriminator result audit gate failed")
     cases = [case for case in manifest["cases"] if case["branch_count"] > 0]
     assign_strata(cases)
+    _, reconstructed_parents, _, reconstruction_receipt = reconstruct_hierarchy()
     certified = {
         row["leaf_id"]
         for row in summary["outcomes"]
@@ -186,7 +193,9 @@ def build() -> dict[str, object]:
             leaf_id = f"{case['id']}-deficit-{deficit_index:03d}"
             if leaf_id in certified:
                 continue
-            fixed, units, available, parent_negative, inherited_negative = residual(case, deficit_index, parent_cache)
+            fixed, units, available, parent_negative, inherited_negative = residual(
+                case, deficit_index, parent_cache, reconstructed_parents
+            )
             first_triple = tuple(case["chosen_uncovered_triple"])
             prefix_cells = cells(fixed, (first_triple,))
             generic = orbit_rows(available, prefix_cells)
@@ -281,6 +290,7 @@ def build() -> dict[str, object]:
             "discriminator_summary": {"path": str(SUMMARY.relative_to(ROOT)), "sha256": sha(SUMMARY)},
             "discriminator_audit": {"path": str(RESULT_AUDIT.relative_to(ROOT)), "sha256": sha(RESULT_AUDIT)},
         },
+        "parent_cnf_reconstruction": reconstruction_receipt["third_level"],
         "remaining_child_count": len(profile),
         "certified_discriminator_children_excluded": len(certified),
         "target_rule": "first_eligible_orbit_rank == 0 OR branch_count_quantile in {q3,q4}",

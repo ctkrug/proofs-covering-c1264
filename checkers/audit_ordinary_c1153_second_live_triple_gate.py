@@ -5,10 +5,12 @@ from __future__ import annotations
 
 import argparse
 import hashlib
+import io
 import itertools
 import json
 import math
 import os
+import sys
 from collections import Counter, defaultdict
 from pathlib import Path
 
@@ -17,6 +19,9 @@ POINTS = tuple(range(1, 12))
 BLOCKS = tuple(itertools.combinations(POINTS, 5))
 TRIPLES = tuple(itertools.combinations(POINTS, 3))
 POSITIONS = {block: index for index, block in enumerate(BLOCKS, 1)}
+ROOT = Path(__file__).resolve().parents[1]
+sys.path.insert(0, str(ROOT / "checkers"))
+from audit_ordinary_c1153_fourth_inventory import reconstruct_hierarchy  # noqa: E402
 
 
 def digest(path: Path) -> str:
@@ -31,10 +36,10 @@ def clause_digest(values: list[int]) -> str:
     return hashlib.sha256((" ".join(map(str, values)) + (" " if values else "") + "0\n").encode()).hexdigest()
 
 
-def read_units(path: Path) -> tuple[set[int], set[int]]:
+def read_units(raw: bytes) -> tuple[set[int], set[int]]:
     positive: set[int] = set()
     negative: set[int] = set()
-    with path.open() as source:
+    with io.StringIO(raw.decode("ascii")) as source:
         for line in source:
             if not line or line[0] in "cp%0":
                 continue
@@ -137,6 +142,7 @@ def reconstruct_residual(
     case: dict[str, object],
     index: int,
     cache: dict[str, tuple[set[int], set[int]]],
+    reconstructed_parents: dict[str, bytes],
 ) -> tuple[tuple[frozenset[int], ...], list[int], set[int], set[int], set[int]]:
     orbit = case["covering_block_orbits"][index]
     fixed_tuples = (*tuple(tuple(block) for block in case["fixed_blocks"]), BLOCKS[orbit["canonical_variable"] - 1])
@@ -145,9 +151,10 @@ def reconstruct_residual(
     path = root / case["third_level_parent_cnf"]["path"]
     key = str(path)
     if key not in cache:
-        if digest(path) != case["third_level_parent_cnf"]["sha256"]:
+        raw = path.read_bytes() if path.exists() else reconstructed_parents[path.parent.name]
+        if hashlib.sha256(raw).hexdigest() != case["third_level_parent_cnf"]["sha256"]:
             raise ValueError("parent CNF hash mismatch")
-        cache[key] = read_units(path)
+        cache[key] = read_units(raw)
     parent_positive, parent_negative = cache[key]
     inherited_positive = {value for value in units if value > 0}
     inherited_negative = {-value for value in units if value < 0}
@@ -182,6 +189,9 @@ def audit(root: Path, manifest_path: Path) -> dict[str, object]:
     if len(certified) != 10:
         raise ValueError("certified exclusion set changed")
     cases = [case for case in base["cases"] if case["branch_count"] > 0]
+    _, reconstructed_parents, _, reconstruction_receipt = reconstruct_hierarchy()
+    if manifest["parent_cnf_reconstruction"] != reconstruction_receipt["third_level"]:
+        raise ValueError("parent-CNF reconstruction receipt mismatch")
     case_by_id = {case["id"]: case for case in cases}
     strata = independent_strata(cases)
     recorded_profile = {row["id"]: row for row in manifest["all_remaining_profile"]}
@@ -204,7 +214,7 @@ def audit(root: Path, manifest_path: Path) -> dict[str, object]:
                 continue
             expected_ids.add(leaf_id)
             fixed, units, available, parent_negative, inherited_negative = reconstruct_residual(
-                root, case, index, parent_cache
+                root, case, index, parent_cache, reconstructed_parents
             )
             first_triple = frozenset(case["chosen_uncovered_triple"])
             prefix_cells = membership_cells(fixed, (first_triple,))
