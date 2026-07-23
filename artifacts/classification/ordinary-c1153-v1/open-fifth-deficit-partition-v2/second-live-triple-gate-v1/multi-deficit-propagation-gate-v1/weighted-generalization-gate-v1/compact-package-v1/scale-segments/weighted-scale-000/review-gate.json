@@ -1,0 +1,71 @@
+{
+  "schema_version": 1,
+  "status": "AUDITED_SEGMENT_COMPLETE_CONTINUATION_HELD",
+  "campaign_artifact_commit": "6f603e25d1abf70414cad826c84512730a4f86ec",
+  "segment_id": "weighted-scale-000",
+  "bindings": {
+    "protocol_sha256": "c58dc80dc663034ef9c7cf998d9584f22d8d5ecc8baa6c666ac91d342c923530",
+    "assignment_sha256": "84f22e8126dec1b37f141bc0d94f83cb21585249fb2b96505df55c9096f6ebb5",
+    "index_sha256": "aeadbd8b3bb326dd3ecf8f09f10ffa3451128fe5ce0d36426241c1c285272336",
+    "summary_sha256": "274515d85657bda1651d4b41ad26a09d756d18912be852ebc09cc3c6a1b49adf",
+    "first_audit_sha256": "e128cf2dd4bb4fa2649c5637bd0454a51fbea70e24914ba9b4afa2045d9a50bf",
+    "corrected_audit_sha256": "4da4c21e2136bbac331eccd836774bc4635533e21f76403ee11061dcbb214895"
+  },
+  "outcome": {
+    "selected": 256,
+    "completed": 256,
+    "independently_checked_weighted_obstructions": 256,
+    "open_no_certificate_count": 0,
+    "sat_count": 0,
+    "minimum_arithmetic_margin": 1.2410270000000008,
+    "maximum_arithmetic_margin": 2.4999520000000004,
+    "median_lp_runtime_seconds": 0.0386253681499511,
+    "checker_success_fraction": 1.0
+  },
+  "storage": {
+    "certificate_bytes": 171425,
+    "receipt_bytes": 543362,
+    "index_bytes": 24505,
+    "protocol_and_assignment_bytes": 132506,
+    "measured_bytes_before_summary_and_audit": 871798,
+    "projected_complete_4402_bytes_with_10pct_safety": 16489923,
+    "predeclared_projection_bytes_with_10pct_safety": 12102474,
+    "projection_ratio_observed_to_predeclared": 1.3625249680354612,
+    "absolute_cap_bytes": 50000000,
+    "storage_projection_consistent": false
+  },
+  "gate": {
+    "certificate_count_passed": true,
+    "checker_reliability_passed": true,
+    "runtime_passed": true,
+    "storage_projection_passed": false,
+    "continuation_gate_passed": false,
+    "segment_001_authorized": false
+  },
+  "audit_incident": {
+    "preserved_artifact": "independent-audit.json",
+    "correction": "independent-audit-v2.json",
+    "scope": "The first audit's mathematical reconstruction and certificate checks remain valid, but its continuation Boolean omitted the predeclared storage-consistency predicate. The corrected audit preserves the first artifact and holds scaling."
+  },
+  "ledger_effect": {
+    "weighted_depth_two_semantic_closures_before": 102,
+    "new_weighted_depth_two_semantic_closures": 256,
+    "weighted_depth_two_semantic_closures_after": 358,
+    "parent_formula_closures": 0,
+    "fifth_leaf_closures": 0,
+    "fourth_parent_closures": 0,
+    "ordinary_replay_certified_fifth_leaves": 32611,
+    "ordinary_semantic_zero_child_leaves": 8476,
+    "ordinary_aggregation_closed_fourth_parents": "216/384",
+    "global_extension_ledger": "33/47"
+  },
+  "single_next_action": {
+    "name": "weighted-scale-segment-000-compact-v2-audit",
+    "scope": "Storage-only repackaging of the existing 256 immutable results; no LP, SAT, PB, or new mathematical computation.",
+    "method": "Retain every exact certificate once. Replace repeated case metadata in receipts and the duplicated case list in protocol/assignment with manifest row indices and hash bindings, then independently bind all 256 compact-v2 receipts to the immutable v1 receipts, reconstruct all domains, and recheck all exact arithmetic certificates.",
+    "success_gate": "All 256 bindings and arithmetic checks pass, membership is exact, and the measured complete-package projection including 10% safety is at or below 12,102,474 bytes.",
+    "stop": "Stop after the storage audit. Do not run segment 001 unless a later review explicitly authorizes it."
+  },
+  "claim_limit": "The 256 audited arithmetic certificates close only their exact depth-two cubes. The storage variance does not invalidate them, and no ancestor or global ledger entry changes.",
+  "completed_at": "2026-07-23T11:36:00Z"
+}
