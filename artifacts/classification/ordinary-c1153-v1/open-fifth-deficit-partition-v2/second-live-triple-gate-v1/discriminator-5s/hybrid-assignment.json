@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "status": "FROZEN",
+  "created_at": "2026-07-23T05:05:00Z",
+  "protocol": {
+    "path": "artifacts/classification/ordinary-c1153-v1/open-fifth-deficit-partition-v2/second-live-triple-gate-v1/discriminator-5s/protocol.json",
+    "sha256": "fe5b48a423174450b6929e4c50e2fb4b3be7f4552a5a36358086c3190393eef5",
+    "sample_count": 48,
+    "sample_sha256": "f3ac57207ccdac748e3f9417382a33a4e65b03efeefa18478c78abf2c5395a71"
+  },
+  "assignments": {
+    "cloud": {
+      "role": "exclusive proof-producing solver owner",
+      "case_domain": "all 48 exact case IDs in the bound protocol sample",
+      "parallelism": 4,
+      "seconds_cap": 5
+    },
+    "local_mac": {
+      "role": "independent reconstruction, replay, aggregation, synchronization, and publication only",
+      "solver_case_domain": "EMPTY"
+    }
+  },
+  "exclusivity_rule": "No host other than cloud may solve a protocol case. The Mac begins independent replay only from immutable pushed result receipts and never edits cloud result directories.",
+  "stop_conditions": [
+    "SAT result",
+    "hash or receipt mismatch",
+    "runner or independent replay failure",
+    "less than 20 percent free disk",
+    "swap growth or I/O collapse",
+    "artifact projection materially exceeds the predeclared bounded sample"
+  ],
+  "claim_limit": "Resource and case-ownership receipt only; no mathematical closure."
+}
