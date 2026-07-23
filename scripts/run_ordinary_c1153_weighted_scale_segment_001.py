@@ -98,7 +98,11 @@ def run() -> dict:
         parent_id = Path(case["third_level_parent_cnf"]["path"]).parent.name
         parent_raw = parents[parent_id]
         domain = base.residual_domain(job, case, parent_raw)
-        lp, certificate = base.exact_certificate(domain["uncovered"], domain["available"], domain["remaining_slots"])
+        lp, certificate = base.exact_certificate(
+            [tuple(triple) for triple in domain["uncovered"]],
+            domain["available"],
+            domain["remaining_slots"],
+        )
         certificate_reference = None
         if certificate is not None:
             raw = base.compact_json(certificate)
