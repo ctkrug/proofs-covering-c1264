@@ -1,0 +1,37 @@
+{
+  "schema_version": 1,
+  "status": "LOCAL_SOLVER_LANE_DISABLED_LOW_DISK",
+  "measured_at": "2026-07-22T23:18:00-06:00",
+  "host": "local-mac",
+  "resources": {
+    "logical_cpu": 8,
+    "memory_bytes": 8589934592,
+    "filesystem_total_gib": 228,
+    "filesystem_used_gib": 183,
+    "filesystem_available_gib": 20,
+    "filesystem_percent_used": 91
+  },
+  "allocation": {
+    "proof_producing_solver_workers": 0,
+    "allowed": [
+      "in-memory structural profiling",
+      "checker and regression-test development",
+      "small bounded manifest construction",
+      "independent receipt inspection",
+      "publication and synchronization"
+    ],
+    "forbidden_until_disk_gate_recovers": [
+      "proof generation",
+      "bulk CNF materialization",
+      "bulk proof decompression",
+      "large replay batches"
+    ]
+  },
+  "disk_gate": {
+    "required_free_fraction": 0.2,
+    "observed_free_fraction": 0.09,
+    "passed": false
+  },
+  "cloud_role": "Cloud remains the exclusive proof-producing solver host.",
+  "claim_limit": "Operational resource receipt only; no mathematical result."
+}
