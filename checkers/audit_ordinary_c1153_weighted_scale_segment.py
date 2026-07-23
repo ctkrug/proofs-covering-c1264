@@ -25,7 +25,8 @@ PROTOCOL = TARGET / "protocol.json"
 ASSIGNMENT = TARGET / "assignment.json"
 INDEX = TARGET / "index.json.gz"
 SUMMARY = TARGET / "summary.json"
-OUTPUT = TARGET / "independent-audit.json"
+PRIOR_OUTPUT = TARGET / "independent-audit.json"
+OUTPUT = TARGET / "independent-audit-v2.json"
 BLOCKS = tuple(itertools.combinations(range(1, 12), 5))
 BLOCK_TRIPLES = tuple(frozenset(itertools.combinations(block, 3)) for block in BLOCKS)
 sys.path.insert(0, str(ROOT / "checkers"))
@@ -205,11 +206,16 @@ def audit() -> dict[str, object]:
         stratum["certified"] += 1
     if summary["weighted_certificate_count"] != certified:
         raise ValueError("summary certified count mismatch")
-    compact_paths = [PROTOCOL, ASSIGNMENT, INDEX, *TARGET.glob("receipts/*.json"), *TARGET.glob("certificates/*.gz")]
-    compact_bytes = sum(path.stat().st_size for path in compact_paths)
+    receipt_bytes = sum(path.stat().st_size for path in TARGET.glob("receipts/*.json"))
+    certificate_bytes = sum(path.stat().st_size for path in TARGET.glob("certificates/*.gz"))
+    index_bytes = INDEX.stat().st_size
+    protocol_assignment_bytes = PROTOCOL.stat().st_size + ASSIGNMENT.stat().st_size
+    compact_bytes = receipt_bytes + certificate_bytes + index_bytes + protocol_assignment_bytes
     projected = math.ceil(compact_bytes * 4402 / 256 * 1.1)
     median_runtime = statistics.median(runtimes)
-    gate_passed = certified >= 240 and median_runtime < 0.5
+    expected_projection = protocol["continuation_gate"]["projected_complete_bytes_with_safety"]
+    storage_consistent = projected <= expected_projection
+    gate_passed = certified >= 240 and median_runtime < 0.5 and storage_consistent
     report = {
         "schema_version": 1,
         "status": "VALID",
@@ -225,10 +231,25 @@ def audit() -> dict[str, object]:
         "minimum_arithmetic_margin": min(margins) if margins else None,
         "maximum_arithmetic_margin": max(margins) if margins else None,
         "median_runtime_seconds": median_runtime,
+        "compact_byte_breakdown": {
+            "certificates": certificate_bytes,
+            "receipts": receipt_bytes,
+            "index": index_bytes,
+            "protocol_and_assignment": protocol_assignment_bytes,
+            "total_before_summary_and_audit": compact_bytes,
+        },
         "compact_artifact_bytes_before_summary_and_audit": compact_bytes,
         "projected_complete_4402_bytes_with_10pct_safety": projected,
+        "predeclared_projection_bytes_with_10pct_safety": expected_projection,
+        "projection_ratio_observed_to_predeclared": projected / expected_projection,
+        "storage_projection_consistent": storage_consistent,
         "by_formula_stratum": dict(sorted(by_stratum.items())),
         "continuation_gate_passed": gate_passed,
+        "supersedes_gate_evaluation": {
+            "path": str(PRIOR_OUTPUT.relative_to(ROOT)),
+            "sha256": sha(PRIOR_OUTPUT),
+            "reason": "The first immutable audit correctly checked all 256 domains and certificates but omitted the predeclared storage-consistency predicate from its continuation-gate Boolean.",
+        },
         "claim_limit": "Only these independently checked cubes are semantic arithmetic closures. No ancestor or campaign ledger changes.",
     }
     write_immutable(OUTPUT, compact_json(report))
