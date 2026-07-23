@@ -1,0 +1,27 @@
+{
+  "schema_version": 1,
+  "route": "four-exchange temporary-degree-slack token cycle",
+  "hypothesis": "At least one of two fixed-seed 1,000-attempt screens returns an independently replayed exact-degree endpoint with at most five uncovered quadruples.",
+  "success_signal": "best independently replayed eligible treatment endpoint has at most five uncovered quadruples; zero triggers direct all-495 cover verification",
+  "stop_signal": "fewer than 20 complete returns across 2,000 attempts, or no eligible audited endpoint below six defects",
+  "ambient_space": {
+    "blocks": 924,
+    "naive_four_addition_choices": 30175396251,
+    "bottleneck": "generate genuine four-block exact-degree endpoints without enumerating all block quadruples"
+  },
+  "reductions_considered": [
+    "warm-start stabilizer quotient (deferred: not computed or independently checked)",
+    "canonical endpoint hashing (used only to measure duplicates)",
+    "one-point exchange structure",
+    "missing-quadruple targeting on the first exchange",
+    "incremental 15-quadruple and 15-pair incidence updates per changed block",
+    "proper-subtrade pruning",
+    "batch/vectorized enumeration (unnecessary at 2,000 attempts)",
+    "memoization and learned-clause reuse (not applicable to this sampler)"
+  ],
+  "chosen_mechanism": "Choose a first one-point exchange whose addition covers a currently missing quadruple, then carry the +1 degree token along a directed four-cycle and score only the exact return. Require four distinct original removals, four distinct originally absent additions, no cancellation, and no proper degree-preserving subtrade.",
+  "projected_savings": "At most 1,440 first exchanges and at most 36 one-point neighbors per later step replace direct traversal of 30,175,396,251 four-addition choices; this is a proposal reduction, not exhaustive coverage.",
+  "memory_design": "Integer block IDs, compact JSONL traces, endpoint hashes, and incremental counters; no large candidate table.",
+  "soundness_guard": "Standalone checker reconstructs all 924 blocks and 495 quadruples, replays every complete exchange, checks exact intermediate/final degrees and all proper subtrades, recomputes metrics directly, validates four negative mutations, and compares a frozen matched control.",
+  "scope_limit": "A negative result applies only to these two deterministic seed streams and cannot exclude a 40-block cover."
+}

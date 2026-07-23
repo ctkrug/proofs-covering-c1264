@@ -1,0 +1,60 @@
+{
+  "accepted_endpoints": 0,
+  "attempt_budget": 1000,
+  "attempted_chains": 1000,
+  "best_attempt": 0,
+  "best_metrics": {
+    "pair_deficit_below_9": 12,
+    "pair_excess_above_10": 0,
+    "point_degree_deviation": 0,
+    "uncovered_quadruples": 6
+  },
+  "candidate": {
+    "blocks": 40,
+    "path": "artifacts/constructive/slack-chain-discriminator-20260723-v2/treatment/seed-126480/best-candidate.txt",
+    "sha256": "4321dea0f828f30bf5cb1d3c54b4a94349e9bc3f54bd25ea23dbac79ae030a07"
+  },
+  "claim_limit": "NO_WITNESS is a bounded heuristic miss, not an exclusion.",
+  "complete_chains": 1000,
+  "distinct_endpoint_hashes": 1000,
+  "elapsed_seconds": 6.996498013148084,
+  "eligible_indecomposable_endpoints": 996,
+  "failure_reasons": {},
+  "final_chain_sha256": "769988542861c8830f8951cba40988b9a5636d8743b6d69c8f530b799c107a5e",
+  "final_metrics": {
+    "pair_deficit_below_9": 12,
+    "pair_excess_above_10": 0,
+    "point_degree_deviation": 0,
+    "uncovered_quadruples": 6
+  },
+  "initial_chain_sha256": "dcb9c05425097de25737d16cd9715d4a528789b59566be1c171a6f12a5b5f060",
+  "initial_metrics": {
+    "pair_deficit_below_9": 12,
+    "pair_excess_above_10": 0,
+    "point_degree_deviation": 0,
+    "uncovered_quadruples": 6
+  },
+  "mean_changed_pair_counters": 50.538,
+  "mean_changed_quad_counters": 94.139,
+  "nontrivial_exact_return_rate": 1.0,
+  "schema_version": 1,
+  "seconds_cap_including_setup": 10.0,
+  "seed": 126480,
+  "source": {
+    "path": "artifacts/constructive/repair-seed126442-30s/best-candidate.txt",
+    "sha256": "4321dea0f828f30bf5cb1d3c54b4a94349e9bc3f54bd25ea23dbac79ae030a07"
+  },
+  "status": "NO_WITNESS",
+  "target_histogram": {
+    "2-3-5-7": 143,
+    "2-3-6-9": 173,
+    "2-7-9-12": 180,
+    "3-5-6-11": 157,
+    "5-7-11-12": 188,
+    "6-9-11-12": 159
+  },
+  "trace": {
+    "path": "artifacts/constructive/slack-chain-discriminator-20260723-v2/treatment/seed-126480/complete-chains.jsonl",
+    "sha256": "8eb79d9029c9bf79cac8dcc1e26a98663573926bcc10ca20b9faf4c5cc4d91a6"
+  }
+}

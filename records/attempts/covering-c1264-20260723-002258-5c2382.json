@@ -1,0 +1,488 @@
+{
+  "id": "covering-c1264-20260723-002258-5c2382",
+  "problem_id": "covering-c1264",
+  "started_at": "2026-07-23T00:00:24.083448+00:00",
+  "finished_at": "2026-07-23T00:22:58.065027+00:00",
+  "duration_seconds": 1354.0,
+  "lane": "hard",
+  "phase": "technical",
+  "model": "gpt-5.6-sol",
+  "effort": "high",
+  "orchestration": {
+    "architecture": "sol-principal-terra-delegates",
+    "principal_model": "gpt-5.6-sol",
+    "delegate_model": "gpt-5.6-terra",
+    "delegate_roles": [
+      "challenger-prior-art",
+      "experiment-verification"
+    ],
+    "delegate_statuses": {
+      "challenger-prior-art": "completed",
+      "experiment-verification": "completed"
+    },
+    "delegate_admission": {
+      "event_kinds": [
+        "external_feedback",
+        "lab_completed"
+      ],
+      "selected_roles": [
+        "challenger-prior-art",
+        "experiment-verification"
+      ],
+      "route_decision_event_kinds": [
+        "evidence_repaired",
+        "external_feedback",
+        "route_authorized",
+        "source_changed"
+      ]
+    }
+  },
+  "delegates": [
+    {
+      "role": "challenger-prior-art",
+      "model": "gpt-5.6-terra",
+      "effort": "high",
+      "status": "completed",
+      "memo_path": ".delegates/20260723-000024-d8293b/challenger-prior-art/memo.md",
+      "memo_sha256": "2979a045a663f1c6e6a4b132ca2d318ff886c27f82894bc60ceb3a1857b19cf2",
+      "usage": {
+        "input_tokens": 687173,
+        "cached_input_tokens": 613120,
+        "output_tokens": 5199,
+        "reasoning_output_tokens": 1830
+      },
+      "error": ""
+    },
+    {
+      "role": "experiment-verification",
+      "model": "gpt-5.6-terra",
+      "effort": "high",
+      "status": "completed",
+      "memo_path": ".delegates/20260723-000024-d8293b/experiment-verification/memo.md",
+      "memo_sha256": "9df0ce4a0c2f96b2e3521c7fd8095ce5ae779c5d186f68c2d3283afd753d98b2",
+      "usage": {
+        "input_tokens": 896236,
+        "cached_input_tokens": 824320,
+        "output_tokens": 9548,
+        "reasoning_output_tokens": 3634
+      },
+      "error": ""
+    }
+  ],
+  "outcome": "progress",
+  "approach": "Two-seed four-exchange temporary-degree-slack token-cycle search with a frozen exact-degree matched control and standalone trace replay",
+  "summary": "The four-exchange sampler worked semantically but failed its mathematical signal. Independent replay validated 2,000 exact-degree returns, 1,990 indecomposable endpoints, and 13 accepted persistent moves in one seed; no endpoint improved the six-defect warm start. No cover, lower bound, or global exclusion was obtained.",
+  "rationale": "The predeclared continuation condition required an audited endpoint with at most five defects. The audited minimum was six in both treatment seeds and the matched control, so scaling the unchanged sampler would have low information value.",
+  "claims": [
+    "For seeds 126480 and 126481, all 2,000 recorded treatment attempts completed as exact-degree four-exchange returns.",
+    "Exactly 1,990 recorded endpoints contain no proper one-, two-, or three-block degree-preserving subtrade.",
+    "The minimum independently recomputed uncovered-quadruple count was six for both treatment and control.",
+    "These finite results do not exclude any 40-block cover."
+  ],
+  "evidence": [
+    "python3 scripts/run_constructive_slack_chain_discriminator.py --source artifacts/constructive/repair-seed126442-30s/best-candidate.txt --control-cover sources/ljcr-c1264-41.txt --output artifacts/constructive/slack-chain-discriminator-20260723-v2 --seeds 126480 126481 --attempts 1000 --seconds-per-seed 10",
+    "python3 checkers/audit_three_block_screen.py artifacts/constructive/slack-chain-discriminator-20260723-v2/matched-control/manifest.json --output artifacts/constructive/slack-chain-discriminator-20260723-v2/matched-control/audit.json",
+    "python3 checkers/audit_slack_chain_discriminator.py artifacts/constructive/slack-chain-discriminator-20260723-v2/manifest.json --control-audit artifacts/constructive/slack-chain-discriminator-20260723-v2/matched-control/audit.json --output artifacts/constructive/slack-chain-discriminator-20260723-v2/audit.json",
+    "Four route-specific unit tests passed; the independent 41-block cover checker covered all 495 quadruples."
+  ],
+  "evidence_files": [
+    "sources/ljcr-c1264-41.txt",
+    "artifacts/constructive/repair-seed126442-30s/best-candidate.txt",
+    "docs/SLACK-CHAIN-EFFICIENCY-20260723.json",
+    "scripts/run_constructive_slack_chain_discriminator.py",
+    "checkers/audit_slack_chain_discriminator.py",
+    "tests/test_constructive_slack_chain_discriminator.py",
+    "artifacts/constructive/slack-chain-discriminator-20260723-v2/manifest.json",
+    "artifacts/constructive/slack-chain-discriminator-20260723-v2/audit.json",
+    "artifacts/constructive/slack-chain-discriminator-20260723-v2/matched-control/manifest.json",
+    "artifacts/constructive/slack-chain-discriminator-20260723-v2/matched-control/audit.json",
+    ".proof-experiments/20260723-001458-020a52/experiment.json"
+  ],
+  "next_steps": [
+    "Reconstruct and audit the existing 790-branch ordinary C(11,5,3) fourth-level partition and its 406 replayed closures.",
+    "Design a bounded fifth-level split pilot on representative branches among the 416 open early-prefix cases.",
+    "Use the checkpointed lab only if the pilot produces replayable closures; immediately record any second nonisomorphic ordinary cover."
+  ],
+  "citations": [
+    "https://ljcr.dmgordon.org/cover/show_cover.php?v=12&k=6&t=4",
+    "https://combinatorialpress.com/article/jcmcc/Volume%2016/vol-16-paper%202.pdf",
+    "https://combinatorialpress.com/um/vol41/"
+  ],
+  "techniques": [
+    "ejection-chain local search",
+    "incremental incidence scoring",
+    "exact point-degree invariants",
+    "proper-subtrade enumeration",
+    "hash-chained trace replay",
+    "matched stochastic control",
+    "mutation testing"
+  ],
+  "experiments": [
+    ".proof-experiments/20260723-001458-020a52: deterministic producer run completed in 20.356 seconds with peak child usage 93,024 KiB.",
+    "artifacts/constructive/slack-chain-discriminator-20260723-v2: 2,000 treatment attempts, audited minimum six defects, STOP_SIGNAL."
+  ],
+  "transfer_insights": [
+    "Ejection-chain local search -> temporary constraint violation should connect exact-degree states unreachable by direct trades -> exact-return generation succeeded, but defect improvement did not."
+  ],
+  "established_facts": [
+    {
+      "claim": "The preserved 41-block list covers all 495 quadruples.",
+      "evidence": "sources/ljcr-c1264-41.txt, SHA-256 395bc870e7eb9e84a472873db97de553afc34afdb666545824944e89047913e5; two independent checks",
+      "scope": "that exact 41-block list",
+      "status": "computed"
+    },
+    {
+      "claim": "The recorded slack-chain screen completed 2,000 exact-degree returns, including 1,990 indecomposable endpoints.",
+      "evidence": "audit.json SHA-256 21bc818875fdc90c024b1fa40b14e3416e5be95548335f8fc59ac1ea2df263c3",
+      "scope": "two fixed seeds and one warm start",
+      "status": "computed"
+    },
+    {
+      "claim": "The recorded treatment and matched control both retained a minimum of six uncovered quadruples.",
+      "evidence": "combined and matched-control audit receipts",
+      "scope": "the recorded finite runs only",
+      "status": "computed"
+    }
+  ],
+  "ruled_out": [
+    {
+      "claim_or_route": "Scale the unchanged four-exchange temporary-degree-slack token-cycle sampler from the fixed warm start.",
+      "scope": "Seeds 126480–126481, 2,000 complete returns, 1,990 eligible endpoints, and 13 accepted persistent moves",
+      "reason": "No audited endpoint improved six defects, failing the declared continuation signal.",
+      "evidence": "artifacts/constructive/slack-chain-discriminator-20260723-v2/audit.json",
+      "reopen_condition": "A different basin, materially different endpoint selector, or exhaustive neighborhood classification producing a structural result"
+    }
+  ],
+  "open_leads": [
+    {
+      "description": "Complete the ordinary 20-block C(11,5,3) classification independently of the unresolved Mills uniqueness attribution.",
+      "rationale": "This can promote the audited 945-to-20 perfect-matching quotient from conditional to exhaustive.",
+      "next_experiment": "Audit the frozen 790-branch partition and run a fifth-level split pilot on representative open early-prefix branches.",
+      "priority": "high",
+      "status": "open"
+    }
+  ],
+  "strategy_proposals": [],
+  "synthesis_candidates": [],
+  "strategy": {
+    "family": "temporary-degree-slack ejection chain",
+    "fingerprint": "ffdc9e0256f9",
+    "mechanism": "A targeted one-point exchange covers a missing quadruple, then a degree token traverses a directed four-cycle; only indecomposable endpoints returning to all point degrees 20 are scored.",
+    "parent_ids": [
+      "strategy-eadb381c69d1"
+    ],
+    "route_evaluation": {
+      "gate_proximity": 0.08,
+      "contribution_value": 0.12,
+      "decisiveness": 0.85,
+      "novelty_confidence": 0.1,
+      "novelty_risk": 0.9,
+      "scope": 0.02,
+      "reuse_value": 0.7,
+      "model_cost": 0.25,
+      "cpu_cost": 0.05
+    }
+  },
+  "continuation": {
+    "objective": "Independently settle ordinary C(11,5,3)=20 uniqueness and thereby validate or falsify the exhaustive 20-link reduction.",
+    "first_action": "Audit the immutable 790-branch fourth-level partition and its 406 replayed UNSAT closures.",
+    "stop_condition": "Stop or repartition if coverage reconstruction fails or a matched hard-prefix pilot yields no replayed closure; a second valid nonisomorphic cover immediately falsifies uniqueness."
+  },
+  "candidate_profile": {
+    "contribution_class": "research_artifact",
+    "scholarly_question": "Does a four-exchange temporary-degree-slack local-search mechanism improve the known six-defect 40-block near-cover for C(12,6,4)?",
+    "meaningful_delta": "The mechanism leaves the exact-degree fibre at intermediate states and independently validates genuine four-block returns, unlike the previous exact-degree samplers.",
+    "acceptance_test": "Reproduce the fixed seeds and obtain the same valid audit receipt and minimum defect count.",
+    "closest_prior_work": [
+      {
+        "url": "https://ljcr.dmgordon.org/cover/show_cover.php?v=12&k=6&t=4",
+        "difference": "The maintained source supplies the 41-cover and open range; it does not report this bounded local-search screen."
+      },
+      {
+        "url": "https://www.tcs.hut.fi/Publications/info/bibdb.HUT-TCS-B10.shtml",
+        "difference": "Nurmela–Östergård-style simulated annealing is the nearest general construction method; this experiment adds exact-degree token-cycle traces and independent replay."
+      }
+    ],
+    "novelty_searches": [
+      {
+        "source": "LJCR and web literature search",
+        "query": "\"C(12,6,4)\" covering design 40 41",
+        "url": "https://ljcr.dmgordon.org/cover/show_cover.php?v=12&k=6&t=4",
+        "finding": "The maintained exact range remains 40–41; no newer exact resolution was located."
+      },
+      {
+        "source": "Combinatorial Press archive",
+        "query": "\"C(11,5,3)\" 20 uniqueness Mills",
+        "url": "https://combinatorialpress.com/um/vol41/",
+        "finding": "The archive confirms Mills's one-page 1992 item, but its text and a proof of uniqueness were not obtained."
+      }
+    ],
+    "external_channel": {
+      "recipient": "none",
+      "url": "",
+      "acceptance_path": "Internal reproducibility artifact only; no external submission is warranted without a covering bound, structural theorem, or specialist request."
+    },
+    "independent_validations": [
+      {
+        "type": "deterministic_checker",
+        "validator": "checkers/audit_slack_chain_discriminator.py",
+        "result": "valid; STOP_SIGNAL; 2,000 exact returns; best uncovered count six; all four mutations rejected",
+        "artifact": "artifacts/constructive/slack-chain-discriminator-20260723-v2/audit.json",
+        "evidence_url": ""
+      }
+    ],
+    "relevance": {
+      "settles_exact_open_target": false,
+      "improves_best_known_result": false,
+      "source_explicitly_requests_result": false,
+      "expert_interest_confirmed": false,
+      "new_structural_result": false,
+      "evidence_url": "https://ljcr.dmgordon.org/cover/show_cover.php?v=12&k=6&t=4"
+    },
+    "arbitrary_cutoff_extension": false
+  },
+  "campaign_assessment": {
+    "decision": "continue",
+    "close_signal": "The ordinary classification already has three closed top-level leaves and 406 replayed fourth-level closures; 416 branches remain explicitly identified.",
+    "reason": "The constructive route is closed unchanged, but the classification gate has finite, certificate-bearing progress and can unlock a global reduction."
+  },
+  "resolution_portfolio": {
+    "current_uncertainty": "40 <= C(12,6,4) <= 41; neither endpoint is settled.",
+    "active_routes_and_scores": [
+      {
+        "route": "ordinary C(11,5,3) canonical classification",
+        "score": "highest marginal value: medium compute, structural gate proximity, replayable branch certificates",
+        "success_certificate": "Complete five-leaf S11 classification with every canonical branch covered and every UNSAT proof replayed, or a directly checked second ordinary cover",
+        "smallest_decisive_experiment": "Audit the existing partition and test one representative fifth-level split from each hard-prefix stratum",
+        "switch_condition": "Coverage-audit failure, zero replayed closures in the matched pilot, or discovery of a second cover"
+      },
+      {
+        "route": "47-node direct C(12,6,4) exclusion portfolio",
+        "score": "medium value and high certificate cost; currently 33/47 globally closed",
+        "success_certificate": "47/47 replayed closures plus independent global canonical coverage",
+        "smallest_decisive_experiment": "One frozen proof-producing tranche on hash-bound, genuinely open leaves",
+        "switch_condition": "A unique closure rate materially exceeding the ordinary-classification pilot"
+      },
+      {
+        "route": "constructive search from a different basin",
+        "score": "low current value after repeated six-defect failures; compact success certificate but no qualified generator",
+        "success_certificate": "A 40-block list directly covering all 495 quadruples",
+        "smallest_decisive_experiment": "A semantic gate on a materially different basin or global optimization formulation",
+        "switch_condition": "A new independently verified warm start below six defects"
+      }
+    ],
+    "what_changed_this_turn": "Temporary slack was shown to generate abundant genuine returns and persistent movement but still failed to improve six defects; the route was closed unchanged.",
+    "net_new_validated_progress": "A hash-bound producer/checker packet and a verified negative discriminator covering 2,000 exact returns; no mathematical bound improved.",
+    "cheapest_next_experiment_for_each_route": [
+      {
+        "route": "ordinary classification",
+        "experiment": "Partition audit plus a small fifth-level hard-prefix pilot"
+      },
+      {
+        "route": "direct exclusion frontier",
+        "experiment": "One matched tranche on genuinely open hash-bound leaves"
+      },
+      {
+        "route": "constructive witness",
+        "experiment": "Only test a new basin or formulation after it passes direct semantic checks"
+      }
+    ],
+    "why_selected_next_route_has_best_expected_value": "It attacks the exact premise currently preventing a 20-case exhaustive reduction, preserves compact replayable certificates, and has a precisely measured finite remainder. Another unchanged local-search tranche has already failed its continuation gate.",
+    "immediate_route_switch_conditions": [
+      "A second valid nonisomorphic C(11,5,3) cover falsifies uniqueness and redirects classification.",
+      "Failure of independent partition coverage invalidates proof-scale work until repaired.",
+      "A validated 40-block C(12,6,4) witness immediately ends all negative searches.",
+      "A direct-frontier pilot with materially better unique closure per CPU-hour supersedes the classification pilot."
+    ]
+  },
+  "search_efficiency": {
+    "naive_space": "C(924,4)=30,175,396,251 possible four-block addition sets; the bottleneck is generating genuine exact-degree returns without enumerating this space.",
+    "reductions_considered": [
+      "warm-start stabilizer quotient",
+      "canonical endpoint hashing",
+      "one-point exchange structure",
+      "missing-quadruple targeting",
+      "incremental incidence updates",
+      "proper-subtrade pruning",
+      "batching and vectorization",
+      "memoization",
+      "solver-prefix reuse"
+    ],
+    "chosen_mechanism": "At most 1,440 targeted first exchanges followed by steps with at most 36 one-point neighbors, carrying one degree token around a four-cycle.",
+    "estimated_or_measured_savings": "All 2,000 attempts returned exactly; each endpoint changed about 94 of 495 quadruple counters and 50.49 of 66 pair counters on average. This is proposal compression, not exhaustive coverage.",
+    "soundness_guard": "A standalone checker rebuilt incidences from combinations, replayed every elementary exchange, checked intermediate L1 degree deviation two, exact endpoint degrees, exhaustive proper subtrades, metrics, hash chains, and four corrupt-trace controls."
+  },
+  "space_reduction": {
+    "ambient_space": "C(924,40) labelled 40-block families",
+    "represented_space_before": "One labelled six-defect exact-degree warm start and its unknown stochastic reachable neighborhood",
+    "eliminated_or_quotiented": "No global family was eliminated; one fixed heuristic policy was screened and closed for unchanged scale-up.",
+    "represented_space_after": "The global C(924,40) space remains unchanged.",
+    "reduction_factor": "none",
+    "measurement_status": "not_applicable",
+    "unit": "families",
+    "coverage_scope": "Seeds 126480 and 126481, 1,000 attempts each, from one fixed warm start",
+    "soundness_basis": "Independent replay validates recorded endpoints, but the proposal generator is intentionally non-exhaustive.",
+    "remaining_unknown": "Whether any 40-block cover exists, behavior in other basins, and all ungenerated four-block exchanges",
+    "next_bulk_elimination": "Complete the ordinary C(11,5,3)=20 canonical classification across its 416 open branches, potentially promoting the conditional 945-to-20 matching quotient to an exhaustive split."
+  },
+  "tactical_learning": {
+    "prediction": "Temporary degree slack would return an eligible endpoint with at most five uncovered quadruples.",
+    "observation": "The audit validated 2,000 exact returns and 1,990 indecomposable endpoints. Seed 126481 accepted 13 persistent endpoints, but both treatment seeds and the matched control retained a minimum of six defects.",
+    "surprise": "Exact return generation was not the bottleneck; abundant distinct returns and persistent movement still produced no improvement.",
+    "failure_signature": "Short degree-token cycles can move through exact-degree states after temporary slack while remaining trapped above the six-defect minimum.",
+    "bottleneck_update": "The highest-leverage bottleneck is now the independently certified ordinary-link classification, not another unchanged local-search tranche.",
+    "reusable_assets": [
+      {
+        "name": "slack-chain producer",
+        "use": "Generate deterministic four-exchange token cycles and matched controls.",
+        "evidence": "scripts/run_constructive_slack_chain_discriminator.py; SHA-256 cdf34bfe85edcec8e1725b61ab1594df3cdd7b16c53089b203b82736af77d22f"
+      },
+      {
+        "name": "standalone slack-chain checker",
+        "use": "Replay token transitions, direct incidences, subtrade tests, controls, and candidates.",
+        "evidence": "checkers/audit_slack_chain_discriminator.py; SHA-256 843f0a515c204ee46057831a4760b1dd74ad79bc56a3324c63813249429dcfc2"
+      }
+    ],
+    "constraints_learned": [
+      {
+        "constraint": "The recorded policy did not improve the six-defect warm start despite 2,000 exact returns and 1,990 eligible endpoints.",
+        "scope": "Seeds 126480–126481 and the recorded generator, acceptance schedule, and warm start",
+        "evidence": "artifacts/constructive/slack-chain-discriminator-20260723-v2/audit.json"
+      }
+    ],
+    "route_decision": "close",
+    "next_discriminator": "Audit the frozen 790-branch ordinary C(11,5,3) partition and its 406 replayed closures, then pilot a fifth-level split on representative open early-prefix branches."
+  },
+  "prior_art_check": {
+    "nearest_method_ids": [
+      "constructive_local_search-03",
+      "constructive_local_search-02"
+    ],
+    "classification": "material_modification",
+    "exact_delta": "Unlike the prior exact-degree two- and three-block samplers, each proposal deliberately leaves the degree-20 fibre for three intermediate states and returns after a genuine four-block exchange.",
+    "duplicate_risk": "Ejection chains and simulated annealing are standard; this bounded negative screen is not a novel covering-design theorem.",
+    "comparison_test": "The frozen exact-degree three-block sampler was run with identical seeds, proposal counts, wall caps, scoring, and independent replay.",
+    "decision": "stop",
+    "source_urls": [
+      "https://ljcr.dmgordon.org/cover/show_cover.php?v=12&k=6&t=4",
+      "https://combinatorialpress.com/article/jcmcc/Volume%2016/vol-16-paper%202.pdf",
+      "https://combinatorialpress.com/um/vol41/"
+    ]
+  },
+  "field_progress_assessment": {
+    "status": "not_met",
+    "gate_id": "Use the sourced contribution and verification contract.",
+    "contribution_class": "verified negative route result and reusable research infrastructure",
+    "closest_prior_result": "The 20-seed exact-degree three-block screen also retained six defects.",
+    "measurable_improvement": "No covering bound or defect improvement; the new sampler established a 100% exact-return rate and independently validated 1,990 indecomposable endpoints.",
+    "independent_validation": "The standalone checker returned status valid and rejected all four mutation controls.",
+    "external_audience": "none",
+    "remains_unproved": "Whether C(12,6,4) is 40 or 41",
+    "route_recommendation": "redirect to ordinary C(11,5,3) canonical classification because it can unlock an exhaustive 20-link decomposition."
+  },
+  "lab_review": {
+    "job_id": "",
+    "decision": "none",
+    "reason": "No completed-awaiting-review lab job was used for this bounded local experiment.",
+    "evidence": []
+  },
+  "hypothesis": "At least one of seeds 126480 and 126481 produces an independently replayed, indecomposable exact-degree endpoint with at most five uncovered quadruples in 1,000 attempts.",
+  "discriminating_test": "Run 1,000 four-exchange attempts per seed with 10-second caps and the same-seed frozen exact-degree control; stop unless independent replay finds at most five defects.",
+  "strategy_status": "blocked",
+  "research_mode": "computational",
+  "independent_checker": "checkers/audit_slack_chain_discriminator.py independently rebuilds the 924 blocks and incidence tables, replays every elementary exchange, exhaustively tests proper subtrades, validates acceptance decisions and hash chains, and rejected four corrupted events.",
+  "blocker": "No 40-block witness or complete UNSAT portfolio exists. The ordinary C(11,5,3)=20 uniqueness premise remains uncertified, with 416 canonical fourth-level branches open.",
+  "reopen_condition": "Retry this slack sampler only with a different basin, a materially more informative endpoint selector, or an exhaustive structural result.",
+  "reopen_evidence": "",
+  "tool_disclosure": "Codex/GPT-5 Sol principal designed, implemented, ran, and audited this epoch. Two injected GPT-5.6 Terra delegate memos supplied advisory prior-art and verification reconnaissance but were not treated as evidence. Deterministic Python 3.12.3 produced and independently replayed the experiment. Web search checked the maintained source and primary bibliographic pages. No SAT solver, CAS, proof assistant, or sub-agent was used by Sol during this epoch.; orchestration: gpt-5.6-sol principal with gpt-5.6-terra delegates.",
+  "policy_flags": [],
+  "contribution_gate": {
+    "schema_version": 1,
+    "passed": false,
+    "status": "not_requested",
+    "reasons": [],
+    "contribution_class": "unspecified",
+    "meaningful_delta": "",
+    "scholarly_question": "",
+    "external_recipient": "",
+    "independent_validation_types": []
+  },
+  "contribution_status": "research_attempt",
+  "review_status": "not a result claim",
+  "usage": {
+    "input_tokens": 4088267,
+    "cached_input_tokens": 3934976,
+    "output_tokens": 39222,
+    "reasoning_output_tokens": 9811
+  },
+  "json_repair": {
+    "attempted": false,
+    "used": false,
+    "model": null,
+    "effort": null,
+    "timeout_seconds": 180,
+    "usage": {},
+    "error": "",
+    "policy": "serialization-only; protected outcome and classification fields must remain unchanged"
+  },
+  "error": "",
+  "artifact_hashes": {
+    ".delegates/20260723-000024-d8293b/challenger-prior-art/memo.md": "2979a045a663f1c6e6a4b132ca2d318ff886c27f82894bc60ceb3a1857b19cf2",
+    ".delegates/20260723-000024-d8293b/experiment-verification/SLACK_CHAIN_VERIFICATION_MEMO.md": "47133615769ee936e8d6831cd0f8dc99b11230842c9b36884d20f6086be4905f",
+    ".delegates/20260723-000024-d8293b/experiment-verification/memo.md": "9df0ce4a0c2f96b2e3521c7fd8095ce5ae779c5d186f68c2d3283afd753d98b2",
+    ".proof-experiments/20260723-001147-dd641f/experiment.json": "0013d632b927847191715d0c3932d635fdf623c4541d81236ceb080455f13ce5",
+    ".proof-experiments/20260723-001147-dd641f/stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    ".proof-experiments/20260723-001147-dd641f/stdout.txt": "0c4a9f9b90465678f33db45e56d24be829c7a657dcab9f60f14f77c5829d5c78",
+    ".proof-experiments/20260723-001458-020a52/experiment.json": "8785467f113f00d22813367d431e4e782c926244477a5b044f23636bc1f32f25",
+    ".proof-experiments/20260723-001458-020a52/stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    ".proof-experiments/20260723-001458-020a52/stdout.txt": "c9b3238091c03f8e4b25aeb85c8e7c52e428f7e6a2a8000bcfbf3747249d24cb",
+    "artifacts/constructive/repair-seed126442-30s/best-candidate.txt": "4321dea0f828f30bf5cb1d3c54b4a94349e9bc3f54bd25ea23dbac79ae030a07",
+    "artifacts/constructive/slack-chain-discriminator-20260723-v1/audit.json": "3452df1ac0e974c67789aedf962fa2ac1a22a8b615d0c301fd20e6168717764e",
+    "artifacts/constructive/slack-chain-discriminator-20260723-v1/manifest.json": "6a1abe2517f99b6a134dc133ab7e297d3b010b03353d3ea6d393c4a30665d28b",
+    "artifacts/constructive/slack-chain-discriminator-20260723-v1/matched-control/audit.json": "35f45b41b3e4e799d231091eda757478333286d8c7bb27e29b78664500aa6016",
+    "artifacts/constructive/slack-chain-discriminator-20260723-v1/matched-control/manifest.json": "36da80bbafd646d10724eae0e5287fa7f7f9070e5bc0a94ca14b593024bdcfac",
+    "artifacts/constructive/slack-chain-discriminator-20260723-v1/matched-control/seed-126480/accepted-trace.jsonl": "2f76b83f2c51ba306f57bd336ef863338f734ca66a7e2e3403b5c0ef2b41af63",
+    "artifacts/constructive/slack-chain-discriminator-20260723-v1/matched-control/seed-126480/best-candidate.txt": "4321dea0f828f30bf5cb1d3c54b4a94349e9bc3f54bd25ea23dbac79ae030a07",
+    "artifacts/constructive/slack-chain-discriminator-20260723-v1/matched-control/seed-126480/result.json": "2fa4db6a47c729b2891a29e5bb1fb7e5ee584aababaaba453f0a9b08c0676ff8",
+    "artifacts/constructive/slack-chain-discriminator-20260723-v1/matched-control/seed-126481/accepted-trace.jsonl": "ac9e8716120414d20195d488c4d74571c7c54939065bc4dc79a716452296e102",
+    "artifacts/constructive/slack-chain-discriminator-20260723-v1/matched-control/seed-126481/best-candidate.txt": "4321dea0f828f30bf5cb1d3c54b4a94349e9bc3f54bd25ea23dbac79ae030a07",
+    "artifacts/constructive/slack-chain-discriminator-20260723-v1/matched-control/seed-126481/result.json": "ce776ccc93bc666410330253959f18631eca5b3214e6dc6b5b78edb74f0445cc",
+    "artifacts/constructive/slack-chain-discriminator-20260723-v1/treatment/seed-126480/best-candidate.txt": "4321dea0f828f30bf5cb1d3c54b4a94349e9bc3f54bd25ea23dbac79ae030a07",
+    "artifacts/constructive/slack-chain-discriminator-20260723-v1/treatment/seed-126480/complete-chains.jsonl": "8eb79d9029c9bf79cac8dcc1e26a98663573926bcc10ca20b9faf4c5cc4d91a6",
+    "artifacts/constructive/slack-chain-discriminator-20260723-v1/treatment/seed-126480/result.json": "a971f915df86e4b5e40ed4fd39550ba7e9bd7b6514ce045e0ebc6ef2afd43c0c",
+    "artifacts/constructive/slack-chain-discriminator-20260723-v1/treatment/seed-126481/best-candidate.txt": "4321dea0f828f30bf5cb1d3c54b4a94349e9bc3f54bd25ea23dbac79ae030a07",
+    "artifacts/constructive/slack-chain-discriminator-20260723-v1/treatment/seed-126481/complete-chains.jsonl": "4a4347137a0840ce183c46c3340b9119f9d0505042501f04db5229be5cccd178",
+    "artifacts/constructive/slack-chain-discriminator-20260723-v1/treatment/seed-126481/result.json": "1cb316d64ea2238e485bb1a269bc3cb0ef5d904650814bd766cd450f00308942",
+    "artifacts/constructive/slack-chain-discriminator-20260723-v2/audit.json": "21bc818875fdc90c024b1fa40b14e3416e5be95548335f8fc59ac1ea2df263c3",
+    "artifacts/constructive/slack-chain-discriminator-20260723-v2/manifest.json": "5a94f1c238e1f7e6a55252b5f9b09fcc81aa8a6e648080d0f2c38daa48479c2e",
+    "artifacts/constructive/slack-chain-discriminator-20260723-v2/matched-control/audit.json": "35f45b41b3e4e799d231091eda757478333286d8c7bb27e29b78664500aa6016",
+    "artifacts/constructive/slack-chain-discriminator-20260723-v2/matched-control/manifest.json": "20d3472ddc0548ddd821d76f954c62c78759a10656372b26f67582fff28883d1",
+    "artifacts/constructive/slack-chain-discriminator-20260723-v2/matched-control/seed-126480/accepted-trace.jsonl": "2f76b83f2c51ba306f57bd336ef863338f734ca66a7e2e3403b5c0ef2b41af63",
+    "artifacts/constructive/slack-chain-discriminator-20260723-v2/matched-control/seed-126480/best-candidate.txt": "4321dea0f828f30bf5cb1d3c54b4a94349e9bc3f54bd25ea23dbac79ae030a07",
+    "artifacts/constructive/slack-chain-discriminator-20260723-v2/matched-control/seed-126480/result.json": "e300ff0d839bf9dc9f52e1703172cb74b238bded20db18f3d0bae17a728c2592",
+    "artifacts/constructive/slack-chain-discriminator-20260723-v2/matched-control/seed-126481/accepted-trace.jsonl": "ac9e8716120414d20195d488c4d74571c7c54939065bc4dc79a716452296e102",
+    "artifacts/constructive/slack-chain-discriminator-20260723-v2/matched-control/seed-126481/best-candidate.txt": "4321dea0f828f30bf5cb1d3c54b4a94349e9bc3f54bd25ea23dbac79ae030a07",
+    "artifacts/constructive/slack-chain-discriminator-20260723-v2/matched-control/seed-126481/result.json": "e29f48c602536fad9eef8bf8b2e8a04859a69285e54b6afb9efb4ba8550b7960",
+    "artifacts/constructive/slack-chain-discriminator-20260723-v2/treatment/seed-126480/best-candidate.txt": "4321dea0f828f30bf5cb1d3c54b4a94349e9bc3f54bd25ea23dbac79ae030a07",
+    "artifacts/constructive/slack-chain-discriminator-20260723-v2/treatment/seed-126480/complete-chains.jsonl": "8eb79d9029c9bf79cac8dcc1e26a98663573926bcc10ca20b9faf4c5cc4d91a6",
+    "artifacts/constructive/slack-chain-discriminator-20260723-v2/treatment/seed-126480/result.json": "7b7e01f3ecf90e7256d8b9fda334b59dc3c11c2cb05797a99f0207ebf2970408",
+    "artifacts/constructive/slack-chain-discriminator-20260723-v2/treatment/seed-126481/best-candidate.txt": "4321dea0f828f30bf5cb1d3c54b4a94349e9bc3f54bd25ea23dbac79ae030a07",
+    "artifacts/constructive/slack-chain-discriminator-20260723-v2/treatment/seed-126481/complete-chains.jsonl": "4a4347137a0840ce183c46c3340b9119f9d0505042501f04db5229be5cccd178",
+    "artifacts/constructive/slack-chain-discriminator-20260723-v2/treatment/seed-126481/result.json": "57a77b10f592559a4ae73aa9a26fe9f1d32d737ac11a6e5ffac2856f62422259",
+    "checkers/audit_slack_chain_discriminator.py": "843f0a515c204ee46057831a4760b1dd74ad79bc56a3324c63813249429dcfc2",
+    "docs/SLACK-CHAIN-EFFICIENCY-20260723.json": "aeba9571a8750c0f3ffa2b9001bb231236e34f2bba07cae937df018c6979cc7b",
+    "records/attempts/20260723-epoch-0005-slack-chain-checkpoint.json": "da254ccb908fd7498797524b68769ab693e5ec7dc597c611ddc4f8b8778179dc",
+    "scripts/run_constructive_slack_chain_discriminator.py": "cdf34bfe85edcec8e1725b61ab1594df3cdd7b16c53089b203b82736af77d22f",
+    "sources/ljcr-c1264-41.txt": "395bc870e7eb9e84a472873db97de553afc34afdb666545824944e89047913e5",
+    "tests/test_constructive_slack_chain_discriminator.py": "74f414ef6f3384a72d1681c9b4d9a2f4b330f7dc203898d2131f96a18b75f8b1"
+  },
+  "evidence_validation": {
+    "status": "valid",
+    "manifest": "evidence/covering-c1264-20260723-002258-5c2382/delta-manifest.json",
+    "manifest_sha256": "06cd002a48cf1967053900c4c95322bbfd94d158900e00459f670feeac621d26",
+    "receipt": "evidence/covering-c1264-20260723-002258-5c2382/evidence-receipt.json",
+    "artifact_count": 52,
+    "claimed_evidence_count": 11,
+    "errors": []
+  }
+}

@@ -10,8 +10,8 @@
     "A candidate is not a solution until independent and human review are recorded.",
     "Restating a known reduction, checking examples, or giving an unproved key lemma is not terminal success."
   ],
-  "epoch_count": 4,
-  "last_updated": "2026-07-22T20:26:40.644408+00:00",
+  "epoch_count": 5,
+  "last_updated": "2026-07-23T00:22:58.065027+00:00",
   "baseline_review": {
     "status": "complete",
     "reviewed_at": "2026-07-22T13:15:09.478653+00:00",
@@ -22,7 +22,7 @@
     "leads_recorded": 3,
     "requirement": "Repeat when the authoritative status changes materially or the baseline is explicitly invalidated."
   },
-  "synthesis_summary": "The bounded three-block discriminator completed in 90.77 seconds and its independent audit completed in 9.72 seconds. Twenty fixed seeds scored 200,000 proposals and accepted 17,999 valid indecomposable degree-preserving trades. No run improved the six-defect warm start, so no cover or bound was obtained. The exact-value problem remains open.",
+  "synthesis_summary": "The four-exchange sampler worked semantically but failed its mathematical signal. Independent replay validated 2,000 exact-degree returns, 1,990 indecomposable endpoints, and 13 accepted persistent moves in one seed; no endpoint improved the six-defect warm start. No cover, lower bound, or global exclusion was obtained.",
   "established_facts": [
     {
       "claim": "The preserved 41-block witness covers all 495 four-subsets.",
@@ -71,6 +71,30 @@
       "status": "computed",
       "source_attempt_id": "covering-c1264-20260722-202640-1e718a",
       "updated_at": "2026-07-22T20:26:40.644408+00:00"
+    },
+    {
+      "claim": "The preserved 41-block list covers all 495 quadruples.",
+      "evidence": "sources/ljcr-c1264-41.txt, SHA-256 395bc870e7eb9e84a472873db97de553afc34afdb666545824944e89047913e5; two independent checks",
+      "scope": "that exact 41-block list",
+      "status": "computed",
+      "source_attempt_id": "covering-c1264-20260723-002258-5c2382",
+      "updated_at": "2026-07-23T00:22:58.065027+00:00"
+    },
+    {
+      "claim": "The recorded slack-chain screen completed 2,000 exact-degree returns, including 1,990 indecomposable endpoints.",
+      "evidence": "audit.json SHA-256 21bc818875fdc90c024b1fa40b14e3416e5be95548335f8fc59ac1ea2df263c3",
+      "scope": "two fixed seeds and one warm start",
+      "status": "computed",
+      "source_attempt_id": "covering-c1264-20260723-002258-5c2382",
+      "updated_at": "2026-07-23T00:22:58.065027+00:00"
+    },
+    {
+      "claim": "The recorded treatment and matched control both retained a minimum of six uncovered quadruples.",
+      "evidence": "combined and matched-control audit receipts",
+      "scope": "the recorded finite runs only",
+      "status": "computed",
+      "source_attempt_id": "covering-c1264-20260723-002258-5c2382",
+      "updated_at": "2026-07-23T00:22:58.065027+00:00"
     }
   ],
   "strategies": [
@@ -187,22 +211,6 @@
       }
     },
     {
-      "family": "temporary-degree-slack ejection chain",
-      "mechanism": "Allow point-degree L1 deviation at most two during a short chain, but accept and score persistent states only after returning exactly to degree 20.",
-      "hypothesis": "Temporary slack changes connectivity enough to reach an exact-degree endpoint with at most five uncovered quadruples.",
-      "discriminating_test": "Two fixed seeds and 1,000 proposals, independently replayed; scale only after observing an exact endpoint below six.",
-      "rationale": "This addresses the measured recovery failure rather than merely increasing the temperature or repeating exact-degree trades.",
-      "id": "strategy-ffdc9e0256f9",
-      "fingerprint": "ffdc9e0256f9",
-      "status": "proposed",
-      "title": "Allow point-degree L1 deviation at most two during a short chain, but accept and score persistent states only after returning exactly to degree 20.",
-      "attempts": 0,
-      "parent_ids": [
-        "strategy-eadb381c69d1"
-      ],
-      "updated_at": "2026-07-22T20:26:40.644408+00:00"
-    },
-    {
       "family": "exhaustive local-neighborhood classification",
       "mechanism": "Enumerate all degree-compatible indecomposable three-block trades from the fixed warm start through complete signature buckets and canonicalize resulting families.",
       "hypothesis": "The warm start is a strict local minimum under every direct legal three-block trade.",
@@ -238,6 +246,36 @@
       "title": "Combine the audited targeted three-block generator with bounded constraint-violation penalties and mandatory exact-degree endpoint projection.",
       "attempts": 0,
       "updated_at": "2026-07-22T20:26:40.644408+00:00"
+    },
+    {
+      "id": "strategy-ffdc9e0256f9",
+      "family": "temporary-degree-slack ejection chain",
+      "fingerprint": "ffdc9e0256f9",
+      "title": "Two-seed four-exchange temporary-degree-slack token-cycle search with a frozen exact-degree matched control and standalone trace replay",
+      "mechanism": "A targeted one-point exchange covers a missing quadruple, then a degree token traverses a directed four-cycle; only indecomposable endpoints returning to all point degrees 20 are scored.",
+      "status": "blocked",
+      "hypothesis": "At least one of seeds 126480 and 126481 produces an independently replayed, indecomposable exact-degree endpoint with at most five uncovered quadruples in 1,000 attempts.",
+      "discriminating_test": "Run 1,000 four-exchange attempts per seed with 10-second caps and the same-seed frozen exact-degree control; stop unless independent replay finds at most five defects.",
+      "blocker": "No 40-block witness or complete UNSAT portfolio exists. The ordinary C(11,5,3)=20 uniqueness premise remains uncertified, with 416 canonical fourth-level branches open.",
+      "reopen_condition": "Retry this slack sampler only with a different basin, a materially more informative endpoint selector, or an exhaustive structural result.",
+      "reopen_evidence": "",
+      "last_attempt_id": "covering-c1264-20260723-002258-5c2382",
+      "attempts": 1,
+      "parent_ids": [
+        "strategy-eadb381c69d1"
+      ],
+      "updated_at": "2026-07-23T00:22:58.065027+00:00",
+      "route_evaluation": {
+        "gate_proximity": 0.08,
+        "contribution_value": 0.12,
+        "decisiveness": 0.85,
+        "novelty_confidence": 0.1,
+        "novelty_risk": 0.9,
+        "scope": 0.02,
+        "reuse_value": 0.7,
+        "model_cost": 0.25,
+        "cpu_cost": 0.05
+      }
     }
   ],
   "open_leads": [
@@ -312,6 +350,18 @@
       "updated_at": "2026-07-22T20:26:40.644408+00:00",
       "closure_reason": "terminal_strategy",
       "closed_at": "2026-07-22T20:26:40.644408+00:00"
+    },
+    {
+      "description": "Complete the ordinary 20-block C(11,5,3) classification independently of the unresolved Mills uniqueness attribution.",
+      "rationale": "This can promote the audited 945-to-20 perfect-matching quotient from conditional to exhaustive.",
+      "next_experiment": "Audit the frozen 790-branch partition and run a fifth-level split pilot on representative open early-prefix branches.",
+      "priority": "high",
+      "status": "closed",
+      "id": "lead-e501cb4f00",
+      "strategy_id": "strategy-ffdc9e0256f9",
+      "updated_at": "2026-07-23T00:22:58.065027+00:00",
+      "closure_reason": "terminal_strategy",
+      "closed_at": "2026-07-23T00:22:58.065027+00:00"
     }
   ],
   "ruled_out": [
@@ -341,24 +391,34 @@
       "reopen_condition": "A materially different state generator, such as bounded temporary point-degree slack, or an exhaustive direct-neighborhood classification producing a structural result",
       "attempt_id": "covering-c1264-20260722-202640-1e718a",
       "updated_at": "2026-07-22T20:26:40.644408+00:00"
+    },
+    {
+      "claim_or_route": "Scale the unchanged four-exchange temporary-degree-slack token-cycle sampler from the fixed warm start.",
+      "scope": "Seeds 126480–126481, 2,000 complete returns, 1,990 eligible endpoints, and 13 accepted persistent moves",
+      "reason": "No audited endpoint improved six defects, failing the declared continuation signal.",
+      "evidence": "artifacts/constructive/slack-chain-discriminator-20260723-v2/audit.json",
+      "reopen_condition": "A different basin, materially different endpoint selector, or exhaustive neighborhood classification producing a structural result",
+      "attempt_id": "covering-c1264-20260723-002258-5c2382",
+      "updated_at": "2026-07-23T00:22:58.065027+00:00"
     }
   ],
   "unresolved_questions": [],
   "next_session": {
     "recommended_strategy_id": "strategy-ffdc9e0256f9",
-    "objective": "Test whether bounded temporary point-degree slack can escape the six-defect basin and return an improved exact-degree endpoint.",
-    "first_action": "Implement and unit-audit the slack-chain proposal and independent endpoint/trace checker before any multi-seed run.",
-    "stop_condition": "Stop unless an audited exact-degree endpoint reaches at most five uncovered quadruples or a separately checked structural classification is obtained.",
-    "source_attempt_id": "covering-c1264-20260722-202640-1e718a"
+    "objective": "Independently settle ordinary C(11,5,3)=20 uniqueness and thereby validate or falsify the exhaustive 20-link reduction.",
+    "first_action": "Audit the immutable 790-branch fourth-level partition and its 406 replayed UNSAT closures.",
+    "stop_condition": "Stop or repartition if coverage reconstruction fails or a matched hard-prefix pilot yields no replayed closure; a second valid nonisomorphic cover immediately falsifies uniqueness.",
+    "source_attempt_id": "covering-c1264-20260723-002258-5c2382"
   },
   "recent_attempt_ids": [
     "covering-c1264-20260722-131509-6394f5",
     "covering-c1264-20260722-151254-64a392",
     "covering-c1264-20260722-162852-2f041d",
-    "covering-c1264-20260722-202640-1e718a"
+    "covering-c1264-20260722-202640-1e718a",
+    "covering-c1264-20260723-002258-5c2382"
   ],
   "tactical_memory": {
-    "current_bottleneck": "The limiting issue is now state generation and recovery, not merely acceptance of larger exact-degree trades.",
+    "current_bottleneck": "The highest-leverage bottleneck is now the independently certified ordinary-link classification, not another unchanged local-search tranche.",
     "failure_signatures": [
       {
         "id": "4d2fbff3c2cc",
@@ -383,6 +443,14 @@
         "last_strategy_id": "strategy-eadb381c69d1",
         "last_attempt_id": "covering-c1264-20260722-202640-1e718a",
         "updated_at": "2026-07-22T20:26:40.644408+00:00"
+      },
+      {
+        "id": "7476a3398b8e",
+        "signature": "Short degree-token cycles can move through exact-degree states after temporary slack while remaining trapped above the six-defect minimum.",
+        "count": 1,
+        "last_strategy_id": "strategy-ffdc9e0256f9",
+        "last_attempt_id": "covering-c1264-20260723-002258-5c2382",
+        "updated_at": "2026-07-23T00:22:58.065027+00:00"
       }
     ],
     "reusable_assets": [
@@ -427,6 +495,20 @@
         "evidence": "artifacts/constructive/three-block-screen-20260722-v1/manifest.json and audit.json",
         "source_attempt_id": "covering-c1264-20260722-202640-1e718a",
         "updated_at": "2026-07-22T20:26:40.644408+00:00"
+      },
+      {
+        "name": "slack-chain producer",
+        "use": "Generate deterministic four-exchange token cycles and matched controls.",
+        "evidence": "scripts/run_constructive_slack_chain_discriminator.py; SHA-256 cdf34bfe85edcec8e1725b61ab1594df3cdd7b16c53089b203b82736af77d22f",
+        "source_attempt_id": "covering-c1264-20260723-002258-5c2382",
+        "updated_at": "2026-07-23T00:22:58.065027+00:00"
+      },
+      {
+        "name": "standalone slack-chain checker",
+        "use": "Replay token transitions, direct incidences, subtrade tests, controls, and candidates.",
+        "evidence": "checkers/audit_slack_chain_discriminator.py; SHA-256 843f0a515c204ee46057831a4760b1dd74ad79bc56a3324c63813249429dcfc2",
+        "source_attempt_id": "covering-c1264-20260723-002258-5c2382",
+        "updated_at": "2026-07-23T00:22:58.065027+00:00"
       }
     ],
     "constraints_learned": [
@@ -457,6 +539,13 @@
         "evidence": "Independent audit replayed 17,999 accepted moves and reported best_uncovered_quadruples=6",
         "source_attempt_id": "covering-c1264-20260722-202640-1e718a",
         "updated_at": "2026-07-22T20:26:40.644408+00:00"
+      },
+      {
+        "constraint": "The recorded policy did not improve the six-defect warm start despite 2,000 exact returns and 1,990 eligible endpoints.",
+        "scope": "Seeds 126480–126481 and the recorded generator, acceptance schedule, and warm start",
+        "evidence": "artifacts/constructive/slack-chain-discriminator-20260723-v2/audit.json",
+        "source_attempt_id": "covering-c1264-20260723-002258-5c2382",
+        "updated_at": "2026-07-23T00:22:58.065027+00:00"
       }
     ],
     "decision_history": [
@@ -489,6 +578,16 @@
         "surprise": "The larger exact-degree neighborhood crossed substantial barriers but still never returned below the initial six defects.",
         "next_discriminator": "Permit point-degree L1 slack at most two inside short ejection chains, require exact degree 20 at accepted endpoints, and repeat the frozen screen only after independent delta-equivalence tests.",
         "updated_at": "2026-07-22T20:26:40.644408+00:00"
+      },
+      {
+        "attempt_id": "covering-c1264-20260723-002258-5c2382",
+        "strategy_id": "strategy-ffdc9e0256f9",
+        "decision": "close",
+        "prediction": "Temporary degree slack would return an eligible endpoint with at most five uncovered quadruples.",
+        "observation": "The audit validated 2,000 exact returns and 1,990 indecomposable endpoints. Seed 126481 accepted 13 persistent endpoints, but both treatment seeds and the matched control retained a minimum of six defects.",
+        "surprise": "Exact return generation was not the bottleneck; abundant distinct returns and persistent movement still produced no improvement.",
+        "next_discriminator": "Audit the frozen 790-branch ordinary C(11,5,3) partition and its 406 replayed closures, then pilot a fifth-level split on representative open early-prefix branches.",
+        "updated_at": "2026-07-23T00:22:58.065027+00:00"
       }
     ],
     "reduction_ledger": [
@@ -539,6 +638,22 @@
         "source_attempt_id": "covering-c1264-20260722-202640-1e718a",
         "strategy_id": "strategy-eadb381c69d1",
         "updated_at": "2026-07-22T20:26:40.644408+00:00"
+      },
+      {
+        "ambient_space": "C(924,40) labelled 40-block families",
+        "represented_space_before": "One labelled six-defect exact-degree warm start and its unknown stochastic reachable neighborhood",
+        "eliminated_or_quotiented": "No global family was eliminated; one fixed heuristic policy was screened and closed for unchanged scale-up.",
+        "represented_space_after": "The global C(924,40) space remains unchanged.",
+        "reduction_factor": "none",
+        "measurement_status": "not_applicable",
+        "unit": "families",
+        "coverage_scope": "Seeds 126480 and 126481, 1,000 attempts each, from one fixed warm start",
+        "soundness_basis": "Independent replay validates recorded endpoints, but the proposal generator is intentionally non-exhaustive.",
+        "remaining_unknown": "Whether any 40-block cover exists, behavior in other basins, and all ungenerated four-block exchanges",
+        "next_bulk_elimination": "Complete the ordinary C(11,5,3)=20 canonical classification across its 416 open branches, potentially promoting the conditional 945-to-20 matching quotient to an exhaustive split.",
+        "source_attempt_id": "covering-c1264-20260723-002258-5c2382",
+        "strategy_id": "strategy-ffdc9e0256f9",
+        "updated_at": "2026-07-23T00:22:58.065027+00:00"
       }
     ],
     "prior_art_decisions": [
@@ -595,6 +710,25 @@
           "https://www.tcs.hut.fi/Publications/info/bibdb.HUT-TCS-B10.shtml"
         ],
         "updated_at": "2026-07-22T20:26:40.644408+00:00"
+      },
+      {
+        "attempt_id": "covering-c1264-20260723-002258-5c2382",
+        "strategy_id": "strategy-ffdc9e0256f9",
+        "nearest_method_ids": [
+          "constructive_local_search-03",
+          "constructive_local_search-02"
+        ],
+        "classification": "material_modification",
+        "exact_delta": "Unlike the prior exact-degree two- and three-block samplers, each proposal deliberately leaves the degree-20 fibre for three intermediate states and returns after a genuine four-block exchange.",
+        "duplicate_risk": "Ejection chains and simulated annealing are standard; this bounded negative screen is not a novel covering-design theorem.",
+        "comparison_test": "The frozen exact-degree three-block sampler was run with identical seeds, proposal counts, wall caps, scoring, and independent replay.",
+        "decision": "stop",
+        "source_urls": [
+          "https://ljcr.dmgordon.org/cover/show_cover.php?v=12&k=6&t=4",
+          "https://combinatorialpress.com/article/jcmcc/Volume%2016/vol-16-paper%202.pdf",
+          "https://combinatorialpress.com/um/vol41/"
+        ],
+        "updated_at": "2026-07-23T00:22:58.065027+00:00"
       }
     ]
   }

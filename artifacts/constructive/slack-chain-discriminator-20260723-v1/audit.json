@@ -1,0 +1,60 @@
+{
+  "claim_limit": "The receipt validates this fixed heuristic discriminator only; STOP_SIGNAL is not a lower bound or an exclusion of 40 blocks.",
+  "control_audit": {
+    "path": "artifacts/constructive/slack-chain-discriminator-20260723-v1/matched-control/audit.json",
+    "sha256": "35f45b41b3e4e799d231091eda757478333286d8c7bb27e29b78664500aa6016"
+  },
+  "direct_cover_controls": {
+    "deletion_uncovered_quadruples": 10,
+    "positive_covered_quadruples": 495
+  },
+  "discriminator_status": "STOP_SIGNAL",
+  "manifest": {
+    "path": "artifacts/constructive/slack-chain-discriminator-20260723-v1/manifest.json",
+    "sha256": "6a1abe2517f99b6a134dc133ab7e297d3b010b03353d3ea6d393c4a30665d28b"
+  },
+  "matched_control_accepted_moves_replayed": 10,
+  "matched_control_best_uncovered": 6,
+  "mutation_controls": {
+    "altered_intermediate_degree_or_selected_addition": "rejected",
+    "fake_exact_endpoint": "rejected",
+    "selected_addition": "rejected",
+    "wrong_token_edge": "rejected"
+  },
+  "schema_version": 1,
+  "status": "valid",
+  "treatment_best_uncovered": 6,
+  "treatment_complete_chains": 2000,
+  "treatment_runs": [
+    {
+      "accepted_endpoints": 0,
+      "attempted_chains": 1000,
+      "best_metrics": {
+        "pair_deficit_below_9": 12,
+        "pair_excess_above_10": 0,
+        "point_degree_deviation": 0,
+        "uncovered_quadruples": 6
+      },
+      "candidate_sha256": "4321dea0f828f30bf5cb1d3c54b4a94349e9bc3f54bd25ea23dbac79ae030a07",
+      "complete_chains_replayed": 1000,
+      "distinct_endpoint_hashes": 1000,
+      "eligible_endpoints": 996,
+      "seed": 126480
+    },
+    {
+      "accepted_endpoints": 13,
+      "attempted_chains": 1000,
+      "best_metrics": {
+        "pair_deficit_below_9": 12,
+        "pair_excess_above_10": 0,
+        "point_degree_deviation": 0,
+        "uncovered_quadruples": 6
+      },
+      "candidate_sha256": "4321dea0f828f30bf5cb1d3c54b4a94349e9bc3f54bd25ea23dbac79ae030a07",
+      "complete_chains_replayed": 1000,
+      "distinct_endpoint_hashes": 1000,
+      "eligible_endpoints": 994,
+      "seed": 126481
+    }
+  ]
+}

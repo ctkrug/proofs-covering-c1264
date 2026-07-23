@@ -1,0 +1,51 @@
+{
+  "schema_version": 1,
+  "id": "20260723-001147-dd641f",
+  "name": "slack-chain-discriminator-20260723-v1",
+  "hypothesis": "A four-exchange degree-token cycle returns an indecomposable exact-degree endpoint with at most five uncovered quadruples.",
+  "expected_signal": "Independent replay finds a treatment endpoint with at most five uncovered quadruples; fewer than 20 returns or best six stops scale-up.",
+  "command": [
+    "python3",
+    "scripts/run_constructive_slack_chain_discriminator.py",
+    "--source",
+    "artifacts/constructive/repair-seed126442-30s/best-candidate.txt",
+    "--control-cover",
+    "sources/ljcr-c1264-41.txt",
+    "--output",
+    "artifacts/constructive/slack-chain-discriminator-20260723-v1",
+    "--seeds",
+    "126480",
+    "126481",
+    "--attempts",
+    "1000",
+    "--seconds-per-seed",
+    "10"
+  ],
+  "cwd": "/root/proof-factory/research/covering-c1264/workspace",
+  "seed": 0,
+  "timeout_seconds": 90,
+  "memory_limit_mb": 768,
+  "memory_limit_enforced": true,
+  "started_at": "2026-07-23T00:11:47.081564+00:00",
+  "finished_at": "2026-07-23T00:11:58.853767+00:00",
+  "duration_seconds": 11.772,
+  "returncode": 0,
+  "timed_out": false,
+  "python": "3.12.3",
+  "platform": "Linux-6.8.0-124-generic-x86_64-with-glibc2.39",
+  "git_commit": "feb8fbca710cef4db2d54b5d84e88231b6105902",
+  "source_urls": [
+    "https://ljcr.dmgordon.org/cover/show_cover.php?v=12&k=6&t=4"
+  ],
+  "input_artifacts": {
+    "/root/proof-factory/research/covering-c1264/workspace/scripts/run_constructive_slack_chain_discriminator.py": "cdf34bfe85edcec8e1725b61ab1594df3cdd7b16c53089b203b82736af77d22f",
+    "/root/proof-factory/research/covering-c1264/workspace/artifacts/constructive/repair-seed126442-30s/best-candidate.txt": "4321dea0f828f30bf5cb1d3c54b4a94349e9bc3f54bd25ea23dbac79ae030a07",
+    "/root/proof-factory/research/covering-c1264/workspace/sources/ljcr-c1264-41.txt": "395bc870e7eb9e84a472873db97de553afc34afdb666545824944e89047913e5"
+  },
+  "peak_child_memory_rusage": 92960,
+  "peak_child_memory_unit": "kilobytes",
+  "artifacts": {
+    "stdout.txt": "0c4a9f9b90465678f33db45e56d24be829c7a657dcab9f60f14f77c5829d5c78",
+    "stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  }
+}

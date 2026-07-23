@@ -1,0 +1,66 @@
+{
+  "attempts_per_seed": 1000,
+  "claim_limit": "A stop signal rejects scale-up of this sampler only; it does not exclude any 40-cover.",
+  "control_cover": {
+    "path": "sources/ljcr-c1264-41.txt",
+    "sha256": "395bc870e7eb9e84a472873db97de553afc34afdb666545824944e89047913e5"
+  },
+  "control_manifest": {
+    "path": "artifacts/constructive/slack-chain-discriminator-20260723-v2/matched-control/manifest.json",
+    "sha256": "20d3472ddc0548ddd821d76f954c62c78759a10656372b26f67582fff28883d1"
+  },
+  "frozen_control_checker": {
+    "path": "checkers/audit_three_block_screen.py",
+    "sha256": "bd66c12ae2e17ec9d7a306f4dc0064a46e8d7971d9f6d9ebbf27da7e7902fd90"
+  },
+  "frozen_control_producer": {
+    "path": "scripts/run_constructive_three_block_screen.py",
+    "sha256": "98b921d42995515921e0a4a5c9a643d2f52216842ceb7a0ad8a77ab32e020756"
+  },
+  "hypothesis": "A four-exchange degree-token cycle returns an indecomposable exact-degree endpoint with at most five uncovered quadruples.",
+  "independent_checker": {
+    "path": "checkers/audit_slack_chain_discriminator.py",
+    "sha256": "843f0a515c204ee46057831a4760b1dd74ad79bc56a3324c63813249429dcfc2"
+  },
+  "producer": {
+    "path": "scripts/run_constructive_slack_chain_discriminator.py",
+    "sha256": "cdf34bfe85edcec8e1725b61ab1594df3cdd7b16c53089b203b82736af77d22f"
+  },
+  "schema_version": 1,
+  "scope": "two fixed-seed heuristic treatment runs from one labelled warm start plus matched exact-degree control",
+  "search_efficiency": {
+    "ambient_blocks": 924,
+    "chosen_mechanism": "target a missing quadruple on the first one-point exchange, then carry one degree token around a directed four-cycle; score only exact returns",
+    "completeness": "heuristic sampler only; reductions do not cover the ambient space",
+    "first_exchange_upper_bound": 1440,
+    "naive_four_addition_space": "30175396251",
+    "per_step_neighbor_upper_bound": 36,
+    "soundness_guard": "independent trace replay, direct metric reconstruction, exhaustive proper-subtrade rejection, and matched frozen control"
+  },
+  "seconds_cap_per_seed": 10.0,
+  "seeds_predeclared": [
+    126480,
+    126481
+  ],
+  "source": {
+    "path": "artifacts/constructive/repair-seed126442-30s/best-candidate.txt",
+    "sha256": "4321dea0f828f30bf5cb1d3c54b4a94349e9bc3f54bd25ea23dbac79ae030a07"
+  },
+  "status": "STOP_SIGNAL",
+  "stop_signal": "fewer than 20 complete returns across 2,000 attempts, or no independently replayed treatment endpoint below six defects",
+  "success_signal": "independently replayed treatment endpoint with at most five uncovered quadruples; zero requires direct all-495 verification",
+  "treatment_results": [
+    {
+      "best_uncovered": 6,
+      "path": "artifacts/constructive/slack-chain-discriminator-20260723-v2/treatment/seed-126480/result.json",
+      "seed": 126480,
+      "sha256": "7b7e01f3ecf90e7256d8b9fda334b59dc3c11c2cb05797a99f0207ebf2970408"
+    },
+    {
+      "best_uncovered": 6,
+      "path": "artifacts/constructive/slack-chain-discriminator-20260723-v2/treatment/seed-126481/result.json",
+      "seed": 126481,
+      "sha256": "57a77b10f592559a4ae73aa9a26fe9f1d32d737ac11a6e5ffac2856f62422259"
+    }
+  ]
+}

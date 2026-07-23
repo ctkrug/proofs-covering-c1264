@@ -1,0 +1,78 @@
+{
+  "schema_version": 1,
+  "epoch": 5,
+  "attempt_id": "covering-c1264-20260723-slack-chain-v2",
+  "recorded_at": "2026-07-23T00:17:18Z",
+  "phase": "technical-discriminator",
+  "outcome": "progress",
+  "strategy_id": "strategy-ffdc9e0256f9",
+  "strategy_fingerprint": "ffdc9e0256f9",
+  "claim_limit": "No 40-block cover was found and no 40-block family was excluded. The result rejects scale-up only for the recorded two-seed four-exchange temporary-degree-slack sampler from one six-defect warm start.",
+  "hypothesis": "A directed four-exchange degree-token cycle returns an indecomposable exact-degree endpoint with at most five uncovered quadruples.",
+  "result": {
+    "seeds": [126480, 126481],
+    "attempted_chains": 2000,
+    "complete_exact_degree_returns": 2000,
+    "eligible_indecomposable_endpoints": 1990,
+    "distinct_endpoint_hashes_per_seed": [1000, 1000],
+    "accepted_persistent_endpoints": [0, 13],
+    "best_uncovered_quadruples": 6,
+    "matched_control_best_uncovered_quadruples": 6,
+    "matched_control_accepted_moves": 10,
+    "best_candidate_sha256": "4321dea0f828f30bf5cb1d3c54b4a94349e9bc3f54bd25ea23dbac79ae030a07",
+    "producer_experiment_seconds": 20.356,
+    "producer_peak_child_kb": 93024,
+    "independent_audit_seconds": 2.2
+  },
+  "search_efficiency": {
+    "naive_four_addition_choices": 30175396251,
+    "first_exchange_upper_bound": 1440,
+    "later_exchange_neighbor_upper_bound": 36,
+    "mechanism": "Target a missing quadruple on a one-point replacement, carry the unique +1 degree token around a four-point directed cycle, and score only the exact-degree return.",
+    "measured_return_rate": "2000/2000 complete exact-degree returns; 1990/2000 survive exhaustive proper-subtrade rejection",
+    "measured_incremental_work": "mean 94.012 changed quadruple counters and 50.4895 changed pair counters per complete endpoint",
+    "soundness": "The standalone checker reconstructed all incidences from combinations, replayed every exchange and token edge, checked intermediate L1 degree deviation two and exact returns, exhaustively rejected proper subtrades, recomputed metrics, and rejected four injected trace mutations. Sampling remains non-exhaustive."
+  },
+  "evidence": {
+    "manifest": {
+      "path": "artifacts/constructive/slack-chain-discriminator-20260723-v2/manifest.json",
+      "sha256": "5a94f1c238e1f7e6a55252b5f9b09fcc81aa8a6e648080d0f2c38daa48479c2e"
+    },
+    "audit": {
+      "path": "artifacts/constructive/slack-chain-discriminator-20260723-v2/audit.json",
+      "sha256": "21bc818875fdc90c024b1fa40b14e3416e5be95548335f8fc59ac1ea2df263c3"
+    },
+    "producer_experiment": {
+      "path": ".proof-experiments/20260723-001458-020a52/experiment.json",
+      "sha256": "8785467f113f00d22813367d431e4e782c926244477a5b044f23636bc1f32f25"
+    },
+    "producer": {
+      "path": "scripts/run_constructive_slack_chain_discriminator.py",
+      "sha256": "cdf34bfe85edcec8e1725b61ab1594df3cdd7b16c53089b203b82736af77d22f"
+    },
+    "checker": {
+      "path": "checkers/audit_slack_chain_discriminator.py",
+      "sha256": "843f0a515c204ee46057831a4760b1dd74ad79bc56a3324c63813249429dcfc2"
+    },
+    "efficiency_design": {
+      "path": "docs/SLACK-CHAIN-EFFICIENCY-20260723.json",
+      "sha256": "aeba9571a8750c0f3ffa2b9001bb231236e34f2bba07cae937df018c6979cc7b"
+    }
+  },
+  "controls": {
+    "positive": "The pinned 41-block cover covered all 495 quadruples in both the route audit and checkers/verify_cover.py.",
+    "negative": "Deleting its lexicographically first block left 10 quadruples uncovered.",
+    "matched": "The frozen exact-degree three-block sampler used seeds 126480 and 126481, 1,000 scored proposals per seed, and independently replayed 10 accepted moves; its best remained six.",
+    "mutation": "Altered intermediate degree/selected addition, wrong token edge, fake endpoint, and selected addition mutations were all rejected.",
+    "regression": "Four route-specific tests (old matched control plus new treatment) passed; the direct 41-cover checker passed."
+  },
+  "route_decision": {
+    "decision": "close",
+    "reason": "The mechanism generated abundant genuine exact returns and one seed accepted 13 persistent endpoints, but no endpoint improved the six-defect warm start. This fails the predeclared continuation signal despite eliminating return-generation failure as the explanation.",
+    "reopen_condition": "A different warm-start basin, a provably more informative endpoint-selection mechanism, or an exhaustive four-cycle neighborhood classification yielding a structural lemma.",
+    "next_objective": "Resolve the ordinary C(11,5,3)=20 uniqueness premise independently, because it can promote the existing 20 perfect-matching link classes to an exhaustive C(12,6,4) case split.",
+    "first_action": "Audit the immutable 790-branch fourth-level partition and its 406 replayed closures, then design the smallest fifth-level split pilot on the 416 open early-prefix branches; submit proof-scale work only through the checkpointed lab.",
+    "stop_condition": "Stop or repartition if a matched hard-prefix pilot yields no replayed closure, violates coverage reconstruction, or finds a second nonisomorphic ordinary cover; promote only after every branch has a replayed proof or validated witness."
+  },
+  "tool_disclosure": "GPT-5.6 Sol principal designed, implemented, and audited the pass; GPT-5.6 Terra delegates supplied advisory prior-art and experiment-verification memos. Deterministic Python 3.12.3 generated and independently replayed the searches. No SAT solver, CAS, or proof assistant was used in this epoch."
+}

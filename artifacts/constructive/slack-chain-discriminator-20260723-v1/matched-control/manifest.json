@@ -1,0 +1,57 @@
+{
+  "claim_limit": "NO_WITNESS does not exclude any untested family and gives no lower-bound evidence.",
+  "control_cover": {
+    "path": "sources/ljcr-c1264-41.txt",
+    "sha256": "395bc870e7eb9e84a472873db97de553afc34afdb666545824944e89047913e5"
+  },
+  "hypothesis": "An indecomposable targeted three-block trade search improves the six-defect exact-degree warm start to at most five uncovered quadruples, or finds a 40-block cover.",
+  "independent_checker": {
+    "path": "checkers/audit_three_block_screen.py",
+    "sha256": "bd66c12ae2e17ec9d7a306f4dc0064a46e8d7971d9f6d9ebbf27da7e7902fd90"
+  },
+  "pair_candidates_precomputed": 426426,
+  "pair_signature_classes": 72865,
+  "preprocessing_included_in_total_runtime": true,
+  "preprocessing_seconds": 3.4789883790072054,
+  "producer": {
+    "path": "scripts/run_constructive_three_block_screen.py",
+    "sha256": "98b921d42995515921e0a4a5c9a643d2f52216842ceb7a0ad8a77ab32e020756"
+  },
+  "proposal_budget_per_seed": 1000,
+  "results": [
+    {
+      "best_uncovered": 6,
+      "path": "artifacts/constructive/slack-chain-discriminator-20260723-v1/matched-control/seed-126480/result.json",
+      "seed": 126480,
+      "sha256": "2fa4db6a47c729b2891a29e5bb1fb7e5ee584aababaaba453f0a9b08c0676ff8",
+      "status": "NO_WITNESS"
+    },
+    {
+      "best_uncovered": 6,
+      "path": "artifacts/constructive/slack-chain-discriminator-20260723-v1/matched-control/seed-126481/result.json",
+      "seed": 126481,
+      "sha256": "ce776ccc93bc666410330253959f18631eca5b3214e6dc6b5b78edb74f0445cc",
+      "status": "NO_WITNESS"
+    }
+  ],
+  "schema_version": 1,
+  "scope": "fixed finite seed screen from one warm-start basin; heuristic and non-exhaustive",
+  "search_efficiency": {
+    "full_quad_rescore_counters": 495,
+    "mechanism": "target one of the current uncovered quadruples, choose its 28 containing blocks, and derive the other two additions from an exact aggregate-incidence signature bucket",
+    "naive_three_block_addition_space": "131054924",
+    "soundness_limit": "incremental delta scoring is exact for each sampled proposal, but proposal sampling is intentionally non-exhaustive"
+  },
+  "seconds_cap_per_seed_including_seed_setup": 10.0,
+  "seeds_predeclared": [
+    126480,
+    126481
+  ],
+  "source": {
+    "path": "artifacts/constructive/repair-seed126442-30s/best-candidate.txt",
+    "sha256": "4321dea0f828f30bf5cb1d3c54b4a94349e9bc3f54bd25ea23dbac79ae030a07"
+  },
+  "status": "NO_WITNESS",
+  "success_signal": "minimum independently audited uncovered count at most 5; zero is a witness candidate",
+  "total_elapsed_seconds": 4.0415018908679485
+}
