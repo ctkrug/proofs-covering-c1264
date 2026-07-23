@@ -105,3 +105,32 @@ children. Exactly 43,255 fifth branches remain open, and all 384 fourth parents 
 branch from the first quartile onward would cover 32,645 branches and projects to roughly 8--12 host-hours
 and about 4.2 GiB of compressed proofs at observed throughput; it therefore requires segmented storage and
 review rather than an automatic bulk launch.
+
+## Throughput-first suffix harvest (2026-07-22)
+
+The suffix universe is exactly 32,645 branches. Forty-eight were already measured by the discriminator,
+so the immutable no-rerun scale workload is 32,597 branches, partitioned into 128 deterministic segments.
+An independent selection audit found no duplicate or omitted pending case and confirmed coverage of all
+384 open fourth-level parents. Cached third-level CNFs plus hash-bound fourth/fifth unit recipes remain the
+only persistent instance representation.
+
+Segment 0 ran the original conservative pipeline: 256/256 solver UNSAT, 256 exact-CNF external runner
+replays, and a separate deterministic 32-case second-replay sample, all successful. Its 28,201,518 proof
+bytes gave a 3.59 GB full-workload projection, below the predeclared 4.42 GB estimate. No fourth parent
+closed. Telemetry showed that duplicate reconstruction/replay dominated the 272.6-second segment wall;
+the solver median was only 0.184 seconds.
+
+The active throughput policy therefore separates two ledgers. The provisional harvest ledger contains
+solver-UNSAT receipts and retained proofs and is never used for a theorem or parent-closure claim. The
+certified ledger contains only cases receiving a separate deterministic exact-CNF reconstruction and
+external replay. Future 256-case segments use immediate QA covering parent-type/position strata,
+proof-size quantiles, and the eight largest proofs, with a minimum 32-case sample. Every retained proof
+must still pass exhaustive aggregate replay before classification completeness can be claimed.
+
+Segments 0 through 10 have completed and passed their QA gates. Across 2,816 measured scale cases, the
+provisional ledger contains 2,810 solver-UNSAT proofs, the certified sampled ledger contains 346 replayed
+certificates, six cases timed out, and no SAT appeared. Stored compressed proofs total 318,154,011 bytes;
+29,781 scale jobs remain unmeasured. The streaming exact-CNF writer was regression-checked to be
+byte-identical to the prior PySAT reconstruction and reduced later segment walls to roughly 19--46
+seconds. All 384 fourth-level parents remain open, and the global C(12,6,4) extension ledger remains
+33/47.

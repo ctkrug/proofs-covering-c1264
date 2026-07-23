@@ -1,0 +1,33 @@
+{
+  "claim_limit": "Runner replay is provisional until the separate reconstruction/replay audit passes; no fourth parent is closed here.",
+  "completed": 256,
+  "compressed_proof_bytes": 28201518,
+  "counts": {
+    "UNSAT_VERIFIED_BY_RUNNER": 256
+  },
+  "counts_by_position": {
+    "first_quartile": {
+      "UNSAT_VERIFIED_BY_RUNNER": 98
+    },
+    "last_quartile": {
+      "UNSAT_VERIFIED_BY_RUNNER": 86
+    },
+    "middle_quartile": {
+      "UNSAT_VERIFIED_BY_RUNNER": 72
+    }
+  },
+  "remaining_route_branches_after_completed": 32341,
+  "schema_version": 1,
+  "segment": 0,
+  "segment_manifest": {
+    "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-fifth-split/segments/segment-0000/manifest.json",
+    "sha256": "94f280255cf1f8ddea21cbf2f05bd99f677d89bdf986269967c62df0452cd56d"
+  },
+  "selected": 256,
+  "selection_audit": {
+    "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-fifth-split/suffix-scale-independent-audit.json",
+    "sha256": "1fd3e9087619fd6569ed1efa8c1b05ecf5b33ce3d28c4adddc713c8b1c53cf6c"
+  },
+  "status": "COMPLETE_PENDING_INDEPENDENT_AUDIT",
+  "wall_seconds": 272.5925663749804
+}

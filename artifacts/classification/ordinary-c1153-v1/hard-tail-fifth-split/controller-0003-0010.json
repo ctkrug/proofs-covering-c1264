@@ -1,0 +1,107 @@
+{
+  "events": [
+    {
+      "audit_sha256": "b54e242d5fd967da2156de4bfc12e1ee4ff57ea17a4c0de4289bb3e3c55b09bd",
+      "counts": {
+        "FIXED_CAP_TIMEOUT": 1,
+        "INDEPENDENT_SAMPLE_UNSAT_REPLAYED": 31,
+        "RUNNER_OR_PROVISIONAL_UNSAT_WITH_PROOF": 255,
+        "SAT_VALIDATED": 0
+      },
+      "segment": 3,
+      "status": "QA_PASSED"
+    },
+    {
+      "audit_sha256": "2593ba5f6a0c02f6f073f5af172516d827da792575aef85a4b165b94cb027987",
+      "counts": {
+        "FIXED_CAP_TIMEOUT": 0,
+        "INDEPENDENT_SAMPLE_UNSAT_REPLAYED": 32,
+        "RUNNER_OR_PROVISIONAL_UNSAT_WITH_PROOF": 256,
+        "SAT_VALIDATED": 0
+      },
+      "segment": 4,
+      "status": "QA_PASSED"
+    },
+    {
+      "audit_sha256": "b08c4591f3d600637adcb5b5af02dd33273afb4c3ea4569b846884b2482f2fad",
+      "counts": {
+        "FIXED_CAP_TIMEOUT": 2,
+        "INDEPENDENT_SAMPLE_UNSAT_REPLAYED": 30,
+        "RUNNER_OR_PROVISIONAL_UNSAT_WITH_PROOF": 254,
+        "SAT_VALIDATED": 0
+      },
+      "segment": 5,
+      "status": "QA_PASSED"
+    },
+    {
+      "audit_sha256": "35b7eda75565323801c282a530bd836d950563129b5745434ce45ee918f1e84a",
+      "counts": {
+        "FIXED_CAP_TIMEOUT": 0,
+        "INDEPENDENT_SAMPLE_UNSAT_REPLAYED": 32,
+        "RUNNER_OR_PROVISIONAL_UNSAT_WITH_PROOF": 256,
+        "SAT_VALIDATED": 0
+      },
+      "segment": 6,
+      "status": "QA_PASSED"
+    },
+    {
+      "audit_sha256": "ade2e584258c5dfee986d672fa254b9ac19437884ccff3facaf86356c3b9c4cf",
+      "counts": {
+        "FIXED_CAP_TIMEOUT": 0,
+        "INDEPENDENT_SAMPLE_UNSAT_REPLAYED": 32,
+        "RUNNER_OR_PROVISIONAL_UNSAT_WITH_PROOF": 256,
+        "SAT_VALIDATED": 0
+      },
+      "segment": 7,
+      "status": "QA_PASSED"
+    },
+    {
+      "audit_sha256": "41d98f8fcf414d4c15eb251f787a9b96c8c8aa4a631e7b72b06a2e79da47c32d",
+      "counts": {
+        "FIXED_CAP_TIMEOUT": 0,
+        "INDEPENDENT_SAMPLE_UNSAT_REPLAYED": 32,
+        "RUNNER_OR_PROVISIONAL_UNSAT_WITH_PROOF": 256,
+        "SAT_VALIDATED": 0
+      },
+      "segment": 8,
+      "status": "QA_PASSED"
+    },
+    {
+      "audit_sha256": "7990d4510a9be4b6c6a573f5b27742f40add6b0649c688a33a3c9d68f7d8a419",
+      "counts": {
+        "FIXED_CAP_TIMEOUT": 2,
+        "INDEPENDENT_SAMPLE_UNSAT_REPLAYED": 30,
+        "RUNNER_OR_PROVISIONAL_UNSAT_WITH_PROOF": 254,
+        "SAT_VALIDATED": 0
+      },
+      "segment": 9,
+      "status": "QA_PASSED"
+    },
+    {
+      "audit_sha256": "98baf9017f7aac7c067cbc5da58993e2c80e27fcc1b99eac830709ea45e067df",
+      "counts": {
+        "FIXED_CAP_TIMEOUT": 0,
+        "INDEPENDENT_SAMPLE_UNSAT_REPLAYED": 32,
+        "RUNNER_OR_PROVISIONAL_UNSAT_WITH_PROOF": 256,
+        "SAT_VALIDATED": 0
+      },
+      "segment": 10,
+      "status": "QA_PASSED"
+    }
+  ],
+  "ledger_sha256": "d6aca08a08422a8c0daccc455dea53bc4cc8e380681e338edba6b33b94e08dd1",
+  "requested_start": 3,
+  "requested_stop": 10,
+  "schema_version": 1,
+  "status": "COMPLETE",
+  "totals": {
+    "certified_independent_replay": 346,
+    "completed": 2816,
+    "compressed_proof_bytes": 318154011,
+    "fixed_cap_timeout": 6,
+    "provisional_solver_unsat": 2810,
+    "sat": 0,
+    "selected": 2816
+  },
+  "wall_seconds": 382.6001510829665
+}

@@ -1,0 +1,23 @@
+{
+  "claim_limit": "This policy reduces duplicate operational replay, not certificate production. Every UNSAT still requires the runner's exact-CNF external drat-trim replay. Classification completion still requires exhaustive aggregate replay before any parent or theorem claim.",
+  "effective_after_segment": 0,
+  "immutable_bindings": {
+    "segment_0_audit_sha256": "f83369f763a322efccdf07dae0f643e76275208cbe59c0dfc4458f51a3b8cc6a",
+    "suffix_route_manifest_sha256": "52082943bd84c2d24bb5af74885081820b9c540886f6dbf612fc757f0300580a"
+  },
+  "operational_independent_audit": {
+    "minimum_fraction": "1/8",
+    "minimum_per_segment": 32,
+    "rule": "Deterministic SHA-256 sample stratified by fifth-position quartile and bound to each immutable segment manifest.",
+    "stop_conditions": [
+      "Any sampled exact-CNF reconstruction mismatch",
+      "Any sampled proof hash or external replay failure",
+      "Any SAT result",
+      "Any receipt/manifest disagreement",
+      "Projected proof storage above 6 GiB"
+    ]
+  },
+  "reason": "Segment 0 showed that duplicate independent reconstruction/replay is the throughput bottleneck: production took 272.59 seconds, while a 32/256 second-audit sample took 39.27 seconds. All 256 production proofs already passed exact-CNF drat-trim; all 32 independently sampled proofs passed a second reconstruction/replay.",
+  "schema_version": 1,
+  "status": "ACTIVE_FOR_FUTURE_SEGMENTS"
+}
