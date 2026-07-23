@@ -7,6 +7,7 @@ import argparse
 import gzip
 import hashlib
 import json
+import multiprocessing
 import os
 import subprocess
 import sys
@@ -129,7 +130,7 @@ def quantile_positions(rows: list[dict[str, object]], count: int) -> list[int]:
     return sorted({round(index * (len(rows) - 1) / (count - 1)) for index in range(count)})
 
 
-def build(sample_size: int) -> dict[str, object]:
+def build(sample_size: int, feature_workers: int) -> dict[str, object]:
     jobs = {row["case_id"]: row for row in all_open_jobs()}
     source_manifest = json.loads(
         (
@@ -160,7 +161,6 @@ def build(sample_size: int) -> dict[str, object]:
                 domain = residual_domain(job, case, parents[parent_id])
                 if domain_component_hashes(domain) != result["domain"]:
                     raise ValueError(f"{case_id}: exact residual reconstruction mismatch")
-                features = structural_features(domain)
                 gaps.append(
                     {
                         "case_id": case_id,
@@ -177,9 +177,23 @@ def build(sample_size: int) -> dict[str, object]:
                         "stabilizer_tier": job["stabilizer_tier"],
                         "target_child_id": job["target_child_id"],
                         "second_index": job["second_index"],
-                        "features": features,
+                        "_domain": domain,
                     }
                 )
+    feature_workers = max(1, feature_workers)
+    domains = [row["_domain"] for row in gaps]
+    if feature_workers == 1:
+        features = list(map(structural_features, domains))
+    else:
+        with multiprocessing.get_context("fork").Pool(feature_workers) as pool:
+            features = pool.map(
+                structural_features,
+                domains,
+                chunksize=max(1, len(domains) // (feature_workers * 16)),
+            )
+    for row, feature in zip(gaps, features, strict=True):
+        row["features"] = feature
+        del row["_domain"]
     gaps.sort(key=lambda row: row["case_id"])
     if len({row["case_id"] for row in gaps}) != len(gaps):
         raise ValueError("duplicate gap case ID")
@@ -263,6 +277,11 @@ def build(sample_size: int) -> dict[str, object]:
             "over root/rank/branch-quantile/stabilizer/slot/min-coverer strata, then "
             "lexicographic fill to exactly 512 when available."
         ),
+        "feature_workers": feature_workers,
+        "feature_parallelism_rule": (
+            "Deterministic ordered multiprocessing over independently reconstructed exact "
+            "domains; feature output is merged in case order."
+        ),
         "isomorphism_rule": (
             "SHA-256 of pynauty's exact canonical certificate for the colored incidence "
             "graph with point, fixed-block, available-block, and uncovered-triple color cells."
@@ -279,5 +298,6 @@ def build(sample_size: int) -> dict[str, object]:
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument("--sample-size", type=int, default=512)
+    parser.add_argument("--feature-workers", type=int, default=3)
     args = parser.parse_args()
-    print(json.dumps(build(args.sample_size), indent=2, sort_keys=True))
+    print(json.dumps(build(args.sample_size, args.feature_workers), indent=2, sort_keys=True))
