@@ -1,0 +1,63 @@
+{
+  "branch_count_quantile": "q3",
+  "case_id": "intersection-3-third-00-fourth-000-fifth-000-deficit-001-second-000-cube-024-019",
+  "cube_path": [
+    24,
+    19
+  ],
+  "cube_position": "last_depth_two_cube",
+  "exact_cnf_clauses": 46262,
+  "exact_cnf_sha256": "bc9aca494eefffc507c3e2a5386b14a9e8ad460154072ff839041926e53bbe6f",
+  "exact_cnf_variables": 10166,
+  "formula_frontier_count": 525,
+  "formula_id": "intersection-3-third-00-fourth-000-fifth-000-deficit-001-second-000",
+  "parent_cnf_sha256": "39cae2fbf472dacfd39c5f4df5576a510754e923967ce20775e41ecb042b0197",
+  "path_trace": [
+    {
+      "depth": 0,
+      "earlier_forbidden_count": 24,
+      "orbit_count": 25,
+      "orbit_index": 24,
+      "selected_variable": 84,
+      "stabilizer_order": 1,
+      "triple": [
+        1,
+        2,
+        11
+      ]
+    },
+    {
+      "depth": 1,
+      "earlier_forbidden_count": 19,
+      "orbit_count": 20,
+      "orbit_index": 19,
+      "selected_variable": 140,
+      "stabilizer_order": 1,
+      "triple": [
+        1,
+        3,
+        11
+      ]
+    }
+  ],
+  "protocol_sha256": "9d5709512259ea973726c7b748b255016c8f85ca217f10af78bea189edda7dfa",
+  "rank_band": "rank_one",
+  "returncode": 0,
+  "root_class": "intersection-3",
+  "sample_category": "q3_nonzero",
+  "schema_version": 1,
+  "second_index": 0,
+  "seconds_cap": 5,
+  "solver_elapsed_seconds": 5.032725662924349,
+  "solver_log": {
+    "path": "artifacts/classification/ordinary-c1153-v1/open-fifth-deficit-partition-v2/second-live-triple-gate-v1/multi-deficit-propagation-gate-v1/discriminator-5s/results/intersection-3-third-00-fourth-000-fifth-000-deficit-001-second-000-cube-024-019/solver.log",
+    "sha256": "8fba55cea0f98be36fab7b65349dda867a58aabfcf974a46098f5123830ac5cb"
+  },
+  "stabilizer_tier": "high",
+  "status": "FIXED_CAP_TIMEOUT",
+  "target_child_id": "intersection-3-third-00-fourth-000-fifth-000-deficit-001",
+  "terminal_fixed_primary_count": 9,
+  "terminal_forbidden_primary_count": 76,
+  "terminal_state_sha256": "87c759990cd259b3e9457bed106ed068187dc14b2f0adce3184c3f872446bbb0",
+  "unit_recipe_sha256": "d20b5e0dbc37d56e0b900c4087346624d46f0f9381774f267979d5645ddb7eb3"
+}

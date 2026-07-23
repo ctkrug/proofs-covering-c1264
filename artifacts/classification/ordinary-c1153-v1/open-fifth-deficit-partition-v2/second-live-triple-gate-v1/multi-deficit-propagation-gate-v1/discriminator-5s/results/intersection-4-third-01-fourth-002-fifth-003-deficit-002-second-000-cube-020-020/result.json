@@ -1,0 +1,63 @@
+{
+  "branch_count_quantile": "q3",
+  "case_id": "intersection-4-third-01-fourth-002-fifth-003-deficit-002-second-000-cube-020-020",
+  "cube_path": [
+    20,
+    20
+  ],
+  "cube_position": "last_depth_two_cube",
+  "exact_cnf_clauses": 46257,
+  "exact_cnf_sha256": "bbcaa032045f7af92230896ed930a7ac6a58bd5f47cc99b73b4d41435d8f1f2c",
+  "exact_cnf_variables": 10166,
+  "formula_frontier_count": 421,
+  "formula_id": "intersection-4-third-01-fourth-002-fifth-003-deficit-002-second-000",
+  "parent_cnf_sha256": "13deb69f954b931aeb9f5785eeb7903d31755b129f59d8306db5ae8d3beff11f",
+  "path_trace": [
+    {
+      "depth": 0,
+      "earlier_forbidden_count": 20,
+      "orbit_count": 21,
+      "orbit_index": 20,
+      "selected_variable": 84,
+      "stabilizer_order": 1,
+      "triple": [
+        1,
+        2,
+        10
+      ]
+    },
+    {
+      "depth": 1,
+      "earlier_forbidden_count": 20,
+      "orbit_count": 21,
+      "orbit_index": 20,
+      "selected_variable": 140,
+      "stabilizer_order": 1,
+      "triple": [
+        1,
+        3,
+        9
+      ]
+    }
+  ],
+  "protocol_sha256": "9d5709512259ea973726c7b748b255016c8f85ca217f10af78bea189edda7dfa",
+  "rank_band": "later_rank",
+  "returncode": 0,
+  "root_class": "intersection-4",
+  "sample_category": "q3_nonzero",
+  "schema_version": 1,
+  "second_index": 0,
+  "seconds_cap": 5,
+  "solver_elapsed_seconds": 5.040748613886535,
+  "solver_log": {
+    "path": "artifacts/classification/ordinary-c1153-v1/open-fifth-deficit-partition-v2/second-live-triple-gate-v1/multi-deficit-propagation-gate-v1/discriminator-5s/results/intersection-4-third-01-fourth-002-fifth-003-deficit-002-second-000-cube-020-020/solver.log",
+    "sha256": "8fba55cea0f98be36fab7b65349dda867a58aabfcf974a46098f5123830ac5cb"
+  },
+  "stabilizer_tier": "high",
+  "status": "FIXED_CAP_TIMEOUT",
+  "target_child_id": "intersection-4-third-01-fourth-002-fifth-003-deficit-002",
+  "terminal_fixed_primary_count": 9,
+  "terminal_forbidden_primary_count": 71,
+  "terminal_state_sha256": "1909ab66ef9ff20c55883dcc09b5fe061b4cb44367b42ced5b5b1d313a6db4cf",
+  "unit_recipe_sha256": "4b6a14527e4cf9214cdf3b8bbf2ac00d165f302826224a5856cb940842a26c24"
+}

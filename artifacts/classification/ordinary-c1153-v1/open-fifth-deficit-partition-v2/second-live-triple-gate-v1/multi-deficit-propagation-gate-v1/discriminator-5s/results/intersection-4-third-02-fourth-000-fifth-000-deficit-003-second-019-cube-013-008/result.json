@@ -1,0 +1,63 @@
+{
+  "branch_count_quantile": "q4",
+  "case_id": "intersection-4-third-02-fourth-000-fifth-000-deficit-003-second-019-cube-013-008",
+  "cube_path": [
+    13,
+    8
+  ],
+  "cube_position": "last_depth_two_cube",
+  "exact_cnf_clauses": 46256,
+  "exact_cnf_sha256": "e11d5407a4066b98443b6650cf7fffe2779f6e48852eda81d4d38a40da5060b0",
+  "exact_cnf_variables": 10166,
+  "formula_frontier_count": 198,
+  "formula_id": "intersection-4-third-02-fourth-000-fifth-000-deficit-003-second-019",
+  "parent_cnf_sha256": "323c99b844f04f4130e3cbb38fda880f0c09924262d09e84020c279ed41fb57b",
+  "path_trace": [
+    {
+      "depth": 0,
+      "earlier_forbidden_count": 17,
+      "orbit_count": 14,
+      "orbit_index": 13,
+      "selected_variable": 425,
+      "stabilizer_order": 2,
+      "triple": [
+        4,
+        5,
+        8
+      ]
+    },
+    {
+      "depth": 1,
+      "earlier_forbidden_count": 11,
+      "orbit_count": 9,
+      "orbit_index": 8,
+      "selected_variable": 426,
+      "stabilizer_order": 2,
+      "triple": [
+        4,
+        5,
+        9
+      ]
+    }
+  ],
+  "protocol_sha256": "9d5709512259ea973726c7b748b255016c8f85ca217f10af78bea189edda7dfa",
+  "rank_band": "later_rank",
+  "returncode": 0,
+  "root_class": "intersection-4",
+  "sample_category": "q4_nonzero",
+  "schema_version": 1,
+  "second_index": 19,
+  "seconds_cap": 5,
+  "solver_elapsed_seconds": 5.034631463931873,
+  "solver_log": {
+    "path": "artifacts/classification/ordinary-c1153-v1/open-fifth-deficit-partition-v2/second-live-triple-gate-v1/multi-deficit-propagation-gate-v1/discriminator-5s/results/intersection-4-third-02-fourth-000-fifth-000-deficit-003-second-019-cube-013-008/solver.log",
+    "sha256": "8fba55cea0f98be36fab7b65349dda867a58aabfcf974a46098f5123830ac5cb"
+  },
+  "stabilizer_tier": "high",
+  "status": "FIXED_CAP_TIMEOUT",
+  "target_child_id": "intersection-4-third-02-fourth-000-fifth-000-deficit-003",
+  "terminal_fixed_primary_count": 9,
+  "terminal_forbidden_primary_count": 70,
+  "terminal_state_sha256": "79fc5720aa4a2e0f1caa932fc7fca9748247d5f8e74cb02996c3cef9d8b91397",
+  "unit_recipe_sha256": "26a114e99c6b88e0f1ce0fa953eda99f9c5f5ecb1e51e181ca92cc0ecb99076f"
+}

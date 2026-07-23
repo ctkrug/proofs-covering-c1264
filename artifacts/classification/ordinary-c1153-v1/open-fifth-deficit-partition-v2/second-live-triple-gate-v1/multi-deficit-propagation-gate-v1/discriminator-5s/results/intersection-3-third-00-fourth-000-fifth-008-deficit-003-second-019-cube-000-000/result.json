@@ -1,0 +1,63 @@
+{
+  "branch_count_quantile": "q4",
+  "case_id": "intersection-3-third-00-fourth-000-fifth-008-deficit-003-second-019-cube-000-000",
+  "cube_path": [
+    0,
+    0
+  ],
+  "cube_position": "first_depth_two_cube",
+  "exact_cnf_clauses": 46253,
+  "exact_cnf_sha256": "9e6c70dd94a23aa9454f78b8b31330d1ec2b891cefbc74e0f778062851184700",
+  "exact_cnf_variables": 10166,
+  "formula_frontier_count": 385,
+  "formula_id": "intersection-3-third-00-fourth-000-fifth-008-deficit-003-second-019",
+  "parent_cnf_sha256": "39cae2fbf472dacfd39c5f4df5576a510754e923967ce20775e41ecb042b0197",
+  "path_trace": [
+    {
+      "depth": 0,
+      "earlier_forbidden_count": 0,
+      "orbit_count": 20,
+      "orbit_index": 0,
+      "selected_variable": 95,
+      "stabilizer_order": 1,
+      "triple": [
+        1,
+        3,
+        11
+      ]
+    },
+    {
+      "depth": 1,
+      "earlier_forbidden_count": 0,
+      "orbit_count": 20,
+      "orbit_index": 0,
+      "selected_variable": 109,
+      "stabilizer_order": 1,
+      "triple": [
+        1,
+        5,
+        10
+      ]
+    }
+  ],
+  "protocol_sha256": "9d5709512259ea973726c7b748b255016c8f85ca217f10af78bea189edda7dfa",
+  "rank_band": "later_rank",
+  "returncode": 0,
+  "root_class": "intersection-3",
+  "sample_category": "q4_nonzero",
+  "schema_version": 1,
+  "second_index": 19,
+  "seconds_cap": 5,
+  "solver_elapsed_seconds": 5.023117862874642,
+  "solver_log": {
+    "path": "artifacts/classification/ordinary-c1153-v1/open-fifth-deficit-partition-v2/second-live-triple-gate-v1/multi-deficit-propagation-gate-v1/discriminator-5s/results/intersection-3-third-00-fourth-000-fifth-008-deficit-003-second-019-cube-000-000/solver.log",
+    "sha256": "8fba55cea0f98be36fab7b65349dda867a58aabfcf974a46098f5123830ac5cb"
+  },
+  "stabilizer_tier": "mid",
+  "status": "FIXED_CAP_TIMEOUT",
+  "target_child_id": "intersection-3-third-00-fourth-000-fifth-008-deficit-003",
+  "terminal_fixed_primary_count": 9,
+  "terminal_forbidden_primary_count": 67,
+  "terminal_state_sha256": "b5960868863faac8c3eb55cac06945be1352e5a28251d6e12b12fbfad5c0a65a",
+  "unit_recipe_sha256": "4dcbc80eb03b7bf6c8212536f7480d8ab0cb592305bd3f9692dcb067595e0025"
+}

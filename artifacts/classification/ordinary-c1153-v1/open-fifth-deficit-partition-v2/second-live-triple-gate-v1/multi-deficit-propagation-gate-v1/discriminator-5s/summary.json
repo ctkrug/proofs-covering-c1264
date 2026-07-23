@@ -1,0 +1,1528 @@
+{
+  "claim_limit": "Runner results remain provisional until independent exact-CNF reconstruction and external replay.",
+  "completed": 24,
+  "compressed_proof_bytes": 0,
+  "counts": {
+    "FIXED_CAP_TIMEOUT": 24
+  },
+  "outcomes": [
+    {
+      "branch_count_quantile": "q3",
+      "case_id": "intersection-3-third-00-fourth-000-fifth-000-deficit-000-second-000-cube-000-000",
+      "cube_path": [
+        0,
+        0
+      ],
+      "cube_position": "first_depth_two_cube",
+      "exact_cnf_clauses": 46216,
+      "exact_cnf_sha256": "e950ba811f8fd6c2d3649fe613aa58061bedc972aa09ca875d6af7c5eb9cbccd",
+      "exact_cnf_variables": 10166,
+      "formula_frontier_count": 509,
+      "formula_id": "intersection-3-third-00-fourth-000-fifth-000-deficit-000-second-000",
+      "parent_cnf_sha256": "39cae2fbf472dacfd39c5f4df5576a510754e923967ce20775e41ecb042b0197",
+      "path_trace": [
+        {
+          "depth": 0,
+          "earlier_forbidden_count": 0,
+          "orbit_count": 25,
+          "orbit_index": 0,
+          "selected_variable": 35,
+          "stabilizer_order": 1,
+          "triple": [
+            1,
+            4,
+            6
+          ]
+        },
+        {
+          "depth": 1,
+          "earlier_forbidden_count": 0,
+          "orbit_count": 25,
+          "orbit_index": 0,
+          "selected_variable": 36,
+          "stabilizer_order": 1,
+          "triple": [
+            1,
+            4,
+            8
+          ]
+        }
+      ],
+      "protocol_sha256": "9d5709512259ea973726c7b748b255016c8f85ca217f10af78bea189edda7dfa",
+      "rank_band": "rank_zero",
+      "returncode": 0,
+      "root_class": "intersection-3",
+      "sample_category": "rank_zero",
+      "schema_version": 1,
+      "second_index": 0,
+      "seconds_cap": 5,
+      "solver_elapsed_seconds": 5.0283275549300015,
+      "solver_log": {
+        "path": "artifacts/classification/ordinary-c1153-v1/open-fifth-deficit-partition-v2/second-live-triple-gate-v1/multi-deficit-propagation-gate-v1/discriminator-5s/results/intersection-3-third-00-fourth-000-fifth-000-deficit-000-second-000-cube-000-000/solver.log",
+        "sha256": "8fba55cea0f98be36fab7b65349dda867a58aabfcf974a46098f5123830ac5cb"
+      },
+      "stabilizer_tier": "high",
+      "status": "FIXED_CAP_TIMEOUT",
+      "target_child_id": "intersection-3-third-00-fourth-000-fifth-000-deficit-000",
+      "terminal_fixed_primary_count": 9,
+      "terminal_forbidden_primary_count": 30,
+      "terminal_state_sha256": "fb08b3e202b995bbbbc76df25b35b601fcd84ee8c094c8b956572395c3dbbf2e",
+      "unit_recipe_sha256": "e03e503aef07c1dbf6bdded6ca738b56dc6b358814d89a67d40ff0ad6c848ea2"
+    },
+    {
+      "branch_count_quantile": "q3",
+      "case_id": "intersection-3-third-00-fourth-000-fifth-000-deficit-000-second-000-cube-024-017",
+      "cube_path": [
+        24,
+        17
+      ],
+      "cube_position": "last_depth_two_cube",
+      "exact_cnf_clauses": 46257,
+      "exact_cnf_sha256": "dba25ac0479f31a482358be2e73f5d2f9c33e160779022c5bcf675eae57c6e6b",
+      "exact_cnf_variables": 10166,
+      "formula_frontier_count": 509,
+      "formula_id": "intersection-3-third-00-fourth-000-fifth-000-deficit-000-second-000",
+      "parent_cnf_sha256": "39cae2fbf472dacfd39c5f4df5576a510754e923967ce20775e41ecb042b0197",
+      "path_trace": [
+        {
+          "depth": 0,
+          "earlier_forbidden_count": 24,
+          "orbit_count": 25,
+          "orbit_index": 24,
+          "selected_variable": 165,
+          "stabilizer_order": 1,
+          "triple": [
+            1,
+            4,
+            6
+          ]
+        },
+        {
+          "depth": 1,
+          "earlier_forbidden_count": 17,
+          "orbit_count": 18,
+          "orbit_index": 17,
+          "selected_variable": 171,
+          "stabilizer_order": 1,
+          "triple": [
+            1,
+            4,
+            7
+          ]
+        }
+      ],
+      "protocol_sha256": "9d5709512259ea973726c7b748b255016c8f85ca217f10af78bea189edda7dfa",
+      "rank_band": "rank_zero",
+      "returncode": 0,
+      "root_class": "intersection-3",
+      "sample_category": "rank_zero",
+      "schema_version": 1,
+      "second_index": 0,
+      "seconds_cap": 5,
+      "solver_elapsed_seconds": 5.026885339990258,
+      "solver_log": {
+        "path": "artifacts/classification/ordinary-c1153-v1/open-fifth-deficit-partition-v2/second-live-triple-gate-v1/multi-deficit-propagation-gate-v1/discriminator-5s/results/intersection-3-third-00-fourth-000-fifth-000-deficit-000-second-000-cube-024-017/solver.log",
+        "sha256": "8fba55cea0f98be36fab7b65349dda867a58aabfcf974a46098f5123830ac5cb"
+      },
+      "stabilizer_tier": "high",
+      "status": "FIXED_CAP_TIMEOUT",
+      "target_child_id": "intersection-3-third-00-fourth-000-fifth-000-deficit-000",
+      "terminal_fixed_primary_count": 9,
+      "terminal_forbidden_primary_count": 71,
+      "terminal_state_sha256": "12d4ccddef1f31a4fcff76d61936d2e72ddb942ea89a47680e399975e2d32712",
+      "unit_recipe_sha256": "2d169f80cb3fcbf93934cbd57b6fca7c575c622b5fe8568f56570308e397daf3"
+    },
+    {
+      "branch_count_quantile": "q3",
+      "case_id": "intersection-3-third-00-fourth-000-fifth-000-deficit-000-second-016-cube-000-000",
+      "cube_path": [
+        0,
+        0
+      ],
+      "cube_position": "first_depth_two_cube",
+      "exact_cnf_clauses": 46243,
+      "exact_cnf_sha256": "2a51a85a41acdb2a83f1b84675eae98dd51ff3697ba4e7875f4d7a8cbb3b1692",
+      "exact_cnf_variables": 10166,
+      "formula_frontier_count": 188,
+      "formula_id": "intersection-3-third-00-fourth-000-fifth-000-deficit-000-second-016",
+      "parent_cnf_sha256": "39cae2fbf472dacfd39c5f4df5576a510754e923967ce20775e41ecb042b0197",
+      "path_trace": [
+        {
+          "depth": 0,
+          "earlier_forbidden_count": 0,
+          "orbit_count": 14,
+          "orbit_index": 0,
+          "selected_variable": 22,
+          "stabilizer_order": 2,
+          "triple": [
+            1,
+            3,
+            11
+          ]
+        },
+        {
+          "depth": 1,
+          "earlier_forbidden_count": 0,
+          "orbit_count": 18,
+          "orbit_index": 0,
+          "selected_variable": 91,
+          "stabilizer_order": 1,
+          "triple": [
+            3,
+            4,
+            6
+          ]
+        }
+      ],
+      "protocol_sha256": "9d5709512259ea973726c7b748b255016c8f85ca217f10af78bea189edda7dfa",
+      "rank_band": "rank_zero",
+      "returncode": 0,
+      "root_class": "intersection-3",
+      "sample_category": "rank_zero",
+      "schema_version": 1,
+      "second_index": 16,
+      "seconds_cap": 5,
+      "solver_elapsed_seconds": 5.031889105914161,
+      "solver_log": {
+        "path": "artifacts/classification/ordinary-c1153-v1/open-fifth-deficit-partition-v2/second-live-triple-gate-v1/multi-deficit-propagation-gate-v1/discriminator-5s/results/intersection-3-third-00-fourth-000-fifth-000-deficit-000-second-016-cube-000-000/solver.log",
+        "sha256": "8fba55cea0f98be36fab7b65349dda867a58aabfcf974a46098f5123830ac5cb"
+      },
+      "stabilizer_tier": "high",
+      "status": "FIXED_CAP_TIMEOUT",
+      "target_child_id": "intersection-3-third-00-fourth-000-fifth-000-deficit-000",
+      "terminal_fixed_primary_count": 9,
+      "terminal_forbidden_primary_count": 57,
+      "terminal_state_sha256": "b9c5df6cbff4be4941d5b82d91cc315aff285b8e7c5adf795e0a67b04d5584c0",
+      "unit_recipe_sha256": "7933bcd7d0c973d152721e19f5c6b0ba026c3e1d085e62c7bf5b436e8bbed5d1"
+    },
+    {
+      "branch_count_quantile": "q3",
+      "case_id": "intersection-3-third-00-fourth-000-fifth-000-deficit-000-second-016-cube-013-009",
+      "cube_path": [
+        13,
+        9
+      ],
+      "cube_position": "last_depth_two_cube",
+      "exact_cnf_clauses": 46273,
+      "exact_cnf_sha256": "d20ced68939a3811e1dac3dc54ecb4cc5a3aac69dae861b703aeb6472bbd75cc",
+      "exact_cnf_variables": 10166,
+      "formula_frontier_count": 188,
+      "formula_id": "intersection-3-third-00-fourth-000-fifth-000-deficit-000-second-016",
+      "parent_cnf_sha256": "39cae2fbf472dacfd39c5f4df5576a510754e923967ce20775e41ecb042b0197",
+      "path_trace": [
+        {
+          "depth": 0,
+          "earlier_forbidden_count": 17,
+          "orbit_count": 14,
+          "orbit_index": 13,
+          "selected_variable": 140,
+          "stabilizer_order": 2,
+          "triple": [
+            1,
+            3,
+            11
+          ]
+        },
+        {
+          "depth": 1,
+          "earlier_forbidden_count": 13,
+          "orbit_count": 10,
+          "orbit_index": 9,
+          "selected_variable": 266,
+          "stabilizer_order": 2,
+          "triple": [
+            2,
+            3,
+            11
+          ]
+        }
+      ],
+      "protocol_sha256": "9d5709512259ea973726c7b748b255016c8f85ca217f10af78bea189edda7dfa",
+      "rank_band": "rank_zero",
+      "returncode": 0,
+      "root_class": "intersection-3",
+      "sample_category": "rank_zero",
+      "schema_version": 1,
+      "second_index": 16,
+      "seconds_cap": 5,
+      "solver_elapsed_seconds": 5.019721481949091,
+      "solver_log": {
+        "path": "artifacts/classification/ordinary-c1153-v1/open-fifth-deficit-partition-v2/second-live-triple-gate-v1/multi-deficit-propagation-gate-v1/discriminator-5s/results/intersection-3-third-00-fourth-000-fifth-000-deficit-000-second-016-cube-013-009/solver.log",
+        "sha256": "8fba55cea0f98be36fab7b65349dda867a58aabfcf974a46098f5123830ac5cb"
+      },
+      "stabilizer_tier": "high",
+      "status": "FIXED_CAP_TIMEOUT",
+      "target_child_id": "intersection-3-third-00-fourth-000-fifth-000-deficit-000",
+      "terminal_fixed_primary_count": 9,
+      "terminal_forbidden_primary_count": 87,
+      "terminal_state_sha256": "73783c0f5440a0df0db7528badc41263d2397f8618b70c16e1dd659b7b57db78",
+      "unit_recipe_sha256": "18514072be20456141b4f3fa6bb82db05193f1eb4b2ee683ba246698666ac79c"
+    },
+    {
+      "branch_count_quantile": "q3",
+      "case_id": "intersection-3-third-00-fourth-000-fifth-000-deficit-001-second-000-cube-000-000",
+      "cube_path": [
+        0,
+        0
+      ],
+      "cube_position": "first_depth_two_cube",
+      "exact_cnf_clauses": 46219,
+      "exact_cnf_sha256": "524979442cd41994837750d0e1147e2e580825879ed2ed7ffc5c1d7ac110b049",
+      "exact_cnf_variables": 10166,
+      "formula_frontier_count": 525,
+      "formula_id": "intersection-3-third-00-fourth-000-fifth-000-deficit-001-second-000",
+      "parent_cnf_sha256": "39cae2fbf472dacfd39c5f4df5576a510754e923967ce20775e41ecb042b0197",
+      "path_trace": [
+        {
+          "depth": 0,
+          "earlier_forbidden_count": 0,
+          "orbit_count": 25,
+          "orbit_index": 0,
+          "selected_variable": 18,
+          "stabilizer_order": 1,
+          "triple": [
+            1,
+            2,
+            11
+          ]
+        },
+        {
+          "depth": 1,
+          "earlier_forbidden_count": 0,
+          "orbit_count": 25,
+          "orbit_index": 0,
+          "selected_variable": 38,
+          "stabilizer_order": 1,
+          "triple": [
+            1,
+            4,
+            10
+          ]
+        }
+      ],
+      "protocol_sha256": "9d5709512259ea973726c7b748b255016c8f85ca217f10af78bea189edda7dfa",
+      "rank_band": "rank_one",
+      "returncode": 0,
+      "root_class": "intersection-3",
+      "sample_category": "q3_nonzero",
+      "schema_version": 1,
+      "second_index": 0,
+      "seconds_cap": 5,
+      "solver_elapsed_seconds": 5.039390589110553,
+      "solver_log": {
+        "path": "artifacts/classification/ordinary-c1153-v1/open-fifth-deficit-partition-v2/second-live-triple-gate-v1/multi-deficit-propagation-gate-v1/discriminator-5s/results/intersection-3-third-00-fourth-000-fifth-000-deficit-001-second-000-cube-000-000/solver.log",
+        "sha256": "8fba55cea0f98be36fab7b65349dda867a58aabfcf974a46098f5123830ac5cb"
+      },
+      "stabilizer_tier": "high",
+      "status": "FIXED_CAP_TIMEOUT",
+      "target_child_id": "intersection-3-third-00-fourth-000-fifth-000-deficit-001",
+      "terminal_fixed_primary_count": 9,
+      "terminal_forbidden_primary_count": 33,
+      "terminal_state_sha256": "d04b1fce65ce87a391f772091fabc2095d04bf11fb45204051d50d01249cfa84",
+      "unit_recipe_sha256": "fa60a8c0177dac91ca0cd2077b73154f50b18bfa80dcb633fc8bfe431e4c6f57"
+    },
+    {
+      "branch_count_quantile": "q3",
+      "case_id": "intersection-3-third-00-fourth-000-fifth-000-deficit-001-second-000-cube-024-019",
+      "cube_path": [
+        24,
+        19
+      ],
+      "cube_position": "last_depth_two_cube",
+      "exact_cnf_clauses": 46262,
+      "exact_cnf_sha256": "bc9aca494eefffc507c3e2a5386b14a9e8ad460154072ff839041926e53bbe6f",
+      "exact_cnf_variables": 10166,
+      "formula_frontier_count": 525,
+      "formula_id": "intersection-3-third-00-fourth-000-fifth-000-deficit-001-second-000",
+      "parent_cnf_sha256": "39cae2fbf472dacfd39c5f4df5576a510754e923967ce20775e41ecb042b0197",
+      "path_trace": [
+        {
+          "depth": 0,
+          "earlier_forbidden_count": 24,
+          "orbit_count": 25,
+          "orbit_index": 24,
+          "selected_variable": 84,
+          "stabilizer_order": 1,
+          "triple": [
+            1,
+            2,
+            11
+          ]
+        },
+        {
+          "depth": 1,
+          "earlier_forbidden_count": 19,
+          "orbit_count": 20,
+          "orbit_index": 19,
+          "selected_variable": 140,
+          "stabilizer_order": 1,
+          "triple": [
+            1,
+            3,
+            11
+          ]
+        }
+      ],
+      "protocol_sha256": "9d5709512259ea973726c7b748b255016c8f85ca217f10af78bea189edda7dfa",
+      "rank_band": "rank_one",
+      "returncode": 0,
+      "root_class": "intersection-3",
+      "sample_category": "q3_nonzero",
+      "schema_version": 1,
+      "second_index": 0,
+      "seconds_cap": 5,
+      "solver_elapsed_seconds": 5.032725662924349,
+      "solver_log": {
+        "path": "artifacts/classification/ordinary-c1153-v1/open-fifth-deficit-partition-v2/second-live-triple-gate-v1/multi-deficit-propagation-gate-v1/discriminator-5s/results/intersection-3-third-00-fourth-000-fifth-000-deficit-001-second-000-cube-024-019/solver.log",
+        "sha256": "8fba55cea0f98be36fab7b65349dda867a58aabfcf974a46098f5123830ac5cb"
+      },
+      "stabilizer_tier": "high",
+      "status": "FIXED_CAP_TIMEOUT",
+      "target_child_id": "intersection-3-third-00-fourth-000-fifth-000-deficit-001",
+      "terminal_fixed_primary_count": 9,
+      "terminal_forbidden_primary_count": 76,
+      "terminal_state_sha256": "87c759990cd259b3e9457bed106ed068187dc14b2f0adce3184c3f872446bbb0",
+      "unit_recipe_sha256": "d20b5e0dbc37d56e0b900c4087346624d46f0f9381774f267979d5645ddb7eb3"
+    },
+    {
+      "branch_count_quantile": "q3",
+      "case_id": "intersection-3-third-00-fourth-000-fifth-000-deficit-001-second-019-cube-000-000",
+      "cube_path": [
+        0,
+        0
+      ],
+      "cube_position": "first_depth_two_cube",
+      "exact_cnf_clauses": 46243,
+      "exact_cnf_sha256": "edea9796e71f48ff1cf65bf02c0e89e571bb0681dc0c09913b02b4b709c1ea1f",
+      "exact_cnf_variables": 10166,
+      "formula_frontier_count": 227,
+      "formula_id": "intersection-3-third-00-fourth-000-fifth-000-deficit-001-second-019",
+      "parent_cnf_sha256": "39cae2fbf472dacfd39c5f4df5576a510754e923967ce20775e41ecb042b0197",
+      "path_trace": [
+        {
+          "depth": 0,
+          "earlier_forbidden_count": 0,
+          "orbit_count": 15,
+          "orbit_index": 0,
+          "selected_variable": 52,
+          "stabilizer_order": 2,
+          "triple": [
+            1,
+            5,
+            9
+          ]
+        },
+        {
+          "depth": 1,
+          "earlier_forbidden_count": 0,
+          "orbit_count": 20,
+          "orbit_index": 0,
+          "selected_variable": 219,
+          "stabilizer_order": 1,
+          "triple": [
+            2,
+            4,
+            9
+          ]
+        }
+      ],
+      "protocol_sha256": "9d5709512259ea973726c7b748b255016c8f85ca217f10af78bea189edda7dfa",
+      "rank_band": "rank_one",
+      "returncode": 0,
+      "root_class": "intersection-3",
+      "sample_category": "q3_nonzero",
+      "schema_version": 1,
+      "second_index": 19,
+      "seconds_cap": 5,
+      "solver_elapsed_seconds": 5.032528567127883,
+      "solver_log": {
+        "path": "artifacts/classification/ordinary-c1153-v1/open-fifth-deficit-partition-v2/second-live-triple-gate-v1/multi-deficit-propagation-gate-v1/discriminator-5s/results/intersection-3-third-00-fourth-000-fifth-000-deficit-001-second-019-cube-000-000/solver.log",
+        "sha256": "8fba55cea0f98be36fab7b65349dda867a58aabfcf974a46098f5123830ac5cb"
+      },
+      "stabilizer_tier": "high",
+      "status": "FIXED_CAP_TIMEOUT",
+      "target_child_id": "intersection-3-third-00-fourth-000-fifth-000-deficit-001",
+      "terminal_fixed_primary_count": 9,
+      "terminal_forbidden_primary_count": 57,
+      "terminal_state_sha256": "29f3bc4d05a2c90973d02e5379105714b98e552637163b32e37aa910015a5183",
+      "unit_recipe_sha256": "e3e1ad8bc306a111ea97d20a3dfff884b709a32623a14f5311b2136982ad4b59"
+    },
+    {
+      "branch_count_quantile": "q3",
+      "case_id": "intersection-3-third-00-fourth-000-fifth-000-deficit-001-second-019-cube-014-010",
+      "cube_path": [
+        14,
+        10
+      ],
+      "cube_position": "last_depth_two_cube",
+      "exact_cnf_clauses": 46276,
+      "exact_cnf_sha256": "649cd3033604203b55dc0214e57f3f3649ee4d2506a5d24fb25ed84ac913ba98",
+      "exact_cnf_variables": 10166,
+      "formula_frontier_count": 227,
+      "formula_id": "intersection-3-third-00-fourth-000-fifth-000-deficit-001-second-019",
+      "parent_cnf_sha256": "39cae2fbf472dacfd39c5f4df5576a510754e923967ce20775e41ecb042b0197",
+      "path_trace": [
+        {
+          "depth": 0,
+          "earlier_forbidden_count": 19,
+          "orbit_count": 15,
+          "orbit_index": 14,
+          "selected_variable": 195,
+          "stabilizer_order": 2,
+          "triple": [
+            1,
+            5,
+            9
+          ]
+        },
+        {
+          "depth": 1,
+          "earlier_forbidden_count": 14,
+          "orbit_count": 11,
+          "orbit_index": 10,
+          "selected_variable": 209,
+          "stabilizer_order": 2,
+          "triple": [
+            1,
+            7,
+            9
+          ]
+        }
+      ],
+      "protocol_sha256": "9d5709512259ea973726c7b748b255016c8f85ca217f10af78bea189edda7dfa",
+      "rank_band": "rank_one",
+      "returncode": 0,
+      "root_class": "intersection-3",
+      "sample_category": "q3_nonzero",
+      "schema_version": 1,
+      "second_index": 19,
+      "seconds_cap": 5,
+      "solver_elapsed_seconds": 5.026598476106301,
+      "solver_log": {
+        "path": "artifacts/classification/ordinary-c1153-v1/open-fifth-deficit-partition-v2/second-live-triple-gate-v1/multi-deficit-propagation-gate-v1/discriminator-5s/results/intersection-3-third-00-fourth-000-fifth-000-deficit-001-second-019-cube-014-010/solver.log",
+        "sha256": "8fba55cea0f98be36fab7b65349dda867a58aabfcf974a46098f5123830ac5cb"
+      },
+      "stabilizer_tier": "high",
+      "status": "FIXED_CAP_TIMEOUT",
+      "target_child_id": "intersection-3-third-00-fourth-000-fifth-000-deficit-001",
+      "terminal_fixed_primary_count": 9,
+      "terminal_forbidden_primary_count": 90,
+      "terminal_state_sha256": "d2296c19bdf27897233beafbf0ca0dfcc5ae36697e9ba694624ff4a8c973c17f",
+      "unit_recipe_sha256": "c2ab9591dd46a15e5d0bd02e7cb3cf70a1fcbbff7dddb357ec8f845d450e1575"
+    },
+    {
+      "branch_count_quantile": "q4",
+      "case_id": "intersection-3-third-00-fourth-000-fifth-008-deficit-003-second-000-cube-000-000",
+      "cube_path": [
+        0,
+        0
+      ],
+      "cube_position": "first_depth_two_cube",
+      "exact_cnf_clauses": 46234,
+      "exact_cnf_sha256": "dddee024ad973bd57b64b654e2bf8762c8ad4bfc579852b47c0a10d93b5085be",
+      "exact_cnf_variables": 10166,
+      "formula_frontier_count": 400,
+      "formula_id": "intersection-3-third-00-fourth-000-fifth-008-deficit-003-second-000",
+      "parent_cnf_sha256": "39cae2fbf472dacfd39c5f4df5576a510754e923967ce20775e41ecb042b0197",
+      "path_trace": [
+        {
+          "depth": 0,
+          "earlier_forbidden_count": 0,
+          "orbit_count": 20,
+          "orbit_index": 0,
+          "selected_variable": 39,
+          "stabilizer_order": 1,
+          "triple": [
+            1,
+            2,
+            11
+          ]
+        },
+        {
+          "depth": 1,
+          "earlier_forbidden_count": 0,
+          "orbit_count": 20,
+          "orbit_index": 0,
+          "selected_variable": 95,
+          "stabilizer_order": 1,
+          "triple": [
+            1,
+            3,
+            11
+          ]
+        }
+      ],
+      "protocol_sha256": "9d5709512259ea973726c7b748b255016c8f85ca217f10af78bea189edda7dfa",
+      "rank_band": "later_rank",
+      "returncode": 0,
+      "root_class": "intersection-3",
+      "sample_category": "q4_nonzero",
+      "schema_version": 1,
+      "second_index": 0,
+      "seconds_cap": 5,
+      "solver_elapsed_seconds": 5.0381304698530585,
+      "solver_log": {
+        "path": "artifacts/classification/ordinary-c1153-v1/open-fifth-deficit-partition-v2/second-live-triple-gate-v1/multi-deficit-propagation-gate-v1/discriminator-5s/results/intersection-3-third-00-fourth-000-fifth-008-deficit-003-second-000-cube-000-000/solver.log",
+        "sha256": "8fba55cea0f98be36fab7b65349dda867a58aabfcf974a46098f5123830ac5cb"
+      },
+      "stabilizer_tier": "mid",
+      "status": "FIXED_CAP_TIMEOUT",
+      "target_child_id": "intersection-3-third-00-fourth-000-fifth-008-deficit-003",
+      "terminal_fixed_primary_count": 9,
+      "terminal_forbidden_primary_count": 48,
+      "terminal_state_sha256": "566723d230eb400317168f198f649c4f82d71aa7a96e1eff5b4a0be956aa0785",
+      "unit_recipe_sha256": "29c2da0f6595ad790d6f08a4b567db3d1c97516c4c9d943e00f30222e9ca1e62"
+    },
+    {
+      "branch_count_quantile": "q4",
+      "case_id": "intersection-3-third-00-fourth-000-fifth-008-deficit-003-second-000-cube-019-019",
+      "cube_path": [
+        19,
+        19
+      ],
+      "cube_position": "last_depth_two_cube",
+      "exact_cnf_clauses": 46272,
+      "exact_cnf_sha256": "526cc30ed00741bf9c26eede7c9e2fc2ec0ef103c440b49fb016c68b93b320c2",
+      "exact_cnf_variables": 10166,
+      "formula_frontier_count": 400,
+      "formula_id": "intersection-3-third-00-fourth-000-fifth-008-deficit-003-second-000",
+      "parent_cnf_sha256": "39cae2fbf472dacfd39c5f4df5576a510754e923967ce20775e41ecb042b0197",
+      "path_trace": [
+        {
+          "depth": 0,
+          "earlier_forbidden_count": 19,
+          "orbit_count": 20,
+          "orbit_index": 19,
+          "selected_variable": 84,
+          "stabilizer_order": 1,
+          "triple": [
+            1,
+            2,
+            11
+          ]
+        },
+        {
+          "depth": 1,
+          "earlier_forbidden_count": 19,
+          "orbit_count": 20,
+          "orbit_index": 19,
+          "selected_variable": 140,
+          "stabilizer_order": 1,
+          "triple": [
+            1,
+            3,
+            11
+          ]
+        }
+      ],
+      "protocol_sha256": "9d5709512259ea973726c7b748b255016c8f85ca217f10af78bea189edda7dfa",
+      "rank_band": "later_rank",
+      "returncode": 0,
+      "root_class": "intersection-3",
+      "sample_category": "q4_nonzero",
+      "schema_version": 1,
+      "second_index": 0,
+      "seconds_cap": 5,
+      "solver_elapsed_seconds": 5.0267124469392,
+      "solver_log": {
+        "path": "artifacts/classification/ordinary-c1153-v1/open-fifth-deficit-partition-v2/second-live-triple-gate-v1/multi-deficit-propagation-gate-v1/discriminator-5s/results/intersection-3-third-00-fourth-000-fifth-008-deficit-003-second-000-cube-019-019/solver.log",
+        "sha256": "8fba55cea0f98be36fab7b65349dda867a58aabfcf974a46098f5123830ac5cb"
+      },
+      "stabilizer_tier": "mid",
+      "status": "FIXED_CAP_TIMEOUT",
+      "target_child_id": "intersection-3-third-00-fourth-000-fifth-008-deficit-003",
+      "terminal_fixed_primary_count": 9,
+      "terminal_forbidden_primary_count": 86,
+      "terminal_state_sha256": "07e6f95eacbcb9212c4f01c4d3c33252c1f6faa3bf25f3ade8294c7e72402f83",
+      "unit_recipe_sha256": "e58bfd33e89b72f490611dab9a86cc36ddd0bdd538424a092cbf3d47a20e8b38"
+    },
+    {
+      "branch_count_quantile": "q4",
+      "case_id": "intersection-3-third-00-fourth-000-fifth-008-deficit-003-second-019-cube-000-000",
+      "cube_path": [
+        0,
+        0
+      ],
+      "cube_position": "first_depth_two_cube",
+      "exact_cnf_clauses": 46253,
+      "exact_cnf_sha256": "9e6c70dd94a23aa9454f78b8b31330d1ec2b891cefbc74e0f778062851184700",
+      "exact_cnf_variables": 10166,
+      "formula_frontier_count": 385,
+      "formula_id": "intersection-3-third-00-fourth-000-fifth-008-deficit-003-second-019",
+      "parent_cnf_sha256": "39cae2fbf472dacfd39c5f4df5576a510754e923967ce20775e41ecb042b0197",
+      "path_trace": [
+        {
+          "depth": 0,
+          "earlier_forbidden_count": 0,
+          "orbit_count": 20,
+          "orbit_index": 0,
+          "selected_variable": 95,
+          "stabilizer_order": 1,
+          "triple": [
+            1,
+            3,
+            11
+          ]
+        },
+        {
+          "depth": 1,
+          "earlier_forbidden_count": 0,
+          "orbit_count": 20,
+          "orbit_index": 0,
+          "selected_variable": 109,
+          "stabilizer_order": 1,
+          "triple": [
+            1,
+            5,
+            10
+          ]
+        }
+      ],
+      "protocol_sha256": "9d5709512259ea973726c7b748b255016c8f85ca217f10af78bea189edda7dfa",
+      "rank_band": "later_rank",
+      "returncode": 0,
+      "root_class": "intersection-3",
+      "sample_category": "q4_nonzero",
+      "schema_version": 1,
+      "second_index": 19,
+      "seconds_cap": 5,
+      "solver_elapsed_seconds": 5.023117862874642,
+      "solver_log": {
+        "path": "artifacts/classification/ordinary-c1153-v1/open-fifth-deficit-partition-v2/second-live-triple-gate-v1/multi-deficit-propagation-gate-v1/discriminator-5s/results/intersection-3-third-00-fourth-000-fifth-008-deficit-003-second-019-cube-000-000/solver.log",
+        "sha256": "8fba55cea0f98be36fab7b65349dda867a58aabfcf974a46098f5123830ac5cb"
+      },
+      "stabilizer_tier": "mid",
+      "status": "FIXED_CAP_TIMEOUT",
+      "target_child_id": "intersection-3-third-00-fourth-000-fifth-008-deficit-003",
+      "terminal_fixed_primary_count": 9,
+      "terminal_forbidden_primary_count": 67,
+      "terminal_state_sha256": "b5960868863faac8c3eb55cac06945be1352e5a28251d6e12b12fbfad5c0a65a",
+      "unit_recipe_sha256": "4dcbc80eb03b7bf6c8212536f7480d8ab0cb592305bd3f9692dcb067595e0025"
+    },
+    {
+      "branch_count_quantile": "q4",
+      "case_id": "intersection-3-third-00-fourth-000-fifth-008-deficit-003-second-019-cube-019-018",
+      "cube_path": [
+        19,
+        18
+      ],
+      "cube_position": "last_depth_two_cube",
+      "exact_cnf_clauses": 46290,
+      "exact_cnf_sha256": "546f2860c4d5a7f3184c3615b46e0e25a154906a5d7940be1f2d5b61fc0a47b7",
+      "exact_cnf_variables": 10166,
+      "formula_frontier_count": 385,
+      "formula_id": "intersection-3-third-00-fourth-000-fifth-008-deficit-003-second-019",
+      "parent_cnf_sha256": "39cae2fbf472dacfd39c5f4df5576a510754e923967ce20775e41ecb042b0197",
+      "path_trace": [
+        {
+          "depth": 0,
+          "earlier_forbidden_count": 19,
+          "orbit_count": 20,
+          "orbit_index": 19,
+          "selected_variable": 140,
+          "stabilizer_order": 1,
+          "triple": [
+            1,
+            3,
+            11
+          ]
+        },
+        {
+          "depth": 1,
+          "earlier_forbidden_count": 18,
+          "orbit_count": 19,
+          "orbit_index": 18,
+          "selected_variable": 175,
+          "stabilizer_order": 1,
+          "triple": [
+            1,
+            4,
+            11
+          ]
+        }
+      ],
+      "protocol_sha256": "9d5709512259ea973726c7b748b255016c8f85ca217f10af78bea189edda7dfa",
+      "rank_band": "later_rank",
+      "returncode": 0,
+      "root_class": "intersection-3",
+      "sample_category": "q4_nonzero",
+      "schema_version": 1,
+      "second_index": 19,
+      "seconds_cap": 5,
+      "solver_elapsed_seconds": 5.022822835016996,
+      "solver_log": {
+        "path": "artifacts/classification/ordinary-c1153-v1/open-fifth-deficit-partition-v2/second-live-triple-gate-v1/multi-deficit-propagation-gate-v1/discriminator-5s/results/intersection-3-third-00-fourth-000-fifth-008-deficit-003-second-019-cube-019-018/solver.log",
+        "sha256": "8fba55cea0f98be36fab7b65349dda867a58aabfcf974a46098f5123830ac5cb"
+      },
+      "stabilizer_tier": "mid",
+      "status": "FIXED_CAP_TIMEOUT",
+      "target_child_id": "intersection-3-third-00-fourth-000-fifth-008-deficit-003",
+      "terminal_fixed_primary_count": 9,
+      "terminal_forbidden_primary_count": 104,
+      "terminal_state_sha256": "c634fdac34ea420ce2294be4347df0df82aadc0bfb616de04cbdc4100a5ab2ba",
+      "unit_recipe_sha256": "539b81f90ef4ccaa677dfb93590741a31b0130708487d57b03dcd2961bb2e8a4"
+    },
+    {
+      "branch_count_quantile": "q3",
+      "case_id": "intersection-4-third-01-fourth-002-fifth-003-deficit-002-second-000-cube-000-000",
+      "cube_path": [
+        0,
+        0
+      ],
+      "cube_position": "first_depth_two_cube",
+      "exact_cnf_clauses": 46217,
+      "exact_cnf_sha256": "8c57d5271684a5b07d6b4fb1e420841c067821441c063abe81ff671959f31058",
+      "exact_cnf_variables": 10166,
+      "formula_frontier_count": 421,
+      "formula_id": "intersection-4-third-01-fourth-002-fifth-003-deficit-002-second-000",
+      "parent_cnf_sha256": "13deb69f954b931aeb9f5785eeb7903d31755b129f59d8306db5ae8d3beff11f",
+      "path_trace": [
+        {
+          "depth": 0,
+          "earlier_forbidden_count": 0,
+          "orbit_count": 21,
+          "orbit_index": 0,
+          "selected_variable": 33,
+          "stabilizer_order": 1,
+          "triple": [
+            1,
+            2,
+            10
+          ]
+        },
+        {
+          "depth": 1,
+          "earlier_forbidden_count": 0,
+          "orbit_count": 21,
+          "orbit_index": 0,
+          "selected_variable": 34,
+          "stabilizer_order": 1,
+          "triple": [
+            1,
+            2,
+            11
+          ]
+        }
+      ],
+      "protocol_sha256": "9d5709512259ea973726c7b748b255016c8f85ca217f10af78bea189edda7dfa",
+      "rank_band": "later_rank",
+      "returncode": 0,
+      "root_class": "intersection-4",
+      "sample_category": "q3_nonzero",
+      "schema_version": 1,
+      "second_index": 0,
+      "seconds_cap": 5,
+      "solver_elapsed_seconds": 5.040495845023543,
+      "solver_log": {
+        "path": "artifacts/classification/ordinary-c1153-v1/open-fifth-deficit-partition-v2/second-live-triple-gate-v1/multi-deficit-propagation-gate-v1/discriminator-5s/results/intersection-4-third-01-fourth-002-fifth-003-deficit-002-second-000-cube-000-000/solver.log",
+        "sha256": "8fba55cea0f98be36fab7b65349dda867a58aabfcf974a46098f5123830ac5cb"
+      },
+      "stabilizer_tier": "high",
+      "status": "FIXED_CAP_TIMEOUT",
+      "target_child_id": "intersection-4-third-01-fourth-002-fifth-003-deficit-002",
+      "terminal_fixed_primary_count": 9,
+      "terminal_forbidden_primary_count": 31,
+      "terminal_state_sha256": "cc478e29a815d4dca808940b45392719e7c94d7eeb21662a492d68de6cd1836b",
+      "unit_recipe_sha256": "1b0d35e3eb385d931d11ef4ed4369620adbe1beed5c13fefcca2342c6c7dffcf"
+    },
+    {
+      "branch_count_quantile": "q3",
+      "case_id": "intersection-4-third-01-fourth-002-fifth-003-deficit-002-second-000-cube-020-020",
+      "cube_path": [
+        20,
+        20
+      ],
+      "cube_position": "last_depth_two_cube",
+      "exact_cnf_clauses": 46257,
+      "exact_cnf_sha256": "bbcaa032045f7af92230896ed930a7ac6a58bd5f47cc99b73b4d41435d8f1f2c",
+      "exact_cnf_variables": 10166,
+      "formula_frontier_count": 421,
+      "formula_id": "intersection-4-third-01-fourth-002-fifth-003-deficit-002-second-000",
+      "parent_cnf_sha256": "13deb69f954b931aeb9f5785eeb7903d31755b129f59d8306db5ae8d3beff11f",
+      "path_trace": [
+        {
+          "depth": 0,
+          "earlier_forbidden_count": 20,
+          "orbit_count": 21,
+          "orbit_index": 20,
+          "selected_variable": 84,
+          "stabilizer_order": 1,
+          "triple": [
+            1,
+            2,
+            10
+          ]
+        },
+        {
+          "depth": 1,
+          "earlier_forbidden_count": 20,
+          "orbit_count": 21,
+          "orbit_index": 20,
+          "selected_variable": 140,
+          "stabilizer_order": 1,
+          "triple": [
+            1,
+            3,
+            9
+          ]
+        }
+      ],
+      "protocol_sha256": "9d5709512259ea973726c7b748b255016c8f85ca217f10af78bea189edda7dfa",
+      "rank_band": "later_rank",
+      "returncode": 0,
+      "root_class": "intersection-4",
+      "sample_category": "q3_nonzero",
+      "schema_version": 1,
+      "second_index": 0,
+      "seconds_cap": 5,
+      "solver_elapsed_seconds": 5.040748613886535,
+      "solver_log": {
+        "path": "artifacts/classification/ordinary-c1153-v1/open-fifth-deficit-partition-v2/second-live-triple-gate-v1/multi-deficit-propagation-gate-v1/discriminator-5s/results/intersection-4-third-01-fourth-002-fifth-003-deficit-002-second-000-cube-020-020/solver.log",
+        "sha256": "8fba55cea0f98be36fab7b65349dda867a58aabfcf974a46098f5123830ac5cb"
+      },
+      "stabilizer_tier": "high",
+      "status": "FIXED_CAP_TIMEOUT",
+      "target_child_id": "intersection-4-third-01-fourth-002-fifth-003-deficit-002",
+      "terminal_fixed_primary_count": 9,
+      "terminal_forbidden_primary_count": 71,
+      "terminal_state_sha256": "1909ab66ef9ff20c55883dcc09b5fe061b4cb44367b42ced5b5b1d313a6db4cf",
+      "unit_recipe_sha256": "4b6a14527e4cf9214cdf3b8bbf2ac00d165f302826224a5856cb940842a26c24"
+    },
+    {
+      "branch_count_quantile": "q3",
+      "case_id": "intersection-4-third-01-fourth-002-fifth-003-deficit-002-second-015-cube-000-000",
+      "cube_path": [
+        0,
+        0
+      ],
+      "cube_position": "first_depth_two_cube",
+      "exact_cnf_clauses": 46237,
+      "exact_cnf_sha256": "4bdb76ff0e481691f267a6f8ba7ca57573b76155f2037ddeabcc199f65e6688f",
+      "exact_cnf_variables": 10166,
+      "formula_frontier_count": 282,
+      "formula_id": "intersection-4-third-01-fourth-002-fifth-003-deficit-002-second-015",
+      "parent_cnf_sha256": "13deb69f954b931aeb9f5785eeb7903d31755b129f59d8306db5ae8d3beff11f",
+      "path_trace": [
+        {
+          "depth": 0,
+          "earlier_forbidden_count": 0,
+          "orbit_count": 16,
+          "orbit_index": 0,
+          "selected_variable": 88,
+          "stabilizer_order": 2,
+          "triple": [
+            1,
+            3,
+            9
+          ]
+        },
+        {
+          "depth": 1,
+          "earlier_forbidden_count": 0,
+          "orbit_count": 21,
+          "orbit_index": 0,
+          "selected_variable": 89,
+          "stabilizer_order": 1,
+          "triple": [
+            1,
+            3,
+            10
+          ]
+        }
+      ],
+      "protocol_sha256": "9d5709512259ea973726c7b748b255016c8f85ca217f10af78bea189edda7dfa",
+      "rank_band": "later_rank",
+      "returncode": 0,
+      "root_class": "intersection-4",
+      "sample_category": "q3_nonzero",
+      "schema_version": 1,
+      "second_index": 15,
+      "seconds_cap": 5,
+      "solver_elapsed_seconds": 5.036609067115933,
+      "solver_log": {
+        "path": "artifacts/classification/ordinary-c1153-v1/open-fifth-deficit-partition-v2/second-live-triple-gate-v1/multi-deficit-propagation-gate-v1/discriminator-5s/results/intersection-4-third-01-fourth-002-fifth-003-deficit-002-second-015-cube-000-000/solver.log",
+        "sha256": "8fba55cea0f98be36fab7b65349dda867a58aabfcf974a46098f5123830ac5cb"
+      },
+      "stabilizer_tier": "high",
+      "status": "FIXED_CAP_TIMEOUT",
+      "target_child_id": "intersection-4-third-01-fourth-002-fifth-003-deficit-002",
+      "terminal_fixed_primary_count": 9,
+      "terminal_forbidden_primary_count": 51,
+      "terminal_state_sha256": "9652c1b80baca9e683a1d2f42155e3556829965a91533116a2fd2325e5a4a6e8",
+      "unit_recipe_sha256": "9e4b7a606378cd89e51f3302b192f2a484abc6579c1aea7c93163a35a31746f7"
+    },
+    {
+      "branch_count_quantile": "q3",
+      "case_id": "intersection-4-third-01-fourth-002-fifth-003-deficit-002-second-015-cube-015-010",
+      "cube_path": [
+        15,
+        10
+      ],
+      "cube_position": "last_depth_two_cube",
+      "exact_cnf_clauses": 46271,
+      "exact_cnf_sha256": "fd75410030b438e4197b546779cb20a689d4f0b47ca6706b20477958dca6bc13",
+      "exact_cnf_variables": 10166,
+      "formula_frontier_count": 282,
+      "formula_id": "intersection-4-third-01-fourth-002-fifth-003-deficit-002-second-015",
+      "parent_cnf_sha256": "13deb69f954b931aeb9f5785eeb7903d31755b129f59d8306db5ae8d3beff11f",
+      "path_trace": [
+        {
+          "depth": 0,
+          "earlier_forbidden_count": 20,
+          "orbit_count": 16,
+          "orbit_index": 15,
+          "selected_variable": 140,
+          "stabilizer_order": 2,
+          "triple": [
+            1,
+            3,
+            9
+          ]
+        },
+        {
+          "depth": 1,
+          "earlier_forbidden_count": 14,
+          "orbit_count": 11,
+          "orbit_index": 10,
+          "selected_variable": 209,
+          "stabilizer_order": 2,
+          "triple": [
+            1,
+            7,
+            9
+          ]
+        }
+      ],
+      "protocol_sha256": "9d5709512259ea973726c7b748b255016c8f85ca217f10af78bea189edda7dfa",
+      "rank_band": "later_rank",
+      "returncode": 0,
+      "root_class": "intersection-4",
+      "sample_category": "q3_nonzero",
+      "schema_version": 1,
+      "second_index": 15,
+      "seconds_cap": 5,
+      "solver_elapsed_seconds": 5.043915071059018,
+      "solver_log": {
+        "path": "artifacts/classification/ordinary-c1153-v1/open-fifth-deficit-partition-v2/second-live-triple-gate-v1/multi-deficit-propagation-gate-v1/discriminator-5s/results/intersection-4-third-01-fourth-002-fifth-003-deficit-002-second-015-cube-015-010/solver.log",
+        "sha256": "8fba55cea0f98be36fab7b65349dda867a58aabfcf974a46098f5123830ac5cb"
+      },
+      "stabilizer_tier": "high",
+      "status": "FIXED_CAP_TIMEOUT",
+      "target_child_id": "intersection-4-third-01-fourth-002-fifth-003-deficit-002",
+      "terminal_fixed_primary_count": 9,
+      "terminal_forbidden_primary_count": 85,
+      "terminal_state_sha256": "2b24565aaec967b3d130c9418bdbf5335e931a52c291fb83e33eb9c47fd19a02",
+      "unit_recipe_sha256": "e232ead2bb4c5bcb20e3448a3a23342738bf57d09572c148feb4c7edd0cd0908"
+    },
+    {
+      "branch_count_quantile": "q4",
+      "case_id": "intersection-4-third-01-fourth-002-fifth-004-deficit-000-second-000-cube-000-000",
+      "cube_path": [
+        0,
+        0
+      ],
+      "cube_position": "first_depth_two_cube",
+      "exact_cnf_clauses": 46219,
+      "exact_cnf_sha256": "33ef60d566020af93dfebcdeeac09ceeabe9d2f6b607009f6098a70abff21e63",
+      "exact_cnf_variables": 10166,
+      "formula_frontier_count": 421,
+      "formula_id": "intersection-4-third-01-fourth-002-fifth-004-deficit-000-second-000",
+      "parent_cnf_sha256": "13deb69f954b931aeb9f5785eeb7903d31755b129f59d8306db5ae8d3beff11f",
+      "path_trace": [
+        {
+          "depth": 0,
+          "earlier_forbidden_count": 0,
+          "orbit_count": 21,
+          "orbit_index": 0,
+          "selected_variable": 33,
+          "stabilizer_order": 1,
+          "triple": [
+            1,
+            2,
+            10
+          ]
+        },
+        {
+          "depth": 1,
+          "earlier_forbidden_count": 0,
+          "orbit_count": 21,
+          "orbit_index": 0,
+          "selected_variable": 34,
+          "stabilizer_order": 1,
+          "triple": [
+            1,
+            2,
+            11
+          ]
+        }
+      ],
+      "protocol_sha256": "9d5709512259ea973726c7b748b255016c8f85ca217f10af78bea189edda7dfa",
+      "rank_band": "rank_zero",
+      "returncode": 0,
+      "root_class": "intersection-4",
+      "sample_category": "rank_zero",
+      "schema_version": 1,
+      "second_index": 0,
+      "seconds_cap": 5,
+      "solver_elapsed_seconds": 5.0187306420411915,
+      "solver_log": {
+        "path": "artifacts/classification/ordinary-c1153-v1/open-fifth-deficit-partition-v2/second-live-triple-gate-v1/multi-deficit-propagation-gate-v1/discriminator-5s/results/intersection-4-third-01-fourth-002-fifth-004-deficit-000-second-000-cube-000-000/solver.log",
+        "sha256": "8fba55cea0f98be36fab7b65349dda867a58aabfcf974a46098f5123830ac5cb"
+      },
+      "stabilizer_tier": "high",
+      "status": "FIXED_CAP_TIMEOUT",
+      "target_child_id": "intersection-4-third-01-fourth-002-fifth-004-deficit-000",
+      "terminal_fixed_primary_count": 9,
+      "terminal_forbidden_primary_count": 33,
+      "terminal_state_sha256": "f83cbe7e5232dda1062e17b6dabe6e4d855d6ab30ea89061c7801560ead6dd6f",
+      "unit_recipe_sha256": "285114a8e385b4ac955a7681c88f13c60741dc04ca2f3716eacf39190f33febe"
+    },
+    {
+      "branch_count_quantile": "q4",
+      "case_id": "intersection-4-third-01-fourth-002-fifth-004-deficit-000-second-000-cube-020-020",
+      "cube_path": [
+        20,
+        20
+      ],
+      "cube_position": "last_depth_two_cube",
+      "exact_cnf_clauses": 46259,
+      "exact_cnf_sha256": "cfc9ec0a30521d33e166a32dc62c7e20ce4bc6fe9ffab6a1de5a1935c4c170ff",
+      "exact_cnf_variables": 10166,
+      "formula_frontier_count": 421,
+      "formula_id": "intersection-4-third-01-fourth-002-fifth-004-deficit-000-second-000",
+      "parent_cnf_sha256": "13deb69f954b931aeb9f5785eeb7903d31755b129f59d8306db5ae8d3beff11f",
+      "path_trace": [
+        {
+          "depth": 0,
+          "earlier_forbidden_count": 20,
+          "orbit_count": 21,
+          "orbit_index": 20,
+          "selected_variable": 84,
+          "stabilizer_order": 1,
+          "triple": [
+            1,
+            2,
+            10
+          ]
+        },
+        {
+          "depth": 1,
+          "earlier_forbidden_count": 20,
+          "orbit_count": 21,
+          "orbit_index": 20,
+          "selected_variable": 140,
+          "stabilizer_order": 1,
+          "triple": [
+            1,
+            3,
+            10
+          ]
+        }
+      ],
+      "protocol_sha256": "9d5709512259ea973726c7b748b255016c8f85ca217f10af78bea189edda7dfa",
+      "rank_band": "rank_zero",
+      "returncode": 0,
+      "root_class": "intersection-4",
+      "sample_category": "rank_zero",
+      "schema_version": 1,
+      "second_index": 0,
+      "seconds_cap": 5,
+      "solver_elapsed_seconds": 5.039980728179216,
+      "solver_log": {
+        "path": "artifacts/classification/ordinary-c1153-v1/open-fifth-deficit-partition-v2/second-live-triple-gate-v1/multi-deficit-propagation-gate-v1/discriminator-5s/results/intersection-4-third-01-fourth-002-fifth-004-deficit-000-second-000-cube-020-020/solver.log",
+        "sha256": "8fba55cea0f98be36fab7b65349dda867a58aabfcf974a46098f5123830ac5cb"
+      },
+      "stabilizer_tier": "high",
+      "status": "FIXED_CAP_TIMEOUT",
+      "target_child_id": "intersection-4-third-01-fourth-002-fifth-004-deficit-000",
+      "terminal_fixed_primary_count": 9,
+      "terminal_forbidden_primary_count": 73,
+      "terminal_state_sha256": "a166f3d4ade963f61f093a39e0edf810be5c3095af8122fee335fb25b77b683e",
+      "unit_recipe_sha256": "eb2821e782b4cebedd951702a3f0d2a125f245883a4296d8f4cdccfb165152a4"
+    },
+    {
+      "branch_count_quantile": "q4",
+      "case_id": "intersection-4-third-01-fourth-002-fifth-004-deficit-000-second-015-cube-000-000",
+      "cube_path": [
+        0,
+        0
+      ],
+      "cube_position": "first_depth_two_cube",
+      "exact_cnf_clauses": 46239,
+      "exact_cnf_sha256": "bf3a17493d6d7484c1aafac4d11d1a4b38f86b129a8c77d57c194ab03fdcf4d3",
+      "exact_cnf_variables": 10166,
+      "formula_frontier_count": 416,
+      "formula_id": "intersection-4-third-01-fourth-002-fifth-004-deficit-000-second-015",
+      "parent_cnf_sha256": "13deb69f954b931aeb9f5785eeb7903d31755b129f59d8306db5ae8d3beff11f",
+      "path_trace": [
+        {
+          "depth": 0,
+          "earlier_forbidden_count": 0,
+          "orbit_count": 21,
+          "orbit_index": 0,
+          "selected_variable": 33,
+          "stabilizer_order": 1,
+          "triple": [
+            1,
+            2,
+            10
+          ]
+        },
+        {
+          "depth": 1,
+          "earlier_forbidden_count": 0,
+          "orbit_count": 21,
+          "orbit_index": 0,
+          "selected_variable": 34,
+          "stabilizer_order": 1,
+          "triple": [
+            1,
+            2,
+            11
+          ]
+        }
+      ],
+      "protocol_sha256": "9d5709512259ea973726c7b748b255016c8f85ca217f10af78bea189edda7dfa",
+      "rank_band": "rank_zero",
+      "returncode": 0,
+      "root_class": "intersection-4",
+      "sample_category": "rank_zero",
+      "schema_version": 1,
+      "second_index": 15,
+      "seconds_cap": 5,
+      "solver_elapsed_seconds": 5.048044675029814,
+      "solver_log": {
+        "path": "artifacts/classification/ordinary-c1153-v1/open-fifth-deficit-partition-v2/second-live-triple-gate-v1/multi-deficit-propagation-gate-v1/discriminator-5s/results/intersection-4-third-01-fourth-002-fifth-004-deficit-000-second-015-cube-000-000/solver.log",
+        "sha256": "8fba55cea0f98be36fab7b65349dda867a58aabfcf974a46098f5123830ac5cb"
+      },
+      "stabilizer_tier": "high",
+      "status": "FIXED_CAP_TIMEOUT",
+      "target_child_id": "intersection-4-third-01-fourth-002-fifth-004-deficit-000",
+      "terminal_fixed_primary_count": 9,
+      "terminal_forbidden_primary_count": 53,
+      "terminal_state_sha256": "11023f26b46ff9e2de67973c78c87efa9e967b1544d0131800b6df3f896d904a",
+      "unit_recipe_sha256": "e3295fb951426e2f703169d2dd540c8bffc6c08ff541ad4689319e60e46d046b"
+    },
+    {
+      "branch_count_quantile": "q4",
+      "case_id": "intersection-4-third-01-fourth-002-fifth-004-deficit-000-second-015-cube-020-019",
+      "cube_path": [
+        20,
+        19
+      ],
+      "cube_position": "last_depth_two_cube",
+      "exact_cnf_clauses": 46278,
+      "exact_cnf_sha256": "fa5ce1082fcd2dd047ec481c799643a02b1b0c9c9e4bb6fba9c8361109ad88d1",
+      "exact_cnf_variables": 10166,
+      "formula_frontier_count": 416,
+      "formula_id": "intersection-4-third-01-fourth-002-fifth-004-deficit-000-second-015",
+      "parent_cnf_sha256": "13deb69f954b931aeb9f5785eeb7903d31755b129f59d8306db5ae8d3beff11f",
+      "path_trace": [
+        {
+          "depth": 0,
+          "earlier_forbidden_count": 20,
+          "orbit_count": 21,
+          "orbit_index": 20,
+          "selected_variable": 84,
+          "stabilizer_order": 1,
+          "triple": [
+            1,
+            2,
+            10
+          ]
+        },
+        {
+          "depth": 1,
+          "earlier_forbidden_count": 19,
+          "orbit_count": 20,
+          "orbit_index": 19,
+          "selected_variable": 175,
+          "stabilizer_order": 1,
+          "triple": [
+            1,
+            4,
+            10
+          ]
+        }
+      ],
+      "protocol_sha256": "9d5709512259ea973726c7b748b255016c8f85ca217f10af78bea189edda7dfa",
+      "rank_band": "rank_zero",
+      "returncode": 0,
+      "root_class": "intersection-4",
+      "sample_category": "rank_zero",
+      "schema_version": 1,
+      "second_index": 15,
+      "seconds_cap": 5,
+      "solver_elapsed_seconds": 5.032835613936186,
+      "solver_log": {
+        "path": "artifacts/classification/ordinary-c1153-v1/open-fifth-deficit-partition-v2/second-live-triple-gate-v1/multi-deficit-propagation-gate-v1/discriminator-5s/results/intersection-4-third-01-fourth-002-fifth-004-deficit-000-second-015-cube-020-019/solver.log",
+        "sha256": "8fba55cea0f98be36fab7b65349dda867a58aabfcf974a46098f5123830ac5cb"
+      },
+      "stabilizer_tier": "high",
+      "status": "FIXED_CAP_TIMEOUT",
+      "target_child_id": "intersection-4-third-01-fourth-002-fifth-004-deficit-000",
+      "terminal_fixed_primary_count": 9,
+      "terminal_forbidden_primary_count": 92,
+      "terminal_state_sha256": "47511667fb9be73503c93c07ff20905e45dc42c2d62e1c02e560f39eff0119c9",
+      "unit_recipe_sha256": "a9e0fad703b1adc35873522b81a6f70d6eb979bb556e6a631ad22919337fca84"
+    },
+    {
+      "branch_count_quantile": "q4",
+      "case_id": "intersection-4-third-02-fourth-000-fifth-000-deficit-003-second-000-cube-000-000",
+      "cube_path": [
+        0,
+        0
+      ],
+      "cube_position": "first_depth_two_cube",
+      "exact_cnf_clauses": 46204,
+      "exact_cnf_sha256": "7c24fffd71d5fc40fbfca4c7595f9e9556d08bc88fe7a1d21e2082d29dc0a195",
+      "exact_cnf_variables": 10166,
+      "formula_frontier_count": 430,
+      "formula_id": "intersection-4-third-02-fourth-000-fifth-000-deficit-003-second-000",
+      "parent_cnf_sha256": "323c99b844f04f4130e3cbb38fda880f0c09924262d09e84020c279ed41fb57b",
+      "path_trace": [
+        {
+          "depth": 0,
+          "earlier_forbidden_count": 0,
+          "orbit_count": 22,
+          "orbit_index": 0,
+          "selected_variable": 50,
+          "stabilizer_order": 1,
+          "triple": [
+            2,
+            5,
+            6
+          ]
+        },
+        {
+          "depth": 1,
+          "earlier_forbidden_count": 0,
+          "orbit_count": 22,
+          "orbit_index": 0,
+          "selected_variable": 106,
+          "stabilizer_order": 1,
+          "triple": [
+            3,
+            5,
+            6
+          ]
+        }
+      ],
+      "protocol_sha256": "9d5709512259ea973726c7b748b255016c8f85ca217f10af78bea189edda7dfa",
+      "rank_band": "later_rank",
+      "returncode": 0,
+      "root_class": "intersection-4",
+      "sample_category": "q4_nonzero",
+      "schema_version": 1,
+      "second_index": 0,
+      "seconds_cap": 5,
+      "solver_elapsed_seconds": 5.0583740880247205,
+      "solver_log": {
+        "path": "artifacts/classification/ordinary-c1153-v1/open-fifth-deficit-partition-v2/second-live-triple-gate-v1/multi-deficit-propagation-gate-v1/discriminator-5s/results/intersection-4-third-02-fourth-000-fifth-000-deficit-003-second-000-cube-000-000/solver.log",
+        "sha256": "8fba55cea0f98be36fab7b65349dda867a58aabfcf974a46098f5123830ac5cb"
+      },
+      "stabilizer_tier": "high",
+      "status": "FIXED_CAP_TIMEOUT",
+      "target_child_id": "intersection-4-third-02-fourth-000-fifth-000-deficit-003",
+      "terminal_fixed_primary_count": 9,
+      "terminal_forbidden_primary_count": 18,
+      "terminal_state_sha256": "54366cc76d7c9bbc8cf3408e2222e740e98e715405011d3a9a923fe7eca33beb",
+      "unit_recipe_sha256": "2680140336b39cd541212913ec42b1f30796825d4d7556a55873a43996038b8d"
+    },
+    {
+      "branch_count_quantile": "q4",
+      "case_id": "intersection-4-third-02-fourth-000-fifth-000-deficit-003-second-000-cube-021-016",
+      "cube_path": [
+        21,
+        16
+      ],
+      "cube_position": "last_depth_two_cube",
+      "exact_cnf_clauses": 46241,
+      "exact_cnf_sha256": "c442c5105f07d3826d1b93bebfc62b9a8fc7766de0c5f118cb2ca62bd7a34444",
+      "exact_cnf_variables": 10166,
+      "formula_frontier_count": 430,
+      "formula_id": "intersection-4-third-02-fourth-000-fifth-000-deficit-003-second-000",
+      "parent_cnf_sha256": "323c99b844f04f4130e3cbb38fda880f0c09924262d09e84020c279ed41fb57b",
+      "path_trace": [
+        {
+          "depth": 0,
+          "earlier_forbidden_count": 21,
+          "orbit_count": 22,
+          "orbit_index": 21,
+          "selected_variable": 311,
+          "stabilizer_order": 1,
+          "triple": [
+            2,
+            5,
+            6
+          ]
+        },
+        {
+          "depth": 1,
+          "earlier_forbidden_count": 16,
+          "orbit_count": 17,
+          "orbit_index": 16,
+          "selected_variable": 381,
+          "stabilizer_order": 1,
+          "triple": [
+            3,
+            5,
+            6
+          ]
+        }
+      ],
+      "protocol_sha256": "9d5709512259ea973726c7b748b255016c8f85ca217f10af78bea189edda7dfa",
+      "rank_band": "later_rank",
+      "returncode": 0,
+      "root_class": "intersection-4",
+      "sample_category": "q4_nonzero",
+      "schema_version": 1,
+      "second_index": 0,
+      "seconds_cap": 5,
+      "solver_elapsed_seconds": 5.028036853997037,
+      "solver_log": {
+        "path": "artifacts/classification/ordinary-c1153-v1/open-fifth-deficit-partition-v2/second-live-triple-gate-v1/multi-deficit-propagation-gate-v1/discriminator-5s/results/intersection-4-third-02-fourth-000-fifth-000-deficit-003-second-000-cube-021-016/solver.log",
+        "sha256": "8fba55cea0f98be36fab7b65349dda867a58aabfcf974a46098f5123830ac5cb"
+      },
+      "stabilizer_tier": "high",
+      "status": "FIXED_CAP_TIMEOUT",
+      "target_child_id": "intersection-4-third-02-fourth-000-fifth-000-deficit-003",
+      "terminal_fixed_primary_count": 9,
+      "terminal_forbidden_primary_count": 55,
+      "terminal_state_sha256": "73c401910c2c66d8e528cad52122e8ecc31a8a6f50ba52e39df207e4a202846d",
+      "unit_recipe_sha256": "bc26569b34b13601286e76e243981e88e01bb58b9ab912c2fd9900f946febed2"
+    },
+    {
+      "branch_count_quantile": "q4",
+      "case_id": "intersection-4-third-02-fourth-000-fifth-000-deficit-003-second-019-cube-000-000",
+      "cube_path": [
+        0,
+        0
+      ],
+      "cube_position": "first_depth_two_cube",
+      "exact_cnf_clauses": 46228,
+      "exact_cnf_sha256": "f5d990879b953fcecc1e4ce0eaa0bf1044fab9446a08ce30915bd3baf44b0f8b",
+      "exact_cnf_variables": 10166,
+      "formula_frontier_count": 198,
+      "formula_id": "intersection-4-third-02-fourth-000-fifth-000-deficit-003-second-019",
+      "parent_cnf_sha256": "323c99b844f04f4130e3cbb38fda880f0c09924262d09e84020c279ed41fb57b",
+      "path_trace": [
+        {
+          "depth": 0,
+          "earlier_forbidden_count": 0,
+          "orbit_count": 14,
+          "orbit_index": 0,
+          "selected_variable": 31,
+          "stabilizer_order": 2,
+          "triple": [
+            4,
+            5,
+            8
+          ]
+        },
+        {
+          "depth": 1,
+          "earlier_forbidden_count": 0,
+          "orbit_count": 18,
+          "orbit_index": 0,
+          "selected_variable": 32,
+          "stabilizer_order": 1,
+          "triple": [
+            4,
+            5,
+            9
+          ]
+        }
+      ],
+      "protocol_sha256": "9d5709512259ea973726c7b748b255016c8f85ca217f10af78bea189edda7dfa",
+      "rank_band": "later_rank",
+      "returncode": 0,
+      "root_class": "intersection-4",
+      "sample_category": "q4_nonzero",
+      "schema_version": 1,
+      "second_index": 19,
+      "seconds_cap": 5,
+      "solver_elapsed_seconds": 5.040244537871331,
+      "solver_log": {
+        "path": "artifacts/classification/ordinary-c1153-v1/open-fifth-deficit-partition-v2/second-live-triple-gate-v1/multi-deficit-propagation-gate-v1/discriminator-5s/results/intersection-4-third-02-fourth-000-fifth-000-deficit-003-second-019-cube-000-000/solver.log",
+        "sha256": "8fba55cea0f98be36fab7b65349dda867a58aabfcf974a46098f5123830ac5cb"
+      },
+      "stabilizer_tier": "high",
+      "status": "FIXED_CAP_TIMEOUT",
+      "target_child_id": "intersection-4-third-02-fourth-000-fifth-000-deficit-003",
+      "terminal_fixed_primary_count": 9,
+      "terminal_forbidden_primary_count": 42,
+      "terminal_state_sha256": "52b99b26a7199bbec6859be746ab044098d22d3d2e28cf262a99294a3a357da9",
+      "unit_recipe_sha256": "e2dc1b214ab72465fd6b554945769d82e56cdc2ba11a3c4b2a05ab43f82e2ebd"
+    },
+    {
+      "branch_count_quantile": "q4",
+      "case_id": "intersection-4-third-02-fourth-000-fifth-000-deficit-003-second-019-cube-013-008",
+      "cube_path": [
+        13,
+        8
+      ],
+      "cube_position": "last_depth_two_cube",
+      "exact_cnf_clauses": 46256,
+      "exact_cnf_sha256": "e11d5407a4066b98443b6650cf7fffe2779f6e48852eda81d4d38a40da5060b0",
+      "exact_cnf_variables": 10166,
+      "formula_frontier_count": 198,
+      "formula_id": "intersection-4-third-02-fourth-000-fifth-000-deficit-003-second-019",
+      "parent_cnf_sha256": "323c99b844f04f4130e3cbb38fda880f0c09924262d09e84020c279ed41fb57b",
+      "path_trace": [
+        {
+          "depth": 0,
+          "earlier_forbidden_count": 17,
+          "orbit_count": 14,
+          "orbit_index": 13,
+          "selected_variable": 425,
+          "stabilizer_order": 2,
+          "triple": [
+            4,
+            5,
+            8
+          ]
+        },
+        {
+          "depth": 1,
+          "earlier_forbidden_count": 11,
+          "orbit_count": 9,
+          "orbit_index": 8,
+          "selected_variable": 426,
+          "stabilizer_order": 2,
+          "triple": [
+            4,
+            5,
+            9
+          ]
+        }
+      ],
+      "protocol_sha256": "9d5709512259ea973726c7b748b255016c8f85ca217f10af78bea189edda7dfa",
+      "rank_band": "later_rank",
+      "returncode": 0,
+      "root_class": "intersection-4",
+      "sample_category": "q4_nonzero",
+      "schema_version": 1,
+      "second_index": 19,
+      "seconds_cap": 5,
+      "solver_elapsed_seconds": 5.034631463931873,
+      "solver_log": {
+        "path": "artifacts/classification/ordinary-c1153-v1/open-fifth-deficit-partition-v2/second-live-triple-gate-v1/multi-deficit-propagation-gate-v1/discriminator-5s/results/intersection-4-third-02-fourth-000-fifth-000-deficit-003-second-019-cube-013-008/solver.log",
+        "sha256": "8fba55cea0f98be36fab7b65349dda867a58aabfcf974a46098f5123830ac5cb"
+      },
+      "stabilizer_tier": "high",
+      "status": "FIXED_CAP_TIMEOUT",
+      "target_child_id": "intersection-4-third-02-fourth-000-fifth-000-deficit-003",
+      "terminal_fixed_primary_count": 9,
+      "terminal_forbidden_primary_count": 70,
+      "terminal_state_sha256": "79fc5720aa4a2e0f1caa932fc7fca9748247d5f8e74cb02996c3cef9d8b91397",
+      "unit_recipe_sha256": "26a114e99c6b88e0f1ce0fa953eda99f9c5f5ecb1e51e181ca92cc0ecb99076f"
+    }
+  ],
+  "protocol": {
+    "path": "artifacts/classification/ordinary-c1153-v1/open-fifth-deficit-partition-v2/second-live-triple-gate-v1/multi-deficit-propagation-gate-v1/discriminator-5s/protocol.json",
+    "sha256": "9d5709512259ea973726c7b748b255016c8f85ca217f10af78bea189edda7dfa"
+  },
+  "schema_version": 1,
+  "status": "COMPLETE_PENDING_INDEPENDENT_AUDIT"
+}

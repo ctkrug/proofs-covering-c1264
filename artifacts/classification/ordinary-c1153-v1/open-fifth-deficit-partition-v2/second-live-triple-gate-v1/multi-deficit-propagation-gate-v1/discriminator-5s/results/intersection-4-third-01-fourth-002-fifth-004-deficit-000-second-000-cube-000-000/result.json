@@ -1,0 +1,63 @@
+{
+  "branch_count_quantile": "q4",
+  "case_id": "intersection-4-third-01-fourth-002-fifth-004-deficit-000-second-000-cube-000-000",
+  "cube_path": [
+    0,
+    0
+  ],
+  "cube_position": "first_depth_two_cube",
+  "exact_cnf_clauses": 46219,
+  "exact_cnf_sha256": "33ef60d566020af93dfebcdeeac09ceeabe9d2f6b607009f6098a70abff21e63",
+  "exact_cnf_variables": 10166,
+  "formula_frontier_count": 421,
+  "formula_id": "intersection-4-third-01-fourth-002-fifth-004-deficit-000-second-000",
+  "parent_cnf_sha256": "13deb69f954b931aeb9f5785eeb7903d31755b129f59d8306db5ae8d3beff11f",
+  "path_trace": [
+    {
+      "depth": 0,
+      "earlier_forbidden_count": 0,
+      "orbit_count": 21,
+      "orbit_index": 0,
+      "selected_variable": 33,
+      "stabilizer_order": 1,
+      "triple": [
+        1,
+        2,
+        10
+      ]
+    },
+    {
+      "depth": 1,
+      "earlier_forbidden_count": 0,
+      "orbit_count": 21,
+      "orbit_index": 0,
+      "selected_variable": 34,
+      "stabilizer_order": 1,
+      "triple": [
+        1,
+        2,
+        11
+      ]
+    }
+  ],
+  "protocol_sha256": "9d5709512259ea973726c7b748b255016c8f85ca217f10af78bea189edda7dfa",
+  "rank_band": "rank_zero",
+  "returncode": 0,
+  "root_class": "intersection-4",
+  "sample_category": "rank_zero",
+  "schema_version": 1,
+  "second_index": 0,
+  "seconds_cap": 5,
+  "solver_elapsed_seconds": 5.0187306420411915,
+  "solver_log": {
+    "path": "artifacts/classification/ordinary-c1153-v1/open-fifth-deficit-partition-v2/second-live-triple-gate-v1/multi-deficit-propagation-gate-v1/discriminator-5s/results/intersection-4-third-01-fourth-002-fifth-004-deficit-000-second-000-cube-000-000/solver.log",
+    "sha256": "8fba55cea0f98be36fab7b65349dda867a58aabfcf974a46098f5123830ac5cb"
+  },
+  "stabilizer_tier": "high",
+  "status": "FIXED_CAP_TIMEOUT",
+  "target_child_id": "intersection-4-third-01-fourth-002-fifth-004-deficit-000",
+  "terminal_fixed_primary_count": 9,
+  "terminal_forbidden_primary_count": 33,
+  "terminal_state_sha256": "f83cbe7e5232dda1062e17b6dabe6e4d855d6ab30ea89061c7801560ead6dd6f",
+  "unit_recipe_sha256": "285114a8e385b4ac955a7681c88f13c60741dc04ca2f3716eacf39190f33febe"
+}
