@@ -30,18 +30,19 @@ OUTPUT = TARGET / "independent-audit.json"
 def audit() -> dict:
     selected = runner.selected_segment()
     jobs = selected["cases"]
+    case_count = selected["case_count"]
     protocol = json.loads(runner.PROTOCOL.read_text())
     assignment = json.loads(runner.ASSIGNMENT.read_text())
     summary = json.loads(runner.SUMMARY.read_text())
     with gzip.open(runner.INDEX, "rb") as stream:
         index = json.loads(stream.read())
-    if protocol["case_ids_sha256"] != selected["case_ids_sha256"] or protocol["case_count"] != 256:
+    if protocol["case_ids_sha256"] != selected["case_ids_sha256"] or protocol["case_count"] != case_count:
         raise ValueError("protocol membership mismatch")
     if assignment["cloud"]["case_ids_sha256"] != selected["case_ids_sha256"] or assignment["local"]["case_count"] != 0:
         raise ValueError("host assignment mismatch")
-    if summary["completed"] != 256 or summary["index_sha256"] != base.sha(runner.INDEX):
+    if summary["completed"] != case_count or summary["index_sha256"] != base.sha(runner.INDEX):
         raise ValueError("summary completion binding mismatch")
-    if len(index["rows"]) != 256 or [row["case_id"] for row in index["rows"]] != [row["case_id"] for row in jobs]:
+    if len(index["rows"]) != case_count or [row["case_id"] for row in index["rows"]] != [row["case_id"] for row in jobs]:
         raise ValueError("index membership/order mismatch")
     source = json.loads(base.SOURCE.read_text())
     cases = {row["id"]: row for row in source["target_cases"]}
@@ -94,17 +95,17 @@ def audit() -> dict:
         margins.append(margin)
     median_runtime = statistics.median(runtimes)
     measured = sum(path.stat().st_size for path in [runner.PROTOCOL, runner.ASSIGNMENT, runner.INDEX, *runner.RECEIPTS.glob("*.json"), *runner.CERTIFICATES.glob("*.gz")])
-    projection = __import__("math").ceil(measured * 4402 / 256 * 1.1)
+    projection = __import__("math").ceil(measured * 4402 / case_count * 1.1)
     report = {
         "schema_version": 2, "status": "VALID", "segment_id": runner.SEGMENT_ID,
-        "selected": 256, "completed": 256, "independently_checked_weighted_obstructions": certified,
-        "open_no_certificate_count": 256 - certified, "sat_count": 0,
+        "selected": case_count, "completed": case_count, "independently_checked_weighted_obstructions": certified,
+        "open_no_certificate_count": case_count - certified, "sat_count": 0,
         "minimum_arithmetic_margin": min(margins) if margins else None,
         "maximum_arithmetic_margin": max(margins) if margins else None,
         "median_runtime_seconds": median_runtime,
         "measured_compact_v2_bytes": measured,
         "projected_complete_4402_bytes_with_10pct_safety": projection,
-        "continuation_gate_passed": certified >= 240 and median_runtime < 0.5 and projection <= 12_102_474,
+        "continuation_gate_passed": certified >= min(240, case_count) and median_runtime < 0.5 and projection <= 12_102_474,
         "protocol_sha256": base.sha(runner.PROTOCOL), "summary_sha256": base.sha(runner.SUMMARY), "index_sha256": base.sha(runner.INDEX),
         "claim_limit": "Only these exact cubes close. No ancestor or campaign ledger changes without complete independent aggregation.",
     }

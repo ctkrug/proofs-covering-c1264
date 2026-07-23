@@ -7,6 +7,7 @@ import gzip
 import importlib.util
 import json
 import math
+import os
 import statistics
 import sys
 from pathlib import Path
@@ -18,11 +19,16 @@ base = importlib.util.module_from_spec(spec)
 assert spec.loader
 spec.loader.exec_module(base)
 
-SEGMENT_ID = "weighted-scale-001"
+SEGMENT_NUMBER = int(os.environ.get("WEIGHTED_SCALE_SEGMENT", "1"))
+SEGMENT_ID = f"weighted-scale-{SEGMENT_NUMBER:03d}"
 COMPACT = base.COMPACT
 MANIFEST = base.SCALE_MANIFEST
 AUDIT = base.SCALE_AUDIT
-REVIEW = COMPACT / "scale-segments/weighted-scale-000/compact-v2/review-gate.json"
+REVIEW = (
+    COMPACT / "scale-segments/weighted-scale-000/compact-v2/review-gate.json"
+    if SEGMENT_NUMBER == 1
+    else COMPACT / f"scale-segments/weighted-scale-{SEGMENT_NUMBER - 1:03d}/review-gate.json"
+)
 TARGET = COMPACT / f"scale-segments/{SEGMENT_ID}"
 PROTOCOL = TARGET / "protocol.json"
 ASSIGNMENT = TARGET / "assignment.json"
@@ -38,13 +44,15 @@ def selected_segment() -> dict:
     review = json.loads(REVIEW.read_text())
     if audit["status"] != "VALID" or not audit["membership_exhaustive"] or not audit["segments_pairwise_disjoint"]:
         raise ValueError("scale audit is not valid")
-    if review["status"] != "COMPACT_V2_GATE_PASSED_SEGMENT_001_AUTHORIZED":
-        raise ValueError("compact-v2 review did not authorize segment 001")
-    if base.sha(REVIEW.parent / "independent-audit.json") != review["bindings"]["independent_audit_sha256"]:
-        raise ValueError("compact-v2 review audit binding mismatch")
+    authorized_names = {SEGMENT_ID, f"weighted-scale-segment-{SEGMENT_NUMBER:03d}"}
+    if review["single_next_action"]["name"] not in authorized_names:
+        raise ValueError(f"previous review did not authorize {SEGMENT_ID}")
+    audit_path = REVIEW.parent / "independent-audit.json"
+    if base.sha(audit_path) != review["bindings"]["independent_audit_sha256"]:
+        raise ValueError("previous review audit binding mismatch")
     rows = [row for row in manifest["segments"] if row["segment_id"] == SEGMENT_ID]
-    if len(rows) != 1 or rows[0]["case_count"] != 256:
-        raise ValueError("frozen segment 001 membership mismatch")
+    if len(rows) != 1 or rows[0]["case_count"] <= 0:
+        raise ValueError(f"frozen {SEGMENT_ID} membership mismatch")
     if rows[0]["case_ids_sha256"] != base.object_sha([row["case_id"] for row in rows[0]["cases"]]):
         raise ValueError("segment 001 case binding mismatch")
     return rows[0]
@@ -56,13 +64,13 @@ def freeze() -> dict:
         "schema_version": 2,
         "status": "AUTHORIZED_NOT_RUN",
         "segment_id": SEGMENT_ID,
-        "case_count": 256,
-        "segment_row_index": 1,
+        "case_count": selected["case_count"],
+        "segment_row_index": SEGMENT_NUMBER,
         "case_ids_sha256": selected["case_ids_sha256"],
         "bindings": {
             "scale_manifest_sha256": base.sha(MANIFEST),
             "scale_audit_sha256": base.sha(AUDIT),
-            "compact_v2_review_sha256": base.sha(REVIEW),
+            "previous_review_sha256": base.sha(REVIEW),
         },
         "fixed_route": {
             "continuous_lp_seconds_per_case": 1,
@@ -71,13 +79,13 @@ def freeze() -> dict:
             "artifact_format": "compact-v2 pointer receipts and one deterministic gzip exact certificate per certified case",
             "sat_pb_solver_calls": 0,
         },
-        "stop_rule": "Stop after exactly 256 results or any audit/resource failure. Segment 002 is not authorized.",
+        "stop_rule": f"Stop after exactly {selected['case_count']} results or any audit/resource failure. No later segment is authorized by this protocol.",
     }
     assignment = {
         "schema_version": 2,
         "segment_id": SEGMENT_ID,
         "protocol_object_sha256": base.object_sha(protocol),
-        "cloud": {"role": "EXCLUSIVE_CONTINUOUS_LP_AND_RECEIPT_OWNER", "segment_row_index": 1, "case_ids_sha256": selected["case_ids_sha256"]},
+        "cloud": {"role": "EXCLUSIVE_CONTINUOUS_LP_AND_RECEIPT_OWNER", "segment_row_index": SEGMENT_NUMBER, "case_ids_sha256": selected["case_ids_sha256"]},
         "local": {"role": "INDEPENDENT_CHECK_AND_PUBLICATION_ONLY", "case_count": 0},
     }
     base.write_immutable(PROTOCOL, base.compact_json(protocol))
@@ -119,7 +127,7 @@ def run() -> dict:
         receipt = {
             "schema_version": 2,
             "segment_id": SEGMENT_ID,
-            "segment_row_index": 1,
+            "segment_row_index": SEGMENT_NUMBER,
             "case_row_index": row_index,
             "case_id": job["case_id"],
             "case_object_sha256": base.object_sha(job),
@@ -153,7 +161,7 @@ def run() -> dict:
         "open_no_certificate_count": len(rows) - len(margins), "sat_count": 0,
         "runtime_seconds": base.distribution(runtimes), "arithmetic_margin": base.distribution(margins),
         "compact_v2_bytes_before_summary": measured,
-        "projected_complete_4402_bytes_with_10pct_safety": math.ceil(measured * 4402 / 256 * 1.1),
+        "projected_complete_4402_bytes_with_10pct_safety": math.ceil(measured * 4402 / len(rows) * 1.1),
     }
     base.write_immutable(SUMMARY, base.compact_json(summary))
     return summary
