@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "status": "AUDITED_COMPACT_GATE_COMPLETE_SCALE_FROZEN",
+  "campaign_artifact_commit": "081373bf03eeaffc30612c54d06b00d6bfba4e9c",
+  "bindings": {
+    "source_index_sha256": "4a8eae03e324c347cb77fe4e254d123960dde164b04400aa8d4cd4851987c4a3",
+    "build_summary_sha256": "e0e1ca40cf0e7c2549a041fc99d0f97e4d6455d6530075a67b9592f223573a6c",
+    "independent_audit_sha256": "a0fe52b1e29c889cc4c65ed9180b7f1302b16d217825f077164660ee7a4a17df",
+    "scale_manifest_sha256": "e0a600f8cbc5dd87252fee9c8adeb945bb7379b816f2ce0f2b1d0828e03f1fec",
+    "scale_audit_sha256": "2c2b735f6988604bf4dbc06b9ba6646a617685c6f64b4d43ef753bf45a0e50a2"
+  },
+  "compact_audit": {
+    "source_results_bound": 96,
+    "byte_identical_certificates_bound": 96,
+    "residual_domains_independently_reconstructed": 96,
+    "arithmetic_certificates_independently_checked": 96,
+    "compact_certificate_bytes": 95253,
+    "compact_receipt_bytes": 135100,
+    "aggregate_index_bytes": 9587,
+    "measured_package_bytes": 239940,
+    "projected_full_4402_bytes_without_safety": 11002249,
+    "safety_margin_percent": 10,
+    "projected_full_4402_bytes_with_safety": 12102474,
+    "maximum_projected_bytes": 50000000,
+    "success_gate_passed": true,
+    "original_full_artifacts_preserved": true,
+    "new_mathematical_compute": false
+  },
+  "frozen_scale": {
+    "frontier_case_count": 4402,
+    "already_certified_weighted_cases": 102,
+    "open_case_count": 4300,
+    "segment_count": 17,
+    "segment_size": 256,
+    "last_segment_size": 204,
+    "membership_exhaustive": true,
+    "segments_pairwise_disjoint": true,
+    "execution_authorized": false
+  },
+  "ledger_effect": {
+    "weighted_depth_two_semantic_closures": 102,
+    "new_mathematical_closures_this_tranche": 0,
+    "parent_formula_closures": 0,
+    "fifth_leaf_closures": 0,
+    "fourth_parent_closures": 0,
+    "global_extension_ledger": "33/47"
+  },
+  "single_next_action": {
+    "name": "weighted-scale-segment-000",
+    "scope": "Exactly the 256 cases in frozen segment weighted-scale-000.",
+    "method": "Cloud sequential continuous set-cover LP at the unchanged one-second cap; emit deterministic compact certificates and receipts only; independently reconstruct and check every certificate before it counts.",
+    "stop": "Stop after exactly 256 cases or immediately on membership/hash/checker/resource failure. Failed certificate attempts remain open. Do not run segment 001 in the same tranche.",
+    "continue_gate": "At least 240 independently checked certificates, 100% checker reliability, median runtime below 0.5 seconds, and measured storage consistent with the 12.11 MB full projection."
+  },
+  "claim_limit": "The compact package changes representation only. The scale manifest closes nothing until future per-case arithmetic certificates are independently checked; ancestors still require complete aggregation.",
+  "completed_at": "2026-07-23T10:12:00Z"
+}
