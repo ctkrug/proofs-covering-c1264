@@ -1,0 +1,1630 @@
+{
+  "claim_limit": "Runner replay is not the independent result audit; no generic scale follows automatically.",
+  "completed": 48,
+  "compressed_proof_bytes": 12744428,
+  "counts": {
+    "FIXED_CAP_TIMEOUT": 14,
+    "UNSAT_VERIFIED_BY_RUNNER": 34
+  },
+  "counts_by_position": {
+    "early_orbit_zero": {
+      "FIXED_CAP_TIMEOUT": 14,
+      "UNSAT_VERIFIED_BY_RUNNER": 10
+    },
+    "latter_three_quarter": {
+      "FIXED_CAP_TIMEOUT": 0,
+      "UNSAT_VERIFIED_BY_RUNNER": 24
+    }
+  },
+  "hypothesis_gate_provisional": true,
+  "outcomes": [
+    {
+      "exact_cnf_clauses": 46342,
+      "exact_cnf_sha256": "cb9f5120c4556c743ebf7c366a892058ca4d7400ee7a78761797cc31c870927e",
+      "exact_cnf_variables": 10166,
+      "fifth_case_id": "intersection-3-third-00-fourth-000-fifth-025",
+      "inherited_unit_sha256": "a68e9397b8ca94a8d2ba729557c08af85037daf608712d40eee415843a00d3b6",
+      "leaf_id": "intersection-3-third-00-fourth-000-fifth-025-sixth-000",
+      "parent_cnf_sha256": "39cae2fbf472dacfd39c5f4df5576a510754e923967ce20775e41ecb042b0197",
+      "proof": {
+        "compressed_bytes": 1325023,
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-sixth-discriminator-final/discriminator-results/intersection-3-third-00-fourth-000-fifth-025-sixth-000/proof.drat.gz",
+        "sha256": "f4329fac9d691eb2885014b78d5139428ceaff04f47667bf827c4a66820f3247",
+        "uncompressed_bytes": 4573527,
+        "uncompressed_sha256": "35e3645b7101c3bd324ac65300579050ece81ada9b17a5d58a87afa6f3008a57"
+      },
+      "protocol_sha256": "131e6b3fab3a1a599743846ab0c9f8f605188d9cb8fec172499881b5ee803077",
+      "replay_log": {
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-sixth-discriminator-final/discriminator-results/intersection-3-third-00-fourth-000-fifth-025-sixth-000/runner-replay.log",
+        "sha256": "b5145ce2f3ca1e2c88174a0eef70f80b9e9dbc27ce270b40c88ab21e43d7e069"
+      },
+      "schema_version": 1,
+      "seconds_cap": 5,
+      "sixth_branch_count": 117,
+      "sixth_index": 0,
+      "sixth_position": "early_orbit_zero",
+      "sixth_unit_sha256": "84b9bb077be0d8a29d0d01ef350d718b77c2ec5f40c3ab90502b1b4b5016c550",
+      "solver_elapsed_seconds": 2.3234109170007287,
+      "solver_log": {
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-sixth-discriminator-final/discriminator-results/intersection-3-third-00-fourth-000-fifth-025-sixth-000/solver.log",
+        "sha256": "bde6e1eede96772c07c8ce29fd18088863815bd043aa59a06f11f5838cf8a162"
+      },
+      "stabilizer_order": 8,
+      "stabilizer_tier": "mid",
+      "status": "UNSAT_VERIFIED_BY_RUNNER",
+      "top_parent": "intersection-3"
+    },
+    {
+      "exact_cnf_clauses": 46584,
+      "exact_cnf_sha256": "24dbe258a7ea6579b3b8e594154f1262488211768daf3be9e5bb9cc4a4350fc8",
+      "exact_cnf_variables": 10166,
+      "fifth_case_id": "intersection-3-third-00-fourth-000-fifth-025",
+      "inherited_unit_sha256": "a68e9397b8ca94a8d2ba729557c08af85037daf608712d40eee415843a00d3b6",
+      "leaf_id": "intersection-3-third-00-fourth-000-fifth-025-sixth-087",
+      "parent_cnf_sha256": "39cae2fbf472dacfd39c5f4df5576a510754e923967ce20775e41ecb042b0197",
+      "proof": {
+        "compressed_bytes": 112806,
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-sixth-discriminator-final/discriminator-results/intersection-3-third-00-fourth-000-fifth-025-sixth-087/proof.drat.gz",
+        "sha256": "1e3afbabbd464f750040d54f2a7df2ea5e3168dfe13a26014d40edcfe38f0b5c",
+        "uncompressed_bytes": 603017,
+        "uncompressed_sha256": "26410ee6f06360548e6c6b326e69945d216bf0e97f1a3b8fe4f8d5f45930afee"
+      },
+      "protocol_sha256": "131e6b3fab3a1a599743846ab0c9f8f605188d9cb8fec172499881b5ee803077",
+      "replay_log": {
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-sixth-discriminator-final/discriminator-results/intersection-3-third-00-fourth-000-fifth-025-sixth-087/runner-replay.log",
+        "sha256": "3d90ad4abeecfb93ea8a590c5c9ba0072ce77e3b7f6004da8d5fdbe7290834fc"
+      },
+      "schema_version": 1,
+      "seconds_cap": 5,
+      "sixth_branch_count": 117,
+      "sixth_index": 87,
+      "sixth_position": "latter_three_quarter",
+      "sixth_unit_sha256": "7b63f9ab29edfd7fedfda10fc5030355111386b8718e15fe89284221aef6d8a7",
+      "solver_elapsed_seconds": 0.16166208399954485,
+      "solver_log": {
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-sixth-discriminator-final/discriminator-results/intersection-3-third-00-fourth-000-fifth-025-sixth-087/solver.log",
+        "sha256": "bde6e1eede96772c07c8ce29fd18088863815bd043aa59a06f11f5838cf8a162"
+      },
+      "stabilizer_order": 8,
+      "stabilizer_tier": "mid",
+      "status": "UNSAT_VERIFIED_BY_RUNNER",
+      "top_parent": "intersection-3"
+    },
+    {
+      "exact_cnf_clauses": 46351,
+      "exact_cnf_sha256": "0a5b13a5714f360d17f4559001643b8e128306322d3013fd1f5e2afad3937c5d",
+      "exact_cnf_variables": 10166,
+      "fifth_case_id": "intersection-3-third-01-fourth-000-fifth-023",
+      "inherited_unit_sha256": "beeb89ec981e7e9c0c16da44416ad89b91f02b7e056719c3437e9b6f44c91c83",
+      "leaf_id": "intersection-3-third-01-fourth-000-fifth-023-sixth-000",
+      "parent_cnf_sha256": "688faa230c837734c923f92b3efbb9232562846fa9ded3255d85f0f7147e8913",
+      "proof": {
+        "compressed_bytes": 676169,
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-sixth-discriminator-final/discriminator-results/intersection-3-third-01-fourth-000-fifth-023-sixth-000/proof.drat.gz",
+        "sha256": "ba3d92beb19aa9e53372457a6171b48c2326feeae1cf788b14386cd1aa4e1d3c",
+        "uncompressed_bytes": 2037443,
+        "uncompressed_sha256": "1a50de8a57f8f95c39cd74e8753d78216a1198265f323a83b0be0a1fc5bd5284"
+      },
+      "protocol_sha256": "131e6b3fab3a1a599743846ab0c9f8f605188d9cb8fec172499881b5ee803077",
+      "replay_log": {
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-sixth-discriminator-final/discriminator-results/intersection-3-third-01-fourth-000-fifth-023-sixth-000/runner-replay.log",
+        "sha256": "971b3a37e219b5fab39c2f12177d774dafd77437c93c7420896d2ba3214b1336"
+      },
+      "schema_version": 1,
+      "seconds_cap": 5,
+      "sixth_branch_count": 156,
+      "sixth_index": 0,
+      "sixth_position": "early_orbit_zero",
+      "sixth_unit_sha256": "93a73825c1b761d11bf2b3f4dff760d07888d3fde05dcf55f1da84aa6041a5a8",
+      "solver_elapsed_seconds": 0.6188930409998648,
+      "solver_log": {
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-sixth-discriminator-final/discriminator-results/intersection-3-third-01-fourth-000-fifth-023-sixth-000/solver.log",
+        "sha256": "bde6e1eede96772c07c8ce29fd18088863815bd043aa59a06f11f5838cf8a162"
+      },
+      "stabilizer_order": 4,
+      "stabilizer_tier": "low",
+      "status": "UNSAT_VERIFIED_BY_RUNNER",
+      "top_parent": "intersection-3"
+    },
+    {
+      "exact_cnf_clauses": 46586,
+      "exact_cnf_sha256": "de881975e7240d7eefd11cfa211ca14b5be868929fa5fda0ef5e7438fb87e994",
+      "exact_cnf_variables": 10166,
+      "fifth_case_id": "intersection-3-third-01-fourth-000-fifth-023",
+      "inherited_unit_sha256": "beeb89ec981e7e9c0c16da44416ad89b91f02b7e056719c3437e9b6f44c91c83",
+      "leaf_id": "intersection-3-third-01-fourth-000-fifth-023-sixth-117",
+      "parent_cnf_sha256": "688faa230c837734c923f92b3efbb9232562846fa9ded3255d85f0f7147e8913",
+      "proof": {
+        "compressed_bytes": 112825,
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-sixth-discriminator-final/discriminator-results/intersection-3-third-01-fourth-000-fifth-023-sixth-117/proof.drat.gz",
+        "sha256": "6647e5d1b9f8f389f2179f779cd4fba932f8c342d43bf0d121acf738606d25b9",
+        "uncompressed_bytes": 603025,
+        "uncompressed_sha256": "5de242953a5db8b884bafcbe6ed9872097eddc4379c3c52260d248b64f5ddcce"
+      },
+      "protocol_sha256": "131e6b3fab3a1a599743846ab0c9f8f605188d9cb8fec172499881b5ee803077",
+      "replay_log": {
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-sixth-discriminator-final/discriminator-results/intersection-3-third-01-fourth-000-fifth-023-sixth-117/runner-replay.log",
+        "sha256": "884ac17a9f32719d34f353a91e0e4a45bb3a851a2735312331be2e6fee2d0133"
+      },
+      "schema_version": 1,
+      "seconds_cap": 5,
+      "sixth_branch_count": 156,
+      "sixth_index": 117,
+      "sixth_position": "latter_three_quarter",
+      "sixth_unit_sha256": "306e9e891c745a677f28d446aab4110943401ef58d745338b14e45a1df18c30a",
+      "solver_elapsed_seconds": 0.08106545899954654,
+      "solver_log": {
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-sixth-discriminator-final/discriminator-results/intersection-3-third-01-fourth-000-fifth-023-sixth-117/solver.log",
+        "sha256": "bde6e1eede96772c07c8ce29fd18088863815bd043aa59a06f11f5838cf8a162"
+      },
+      "stabilizer_order": 4,
+      "stabilizer_tier": "low",
+      "status": "UNSAT_VERIFIED_BY_RUNNER",
+      "top_parent": "intersection-3"
+    },
+    {
+      "claim_limit": "UNKNOWN closes no branch",
+      "exact_cnf_clauses": 46231,
+      "exact_cnf_sha256": "9a7614f3e8f8d0773f0ae0b8c3b5bec26e204b23fdf373f89bd326ea7417a92c",
+      "exact_cnf_variables": 10166,
+      "fifth_case_id": "intersection-3-third-01-fourth-001-fifth-001",
+      "inherited_unit_sha256": "56aa5a37939ca675f23f1facbdc5072a428d56b1d3c154d2f20174a9a5db815d",
+      "leaf_id": "intersection-3-third-01-fourth-001-fifth-001-sixth-000",
+      "parent_cnf_sha256": "688faa230c837734c923f92b3efbb9232562846fa9ded3255d85f0f7147e8913",
+      "protocol_sha256": "131e6b3fab3a1a599743846ab0c9f8f605188d9cb8fec172499881b5ee803077",
+      "returncode": 0,
+      "schema_version": 1,
+      "seconds_cap": 5,
+      "sixth_branch_count": 208,
+      "sixth_index": 0,
+      "sixth_position": "early_orbit_zero",
+      "sixth_unit_sha256": "b58a3da5fde2680191877ec88a1aa7d06927cc3b30cdf0d0db8c39b488891576",
+      "solver_elapsed_seconds": 5.035465791999741,
+      "solver_log": {
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-sixth-discriminator-final/discriminator-results/intersection-3-third-01-fourth-001-fifth-001-sixth-000/solver.log",
+        "sha256": "8fba55cea0f98be36fab7b65349dda867a58aabfcf974a46098f5123830ac5cb"
+      },
+      "stabilizer_order": 4,
+      "stabilizer_tier": "mid",
+      "status": "FIXED_CAP_TIMEOUT",
+      "top_parent": "intersection-3"
+    },
+    {
+      "exact_cnf_clauses": 46569,
+      "exact_cnf_sha256": "2ed9b2cb2c9bb7de2614618711f6ba03d422d72776e70575817f5aea484fd7fd",
+      "exact_cnf_variables": 10166,
+      "fifth_case_id": "intersection-3-third-01-fourth-001-fifth-001",
+      "inherited_unit_sha256": "56aa5a37939ca675f23f1facbdc5072a428d56b1d3c154d2f20174a9a5db815d",
+      "leaf_id": "intersection-3-third-01-fourth-001-fifth-001-sixth-156",
+      "parent_cnf_sha256": "688faa230c837734c923f92b3efbb9232562846fa9ded3255d85f0f7147e8913",
+      "proof": {
+        "compressed_bytes": 113363,
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-sixth-discriminator-final/discriminator-results/intersection-3-third-01-fourth-001-fifth-001-sixth-156/proof.drat.gz",
+        "sha256": "d564373612221c4c6069aca734e36d4e9712e3a9fe09161a02a486bb92cdaebe",
+        "uncompressed_bytes": 604321,
+        "uncompressed_sha256": "2f6396ecdcee9e20c561c5ca6616abe1b0e0443a8f9d64d8622ba2e8e6532bbb"
+      },
+      "protocol_sha256": "131e6b3fab3a1a599743846ab0c9f8f605188d9cb8fec172499881b5ee803077",
+      "replay_log": {
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-sixth-discriminator-final/discriminator-results/intersection-3-third-01-fourth-001-fifth-001-sixth-156/runner-replay.log",
+        "sha256": "18e775d6e98f948880f8c2fe57bb81840b5c1556144efec5ddc1ef5ae7a6abe6"
+      },
+      "schema_version": 1,
+      "seconds_cap": 5,
+      "sixth_branch_count": 208,
+      "sixth_index": 156,
+      "sixth_position": "latter_three_quarter",
+      "sixth_unit_sha256": "6aa3b5577d8571e950a71bd0aafc668505880ca1d1b8faefca86e3d2f4ec9d99",
+      "solver_elapsed_seconds": 0.07625370799996745,
+      "solver_log": {
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-sixth-discriminator-final/discriminator-results/intersection-3-third-01-fourth-001-fifth-001-sixth-156/solver.log",
+        "sha256": "bde6e1eede96772c07c8ce29fd18088863815bd043aa59a06f11f5838cf8a162"
+      },
+      "stabilizer_order": 4,
+      "stabilizer_tier": "mid",
+      "status": "UNSAT_VERIFIED_BY_RUNNER",
+      "top_parent": "intersection-3"
+    },
+    {
+      "exact_cnf_clauses": 46375,
+      "exact_cnf_sha256": "f5f124efdf0dab4c86c1997f81be6895a07eb56c360b75b0117e994c941c91a6",
+      "exact_cnf_variables": 10166,
+      "fifth_case_id": "intersection-3-third-01-fourth-001-fifth-013",
+      "inherited_unit_sha256": "ef3a3152859a99210a7e2cf502dd960f875728cdaaed1fa82ab108821c24a8c0",
+      "leaf_id": "intersection-3-third-01-fourth-001-fifth-013-sixth-000",
+      "parent_cnf_sha256": "688faa230c837734c923f92b3efbb9232562846fa9ded3255d85f0f7147e8913",
+      "proof": {
+        "compressed_bytes": 1956696,
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-sixth-discriminator-final/discriminator-results/intersection-3-third-01-fourth-001-fifth-013-sixth-000/proof.drat.gz",
+        "sha256": "1f3e7a5815a3208eab5db6923ace141f7997510876ee576b983b9bce77b72bef",
+        "uncompressed_bytes": 5639928,
+        "uncompressed_sha256": "7cf12e57ffda70f8870c7203f5092ddc1b5441f72d99e0f69fdccb733901167d"
+      },
+      "protocol_sha256": "131e6b3fab3a1a599743846ab0c9f8f605188d9cb8fec172499881b5ee803077",
+      "replay_log": {
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-sixth-discriminator-final/discriminator-results/intersection-3-third-01-fourth-001-fifth-013-sixth-000/runner-replay.log",
+        "sha256": "89017f871ea2158fb2a320553c638d70b5f51b4d4162666abac0382499011dcf"
+      },
+      "schema_version": 1,
+      "seconds_cap": 5,
+      "sixth_branch_count": 53,
+      "sixth_index": 0,
+      "sixth_position": "early_orbit_zero",
+      "sixth_unit_sha256": "1dadd7223f8953c76459851cca53c62990c1a7b87a5795d31bbfa4059160e9f8",
+      "solver_elapsed_seconds": 2.9684915420002653,
+      "solver_log": {
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-sixth-discriminator-final/discriminator-results/intersection-3-third-01-fourth-001-fifth-013-sixth-000/solver.log",
+        "sha256": "bde6e1eede96772c07c8ce29fd18088863815bd043aa59a06f11f5838cf8a162"
+      },
+      "stabilizer_order": 32,
+      "stabilizer_tier": "high",
+      "status": "UNSAT_VERIFIED_BY_RUNNER",
+      "top_parent": "intersection-3"
+    },
+    {
+      "exact_cnf_clauses": 46588,
+      "exact_cnf_sha256": "22e51ce482e9388dcbabcc98b04fb79a63c1eb7841eb9e97061e8bf08e1782ab",
+      "exact_cnf_variables": 10166,
+      "fifth_case_id": "intersection-3-third-01-fourth-001-fifth-013",
+      "inherited_unit_sha256": "ef3a3152859a99210a7e2cf502dd960f875728cdaaed1fa82ab108821c24a8c0",
+      "leaf_id": "intersection-3-third-01-fourth-001-fifth-013-sixth-039",
+      "parent_cnf_sha256": "688faa230c837734c923f92b3efbb9232562846fa9ded3255d85f0f7147e8913",
+      "proof": {
+        "compressed_bytes": 114749,
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-sixth-discriminator-final/discriminator-results/intersection-3-third-01-fourth-001-fifth-013-sixth-039/proof.drat.gz",
+        "sha256": "b7dbbc909a1c9a4623c824c2c104ee25d2e9e2d14657927bcced2e03cc086dfa",
+        "uncompressed_bytes": 607921,
+        "uncompressed_sha256": "57cb181ac574aee38d11186e18e5375ae700d7f85c3ac75d10eb681e07ea970e"
+      },
+      "protocol_sha256": "131e6b3fab3a1a599743846ab0c9f8f605188d9cb8fec172499881b5ee803077",
+      "replay_log": {
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-sixth-discriminator-final/discriminator-results/intersection-3-third-01-fourth-001-fifth-013-sixth-039/runner-replay.log",
+        "sha256": "5888b5b5c391d702f5b00b2c60c07be368326a89055054985ca670720cc376a8"
+      },
+      "schema_version": 1,
+      "seconds_cap": 5,
+      "sixth_branch_count": 53,
+      "sixth_index": 39,
+      "sixth_position": "latter_three_quarter",
+      "sixth_unit_sha256": "540804eda88cb764d4a4357ee602592dc74e4234474cc0a9b274f95d34832a0b",
+      "solver_elapsed_seconds": 0.08261149999998452,
+      "solver_log": {
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-sixth-discriminator-final/discriminator-results/intersection-3-third-01-fourth-001-fifth-013-sixth-039/solver.log",
+        "sha256": "bde6e1eede96772c07c8ce29fd18088863815bd043aa59a06f11f5838cf8a162"
+      },
+      "stabilizer_order": 32,
+      "stabilizer_tier": "high",
+      "status": "UNSAT_VERIFIED_BY_RUNNER",
+      "top_parent": "intersection-3"
+    },
+    {
+      "exact_cnf_clauses": 46378,
+      "exact_cnf_sha256": "a4c2d92ae612292f2d2d6a06ed2cd5d58886fce4c3036dfd2a0a071c35fae4ec",
+      "exact_cnf_variables": 10166,
+      "fifth_case_id": "intersection-3-third-01-fourth-001-fifth-014",
+      "inherited_unit_sha256": "b5a7fceabc3d2f678666d8291bc43abe2dda05cbc0fced706ac5c8a60ab06dcd",
+      "leaf_id": "intersection-3-third-01-fourth-001-fifth-014-sixth-000",
+      "parent_cnf_sha256": "688faa230c837734c923f92b3efbb9232562846fa9ded3255d85f0f7147e8913",
+      "proof": {
+        "compressed_bytes": 1922569,
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-sixth-discriminator-final/discriminator-results/intersection-3-third-01-fourth-001-fifth-014-sixth-000/proof.drat.gz",
+        "sha256": "56a350ba81b70535c82e7c55b8a52510da2208442081f43da8c0a2ce9d791468",
+        "uncompressed_bytes": 5392155,
+        "uncompressed_sha256": "4206bc0b283491807b2e609a743aa7b35dc42740a07d0e3ab218e424a37df627"
+      },
+      "protocol_sha256": "131e6b3fab3a1a599743846ab0c9f8f605188d9cb8fec172499881b5ee803077",
+      "replay_log": {
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-sixth-discriminator-final/discriminator-results/intersection-3-third-01-fourth-001-fifth-014-sixth-000/runner-replay.log",
+        "sha256": "7411ce7b766d36e0d52c3bedb1b1c5a88e0203dceae06db98485170a5806d594"
+      },
+      "schema_version": 1,
+      "seconds_cap": 5,
+      "sixth_branch_count": 99,
+      "sixth_index": 0,
+      "sixth_position": "early_orbit_zero",
+      "sixth_unit_sha256": "9d9b18720961e9b4689fd763b85e7b6f36160ccd3a8a1c9ddc5103bb0f66c396",
+      "solver_elapsed_seconds": 2.7635312920001525,
+      "solver_log": {
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-sixth-discriminator-final/discriminator-results/intersection-3-third-01-fourth-001-fifth-014-sixth-000/solver.log",
+        "sha256": "bde6e1eede96772c07c8ce29fd18088863815bd043aa59a06f11f5838cf8a162"
+      },
+      "stabilizer_order": 8,
+      "stabilizer_tier": "mid",
+      "status": "UNSAT_VERIFIED_BY_RUNNER",
+      "top_parent": "intersection-3"
+    },
+    {
+      "exact_cnf_clauses": 46591,
+      "exact_cnf_sha256": "678c43a1f0f156a8a483bfe9d6c3b9d16944a9f451798182528f73dce13bf0f9",
+      "exact_cnf_variables": 10166,
+      "fifth_case_id": "intersection-3-third-01-fourth-001-fifth-014",
+      "inherited_unit_sha256": "b5a7fceabc3d2f678666d8291bc43abe2dda05cbc0fced706ac5c8a60ab06dcd",
+      "leaf_id": "intersection-3-third-01-fourth-001-fifth-014-sixth-074",
+      "parent_cnf_sha256": "688faa230c837734c923f92b3efbb9232562846fa9ded3255d85f0f7147e8913",
+      "proof": {
+        "compressed_bytes": 113639,
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-sixth-discriminator-final/discriminator-results/intersection-3-third-01-fourth-001-fifth-014-sixth-074/proof.drat.gz",
+        "sha256": "856de1768369be5f7de7a42a7101c28b83a9c95fdc8ad088e8268731578f6840",
+        "uncompressed_bytes": 605037,
+        "uncompressed_sha256": "e4bd0321c8f59d4c80ed7dc458778013998569e25da663467a4c3a1a37bacce6"
+      },
+      "protocol_sha256": "131e6b3fab3a1a599743846ab0c9f8f605188d9cb8fec172499881b5ee803077",
+      "replay_log": {
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-sixth-discriminator-final/discriminator-results/intersection-3-third-01-fourth-001-fifth-014-sixth-074/runner-replay.log",
+        "sha256": "fbe7848ee79749268cd8324a96331ba12d3e1bef3860eb513806fc450c0e1a7b"
+      },
+      "schema_version": 1,
+      "seconds_cap": 5,
+      "sixth_branch_count": 99,
+      "sixth_index": 74,
+      "sixth_position": "latter_three_quarter",
+      "sixth_unit_sha256": "4d63ef296397f4f5b3e05afee9c06e5660226a14a897827b1eedc861fc4ce0ec",
+      "solver_elapsed_seconds": 0.13634729199930007,
+      "solver_log": {
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-sixth-discriminator-final/discriminator-results/intersection-3-third-01-fourth-001-fifth-014-sixth-074/solver.log",
+        "sha256": "bde6e1eede96772c07c8ce29fd18088863815bd043aa59a06f11f5838cf8a162"
+      },
+      "stabilizer_order": 8,
+      "stabilizer_tier": "mid",
+      "status": "UNSAT_VERIFIED_BY_RUNNER",
+      "top_parent": "intersection-3"
+    },
+    {
+      "claim_limit": "UNKNOWN closes no branch",
+      "exact_cnf_clauses": 46230,
+      "exact_cnf_sha256": "72f79b639e93eab5d1c9ca2a014dfe4c74b03dd7bb39bb66090832b90984b758",
+      "exact_cnf_variables": 10166,
+      "fifth_case_id": "intersection-3-third-02-fourth-000-fifth-001",
+      "inherited_unit_sha256": "20f357f424fbc41c9c2716adde245417b9d86d37d8727c5b7e84c662bdd31dec",
+      "leaf_id": "intersection-3-third-02-fourth-000-fifth-001-sixth-000",
+      "parent_cnf_sha256": "b99320a3c698d5243f28c5433b3f91698507673c162d04512c0c2d3616844677",
+      "protocol_sha256": "131e6b3fab3a1a599743846ab0c9f8f605188d9cb8fec172499881b5ee803077",
+      "returncode": 0,
+      "schema_version": 1,
+      "seconds_cap": 5,
+      "sixth_branch_count": 126,
+      "sixth_index": 0,
+      "sixth_position": "early_orbit_zero",
+      "sixth_unit_sha256": "040316eca5e77dbb2212c1efe8b81cb23bc67ce0ac8cb5c9d902d98bd45ddfa1",
+      "solver_elapsed_seconds": 5.030207332999453,
+      "solver_log": {
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-sixth-discriminator-final/discriminator-results/intersection-3-third-02-fourth-000-fifth-001-sixth-000/solver.log",
+        "sha256": "8fba55cea0f98be36fab7b65349dda867a58aabfcf974a46098f5123830ac5cb"
+      },
+      "stabilizer_order": 12,
+      "stabilizer_tier": "high",
+      "status": "FIXED_CAP_TIMEOUT",
+      "top_parent": "intersection-3"
+    },
+    {
+      "exact_cnf_clauses": 46572,
+      "exact_cnf_sha256": "0e37cef839aa31fe6afa9c3f185436cdc1df49284c497d98dc09e32bdb207676",
+      "exact_cnf_variables": 10166,
+      "fifth_case_id": "intersection-3-third-02-fourth-000-fifth-001",
+      "inherited_unit_sha256": "20f357f424fbc41c9c2716adde245417b9d86d37d8727c5b7e84c662bdd31dec",
+      "leaf_id": "intersection-3-third-02-fourth-000-fifth-001-sixth-094",
+      "parent_cnf_sha256": "b99320a3c698d5243f28c5433b3f91698507673c162d04512c0c2d3616844677",
+      "proof": {
+        "compressed_bytes": 111014,
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-sixth-discriminator-final/discriminator-results/intersection-3-third-02-fourth-000-fifth-001-sixth-094/proof.drat.gz",
+        "sha256": "fdd800407647fd7c50a1d5a4c36b5776e83b622f4a3e7cca78b93b092e51c3f3",
+        "uncompressed_bytes": 599231,
+        "uncompressed_sha256": "86bb0bf2eac868df7671f4bde1434b3054cdee52c323398d2cb35f296af8f8e5"
+      },
+      "protocol_sha256": "131e6b3fab3a1a599743846ab0c9f8f605188d9cb8fec172499881b5ee803077",
+      "replay_log": {
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-sixth-discriminator-final/discriminator-results/intersection-3-third-02-fourth-000-fifth-001-sixth-094/runner-replay.log",
+        "sha256": "02b58d620487cee1f39b58c59a6d8104bd5d615abb3acd176717d0c40f212f85"
+      },
+      "schema_version": 1,
+      "seconds_cap": 5,
+      "sixth_branch_count": 126,
+      "sixth_index": 94,
+      "sixth_position": "latter_three_quarter",
+      "sixth_unit_sha256": "ab105f26593ef8b6168fdcf845ec9065923181f247edab876ea500b2b10ce409",
+      "solver_elapsed_seconds": 0.10771795800064865,
+      "solver_log": {
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-sixth-discriminator-final/discriminator-results/intersection-3-third-02-fourth-000-fifth-001-sixth-094/solver.log",
+        "sha256": "bde6e1eede96772c07c8ce29fd18088863815bd043aa59a06f11f5838cf8a162"
+      },
+      "stabilizer_order": 12,
+      "stabilizer_tier": "high",
+      "status": "UNSAT_VERIFIED_BY_RUNNER",
+      "top_parent": "intersection-3"
+    },
+    {
+      "claim_limit": "UNKNOWN closes no branch",
+      "exact_cnf_clauses": 46276,
+      "exact_cnf_sha256": "79eb5b2132d37043f9a9aa451ae755eab3895dac2dfb47f6d3cdaf2f1cdd4338",
+      "exact_cnf_variables": 10166,
+      "fifth_case_id": "intersection-3-third-03-fourth-017-fifth-000",
+      "inherited_unit_sha256": "8ea5c21f5fb0e6ad651c4b7e507f7a681b2ce4c582b3f253a5fadac9c743a093",
+      "leaf_id": "intersection-3-third-03-fourth-017-fifth-000-sixth-000",
+      "parent_cnf_sha256": "0c1eba2dc4a6d83f010fcbea452b39ef6cea91a26525389ae54344bca743f591",
+      "protocol_sha256": "131e6b3fab3a1a599743846ab0c9f8f605188d9cb8fec172499881b5ee803077",
+      "returncode": 0,
+      "schema_version": 1,
+      "seconds_cap": 5,
+      "sixth_branch_count": 246,
+      "sixth_index": 0,
+      "sixth_position": "early_orbit_zero",
+      "sixth_unit_sha256": "f1769867b0abc7068f5cb7dd41574a420b3cfa4553856f459857ff8e5a525b13",
+      "solver_elapsed_seconds": 5.0248465419999775,
+      "solver_log": {
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-sixth-discriminator-final/discriminator-results/intersection-3-third-03-fourth-017-fifth-000-sixth-000/solver.log",
+        "sha256": "8fba55cea0f98be36fab7b65349dda867a58aabfcf974a46098f5123830ac5cb"
+      },
+      "stabilizer_order": 2,
+      "stabilizer_tier": "low",
+      "status": "FIXED_CAP_TIMEOUT",
+      "top_parent": "intersection-3"
+    },
+    {
+      "exact_cnf_clauses": 46578,
+      "exact_cnf_sha256": "f2d1e469cfa4a767a494d43a40343088496eac3f094b17a8525dbe4ceb716973",
+      "exact_cnf_variables": 10166,
+      "fifth_case_id": "intersection-3-third-03-fourth-017-fifth-000",
+      "inherited_unit_sha256": "8ea5c21f5fb0e6ad651c4b7e507f7a681b2ce4c582b3f253a5fadac9c743a093",
+      "leaf_id": "intersection-3-third-03-fourth-017-fifth-000-sixth-184",
+      "parent_cnf_sha256": "0c1eba2dc4a6d83f010fcbea452b39ef6cea91a26525389ae54344bca743f591",
+      "proof": {
+        "compressed_bytes": 113869,
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-sixth-discriminator-final/discriminator-results/intersection-3-third-03-fourth-017-fifth-000-sixth-184/proof.drat.gz",
+        "sha256": "365f9f2d6dd1ca97a8e0f2abc93caa0ad0613c48e17aea140606a8b00b4087f8",
+        "uncompressed_bytes": 605681,
+        "uncompressed_sha256": "7b16cbbb2bf48dcbf1f8dfbd89a7cc65b09c98df6bd739d0294a4f64610669b6"
+      },
+      "protocol_sha256": "131e6b3fab3a1a599743846ab0c9f8f605188d9cb8fec172499881b5ee803077",
+      "replay_log": {
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-sixth-discriminator-final/discriminator-results/intersection-3-third-03-fourth-017-fifth-000-sixth-184/runner-replay.log",
+        "sha256": "c21d7e50a344ea41fd46f60f5a020e4ddc5cda29b69aba7ccea45b9deea06462"
+      },
+      "schema_version": 1,
+      "seconds_cap": 5,
+      "sixth_branch_count": 246,
+      "sixth_index": 184,
+      "sixth_position": "latter_three_quarter",
+      "sixth_unit_sha256": "e19dab47694f7b49b945d568e3b5853af34f2e85d0c2e406f6541c09600f4f79",
+      "solver_elapsed_seconds": 0.0857229590001225,
+      "solver_log": {
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-sixth-discriminator-final/discriminator-results/intersection-3-third-03-fourth-017-fifth-000-sixth-184/solver.log",
+        "sha256": "bde6e1eede96772c07c8ce29fd18088863815bd043aa59a06f11f5838cf8a162"
+      },
+      "stabilizer_order": 2,
+      "stabilizer_tier": "low",
+      "status": "UNSAT_VERIFIED_BY_RUNNER",
+      "top_parent": "intersection-3"
+    },
+    {
+      "claim_limit": "UNKNOWN closes no branch",
+      "exact_cnf_clauses": 46278,
+      "exact_cnf_sha256": "3eaaf1117d254cd4a87e1f240654b565d929f3fcd57223a37162d9a0690e450b",
+      "exact_cnf_variables": 10166,
+      "fifth_case_id": "intersection-3-third-03-fourth-017-fifth-001",
+      "inherited_unit_sha256": "02f6fb72cd5aaaff2c8230ecefaddc9a578d9c46c7151f92be7df3316980c4ff",
+      "leaf_id": "intersection-3-third-03-fourth-017-fifth-001-sixth-000",
+      "parent_cnf_sha256": "0c1eba2dc4a6d83f010fcbea452b39ef6cea91a26525389ae54344bca743f591",
+      "protocol_sha256": "131e6b3fab3a1a599743846ab0c9f8f605188d9cb8fec172499881b5ee803077",
+      "returncode": 0,
+      "schema_version": 1,
+      "seconds_cap": 5,
+      "sixth_branch_count": 175,
+      "sixth_index": 0,
+      "sixth_position": "early_orbit_zero",
+      "sixth_unit_sha256": "13c1dc569ae4a0d7f90d8f83d22fc9c8fa526e133f8fea0f9526c8533c4d8da3",
+      "solver_elapsed_seconds": 5.02137033300005,
+      "solver_log": {
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-sixth-discriminator-final/discriminator-results/intersection-3-third-03-fourth-017-fifth-001-sixth-000/solver.log",
+        "sha256": "8fba55cea0f98be36fab7b65349dda867a58aabfcf974a46098f5123830ac5cb"
+      },
+      "stabilizer_order": 4,
+      "stabilizer_tier": "low",
+      "status": "FIXED_CAP_TIMEOUT",
+      "top_parent": "intersection-3"
+    },
+    {
+      "exact_cnf_clauses": 46580,
+      "exact_cnf_sha256": "3cfcc4154059b20d301f73a813d429759176060971551194b8fe523273f60324",
+      "exact_cnf_variables": 10166,
+      "fifth_case_id": "intersection-3-third-03-fourth-017-fifth-001",
+      "inherited_unit_sha256": "02f6fb72cd5aaaff2c8230ecefaddc9a578d9c46c7151f92be7df3316980c4ff",
+      "leaf_id": "intersection-3-third-03-fourth-017-fifth-001-sixth-131",
+      "parent_cnf_sha256": "0c1eba2dc4a6d83f010fcbea452b39ef6cea91a26525389ae54344bca743f591",
+      "proof": {
+        "compressed_bytes": 112475,
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-sixth-discriminator-final/discriminator-results/intersection-3-third-03-fourth-017-fifth-001-sixth-131/proof.drat.gz",
+        "sha256": "553158273722bb0194b00dc0ba8f232fa93c33e147992a9b0dda379f7ccc7805",
+        "uncompressed_bytes": 603021,
+        "uncompressed_sha256": "cf3e1ec8827e8b93f8052310841a689ec6a234874fe506c2d6ec10f9a0198dda"
+      },
+      "protocol_sha256": "131e6b3fab3a1a599743846ab0c9f8f605188d9cb8fec172499881b5ee803077",
+      "replay_log": {
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-sixth-discriminator-final/discriminator-results/intersection-3-third-03-fourth-017-fifth-001-sixth-131/runner-replay.log",
+        "sha256": "091477294998c30a3cfdfa6d159d5f0780b4f82ba01416574fb9ccdd7b87a272"
+      },
+      "schema_version": 1,
+      "seconds_cap": 5,
+      "sixth_branch_count": 175,
+      "sixth_index": 131,
+      "sixth_position": "latter_three_quarter",
+      "sixth_unit_sha256": "b2fadd60fc7d48ca7e8528b15f56ec83d7ecf5a0d3723b3ebb60a29364b31ac4",
+      "solver_elapsed_seconds": 0.09614295900064462,
+      "solver_log": {
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-sixth-discriminator-final/discriminator-results/intersection-3-third-03-fourth-017-fifth-001-sixth-131/solver.log",
+        "sha256": "bde6e1eede96772c07c8ce29fd18088863815bd043aa59a06f11f5838cf8a162"
+      },
+      "stabilizer_order": 4,
+      "stabilizer_tier": "low",
+      "status": "UNSAT_VERIFIED_BY_RUNNER",
+      "top_parent": "intersection-3"
+    },
+    {
+      "claim_limit": "UNKNOWN closes no branch",
+      "exact_cnf_clauses": 46285,
+      "exact_cnf_sha256": "007b5ce79f2235494c24fabbc9ad69e821a58a5c4e791f712be1ea34fcd2050b",
+      "exact_cnf_variables": 10166,
+      "fifth_case_id": "intersection-3-third-04-fourth-001-fifth-000",
+      "inherited_unit_sha256": "b9f90d6e1977e5f349b1c31d9491390ed501f937ab82b1de0ca41ad0991a14e5",
+      "leaf_id": "intersection-3-third-04-fourth-001-fifth-000-sixth-000",
+      "parent_cnf_sha256": "ea4827737c7fe972c418e494f270e2677d027320bcea5b8715a9383d695302c7",
+      "protocol_sha256": "131e6b3fab3a1a599743846ab0c9f8f605188d9cb8fec172499881b5ee803077",
+      "returncode": 0,
+      "schema_version": 1,
+      "seconds_cap": 5,
+      "sixth_branch_count": 96,
+      "sixth_index": 0,
+      "sixth_position": "early_orbit_zero",
+      "sixth_unit_sha256": "95cf32708a31caa478a0e9141103ac567d85e5186e697e7e0c81f75589999e31",
+      "solver_elapsed_seconds": 5.015417583000271,
+      "solver_log": {
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-sixth-discriminator-final/discriminator-results/intersection-3-third-04-fourth-001-fifth-000-sixth-000/solver.log",
+        "sha256": "8fba55cea0f98be36fab7b65349dda867a58aabfcf974a46098f5123830ac5cb"
+      },
+      "stabilizer_order": 16,
+      "stabilizer_tier": "high",
+      "status": "FIXED_CAP_TIMEOUT",
+      "top_parent": "intersection-3"
+    },
+    {
+      "exact_cnf_clauses": 46579,
+      "exact_cnf_sha256": "3dca545eee3e3e642b1e0d5705e6649f318a8d2ed253e3e1eb4aeb05ada7cd28",
+      "exact_cnf_variables": 10166,
+      "fifth_case_id": "intersection-3-third-04-fourth-001-fifth-000",
+      "inherited_unit_sha256": "b9f90d6e1977e5f349b1c31d9491390ed501f937ab82b1de0ca41ad0991a14e5",
+      "leaf_id": "intersection-3-third-04-fourth-001-fifth-000-sixth-072",
+      "parent_cnf_sha256": "ea4827737c7fe972c418e494f270e2677d027320bcea5b8715a9383d695302c7",
+      "proof": {
+        "compressed_bytes": 113927,
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-sixth-discriminator-final/discriminator-results/intersection-3-third-04-fourth-001-fifth-000-sixth-072/proof.drat.gz",
+        "sha256": "9fed83d399ec291db3e8102426244380e8d8dd1bda21cb83e1b834d44dd3e11c",
+        "uncompressed_bytes": 605685,
+        "uncompressed_sha256": "c8048f8bd4399d626bac7306a5c3be48b2b7266657cf7fe4acc7afa246f039d0"
+      },
+      "protocol_sha256": "131e6b3fab3a1a599743846ab0c9f8f605188d9cb8fec172499881b5ee803077",
+      "replay_log": {
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-sixth-discriminator-final/discriminator-results/intersection-3-third-04-fourth-001-fifth-000-sixth-072/runner-replay.log",
+        "sha256": "96470de7ac5ffeff3a5bceb3042e8d79896fe077ca5ab7d8ed062e1ac16451af"
+      },
+      "schema_version": 1,
+      "seconds_cap": 5,
+      "sixth_branch_count": 96,
+      "sixth_index": 72,
+      "sixth_position": "latter_three_quarter",
+      "sixth_unit_sha256": "a993104cfcdcdebc0dd5fde4a794addb3233082da6170097b69c7b2a8ceb45f6",
+      "solver_elapsed_seconds": 0.09127145899947209,
+      "solver_log": {
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-sixth-discriminator-final/discriminator-results/intersection-3-third-04-fourth-001-fifth-000-sixth-072/solver.log",
+        "sha256": "bde6e1eede96772c07c8ce29fd18088863815bd043aa59a06f11f5838cf8a162"
+      },
+      "stabilizer_order": 16,
+      "stabilizer_tier": "high",
+      "status": "UNSAT_VERIFIED_BY_RUNNER",
+      "top_parent": "intersection-3"
+    },
+    {
+      "claim_limit": "UNKNOWN closes no branch",
+      "exact_cnf_clauses": 46286,
+      "exact_cnf_sha256": "ae3c41956843164493d006863caf6d82e3cd718b41dcad774c7ca66cbde4c0c5",
+      "exact_cnf_variables": 10166,
+      "fifth_case_id": "intersection-3-third-04-fourth-001-fifth-001",
+      "inherited_unit_sha256": "be243a639728cb8be6ed8d172239b4a3dd543b21325b70d6753b4a5c86d72bf2",
+      "leaf_id": "intersection-3-third-04-fourth-001-fifth-001-sixth-000",
+      "parent_cnf_sha256": "ea4827737c7fe972c418e494f270e2677d027320bcea5b8715a9383d695302c7",
+      "protocol_sha256": "131e6b3fab3a1a599743846ab0c9f8f605188d9cb8fec172499881b5ee803077",
+      "returncode": 0,
+      "schema_version": 1,
+      "seconds_cap": 5,
+      "sixth_branch_count": 185,
+      "sixth_index": 0,
+      "sixth_position": "early_orbit_zero",
+      "sixth_unit_sha256": "2a62cf402cd3396aa00f55f892f4545f308f74d01c8caa0f2837b1982f821595",
+      "solver_elapsed_seconds": 5.036001041999953,
+      "solver_log": {
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-sixth-discriminator-final/discriminator-results/intersection-3-third-04-fourth-001-fifth-001-sixth-000/solver.log",
+        "sha256": "8fba55cea0f98be36fab7b65349dda867a58aabfcf974a46098f5123830ac5cb"
+      },
+      "stabilizer_order": 4,
+      "stabilizer_tier": "mid",
+      "status": "FIXED_CAP_TIMEOUT",
+      "top_parent": "intersection-3"
+    },
+    {
+      "exact_cnf_clauses": 46574,
+      "exact_cnf_sha256": "06a29b3972d6cb0615bac6ef7d288830605eb5a9ba978f5ab0adcc6642c45b71",
+      "exact_cnf_variables": 10166,
+      "fifth_case_id": "intersection-3-third-04-fourth-001-fifth-001",
+      "inherited_unit_sha256": "be243a639728cb8be6ed8d172239b4a3dd543b21325b70d6753b4a5c86d72bf2",
+      "leaf_id": "intersection-3-third-04-fourth-001-fifth-001-sixth-138",
+      "parent_cnf_sha256": "ea4827737c7fe972c418e494f270e2677d027320bcea5b8715a9383d695302c7",
+      "proof": {
+        "compressed_bytes": 113944,
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-sixth-discriminator-final/discriminator-results/intersection-3-third-04-fourth-001-fifth-001-sixth-138/proof.drat.gz",
+        "sha256": "a3af1c40c93baf24bf0bbaee26a4b445484878a0336b275993b4d25c5592d40d",
+        "uncompressed_bytes": 605665,
+        "uncompressed_sha256": "44faba4b52feb55604e0aed61b8f541207a60c5dfdc60a7f6720ab2ec8904e87"
+      },
+      "protocol_sha256": "131e6b3fab3a1a599743846ab0c9f8f605188d9cb8fec172499881b5ee803077",
+      "replay_log": {
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-sixth-discriminator-final/discriminator-results/intersection-3-third-04-fourth-001-fifth-001-sixth-138/runner-replay.log",
+        "sha256": "0130ef7e1576dba868960e8511469f9051bcc8b983a37ddfb00a138da4f39ea9"
+      },
+      "schema_version": 1,
+      "seconds_cap": 5,
+      "sixth_branch_count": 185,
+      "sixth_index": 138,
+      "sixth_position": "latter_three_quarter",
+      "sixth_unit_sha256": "5323f98a0b5757daef47c47ebc2fd9f41c19410abe894887c2c7168084f130a7",
+      "solver_elapsed_seconds": 0.08095187500020984,
+      "solver_log": {
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-sixth-discriminator-final/discriminator-results/intersection-3-third-04-fourth-001-fifth-001-sixth-138/solver.log",
+        "sha256": "bde6e1eede96772c07c8ce29fd18088863815bd043aa59a06f11f5838cf8a162"
+      },
+      "stabilizer_order": 4,
+      "stabilizer_tier": "mid",
+      "status": "UNSAT_VERIFIED_BY_RUNNER",
+      "top_parent": "intersection-3"
+    },
+    {
+      "exact_cnf_clauses": 46333,
+      "exact_cnf_sha256": "ab472251cd5a54b661e5199090416f6ee19818805e2a817b2f95656b9f294ebf",
+      "exact_cnf_variables": 10166,
+      "fifth_case_id": "intersection-3-third-06-fourth-001-fifth-000",
+      "inherited_unit_sha256": "87dc1a2968a370c94a7651567de54537bd45eccb39cb743cd7c31128508a51a0",
+      "leaf_id": "intersection-3-third-06-fourth-001-fifth-000-sixth-000",
+      "parent_cnf_sha256": "df5b1346f92f1b893de3ca7d5104f570d0e685fb84569182bb27239a45bcf3fc",
+      "proof": {
+        "compressed_bytes": 405648,
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-sixth-discriminator-final/discriminator-results/intersection-3-third-06-fourth-001-fifth-000-sixth-000/proof.drat.gz",
+        "sha256": "444c28950ae770a59a134218e59177081fff7bfd08c55f9cf4c10902e1271b46",
+        "uncompressed_bytes": 1375835,
+        "uncompressed_sha256": "01d41c5500926a7bb5922afd3875fc4e887ab69f927b0fd2f7f450c5c4ec6a92"
+      },
+      "protocol_sha256": "131e6b3fab3a1a599743846ab0c9f8f605188d9cb8fec172499881b5ee803077",
+      "replay_log": {
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-sixth-discriminator-final/discriminator-results/intersection-3-third-06-fourth-001-fifth-000-sixth-000/runner-replay.log",
+        "sha256": "37a7fdcb470b5d3755dac16c1fe5a6ff0678132110e9da9b08fba089395445d2"
+      },
+      "schema_version": 1,
+      "seconds_cap": 5,
+      "sixth_branch_count": 86,
+      "sixth_index": 0,
+      "sixth_position": "early_orbit_zero",
+      "sixth_unit_sha256": "461144ccfd56ee3cf0f9a9d80e520c5b872166b23092d5fd838ecbdb46d64dab",
+      "solver_elapsed_seconds": 0.7690095409998321,
+      "solver_log": {
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-sixth-discriminator-final/discriminator-results/intersection-3-third-06-fourth-001-fifth-000-sixth-000/solver.log",
+        "sha256": "bde6e1eede96772c07c8ce29fd18088863815bd043aa59a06f11f5838cf8a162"
+      },
+      "stabilizer_order": 16,
+      "stabilizer_tier": "high",
+      "status": "UNSAT_VERIFIED_BY_RUNNER",
+      "top_parent": "intersection-3"
+    },
+    {
+      "exact_cnf_clauses": 46584,
+      "exact_cnf_sha256": "391c1a95ff3e0f5b63c9e1e1923e9ae8dcd02fbfeff612047aaf000dae1ccd76",
+      "exact_cnf_variables": 10166,
+      "fifth_case_id": "intersection-3-third-06-fourth-001-fifth-000",
+      "inherited_unit_sha256": "87dc1a2968a370c94a7651567de54537bd45eccb39cb743cd7c31128508a51a0",
+      "leaf_id": "intersection-3-third-06-fourth-001-fifth-000-sixth-064",
+      "parent_cnf_sha256": "df5b1346f92f1b893de3ca7d5104f570d0e685fb84569182bb27239a45bcf3fc",
+      "proof": {
+        "compressed_bytes": 113890,
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-sixth-discriminator-final/discriminator-results/intersection-3-third-06-fourth-001-fifth-000-sixth-064/proof.drat.gz",
+        "sha256": "d98d7b515c30ca1883da30222fc21b64c38bafb2a9ccd4b1569e9b51d4846b43",
+        "uncompressed_bytes": 605705,
+        "uncompressed_sha256": "47911cbca8c66f218cb3d4d5024eafe144b5b68ccb0b7e3269120e725a2ad42c"
+      },
+      "protocol_sha256": "131e6b3fab3a1a599743846ab0c9f8f605188d9cb8fec172499881b5ee803077",
+      "replay_log": {
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-sixth-discriminator-final/discriminator-results/intersection-3-third-06-fourth-001-fifth-000-sixth-064/runner-replay.log",
+        "sha256": "64a61d7d5382374fa73d8f3f11e1908f651826025f152e4ea384ecc7e521e169"
+      },
+      "schema_version": 1,
+      "seconds_cap": 5,
+      "sixth_branch_count": 86,
+      "sixth_index": 64,
+      "sixth_position": "latter_three_quarter",
+      "sixth_unit_sha256": "5a8081d3304a22bcec4e08a9d6dfced9a32cd5cc4eacd04059104f0e6df86190",
+      "solver_elapsed_seconds": 0.10341958300068654,
+      "solver_log": {
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-sixth-discriminator-final/discriminator-results/intersection-3-third-06-fourth-001-fifth-000-sixth-064/solver.log",
+        "sha256": "bde6e1eede96772c07c8ce29fd18088863815bd043aa59a06f11f5838cf8a162"
+      },
+      "stabilizer_order": 16,
+      "stabilizer_tier": "high",
+      "status": "UNSAT_VERIFIED_BY_RUNNER",
+      "top_parent": "intersection-3"
+    },
+    {
+      "exact_cnf_clauses": 46334,
+      "exact_cnf_sha256": "a12d44510d2159c2d969776c37e8a0a472673e48427c6a89391e204de89c7c57",
+      "exact_cnf_variables": 10166,
+      "fifth_case_id": "intersection-3-third-06-fourth-001-fifth-001",
+      "inherited_unit_sha256": "543ba254524381c3248c3fc2d4f82d5f20eb0fe38d4bb89ecac2e76a977f37d1",
+      "leaf_id": "intersection-3-third-06-fourth-001-fifth-001-sixth-000",
+      "parent_cnf_sha256": "df5b1346f92f1b893de3ca7d5104f570d0e685fb84569182bb27239a45bcf3fc",
+      "proof": {
+        "compressed_bytes": 470148,
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-sixth-discriminator-final/discriminator-results/intersection-3-third-06-fourth-001-fifth-001-sixth-000/proof.drat.gz",
+        "sha256": "e1045e7e469f35f13caff0188bc6eeffd7637aea5c3871a5ebde3fa524755afb",
+        "uncompressed_bytes": 1525706,
+        "uncompressed_sha256": "9bf68a7720ecf4384906326eacaa37702fb373c89b7f95a9287b35f5d25f56c1"
+      },
+      "protocol_sha256": "131e6b3fab3a1a599743846ab0c9f8f605188d9cb8fec172499881b5ee803077",
+      "replay_log": {
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-sixth-discriminator-final/discriminator-results/intersection-3-third-06-fourth-001-fifth-001-sixth-000/runner-replay.log",
+        "sha256": "169d46b55e24234aefc1803adf55fa61638a86fdfc51b1998fd491c62d0031f7"
+      },
+      "schema_version": 1,
+      "seconds_cap": 5,
+      "sixth_branch_count": 165,
+      "sixth_index": 0,
+      "sixth_position": "early_orbit_zero",
+      "sixth_unit_sha256": "94d5a38598be77593d4781b8fbd74cb4e2cd05bb006b1b531988ab2db90de9c9",
+      "solver_elapsed_seconds": 0.38248229100008757,
+      "solver_log": {
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-sixth-discriminator-final/discriminator-results/intersection-3-third-06-fourth-001-fifth-001-sixth-000/solver.log",
+        "sha256": "bde6e1eede96772c07c8ce29fd18088863815bd043aa59a06f11f5838cf8a162"
+      },
+      "stabilizer_order": 4,
+      "stabilizer_tier": "low",
+      "status": "UNSAT_VERIFIED_BY_RUNNER",
+      "top_parent": "intersection-3"
+    },
+    {
+      "exact_cnf_clauses": 46583,
+      "exact_cnf_sha256": "a8a8f40361fb6b7242cd83b3c6ed73f5be142f0c2b564cdb1220190d6c13559a",
+      "exact_cnf_variables": 10166,
+      "fifth_case_id": "intersection-3-third-06-fourth-001-fifth-001",
+      "inherited_unit_sha256": "543ba254524381c3248c3fc2d4f82d5f20eb0fe38d4bb89ecac2e76a977f37d1",
+      "leaf_id": "intersection-3-third-06-fourth-001-fifth-001-sixth-123",
+      "parent_cnf_sha256": "df5b1346f92f1b893de3ca7d5104f570d0e685fb84569182bb27239a45bcf3fc",
+      "proof": {
+        "compressed_bytes": 113901,
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-sixth-discriminator-final/discriminator-results/intersection-3-third-06-fourth-001-fifth-001-sixth-123/proof.drat.gz",
+        "sha256": "d0e735c8c88ddc26f6ec4a3d3ac645e5f1b7df0dcacab0684c81fb6ad49df3a4",
+        "uncompressed_bytes": 605701,
+        "uncompressed_sha256": "27fb6cd356f36aa4d27a68b01a196be6ecf2a18e45e0917f4ac6a65bc8f90974"
+      },
+      "protocol_sha256": "131e6b3fab3a1a599743846ab0c9f8f605188d9cb8fec172499881b5ee803077",
+      "replay_log": {
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-sixth-discriminator-final/discriminator-results/intersection-3-third-06-fourth-001-fifth-001-sixth-123/runner-replay.log",
+        "sha256": "d809ffb1eacc3ab980a669591aa5c85716220706af0c25ee1fa99db5c24abd07"
+      },
+      "schema_version": 1,
+      "seconds_cap": 5,
+      "sixth_branch_count": 165,
+      "sixth_index": 123,
+      "sixth_position": "latter_three_quarter",
+      "sixth_unit_sha256": "94b57d94ad0d36efead82fe077b9c2505d034451d737b211a9762fbbb95bd22d",
+      "solver_elapsed_seconds": 0.09172079200016015,
+      "solver_log": {
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-sixth-discriminator-final/discriminator-results/intersection-3-third-06-fourth-001-fifth-001-sixth-123/solver.log",
+        "sha256": "bde6e1eede96772c07c8ce29fd18088863815bd043aa59a06f11f5838cf8a162"
+      },
+      "stabilizer_order": 4,
+      "stabilizer_tier": "low",
+      "status": "UNSAT_VERIFIED_BY_RUNNER",
+      "top_parent": "intersection-3"
+    },
+    {
+      "claim_limit": "UNKNOWN closes no branch",
+      "exact_cnf_clauses": 46276,
+      "exact_cnf_sha256": "d9a8d3ccb60a254bf9ae6f68724a1b086d290d8739dcff7a330fd0e6d70c8ba7",
+      "exact_cnf_variables": 10166,
+      "fifth_case_id": "intersection-4-third-00-fourth-000-fifth-013",
+      "inherited_unit_sha256": "12f075125dd0a9e469ee3e901f510c68c6ff9037b46a6467f003a9272222a197",
+      "leaf_id": "intersection-4-third-00-fourth-000-fifth-013-sixth-000",
+      "parent_cnf_sha256": "d34339f442c5818c772490cf433248441d3da32797dd4d1e61f1599be39c82aa",
+      "protocol_sha256": "131e6b3fab3a1a599743846ab0c9f8f605188d9cb8fec172499881b5ee803077",
+      "returncode": 0,
+      "schema_version": 1,
+      "seconds_cap": 5,
+      "sixth_branch_count": 82,
+      "sixth_index": 0,
+      "sixth_position": "early_orbit_zero",
+      "sixth_unit_sha256": "6f3e559bbd93fa2f9b25cbd9b5f348a4b20c902d8e6498de5c28d73df8e2f571",
+      "solver_elapsed_seconds": 5.018999333000465,
+      "solver_log": {
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-sixth-discriminator-final/discriminator-results/intersection-4-third-00-fourth-000-fifth-013-sixth-000/solver.log",
+        "sha256": "8fba55cea0f98be36fab7b65349dda867a58aabfcf974a46098f5123830ac5cb"
+      },
+      "stabilizer_order": 24,
+      "stabilizer_tier": "high",
+      "status": "FIXED_CAP_TIMEOUT",
+      "top_parent": "intersection-4"
+    },
+    {
+      "exact_cnf_clauses": 46575,
+      "exact_cnf_sha256": "3d847c57c3980c99b808aa618597a7553de72d1c9978e6f1ad81bc7c5a00cc20",
+      "exact_cnf_variables": 10166,
+      "fifth_case_id": "intersection-4-third-00-fourth-000-fifth-013",
+      "inherited_unit_sha256": "12f075125dd0a9e469ee3e901f510c68c6ff9037b46a6467f003a9272222a197",
+      "leaf_id": "intersection-4-third-00-fourth-000-fifth-013-sixth-061",
+      "parent_cnf_sha256": "d34339f442c5818c772490cf433248441d3da32797dd4d1e61f1599be39c82aa",
+      "proof": {
+        "compressed_bytes": 111426,
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-sixth-discriminator-final/discriminator-results/intersection-4-third-00-fourth-000-fifth-013-sixth-061/proof.drat.gz",
+        "sha256": "185022a360353ba7765f3110628732f8005e361c332f43c9860c729232d946af",
+        "uncompressed_bytes": 599999,
+        "uncompressed_sha256": "a95f1ecccb5cc90f904b7ca203d56af7c789f3ba3b0aadb62e9f5f78d46b5216"
+      },
+      "protocol_sha256": "131e6b3fab3a1a599743846ab0c9f8f605188d9cb8fec172499881b5ee803077",
+      "replay_log": {
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-sixth-discriminator-final/discriminator-results/intersection-4-third-00-fourth-000-fifth-013-sixth-061/runner-replay.log",
+        "sha256": "04ddca2b900a650ce82adf92aeef97fb92dc6dc14d8b6e1d3c62ff6c5ed27086"
+      },
+      "schema_version": 1,
+      "seconds_cap": 5,
+      "sixth_branch_count": 82,
+      "sixth_index": 61,
+      "sixth_position": "latter_three_quarter",
+      "sixth_unit_sha256": "f12ada92b112514989be92e81c66d363e14090e9bed38bf43a300d74c0a18230",
+      "solver_elapsed_seconds": 0.12196487499932118,
+      "solver_log": {
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-sixth-discriminator-final/discriminator-results/intersection-4-third-00-fourth-000-fifth-013-sixth-061/solver.log",
+        "sha256": "bde6e1eede96772c07c8ce29fd18088863815bd043aa59a06f11f5838cf8a162"
+      },
+      "stabilizer_order": 24,
+      "stabilizer_tier": "high",
+      "status": "UNSAT_VERIFIED_BY_RUNNER",
+      "top_parent": "intersection-4"
+    },
+    {
+      "claim_limit": "UNKNOWN closes no branch",
+      "exact_cnf_clauses": 46187,
+      "exact_cnf_sha256": "28943b35ed336902cbf37b099d5590a6d28b6f8219b0dcfd1030a6653fd77521",
+      "exact_cnf_variables": 10166,
+      "fifth_case_id": "intersection-4-third-00-fourth-001-fifth-000",
+      "inherited_unit_sha256": "fa7e6c6b8fde5d2836dffe7659dcd5db36309c8b8909aa1ce5b6143a687c12c8",
+      "leaf_id": "intersection-4-third-00-fourth-001-fifth-000-sixth-000",
+      "parent_cnf_sha256": "d34339f442c5818c772490cf433248441d3da32797dd4d1e61f1599be39c82aa",
+      "protocol_sha256": "131e6b3fab3a1a599743846ab0c9f8f605188d9cb8fec172499881b5ee803077",
+      "returncode": 0,
+      "schema_version": 1,
+      "seconds_cap": 5,
+      "sixth_branch_count": 51,
+      "sixth_index": 0,
+      "sixth_position": "early_orbit_zero",
+      "sixth_unit_sha256": "917df3320d778ddbaa5c5c7742bc4046bf803c36ed2b050f30844ed206783469",
+      "solver_elapsed_seconds": 5.024504625000191,
+      "solver_log": {
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-sixth-discriminator-final/discriminator-results/intersection-4-third-00-fourth-001-fifth-000-sixth-000/solver.log",
+        "sha256": "8fba55cea0f98be36fab7b65349dda867a58aabfcf974a46098f5123830ac5cb"
+      },
+      "stabilizer_order": 144,
+      "stabilizer_tier": "high",
+      "status": "FIXED_CAP_TIMEOUT",
+      "top_parent": "intersection-4"
+    },
+    {
+      "exact_cnf_clauses": 46594,
+      "exact_cnf_sha256": "f8837921b100531ef9d4849becf97ce17c7746a9c91b0bbeeec51a1ff706fa5e",
+      "exact_cnf_variables": 10166,
+      "fifth_case_id": "intersection-4-third-00-fourth-001-fifth-000",
+      "inherited_unit_sha256": "fa7e6c6b8fde5d2836dffe7659dcd5db36309c8b8909aa1ce5b6143a687c12c8",
+      "leaf_id": "intersection-4-third-00-fourth-001-fifth-000-sixth-038",
+      "parent_cnf_sha256": "d34339f442c5818c772490cf433248441d3da32797dd4d1e61f1599be39c82aa",
+      "proof": {
+        "compressed_bytes": 112455,
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-sixth-discriminator-final/discriminator-results/intersection-4-third-00-fourth-001-fifth-000-sixth-038/proof.drat.gz",
+        "sha256": "837cefccf8c6006c88b8dc856150a9264219b6247024e5f4ea61fd3258befd31",
+        "uncompressed_bytes": 602881,
+        "uncompressed_sha256": "ef4c0cb952265767ef329390626d563db6c02ccbe9ba9525d395977e98f13622"
+      },
+      "protocol_sha256": "131e6b3fab3a1a599743846ab0c9f8f605188d9cb8fec172499881b5ee803077",
+      "replay_log": {
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-sixth-discriminator-final/discriminator-results/intersection-4-third-00-fourth-001-fifth-000-sixth-038/runner-replay.log",
+        "sha256": "597d4244fc4c85f4b7224bd3ffec4a896654bf0865d0fc838e4ea419f15de649"
+      },
+      "schema_version": 1,
+      "seconds_cap": 5,
+      "sixth_branch_count": 51,
+      "sixth_index": 38,
+      "sixth_position": "latter_three_quarter",
+      "sixth_unit_sha256": "527e2c1eda2d0dba85e1ad484861aa1357c2fce81954744974fff278ce2ece2e",
+      "solver_elapsed_seconds": 0.13934175000031246,
+      "solver_log": {
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-sixth-discriminator-final/discriminator-results/intersection-4-third-00-fourth-001-fifth-000-sixth-038/solver.log",
+        "sha256": "bde6e1eede96772c07c8ce29fd18088863815bd043aa59a06f11f5838cf8a162"
+      },
+      "stabilizer_order": 144,
+      "stabilizer_tier": "high",
+      "status": "UNSAT_VERIFIED_BY_RUNNER",
+      "top_parent": "intersection-4"
+    },
+    {
+      "exact_cnf_clauses": 46315,
+      "exact_cnf_sha256": "c43644e9f3658b260fca2a0108f7d2ed44ccdacf65d591e32d492171e2ba374e",
+      "exact_cnf_variables": 10166,
+      "fifth_case_id": "intersection-4-third-00-fourth-004-fifth-011",
+      "inherited_unit_sha256": "97f3077b9f148b46b7143a16015a51a5773f1032797979db9f4d9f88ec2cb079",
+      "leaf_id": "intersection-4-third-00-fourth-004-fifth-011-sixth-000",
+      "parent_cnf_sha256": "d34339f442c5818c772490cf433248441d3da32797dd4d1e61f1599be39c82aa",
+      "proof": {
+        "compressed_bytes": 1805350,
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-sixth-discriminator-final/discriminator-results/intersection-4-third-00-fourth-004-fifth-011-sixth-000/proof.drat.gz",
+        "sha256": "2e242b2e1aad2b76c98602e651aeab11775411c1f07ec37f781c6d3763abb7d8",
+        "uncompressed_bytes": 5577262,
+        "uncompressed_sha256": "a3bd9fe238e4adb82a112620dee25fa80938d9e6351cc2cc91872c6f2bdcef98"
+      },
+      "protocol_sha256": "131e6b3fab3a1a599743846ab0c9f8f605188d9cb8fec172499881b5ee803077",
+      "replay_log": {
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-sixth-discriminator-final/discriminator-results/intersection-4-third-00-fourth-004-fifth-011-sixth-000/runner-replay.log",
+        "sha256": "dc0c2090725bf0f94a60ce2f36453c995506ce45a08721db188cfae91a34b3cb"
+      },
+      "schema_version": 1,
+      "seconds_cap": 5,
+      "sixth_branch_count": 101,
+      "sixth_index": 0,
+      "sixth_position": "early_orbit_zero",
+      "sixth_unit_sha256": "8e37bed9dff3949ffd23ae638260dff869f5cc26e551f2a9e5e289a8888949fa",
+      "solver_elapsed_seconds": 4.33931712499998,
+      "solver_log": {
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-sixth-discriminator-final/discriminator-results/intersection-4-third-00-fourth-004-fifth-011-sixth-000/solver.log",
+        "sha256": "bde6e1eede96772c07c8ce29fd18088863815bd043aa59a06f11f5838cf8a162"
+      },
+      "stabilizer_order": 12,
+      "stabilizer_tier": "mid",
+      "status": "UNSAT_VERIFIED_BY_RUNNER",
+      "top_parent": "intersection-4"
+    },
+    {
+      "exact_cnf_clauses": 46584,
+      "exact_cnf_sha256": "2188fb3967fcbc31e7ef3c77fe623751d2742f1b919c30c5d05e046d8e6faa36",
+      "exact_cnf_variables": 10166,
+      "fifth_case_id": "intersection-4-third-00-fourth-004-fifth-011",
+      "inherited_unit_sha256": "97f3077b9f148b46b7143a16015a51a5773f1032797979db9f4d9f88ec2cb079",
+      "leaf_id": "intersection-4-third-00-fourth-004-fifth-011-sixth-075",
+      "parent_cnf_sha256": "d34339f442c5818c772490cf433248441d3da32797dd4d1e61f1599be39c82aa",
+      "proof": {
+        "compressed_bytes": 111691,
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-sixth-discriminator-final/discriminator-results/intersection-4-third-00-fourth-004-fifth-011-sixth-075/proof.drat.gz",
+        "sha256": "a26b2ee497a345441cb38e5c55f7fa1caa24118e399813aa0a2559154a66b04b",
+        "uncompressed_bytes": 600719,
+        "uncompressed_sha256": "947800c1eaee21af832e793760e62b992cbb9bb4c292a0f3ea2f9730f79e4141"
+      },
+      "protocol_sha256": "131e6b3fab3a1a599743846ab0c9f8f605188d9cb8fec172499881b5ee803077",
+      "replay_log": {
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-sixth-discriminator-final/discriminator-results/intersection-4-third-00-fourth-004-fifth-011-sixth-075/runner-replay.log",
+        "sha256": "f91e7b59dc9e66ec87d89d621ca837c2048e6de6ba34cbd2c49f9a8e46797601"
+      },
+      "schema_version": 1,
+      "seconds_cap": 5,
+      "sixth_branch_count": 101,
+      "sixth_index": 75,
+      "sixth_position": "latter_three_quarter",
+      "sixth_unit_sha256": "37a2f25ca8e0171424333cd5c4876c8a49bed196b1cb9a53184e07be17e17ff9",
+      "solver_elapsed_seconds": 0.10908533300062118,
+      "solver_log": {
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-sixth-discriminator-final/discriminator-results/intersection-4-third-00-fourth-004-fifth-011-sixth-075/solver.log",
+        "sha256": "bde6e1eede96772c07c8ce29fd18088863815bd043aa59a06f11f5838cf8a162"
+      },
+      "stabilizer_order": 12,
+      "stabilizer_tier": "mid",
+      "status": "UNSAT_VERIFIED_BY_RUNNER",
+      "top_parent": "intersection-4"
+    },
+    {
+      "exact_cnf_clauses": 46315,
+      "exact_cnf_sha256": "890f367277c03416e8949cc618c5803152481d80cd5a77c263ad4ffe1fdd71a0",
+      "exact_cnf_variables": 10166,
+      "fifth_case_id": "intersection-4-third-01-fourth-000-fifth-016",
+      "inherited_unit_sha256": "91cd5bf3dd32cf84d8e793e07ef76dc735fcadfaf0244f24825ad28cf29fe94e",
+      "leaf_id": "intersection-4-third-01-fourth-000-fifth-016-sixth-000",
+      "parent_cnf_sha256": "13deb69f954b931aeb9f5785eeb7903d31755b129f59d8306db5ae8d3beff11f",
+      "proof": {
+        "compressed_bytes": 482272,
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-sixth-discriminator-final/discriminator-results/intersection-4-third-01-fourth-000-fifth-016-sixth-000/proof.drat.gz",
+        "sha256": "13a6e76d1f48d0e1c2e578d9d9dae1c5a31cfa516855bec22e6c4078095d9764",
+        "uncompressed_bytes": 1559070,
+        "uncompressed_sha256": "9ae2b8ba974d91c7c111ba1e199352b26155c23d683e6f3cbf9a9358cf7bff17"
+      },
+      "protocol_sha256": "131e6b3fab3a1a599743846ab0c9f8f605188d9cb8fec172499881b5ee803077",
+      "replay_log": {
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-sixth-discriminator-final/discriminator-results/intersection-4-third-01-fourth-000-fifth-016-sixth-000/runner-replay.log",
+        "sha256": "d65054ddc76dea36a632fb4490d66c9037b0cfa2d8e06081a321f3e6cb16cd34"
+      },
+      "schema_version": 1,
+      "seconds_cap": 5,
+      "sixth_branch_count": 101,
+      "sixth_index": 0,
+      "sixth_position": "early_orbit_zero",
+      "sixth_unit_sha256": "8e37bed9dff3949ffd23ae638260dff869f5cc26e551f2a9e5e289a8888949fa",
+      "solver_elapsed_seconds": 0.5566312079999989,
+      "solver_log": {
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-sixth-discriminator-final/discriminator-results/intersection-4-third-01-fourth-000-fifth-016-sixth-000/solver.log",
+        "sha256": "bde6e1eede96772c07c8ce29fd18088863815bd043aa59a06f11f5838cf8a162"
+      },
+      "stabilizer_order": 12,
+      "stabilizer_tier": "high",
+      "status": "UNSAT_VERIFIED_BY_RUNNER",
+      "top_parent": "intersection-4"
+    },
+    {
+      "exact_cnf_clauses": 46584,
+      "exact_cnf_sha256": "b89be7a3731c521c6a7959bc2b0353aa3f99e67d93089ca5ec7699274dd4d8df",
+      "exact_cnf_variables": 10166,
+      "fifth_case_id": "intersection-4-third-01-fourth-000-fifth-016",
+      "inherited_unit_sha256": "91cd5bf3dd32cf84d8e793e07ef76dc735fcadfaf0244f24825ad28cf29fe94e",
+      "leaf_id": "intersection-4-third-01-fourth-000-fifth-016-sixth-075",
+      "parent_cnf_sha256": "13deb69f954b931aeb9f5785eeb7903d31755b129f59d8306db5ae8d3beff11f",
+      "proof": {
+        "compressed_bytes": 111700,
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-sixth-discriminator-final/discriminator-results/intersection-4-third-01-fourth-000-fifth-016-sixth-075/proof.drat.gz",
+        "sha256": "dd65c838fa49ced5ad2b233535bcaf9e0d95fc8b42d7b41a740ae1cb069a08dd",
+        "uncompressed_bytes": 600719,
+        "uncompressed_sha256": "b02ed523e346a314d0ffbe97ada5afc66995353086b3cb2671e224ec81f635f1"
+      },
+      "protocol_sha256": "131e6b3fab3a1a599743846ab0c9f8f605188d9cb8fec172499881b5ee803077",
+      "replay_log": {
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-sixth-discriminator-final/discriminator-results/intersection-4-third-01-fourth-000-fifth-016-sixth-075/runner-replay.log",
+        "sha256": "f18447309830ef1377a9cd92bef23565ab0b748aa77ba28698531659a03f6f28"
+      },
+      "schema_version": 1,
+      "seconds_cap": 5,
+      "sixth_branch_count": 101,
+      "sixth_index": 75,
+      "sixth_position": "latter_three_quarter",
+      "sixth_unit_sha256": "37a2f25ca8e0171424333cd5c4876c8a49bed196b1cb9a53184e07be17e17ff9",
+      "solver_elapsed_seconds": 0.07314408399997774,
+      "solver_log": {
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-sixth-discriminator-final/discriminator-results/intersection-4-third-01-fourth-000-fifth-016-sixth-075/solver.log",
+        "sha256": "bde6e1eede96772c07c8ce29fd18088863815bd043aa59a06f11f5838cf8a162"
+      },
+      "stabilizer_order": 12,
+      "stabilizer_tier": "high",
+      "status": "UNSAT_VERIFIED_BY_RUNNER",
+      "top_parent": "intersection-4"
+    },
+    {
+      "claim_limit": "UNKNOWN closes no branch",
+      "exact_cnf_clauses": 46285,
+      "exact_cnf_sha256": "ab3a0e253a34779fba3f20e4260d612cef5006831dd3c49a70649fa157f88971",
+      "exact_cnf_variables": 10166,
+      "fifth_case_id": "intersection-4-third-01-fourth-001-fifth-012",
+      "inherited_unit_sha256": "703d0cd4a42c725d997337f0d629a7b620b5f8044dbd7e98ee0416c563c24633",
+      "leaf_id": "intersection-4-third-01-fourth-001-fifth-012-sixth-000",
+      "parent_cnf_sha256": "13deb69f954b931aeb9f5785eeb7903d31755b129f59d8306db5ae8d3beff11f",
+      "protocol_sha256": "131e6b3fab3a1a599743846ab0c9f8f605188d9cb8fec172499881b5ee803077",
+      "returncode": 0,
+      "schema_version": 1,
+      "seconds_cap": 5,
+      "sixth_branch_count": 109,
+      "sixth_index": 0,
+      "sixth_position": "early_orbit_zero",
+      "sixth_unit_sha256": "2a57042a43991d2ca310938e6802d7283954e38c825a548c4bee89c45238b43b",
+      "solver_elapsed_seconds": 5.018829749999895,
+      "solver_log": {
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-sixth-discriminator-final/discriminator-results/intersection-4-third-01-fourth-001-fifth-012-sixth-000/solver.log",
+        "sha256": "8fba55cea0f98be36fab7b65349dda867a58aabfcf974a46098f5123830ac5cb"
+      },
+      "stabilizer_order": 12,
+      "stabilizer_tier": "high",
+      "status": "FIXED_CAP_TIMEOUT",
+      "top_parent": "intersection-4"
+    },
+    {
+      "exact_cnf_clauses": 46582,
+      "exact_cnf_sha256": "95604f054570d605fe027463476cad11c6da7902c0b3a01b7622a98b40a151b6",
+      "exact_cnf_variables": 10166,
+      "fifth_case_id": "intersection-4-third-01-fourth-001-fifth-012",
+      "inherited_unit_sha256": "703d0cd4a42c725d997337f0d629a7b620b5f8044dbd7e98ee0416c563c24633",
+      "leaf_id": "intersection-4-third-01-fourth-001-fifth-012-sixth-081",
+      "parent_cnf_sha256": "13deb69f954b931aeb9f5785eeb7903d31755b129f59d8306db5ae8d3beff11f",
+      "proof": {
+        "compressed_bytes": 111492,
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-sixth-discriminator-final/discriminator-results/intersection-4-third-01-fourth-001-fifth-012-sixth-081/proof.drat.gz",
+        "sha256": "22421e7e24df77aead8ec062b27e7293fbb5167fe900d3012e5c6fb3361bd6ef",
+        "uncompressed_bytes": 600231,
+        "uncompressed_sha256": "34ad5779cb5cf2716286c020f6a25163a21d3f5f249c78a1b905d0ae2bd52414"
+      },
+      "protocol_sha256": "131e6b3fab3a1a599743846ab0c9f8f605188d9cb8fec172499881b5ee803077",
+      "replay_log": {
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-sixth-discriminator-final/discriminator-results/intersection-4-third-01-fourth-001-fifth-012-sixth-081/runner-replay.log",
+        "sha256": "0e25e6061d78bb1fe41dbd3c1e9968d63802050281cb4de7b5becf5aac9af199"
+      },
+      "schema_version": 1,
+      "seconds_cap": 5,
+      "sixth_branch_count": 109,
+      "sixth_index": 81,
+      "sixth_position": "latter_three_quarter",
+      "sixth_unit_sha256": "d4715f11d97dae24401696ac3dd66907824fb0b88169d82008df9616adb93429",
+      "solver_elapsed_seconds": 0.08592241699989245,
+      "solver_log": {
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-sixth-discriminator-final/discriminator-results/intersection-4-third-01-fourth-001-fifth-012-sixth-081/solver.log",
+        "sha256": "bde6e1eede96772c07c8ce29fd18088863815bd043aa59a06f11f5838cf8a162"
+      },
+      "stabilizer_order": 12,
+      "stabilizer_tier": "high",
+      "status": "UNSAT_VERIFIED_BY_RUNNER",
+      "top_parent": "intersection-4"
+    },
+    {
+      "claim_limit": "UNKNOWN closes no branch",
+      "exact_cnf_clauses": 46306,
+      "exact_cnf_sha256": "795c27270625e7919d608703437d7df3e31f3eb341232a857372c3a6d11641e2",
+      "exact_cnf_variables": 10166,
+      "fifth_case_id": "intersection-4-third-02-fourth-000-fifth-024",
+      "inherited_unit_sha256": "601a0b1da543c9dbaeec55682222bb44c7b8cb58ddcb611db76eace2facfabaa",
+      "leaf_id": "intersection-4-third-02-fourth-000-fifth-024-sixth-000",
+      "parent_cnf_sha256": "323c99b844f04f4130e3cbb38fda880f0c09924262d09e84020c279ed41fb57b",
+      "protocol_sha256": "131e6b3fab3a1a599743846ab0c9f8f605188d9cb8fec172499881b5ee803077",
+      "returncode": 0,
+      "schema_version": 1,
+      "seconds_cap": 5,
+      "sixth_branch_count": 172,
+      "sixth_index": 0,
+      "sixth_position": "early_orbit_zero",
+      "sixth_unit_sha256": "eecd262c3ecab667b61ebb70835f3b181a1d1530d3ebc0ef99a3a8dc3d5b193f",
+      "solver_elapsed_seconds": 5.02354220899997,
+      "solver_log": {
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-sixth-discriminator-final/discriminator-results/intersection-4-third-02-fourth-000-fifth-024-sixth-000/solver.log",
+        "sha256": "8fba55cea0f98be36fab7b65349dda867a58aabfcf974a46098f5123830ac5cb"
+      },
+      "stabilizer_order": 4,
+      "stabilizer_tier": "low",
+      "status": "FIXED_CAP_TIMEOUT",
+      "top_parent": "intersection-4"
+    },
+    {
+      "exact_cnf_clauses": 46582,
+      "exact_cnf_sha256": "5384d5ca5860b22f999438abc945cb4e4d4109be5a9457701db3fc916a450dc7",
+      "exact_cnf_variables": 10166,
+      "fifth_case_id": "intersection-4-third-02-fourth-000-fifth-024",
+      "inherited_unit_sha256": "601a0b1da543c9dbaeec55682222bb44c7b8cb58ddcb611db76eace2facfabaa",
+      "leaf_id": "intersection-4-third-02-fourth-000-fifth-024-sixth-129",
+      "parent_cnf_sha256": "323c99b844f04f4130e3cbb38fda880f0c09924262d09e84020c279ed41fb57b",
+      "proof": {
+        "compressed_bytes": 111605,
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-sixth-discriminator-final/discriminator-results/intersection-4-third-02-fourth-000-fifth-024-sixth-129/proof.drat.gz",
+        "sha256": "51ded0289533de344ef2f614c8a08105c12edda1d7172fcd6c54baf28bcfa719",
+        "uncompressed_bytes": 600567,
+        "uncompressed_sha256": "7b70659d40a9669e7c7746bc90e41deab7d09cd0c8275120858b0f8db907684c"
+      },
+      "protocol_sha256": "131e6b3fab3a1a599743846ab0c9f8f605188d9cb8fec172499881b5ee803077",
+      "replay_log": {
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-sixth-discriminator-final/discriminator-results/intersection-4-third-02-fourth-000-fifth-024-sixth-129/runner-replay.log",
+        "sha256": "36875222f2ec356e15448753fb62d242c221e9ebf7054a77935c23816346b937"
+      },
+      "schema_version": 1,
+      "seconds_cap": 5,
+      "sixth_branch_count": 172,
+      "sixth_index": 129,
+      "sixth_position": "latter_three_quarter",
+      "sixth_unit_sha256": "3a808ad49d0f237d2444daff5d41c3e63dac23d84663618b11d8f7e45134f3db",
+      "solver_elapsed_seconds": 0.09821091699996032,
+      "solver_log": {
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-sixth-discriminator-final/discriminator-results/intersection-4-third-02-fourth-000-fifth-024-sixth-129/solver.log",
+        "sha256": "bde6e1eede96772c07c8ce29fd18088863815bd043aa59a06f11f5838cf8a162"
+      },
+      "stabilizer_order": 4,
+      "stabilizer_tier": "low",
+      "status": "UNSAT_VERIFIED_BY_RUNNER",
+      "top_parent": "intersection-4"
+    },
+    {
+      "exact_cnf_clauses": 46327,
+      "exact_cnf_sha256": "e35dda551c0ffa9a3c5bb647445c33f293d5c3cf1c923abc5fd5e6c7cdaa2455",
+      "exact_cnf_variables": 10166,
+      "fifth_case_id": "intersection-4-third-02-fourth-002-fifth-024",
+      "inherited_unit_sha256": "4111ee1f35e55fae8644ee8a1bf06a9d54c3fe18c17df4682c3a0291535cc582",
+      "leaf_id": "intersection-4-third-02-fourth-002-fifth-024-sixth-000",
+      "parent_cnf_sha256": "323c99b844f04f4130e3cbb38fda880f0c09924262d09e84020c279ed41fb57b",
+      "proof": {
+        "compressed_bytes": 397677,
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-sixth-discriminator-final/discriminator-results/intersection-4-third-02-fourth-002-fifth-024-sixth-000/proof.drat.gz",
+        "sha256": "c0bf8de654568bf6c3e081293acff85356cc0289d7821491a9e927c4768c1e45",
+        "uncompressed_bytes": 1342477,
+        "uncompressed_sha256": "720389e112183dea8d926fc64ee8c37704af1816d6170eab61c6926b0eb1bf41"
+      },
+      "protocol_sha256": "131e6b3fab3a1a599743846ab0c9f8f605188d9cb8fec172499881b5ee803077",
+      "replay_log": {
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-sixth-discriminator-final/discriminator-results/intersection-4-third-02-fourth-002-fifth-024-sixth-000/runner-replay.log",
+        "sha256": "58a8f1b95f5a62609f02b84c1056894446011790520d06e99ae908fb63984d2e"
+      },
+      "schema_version": 1,
+      "seconds_cap": 5,
+      "sixth_branch_count": 162,
+      "sixth_index": 0,
+      "sixth_position": "early_orbit_zero",
+      "sixth_unit_sha256": "6442bc26a7c562f5afe6467dab36365c709909f6a81afcecfc0c25cff0f1bab0",
+      "solver_elapsed_seconds": 0.550875917000667,
+      "solver_log": {
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-sixth-discriminator-final/discriminator-results/intersection-4-third-02-fourth-002-fifth-024-sixth-000/solver.log",
+        "sha256": "bde6e1eede96772c07c8ce29fd18088863815bd043aa59a06f11f5838cf8a162"
+      },
+      "stabilizer_order": 4,
+      "stabilizer_tier": "low",
+      "status": "UNSAT_VERIFIED_BY_RUNNER",
+      "top_parent": "intersection-4"
+    },
+    {
+      "exact_cnf_clauses": 46584,
+      "exact_cnf_sha256": "e7bf1feed5a8815e3cd1a6c2ecc9b485f32c927a3e3203f5400543e6642191b5",
+      "exact_cnf_variables": 10166,
+      "fifth_case_id": "intersection-4-third-02-fourth-002-fifth-024",
+      "inherited_unit_sha256": "4111ee1f35e55fae8644ee8a1bf06a9d54c3fe18c17df4682c3a0291535cc582",
+      "leaf_id": "intersection-4-third-02-fourth-002-fifth-024-sixth-121",
+      "parent_cnf_sha256": "323c99b844f04f4130e3cbb38fda880f0c09924262d09e84020c279ed41fb57b",
+      "proof": {
+        "compressed_bytes": 111717,
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-sixth-discriminator-final/discriminator-results/intersection-4-third-02-fourth-002-fifth-024-sixth-121/proof.drat.gz",
+        "sha256": "d1968e4e829c2116e924467505877b8b8225f3926ad3bd0ad88dcbe89ec342a6",
+        "uncompressed_bytes": 600911,
+        "uncompressed_sha256": "52b292983103ea26d48150232ea66ad12538566f06aebeba911e370c249c4e24"
+      },
+      "protocol_sha256": "131e6b3fab3a1a599743846ab0c9f8f605188d9cb8fec172499881b5ee803077",
+      "replay_log": {
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-sixth-discriminator-final/discriminator-results/intersection-4-third-02-fourth-002-fifth-024-sixth-121/runner-replay.log",
+        "sha256": "fa05bf929dfb08d973953b1acfa81b4c39b36b02d6f64d0d1663a24dcbf68e37"
+      },
+      "schema_version": 1,
+      "seconds_cap": 5,
+      "sixth_branch_count": 162,
+      "sixth_index": 121,
+      "sixth_position": "latter_three_quarter",
+      "sixth_unit_sha256": "364cc4a5e5df0b38e6776a0812e19f10549da63b993223e08aff4c2d05d0678b",
+      "solver_elapsed_seconds": 0.09032304100037436,
+      "solver_log": {
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-sixth-discriminator-final/discriminator-results/intersection-4-third-02-fourth-002-fifth-024-sixth-121/solver.log",
+        "sha256": "bde6e1eede96772c07c8ce29fd18088863815bd043aa59a06f11f5838cf8a162"
+      },
+      "stabilizer_order": 4,
+      "stabilizer_tier": "low",
+      "status": "UNSAT_VERIFIED_BY_RUNNER",
+      "top_parent": "intersection-4"
+    },
+    {
+      "claim_limit": "UNKNOWN closes no branch",
+      "exact_cnf_clauses": 46330,
+      "exact_cnf_sha256": "e49ed2a3821bd2d1c195f9cfeff8ff74da7d1ef2350f982f38cc8b78b1c9fd61",
+      "exact_cnf_variables": 10166,
+      "fifth_case_id": "intersection-4-third-02-fourth-004-fifth-024",
+      "inherited_unit_sha256": "78b6b7c14aa94300fb34afdadbd17a8b499b8558f44acc550ce7f0779089cd14",
+      "leaf_id": "intersection-4-third-02-fourth-004-fifth-024-sixth-000",
+      "parent_cnf_sha256": "323c99b844f04f4130e3cbb38fda880f0c09924262d09e84020c279ed41fb57b",
+      "protocol_sha256": "131e6b3fab3a1a599743846ab0c9f8f605188d9cb8fec172499881b5ee803077",
+      "returncode": 0,
+      "schema_version": 1,
+      "seconds_cap": 5,
+      "sixth_branch_count": 225,
+      "sixth_index": 0,
+      "sixth_position": "early_orbit_zero",
+      "sixth_unit_sha256": "826b6832e45ba17d625debc95ae8554e148550b00c05b47fa8f7be1c555bc83c",
+      "solver_elapsed_seconds": 5.0172289169995565,
+      "solver_log": {
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-sixth-discriminator-final/discriminator-results/intersection-4-third-02-fourth-004-fifth-024-sixth-000/solver.log",
+        "sha256": "8fba55cea0f98be36fab7b65349dda867a58aabfcf974a46098f5123830ac5cb"
+      },
+      "stabilizer_order": 2,
+      "stabilizer_tier": "low",
+      "status": "FIXED_CAP_TIMEOUT",
+      "top_parent": "intersection-4"
+    },
+    {
+      "exact_cnf_clauses": 46583,
+      "exact_cnf_sha256": "10f2e725a69aec47dd73f189845f077f9f6b094f1c50add43d6b8b6faca2c5d6",
+      "exact_cnf_variables": 10166,
+      "fifth_case_id": "intersection-4-third-02-fourth-004-fifth-024",
+      "inherited_unit_sha256": "78b6b7c14aa94300fb34afdadbd17a8b499b8558f44acc550ce7f0779089cd14",
+      "leaf_id": "intersection-4-third-02-fourth-004-fifth-024-sixth-168",
+      "parent_cnf_sha256": "323c99b844f04f4130e3cbb38fda880f0c09924262d09e84020c279ed41fb57b",
+      "proof": {
+        "compressed_bytes": 111760,
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-sixth-discriminator-final/discriminator-results/intersection-4-third-02-fourth-004-fifth-024-sixth-168/proof.drat.gz",
+        "sha256": "c930009b7b9395fa1877d0a0b3dd81aa5ee35b0a939cd96b5c638f8d8284a9bf",
+        "uncompressed_bytes": 600955,
+        "uncompressed_sha256": "e32a5018c86090c8e2a838e600b9c72fa2518f83f9a970b750a8a5aedb548e00"
+      },
+      "protocol_sha256": "131e6b3fab3a1a599743846ab0c9f8f605188d9cb8fec172499881b5ee803077",
+      "replay_log": {
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-sixth-discriminator-final/discriminator-results/intersection-4-third-02-fourth-004-fifth-024-sixth-168/runner-replay.log",
+        "sha256": "d5337b0367ed897079047d6d098f26ca8380aa21cfcc3705fdb9b3a6a1113cd7"
+      },
+      "schema_version": 1,
+      "seconds_cap": 5,
+      "sixth_branch_count": 225,
+      "sixth_index": 168,
+      "sixth_position": "latter_three_quarter",
+      "sixth_unit_sha256": "3f97cc013f782f6ebe7baef7880248f4e698dbc1fb19a2c6a0311f61d4185cca",
+      "solver_elapsed_seconds": 0.08604525000009744,
+      "solver_log": {
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-sixth-discriminator-final/discriminator-results/intersection-4-third-02-fourth-004-fifth-024-sixth-168/solver.log",
+        "sha256": "bde6e1eede96772c07c8ce29fd18088863815bd043aa59a06f11f5838cf8a162"
+      },
+      "stabilizer_order": 2,
+      "stabilizer_tier": "low",
+      "status": "UNSAT_VERIFIED_BY_RUNNER",
+      "top_parent": "intersection-4"
+    },
+    {
+      "exact_cnf_clauses": 46342,
+      "exact_cnf_sha256": "98f45243ffd3bbb8440f96ba2f314279a1bd5737016c9a34c57a67fe2e333f7f",
+      "exact_cnf_variables": 10166,
+      "fifth_case_id": "intersection-4-third-02-fourth-004-fifth-025",
+      "inherited_unit_sha256": "087f027f80e2de24071351fb7a4311296b168789ab96342d59fe5e31c376a241",
+      "leaf_id": "intersection-4-third-02-fourth-004-fifth-025-sixth-000",
+      "parent_cnf_sha256": "323c99b844f04f4130e3cbb38fda880f0c09924262d09e84020c279ed41fb57b",
+      "proof": {
+        "compressed_bytes": 600266,
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-sixth-discriminator-final/discriminator-results/intersection-4-third-02-fourth-004-fifth-025-sixth-000/proof.drat.gz",
+        "sha256": "2ed0ae4e8a0a32322909824fbbdef3900e06068d30929ec4b852e628c2613bb6",
+        "uncompressed_bytes": 1868589,
+        "uncompressed_sha256": "194c74f8111f63df29d1b807bdbf9b31d5ee8b40a6e6ef4f4e33048c0dd1e621"
+      },
+      "protocol_sha256": "131e6b3fab3a1a599743846ab0c9f8f605188d9cb8fec172499881b5ee803077",
+      "replay_log": {
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-sixth-discriminator-final/discriminator-results/intersection-4-third-02-fourth-004-fifth-025-sixth-000/runner-replay.log",
+        "sha256": "3d9938d023e91b77a3792e9d82a6e8a8ae1090e97b1203817357db0c4b3e2820"
+      },
+      "schema_version": 1,
+      "seconds_cap": 5,
+      "sixth_branch_count": 113,
+      "sixth_index": 0,
+      "sixth_position": "early_orbit_zero",
+      "sixth_unit_sha256": "84b9bb077be0d8a29d0d01ef350d718b77c2ec5f40c3ab90502b1b4b5016c550",
+      "solver_elapsed_seconds": 0.7199616660000174,
+      "solver_log": {
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-sixth-discriminator-final/discriminator-results/intersection-4-third-02-fourth-004-fifth-025-sixth-000/solver.log",
+        "sha256": "bde6e1eede96772c07c8ce29fd18088863815bd043aa59a06f11f5838cf8a162"
+      },
+      "stabilizer_order": 8,
+      "stabilizer_tier": "mid",
+      "status": "UNSAT_VERIFIED_BY_RUNNER",
+      "top_parent": "intersection-4"
+    },
+    {
+      "exact_cnf_clauses": 46586,
+      "exact_cnf_sha256": "ecdf8900812a28d180e1c179ee307db0c6436a6c0b10825dc73c4eaea3b7ebaf",
+      "exact_cnf_variables": 10166,
+      "fifth_case_id": "intersection-4-third-02-fourth-004-fifth-025",
+      "inherited_unit_sha256": "087f027f80e2de24071351fb7a4311296b168789ab96342d59fe5e31c376a241",
+      "leaf_id": "intersection-4-third-02-fourth-004-fifth-025-sixth-084",
+      "parent_cnf_sha256": "323c99b844f04f4130e3cbb38fda880f0c09924262d09e84020c279ed41fb57b",
+      "proof": {
+        "compressed_bytes": 112066,
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-sixth-discriminator-final/discriminator-results/intersection-4-third-02-fourth-004-fifth-025-sixth-084/proof.drat.gz",
+        "sha256": "39ccfd01efa615fc4bed934b8e34bb12233e248cb867894c1d6c82c96351f233",
+        "uncompressed_bytes": 601695,
+        "uncompressed_sha256": "c679dcf77a3bb90a6f5fab94e60c1fadb93f206812de0b70a99e54af7979f037"
+      },
+      "protocol_sha256": "131e6b3fab3a1a599743846ab0c9f8f605188d9cb8fec172499881b5ee803077",
+      "replay_log": {
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-sixth-discriminator-final/discriminator-results/intersection-4-third-02-fourth-004-fifth-025-sixth-084/runner-replay.log",
+        "sha256": "97ef4e67ed6b8a96e37688eab8e85be4bfb3bc1d7a2d8fc5cf5fa169374764d3"
+      },
+      "schema_version": 1,
+      "seconds_cap": 5,
+      "sixth_branch_count": 113,
+      "sixth_index": 84,
+      "sixth_position": "latter_three_quarter",
+      "sixth_unit_sha256": "0b9462952392475368590baf2e0992bc95e3f502b40294e3b700773ead97c5ce",
+      "solver_elapsed_seconds": 0.0998652909993325,
+      "solver_log": {
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-sixth-discriminator-final/discriminator-results/intersection-4-third-02-fourth-004-fifth-025-sixth-084/solver.log",
+        "sha256": "bde6e1eede96772c07c8ce29fd18088863815bd043aa59a06f11f5838cf8a162"
+      },
+      "stabilizer_order": 8,
+      "stabilizer_tier": "mid",
+      "status": "UNSAT_VERIFIED_BY_RUNNER",
+      "top_parent": "intersection-4"
+    },
+    {
+      "claim_limit": "UNKNOWN closes no branch",
+      "exact_cnf_clauses": 46232,
+      "exact_cnf_sha256": "515b906ad331b62cb6a01d8c18d72eb41013f3d37025fa2adefd1901a8f6d30d",
+      "exact_cnf_variables": 10166,
+      "fifth_case_id": "intersection-4-third-04-fourth-000-fifth-000",
+      "inherited_unit_sha256": "9385ff2ad1dd7c76156104b184410f979506ecb2ebb6fe896082cec8d59461b9",
+      "leaf_id": "intersection-4-third-04-fourth-000-fifth-000-sixth-000",
+      "parent_cnf_sha256": "983b3fa968eb4041be756d38eccd03529f117b39cccbe2f7e3aa3d81978d15f1",
+      "protocol_sha256": "131e6b3fab3a1a599743846ab0c9f8f605188d9cb8fec172499881b5ee803077",
+      "returncode": 0,
+      "schema_version": 1,
+      "seconds_cap": 5,
+      "sixth_branch_count": 178,
+      "sixth_index": 0,
+      "sixth_position": "early_orbit_zero",
+      "sixth_unit_sha256": "f14b4987904bcb5814e4459a057ed4d20f58a633152288a761214dcd28780b56",
+      "solver_elapsed_seconds": 5.038572541000576,
+      "solver_log": {
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-sixth-discriminator-final/discriminator-results/intersection-4-third-04-fourth-000-fifth-000-sixth-000/solver.log",
+        "sha256": "8fba55cea0f98be36fab7b65349dda867a58aabfcf974a46098f5123830ac5cb"
+      },
+      "stabilizer_order": 6,
+      "stabilizer_tier": "low",
+      "status": "FIXED_CAP_TIMEOUT",
+      "top_parent": "intersection-4"
+    },
+    {
+      "exact_cnf_clauses": 46595,
+      "exact_cnf_sha256": "2e5ef88304abf590e36e25399e4502271206c9030ef03f0c03843fd51bac5c49",
+      "exact_cnf_variables": 10166,
+      "fifth_case_id": "intersection-4-third-04-fourth-000-fifth-000",
+      "inherited_unit_sha256": "9385ff2ad1dd7c76156104b184410f979506ecb2ebb6fe896082cec8d59461b9",
+      "leaf_id": "intersection-4-third-04-fourth-000-fifth-000-sixth-133",
+      "parent_cnf_sha256": "983b3fa968eb4041be756d38eccd03529f117b39cccbe2f7e3aa3d81978d15f1",
+      "proof": {
+        "compressed_bytes": 113553,
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-sixth-discriminator-final/discriminator-results/intersection-4-third-04-fourth-000-fifth-000-sixth-133/proof.drat.gz",
+        "sha256": "2e728111ac6c0ed9578179ef206519da808d638fb40b0a6fd7ac4d248d80b470",
+        "uncompressed_bytes": 604403,
+        "uncompressed_sha256": "1139a998ab03efa13d419006b74ba4d07e45daf8f1a1e8bd31685f7acd797dc1"
+      },
+      "protocol_sha256": "131e6b3fab3a1a599743846ab0c9f8f605188d9cb8fec172499881b5ee803077",
+      "replay_log": {
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-sixth-discriminator-final/discriminator-results/intersection-4-third-04-fourth-000-fifth-000-sixth-133/runner-replay.log",
+        "sha256": "32c85769ef2db8f409e838c27ffe68be80167e9091643947be81d77586f89d9c"
+      },
+      "schema_version": 1,
+      "seconds_cap": 5,
+      "sixth_branch_count": 178,
+      "sixth_index": 133,
+      "sixth_position": "latter_three_quarter",
+      "sixth_unit_sha256": "a62d3cd367d6491678ca9f8daa3a35e1d6c004feb1c2b0bc20dd403591ea374e",
+      "solver_elapsed_seconds": 0.089309917000719,
+      "solver_log": {
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-sixth-discriminator-final/discriminator-results/intersection-4-third-04-fourth-000-fifth-000-sixth-133/solver.log",
+        "sha256": "bde6e1eede96772c07c8ce29fd18088863815bd043aa59a06f11f5838cf8a162"
+      },
+      "stabilizer_order": 6,
+      "stabilizer_tier": "low",
+      "status": "UNSAT_VERIFIED_BY_RUNNER",
+      "top_parent": "intersection-4"
+    },
+    {
+      "claim_limit": "UNKNOWN closes no branch",
+      "exact_cnf_clauses": 46286,
+      "exact_cnf_sha256": "10aeaf40f2146dd7b07ddf19f86985812be7c0e14eb48047ad75740fe40a3c7a",
+      "exact_cnf_variables": 10166,
+      "fifth_case_id": "intersection-4-third-05-fourth-003-fifth-000",
+      "inherited_unit_sha256": "bef47f21d4316f1e1bed50fe4823c4647f1e123d2e8346c4bb627fd2860ec1f2",
+      "leaf_id": "intersection-4-third-05-fourth-003-fifth-000-sixth-000",
+      "parent_cnf_sha256": "841ce8a9641fb33c45793bed0d897e23ee462fd5200ee204f167c38d933b0576",
+      "protocol_sha256": "131e6b3fab3a1a599743846ab0c9f8f605188d9cb8fec172499881b5ee803077",
+      "returncode": 0,
+      "schema_version": 1,
+      "seconds_cap": 5,
+      "sixth_branch_count": 128,
+      "sixth_index": 0,
+      "sixth_position": "early_orbit_zero",
+      "sixth_unit_sha256": "7f3d905fd916ac40ded4007bbe76e90633bb99a856b7bf512eaf5ae1e91f6ca7",
+      "solver_elapsed_seconds": 5.022342792000018,
+      "solver_log": {
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-sixth-discriminator-final/discriminator-results/intersection-4-third-05-fourth-003-fifth-000-sixth-000/solver.log",
+        "sha256": "8fba55cea0f98be36fab7b65349dda867a58aabfcf974a46098f5123830ac5cb"
+      },
+      "stabilizer_order": 8,
+      "stabilizer_tier": "mid",
+      "status": "FIXED_CAP_TIMEOUT",
+      "top_parent": "intersection-4"
+    },
+    {
+      "exact_cnf_clauses": 46575,
+      "exact_cnf_sha256": "1efe512f52188d331ba23900bc4f3e3c4c68d655bb0884052e53d77dbbd547f2",
+      "exact_cnf_variables": 10166,
+      "fifth_case_id": "intersection-4-third-05-fourth-003-fifth-000",
+      "inherited_unit_sha256": "bef47f21d4316f1e1bed50fe4823c4647f1e123d2e8346c4bb627fd2860ec1f2",
+      "leaf_id": "intersection-4-third-05-fourth-003-fifth-000-sixth-096",
+      "parent_cnf_sha256": "841ce8a9641fb33c45793bed0d897e23ee462fd5200ee204f167c38d933b0576",
+      "proof": {
+        "compressed_bytes": 111371,
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-sixth-discriminator-final/discriminator-results/intersection-4-third-05-fourth-003-fifth-000-sixth-096/proof.drat.gz",
+        "sha256": "bf4ed7949509afc778428bcace5d5e4cc194ceb3665999c3f3e7079778624f36",
+        "uncompressed_bytes": 599963,
+        "uncompressed_sha256": "8f816a45611ba54a741abee8acb6610a757e0fadc389da048f445498abf1f9cd"
+      },
+      "protocol_sha256": "131e6b3fab3a1a599743846ab0c9f8f605188d9cb8fec172499881b5ee803077",
+      "replay_log": {
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-sixth-discriminator-final/discriminator-results/intersection-4-third-05-fourth-003-fifth-000-sixth-096/runner-replay.log",
+        "sha256": "5fe46aa5f8e9b79fa851a369de13d9bc6e3dc2e8a7fb2794390edeb7df8434c2"
+      },
+      "schema_version": 1,
+      "seconds_cap": 5,
+      "sixth_branch_count": 128,
+      "sixth_index": 96,
+      "sixth_position": "latter_three_quarter",
+      "sixth_unit_sha256": "aa448e2842dd6a69dcbc5927504adc65f64b043b81b55e7738103c904aa1ef1f",
+      "solver_elapsed_seconds": 0.09810462499990535,
+      "solver_log": {
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-sixth-discriminator-final/discriminator-results/intersection-4-third-05-fourth-003-fifth-000-sixth-096/solver.log",
+        "sha256": "bde6e1eede96772c07c8ce29fd18088863815bd043aa59a06f11f5838cf8a162"
+      },
+      "stabilizer_order": 8,
+      "stabilizer_tier": "mid",
+      "status": "UNSAT_VERIFIED_BY_RUNNER",
+      "top_parent": "intersection-4"
+    },
+    {
+      "claim_limit": "UNKNOWN closes no branch",
+      "exact_cnf_clauses": 46289,
+      "exact_cnf_sha256": "c0244b011f58df2432ac4c2032fc292e3e3a73457212f1163e6029b6944c8736",
+      "exact_cnf_variables": 10166,
+      "fifth_case_id": "intersection-4-third-05-fourth-003-fifth-001",
+      "inherited_unit_sha256": "b5be35a1de29d7229a181b7493032b4bb0ef16115c22e54f0a663eb0fc5616dc",
+      "leaf_id": "intersection-4-third-05-fourth-003-fifth-001-sixth-000",
+      "parent_cnf_sha256": "841ce8a9641fb33c45793bed0d897e23ee462fd5200ee204f167c38d933b0576",
+      "protocol_sha256": "131e6b3fab3a1a599743846ab0c9f8f605188d9cb8fec172499881b5ee803077",
+      "returncode": 0,
+      "schema_version": 1,
+      "seconds_cap": 5,
+      "sixth_branch_count": 126,
+      "sixth_index": 0,
+      "sixth_position": "early_orbit_zero",
+      "sixth_unit_sha256": "6442bc26a7c562f5afe6467dab36365c709909f6a81afcecfc0c25cff0f1bab0",
+      "solver_elapsed_seconds": 5.022285750000265,
+      "solver_log": {
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-sixth-discriminator-final/discriminator-results/intersection-4-third-05-fourth-003-fifth-001-sixth-000/solver.log",
+        "sha256": "8fba55cea0f98be36fab7b65349dda867a58aabfcf974a46098f5123830ac5cb"
+      },
+      "stabilizer_order": 8,
+      "stabilizer_tier": "mid",
+      "status": "FIXED_CAP_TIMEOUT",
+      "top_parent": "intersection-4"
+    },
+    {
+      "exact_cnf_clauses": 46575,
+      "exact_cnf_sha256": "875b27bdfe869e529c18862b6f47bc7a9842ad3732ceede610b85742ae5e77d0",
+      "exact_cnf_variables": 10166,
+      "fifth_case_id": "intersection-4-third-05-fourth-003-fifth-001",
+      "inherited_unit_sha256": "b5be35a1de29d7229a181b7493032b4bb0ef16115c22e54f0a663eb0fc5616dc",
+      "leaf_id": "intersection-4-third-05-fourth-003-fifth-001-sixth-094",
+      "parent_cnf_sha256": "841ce8a9641fb33c45793bed0d897e23ee462fd5200ee204f167c38d933b0576",
+      "proof": {
+        "compressed_bytes": 111372,
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-sixth-discriminator-final/discriminator-results/intersection-4-third-05-fourth-003-fifth-001-sixth-094/proof.drat.gz",
+        "sha256": "3aced7197f0186410d57986726637aeacdab266becda78dcba7a20dbfacec5c9",
+        "uncompressed_bytes": 599963,
+        "uncompressed_sha256": "6dfdb56fadbf79ebc0e08ce80cfafc17d47a03ed4e9e860f4429d54bb8e5929a"
+      },
+      "protocol_sha256": "131e6b3fab3a1a599743846ab0c9f8f605188d9cb8fec172499881b5ee803077",
+      "replay_log": {
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-sixth-discriminator-final/discriminator-results/intersection-4-third-05-fourth-003-fifth-001-sixth-094/runner-replay.log",
+        "sha256": "e8a470ff0eff216c316b4b08313ceb1369dc259ff836804b3b4fe734c0130494"
+      },
+      "schema_version": 1,
+      "seconds_cap": 5,
+      "sixth_branch_count": 126,
+      "sixth_index": 94,
+      "sixth_position": "latter_three_quarter",
+      "sixth_unit_sha256": "0dcb1d3cbb9b7930107d35f4e5418005218f9c281b2580ddec33a1d9d1fbabd3",
+      "solver_elapsed_seconds": 0.10344108299977961,
+      "solver_log": {
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-sixth-discriminator-final/discriminator-results/intersection-4-third-05-fourth-003-fifth-001-sixth-094/solver.log",
+        "sha256": "bde6e1eede96772c07c8ce29fd18088863815bd043aa59a06f11f5838cf8a162"
+      },
+      "stabilizer_order": 8,
+      "stabilizer_tier": "mid",
+      "status": "UNSAT_VERIFIED_BY_RUNNER",
+      "top_parent": "intersection-4"
+    }
+  ],
+  "protocol": {
+    "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-sixth-discriminator-final/discriminator-protocol.json",
+    "sha256": "131e6b3fab3a1a599743846ab0c9f8f605188d9cb8fec172499881b5ee803077"
+  },
+  "schema_version": 1,
+  "status": "COMPLETE_PENDING_INDEPENDENT_AUDIT"
+}

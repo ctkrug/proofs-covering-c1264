@@ -16,7 +16,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 BASE = ROOT / "artifacts/classification/ordinary-c1153-v1/hard-tail-fifth-split"
-OUTPUT = BASE / "terminal-aggregate-audit.json"
+OUTPUT = BASE / "terminal-aggregate-audit-full-replay.json"
 UNSAT = {"UNSAT_VERIFIED_BY_RUNNER", "PROVISIONAL_UNSAT_PROOF_RETAINED"}
 
 
@@ -145,16 +145,16 @@ def main() -> None:
             "batch_receipt_sha256": sha(batch_receipt_path),
             "certified_unsat": len(case_ids),
         })
-    assert len(batch_certified) == 11_264
+    assert len(batch_certified) == 28_501
     assert batch_certified <= {leaf for leaf, status in suffix_status.items() if status in UNSAT}
     assert not (batch_certified & sampled_certified)
     certified_suffix = batch_certified | sampled_certified
-    assert len(certified_suffix) == 15_310
+    assert len(certified_suffix) == 32_547
     assert certified_ledger["counts"] == {
         "sampled_operational_replay_certificates": 4_046,
-        "exhaustive_batch_certificates": 11_264,
+        "exhaustive_batch_certificates": 28_501,
         "overlap": 0,
-        "distinct_certified_suffix_unsat": 15_310,
+        "distinct_certified_suffix_unsat": 32_547,
     }
 
     measured = set(suffix_status) | set(discriminator_status)
@@ -176,7 +176,7 @@ def main() -> None:
     assert len(unmeasured) == 10_626
     assert len(timeout_ids) == 82
     assert len(open_ids) == 10_708
-    assert len(certified_fifth) == 15_374
+    assert len(certified_fifth) == 32_611
     assert not complete_parents
 
     sixth_audit_path = ROOT / "artifacts/classification/ordinary-c1153-v1/hard-tail-sixth-discriminator/independent-audit.json"
@@ -219,8 +219,8 @@ def main() -> None:
             "provisional_solver_unsat": 32_547,
             "timeouts": 50,
             "sampled_replay_certified": 4_046,
-            "bulk_replay_certified": 11_264,
-            "distinct_replay_certified": 15_310,
+            "bulk_replay_certified": 28_501,
+            "distinct_replay_certified": 32_547,
         },
         "hard_tail": {
             "audited_sixth_snapshot_timeouts": len(frozen_sixth_ids),
@@ -231,9 +231,9 @@ def main() -> None:
             ).hexdigest(),
         },
         "claim_limit": (
-            "The suffix harvest is fully measured, but 17,237 suffix UNSAT proofs await exhaustive "
-            "replay, 82 measured leaves timed out, 10,626 fifth leaves were intentionally not measured, "
-            "and no fourth-level parent is closed."
+            "The suffix proof backlog is fully replay-certified. This terminal solver ledger predates "
+            "the separately audited structural zero-child aggregation; by itself it closes no "
+            "fourth-level parent."
         ),
     }
     payload = (json.dumps(report, indent=2, sort_keys=True) + "\n").encode()

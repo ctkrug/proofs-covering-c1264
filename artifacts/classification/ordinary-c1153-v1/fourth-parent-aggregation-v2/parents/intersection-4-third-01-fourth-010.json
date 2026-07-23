@@ -1,0 +1,4250 @@
+{
+  "aggregation_claim": "This parent is not closed.",
+  "child_count": 68,
+  "children": [
+    {
+      "deficit_branch_count": 4,
+      "deficit_manifest_binding": {
+        "path": "artifacts/classification/ordinary-c1153-v1/open-fifth-deficit-partition-v2/manifest.json",
+        "sha256": "c1f615b51076145183df3f1d4676005f6617dcade442e8a75264a7044a574996"
+      },
+      "fifth_index": 0,
+      "leaf_id": "intersection-4-third-01-fourth-010-fifth-000",
+      "open_status": "NEVER_MEASURED",
+      "terminal": false,
+      "terminal_status": "OPEN_NEVER_MEASURED"
+    },
+    {
+      "deficit_branch_count": 3,
+      "deficit_manifest_binding": {
+        "path": "artifacts/classification/ordinary-c1153-v1/open-fifth-deficit-partition-v2/manifest.json",
+        "sha256": "c1f615b51076145183df3f1d4676005f6617dcade442e8a75264a7044a574996"
+      },
+      "fifth_index": 1,
+      "leaf_id": "intersection-4-third-01-fourth-010-fifth-001",
+      "open_status": "NEVER_MEASURED",
+      "terminal": false,
+      "terminal_status": "OPEN_NEVER_MEASURED"
+    },
+    {
+      "certification_kind": "EMPTY_RESIDUAL_COVERAGE_CLAUSE",
+      "checker_receipt": {
+        "checker_result": "VALID",
+        "path": "artifacts/classification/ordinary-c1153-v1/open-fifth-deficit-partition-v2/independent-audit.json",
+        "sha256": "ba1487944532f6cd931e62c28c40a5822a2f68dd5f20cfc934f920a4b7d6dd36"
+      },
+      "fifth_index": 2,
+      "leaf_id": "intersection-4-third-01-fourth-010-fifth-002",
+      "manifest_binding": {
+        "path": "artifacts/classification/ordinary-c1153-v1/open-fifth-deficit-partition-v2/manifest.json",
+        "sha256": "c1f615b51076145183df3f1d4676005f6617dcade442e8a75264a7044a574996"
+      },
+      "semantic_receipt": {
+        "claim_limit": "Semantic contradiction receipt only; generate and externally replay the exact CNF proof before ledger closure.",
+        "coverage_clause_sha256": "cec909d35b54d42e35a4947c67efb856cb3ff87ab2129094994d9b6f8dd810e5",
+        "coverage_clause_variables": [
+          6,
+          12,
+          17,
+          21,
+          24,
+          26,
+          28,
+          33,
+          38,
+          42,
+          45,
+          47,
+          49,
+          53,
+          57,
+          60,
+          62,
+          64,
+          67,
+          70,
+          72,
+          74,
+          76,
+          78,
+          80,
+          81,
+          83,
+          84
+        ],
+        "empty_residual_clause_sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+        "forbidden_coverers": [
+          {
+            "reasons": [
+              "PARENT_CNF_NEGATIVE_UNIT"
+            ],
+            "variable": 6
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 12
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 17
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 21
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 24
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 26
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 28
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 33
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 38
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 42
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 45
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 47
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 49
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 53
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 57
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 60
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 62
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 64
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 67
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 70
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 72
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 74
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 76
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 78
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 80
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 81
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 83
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 84
+          }
+        ],
+        "residual_eligible_variables": [],
+        "selected_triple": [
+          1,
+          2,
+          10
+        ],
+        "semantic_status": "EMPTY_RESIDUAL_COVERAGE_CLAUSE_NOT_YET_SOLVER_CERTIFIED"
+      },
+      "semantic_receipt_sha256": "fcf4cbe28d33132c4313f918b089c4694a1d8b0f0bcdf72d24e509f1d5caa111",
+      "terminal": true,
+      "terminal_status": "AUDITED_SEMANTIC_COVERAGE_CONTRADICTION"
+    },
+    {
+      "certification_kind": "EMPTY_RESIDUAL_COVERAGE_CLAUSE",
+      "checker_receipt": {
+        "checker_result": "VALID",
+        "path": "artifacts/classification/ordinary-c1153-v1/open-fifth-deficit-partition-v2/independent-audit.json",
+        "sha256": "ba1487944532f6cd931e62c28c40a5822a2f68dd5f20cfc934f920a4b7d6dd36"
+      },
+      "fifth_index": 3,
+      "leaf_id": "intersection-4-third-01-fourth-010-fifth-003",
+      "manifest_binding": {
+        "path": "artifacts/classification/ordinary-c1153-v1/open-fifth-deficit-partition-v2/manifest.json",
+        "sha256": "c1f615b51076145183df3f1d4676005f6617dcade442e8a75264a7044a574996"
+      },
+      "semantic_receipt": {
+        "claim_limit": "Semantic contradiction receipt only; generate and externally replay the exact CNF proof before ledger closure.",
+        "coverage_clause_sha256": "cec909d35b54d42e35a4947c67efb856cb3ff87ab2129094994d9b6f8dd810e5",
+        "coverage_clause_variables": [
+          6,
+          12,
+          17,
+          21,
+          24,
+          26,
+          28,
+          33,
+          38,
+          42,
+          45,
+          47,
+          49,
+          53,
+          57,
+          60,
+          62,
+          64,
+          67,
+          70,
+          72,
+          74,
+          76,
+          78,
+          80,
+          81,
+          83,
+          84
+        ],
+        "empty_residual_clause_sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+        "forbidden_coverers": [
+          {
+            "reasons": [
+              "PARENT_CNF_NEGATIVE_UNIT"
+            ],
+            "variable": 6
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 12
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 17
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 21
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 24
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 26
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 28
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 33
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 38
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 42
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 45
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 47
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 49
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 53
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 57
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 60
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 62
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 64
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 67
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 70
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 72
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 74
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 76
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 78
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 80
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 81
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 83
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 84
+          }
+        ],
+        "residual_eligible_variables": [],
+        "selected_triple": [
+          1,
+          2,
+          10
+        ],
+        "semantic_status": "EMPTY_RESIDUAL_COVERAGE_CLAUSE_NOT_YET_SOLVER_CERTIFIED"
+      },
+      "semantic_receipt_sha256": "fcf4cbe28d33132c4313f918b089c4694a1d8b0f0bcdf72d24e509f1d5caa111",
+      "terminal": true,
+      "terminal_status": "AUDITED_SEMANTIC_COVERAGE_CONTRADICTION"
+    },
+    {
+      "certification_kind": "EMPTY_RESIDUAL_COVERAGE_CLAUSE",
+      "checker_receipt": {
+        "checker_result": "VALID",
+        "path": "artifacts/classification/ordinary-c1153-v1/open-fifth-deficit-partition-v2/independent-audit.json",
+        "sha256": "ba1487944532f6cd931e62c28c40a5822a2f68dd5f20cfc934f920a4b7d6dd36"
+      },
+      "fifth_index": 4,
+      "leaf_id": "intersection-4-third-01-fourth-010-fifth-004",
+      "manifest_binding": {
+        "path": "artifacts/classification/ordinary-c1153-v1/open-fifth-deficit-partition-v2/manifest.json",
+        "sha256": "c1f615b51076145183df3f1d4676005f6617dcade442e8a75264a7044a574996"
+      },
+      "semantic_receipt": {
+        "claim_limit": "Semantic contradiction receipt only; generate and externally replay the exact CNF proof before ledger closure.",
+        "coverage_clause_sha256": "cec909d35b54d42e35a4947c67efb856cb3ff87ab2129094994d9b6f8dd810e5",
+        "coverage_clause_variables": [
+          6,
+          12,
+          17,
+          21,
+          24,
+          26,
+          28,
+          33,
+          38,
+          42,
+          45,
+          47,
+          49,
+          53,
+          57,
+          60,
+          62,
+          64,
+          67,
+          70,
+          72,
+          74,
+          76,
+          78,
+          80,
+          81,
+          83,
+          84
+        ],
+        "empty_residual_clause_sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+        "forbidden_coverers": [
+          {
+            "reasons": [
+              "PARENT_CNF_NEGATIVE_UNIT"
+            ],
+            "variable": 6
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 12
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 17
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 21
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 24
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 26
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 28
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 33
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 38
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 42
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 45
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 47
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 49
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 53
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 57
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 60
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 62
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 64
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 67
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 70
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 72
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 74
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 76
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 78
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 80
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 81
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 83
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 84
+          }
+        ],
+        "residual_eligible_variables": [],
+        "selected_triple": [
+          1,
+          2,
+          10
+        ],
+        "semantic_status": "EMPTY_RESIDUAL_COVERAGE_CLAUSE_NOT_YET_SOLVER_CERTIFIED"
+      },
+      "semantic_receipt_sha256": "fcf4cbe28d33132c4313f918b089c4694a1d8b0f0bcdf72d24e509f1d5caa111",
+      "terminal": true,
+      "terminal_status": "AUDITED_SEMANTIC_COVERAGE_CONTRADICTION"
+    },
+    {
+      "certification_kind": "EMPTY_RESIDUAL_COVERAGE_CLAUSE",
+      "checker_receipt": {
+        "checker_result": "VALID",
+        "path": "artifacts/classification/ordinary-c1153-v1/open-fifth-deficit-partition-v2/independent-audit.json",
+        "sha256": "ba1487944532f6cd931e62c28c40a5822a2f68dd5f20cfc934f920a4b7d6dd36"
+      },
+      "fifth_index": 5,
+      "leaf_id": "intersection-4-third-01-fourth-010-fifth-005",
+      "manifest_binding": {
+        "path": "artifacts/classification/ordinary-c1153-v1/open-fifth-deficit-partition-v2/manifest.json",
+        "sha256": "c1f615b51076145183df3f1d4676005f6617dcade442e8a75264a7044a574996"
+      },
+      "semantic_receipt": {
+        "claim_limit": "Semantic contradiction receipt only; generate and externally replay the exact CNF proof before ledger closure.",
+        "coverage_clause_sha256": "cec909d35b54d42e35a4947c67efb856cb3ff87ab2129094994d9b6f8dd810e5",
+        "coverage_clause_variables": [
+          6,
+          12,
+          17,
+          21,
+          24,
+          26,
+          28,
+          33,
+          38,
+          42,
+          45,
+          47,
+          49,
+          53,
+          57,
+          60,
+          62,
+          64,
+          67,
+          70,
+          72,
+          74,
+          76,
+          78,
+          80,
+          81,
+          83,
+          84
+        ],
+        "empty_residual_clause_sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+        "forbidden_coverers": [
+          {
+            "reasons": [
+              "PARENT_CNF_NEGATIVE_UNIT"
+            ],
+            "variable": 6
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 12
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 17
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 21
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 24
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 26
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 28
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 33
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 38
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 42
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 45
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 47
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 49
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 53
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 57
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 60
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 62
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 64
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 67
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 70
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 72
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 74
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 76
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 78
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 80
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 81
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 83
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 84
+          }
+        ],
+        "residual_eligible_variables": [],
+        "selected_triple": [
+          1,
+          2,
+          10
+        ],
+        "semantic_status": "EMPTY_RESIDUAL_COVERAGE_CLAUSE_NOT_YET_SOLVER_CERTIFIED"
+      },
+      "semantic_receipt_sha256": "fcf4cbe28d33132c4313f918b089c4694a1d8b0f0bcdf72d24e509f1d5caa111",
+      "terminal": true,
+      "terminal_status": "AUDITED_SEMANTIC_COVERAGE_CONTRADICTION"
+    },
+    {
+      "certification_kind": "EMPTY_RESIDUAL_COVERAGE_CLAUSE",
+      "checker_receipt": {
+        "checker_result": "VALID",
+        "path": "artifacts/classification/ordinary-c1153-v1/open-fifth-deficit-partition-v2/independent-audit.json",
+        "sha256": "ba1487944532f6cd931e62c28c40a5822a2f68dd5f20cfc934f920a4b7d6dd36"
+      },
+      "fifth_index": 6,
+      "leaf_id": "intersection-4-third-01-fourth-010-fifth-006",
+      "manifest_binding": {
+        "path": "artifacts/classification/ordinary-c1153-v1/open-fifth-deficit-partition-v2/manifest.json",
+        "sha256": "c1f615b51076145183df3f1d4676005f6617dcade442e8a75264a7044a574996"
+      },
+      "semantic_receipt": {
+        "claim_limit": "Semantic contradiction receipt only; generate and externally replay the exact CNF proof before ledger closure.",
+        "coverage_clause_sha256": "cec909d35b54d42e35a4947c67efb856cb3ff87ab2129094994d9b6f8dd810e5",
+        "coverage_clause_variables": [
+          6,
+          12,
+          17,
+          21,
+          24,
+          26,
+          28,
+          33,
+          38,
+          42,
+          45,
+          47,
+          49,
+          53,
+          57,
+          60,
+          62,
+          64,
+          67,
+          70,
+          72,
+          74,
+          76,
+          78,
+          80,
+          81,
+          83,
+          84
+        ],
+        "empty_residual_clause_sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+        "forbidden_coverers": [
+          {
+            "reasons": [
+              "PARENT_CNF_NEGATIVE_UNIT"
+            ],
+            "variable": 6
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 12
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 17
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 21
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 24
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 26
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 28
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 33
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 38
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 42
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 45
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 47
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 49
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 53
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 57
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 60
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 62
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 64
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 67
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 70
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 72
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 74
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 76
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 78
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 80
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 81
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 83
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 84
+          }
+        ],
+        "residual_eligible_variables": [],
+        "selected_triple": [
+          1,
+          2,
+          10
+        ],
+        "semantic_status": "EMPTY_RESIDUAL_COVERAGE_CLAUSE_NOT_YET_SOLVER_CERTIFIED"
+      },
+      "semantic_receipt_sha256": "fcf4cbe28d33132c4313f918b089c4694a1d8b0f0bcdf72d24e509f1d5caa111",
+      "terminal": true,
+      "terminal_status": "AUDITED_SEMANTIC_COVERAGE_CONTRADICTION"
+    },
+    {
+      "certification_kind": "EMPTY_RESIDUAL_COVERAGE_CLAUSE",
+      "checker_receipt": {
+        "checker_result": "VALID",
+        "path": "artifacts/classification/ordinary-c1153-v1/open-fifth-deficit-partition-v2/independent-audit.json",
+        "sha256": "ba1487944532f6cd931e62c28c40a5822a2f68dd5f20cfc934f920a4b7d6dd36"
+      },
+      "fifth_index": 7,
+      "leaf_id": "intersection-4-third-01-fourth-010-fifth-007",
+      "manifest_binding": {
+        "path": "artifacts/classification/ordinary-c1153-v1/open-fifth-deficit-partition-v2/manifest.json",
+        "sha256": "c1f615b51076145183df3f1d4676005f6617dcade442e8a75264a7044a574996"
+      },
+      "semantic_receipt": {
+        "claim_limit": "Semantic contradiction receipt only; generate and externally replay the exact CNF proof before ledger closure.",
+        "coverage_clause_sha256": "cec909d35b54d42e35a4947c67efb856cb3ff87ab2129094994d9b6f8dd810e5",
+        "coverage_clause_variables": [
+          6,
+          12,
+          17,
+          21,
+          24,
+          26,
+          28,
+          33,
+          38,
+          42,
+          45,
+          47,
+          49,
+          53,
+          57,
+          60,
+          62,
+          64,
+          67,
+          70,
+          72,
+          74,
+          76,
+          78,
+          80,
+          81,
+          83,
+          84
+        ],
+        "empty_residual_clause_sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+        "forbidden_coverers": [
+          {
+            "reasons": [
+              "PARENT_CNF_NEGATIVE_UNIT"
+            ],
+            "variable": 6
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 12
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 17
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 21
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 24
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 26
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 28
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 33
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 38
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 42
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 45
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 47
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 49
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 53
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 57
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 60
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 62
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 64
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 67
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 70
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 72
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 74
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 76
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 78
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 80
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 81
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 83
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 84
+          }
+        ],
+        "residual_eligible_variables": [],
+        "selected_triple": [
+          1,
+          2,
+          10
+        ],
+        "semantic_status": "EMPTY_RESIDUAL_COVERAGE_CLAUSE_NOT_YET_SOLVER_CERTIFIED"
+      },
+      "semantic_receipt_sha256": "fcf4cbe28d33132c4313f918b089c4694a1d8b0f0bcdf72d24e509f1d5caa111",
+      "terminal": true,
+      "terminal_status": "AUDITED_SEMANTIC_COVERAGE_CONTRADICTION"
+    },
+    {
+      "certification_kind": "EMPTY_RESIDUAL_COVERAGE_CLAUSE",
+      "checker_receipt": {
+        "checker_result": "VALID",
+        "path": "artifacts/classification/ordinary-c1153-v1/open-fifth-deficit-partition-v2/independent-audit.json",
+        "sha256": "ba1487944532f6cd931e62c28c40a5822a2f68dd5f20cfc934f920a4b7d6dd36"
+      },
+      "fifth_index": 8,
+      "leaf_id": "intersection-4-third-01-fourth-010-fifth-008",
+      "manifest_binding": {
+        "path": "artifacts/classification/ordinary-c1153-v1/open-fifth-deficit-partition-v2/manifest.json",
+        "sha256": "c1f615b51076145183df3f1d4676005f6617dcade442e8a75264a7044a574996"
+      },
+      "semantic_receipt": {
+        "claim_limit": "Semantic contradiction receipt only; generate and externally replay the exact CNF proof before ledger closure.",
+        "coverage_clause_sha256": "cec909d35b54d42e35a4947c67efb856cb3ff87ab2129094994d9b6f8dd810e5",
+        "coverage_clause_variables": [
+          6,
+          12,
+          17,
+          21,
+          24,
+          26,
+          28,
+          33,
+          38,
+          42,
+          45,
+          47,
+          49,
+          53,
+          57,
+          60,
+          62,
+          64,
+          67,
+          70,
+          72,
+          74,
+          76,
+          78,
+          80,
+          81,
+          83,
+          84
+        ],
+        "empty_residual_clause_sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+        "forbidden_coverers": [
+          {
+            "reasons": [
+              "PARENT_CNF_NEGATIVE_UNIT"
+            ],
+            "variable": 6
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 12
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 17
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 21
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 24
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 26
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 28
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 33
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 38
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 42
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 45
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 47
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 49
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 53
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 57
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 60
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 62
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 64
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 67
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 70
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 72
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 74
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 76
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 78
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 80
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 81
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 83
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 84
+          }
+        ],
+        "residual_eligible_variables": [],
+        "selected_triple": [
+          1,
+          2,
+          10
+        ],
+        "semantic_status": "EMPTY_RESIDUAL_COVERAGE_CLAUSE_NOT_YET_SOLVER_CERTIFIED"
+      },
+      "semantic_receipt_sha256": "fcf4cbe28d33132c4313f918b089c4694a1d8b0f0bcdf72d24e509f1d5caa111",
+      "terminal": true,
+      "terminal_status": "AUDITED_SEMANTIC_COVERAGE_CONTRADICTION"
+    },
+    {
+      "certification_kind": "EMPTY_RESIDUAL_COVERAGE_CLAUSE",
+      "checker_receipt": {
+        "checker_result": "VALID",
+        "path": "artifacts/classification/ordinary-c1153-v1/open-fifth-deficit-partition-v2/independent-audit.json",
+        "sha256": "ba1487944532f6cd931e62c28c40a5822a2f68dd5f20cfc934f920a4b7d6dd36"
+      },
+      "fifth_index": 9,
+      "leaf_id": "intersection-4-third-01-fourth-010-fifth-009",
+      "manifest_binding": {
+        "path": "artifacts/classification/ordinary-c1153-v1/open-fifth-deficit-partition-v2/manifest.json",
+        "sha256": "c1f615b51076145183df3f1d4676005f6617dcade442e8a75264a7044a574996"
+      },
+      "semantic_receipt": {
+        "claim_limit": "Semantic contradiction receipt only; generate and externally replay the exact CNF proof before ledger closure.",
+        "coverage_clause_sha256": "cec909d35b54d42e35a4947c67efb856cb3ff87ab2129094994d9b6f8dd810e5",
+        "coverage_clause_variables": [
+          6,
+          12,
+          17,
+          21,
+          24,
+          26,
+          28,
+          33,
+          38,
+          42,
+          45,
+          47,
+          49,
+          53,
+          57,
+          60,
+          62,
+          64,
+          67,
+          70,
+          72,
+          74,
+          76,
+          78,
+          80,
+          81,
+          83,
+          84
+        ],
+        "empty_residual_clause_sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+        "forbidden_coverers": [
+          {
+            "reasons": [
+              "PARENT_CNF_NEGATIVE_UNIT"
+            ],
+            "variable": 6
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 12
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 17
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 21
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 24
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 26
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 28
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 33
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 38
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 42
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 45
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 47
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 49
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 53
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 57
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 60
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 62
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 64
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 67
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 70
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 72
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 74
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 76
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 78
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 80
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 81
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 83
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 84
+          }
+        ],
+        "residual_eligible_variables": [],
+        "selected_triple": [
+          1,
+          2,
+          10
+        ],
+        "semantic_status": "EMPTY_RESIDUAL_COVERAGE_CLAUSE_NOT_YET_SOLVER_CERTIFIED"
+      },
+      "semantic_receipt_sha256": "fcf4cbe28d33132c4313f918b089c4694a1d8b0f0bcdf72d24e509f1d5caa111",
+      "terminal": true,
+      "terminal_status": "AUDITED_SEMANTIC_COVERAGE_CONTRADICTION"
+    },
+    {
+      "certification_kind": "EMPTY_RESIDUAL_COVERAGE_CLAUSE",
+      "checker_receipt": {
+        "checker_result": "VALID",
+        "path": "artifacts/classification/ordinary-c1153-v1/open-fifth-deficit-partition-v2/independent-audit.json",
+        "sha256": "ba1487944532f6cd931e62c28c40a5822a2f68dd5f20cfc934f920a4b7d6dd36"
+      },
+      "fifth_index": 10,
+      "leaf_id": "intersection-4-third-01-fourth-010-fifth-010",
+      "manifest_binding": {
+        "path": "artifacts/classification/ordinary-c1153-v1/open-fifth-deficit-partition-v2/manifest.json",
+        "sha256": "c1f615b51076145183df3f1d4676005f6617dcade442e8a75264a7044a574996"
+      },
+      "semantic_receipt": {
+        "claim_limit": "Semantic contradiction receipt only; generate and externally replay the exact CNF proof before ledger closure.",
+        "coverage_clause_sha256": "cec909d35b54d42e35a4947c67efb856cb3ff87ab2129094994d9b6f8dd810e5",
+        "coverage_clause_variables": [
+          6,
+          12,
+          17,
+          21,
+          24,
+          26,
+          28,
+          33,
+          38,
+          42,
+          45,
+          47,
+          49,
+          53,
+          57,
+          60,
+          62,
+          64,
+          67,
+          70,
+          72,
+          74,
+          76,
+          78,
+          80,
+          81,
+          83,
+          84
+        ],
+        "empty_residual_clause_sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+        "forbidden_coverers": [
+          {
+            "reasons": [
+              "PARENT_CNF_NEGATIVE_UNIT"
+            ],
+            "variable": 6
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 12
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 17
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 21
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 24
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 26
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 28
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 33
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 38
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 42
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 45
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 47
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 49
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 53
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 57
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 60
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 62
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 64
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 67
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 70
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 72
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 74
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 76
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 78
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 80
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 81
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 83
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 84
+          }
+        ],
+        "residual_eligible_variables": [],
+        "selected_triple": [
+          1,
+          2,
+          10
+        ],
+        "semantic_status": "EMPTY_RESIDUAL_COVERAGE_CLAUSE_NOT_YET_SOLVER_CERTIFIED"
+      },
+      "semantic_receipt_sha256": "fcf4cbe28d33132c4313f918b089c4694a1d8b0f0bcdf72d24e509f1d5caa111",
+      "terminal": true,
+      "terminal_status": "AUDITED_SEMANTIC_COVERAGE_CONTRADICTION"
+    },
+    {
+      "certification_kind": "EMPTY_RESIDUAL_COVERAGE_CLAUSE",
+      "checker_receipt": {
+        "checker_result": "VALID",
+        "path": "artifacts/classification/ordinary-c1153-v1/open-fifth-deficit-partition-v2/independent-audit.json",
+        "sha256": "ba1487944532f6cd931e62c28c40a5822a2f68dd5f20cfc934f920a4b7d6dd36"
+      },
+      "fifth_index": 11,
+      "leaf_id": "intersection-4-third-01-fourth-010-fifth-011",
+      "manifest_binding": {
+        "path": "artifacts/classification/ordinary-c1153-v1/open-fifth-deficit-partition-v2/manifest.json",
+        "sha256": "c1f615b51076145183df3f1d4676005f6617dcade442e8a75264a7044a574996"
+      },
+      "semantic_receipt": {
+        "claim_limit": "Semantic contradiction receipt only; generate and externally replay the exact CNF proof before ledger closure.",
+        "coverage_clause_sha256": "cec909d35b54d42e35a4947c67efb856cb3ff87ab2129094994d9b6f8dd810e5",
+        "coverage_clause_variables": [
+          6,
+          12,
+          17,
+          21,
+          24,
+          26,
+          28,
+          33,
+          38,
+          42,
+          45,
+          47,
+          49,
+          53,
+          57,
+          60,
+          62,
+          64,
+          67,
+          70,
+          72,
+          74,
+          76,
+          78,
+          80,
+          81,
+          83,
+          84
+        ],
+        "empty_residual_clause_sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+        "forbidden_coverers": [
+          {
+            "reasons": [
+              "PARENT_CNF_NEGATIVE_UNIT"
+            ],
+            "variable": 6
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 12
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 17
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 21
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 24
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 26
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 28
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 33
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 38
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 42
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 45
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 47
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 49
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 53
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 57
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 60
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 62
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 64
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 67
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 70
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 72
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 74
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 76
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 78
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 80
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 81
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 83
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 84
+          }
+        ],
+        "residual_eligible_variables": [],
+        "selected_triple": [
+          1,
+          2,
+          10
+        ],
+        "semantic_status": "EMPTY_RESIDUAL_COVERAGE_CLAUSE_NOT_YET_SOLVER_CERTIFIED"
+      },
+      "semantic_receipt_sha256": "fcf4cbe28d33132c4313f918b089c4694a1d8b0f0bcdf72d24e509f1d5caa111",
+      "terminal": true,
+      "terminal_status": "AUDITED_SEMANTIC_COVERAGE_CONTRADICTION"
+    },
+    {
+      "certification_kind": "EMPTY_RESIDUAL_COVERAGE_CLAUSE",
+      "checker_receipt": {
+        "checker_result": "VALID",
+        "path": "artifacts/classification/ordinary-c1153-v1/open-fifth-deficit-partition-v2/independent-audit.json",
+        "sha256": "ba1487944532f6cd931e62c28c40a5822a2f68dd5f20cfc934f920a4b7d6dd36"
+      },
+      "fifth_index": 12,
+      "leaf_id": "intersection-4-third-01-fourth-010-fifth-012",
+      "manifest_binding": {
+        "path": "artifacts/classification/ordinary-c1153-v1/open-fifth-deficit-partition-v2/manifest.json",
+        "sha256": "c1f615b51076145183df3f1d4676005f6617dcade442e8a75264a7044a574996"
+      },
+      "semantic_receipt": {
+        "claim_limit": "Semantic contradiction receipt only; generate and externally replay the exact CNF proof before ledger closure.",
+        "coverage_clause_sha256": "cec909d35b54d42e35a4947c67efb856cb3ff87ab2129094994d9b6f8dd810e5",
+        "coverage_clause_variables": [
+          6,
+          12,
+          17,
+          21,
+          24,
+          26,
+          28,
+          33,
+          38,
+          42,
+          45,
+          47,
+          49,
+          53,
+          57,
+          60,
+          62,
+          64,
+          67,
+          70,
+          72,
+          74,
+          76,
+          78,
+          80,
+          81,
+          83,
+          84
+        ],
+        "empty_residual_clause_sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+        "forbidden_coverers": [
+          {
+            "reasons": [
+              "PARENT_CNF_NEGATIVE_UNIT"
+            ],
+            "variable": 6
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 12
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 17
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 21
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 24
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 26
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 28
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 33
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 38
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 42
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 45
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 47
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 49
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 53
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 57
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 60
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 62
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 64
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 67
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 70
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 72
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 74
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 76
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 78
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 80
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 81
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 83
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 84
+          }
+        ],
+        "residual_eligible_variables": [],
+        "selected_triple": [
+          1,
+          2,
+          10
+        ],
+        "semantic_status": "EMPTY_RESIDUAL_COVERAGE_CLAUSE_NOT_YET_SOLVER_CERTIFIED"
+      },
+      "semantic_receipt_sha256": "fcf4cbe28d33132c4313f918b089c4694a1d8b0f0bcdf72d24e509f1d5caa111",
+      "terminal": true,
+      "terminal_status": "AUDITED_SEMANTIC_COVERAGE_CONTRADICTION"
+    },
+    {
+      "certification_kind": "EMPTY_RESIDUAL_COVERAGE_CLAUSE",
+      "checker_receipt": {
+        "checker_result": "VALID",
+        "path": "artifacts/classification/ordinary-c1153-v1/open-fifth-deficit-partition-v2/independent-audit.json",
+        "sha256": "ba1487944532f6cd931e62c28c40a5822a2f68dd5f20cfc934f920a4b7d6dd36"
+      },
+      "fifth_index": 13,
+      "leaf_id": "intersection-4-third-01-fourth-010-fifth-013",
+      "manifest_binding": {
+        "path": "artifacts/classification/ordinary-c1153-v1/open-fifth-deficit-partition-v2/manifest.json",
+        "sha256": "c1f615b51076145183df3f1d4676005f6617dcade442e8a75264a7044a574996"
+      },
+      "semantic_receipt": {
+        "claim_limit": "Semantic contradiction receipt only; generate and externally replay the exact CNF proof before ledger closure.",
+        "coverage_clause_sha256": "cec909d35b54d42e35a4947c67efb856cb3ff87ab2129094994d9b6f8dd810e5",
+        "coverage_clause_variables": [
+          6,
+          12,
+          17,
+          21,
+          24,
+          26,
+          28,
+          33,
+          38,
+          42,
+          45,
+          47,
+          49,
+          53,
+          57,
+          60,
+          62,
+          64,
+          67,
+          70,
+          72,
+          74,
+          76,
+          78,
+          80,
+          81,
+          83,
+          84
+        ],
+        "empty_residual_clause_sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+        "forbidden_coverers": [
+          {
+            "reasons": [
+              "PARENT_CNF_NEGATIVE_UNIT"
+            ],
+            "variable": 6
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 12
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 17
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 21
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 24
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 26
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 28
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 33
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 38
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 42
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 45
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 47
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 49
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 53
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 57
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 60
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 62
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 64
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 67
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 70
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 72
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 74
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 76
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 78
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 80
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 81
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 83
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 84
+          }
+        ],
+        "residual_eligible_variables": [],
+        "selected_triple": [
+          1,
+          2,
+          10
+        ],
+        "semantic_status": "EMPTY_RESIDUAL_COVERAGE_CLAUSE_NOT_YET_SOLVER_CERTIFIED"
+      },
+      "semantic_receipt_sha256": "fcf4cbe28d33132c4313f918b089c4694a1d8b0f0bcdf72d24e509f1d5caa111",
+      "terminal": true,
+      "terminal_status": "AUDITED_SEMANTIC_COVERAGE_CONTRADICTION"
+    },
+    {
+      "certification_kind": "EMPTY_RESIDUAL_COVERAGE_CLAUSE",
+      "checker_receipt": {
+        "checker_result": "VALID",
+        "path": "artifacts/classification/ordinary-c1153-v1/open-fifth-deficit-partition-v2/independent-audit.json",
+        "sha256": "ba1487944532f6cd931e62c28c40a5822a2f68dd5f20cfc934f920a4b7d6dd36"
+      },
+      "fifth_index": 14,
+      "leaf_id": "intersection-4-third-01-fourth-010-fifth-014",
+      "manifest_binding": {
+        "path": "artifacts/classification/ordinary-c1153-v1/open-fifth-deficit-partition-v2/manifest.json",
+        "sha256": "c1f615b51076145183df3f1d4676005f6617dcade442e8a75264a7044a574996"
+      },
+      "semantic_receipt": {
+        "claim_limit": "Semantic contradiction receipt only; generate and externally replay the exact CNF proof before ledger closure.",
+        "coverage_clause_sha256": "cec909d35b54d42e35a4947c67efb856cb3ff87ab2129094994d9b6f8dd810e5",
+        "coverage_clause_variables": [
+          6,
+          12,
+          17,
+          21,
+          24,
+          26,
+          28,
+          33,
+          38,
+          42,
+          45,
+          47,
+          49,
+          53,
+          57,
+          60,
+          62,
+          64,
+          67,
+          70,
+          72,
+          74,
+          76,
+          78,
+          80,
+          81,
+          83,
+          84
+        ],
+        "empty_residual_clause_sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+        "forbidden_coverers": [
+          {
+            "reasons": [
+              "PARENT_CNF_NEGATIVE_UNIT"
+            ],
+            "variable": 6
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 12
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 17
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 21
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 24
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 26
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 28
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 33
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 38
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 42
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 45
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 47
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 49
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 53
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 57
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 60
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 62
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 64
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 67
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 70
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 72
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 74
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 76
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 78
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 80
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 81
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 83
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 84
+          }
+        ],
+        "residual_eligible_variables": [],
+        "selected_triple": [
+          1,
+          2,
+          10
+        ],
+        "semantic_status": "EMPTY_RESIDUAL_COVERAGE_CLAUSE_NOT_YET_SOLVER_CERTIFIED"
+      },
+      "semantic_receipt_sha256": "fcf4cbe28d33132c4313f918b089c4694a1d8b0f0bcdf72d24e509f1d5caa111",
+      "terminal": true,
+      "terminal_status": "AUDITED_SEMANTIC_COVERAGE_CONTRADICTION"
+    },
+    {
+      "certification_kind": "EMPTY_RESIDUAL_COVERAGE_CLAUSE",
+      "checker_receipt": {
+        "checker_result": "VALID",
+        "path": "artifacts/classification/ordinary-c1153-v1/open-fifth-deficit-partition-v2/independent-audit.json",
+        "sha256": "ba1487944532f6cd931e62c28c40a5822a2f68dd5f20cfc934f920a4b7d6dd36"
+      },
+      "fifth_index": 15,
+      "leaf_id": "intersection-4-third-01-fourth-010-fifth-015",
+      "manifest_binding": {
+        "path": "artifacts/classification/ordinary-c1153-v1/open-fifth-deficit-partition-v2/manifest.json",
+        "sha256": "c1f615b51076145183df3f1d4676005f6617dcade442e8a75264a7044a574996"
+      },
+      "semantic_receipt": {
+        "claim_limit": "Semantic contradiction receipt only; generate and externally replay the exact CNF proof before ledger closure.",
+        "coverage_clause_sha256": "cec909d35b54d42e35a4947c67efb856cb3ff87ab2129094994d9b6f8dd810e5",
+        "coverage_clause_variables": [
+          6,
+          12,
+          17,
+          21,
+          24,
+          26,
+          28,
+          33,
+          38,
+          42,
+          45,
+          47,
+          49,
+          53,
+          57,
+          60,
+          62,
+          64,
+          67,
+          70,
+          72,
+          74,
+          76,
+          78,
+          80,
+          81,
+          83,
+          84
+        ],
+        "empty_residual_clause_sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+        "forbidden_coverers": [
+          {
+            "reasons": [
+              "PARENT_CNF_NEGATIVE_UNIT"
+            ],
+            "variable": 6
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 12
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 17
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 21
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 24
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 26
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 28
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 33
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 38
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 42
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 45
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 47
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 49
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 53
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 57
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 60
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 62
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 64
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 67
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 70
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 72
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 74
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 76
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 78
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 80
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 81
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 83
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 84
+          }
+        ],
+        "residual_eligible_variables": [],
+        "selected_triple": [
+          1,
+          2,
+          10
+        ],
+        "semantic_status": "EMPTY_RESIDUAL_COVERAGE_CLAUSE_NOT_YET_SOLVER_CERTIFIED"
+      },
+      "semantic_receipt_sha256": "fcf4cbe28d33132c4313f918b089c4694a1d8b0f0bcdf72d24e509f1d5caa111",
+      "terminal": true,
+      "terminal_status": "AUDITED_SEMANTIC_COVERAGE_CONTRADICTION"
+    },
+    {
+      "certification_kind": "EMPTY_RESIDUAL_COVERAGE_CLAUSE",
+      "checker_receipt": {
+        "checker_result": "VALID",
+        "path": "artifacts/classification/ordinary-c1153-v1/open-fifth-deficit-partition-v2/independent-audit.json",
+        "sha256": "ba1487944532f6cd931e62c28c40a5822a2f68dd5f20cfc934f920a4b7d6dd36"
+      },
+      "fifth_index": 16,
+      "leaf_id": "intersection-4-third-01-fourth-010-fifth-016",
+      "manifest_binding": {
+        "path": "artifacts/classification/ordinary-c1153-v1/open-fifth-deficit-partition-v2/manifest.json",
+        "sha256": "c1f615b51076145183df3f1d4676005f6617dcade442e8a75264a7044a574996"
+      },
+      "semantic_receipt": {
+        "claim_limit": "Semantic contradiction receipt only; generate and externally replay the exact CNF proof before ledger closure.",
+        "coverage_clause_sha256": "cec909d35b54d42e35a4947c67efb856cb3ff87ab2129094994d9b6f8dd810e5",
+        "coverage_clause_variables": [
+          6,
+          12,
+          17,
+          21,
+          24,
+          26,
+          28,
+          33,
+          38,
+          42,
+          45,
+          47,
+          49,
+          53,
+          57,
+          60,
+          62,
+          64,
+          67,
+          70,
+          72,
+          74,
+          76,
+          78,
+          80,
+          81,
+          83,
+          84
+        ],
+        "empty_residual_clause_sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+        "forbidden_coverers": [
+          {
+            "reasons": [
+              "PARENT_CNF_NEGATIVE_UNIT"
+            ],
+            "variable": 6
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 12
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 17
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 21
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 24
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 26
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 28
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 33
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 38
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 42
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 45
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 47
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 49
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 53
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 57
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 60
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 62
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 64
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 67
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 70
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 72
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 74
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 76
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 78
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 80
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 81
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 83
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 84
+          }
+        ],
+        "residual_eligible_variables": [],
+        "selected_triple": [
+          1,
+          2,
+          10
+        ],
+        "semantic_status": "EMPTY_RESIDUAL_COVERAGE_CLAUSE_NOT_YET_SOLVER_CERTIFIED"
+      },
+      "semantic_receipt_sha256": "fcf4cbe28d33132c4313f918b089c4694a1d8b0f0bcdf72d24e509f1d5caa111",
+      "terminal": true,
+      "terminal_status": "AUDITED_SEMANTIC_COVERAGE_CONTRADICTION"
+    },
+    {
+      "certification_kind": "EXHAUSTIVE_BATCH_REPLAY",
+      "certification_receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-fifth-split/suffix-certification/batches/batch-0009/cases/intersection-4-third-01-fourth-010-fifth-017/receipt.json",
+        "sha256": "718864157664f2f7d7cc1bf8e991aa19aa9233d565ca84aa75f401583da37608"
+      },
+      "checker_result": "VERIFIED",
+      "checker_sha256": "f58f63b0f76945d4c4c9ff6e87afaf870f579e67c0f7cca589492df8fc7ebd47",
+      "exact_cnf_sha256": "0a033f7e0e07cdc58ce805c986d15bb74ec100de808e8a19a6e4f73793e2b240",
+      "fifth_index": 17,
+      "leaf_id": "intersection-4-third-01-fourth-010-fifth-017",
+      "proof_sha256": "26fefbe43f6a624dda83d646bf32c7a0e500637c7d85115d3e9463fe62e2c778",
+      "terminal": true,
+      "terminal_status": "REPLAY_CERTIFIED_UNSAT"
+    },
+    {
+      "certification_kind": "EXHAUSTIVE_BATCH_REPLAY",
+      "certification_receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-fifth-split/suffix-certification/batches/batch-0004/cases/intersection-4-third-01-fourth-010-fifth-018/receipt.json",
+        "sha256": "a8516e4f291ab46008c1cd3c50713320926ca9fa389e2243b1a4a1fcfaad6aa7"
+      },
+      "checker_result": "VERIFIED",
+      "checker_sha256": "f58f63b0f76945d4c4c9ff6e87afaf870f579e67c0f7cca589492df8fc7ebd47",
+      "exact_cnf_sha256": "a5aeac434d20543463a6cd23461e912c58cc110401d4d6b5c1d008779ff1a396",
+      "fifth_index": 18,
+      "leaf_id": "intersection-4-third-01-fourth-010-fifth-018",
+      "proof_sha256": "bc16239999a847c92a7d6009ce75a62b63c4fed6211208852bb6c5ac33f5f18f",
+      "terminal": true,
+      "terminal_status": "REPLAY_CERTIFIED_UNSAT"
+    },
+    {
+      "certification_kind": "EXHAUSTIVE_BATCH_REPLAY",
+      "certification_receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-fifth-split/suffix-certification/batches/batch-0010/cases/intersection-4-third-01-fourth-010-fifth-019/receipt.json",
+        "sha256": "d858254e1b247eb824047e69ef917f0c3b9a74a77b78fee08d00a89c6a8fe2a1"
+      },
+      "checker_result": "VERIFIED",
+      "checker_sha256": "f58f63b0f76945d4c4c9ff6e87afaf870f579e67c0f7cca589492df8fc7ebd47",
+      "exact_cnf_sha256": "a76cef52ef10fc2bf73db1381f22baad396901779665febd96dc0789e0550d79",
+      "fifth_index": 19,
+      "leaf_id": "intersection-4-third-01-fourth-010-fifth-019",
+      "proof_sha256": "12435bc758dd5eb5279c688ffa3683af55eabcbd87b533162cd5a902624e506c",
+      "terminal": true,
+      "terminal_status": "REPLAY_CERTIFIED_UNSAT"
+    },
+    {
+      "certification_kind": "EXHAUSTIVE_BATCH_REPLAY",
+      "certification_receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-fifth-split/suffix-certification/batches/batch-0019/cases/intersection-4-third-01-fourth-010-fifth-020/receipt.json",
+        "sha256": "c4feb3bcba841c0fedf202157a9a4003070d45a05d2ec6c4dddc9e1c333d30ad"
+      },
+      "checker_result": "VERIFIED",
+      "checker_sha256": "f58f63b0f76945d4c4c9ff6e87afaf870f579e67c0f7cca589492df8fc7ebd47",
+      "exact_cnf_sha256": "081a874ea09c9da0b9a24c8a874c774f0d4bbc9dcdae1e0e62ace829f30f8e10",
+      "fifth_index": 20,
+      "leaf_id": "intersection-4-third-01-fourth-010-fifth-020",
+      "proof_sha256": "35a0f49cf6ddffc2a0e10133f6f1ced2b1d5962f3ed7cf3b5c020b5bc1796645",
+      "terminal": true,
+      "terminal_status": "REPLAY_CERTIFIED_UNSAT"
+    },
+    {
+      "certification_kind": "EXHAUSTIVE_BATCH_REPLAY",
+      "certification_receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-fifth-split/suffix-certification/batches/batch-0024/cases/intersection-4-third-01-fourth-010-fifth-021/receipt.json",
+        "sha256": "2d88a9d8fb973c8ed206eed2a8106b860c0002c816aa608aa369a4138b290630"
+      },
+      "checker_result": "VERIFIED",
+      "checker_sha256": "f58f63b0f76945d4c4c9ff6e87afaf870f579e67c0f7cca589492df8fc7ebd47",
+      "exact_cnf_sha256": "08216b002474ccddb83cfdf7204b860492cd3492472261e41300420be49a1121",
+      "fifth_index": 21,
+      "leaf_id": "intersection-4-third-01-fourth-010-fifth-021",
+      "proof_sha256": "e123382cde69175ed4f4fe48eadaf9ee97b3be331dc9ac26e39fa99909ff22c2",
+      "terminal": true,
+      "terminal_status": "REPLAY_CERTIFIED_UNSAT"
+    },
+    {
+      "certification_kind": "EXHAUSTIVE_BATCH_REPLAY",
+      "certification_receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-fifth-split/suffix-certification/batches/batch-0006/cases/intersection-4-third-01-fourth-010-fifth-022/receipt.json",
+        "sha256": "06a9025d242f865ce93be66c46129a1170b09b3a3398524a89f3128dbb4bb3c9"
+      },
+      "checker_result": "VERIFIED",
+      "checker_sha256": "f58f63b0f76945d4c4c9ff6e87afaf870f579e67c0f7cca589492df8fc7ebd47",
+      "exact_cnf_sha256": "87bac47b70d3c6b4ea773d010dfb7a3df9ede107c0ce81b4e882780f96a34fd1",
+      "fifth_index": 22,
+      "leaf_id": "intersection-4-third-01-fourth-010-fifth-022",
+      "proof_sha256": "0abaec4f42c0c4300b91352de25f26a0d1df5c299008f548e1854d407c3a852c",
+      "terminal": true,
+      "terminal_status": "REPLAY_CERTIFIED_UNSAT"
+    },
+    {
+      "certification_kind": "EXHAUSTIVE_BATCH_REPLAY",
+      "certification_receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-fifth-split/suffix-certification/batches/batch-0018/cases/intersection-4-third-01-fourth-010-fifth-023/receipt.json",
+        "sha256": "b92304006139670ef3497e0fe48e9e949a1c00eb1e488c77a6a56c4c74971dcd"
+      },
+      "checker_result": "VERIFIED",
+      "checker_sha256": "f58f63b0f76945d4c4c9ff6e87afaf870f579e67c0f7cca589492df8fc7ebd47",
+      "exact_cnf_sha256": "18263bba8edd2d629b2d088754614b1a7286e0fb547ec158516b861975504829",
+      "fifth_index": 23,
+      "leaf_id": "intersection-4-third-01-fourth-010-fifth-023",
+      "proof_sha256": "870dc35bb8ab12b9591db046afc0f670f3f0700e999412f2e47094b78a60bf64",
+      "terminal": true,
+      "terminal_status": "REPLAY_CERTIFIED_UNSAT"
+    },
+    {
+      "certification_kind": "EXHAUSTIVE_BATCH_REPLAY",
+      "certification_receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-fifth-split/suffix-certification/batches/batch-0023/cases/intersection-4-third-01-fourth-010-fifth-024/receipt.json",
+        "sha256": "e15e52e5d0ba42b4d3b822da2a6b1e327395998d617902da11c1c6b03d9d5ac9"
+      },
+      "checker_result": "VERIFIED",
+      "checker_sha256": "f58f63b0f76945d4c4c9ff6e87afaf870f579e67c0f7cca589492df8fc7ebd47",
+      "exact_cnf_sha256": "cc15b73a3658e08795734959f9dc837e01262b71b99b898535afd308b651c311",
+      "fifth_index": 24,
+      "leaf_id": "intersection-4-third-01-fourth-010-fifth-024",
+      "proof_sha256": "9cd5b8678e511c0d3ef490d08d436b4d6edf321c8b2c03749d3762355db803fd",
+      "terminal": true,
+      "terminal_status": "REPLAY_CERTIFIED_UNSAT"
+    },
+    {
+      "certification_kind": "EXHAUSTIVE_BATCH_REPLAY",
+      "certification_receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-fifth-split/suffix-certification/batches/batch-0007/cases/intersection-4-third-01-fourth-010-fifth-025/receipt.json",
+        "sha256": "f25fd65c8851372691e3f61284d1df3f9020c772ccec73caa15e61561d93c697"
+      },
+      "checker_result": "VERIFIED",
+      "checker_sha256": "f58f63b0f76945d4c4c9ff6e87afaf870f579e67c0f7cca589492df8fc7ebd47",
+      "exact_cnf_sha256": "1003f289f780c26d45532c3b82b3c8828cf9d950c6fe82f71fd78923da1b7206",
+      "fifth_index": 25,
+      "leaf_id": "intersection-4-third-01-fourth-010-fifth-025",
+      "proof_sha256": "90c1f3487a4f7ecede544d1c20d1ce94f04e6c87a6ddfff7d8d545d508323dac",
+      "terminal": true,
+      "terminal_status": "REPLAY_CERTIFIED_UNSAT"
+    },
+    {
+      "certification_kind": "EXHAUSTIVE_BATCH_REPLAY",
+      "certification_receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-fifth-split/suffix-certification/batches/batch-0013/cases/intersection-4-third-01-fourth-010-fifth-026/receipt.json",
+        "sha256": "31af6357d2267fa6f6442dd052de9e768a5e59a33d24b39d455d92f753f4b3a1"
+      },
+      "checker_result": "VERIFIED",
+      "checker_sha256": "f58f63b0f76945d4c4c9ff6e87afaf870f579e67c0f7cca589492df8fc7ebd47",
+      "exact_cnf_sha256": "2e59cada927c11f315184dda063f95fd5e2e64ee769c8c9a9dea53431d550e64",
+      "fifth_index": 26,
+      "leaf_id": "intersection-4-third-01-fourth-010-fifth-026",
+      "proof_sha256": "9a532793e4f6efb511ff9788cf9b5aa340627b57f4c645f06478a115b4597bc0",
+      "terminal": true,
+      "terminal_status": "REPLAY_CERTIFIED_UNSAT"
+    },
+    {
+      "certification_kind": "EXHAUSTIVE_BATCH_REPLAY",
+      "certification_receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-fifth-split/suffix-certification/batches/batch-0016/cases/intersection-4-third-01-fourth-010-fifth-027/receipt.json",
+        "sha256": "2aa8f4c9488e8f134a1b0c432d836ab7ac7df70d35565ded9cb22c379d79f11b"
+      },
+      "checker_result": "VERIFIED",
+      "checker_sha256": "f58f63b0f76945d4c4c9ff6e87afaf870f579e67c0f7cca589492df8fc7ebd47",
+      "exact_cnf_sha256": "8000deca9a74bb34b1fd8c1fd666b6c0e7a1ff0196d7dc506aa5572a02206b46",
+      "fifth_index": 27,
+      "leaf_id": "intersection-4-third-01-fourth-010-fifth-027",
+      "proof_sha256": "96eaa19f31c743b45332393224f64745dbb7f51ee6d25d0fa34dcd7b44666e8c",
+      "terminal": true,
+      "terminal_status": "REPLAY_CERTIFIED_UNSAT"
+    },
+    {
+      "certification_kind": "EXHAUSTIVE_BATCH_REPLAY",
+      "certification_receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-fifth-split/suffix-certification/batches/batch-0012/cases/intersection-4-third-01-fourth-010-fifth-028/receipt.json",
+        "sha256": "41dc80027c9ef28012bf5eef9a1dcf11755cdf9f5822a5fa302fd203698568da"
+      },
+      "checker_result": "VERIFIED",
+      "checker_sha256": "f58f63b0f76945d4c4c9ff6e87afaf870f579e67c0f7cca589492df8fc7ebd47",
+      "exact_cnf_sha256": "9155bfa8eb5a9554e3c4e17b917f2952030332eeae656d09b040e12f678982ed",
+      "fifth_index": 28,
+      "leaf_id": "intersection-4-third-01-fourth-010-fifth-028",
+      "proof_sha256": "0003b0a576907ffe770626b9210560f70b2d7755e73985897eb667fa2dabc755",
+      "terminal": true,
+      "terminal_status": "REPLAY_CERTIFIED_UNSAT"
+    },
+    {
+      "certification_kind": "EXHAUSTIVE_BATCH_REPLAY",
+      "certification_receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-fifth-split/suffix-certification/batches/batch-0026/cases/intersection-4-third-01-fourth-010-fifth-029/receipt.json",
+        "sha256": "d7f3a3536ff9c8ea34afc0efc78a507bac3626a4fa99b0d5a1c0a07cea4dcfa7"
+      },
+      "checker_result": "VERIFIED",
+      "checker_sha256": "f58f63b0f76945d4c4c9ff6e87afaf870f579e67c0f7cca589492df8fc7ebd47",
+      "exact_cnf_sha256": "de595591db4090b60d3833c5c3948647e16eb8c2b6300bf11608745d3ecb2d2b",
+      "fifth_index": 29,
+      "leaf_id": "intersection-4-third-01-fourth-010-fifth-029",
+      "proof_sha256": "cfbeebd4ad6d628038aeba6e5fa938618eecd337e2ed949933264feb89f19ef2",
+      "terminal": true,
+      "terminal_status": "REPLAY_CERTIFIED_UNSAT"
+    },
+    {
+      "certification_kind": "EXHAUSTIVE_BATCH_REPLAY",
+      "certification_receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-fifth-split/suffix-certification/batches/batch-0004/cases/intersection-4-third-01-fourth-010-fifth-030/receipt.json",
+        "sha256": "4394bdc3a47d74b926d7fe68bb8fea5913065c765e9ec106ae55d07c98bad929"
+      },
+      "checker_result": "VERIFIED",
+      "checker_sha256": "f58f63b0f76945d4c4c9ff6e87afaf870f579e67c0f7cca589492df8fc7ebd47",
+      "exact_cnf_sha256": "bca10eb2f2b4a6b6dcfa85b4e7412b5f58fe5a569e5eed1ecad9b264a5e2ad95",
+      "fifth_index": 30,
+      "leaf_id": "intersection-4-third-01-fourth-010-fifth-030",
+      "proof_sha256": "1ef0f9844148f8cf3f350a17ac5df9ad5d43efb82114569267dda5f815112fd0",
+      "terminal": true,
+      "terminal_status": "REPLAY_CERTIFIED_UNSAT"
+    },
+    {
+      "certification_kind": "EXHAUSTIVE_BATCH_REPLAY",
+      "certification_receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-fifth-split/suffix-certification/batches/batch-0019/cases/intersection-4-third-01-fourth-010-fifth-031/receipt.json",
+        "sha256": "93aeb6c6c9a66030cd184a0f753f99f271311e2cf29df3fac6fb2561c61b2602"
+      },
+      "checker_result": "VERIFIED",
+      "checker_sha256": "f58f63b0f76945d4c4c9ff6e87afaf870f579e67c0f7cca589492df8fc7ebd47",
+      "exact_cnf_sha256": "164798b7f40a98fd247feb1c0c6a964b5124ca3bcd712e10940fda50541b7551",
+      "fifth_index": 31,
+      "leaf_id": "intersection-4-third-01-fourth-010-fifth-031",
+      "proof_sha256": "7a0f67869b541ebe07214f7d76a1cbc6f98ebc2080eea3aeeb99cd78cb3c1bca",
+      "terminal": true,
+      "terminal_status": "REPLAY_CERTIFIED_UNSAT"
+    },
+    {
+      "certification_kind": "EXHAUSTIVE_BATCH_REPLAY",
+      "certification_receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-fifth-split/suffix-certification/batches/batch-0007/cases/intersection-4-third-01-fourth-010-fifth-032/receipt.json",
+        "sha256": "b2d3d75cff2ebcbb108ecfc0a361b5fa56b01b4d71f37796fa15c0d24f1ecf2a"
+      },
+      "checker_result": "VERIFIED",
+      "checker_sha256": "f58f63b0f76945d4c4c9ff6e87afaf870f579e67c0f7cca589492df8fc7ebd47",
+      "exact_cnf_sha256": "7c9d75fa430876cc0b96e7ca9686a597cee2f7a44b1fea1d55f7c1e987fe1168",
+      "fifth_index": 32,
+      "leaf_id": "intersection-4-third-01-fourth-010-fifth-032",
+      "proof_sha256": "0bbf690d096fe09fb9521fd6ff5d64c1eeb9e45302110f32c9187a960cb82614",
+      "terminal": true,
+      "terminal_status": "REPLAY_CERTIFIED_UNSAT"
+    },
+    {
+      "certification_kind": "EXHAUSTIVE_BATCH_REPLAY",
+      "certification_receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-fifth-split/suffix-certification/batches/batch-0005/cases/intersection-4-third-01-fourth-010-fifth-033/receipt.json",
+        "sha256": "dfde60e8657e7702cd31f071c156ab5c221e62d65a908b4d8bd233db40cae598"
+      },
+      "checker_result": "VERIFIED",
+      "checker_sha256": "f58f63b0f76945d4c4c9ff6e87afaf870f579e67c0f7cca589492df8fc7ebd47",
+      "exact_cnf_sha256": "abd6685532848a03c90b650dad7ea82521f10aa607b98c572cfc0912d00f7783",
+      "fifth_index": 33,
+      "leaf_id": "intersection-4-third-01-fourth-010-fifth-033",
+      "proof_sha256": "82c54fdd473172d0b789f38338f8a48ee2bbe60482ef9ba537fbd0114efc91fc",
+      "terminal": true,
+      "terminal_status": "REPLAY_CERTIFIED_UNSAT"
+    },
+    {
+      "certification_kind": "EXHAUSTIVE_BATCH_REPLAY",
+      "certification_receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-fifth-split/suffix-certification/batches/batch-0010/cases/intersection-4-third-01-fourth-010-fifth-034/receipt.json",
+        "sha256": "00993d315af926b177fb080df5c141e47df4f0856abbc51c053fe209eaa430a4"
+      },
+      "checker_result": "VERIFIED",
+      "checker_sha256": "f58f63b0f76945d4c4c9ff6e87afaf870f579e67c0f7cca589492df8fc7ebd47",
+      "exact_cnf_sha256": "edf7102e8747907a598808ca4b802aa3beb8b6b1fc040b1a5108e013b67942f2",
+      "fifth_index": 34,
+      "leaf_id": "intersection-4-third-01-fourth-010-fifth-034",
+      "proof_sha256": "b11539db03bbc0cab97992f96bcf0087c91aeeeab096d9a4fe1dbff4e0f805c0",
+      "terminal": true,
+      "terminal_status": "REPLAY_CERTIFIED_UNSAT"
+    },
+    {
+      "certification_kind": "EXHAUSTIVE_BATCH_REPLAY",
+      "certification_receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-fifth-split/suffix-certification/batches/batch-0004/cases/intersection-4-third-01-fourth-010-fifth-035/receipt.json",
+        "sha256": "3eee31f337991d2e62c1f1ecfc22b2ffc2b37831d19fa83fcfe3f7b06fb1b92a"
+      },
+      "checker_result": "VERIFIED",
+      "checker_sha256": "f58f63b0f76945d4c4c9ff6e87afaf870f579e67c0f7cca589492df8fc7ebd47",
+      "exact_cnf_sha256": "f091d059858ee01cea935b5cdde1ef2492126760b4e6b5dc592968906d123cc9",
+      "fifth_index": 35,
+      "leaf_id": "intersection-4-third-01-fourth-010-fifth-035",
+      "proof_sha256": "3039ccf7ad1c47ae3f6df527cdb3ab61f4cf7a12bf30bec04caf75e3ce096518",
+      "terminal": true,
+      "terminal_status": "REPLAY_CERTIFIED_UNSAT"
+    },
+    {
+      "certification_kind": "EXHAUSTIVE_BATCH_REPLAY",
+      "certification_receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-fifth-split/suffix-certification/batches/batch-0020/cases/intersection-4-third-01-fourth-010-fifth-036/receipt.json",
+        "sha256": "f6faf66e7dfd0434ef8878ead45124eb9a3efdf8f634c328fa3fd15d2b7c771c"
+      },
+      "checker_result": "VERIFIED",
+      "checker_sha256": "f58f63b0f76945d4c4c9ff6e87afaf870f579e67c0f7cca589492df8fc7ebd47",
+      "exact_cnf_sha256": "837e157359aef16a7266d5c2c5f178e58c6e95e9b4fe1f4a12c9408933696d00",
+      "fifth_index": 36,
+      "leaf_id": "intersection-4-third-01-fourth-010-fifth-036",
+      "proof_sha256": "69f7eb020455f8a10b5d49c5fdb4b8566dcd143335f2317fec98cb51b1c5fac5",
+      "terminal": true,
+      "terminal_status": "REPLAY_CERTIFIED_UNSAT"
+    },
+    {
+      "certification_kind": "EXHAUSTIVE_BATCH_REPLAY",
+      "certification_receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-fifth-split/suffix-certification/batches/batch-0024/cases/intersection-4-third-01-fourth-010-fifth-037/receipt.json",
+        "sha256": "ed8580538e0b8b455a37025d0ad23007d2480ff65fa444efb940e51d49d28562"
+      },
+      "checker_result": "VERIFIED",
+      "checker_sha256": "f58f63b0f76945d4c4c9ff6e87afaf870f579e67c0f7cca589492df8fc7ebd47",
+      "exact_cnf_sha256": "b5020a14acbaeb3ad4827de3e85ca420b47f4f7087b1f2bbc5ef95a1d1a14e05",
+      "fifth_index": 37,
+      "leaf_id": "intersection-4-third-01-fourth-010-fifth-037",
+      "proof_sha256": "758af18da9fd77fabe95ab58caa5f736b0778b8b7f68ff0638824bdb5057135f",
+      "terminal": true,
+      "terminal_status": "REPLAY_CERTIFIED_UNSAT"
+    },
+    {
+      "certification_kind": "EXHAUSTIVE_BATCH_REPLAY",
+      "certification_receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-fifth-split/suffix-certification/batches/batch-0000/cases/intersection-4-third-01-fourth-010-fifth-038/receipt.json",
+        "sha256": "b557c3cb9f2ab3f71a70e2909089ec52a7801ff4bca19b44fd830913aca95bd3"
+      },
+      "checker_result": "VERIFIED",
+      "checker_sha256": "f58f63b0f76945d4c4c9ff6e87afaf870f579e67c0f7cca589492df8fc7ebd47",
+      "exact_cnf_sha256": "c06f5ab3b114c5e420410a8667f1e901612bdb5510c73cff0a0a420e61d4696b",
+      "fifth_index": 38,
+      "leaf_id": "intersection-4-third-01-fourth-010-fifth-038",
+      "proof_sha256": "6398067c2d76e341941ec8b28c22555dd0443c9a5c97b962a1ac2aac0d69ff51",
+      "terminal": true,
+      "terminal_status": "REPLAY_CERTIFIED_UNSAT"
+    },
+    {
+      "certification_kind": "EXHAUSTIVE_BATCH_REPLAY",
+      "certification_receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-fifth-split/suffix-certification/batches/batch-0024/cases/intersection-4-third-01-fourth-010-fifth-039/receipt.json",
+        "sha256": "21c49a534cb3a28a248c3cd90c6bf4953ea04857608378cecd61f05444b31850"
+      },
+      "checker_result": "VERIFIED",
+      "checker_sha256": "f58f63b0f76945d4c4c9ff6e87afaf870f579e67c0f7cca589492df8fc7ebd47",
+      "exact_cnf_sha256": "2fec5ba8b6758458a243c18c328284b07f92ce5bdb681be2d62020b72aeae082",
+      "fifth_index": 39,
+      "leaf_id": "intersection-4-third-01-fourth-010-fifth-039",
+      "proof_sha256": "8ab7a4f2de2191975ca5b3408ef4190c7896dfde46222587778bdaacbb40224d",
+      "terminal": true,
+      "terminal_status": "REPLAY_CERTIFIED_UNSAT"
+    },
+    {
+      "certification_kind": "EXHAUSTIVE_BATCH_REPLAY",
+      "certification_receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-fifth-split/suffix-certification/batches/batch-0022/cases/intersection-4-third-01-fourth-010-fifth-040/receipt.json",
+        "sha256": "119e4af7b3587000babe4031bf879abf5ffefa584aa5dabac6578cf0d05e9822"
+      },
+      "checker_result": "VERIFIED",
+      "checker_sha256": "f58f63b0f76945d4c4c9ff6e87afaf870f579e67c0f7cca589492df8fc7ebd47",
+      "exact_cnf_sha256": "b324e0c735fcfe026f8b7aa97e37f33790bc1314db9be74799a8d79278620142",
+      "fifth_index": 40,
+      "leaf_id": "intersection-4-third-01-fourth-010-fifth-040",
+      "proof_sha256": "71e4e101b33f6c685f9b54648af0aa87c964ae6f1d803fadf2e3bccea107d3c5",
+      "terminal": true,
+      "terminal_status": "REPLAY_CERTIFIED_UNSAT"
+    },
+    {
+      "certification_kind": "EXHAUSTIVE_BATCH_REPLAY",
+      "certification_receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-fifth-split/suffix-certification/batches/batch-0022/cases/intersection-4-third-01-fourth-010-fifth-041/receipt.json",
+        "sha256": "0286ee1ffbed26eedc7c37d0bc4ab09d4018be62f3cc10c79d09ea7dc91f2fb6"
+      },
+      "checker_result": "VERIFIED",
+      "checker_sha256": "f58f63b0f76945d4c4c9ff6e87afaf870f579e67c0f7cca589492df8fc7ebd47",
+      "exact_cnf_sha256": "e36bb1986bf71157bbc5cc618f5e755698474d7d00d38ac61172b6b1fa472964",
+      "fifth_index": 41,
+      "leaf_id": "intersection-4-third-01-fourth-010-fifth-041",
+      "proof_sha256": "4a453b060f59839c6a94e04d078a891eb2876e5d77565b3498689fde65ac11f0",
+      "terminal": true,
+      "terminal_status": "REPLAY_CERTIFIED_UNSAT"
+    },
+    {
+      "certification_kind": "EXHAUSTIVE_BATCH_REPLAY",
+      "certification_receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-fifth-split/suffix-certification/batches/batch-0018/cases/intersection-4-third-01-fourth-010-fifth-042/receipt.json",
+        "sha256": "51ba972634a8e5b3f4ba996fad4adb969582ae05104f1253b5e01853f185e3fa"
+      },
+      "checker_result": "VERIFIED",
+      "checker_sha256": "f58f63b0f76945d4c4c9ff6e87afaf870f579e67c0f7cca589492df8fc7ebd47",
+      "exact_cnf_sha256": "9d27881ff47625c3e2044d4e42d2cdaa7e9ec1b418c403d50778203be5328841",
+      "fifth_index": 42,
+      "leaf_id": "intersection-4-third-01-fourth-010-fifth-042",
+      "proof_sha256": "88045f261fe961bc9b616685fd0be1db03405077a6790463d19f5527bd71c336",
+      "terminal": true,
+      "terminal_status": "REPLAY_CERTIFIED_UNSAT"
+    },
+    {
+      "certification_kind": "EXHAUSTIVE_BATCH_REPLAY",
+      "certification_receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-fifth-split/suffix-certification/batches/batch-0017/cases/intersection-4-third-01-fourth-010-fifth-043/receipt.json",
+        "sha256": "db506399f806ebfe9663895356a5d3de118c46f15cc73e4e00605ffbce8790f0"
+      },
+      "checker_result": "VERIFIED",
+      "checker_sha256": "f58f63b0f76945d4c4c9ff6e87afaf870f579e67c0f7cca589492df8fc7ebd47",
+      "exact_cnf_sha256": "01233ab142afa46a2db625f144108ecb5e150f794ceb6a2bc70721d9f5f53393",
+      "fifth_index": 43,
+      "leaf_id": "intersection-4-third-01-fourth-010-fifth-043",
+      "proof_sha256": "e0b75968bc8d187e132ceff92487c688ab422a9eb87c6531b41e5bc0119f2274",
+      "terminal": true,
+      "terminal_status": "REPLAY_CERTIFIED_UNSAT"
+    },
+    {
+      "certification_kind": "EXHAUSTIVE_BATCH_REPLAY",
+      "certification_receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-fifth-split/suffix-certification/batches/batch-0011/cases/intersection-4-third-01-fourth-010-fifth-044/receipt.json",
+        "sha256": "e1bd27fa58e2e03d9759dde657ad81b0f8c04e6057f7a053b56989cb9cee502f"
+      },
+      "checker_result": "VERIFIED",
+      "checker_sha256": "f58f63b0f76945d4c4c9ff6e87afaf870f579e67c0f7cca589492df8fc7ebd47",
+      "exact_cnf_sha256": "e439106c04ae838e7cfb1431786f44ccd1b7129f8a3d2ddcb4051e2a48db9b27",
+      "fifth_index": 44,
+      "leaf_id": "intersection-4-third-01-fourth-010-fifth-044",
+      "proof_sha256": "ca2f5e0b14fbbaca749517ee215a3c18e09db27ca9ea59d6c61ebbd2d214da5f",
+      "terminal": true,
+      "terminal_status": "REPLAY_CERTIFIED_UNSAT"
+    },
+    {
+      "certification_kind": "EXHAUSTIVE_BATCH_REPLAY",
+      "certification_receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-fifth-split/suffix-certification/batches/batch-0026/cases/intersection-4-third-01-fourth-010-fifth-045/receipt.json",
+        "sha256": "be686e6e253f7868b42ff2dcbee561df4e4b4d04b0b3a561eab991b276da980e"
+      },
+      "checker_result": "VERIFIED",
+      "checker_sha256": "f58f63b0f76945d4c4c9ff6e87afaf870f579e67c0f7cca589492df8fc7ebd47",
+      "exact_cnf_sha256": "3d209d083d431a423a8fc0c64315589f1e3c027481f3f5c8402acbf7e575da34",
+      "fifth_index": 45,
+      "leaf_id": "intersection-4-third-01-fourth-010-fifth-045",
+      "proof_sha256": "cace5d895af2bde0d66909699f3e419b7cf94e1d72771262b43f32615e5df30e",
+      "terminal": true,
+      "terminal_status": "REPLAY_CERTIFIED_UNSAT"
+    },
+    {
+      "certification_kind": "EXHAUSTIVE_BATCH_REPLAY",
+      "certification_receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-fifth-split/suffix-certification/batches/batch-0022/cases/intersection-4-third-01-fourth-010-fifth-046/receipt.json",
+        "sha256": "c93bf7143803a4bac36c52cb6560f3a07e9fa12c4b05457b5b403502bd348abd"
+      },
+      "checker_result": "VERIFIED",
+      "checker_sha256": "f58f63b0f76945d4c4c9ff6e87afaf870f579e67c0f7cca589492df8fc7ebd47",
+      "exact_cnf_sha256": "c176701169ed5b2f1e0eee76eafae780a0a3f8803013b34f9f533e2ed9fe47d7",
+      "fifth_index": 46,
+      "leaf_id": "intersection-4-third-01-fourth-010-fifth-046",
+      "proof_sha256": "3da2b8a0adbdeacb2f58004ec82f1ffa5fd8bc509b22ccc18923f70ccfa6509d",
+      "terminal": true,
+      "terminal_status": "REPLAY_CERTIFIED_UNSAT"
+    },
+    {
+      "certification_kind": "EXHAUSTIVE_BATCH_REPLAY",
+      "certification_receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-fifth-split/suffix-certification/batches/batch-0010/cases/intersection-4-third-01-fourth-010-fifth-047/receipt.json",
+        "sha256": "28345a842e3c4ebdacdfc715a3fd44a791fa9ca7fdac8ee79c687bdb94993db7"
+      },
+      "checker_result": "VERIFIED",
+      "checker_sha256": "f58f63b0f76945d4c4c9ff6e87afaf870f579e67c0f7cca589492df8fc7ebd47",
+      "exact_cnf_sha256": "117b067d77c4ba1109d9f88a47569b1f726c0a82dd30d48fd9bb50347c7cad76",
+      "fifth_index": 47,
+      "leaf_id": "intersection-4-third-01-fourth-010-fifth-047",
+      "proof_sha256": "34e51b86ff74954893cc5a03579aa3445c44b10a1d54d5eed9f4959069737c65",
+      "terminal": true,
+      "terminal_status": "REPLAY_CERTIFIED_UNSAT"
+    },
+    {
+      "certification_kind": "EXHAUSTIVE_BATCH_REPLAY",
+      "certification_receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-fifth-split/suffix-certification/batches/batch-0010/cases/intersection-4-third-01-fourth-010-fifth-048/receipt.json",
+        "sha256": "be2923b6587923f646a7bdfb28435aa32d36a5ba651a027dce0b61514a801100"
+      },
+      "checker_result": "VERIFIED",
+      "checker_sha256": "f58f63b0f76945d4c4c9ff6e87afaf870f579e67c0f7cca589492df8fc7ebd47",
+      "exact_cnf_sha256": "ee34e43a50385caf144951e30945fb9d646f9f0c02901f1e0497b015f01dbaaa",
+      "fifth_index": 48,
+      "leaf_id": "intersection-4-third-01-fourth-010-fifth-048",
+      "proof_sha256": "3c5972f85e204f8ee9b7ac4b66622122d6694d7c0b4c973dd7271e8ab8f00745",
+      "terminal": true,
+      "terminal_status": "REPLAY_CERTIFIED_UNSAT"
+    },
+    {
+      "certification_kind": "SEGMENT_SAMPLED_EXTERNAL_REPLAY",
+      "certification_receipt": {
+        "leaf_result_indexed_by": "intersection-4-third-01-fourth-010-fifth-049",
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-fifth-split/segments/segment-0074/independent-audit.json",
+        "sha256": "101a2ed212aab82717635420f8f5132781c714cfa9861101bf6bfedc557bfcd9"
+      },
+      "checker_result": "VERIFIED",
+      "checker_sha256": "f58f63b0f76945d4c4c9ff6e87afaf870f579e67c0f7cca589492df8fc7ebd47",
+      "exact_cnf_sha256": "de438d53eb6f7c65e8b11a8e59a54a811d7b4f6a83fd626495e64f57b5ad4c85",
+      "fifth_index": 49,
+      "leaf_id": "intersection-4-third-01-fourth-010-fifth-049",
+      "proof_sha256": "2e7043c1c16b2bb27159ca82699a5acf67e8f5e26ec1d8a00d572a76388e5c2e",
+      "source_result": {
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-fifth-split/segments/segment-0074/intersection-4-third-01-fourth-010-fifth-049/result.json",
+        "sha256": "94c4d7a8f22e264ccddf5a180b635f80f137319bd23812964dba32f496a634d5"
+      },
+      "terminal": true,
+      "terminal_status": "REPLAY_CERTIFIED_UNSAT"
+    },
+    {
+      "certification_kind": "EXHAUSTIVE_BATCH_REPLAY",
+      "certification_receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-fifth-split/suffix-certification/batches/batch-0014/cases/intersection-4-third-01-fourth-010-fifth-050/receipt.json",
+        "sha256": "d53540a867f4633d8be60cfe44a3c26acc7c5710cbf3e97e5c9dab4a97977033"
+      },
+      "checker_result": "VERIFIED",
+      "checker_sha256": "f58f63b0f76945d4c4c9ff6e87afaf870f579e67c0f7cca589492df8fc7ebd47",
+      "exact_cnf_sha256": "7dbc6e14998abc71e3300a63bf8421080bfbec337ffe79305133660ff7e4850e",
+      "fifth_index": 50,
+      "leaf_id": "intersection-4-third-01-fourth-010-fifth-050",
+      "proof_sha256": "0bea92c11548d304496c1a4a3379ffd6d60c5a3656a865f6cde6e0f3cafd5f86",
+      "terminal": true,
+      "terminal_status": "REPLAY_CERTIFIED_UNSAT"
+    },
+    {
+      "certification_kind": "EXHAUSTIVE_BATCH_REPLAY",
+      "certification_receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-fifth-split/suffix-certification/batches/batch-0022/cases/intersection-4-third-01-fourth-010-fifth-051/receipt.json",
+        "sha256": "487a576072591ebfc3f1ab839e4224d4e6a5e357ac359db2705e78fa3b2eeada"
+      },
+      "checker_result": "VERIFIED",
+      "checker_sha256": "f58f63b0f76945d4c4c9ff6e87afaf870f579e67c0f7cca589492df8fc7ebd47",
+      "exact_cnf_sha256": "ad17ce5ff8d5bffdfd2e6124418df927a43f0b7ddfecc3208326cb2b38e48e65",
+      "fifth_index": 51,
+      "leaf_id": "intersection-4-third-01-fourth-010-fifth-051",
+      "proof_sha256": "084da161331763daebda61110798f4aae47a548725e72cd4e1afa365874c8bbe",
+      "terminal": true,
+      "terminal_status": "REPLAY_CERTIFIED_UNSAT"
+    },
+    {
+      "certification_kind": "EXHAUSTIVE_BATCH_REPLAY",
+      "certification_receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-fifth-split/suffix-certification/batches/batch-0004/cases/intersection-4-third-01-fourth-010-fifth-052/receipt.json",
+        "sha256": "710a50aac40dc99c9bbb0d1f4a881829f13cf2a6fa9fd2db12f8657793354450"
+      },
+      "checker_result": "VERIFIED",
+      "checker_sha256": "f58f63b0f76945d4c4c9ff6e87afaf870f579e67c0f7cca589492df8fc7ebd47",
+      "exact_cnf_sha256": "65cfbacbc8aae2bce649f92a4a564712e3d8efca056bdecc2a349501646525d9",
+      "fifth_index": 52,
+      "leaf_id": "intersection-4-third-01-fourth-010-fifth-052",
+      "proof_sha256": "23f6d76b77409f13697ba6e35e7c54a22b48e29779f0545b26f2a291ce673860",
+      "terminal": true,
+      "terminal_status": "REPLAY_CERTIFIED_UNSAT"
+    },
+    {
+      "certification_kind": "EXHAUSTIVE_BATCH_REPLAY",
+      "certification_receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-fifth-split/suffix-certification/batches/batch-0005/cases/intersection-4-third-01-fourth-010-fifth-053/receipt.json",
+        "sha256": "8dd3b15c8a28162f79d72fa4c74e71af86877cdbbbb22c2333272aa8782fdb30"
+      },
+      "checker_result": "VERIFIED",
+      "checker_sha256": "f58f63b0f76945d4c4c9ff6e87afaf870f579e67c0f7cca589492df8fc7ebd47",
+      "exact_cnf_sha256": "7c5c2afc83fe24294661b5d6217d402410a733aff35dfcd8605433d6cd32bef1",
+      "fifth_index": 53,
+      "leaf_id": "intersection-4-third-01-fourth-010-fifth-053",
+      "proof_sha256": "af1e4dd21c14bd60bffa714706dc333db7deda91cafbf302c9e374a1613bdaf4",
+      "terminal": true,
+      "terminal_status": "REPLAY_CERTIFIED_UNSAT"
+    },
+    {
+      "certification_kind": "EXHAUSTIVE_BATCH_REPLAY",
+      "certification_receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-fifth-split/suffix-certification/batches/batch-0011/cases/intersection-4-third-01-fourth-010-fifth-054/receipt.json",
+        "sha256": "8d6670175c78b7589823afcd2d4053285413e96adff70f1893a0b9e4ff67b459"
+      },
+      "checker_result": "VERIFIED",
+      "checker_sha256": "f58f63b0f76945d4c4c9ff6e87afaf870f579e67c0f7cca589492df8fc7ebd47",
+      "exact_cnf_sha256": "e370a38baec83a866bd0c27a76279fc6d0ebd3d50bd8f9bcdbad9368ec732ae2",
+      "fifth_index": 54,
+      "leaf_id": "intersection-4-third-01-fourth-010-fifth-054",
+      "proof_sha256": "d100e45a43d3b58336bd487df028f19c20559f715d844a60d6c5ccafec8db9fb",
+      "terminal": true,
+      "terminal_status": "REPLAY_CERTIFIED_UNSAT"
+    },
+    {
+      "certification_kind": "EXHAUSTIVE_BATCH_REPLAY",
+      "certification_receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-fifth-split/suffix-certification/batches/batch-0013/cases/intersection-4-third-01-fourth-010-fifth-055/receipt.json",
+        "sha256": "60c2ca9663e5dcb1c9c16e8db9b913b6335d9e1d373e47a276ec5527b97d6483"
+      },
+      "checker_result": "VERIFIED",
+      "checker_sha256": "f58f63b0f76945d4c4c9ff6e87afaf870f579e67c0f7cca589492df8fc7ebd47",
+      "exact_cnf_sha256": "6ec7f71c3ce73fded62b8c64b7700597f9d295420690ba79d18ae15ae6475987",
+      "fifth_index": 55,
+      "leaf_id": "intersection-4-third-01-fourth-010-fifth-055",
+      "proof_sha256": "6a8d62bd3a133bc3ae5f584a231aad6ec23b1c089f68557fa8024427291a82e6",
+      "terminal": true,
+      "terminal_status": "REPLAY_CERTIFIED_UNSAT"
+    },
+    {
+      "certification_kind": "EXHAUSTIVE_BATCH_REPLAY",
+      "certification_receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-fifth-split/suffix-certification/batches/batch-0005/cases/intersection-4-third-01-fourth-010-fifth-056/receipt.json",
+        "sha256": "0c745162bccb54a5dbee025c8646df705b29340d0189a9ce17114ff36aff8151"
+      },
+      "checker_result": "VERIFIED",
+      "checker_sha256": "f58f63b0f76945d4c4c9ff6e87afaf870f579e67c0f7cca589492df8fc7ebd47",
+      "exact_cnf_sha256": "03c9f78422cbedc42574dd0efd70312a2bed89c25b736198e5608a1c1002ed24",
+      "fifth_index": 56,
+      "leaf_id": "intersection-4-third-01-fourth-010-fifth-056",
+      "proof_sha256": "888df6312206dfb97acbe8d2b5cdce5a346b22d3388d9c219749c495e10c5975",
+      "terminal": true,
+      "terminal_status": "REPLAY_CERTIFIED_UNSAT"
+    },
+    {
+      "certification_kind": "EXHAUSTIVE_BATCH_REPLAY",
+      "certification_receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-fifth-split/suffix-certification/batches/batch-0019/cases/intersection-4-third-01-fourth-010-fifth-057/receipt.json",
+        "sha256": "2112b9bbec4034607b9a7146e7d9517abf7fbff6c035a06fc549bec0b34dcb78"
+      },
+      "checker_result": "VERIFIED",
+      "checker_sha256": "f58f63b0f76945d4c4c9ff6e87afaf870f579e67c0f7cca589492df8fc7ebd47",
+      "exact_cnf_sha256": "c4c331bc327b6700dac539f6d4b33f406c3f3d2e641ea951d99f5ffdb9fb1f6b",
+      "fifth_index": 57,
+      "leaf_id": "intersection-4-third-01-fourth-010-fifth-057",
+      "proof_sha256": "bb5300222deb2a13ae598772ace5ece1b09c57561b7871569b137e8bb62b225b",
+      "terminal": true,
+      "terminal_status": "REPLAY_CERTIFIED_UNSAT"
+    },
+    {
+      "certification_kind": "EXHAUSTIVE_BATCH_REPLAY",
+      "certification_receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-fifth-split/suffix-certification/batches/batch-0004/cases/intersection-4-third-01-fourth-010-fifth-058/receipt.json",
+        "sha256": "eb359b33a17a5d767c38a78219258b3e3c72935b8a3421d1c9c0f33a784170c1"
+      },
+      "checker_result": "VERIFIED",
+      "checker_sha256": "f58f63b0f76945d4c4c9ff6e87afaf870f579e67c0f7cca589492df8fc7ebd47",
+      "exact_cnf_sha256": "030b0333b5505436c59cfe758259246cd7c28d49f9bc5a26c4fac98f6d609858",
+      "fifth_index": 58,
+      "leaf_id": "intersection-4-third-01-fourth-010-fifth-058",
+      "proof_sha256": "6e65f83a5761fb2309a4819c7a74af918b906622719a4b9dd6bb8021b76a0972",
+      "terminal": true,
+      "terminal_status": "REPLAY_CERTIFIED_UNSAT"
+    },
+    {
+      "certification_kind": "EXHAUSTIVE_BATCH_REPLAY",
+      "certification_receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-fifth-split/suffix-certification/batches/batch-0015/cases/intersection-4-third-01-fourth-010-fifth-059/receipt.json",
+        "sha256": "f604dd6cb06619049a4af582d615343e5f820ed4497561c441741afbba5bdd2f"
+      },
+      "checker_result": "VERIFIED",
+      "checker_sha256": "f58f63b0f76945d4c4c9ff6e87afaf870f579e67c0f7cca589492df8fc7ebd47",
+      "exact_cnf_sha256": "45e01f76ff1e6a2a610be8f5a0409db2528e7c50f47e2a22749370cbf2d95d4c",
+      "fifth_index": 59,
+      "leaf_id": "intersection-4-third-01-fourth-010-fifth-059",
+      "proof_sha256": "35d8bfff03640b854a1ec91c1e0edc39c5b13b8b38da4feddc8aa8c1f3be5db7",
+      "terminal": true,
+      "terminal_status": "REPLAY_CERTIFIED_UNSAT"
+    },
+    {
+      "certification_kind": "EXHAUSTIVE_BATCH_REPLAY",
+      "certification_receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-fifth-split/suffix-certification/batches/batch-0010/cases/intersection-4-third-01-fourth-010-fifth-060/receipt.json",
+        "sha256": "320501fbcd760e1a001fcd8b303dfd7143984c893f70589b7959dce60a081819"
+      },
+      "checker_result": "VERIFIED",
+      "checker_sha256": "f58f63b0f76945d4c4c9ff6e87afaf870f579e67c0f7cca589492df8fc7ebd47",
+      "exact_cnf_sha256": "1bc392a6b0ec79596c35a1b54f85c6a17b6a0038a44a2f822339277d19306207",
+      "fifth_index": 60,
+      "leaf_id": "intersection-4-third-01-fourth-010-fifth-060",
+      "proof_sha256": "017869e2d665a93f17ace38eafcbfd88779221fd66686d6d66700e43838c4264",
+      "terminal": true,
+      "terminal_status": "REPLAY_CERTIFIED_UNSAT"
+    },
+    {
+      "certification_kind": "EXHAUSTIVE_BATCH_REPLAY",
+      "certification_receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-fifth-split/suffix-certification/batches/batch-0008/cases/intersection-4-third-01-fourth-010-fifth-061/receipt.json",
+        "sha256": "35be80ccecb47b2deb9870187630170b009d28d606c5cd0c2c67eb4cc94cb1a3"
+      },
+      "checker_result": "VERIFIED",
+      "checker_sha256": "f58f63b0f76945d4c4c9ff6e87afaf870f579e67c0f7cca589492df8fc7ebd47",
+      "exact_cnf_sha256": "f34b241c4473938a7b89c764655e3eb60722f84c399be9289058967e4e604bf7",
+      "fifth_index": 61,
+      "leaf_id": "intersection-4-third-01-fourth-010-fifth-061",
+      "proof_sha256": "9281c2631406687b0022a2b3330a07a6023022bccd4fa20565d9fd8e6a83b266",
+      "terminal": true,
+      "terminal_status": "REPLAY_CERTIFIED_UNSAT"
+    },
+    {
+      "certification_kind": "EXHAUSTIVE_BATCH_REPLAY",
+      "certification_receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-fifth-split/suffix-certification/batches/batch-0021/cases/intersection-4-third-01-fourth-010-fifth-062/receipt.json",
+        "sha256": "8e51837d9a6003d0d6869b967e439534be92542e812fd2124d7a0c909b02e32a"
+      },
+      "checker_result": "VERIFIED",
+      "checker_sha256": "f58f63b0f76945d4c4c9ff6e87afaf870f579e67c0f7cca589492df8fc7ebd47",
+      "exact_cnf_sha256": "dc51427ac038afd7843456145dee6ca847ef8ebedb50df41469a054b7c0560d7",
+      "fifth_index": 62,
+      "leaf_id": "intersection-4-third-01-fourth-010-fifth-062",
+      "proof_sha256": "e561ce2b6ea5c70e7fe361aedd873744ec8d4ffd047b3863b0d20c209ec7b11f",
+      "terminal": true,
+      "terminal_status": "REPLAY_CERTIFIED_UNSAT"
+    },
+    {
+      "certification_kind": "SEGMENT_SAMPLED_EXTERNAL_REPLAY",
+      "certification_receipt": {
+        "leaf_result_indexed_by": "intersection-4-third-01-fourth-010-fifth-063",
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-fifth-split/segments/segment-0126/independent-audit.json",
+        "sha256": "50015330e885c956aa70f30d13f3c236d9e4148413b16dc2cab229c76fa60493"
+      },
+      "checker_result": "VERIFIED",
+      "checker_sha256": "f58f63b0f76945d4c4c9ff6e87afaf870f579e67c0f7cca589492df8fc7ebd47",
+      "exact_cnf_sha256": "0c8f2263e24198427cc8602b128e0fe12ac0607423a8a5a93743c95697b5a782",
+      "fifth_index": 63,
+      "leaf_id": "intersection-4-third-01-fourth-010-fifth-063",
+      "proof_sha256": "88d2b07e72a6fcb3525ee1b11870b25d5a9954d9db9925cf6973500fd0e8ab84",
+      "source_result": {
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-fifth-split/segments/segment-0126/intersection-4-third-01-fourth-010-fifth-063/result.json",
+        "sha256": "e646a0d97aef8c9537b5adfab22129b8d84314aa345985a62414f0cae9ff70d9"
+      },
+      "terminal": true,
+      "terminal_status": "REPLAY_CERTIFIED_UNSAT"
+    },
+    {
+      "certification_kind": "EXHAUSTIVE_BATCH_REPLAY",
+      "certification_receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-fifth-split/suffix-certification/batches/batch-0004/cases/intersection-4-third-01-fourth-010-fifth-064/receipt.json",
+        "sha256": "1a64ee08c471d0dc5a9c0c8ad751bc93734ada0a8f6dfbb9f79bd77931b33184"
+      },
+      "checker_result": "VERIFIED",
+      "checker_sha256": "f58f63b0f76945d4c4c9ff6e87afaf870f579e67c0f7cca589492df8fc7ebd47",
+      "exact_cnf_sha256": "d867eae7a56574e15a4b65c22dc99d4da3095551f30d430b747d1448d6633ce3",
+      "fifth_index": 64,
+      "leaf_id": "intersection-4-third-01-fourth-010-fifth-064",
+      "proof_sha256": "96f06d0fde32e9e5cf9840cf67a33199670482a89dfc61571681a328cc304d56",
+      "terminal": true,
+      "terminal_status": "REPLAY_CERTIFIED_UNSAT"
+    },
+    {
+      "certification_kind": "EXHAUSTIVE_BATCH_REPLAY",
+      "certification_receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-fifth-split/suffix-certification/batches/batch-0024/cases/intersection-4-third-01-fourth-010-fifth-065/receipt.json",
+        "sha256": "173e7f0a2ee97bfc42add5e5c6ac5e91255dc31385fe6f01711e4c2a40b3f31e"
+      },
+      "checker_result": "VERIFIED",
+      "checker_sha256": "f58f63b0f76945d4c4c9ff6e87afaf870f579e67c0f7cca589492df8fc7ebd47",
+      "exact_cnf_sha256": "cc8799bb370fb7c87e42d57a31860762d0cd126fcecb52d59c9bfa4959fd2ce0",
+      "fifth_index": 65,
+      "leaf_id": "intersection-4-third-01-fourth-010-fifth-065",
+      "proof_sha256": "a41618da5705164481fd40f64081f99a3cb25c66c6699ddac51c9366c56019df",
+      "terminal": true,
+      "terminal_status": "REPLAY_CERTIFIED_UNSAT"
+    },
+    {
+      "certification_kind": "EXHAUSTIVE_BATCH_REPLAY",
+      "certification_receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-fifth-split/suffix-certification/batches/batch-0027/cases/intersection-4-third-01-fourth-010-fifth-066/receipt.json",
+        "sha256": "53e5e357918083c705ca50cf687f52d2cd28c2e9eb95548c79185e2714e44a02"
+      },
+      "checker_result": "VERIFIED",
+      "checker_sha256": "f58f63b0f76945d4c4c9ff6e87afaf870f579e67c0f7cca589492df8fc7ebd47",
+      "exact_cnf_sha256": "3bb3e927fe425742624d486b9d66ceb816a7ec4a496802948df85ad642a76acc",
+      "fifth_index": 66,
+      "leaf_id": "intersection-4-third-01-fourth-010-fifth-066",
+      "proof_sha256": "a597710e03238d5f67da531ff8a62b5db7526ec42af0125a2c1bc84ea4d15ade",
+      "terminal": true,
+      "terminal_status": "REPLAY_CERTIFIED_UNSAT"
+    },
+    {
+      "certification_kind": "EXHAUSTIVE_BATCH_REPLAY",
+      "certification_receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-fifth-split/suffix-certification/batches/batch-0018/cases/intersection-4-third-01-fourth-010-fifth-067/receipt.json",
+        "sha256": "fb76a53ee2a1d9dbd03f997cb9679f4b01d3a49fbfc467cacc80ec0febc782a7"
+      },
+      "checker_result": "VERIFIED",
+      "checker_sha256": "f58f63b0f76945d4c4c9ff6e87afaf870f579e67c0f7cca589492df8fc7ebd47",
+      "exact_cnf_sha256": "69af5f4ab231cbb8612e7337186bfe2c0c8bbff7eb0d4788ab0f174001a71848",
+      "fifth_index": 67,
+      "leaf_id": "intersection-4-third-01-fourth-010-fifth-067",
+      "proof_sha256": "a912036e6a95660484ca3d0f1741598cabcf29c00085e0569ae5be46420df391",
+      "terminal": true,
+      "terminal_status": "REPLAY_CERTIFIED_UNSAT"
+    }
+  ],
+  "fifth_manifest_binding": {
+    "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-fifth-split/manifest.json",
+    "sha256": "02919771a97207014ae798610c6ed3c88e34965d91a44bbfd72cc2baa046decc"
+  },
+  "parent_id": "intersection-4-third-01-fourth-010",
+  "parent_status": "OPEN_CHILDREN_REMAIN",
+  "remaining_children": 2,
+  "schema_version": 1,
+  "terminal_children": 66,
+  "top_parent": "intersection-4"
+}

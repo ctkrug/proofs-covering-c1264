@@ -1,0 +1,8 @@
+{
+  "artifact_status": "SUPERSEDED_FAILED_EXACT_DOMAIN_AUDIT",
+  "manifest_sha256": "d5415078cf108857965ead2d1ef4d7bae37d839d429196edb9771f5daaf023b3",
+  "reason": "The 82-parent pilot builder and checker computed the available primary-block domain from inherited fourth/fifth recipe units only. They omitted negative primary unit clauses already embedded in each cached parent CNF. Its deficit triples, branch counts, and zero-child receipts therefore do not describe the exact residual domain.",
+  "scope": "This invalidates only the hard-tail-deficit-partition pilot. The independently audited generic all-82 sixth partition parses cached parent-CNF negative units and is not affected.",
+  "replacement": "The versioned all-open rebuild open-fifth-deficit-partition-v2 subsumes the pilot after its independent audit passes.",
+  "claim_limit": "Do not use this artifact for coverage, branch counts, sampling, solving, or theorem claims."
+}

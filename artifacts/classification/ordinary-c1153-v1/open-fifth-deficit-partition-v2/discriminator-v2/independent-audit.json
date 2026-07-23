@@ -1,0 +1,62 @@
+{
+  "claim_limit": "Exact 48-child discriminator audit only. No unsampled child closes; a fifth parent closes only if it appears in complete_fifth_parents after all of its deficit children independently replay.",
+  "complete_fifth_parent_count": 0,
+  "complete_fifth_parents": [],
+  "compressed_proof_bytes": {
+    "count": 10,
+    "max": 2342268,
+    "min": 332162,
+    "p50": 810329,
+    "p90": 1577273,
+    "p95": 1577273,
+    "total": 11128393
+  },
+  "counts": {
+    "FIXED_CAP_TIMEOUT": 38,
+    "UNSAT_VERIFIED_BY_RUNNER": 10
+  },
+  "counts_by_position": {
+    "first_deficit_orbit": {
+      "FIXED_CAP_TIMEOUT": 20,
+      "UNSAT_VERIFIED_BY_RUNNER": 4
+    },
+    "last_deficit_orbit": {
+      "FIXED_CAP_TIMEOUT": 18,
+      "UNSAT_VERIFIED_BY_RUNNER": 6
+    }
+  },
+  "independent_replay_seconds": {
+    "count": 10,
+    "max": 3.5944319999998697,
+    "min": 0.30357029200058605,
+    "p50": 1.042656249999709,
+    "p90": 2.634630250000555,
+    "p95": 2.634630250000555,
+    "total": 14.455779500001881
+  },
+  "independently_replayed_unsat": 10,
+  "protocol_sha256": "b49e936c240e4e63a88fde6db592ba59595409b7b04e7fb8b7a04c1c938c5679",
+  "remaining_nonempty_children": 19640,
+  "sample_count": 48,
+  "schema_version": 1,
+  "solver_elapsed_seconds": {
+    "count": 48,
+    "max": 5.0559228749989416,
+    "min": 0.21531020799920952,
+    "p50": 5.019319375000123,
+    "p90": 5.035805374998745,
+    "p95": 5.0410492080009135,
+    "total": 208.7182487479986
+  },
+  "status": "VALID",
+  "summary_sha256": "db8590e898914fdd55b3b2a606a8153977414f66008492fb1e89d4fe7feacb08",
+  "uncompressed_proof_bytes": {
+    "count": 10,
+    "max": 6893972,
+    "min": 1198062,
+    "p50": 2531034,
+    "p90": 4592738,
+    "p95": 4592738,
+    "total": 33647273
+  }
+}

@@ -55,9 +55,19 @@
         "batch_id": 10,
         "batch_receipt_sha256": "3104c05c2be47721c6dd148b58962f0b9f5aa339c79d3fb30bb045015c31680f",
         "certified_unsat": 1024
+      },
+      {
+        "batch_id": 11,
+        "batch_receipt_sha256": "907d794cd4a249929dceb2502f489811558b0601e1cf3b2666582ea00dff384f",
+        "certified_unsat": 1024
+      },
+      {
+        "batch_id": 12,
+        "batch_receipt_sha256": "7beca6a011ced18a2e3ad5c476b1f0b864ede7059dee06ec93f4fd4543780452",
+        "certified_unsat": 1024
       }
     ],
-    "certified_ledger_sha256": "27eece83448d6e2ad3264f40d3b583e2420fd87fc706adde57e69009db169f78",
+    "certified_ledger_sha256": "3f009b716675320c0f93af91ced0ffc8c2b92bc6d7211728212ab370956e8077",
     "discriminator_audit_sha256": "26d500e84b0763ed073963e29132e5a3b362f273c2f74a06e50110cb068aa953",
     "fifth_manifest_sha256": "02919771a97207014ae798610c6ed3c88e34965d91a44bbfd72cc2baa046decc",
     "segments": [
@@ -836,15 +846,15 @@
     "suffix_route_audit_sha256": "1fd3e9087619fd6569ed1efa8c1b05ecf5b33ce3d28c4adddc713c8b1c53cf6c",
     "suffix_route_sha256": "52082943bd84c2d24bb5af74885081820b9c540886f6dbf612fc757f0300580a"
   },
-  "claim_limit": "The suffix harvest is fully measured, but 17,237 suffix UNSAT proofs await exhaustive replay, 82 measured leaves timed out, 10,626 fifth leaves were intentionally not measured, and no fourth-level parent is closed.",
+  "claim_limit": "The suffix harvest is fully measured, but 15,189 suffix UNSAT proofs await exhaustive replay, 82 measured leaves timed out, 10,626 fifth leaves were intentionally not measured, and no fourth-level parent is closed.",
   "counts": {
-    "certified_unsat_distinct": 15374,
+    "certified_unsat_distinct": 17422,
     "complete_fourth_parents": 0,
     "fifth_branches_total": 43319,
     "measured_distinct": 32693,
     "never_measured": 10626,
     "open_distinct": 10708,
-    "provisional_unsat_backlog": 17237,
+    "provisional_unsat_backlog": 15189,
     "sat": 0,
     "solver_or_replay_unsat_distinct": 32611,
     "timeouts": 82
@@ -858,8 +868,8 @@
   "schema_version": 1,
   "status": "VALID",
   "suffix": {
-    "bulk_replay_certified": 11264,
-    "distinct_replay_certified": 15310,
+    "bulk_replay_certified": 13312,
+    "distinct_replay_certified": 17358,
     "provisional_solver_unsat": 32547,
     "sampled_replay_certified": 4046,
     "selected": 32597,

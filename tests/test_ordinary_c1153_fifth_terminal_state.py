@@ -4,7 +4,7 @@ from pathlib import Path
 
 
 ROOT = Path(__file__).resolve().parents[1]
-REPORT = ROOT / "artifacts/classification/ordinary-c1153-v1/hard-tail-fifth-split/terminal-aggregate-audit.json"
+REPORT = ROOT / "artifacts/classification/ordinary-c1153-v1/hard-tail-fifth-split/terminal-aggregate-audit-full-replay.json"
 
 
 def test_terminal_aggregate_rebuilds_and_preserves_ledger_separation() -> None:
@@ -18,13 +18,13 @@ def test_terminal_aggregate_rebuilds_and_preserves_ledger_separation() -> None:
     report = json.loads(REPORT.read_text())
     assert report["status"] == "VALID"
     assert report["counts"] == {
-        "certified_unsat_distinct": 15_374,
+        "certified_unsat_distinct": 32_611,
         "complete_fourth_parents": 0,
         "fifth_branches_total": 43_319,
         "measured_distinct": 32_693,
         "never_measured": 10_626,
         "open_distinct": 10_708,
-        "provisional_unsat_backlog": 17_237,
+        "provisional_unsat_backlog": 0,
         "sat": 0,
         "solver_or_replay_unsat_distinct": 32_611,
         "timeouts": 82,

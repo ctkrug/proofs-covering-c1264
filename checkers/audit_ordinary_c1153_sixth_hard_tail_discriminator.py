@@ -14,7 +14,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 POINTS = tuple(range(1, 12))
 BLOCKS = tuple(itertools.combinations(POINTS, 5))
-TARGET = ROOT / "artifacts/classification/ordinary-c1153-v1/hard-tail-sixth-discriminator/manifest.json"
+TARGET = ROOT / "artifacts/classification/ordinary-c1153-v1/hard-tail-sixth-discriminator-final/manifest.json"
 
 
 def sha(path: Path) -> str:
@@ -39,6 +39,14 @@ def parent_negative_units(path: Path) -> set[int]:
 
 def audit() -> dict[str, object]:
     manifest = json.loads(TARGET.read_text())
+    predecessor_path = ROOT / manifest["predecessor"]["path"]
+    if sha(predecessor_path) != manifest["predecessor"]["sha256"]:
+        raise ValueError("predecessor manifest hash mismatch")
+    predecessor = json.loads(predecessor_path.read_text())
+    predecessor_by_id = {case["id"]: case for case in predecessor["cases"]}
+    predecessor_ids = set(predecessor_by_id)
+    if len(predecessor_ids) != manifest["predecessor"]["case_count"]:
+        raise ValueError("predecessor case count mismatch")
     fifth_path = ROOT / manifest["fifth_manifest"]["path"]
     if sha(fifth_path) != manifest["fifth_manifest"]["sha256"]:
         raise ValueError("fifth manifest hash mismatch")
@@ -56,8 +64,9 @@ def audit() -> dict[str, object]:
     for segment in manifest["source_snapshot"]["suffix_ledger_snapshot"]["segments"]:
         segment_dir = ROOT / "artifacts/classification/ordinary-c1153-v1/hard-tail-fifth-split/segments" / f"segment-{segment:04d}"
         result_paths = sorted(segment_dir.glob("*/result.json"))
-        if len(result_paths) != 256:
-            raise ValueError(f"segment {segment}: source snapshot is not a complete 256-case segment")
+        receipt = json.loads((segment_dir / "runner-receipt.json").read_text())
+        if len(result_paths) != receipt["selected"] or receipt["completed"] != receipt["selected"]:
+            raise ValueError(f"segment {segment}: source snapshot is not a complete segment")
         for result_path in result_paths:
             result = json.loads(result_path.read_text())
             if result["status"] == "FIXED_CAP_TIMEOUT":
@@ -130,6 +139,25 @@ def audit() -> dict[str, object]:
         raise ValueError("global sixth partition count mismatch")
     if seen != expected_timeout_ids:
         raise ValueError("timeout snapshot selection is incomplete or contains a foreign case")
+    final_by_id = {case["id"]: case for case in manifest["cases"]}
+    changed_predecessor_recipes = [
+        case_id for case_id in sorted(predecessor_ids)
+        if final_by_id.get(case_id) != predecessor_by_id[case_id]
+    ]
+    if changed_predecessor_recipes:
+        raise ValueError("predecessor sixth recipes changed")
+    added_ids = sorted(seen - predecessor_ids)
+    decomposition = manifest["final_timeout_decomposition"]
+    if not predecessor_ids <= seen:
+        raise ValueError("predecessor timeout set is not retained")
+    if (
+        len(predecessor_ids) != decomposition["predecessor_cases"]
+        or len(added_ids) != decomposition["added_cases"]
+        or len(seen) != decomposition["final_cases"]
+        or added_ids != decomposition["added_case_ids"]
+        or unit_sha(added_ids) != decomposition["added_case_ids_sha256"]
+    ):
+        raise ValueError("34-leaf addition audit failed")
     return {
         "schema_version": 1,
         "status": "VALID",
@@ -138,6 +166,11 @@ def audit() -> dict[str, object]:
         "total_sixth_children": total,
         "duplicate_cases": 0,
         "omitted_timeout_cases": 0,
+        "predecessor_cases_retained": len(predecessor_ids),
+        "new_timeout_cases_audited": len(added_ids),
+        "added_case_ids_sha256": unit_sha(added_ids),
+        "predecessor_recipes_byte_equivalent": True,
+        "changed_predecessor_recipes": [],
         "coverage": "For each bound timeout leaf, an independent five-cell membership-count grouping covers each available sixth block exactly once. The first-present rule makes the children exhaustive and disjoint.",
         "claim_limit": "Partition audit only; it neither solves a child nor certifies a fifth-level leaf.",
         "cases": summaries,

@@ -1,0 +1,4260 @@
+{
+  "bindings": {
+    "fifth_manifest": {
+      "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-fifth-split/manifest.json",
+      "sha256": "02919771a97207014ae798610c6ed3c88e34965d91a44bbfd72cc2baa046decc"
+    },
+    "v2_independent_audit": {
+      "path": "artifacts/classification/ordinary-c1153-v1/open-fifth-deficit-partition-v2/independent-audit.json",
+      "sha256": "ba1487944532f6cd931e62c28c40a5822a2f68dd5f20cfc934f920a4b7d6dd36"
+    },
+    "v2_manifest": {
+      "path": "artifacts/classification/ordinary-c1153-v1/open-fifth-deficit-partition-v2/manifest.json",
+      "sha256": "c1f615b51076145183df3f1d4676005f6617dcade442e8a75264a7044a574996"
+    }
+  },
+  "claim_limit": "Only parents whose complete explicit child list is terminal are closed. Semantic contradictions are not labeled solver-UNSAT.",
+  "counts": {
+    "fifth_children_total": 43319,
+    "fourth_parents_closed": 216,
+    "fourth_parents_open": 168,
+    "fourth_parents_total": 384,
+    "remaining_open_children": 2232,
+    "replay_certified_unsat_children": 32611,
+    "semantic_contradiction_children": 8476
+  },
+  "parents": [
+    {
+      "child_count": 99,
+      "parent_id": "intersection-3-third-00-fourth-000",
+      "parent_status": "OPEN_CHILDREN_REMAIN",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-3-third-00-fourth-000.json",
+        "sha256": "a3eee741aa8a8603681a13710d7a3d5f29b6cc9accad502f6ca1ceabeba48fcb"
+      },
+      "remaining_children": 26,
+      "terminal_children": 73
+    },
+    {
+      "child_count": 59,
+      "parent_id": "intersection-3-third-00-fourth-001",
+      "parent_status": "OPEN_CHILDREN_REMAIN",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-3-third-00-fourth-001.json",
+        "sha256": "e5376202e74955cb44e0ae103be8ca9ef4d1c0981467dd8c4f91715e3eaa2cec"
+      },
+      "remaining_children": 15,
+      "terminal_children": 44
+    },
+    {
+      "child_count": 96,
+      "parent_id": "intersection-3-third-00-fourth-002",
+      "parent_status": "OPEN_CHILDREN_REMAIN",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-3-third-00-fourth-002.json",
+        "sha256": "e8f287f28417af7939bd70f62ef5a66fd0c113ab8e779f0900713f199f312447"
+      },
+      "remaining_children": 24,
+      "terminal_children": 72
+    },
+    {
+      "child_count": 94,
+      "parent_id": "intersection-3-third-00-fourth-003",
+      "parent_status": "OPEN_CHILDREN_REMAIN",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-3-third-00-fourth-003.json",
+        "sha256": "e69647b68d1170c3799da246be88ef5e8ffec9fbecd0d92f91d0a44a2c4839d7"
+      },
+      "remaining_children": 23,
+      "terminal_children": 71
+    },
+    {
+      "child_count": 92,
+      "parent_id": "intersection-3-third-00-fourth-004",
+      "parent_status": "OPEN_CHILDREN_REMAIN",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-3-third-00-fourth-004.json",
+        "sha256": "ee32e172bc7b144eede2416a2040cdb44bd4b4a5f1816dbedc463e8fd5425335"
+      },
+      "remaining_children": 23,
+      "terminal_children": 69
+    },
+    {
+      "child_count": 129,
+      "parent_id": "intersection-3-third-00-fourth-005",
+      "parent_status": "OPEN_CHILDREN_REMAIN",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-3-third-00-fourth-005.json",
+        "sha256": "2b0ad9c51d2e6ad0b15281880c3ef7082b8b8233770df6a4f27e6e764e6210c6"
+      },
+      "remaining_children": 21,
+      "terminal_children": 108
+    },
+    {
+      "child_count": 125,
+      "parent_id": "intersection-3-third-00-fourth-006",
+      "parent_status": "OPEN_CHILDREN_REMAIN",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-3-third-00-fourth-006.json",
+        "sha256": "b5d42680bd4c5bed50224636476cf35442f63944c599b1651b0a2e259d9f9c6e"
+      },
+      "remaining_children": 19,
+      "terminal_children": 106
+    },
+    {
+      "child_count": 204,
+      "parent_id": "intersection-3-third-00-fourth-007",
+      "parent_status": "OPEN_CHILDREN_REMAIN",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-3-third-00-fourth-007.json",
+        "sha256": "5e812c1278eecd6607272c62119ad4c2be7895bfc06585ba73857877669533cf"
+      },
+      "remaining_children": 31,
+      "terminal_children": 173
+    },
+    {
+      "child_count": 117,
+      "parent_id": "intersection-3-third-00-fourth-008",
+      "parent_status": "OPEN_CHILDREN_REMAIN",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-3-third-00-fourth-008.json",
+        "sha256": "c573bf7c56bc4e3322fd1286defa35cd8fca00a81d421f553f02262ddce24506"
+      },
+      "remaining_children": 15,
+      "terminal_children": 102
+    },
+    {
+      "child_count": 192,
+      "parent_id": "intersection-3-third-00-fourth-009",
+      "parent_status": "OPEN_CHILDREN_REMAIN",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-3-third-00-fourth-009.json",
+        "sha256": "d2fef20db0e495c5aa42cd8baed5d262fc2c966e3724c308895f5211f622a6d4"
+      },
+      "remaining_children": 25,
+      "terminal_children": 167
+    },
+    {
+      "child_count": 184,
+      "parent_id": "intersection-3-third-00-fourth-010",
+      "parent_status": "OPEN_CHILDREN_REMAIN",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-3-third-00-fourth-010.json",
+        "sha256": "91bcbbb3e13e39c08868d4b7e7662757f2246cc6c40b0bb09d113cd0e5f711fd"
+      },
+      "remaining_children": 21,
+      "terminal_children": 163
+    },
+    {
+      "child_count": 176,
+      "parent_id": "intersection-3-third-00-fourth-011",
+      "parent_status": "OPEN_CHILDREN_REMAIN",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-3-third-00-fourth-011.json",
+        "sha256": "d89500116907b6958a14983daf207655aba775940948ac92227191de9b48089b"
+      },
+      "remaining_children": 17,
+      "terminal_children": 159
+    },
+    {
+      "child_count": 78,
+      "parent_id": "intersection-3-third-00-fourth-012",
+      "parent_status": "OPEN_CHILDREN_REMAIN",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-3-third-00-fourth-012.json",
+        "sha256": "aeec27026ad711257685ceec9a1adb11afd63880788d2bf1a176603f07582403"
+      },
+      "remaining_children": 7,
+      "terminal_children": 71
+    },
+    {
+      "child_count": 127,
+      "parent_id": "intersection-3-third-00-fourth-013",
+      "parent_status": "OPEN_CHILDREN_REMAIN",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-3-third-00-fourth-013.json",
+        "sha256": "a7996ae7955586286ef2c047e9e607c84af63915875e0e5cdcf27b900129261e"
+      },
+      "remaining_children": 12,
+      "terminal_children": 115
+    },
+    {
+      "child_count": 123,
+      "parent_id": "intersection-3-third-00-fourth-014",
+      "parent_status": "OPEN_CHILDREN_REMAIN",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-3-third-00-fourth-014.json",
+        "sha256": "add67a147bc41ab4e6e6fdb7ccb1c39fa50a34c063d22a5473a1bb905bcb8270"
+      },
+      "remaining_children": 10,
+      "terminal_children": 113
+    },
+    {
+      "child_count": 119,
+      "parent_id": "intersection-3-third-00-fourth-015",
+      "parent_status": "OPEN_CHILDREN_REMAIN",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-3-third-00-fourth-015.json",
+        "sha256": "473554f53530ba470907dc420971302a13dbbf10fc1056fb35eb25f08af66788"
+      },
+      "remaining_children": 6,
+      "terminal_children": 113
+    },
+    {
+      "child_count": 115,
+      "parent_id": "intersection-3-third-00-fourth-016",
+      "parent_status": "OPEN_CHILDREN_REMAIN",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-3-third-00-fourth-016.json",
+        "sha256": "2d97c07cede446462a34ac9545c432a9b3cfb1715058f73659894bafecc4054a"
+      },
+      "remaining_children": 6,
+      "terminal_children": 109
+    },
+    {
+      "child_count": 111,
+      "parent_id": "intersection-3-third-00-fourth-017",
+      "parent_status": "OPEN_CHILDREN_REMAIN",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-3-third-00-fourth-017.json",
+        "sha256": "c2049c5a7785e12b3db8c22627ec815eef81043d109815d3d20279b7902c2e0a"
+      },
+      "remaining_children": 4,
+      "terminal_children": 107
+    },
+    {
+      "child_count": 107,
+      "parent_id": "intersection-3-third-00-fourth-018",
+      "parent_status": "OPEN_CHILDREN_REMAIN",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-3-third-00-fourth-018.json",
+        "sha256": "2897afb8f906bb574ccf90644648c2f5f26c3cee1e02c79a39a03721e6029eba"
+      },
+      "remaining_children": 2,
+      "terminal_children": 105
+    },
+    {
+      "child_count": 64,
+      "parent_id": "intersection-3-third-00-fourth-019",
+      "parent_status": "OPEN_CHILDREN_REMAIN",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-3-third-00-fourth-019.json",
+        "sha256": "96f36e5679bc00a46c44aa867b9fe84d53f7bc000c64a9115b9d5c94563b1ecf"
+      },
+      "remaining_children": 1,
+      "terminal_children": 63
+    },
+    {
+      "child_count": 62,
+      "parent_id": "intersection-3-third-00-fourth-020",
+      "parent_status": "CLOSED_BY_EXHAUSTIVE_CHILD_AGGREGATION",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-3-third-00-fourth-020.json",
+        "sha256": "28e6afaff140ae7057873e5329074e8ccc78fab994329067e45da7337bdae1f1"
+      },
+      "remaining_children": 0,
+      "terminal_children": 62
+    },
+    {
+      "child_count": 60,
+      "parent_id": "intersection-3-third-00-fourth-021",
+      "parent_status": "CLOSED_BY_EXHAUSTIVE_CHILD_AGGREGATION",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-3-third-00-fourth-021.json",
+        "sha256": "8d4e4d60096fa0f2943117861b3935c88b7b8fe4634d37168f937593e9d30466"
+      },
+      "remaining_children": 0,
+      "terminal_children": 60
+    },
+    {
+      "child_count": 97,
+      "parent_id": "intersection-3-third-00-fourth-022",
+      "parent_status": "CLOSED_BY_EXHAUSTIVE_CHILD_AGGREGATION",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-3-third-00-fourth-022.json",
+        "sha256": "a7f86e7c0ffaed22317b494937ef72a17ed4e214bb80df3f4d622939bb4af0ad"
+      },
+      "remaining_children": 0,
+      "terminal_children": 97
+    },
+    {
+      "child_count": 56,
+      "parent_id": "intersection-3-third-00-fourth-023",
+      "parent_status": "CLOSED_BY_EXHAUSTIVE_CHILD_AGGREGATION",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-3-third-00-fourth-023.json",
+        "sha256": "18dba0ed72ba42990cd1a93e80c01ea4070d0ee8171d88be8d8273dea273a2b9"
+      },
+      "remaining_children": 0,
+      "terminal_children": 56
+    },
+    {
+      "child_count": 91,
+      "parent_id": "intersection-3-third-00-fourth-024",
+      "parent_status": "CLOSED_BY_EXHAUSTIVE_CHILD_AGGREGATION",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-3-third-00-fourth-024.json",
+        "sha256": "fa92ece3fb740a47768555e07c52c8bda6e21e7daa97ffbc0e14350f9ae00928"
+      },
+      "remaining_children": 0,
+      "terminal_children": 91
+    },
+    {
+      "child_count": 87,
+      "parent_id": "intersection-3-third-00-fourth-025",
+      "parent_status": "CLOSED_BY_EXHAUSTIVE_CHILD_AGGREGATION",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-3-third-00-fourth-025.json",
+        "sha256": "c3ef81530fdf85757bdf58b5e80eadbc2dcb4118955bdd616aa4d64f493cf552"
+      },
+      "remaining_children": 0,
+      "terminal_children": 87
+    },
+    {
+      "child_count": 83,
+      "parent_id": "intersection-3-third-00-fourth-026",
+      "parent_status": "CLOSED_BY_EXHAUSTIVE_CHILD_AGGREGATION",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-3-third-00-fourth-026.json",
+        "sha256": "742b4891b4e8332fa2175425d1105ee65cbc364bb2d4fccc9bb1101de7373da7"
+      },
+      "remaining_children": 0,
+      "terminal_children": 83
+    },
+    {
+      "child_count": 71,
+      "parent_id": "intersection-3-third-00-fourth-027",
+      "parent_status": "CLOSED_BY_EXHAUSTIVE_CHILD_AGGREGATION",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-3-third-00-fourth-027.json",
+        "sha256": "13304e6da90e9493867deaf6a9ca678c48525d6af5f1aef97ddc851674c3a664"
+      },
+      "remaining_children": 0,
+      "terminal_children": 71
+    },
+    {
+      "child_count": 114,
+      "parent_id": "intersection-3-third-00-fourth-028",
+      "parent_status": "CLOSED_BY_EXHAUSTIVE_CHILD_AGGREGATION",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-3-third-00-fourth-028.json",
+        "sha256": "f7ea9a6bdd9d830b6b33e5d85edd8f222311adc28e137790f2d753ec53b870de"
+      },
+      "remaining_children": 0,
+      "terminal_children": 114
+    },
+    {
+      "child_count": 106,
+      "parent_id": "intersection-3-third-00-fourth-029",
+      "parent_status": "CLOSED_BY_EXHAUSTIVE_CHILD_AGGREGATION",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-3-third-00-fourth-029.json",
+        "sha256": "7c7ec300212fd3f5c6fcd6df350b9674756a77aa6dae0c49cdadabe24f63d871"
+      },
+      "remaining_children": 0,
+      "terminal_children": 106
+    },
+    {
+      "child_count": 95,
+      "parent_id": "intersection-3-third-01-fourth-000",
+      "parent_status": "OPEN_CHILDREN_REMAIN",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-3-third-01-fourth-000.json",
+        "sha256": "2bc65720057fc8f21ececd3a87421db28c952023b3932fffa21b90cae3ac49ea"
+      },
+      "remaining_children": 24,
+      "terminal_children": 71
+    },
+    {
+      "child_count": 48,
+      "parent_id": "intersection-3-third-01-fourth-001",
+      "parent_status": "OPEN_CHILDREN_REMAIN",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-3-third-01-fourth-001.json",
+        "sha256": "13e7125994674f2c3065549c3c37259adc07c5397a7ed50c1ceabba4faccf9f6"
+      },
+      "remaining_children": 15,
+      "terminal_children": 33
+    },
+    {
+      "child_count": 111,
+      "parent_id": "intersection-3-third-01-fourth-002",
+      "parent_status": "OPEN_CHILDREN_REMAIN",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-3-third-01-fourth-002.json",
+        "sha256": "47bbdbe0fa5a2411a91efe355432199424950d98ed660a16cfd9027dc1adaeed"
+      },
+      "remaining_children": 18,
+      "terminal_children": 93
+    },
+    {
+      "child_count": 208,
+      "parent_id": "intersection-3-third-01-fourth-003",
+      "parent_status": "OPEN_CHILDREN_REMAIN",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-3-third-01-fourth-003.json",
+        "sha256": "c0f2060ac7cf88e57219aec2ab22335e9c91d6e6ddc386daa96886fcf61468f7"
+      },
+      "remaining_children": 33,
+      "terminal_children": 175
+    },
+    {
+      "child_count": 200,
+      "parent_id": "intersection-3-third-01-fourth-004",
+      "parent_status": "OPEN_CHILDREN_REMAIN",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-3-third-01-fourth-004.json",
+        "sha256": "a226888f396bda484bdf69fd96b7ef5f1d96faefade5f9fb49ee89f5dd72a562"
+      },
+      "remaining_children": 29,
+      "terminal_children": 171
+    },
+    {
+      "child_count": 99,
+      "parent_id": "intersection-3-third-01-fourth-005",
+      "parent_status": "OPEN_CHILDREN_REMAIN",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-3-third-01-fourth-005.json",
+        "sha256": "ab8fabe5be817e0d3713cb58cec634fd1358c785297e154ce32b613cb25ad3ae"
+      },
+      "remaining_children": 12,
+      "terminal_children": 87
+    },
+    {
+      "child_count": 188,
+      "parent_id": "intersection-3-third-01-fourth-006",
+      "parent_status": "OPEN_CHILDREN_REMAIN",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-3-third-01-fourth-006.json",
+        "sha256": "ab1a82e101ce941fba284e373c267fae990b3caab678bbe5de5bcd92fce8f418"
+      },
+      "remaining_children": 23,
+      "terminal_children": 165
+    },
+    {
+      "child_count": 91,
+      "parent_id": "intersection-3-third-01-fourth-007",
+      "parent_status": "OPEN_CHILDREN_REMAIN",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-3-third-01-fourth-007.json",
+        "sha256": "cbad732775e00478cd47fdb921b1cc79c5275347df1123cd9be03b4fb6ea43b6"
+      },
+      "remaining_children": 17,
+      "terminal_children": 74
+    },
+    {
+      "child_count": 93,
+      "parent_id": "intersection-3-third-01-fourth-008",
+      "parent_status": "OPEN_CHILDREN_REMAIN",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-3-third-01-fourth-008.json",
+        "sha256": "c10f6ad4901dda220823a27dd369e942d507291bb2427688bc18face5b6449e6"
+      },
+      "remaining_children": 9,
+      "terminal_children": 84
+    },
+    {
+      "child_count": 91,
+      "parent_id": "intersection-3-third-01-fourth-009",
+      "parent_status": "OPEN_CHILDREN_REMAIN",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-3-third-01-fourth-009.json",
+        "sha256": "244f1a39c0129cd2489f222edc07772152991b72d0481338406fcb3e868ea50d"
+      },
+      "remaining_children": 8,
+      "terminal_children": 83
+    },
+    {
+      "child_count": 89,
+      "parent_id": "intersection-3-third-01-fourth-010",
+      "parent_status": "OPEN_CHILDREN_REMAIN",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-3-third-01-fourth-010.json",
+        "sha256": "9b19c513097c6ebd268852e7f14946a362d40017c921bed6951116a1bd991e7e"
+      },
+      "remaining_children": 7,
+      "terminal_children": 82
+    },
+    {
+      "child_count": 168,
+      "parent_id": "intersection-3-third-01-fourth-011",
+      "parent_status": "OPEN_CHILDREN_REMAIN",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-3-third-01-fourth-011.json",
+        "sha256": "0388bab71ef05d0b5296ea6b0278ec6531c59354e683ea3ba95b7bf4396616d8"
+      },
+      "remaining_children": 13,
+      "terminal_children": 155
+    },
+    {
+      "child_count": 81,
+      "parent_id": "intersection-3-third-01-fourth-012",
+      "parent_status": "OPEN_CHILDREN_REMAIN",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-3-third-01-fourth-012.json",
+        "sha256": "aef7679f1d6dfa701de72b3eab7e6122d543ae977d9aeb057e26a4a54b4bb28f"
+      },
+      "remaining_children": 7,
+      "terminal_children": 74
+    },
+    {
+      "child_count": 79,
+      "parent_id": "intersection-3-third-01-fourth-013",
+      "parent_status": "OPEN_CHILDREN_REMAIN",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-3-third-01-fourth-013.json",
+        "sha256": "98dd1987f17c65537d88d3b4b3749269d4a4bf32e20f91853f5a4d5b4b34c6e7"
+      },
+      "remaining_children": 2,
+      "terminal_children": 77
+    },
+    {
+      "child_count": 77,
+      "parent_id": "intersection-3-third-01-fourth-014",
+      "parent_status": "OPEN_CHILDREN_REMAIN",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-3-third-01-fourth-014.json",
+        "sha256": "fff044858fdbe491d39e14b8ef6c558fca4368c97ab60c1b26ebad96955a2174"
+      },
+      "remaining_children": 3,
+      "terminal_children": 74
+    },
+    {
+      "child_count": 53,
+      "parent_id": "intersection-3-third-01-fourth-015",
+      "parent_status": "CLOSED_BY_EXHAUSTIVE_CHILD_AGGREGATION",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-3-third-01-fourth-015.json",
+        "sha256": "e44996cb42910ee41b0974fa2ddf427da9fa2d29d647758a31985b91b59b540c"
+      },
+      "remaining_children": 0,
+      "terminal_children": 53
+    },
+    {
+      "child_count": 99,
+      "parent_id": "intersection-3-third-01-fourth-016",
+      "parent_status": "CLOSED_BY_EXHAUSTIVE_CHILD_AGGREGATION",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-3-third-01-fourth-016.json",
+        "sha256": "b3c8ffd0a9a9e1b567576f4a8cfccee22f2eb40bd75f0de61167a8f2b1645253"
+      },
+      "remaining_children": 0,
+      "terminal_children": 99
+    },
+    {
+      "child_count": 95,
+      "parent_id": "intersection-3-third-01-fourth-017",
+      "parent_status": "CLOSED_BY_EXHAUSTIVE_CHILD_AGGREGATION",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-3-third-01-fourth-017.json",
+        "sha256": "2bd7948e6d03f88b325fb8d89d378d95dc99861bb6de6f182aaffd6c2998a4e1"
+      },
+      "remaining_children": 0,
+      "terminal_children": 95
+    },
+    {
+      "child_count": 47,
+      "parent_id": "intersection-3-third-01-fourth-018",
+      "parent_status": "CLOSED_BY_EXHAUSTIVE_CHILD_AGGREGATION",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-3-third-01-fourth-018.json",
+        "sha256": "b8c611111ada991536c624dfcbb635d7022bbe08dd7809099cceed1c3daf546f"
+      },
+      "remaining_children": 0,
+      "terminal_children": 47
+    },
+    {
+      "child_count": 89,
+      "parent_id": "intersection-3-third-01-fourth-019",
+      "parent_status": "CLOSED_BY_EXHAUSTIVE_CHILD_AGGREGATION",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-3-third-01-fourth-019.json",
+        "sha256": "9e9baeac80dc3eeff132b5028e5f502b1ce4d2ec2b8c8edc0ac43aa8511d59f9"
+      },
+      "remaining_children": 0,
+      "terminal_children": 89
+    },
+    {
+      "child_count": 43,
+      "parent_id": "intersection-3-third-01-fourth-020",
+      "parent_status": "CLOSED_BY_EXHAUSTIVE_CHILD_AGGREGATION",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-3-third-01-fourth-020.json",
+        "sha256": "5d1da84f844c3616e4dd5c074b29aa6f544d5371501e64588d7fafc64aa92db7"
+      },
+      "remaining_children": 0,
+      "terminal_children": 43
+    },
+    {
+      "child_count": 85,
+      "parent_id": "intersection-3-third-01-fourth-021",
+      "parent_status": "CLOSED_BY_EXHAUSTIVE_CHILD_AGGREGATION",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-3-third-01-fourth-021.json",
+        "sha256": "28234d48c43505d24276e100385e701357db78eac7f14b0850702a4db964938b"
+      },
+      "remaining_children": 0,
+      "terminal_children": 85
+    },
+    {
+      "child_count": 81,
+      "parent_id": "intersection-3-third-01-fourth-022",
+      "parent_status": "CLOSED_BY_EXHAUSTIVE_CHILD_AGGREGATION",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-3-third-01-fourth-022.json",
+        "sha256": "75116b6f1192afe54da0eece61c9fe6036bf1b688f884758e86a12570db3beb1"
+      },
+      "remaining_children": 0,
+      "terminal_children": 81
+    },
+    {
+      "child_count": 77,
+      "parent_id": "intersection-3-third-01-fourth-023",
+      "parent_status": "CLOSED_BY_EXHAUSTIVE_CHILD_AGGREGATION",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-3-third-01-fourth-023.json",
+        "sha256": "f31fc37d67cd414dbb5a4ff2cc9c6763b5619eba4e3ce0deec2f5fa068b2af14"
+      },
+      "remaining_children": 0,
+      "terminal_children": 77
+    },
+    {
+      "child_count": 141,
+      "parent_id": "intersection-3-third-01-fourth-024",
+      "parent_status": "CLOSED_BY_EXHAUSTIVE_CHILD_AGGREGATION",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-3-third-01-fourth-024.json",
+        "sha256": "5fead6845aeb0e84881e709b211ee8d8eaf262c931193da737dfaafcc721803b"
+      },
+      "remaining_children": 0,
+      "terminal_children": 141
+    },
+    {
+      "child_count": 128,
+      "parent_id": "intersection-3-third-02-fourth-000",
+      "parent_status": "OPEN_CHILDREN_REMAIN",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-3-third-02-fourth-000.json",
+        "sha256": "dacfbb91f128a3f70feba6e64ca16662995610dc652d106ceeca65f15105f5cf"
+      },
+      "remaining_children": 20,
+      "terminal_children": 108
+    },
+    {
+      "child_count": 108,
+      "parent_id": "intersection-3-third-02-fourth-001",
+      "parent_status": "OPEN_CHILDREN_REMAIN",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-3-third-02-fourth-001.json",
+        "sha256": "04c7eefeb01bb2e683646b4316485cede91c2d14fc17e072f98b04daf92e198e"
+      },
+      "remaining_children": 15,
+      "terminal_children": 93
+    },
+    {
+      "child_count": 49,
+      "parent_id": "intersection-3-third-02-fourth-002",
+      "parent_status": "OPEN_CHILDREN_REMAIN",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-3-third-02-fourth-002.json",
+        "sha256": "497e972b27c6a3ac3c30a3a1f3cd0beedf329c386350cae6467e370cd95234df"
+      },
+      "remaining_children": 5,
+      "terminal_children": 44
+    },
+    {
+      "child_count": 121,
+      "parent_id": "intersection-3-third-02-fourth-003",
+      "parent_status": "OPEN_CHILDREN_REMAIN",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-3-third-02-fourth-003.json",
+        "sha256": "4a92398666dfc2c4b5c4fdda4d57f89dabbfe7c0b8397dd27a918b43c6294d6b"
+      },
+      "remaining_children": 13,
+      "terminal_children": 108
+    },
+    {
+      "child_count": 102,
+      "parent_id": "intersection-3-third-02-fourth-004",
+      "parent_status": "OPEN_CHILDREN_REMAIN",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-3-third-02-fourth-004.json",
+        "sha256": "3a0529481c6286c92d3ef74438b27013abb1582bd2703ae77ac08468ecb2d03a"
+      },
+      "remaining_children": 9,
+      "terminal_children": 93
+    },
+    {
+      "child_count": 84,
+      "parent_id": "intersection-3-third-02-fourth-005",
+      "parent_status": "OPEN_CHILDREN_REMAIN",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-3-third-02-fourth-005.json",
+        "sha256": "f8e8046800b0bae7cc2919505a1d6ad7f7d20c22fdce9f20dc82c9dd773d1744"
+      },
+      "remaining_children": 5,
+      "terminal_children": 79
+    },
+    {
+      "child_count": 135,
+      "parent_id": "intersection-3-third-02-fourth-006",
+      "parent_status": "OPEN_CHILDREN_REMAIN",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-3-third-02-fourth-006.json",
+        "sha256": "13a8386c7130fef0f0a0bcf428e48bd6ee1d05198c8508aacbe16f8cfe9aeb74"
+      },
+      "remaining_children": 7,
+      "terminal_children": 128
+    },
+    {
+      "child_count": 80,
+      "parent_id": "intersection-3-third-02-fourth-007",
+      "parent_status": "OPEN_CHILDREN_REMAIN",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-3-third-02-fourth-007.json",
+        "sha256": "f4ab807cfa30bea0d8f2423b708794784faa1ea11b440e8c0b48cabf69f7ac6a"
+      },
+      "remaining_children": 1,
+      "terminal_children": 79
+    },
+    {
+      "child_count": 64,
+      "parent_id": "intersection-3-third-02-fourth-008",
+      "parent_status": "CLOSED_BY_EXHAUSTIVE_CHILD_AGGREGATION",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-3-third-02-fourth-008.json",
+        "sha256": "705dd2128b46199aefa81b6ced846e3cadb8c40438f344adf6c18abb13ecbbbc"
+      },
+      "remaining_children": 0,
+      "terminal_children": 64
+    },
+    {
+      "child_count": 157,
+      "parent_id": "intersection-3-third-02-fourth-009",
+      "parent_status": "CLOSED_BY_EXHAUSTIVE_CHILD_AGGREGATION",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-3-third-02-fourth-009.json",
+        "sha256": "fdecf5ce623bb6e2b629291e5b01a59bab5e91586ed12ba67ccb442d33011106"
+      },
+      "remaining_children": 0,
+      "terminal_children": 157
+    },
+    {
+      "child_count": 131,
+      "parent_id": "intersection-3-third-02-fourth-010",
+      "parent_status": "CLOSED_BY_EXHAUSTIVE_CHILD_AGGREGATION",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-3-third-02-fourth-010.json",
+        "sha256": "05b491560bc8d02a25b8423721535d3ab0cecba269ddd7821d61bb8dd41120ed"
+      },
+      "remaining_children": 0,
+      "terminal_children": 131
+    },
+    {
+      "child_count": 58,
+      "parent_id": "intersection-3-third-02-fourth-011",
+      "parent_status": "CLOSED_BY_EXHAUSTIVE_CHILD_AGGREGATION",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-3-third-02-fourth-011.json",
+        "sha256": "a6ca50b4576da5885e58b9c9be54ef2feaf28eb48f4b1d47e02123929d8cefd1"
+      },
+      "remaining_children": 0,
+      "terminal_children": 58
+    },
+    {
+      "child_count": 143,
+      "parent_id": "intersection-3-third-02-fourth-012",
+      "parent_status": "CLOSED_BY_EXHAUSTIVE_CHILD_AGGREGATION",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-3-third-02-fourth-012.json",
+        "sha256": "b8599f2687c53ac2128ad479b831ae2fd5e2fdd6ad33502860cbd08292dc05a4"
+      },
+      "remaining_children": 0,
+      "terminal_children": 143
+    },
+    {
+      "child_count": 96,
+      "parent_id": "intersection-3-third-02-fourth-014",
+      "parent_status": "CLOSED_BY_EXHAUSTIVE_CHILD_AGGREGATION",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-3-third-02-fourth-014.json",
+        "sha256": "3d7f0a7df5c46c5fffcabb13da761eb320f3c8ffa6d4861c5e3d0c51ca21745a"
+      },
+      "remaining_children": 0,
+      "terminal_children": 96
+    },
+    {
+      "child_count": 153,
+      "parent_id": "intersection-3-third-02-fourth-015",
+      "parent_status": "CLOSED_BY_EXHAUSTIVE_CHILD_AGGREGATION",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-3-third-02-fourth-015.json",
+        "sha256": "998043427ddb02f9b4ce8b6355c2b73c6c599f6487f6caf1cdf4b28e872c77af"
+      },
+      "remaining_children": 0,
+      "terminal_children": 153
+    },
+    {
+      "child_count": 88,
+      "parent_id": "intersection-3-third-02-fourth-016",
+      "parent_status": "CLOSED_BY_EXHAUSTIVE_CHILD_AGGREGATION",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-3-third-02-fourth-016.json",
+        "sha256": "deab4e1bfd381add20c8a9f66431374a89561827733e67a6493d63d0b643acd7"
+      },
+      "remaining_children": 0,
+      "terminal_children": 88
+    },
+    {
+      "child_count": 46,
+      "parent_id": "intersection-3-third-02-fourth-017",
+      "parent_status": "CLOSED_BY_EXHAUSTIVE_CHILD_AGGREGATION",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-3-third-02-fourth-017.json",
+        "sha256": "437f46c221e0a37abf1e851ce9da124c9eb6e2c147d0d909ff4c1b5f857e8bb7"
+      },
+      "remaining_children": 0,
+      "terminal_children": 46
+    },
+    {
+      "child_count": 113,
+      "parent_id": "intersection-3-third-02-fourth-018",
+      "parent_status": "CLOSED_BY_EXHAUSTIVE_CHILD_AGGREGATION",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-3-third-02-fourth-018.json",
+        "sha256": "b6761835964518cddeab844551bcc1d09aa42cf167b6ecb770fec4f5bc4682ed"
+      },
+      "remaining_children": 0,
+      "terminal_children": 113
+    },
+    {
+      "child_count": 93,
+      "parent_id": "intersection-3-third-02-fourth-019",
+      "parent_status": "CLOSED_BY_EXHAUSTIVE_CHILD_AGGREGATION",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-3-third-02-fourth-019.json",
+        "sha256": "b1f2c04458faf78d8dcacd67860bc4b8b1048496479603004dbac93d19e0025c"
+      },
+      "remaining_children": 0,
+      "terminal_children": 93
+    },
+    {
+      "child_count": 74,
+      "parent_id": "intersection-3-third-02-fourth-020",
+      "parent_status": "CLOSED_BY_EXHAUSTIVE_CHILD_AGGREGATION",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-3-third-02-fourth-020.json",
+        "sha256": "199b336cf9d92decad51d8d1e48b87b0a49db97363530cae8f1083c357d9a0ed"
+      },
+      "remaining_children": 0,
+      "terminal_children": 74
+    },
+    {
+      "child_count": 117,
+      "parent_id": "intersection-3-third-02-fourth-021",
+      "parent_status": "CLOSED_BY_EXHAUSTIVE_CHILD_AGGREGATION",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-3-third-02-fourth-021.json",
+        "sha256": "d3d22e13be66e9d77dc0f06ecc8af187160debcf8b515dd6991697683ec071c9"
+      },
+      "remaining_children": 0,
+      "terminal_children": 117
+    },
+    {
+      "child_count": 66,
+      "parent_id": "intersection-3-third-02-fourth-022",
+      "parent_status": "CLOSED_BY_EXHAUSTIVE_CHILD_AGGREGATION",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-3-third-02-fourth-022.json",
+        "sha256": "1e8599830ebbd680f15ece987a0ce43a707faa50e0c659e418124dec9fb6ffba"
+      },
+      "remaining_children": 0,
+      "terminal_children": 66
+    },
+    {
+      "child_count": 62,
+      "parent_id": "intersection-3-third-02-fourth-023",
+      "parent_status": "CLOSED_BY_EXHAUSTIVE_CHILD_AGGREGATION",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-3-third-02-fourth-023.json",
+        "sha256": "3bde21169791204709502ac25d1abc144211126e908cb0859a0ef963e64d7b94"
+      },
+      "remaining_children": 0,
+      "terminal_children": 62
+    },
+    {
+      "child_count": 97,
+      "parent_id": "intersection-3-third-02-fourth-024",
+      "parent_status": "CLOSED_BY_EXHAUSTIVE_CHILD_AGGREGATION",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-3-third-02-fourth-024.json",
+        "sha256": "a8d861fdf9f93cf0f6801b29d61872f6c4547344214f9f6c623ee23c0aa99746"
+      },
+      "remaining_children": 0,
+      "terminal_children": 97
+    },
+    {
+      "child_count": 54,
+      "parent_id": "intersection-3-third-02-fourth-025",
+      "parent_status": "CLOSED_BY_EXHAUSTIVE_CHILD_AGGREGATION",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-3-third-02-fourth-025.json",
+        "sha256": "b4f54bb24d3c2c5c232280ebacdb4228bae95477abd2e38d183ae1bab73738b7"
+      },
+      "remaining_children": 0,
+      "terminal_children": 54
+    },
+    {
+      "child_count": 207,
+      "parent_id": "intersection-3-third-03-fourth-000",
+      "parent_status": "OPEN_CHILDREN_REMAIN",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-3-third-03-fourth-000.json",
+        "sha256": "321ce0093253089d8007cac1873045c378ca235da68ba6a5886e3062d28477ac"
+      },
+      "remaining_children": 32,
+      "terminal_children": 175
+    },
+    {
+      "child_count": 123,
+      "parent_id": "intersection-3-third-03-fourth-001",
+      "parent_status": "OPEN_CHILDREN_REMAIN",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-3-third-03-fourth-001.json",
+        "sha256": "59814418261d47133d7cae93139c2a7162b3e0e13efb6c8ffac2d9ee427de42f"
+      },
+      "remaining_children": 17,
+      "terminal_children": 106
+    },
+    {
+      "child_count": 204,
+      "parent_id": "intersection-3-third-03-fourth-002",
+      "parent_status": "OPEN_CHILDREN_REMAIN",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-3-third-03-fourth-002.json",
+        "sha256": "e78ef70f1c888fc9307d421c59c51969aa68d503d4091450380de5a4b99a47f0"
+      },
+      "remaining_children": 29,
+      "terminal_children": 175
+    },
+    {
+      "child_count": 202,
+      "parent_id": "intersection-3-third-03-fourth-003",
+      "parent_status": "OPEN_CHILDREN_REMAIN",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-3-third-03-fourth-003.json",
+        "sha256": "dc7d1c920263899efa602de4a15db4890bea848fffd0f9e875deb330f217cce1"
+      },
+      "remaining_children": 27,
+      "terminal_children": 175
+    },
+    {
+      "child_count": 200,
+      "parent_id": "intersection-3-third-03-fourth-004",
+      "parent_status": "OPEN_CHILDREN_REMAIN",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-3-third-03-fourth-004.json",
+        "sha256": "eeb7ddba2e56c51a6267a71e3cde99e90ccf05f0c473ab848c3705384bcab8f8"
+      },
+      "remaining_children": 25,
+      "terminal_children": 175
+    },
+    {
+      "child_count": 119,
+      "parent_id": "intersection-3-third-03-fourth-005",
+      "parent_status": "OPEN_CHILDREN_REMAIN",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-3-third-03-fourth-005.json",
+        "sha256": "afb0621d6b8b55324864e91ac9f751a34a8e1b2343c57d7c5e87774f459a18dc"
+      },
+      "remaining_children": 13,
+      "terminal_children": 106
+    },
+    {
+      "child_count": 197,
+      "parent_id": "intersection-3-third-03-fourth-006",
+      "parent_status": "OPEN_CHILDREN_REMAIN",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-3-third-03-fourth-006.json",
+        "sha256": "892ee36d5ad9a9f9085e4e559098c3e9093ec2f6ce07c8bf64296468cb4d02ca"
+      },
+      "remaining_children": 22,
+      "terminal_children": 175
+    },
+    {
+      "child_count": 117,
+      "parent_id": "intersection-3-third-03-fourth-007",
+      "parent_status": "OPEN_CHILDREN_REMAIN",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-3-third-03-fourth-007.json",
+        "sha256": "6905df4f672d911af12230cad70d26b16285ab2a08aac961d36a433d0ef17562"
+      },
+      "remaining_children": 11,
+      "terminal_children": 106
+    },
+    {
+      "child_count": 194,
+      "parent_id": "intersection-3-third-03-fourth-008",
+      "parent_status": "OPEN_CHILDREN_REMAIN",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-3-third-03-fourth-008.json",
+        "sha256": "776ab7004842c4a040e909aefc9bc0920727a2c86bb59463e273a74f209a3115"
+      },
+      "remaining_children": 19,
+      "terminal_children": 175
+    },
+    {
+      "child_count": 192,
+      "parent_id": "intersection-3-third-03-fourth-009",
+      "parent_status": "OPEN_CHILDREN_REMAIN",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-3-third-03-fourth-009.json",
+        "sha256": "ae9530f806d0e7e8a8c7da0ae1c98ff8a3cd9fbd9bf299528f5c58dbf9087634"
+      },
+      "remaining_children": 17,
+      "terminal_children": 175
+    },
+    {
+      "child_count": 190,
+      "parent_id": "intersection-3-third-03-fourth-010",
+      "parent_status": "OPEN_CHILDREN_REMAIN",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-3-third-03-fourth-010.json",
+        "sha256": "3478bf726dae27a8213b3fe0f7de35220741b365eba1ca9a6fa6281d6554ffec"
+      },
+      "remaining_children": 15,
+      "terminal_children": 175
+    },
+    {
+      "child_count": 113,
+      "parent_id": "intersection-3-third-03-fourth-011",
+      "parent_status": "OPEN_CHILDREN_REMAIN",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-3-third-03-fourth-011.json",
+        "sha256": "a7e2f93ca7b9c6b776efe04a92215be171034a1edfa8d9e41a00e6697bd5c2e4"
+      },
+      "remaining_children": 7,
+      "terminal_children": 106
+    },
+    {
+      "child_count": 187,
+      "parent_id": "intersection-3-third-03-fourth-012",
+      "parent_status": "OPEN_CHILDREN_REMAIN",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-3-third-03-fourth-012.json",
+        "sha256": "143402adcd90077ca9e1530a392cc391cf33c25161d0164c67a129c3e5410a6a"
+      },
+      "remaining_children": 12,
+      "terminal_children": 175
+    },
+    {
+      "child_count": 185,
+      "parent_id": "intersection-3-third-03-fourth-013",
+      "parent_status": "OPEN_CHILDREN_REMAIN",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-3-third-03-fourth-013.json",
+        "sha256": "682fe53c8b39a806ff5990d786e7431c5e96fb00f1a15882bfd73375c3bb01a1"
+      },
+      "remaining_children": 10,
+      "terminal_children": 175
+    },
+    {
+      "child_count": 183,
+      "parent_id": "intersection-3-third-03-fourth-014",
+      "parent_status": "OPEN_CHILDREN_REMAIN",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-3-third-03-fourth-014.json",
+        "sha256": "6dda8d3f767451fdf2533989158a65ff7161f2703bb8c4a4d4e951c1a458656d"
+      },
+      "remaining_children": 8,
+      "terminal_children": 175
+    },
+    {
+      "child_count": 181,
+      "parent_id": "intersection-3-third-03-fourth-015",
+      "parent_status": "OPEN_CHILDREN_REMAIN",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-3-third-03-fourth-015.json",
+        "sha256": "6b8047a1b7d61560a319e1e0fed558d2ed9135ab754b635c321d2557b1cea842"
+      },
+      "remaining_children": 6,
+      "terminal_children": 175
+    },
+    {
+      "child_count": 179,
+      "parent_id": "intersection-3-third-03-fourth-016",
+      "parent_status": "OPEN_CHILDREN_REMAIN",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-3-third-03-fourth-016.json",
+        "sha256": "ea1cdf3da8456aa402d98d9e95ef4ccaa2244a83587b240260f977d605981948"
+      },
+      "remaining_children": 4,
+      "terminal_children": 175
+    },
+    {
+      "child_count": 177,
+      "parent_id": "intersection-3-third-03-fourth-017",
+      "parent_status": "OPEN_CHILDREN_REMAIN",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-3-third-03-fourth-017.json",
+        "sha256": "6da6a5eb5a8c897961e830608ada7ce8211e9a1c21f09e5531e1347db4f1fc9d"
+      },
+      "remaining_children": 2,
+      "terminal_children": 175
+    },
+    {
+      "child_count": 106,
+      "parent_id": "intersection-3-third-03-fourth-018",
+      "parent_status": "OPEN_CHILDREN_REMAIN",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-3-third-03-fourth-018.json",
+        "sha256": "95e94cd8865eb1427460fe2ad3c73866d9d6ad00364fb8ceb0c1c7b39d89e94d"
+      },
+      "remaining_children": 19,
+      "terminal_children": 87
+    },
+    {
+      "child_count": 155,
+      "parent_id": "intersection-3-third-03-fourth-019",
+      "parent_status": "CLOSED_BY_EXHAUSTIVE_CHILD_AGGREGATION",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-3-third-03-fourth-019.json",
+        "sha256": "41940e0a32abdce9f368a69de047a98ed659575d40a5b018e4a927265e659c63"
+      },
+      "remaining_children": 0,
+      "terminal_children": 155
+    },
+    {
+      "child_count": 256,
+      "parent_id": "intersection-3-third-03-fourth-020",
+      "parent_status": "CLOSED_BY_EXHAUSTIVE_CHILD_AGGREGATION",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-3-third-03-fourth-020.json",
+        "sha256": "41d1e727d47a2541bab4352622ddbc2af551481a221540ce96f483c30f4baa55"
+      },
+      "remaining_children": 0,
+      "terminal_children": 256
+    },
+    {
+      "child_count": 151,
+      "parent_id": "intersection-3-third-03-fourth-021",
+      "parent_status": "CLOSED_BY_EXHAUSTIVE_CHILD_AGGREGATION",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-3-third-03-fourth-021.json",
+        "sha256": "0ccab8c6b3c20bde66709e63f76e6bf9ece39f3c3774f62ace2a0d50dddaf3a8"
+      },
+      "remaining_children": 0,
+      "terminal_children": 151
+    },
+    {
+      "child_count": 250,
+      "parent_id": "intersection-3-third-03-fourth-022",
+      "parent_status": "CLOSED_BY_EXHAUSTIVE_CHILD_AGGREGATION",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-3-third-03-fourth-022.json",
+        "sha256": "f3684626643a2914ed07c355fcc36befb92b462b5592496db37ab9c02fdd46ae"
+      },
+      "remaining_children": 0,
+      "terminal_children": 250
+    },
+    {
+      "child_count": 246,
+      "parent_id": "intersection-3-third-03-fourth-023",
+      "parent_status": "CLOSED_BY_EXHAUSTIVE_CHILD_AGGREGATION",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-3-third-03-fourth-023.json",
+        "sha256": "f5455df7500bf4276ef46a550d98f73062cbecd7e013d3798e9e7c38b448b687"
+      },
+      "remaining_children": 0,
+      "terminal_children": 246
+    },
+    {
+      "child_count": 242,
+      "parent_id": "intersection-3-third-03-fourth-024",
+      "parent_status": "CLOSED_BY_EXHAUSTIVE_CHILD_AGGREGATION",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-3-third-03-fourth-024.json",
+        "sha256": "aa3cf48fd023dd19c68ea3431da35f295937bf869f3e9bd7bf62c325d1ed56f2"
+      },
+      "remaining_children": 0,
+      "terminal_children": 242
+    },
+    {
+      "child_count": 143,
+      "parent_id": "intersection-3-third-03-fourth-025",
+      "parent_status": "CLOSED_BY_EXHAUSTIVE_CHILD_AGGREGATION",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-3-third-03-fourth-025.json",
+        "sha256": "4f9e42a5b389fed7deca8818bdf76c3a5732daf5d7b9e6cf171105be8267c915"
+      },
+      "remaining_children": 0,
+      "terminal_children": 143
+    },
+    {
+      "child_count": 236,
+      "parent_id": "intersection-3-third-03-fourth-026",
+      "parent_status": "CLOSED_BY_EXHAUSTIVE_CHILD_AGGREGATION",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-3-third-03-fourth-026.json",
+        "sha256": "0bea11b6be668ef32bdd812155d7c86c891ed3d040d072239fece6f2cf4ebd55"
+      },
+      "remaining_children": 0,
+      "terminal_children": 236
+    },
+    {
+      "child_count": 139,
+      "parent_id": "intersection-3-third-03-fourth-027",
+      "parent_status": "CLOSED_BY_EXHAUSTIVE_CHILD_AGGREGATION",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-3-third-03-fourth-027.json",
+        "sha256": "efeee94b59a84266eae2b00dfab93e57a5104cc5bb0cfc21050a9902599a6b0a"
+      },
+      "remaining_children": 0,
+      "terminal_children": 139
+    },
+    {
+      "child_count": 230,
+      "parent_id": "intersection-3-third-03-fourth-028",
+      "parent_status": "CLOSED_BY_EXHAUSTIVE_CHILD_AGGREGATION",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-3-third-03-fourth-028.json",
+        "sha256": "8465aeea066ffd912b621f479ab983b8370310333348bce87b5b8341e5da606a"
+      },
+      "remaining_children": 0,
+      "terminal_children": 230
+    },
+    {
+      "child_count": 226,
+      "parent_id": "intersection-3-third-03-fourth-029",
+      "parent_status": "CLOSED_BY_EXHAUSTIVE_CHILD_AGGREGATION",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-3-third-03-fourth-029.json",
+        "sha256": "3b5e5c4b8529fa84341c37d6cdc2d86e010ae11f4449d78e08dda5d2ffa4e8d0"
+      },
+      "remaining_children": 0,
+      "terminal_children": 226
+    },
+    {
+      "child_count": 222,
+      "parent_id": "intersection-3-third-03-fourth-030",
+      "parent_status": "CLOSED_BY_EXHAUSTIVE_CHILD_AGGREGATION",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-3-third-03-fourth-030.json",
+        "sha256": "131345f7174f9760da342eeb304abd556801a48d59804cc99d1686952f1f9487"
+      },
+      "remaining_children": 0,
+      "terminal_children": 222
+    },
+    {
+      "child_count": 216,
+      "parent_id": "intersection-3-third-03-fourth-032",
+      "parent_status": "CLOSED_BY_EXHAUSTIVE_CHILD_AGGREGATION",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-3-third-03-fourth-032.json",
+        "sha256": "62dd42d260e886b95dd5f61bd6e0c05fd76479f6361cb3f61c71e9677c79696d"
+      },
+      "remaining_children": 0,
+      "terminal_children": 216
+    },
+    {
+      "child_count": 212,
+      "parent_id": "intersection-3-third-03-fourth-033",
+      "parent_status": "CLOSED_BY_EXHAUSTIVE_CHILD_AGGREGATION",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-3-third-03-fourth-033.json",
+        "sha256": "7827b1530188ba0873755ff11ac421beecb7805b5829fa4524ff4c23574297ad"
+      },
+      "remaining_children": 0,
+      "terminal_children": 212
+    },
+    {
+      "child_count": 208,
+      "parent_id": "intersection-3-third-03-fourth-034",
+      "parent_status": "CLOSED_BY_EXHAUSTIVE_CHILD_AGGREGATION",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-3-third-03-fourth-034.json",
+        "sha256": "d680a2fb3e3e7ae7e7ef3367f4ff5878e6b309e5ce6dc252d4a82f973213fd21"
+      },
+      "remaining_children": 0,
+      "terminal_children": 208
+    },
+    {
+      "child_count": 204,
+      "parent_id": "intersection-3-third-03-fourth-035",
+      "parent_status": "CLOSED_BY_EXHAUSTIVE_CHILD_AGGREGATION",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-3-third-03-fourth-035.json",
+        "sha256": "0afcd6a28f0ef5620b6705beefd88e03b5572e68c710b8d18693630b787ee03c"
+      },
+      "remaining_children": 0,
+      "terminal_children": 204
+    },
+    {
+      "child_count": 200,
+      "parent_id": "intersection-3-third-03-fourth-036",
+      "parent_status": "CLOSED_BY_EXHAUSTIVE_CHILD_AGGREGATION",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-3-third-03-fourth-036.json",
+        "sha256": "aa9c8b4d562981356396b58ca383a85b925a5ae7715db3cc16ae21c5960f0a6b"
+      },
+      "remaining_children": 0,
+      "terminal_children": 200
+    },
+    {
+      "child_count": 196,
+      "parent_id": "intersection-3-third-03-fourth-037",
+      "parent_status": "CLOSED_BY_EXHAUSTIVE_CHILD_AGGREGATION",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-3-third-03-fourth-037.json",
+        "sha256": "4d9f04f72150cc1600acf7730ca912e1c57155181e90d57d7330e5e52955abf6"
+      },
+      "remaining_children": 0,
+      "terminal_children": 196
+    },
+    {
+      "child_count": 117,
+      "parent_id": "intersection-3-third-03-fourth-038",
+      "parent_status": "CLOSED_BY_EXHAUSTIVE_CHILD_AGGREGATION",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-3-third-03-fourth-038.json",
+        "sha256": "60c561ab6a5d2f18331025179cf33cdbe9a2372635489e1ba958fa0c365f088a"
+      },
+      "remaining_children": 0,
+      "terminal_children": 117
+    },
+    {
+      "child_count": 115,
+      "parent_id": "intersection-3-third-03-fourth-039",
+      "parent_status": "CLOSED_BY_EXHAUSTIVE_CHILD_AGGREGATION",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-3-third-03-fourth-039.json",
+        "sha256": "a3355ccb6b3d4537ae15b32c9c3cdc62c8ab9eec5485858806de0e5d2599eadd"
+      },
+      "remaining_children": 0,
+      "terminal_children": 115
+    },
+    {
+      "child_count": 113,
+      "parent_id": "intersection-3-third-03-fourth-040",
+      "parent_status": "CLOSED_BY_EXHAUSTIVE_CHILD_AGGREGATION",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-3-third-03-fourth-040.json",
+        "sha256": "e66b56d2606348dc3b9637364309ae94e66e4ceaa876c550ae4289854e269f69"
+      },
+      "remaining_children": 0,
+      "terminal_children": 113
+    },
+    {
+      "child_count": 186,
+      "parent_id": "intersection-3-third-03-fourth-041",
+      "parent_status": "CLOSED_BY_EXHAUSTIVE_CHILD_AGGREGATION",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-3-third-03-fourth-041.json",
+        "sha256": "8e0528b934188af587cbda5cb5149385962942d1ff7045de05b07ef72a99497c"
+      },
+      "remaining_children": 0,
+      "terminal_children": 186
+    },
+    {
+      "child_count": 109,
+      "parent_id": "intersection-3-third-03-fourth-042",
+      "parent_status": "CLOSED_BY_EXHAUSTIVE_CHILD_AGGREGATION",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-3-third-03-fourth-042.json",
+        "sha256": "e3d36338203ec41cfa7ee8d904af6a0bf7a728b6b60cd5f80a410657928cf3c3"
+      },
+      "remaining_children": 0,
+      "terminal_children": 109
+    },
+    {
+      "child_count": 180,
+      "parent_id": "intersection-3-third-03-fourth-043",
+      "parent_status": "CLOSED_BY_EXHAUSTIVE_CHILD_AGGREGATION",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-3-third-03-fourth-043.json",
+        "sha256": "093e8d22d9d5fefca4aee6f2579d7eaf5c39033a5a52c9103e27ad4528705940"
+      },
+      "remaining_children": 0,
+      "terminal_children": 180
+    },
+    {
+      "child_count": 176,
+      "parent_id": "intersection-3-third-03-fourth-044",
+      "parent_status": "CLOSED_BY_EXHAUSTIVE_CHILD_AGGREGATION",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-3-third-03-fourth-044.json",
+        "sha256": "742a721b8683238bcb477fd1ef58a9f14f4b3a2d2b1c65d7dc0bfe9af98350a7"
+      },
+      "remaining_children": 0,
+      "terminal_children": 176
+    },
+    {
+      "child_count": 172,
+      "parent_id": "intersection-3-third-03-fourth-045",
+      "parent_status": "CLOSED_BY_EXHAUSTIVE_CHILD_AGGREGATION",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-3-third-03-fourth-045.json",
+        "sha256": "74f1bd95a7fa22e4f961eea405985a7fd70de2845059af3d82b50135988e1099"
+      },
+      "remaining_children": 0,
+      "terminal_children": 172
+    },
+    {
+      "child_count": 101,
+      "parent_id": "intersection-3-third-03-fourth-046",
+      "parent_status": "CLOSED_BY_EXHAUSTIVE_CHILD_AGGREGATION",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-3-third-03-fourth-046.json",
+        "sha256": "e3b155f66eaeb67d917aeb8a5559ef120081ab2af27c01ae9867de43e30ac882"
+      },
+      "remaining_children": 0,
+      "terminal_children": 101
+    },
+    {
+      "child_count": 166,
+      "parent_id": "intersection-3-third-03-fourth-047",
+      "parent_status": "CLOSED_BY_EXHAUSTIVE_CHILD_AGGREGATION",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-3-third-03-fourth-047.json",
+        "sha256": "32491caf669634aa9775500af4235cf42d47f782be51b3392ecc9cc03879616c"
+      },
+      "remaining_children": 0,
+      "terminal_children": 166
+    },
+    {
+      "child_count": 162,
+      "parent_id": "intersection-3-third-03-fourth-048",
+      "parent_status": "CLOSED_BY_EXHAUSTIVE_CHILD_AGGREGATION",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-3-third-03-fourth-048.json",
+        "sha256": "5a1d30086509fe0387b72d1c3db50d8871a9485bf9770f5a0f9e30828058a80d"
+      },
+      "remaining_children": 0,
+      "terminal_children": 162
+    },
+    {
+      "child_count": 158,
+      "parent_id": "intersection-3-third-03-fourth-049",
+      "parent_status": "CLOSED_BY_EXHAUSTIVE_CHILD_AGGREGATION",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-3-third-03-fourth-049.json",
+        "sha256": "0d40ccaa261963031907468dadfa57cefa6ee8cbbed2715bcc7db1685b274427"
+      },
+      "remaining_children": 0,
+      "terminal_children": 158
+    },
+    {
+      "child_count": 154,
+      "parent_id": "intersection-3-third-03-fourth-050",
+      "parent_status": "CLOSED_BY_EXHAUSTIVE_CHILD_AGGREGATION",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-3-third-03-fourth-050.json",
+        "sha256": "65c3fa932c987135e25e41797b0554a5ebf40a8e19a8d18cc9fb38eb1b95f479"
+      },
+      "remaining_children": 0,
+      "terminal_children": 154
+    },
+    {
+      "child_count": 150,
+      "parent_id": "intersection-3-third-03-fourth-051",
+      "parent_status": "CLOSED_BY_EXHAUSTIVE_CHILD_AGGREGATION",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-3-third-03-fourth-051.json",
+        "sha256": "91df62d7d7174c253cd2353bec003af2c7eb2537c7e6a2a6a4fa8bdf867509fc"
+      },
+      "remaining_children": 0,
+      "terminal_children": 150
+    },
+    {
+      "child_count": 146,
+      "parent_id": "intersection-3-third-03-fourth-052",
+      "parent_status": "CLOSED_BY_EXHAUSTIVE_CHILD_AGGREGATION",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-3-third-03-fourth-052.json",
+        "sha256": "1eaaad9e1e4fea8b260ad82915ea00217801dbf2ff60059f9745e0d26ce7a0ae"
+      },
+      "remaining_children": 0,
+      "terminal_children": 146
+    },
+    {
+      "child_count": 87,
+      "parent_id": "intersection-3-third-03-fourth-053",
+      "parent_status": "CLOSED_BY_EXHAUSTIVE_CHILD_AGGREGATION",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-3-third-03-fourth-053.json",
+        "sha256": "4aed238ca60701477a5914fbfbc854971af2270cf837656636bbb4b47a1c7502"
+      },
+      "remaining_children": 0,
+      "terminal_children": 87
+    },
+    {
+      "child_count": 85,
+      "parent_id": "intersection-3-third-03-fourth-054",
+      "parent_status": "CLOSED_BY_EXHAUSTIVE_CHILD_AGGREGATION",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-3-third-03-fourth-054.json",
+        "sha256": "1aadcf0b20e8deebf42bb8a5823e1942d09690a31b5f469a66b0d4b6254fcdb0"
+      },
+      "remaining_children": 0,
+      "terminal_children": 85
+    },
+    {
+      "child_count": 138,
+      "parent_id": "intersection-3-third-03-fourth-055",
+      "parent_status": "CLOSED_BY_EXHAUSTIVE_CHILD_AGGREGATION",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-3-third-03-fourth-055.json",
+        "sha256": "e4e230f2e4bdd8d186c7b8af2f5c3ac976a90d89079c992d774722cf1631db1e"
+      },
+      "remaining_children": 0,
+      "terminal_children": 138
+    },
+    {
+      "child_count": 134,
+      "parent_id": "intersection-3-third-03-fourth-056",
+      "parent_status": "CLOSED_BY_EXHAUSTIVE_CHILD_AGGREGATION",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-3-third-03-fourth-056.json",
+        "sha256": "a5c2b0f88b125fffda2399347905278c080b97e773750874ef8af53ce9683423"
+      },
+      "remaining_children": 0,
+      "terminal_children": 134
+    },
+    {
+      "child_count": 130,
+      "parent_id": "intersection-3-third-03-fourth-057",
+      "parent_status": "CLOSED_BY_EXHAUSTIVE_CHILD_AGGREGATION",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-3-third-03-fourth-057.json",
+        "sha256": "4b816f043a7ce5f8a8916a206434a36f204046b716ca8740735aa5a4f061e0f8"
+      },
+      "remaining_children": 0,
+      "terminal_children": 130
+    },
+    {
+      "child_count": 126,
+      "parent_id": "intersection-3-third-03-fourth-058",
+      "parent_status": "CLOSED_BY_EXHAUSTIVE_CHILD_AGGREGATION",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-3-third-03-fourth-058.json",
+        "sha256": "e0120ccda0ff38c7c1287ed621b0395ac3051b85411317b7e1caa033cba50a1d"
+      },
+      "remaining_children": 0,
+      "terminal_children": 126
+    },
+    {
+      "child_count": 122,
+      "parent_id": "intersection-3-third-03-fourth-059",
+      "parent_status": "CLOSED_BY_EXHAUSTIVE_CHILD_AGGREGATION",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-3-third-03-fourth-059.json",
+        "sha256": "fe7f982b69c567825505926732ea5f31c10ca459758a00dd345fa2877eada3f0"
+      },
+      "remaining_children": 0,
+      "terminal_children": 122
+    },
+    {
+      "child_count": 118,
+      "parent_id": "intersection-3-third-03-fourth-060",
+      "parent_status": "CLOSED_BY_EXHAUSTIVE_CHILD_AGGREGATION",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-3-third-03-fourth-060.json",
+        "sha256": "16b45c217b9bd8a0c66422cf32108c343c5f2f0e67ab4dcd2e57cce4aa21e4e7"
+      },
+      "remaining_children": 0,
+      "terminal_children": 118
+    },
+    {
+      "child_count": 71,
+      "parent_id": "intersection-3-third-03-fourth-061",
+      "parent_status": "CLOSED_BY_EXHAUSTIVE_CHILD_AGGREGATION",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-3-third-03-fourth-061.json",
+        "sha256": "df77438c94d28f50a75681e3410fc25287d701749c8f9a08e98d915a202eade4"
+      },
+      "remaining_children": 0,
+      "terminal_children": 71
+    },
+    {
+      "child_count": 191,
+      "parent_id": "intersection-3-third-04-fourth-000",
+      "parent_status": "OPEN_CHILDREN_REMAIN",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-3-third-04-fourth-000.json",
+        "sha256": "637de25037cc2ca3d40c18b32058c2f58912f7eb916d23adb9dd723dde11a7f1"
+      },
+      "remaining_children": 24,
+      "terminal_children": 167
+    },
+    {
+      "child_count": 97,
+      "parent_id": "intersection-3-third-04-fourth-001",
+      "parent_status": "OPEN_CHILDREN_REMAIN",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-3-third-04-fourth-001.json",
+        "sha256": "316f93bf8bf552651a02cf319de473c9380cb9d652178ec8e7cbb0898e194a55"
+      },
+      "remaining_children": 23,
+      "terminal_children": 74
+    },
+    {
+      "child_count": 96,
+      "parent_id": "intersection-3-third-04-fourth-002",
+      "parent_status": "OPEN_CHILDREN_REMAIN",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-3-third-04-fourth-002.json",
+        "sha256": "f4588f885d2751646a99deea17368f77e23da3bb72464bffb5f26eb83c791594"
+      },
+      "remaining_children": 9,
+      "terminal_children": 87
+    },
+    {
+      "child_count": 185,
+      "parent_id": "intersection-3-third-04-fourth-003",
+      "parent_status": "OPEN_CHILDREN_REMAIN",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-3-third-04-fourth-003.json",
+        "sha256": "354f2b7183408a4fa24b0bce27ab08cb6d4e9efa8607b29db367246f57bce9dc"
+      },
+      "remaining_children": 18,
+      "terminal_children": 167
+    },
+    {
+      "child_count": 94,
+      "parent_id": "intersection-3-third-04-fourth-004",
+      "parent_status": "OPEN_CHILDREN_REMAIN",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-3-third-04-fourth-004.json",
+        "sha256": "a95a4d6a2774d461f5cca7c30f3e2c4e28e7e787569e465c0c482a569a87b628"
+      },
+      "remaining_children": 20,
+      "terminal_children": 74
+    },
+    {
+      "child_count": 129,
+      "parent_id": "intersection-3-third-04-fourth-005",
+      "parent_status": "OPEN_CHILDREN_REMAIN",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-3-third-04-fourth-005.json",
+        "sha256": "e2c4768149cce89c3379756a8aa25b9642b8383c7e46c9bc389af1680994a906"
+      },
+      "remaining_children": 9,
+      "terminal_children": 120
+    },
+    {
+      "child_count": 128,
+      "parent_id": "intersection-3-third-04-fourth-006",
+      "parent_status": "OPEN_CHILDREN_REMAIN",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-3-third-04-fourth-006.json",
+        "sha256": "dc2299ab653496d3a100fd4a0fac195f3eb7d9140e0de74885ffbacd6533c828"
+      },
+      "remaining_children": 8,
+      "terminal_children": 120
+    },
+    {
+      "child_count": 125,
+      "parent_id": "intersection-3-third-04-fourth-007",
+      "parent_status": "OPEN_CHILDREN_REMAIN",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-3-third-04-fourth-007.json",
+        "sha256": "c392d6d73c69a55bc1649dd84b91e3af4c5ac7efd2e654a13900ac659633a876"
+      },
+      "remaining_children": 7,
+      "terminal_children": 118
+    },
+    {
+      "child_count": 241,
+      "parent_id": "intersection-3-third-04-fourth-008",
+      "parent_status": "OPEN_CHILDREN_REMAIN",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-3-third-04-fourth-008.json",
+        "sha256": "eee6d926c324d3a3a66d999d3a27f83f5bfe781690b1dd704062e84e92a1b846"
+      },
+      "remaining_children": 13,
+      "terminal_children": 228
+    },
+    {
+      "child_count": 121,
+      "parent_id": "intersection-3-third-04-fourth-009",
+      "parent_status": "OPEN_CHILDREN_REMAIN",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-3-third-04-fourth-009.json",
+        "sha256": "452f6b47eb7fdb510716fee7248778e2b681540e7b698b94f34c56e016148837"
+      },
+      "remaining_children": 19,
+      "terminal_children": 102
+    },
+    {
+      "child_count": 122,
+      "parent_id": "intersection-3-third-04-fourth-010",
+      "parent_status": "OPEN_CHILDREN_REMAIN",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-3-third-04-fourth-010.json",
+        "sha256": "26fd8aae694563e55b80e37414d67d9abf3fd920e98e0f4bc75bf2fa9c4d281b"
+      },
+      "remaining_children": 2,
+      "terminal_children": 120
+    },
+    {
+      "child_count": 121,
+      "parent_id": "intersection-3-third-04-fourth-011",
+      "parent_status": "OPEN_CHILDREN_REMAIN",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-3-third-04-fourth-011.json",
+        "sha256": "ed1366bc348f53e0bfb399532644d8040630a984a4659eb31c5fc74f75b1a53c"
+      },
+      "remaining_children": 18,
+      "terminal_children": 103
+    },
+    {
+      "child_count": 125,
+      "parent_id": "intersection-3-third-04-fourth-012",
+      "parent_status": "CLOSED_BY_EXHAUSTIVE_CHILD_AGGREGATION",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-3-third-04-fourth-012.json",
+        "sha256": "fb861335553a9ff47a44c51bf9521bd7e00ee9a7704f27f2180c866f413cf663"
+      },
+      "remaining_children": 0,
+      "terminal_children": 125
+    },
+    {
+      "child_count": 240,
+      "parent_id": "intersection-3-third-04-fourth-013",
+      "parent_status": "CLOSED_BY_EXHAUSTIVE_CHILD_AGGREGATION",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-3-third-04-fourth-013.json",
+        "sha256": "87de09e61c1d88fd7dda7e60ce04cc612152e0536a1c3d768f45992bfb12e8cc"
+      },
+      "remaining_children": 0,
+      "terminal_children": 240
+    },
+    {
+      "child_count": 121,
+      "parent_id": "intersection-3-third-04-fourth-014",
+      "parent_status": "CLOSED_BY_EXHAUSTIVE_CHILD_AGGREGATION",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-3-third-04-fourth-014.json",
+        "sha256": "d7df10fbc993ba72797480437fb3be6ae690b1ef0d94e10b2672151050780c08"
+      },
+      "remaining_children": 0,
+      "terminal_children": 121
+    },
+    {
+      "child_count": 119,
+      "parent_id": "intersection-3-third-04-fourth-015",
+      "parent_status": "CLOSED_BY_EXHAUSTIVE_CHILD_AGGREGATION",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-3-third-04-fourth-015.json",
+        "sha256": "30a1978a0b6a407d033533890f73d161723c0d5ea583e8472ceba12e807ec59c"
+      },
+      "remaining_children": 0,
+      "terminal_children": 119
+    },
+    {
+      "child_count": 228,
+      "parent_id": "intersection-3-third-04-fourth-016",
+      "parent_status": "CLOSED_BY_EXHAUSTIVE_CHILD_AGGREGATION",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-3-third-04-fourth-016.json",
+        "sha256": "5023fd3058d87577c92fdd1997e771aea39381339a6771bdf0e6ac4374e1a819"
+      },
+      "remaining_children": 0,
+      "terminal_children": 228
+    },
+    {
+      "child_count": 115,
+      "parent_id": "intersection-3-third-04-fourth-017",
+      "parent_status": "CLOSED_BY_EXHAUSTIVE_CHILD_AGGREGATION",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-3-third-04-fourth-017.json",
+        "sha256": "cc448918679a62827a2ff4e2b3c4a5e59ad911f288b5987476c108467bfd3985"
+      },
+      "remaining_children": 0,
+      "terminal_children": 115
+    },
+    {
+      "child_count": 157,
+      "parent_id": "intersection-3-third-04-fourth-018",
+      "parent_status": "CLOSED_BY_EXHAUSTIVE_CHILD_AGGREGATION",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-3-third-04-fourth-018.json",
+        "sha256": "d8e7eb85ee75933c908be7b3439211bea0aa690a74b22d059c03a198201f9f36"
+      },
+      "remaining_children": 0,
+      "terminal_children": 157
+    },
+    {
+      "child_count": 155,
+      "parent_id": "intersection-3-third-04-fourth-019",
+      "parent_status": "CLOSED_BY_EXHAUSTIVE_CHILD_AGGREGATION",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-3-third-04-fourth-019.json",
+        "sha256": "7edbbc6a9ff119ead4eca3f0eeaf17478d5ea088652b087188d65c0781241485"
+      },
+      "remaining_children": 0,
+      "terminal_children": 155
+    },
+    {
+      "child_count": 153,
+      "parent_id": "intersection-3-third-04-fourth-020",
+      "parent_status": "CLOSED_BY_EXHAUSTIVE_CHILD_AGGREGATION",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-3-third-04-fourth-020.json",
+        "sha256": "8f1f01cb1d311e670cbe1539c39382fa9deeb11296c22095cea92b0675199e72"
+      },
+      "remaining_children": 0,
+      "terminal_children": 153
+    },
+    {
+      "child_count": 293,
+      "parent_id": "intersection-3-third-04-fourth-021",
+      "parent_status": "CLOSED_BY_EXHAUSTIVE_CHILD_AGGREGATION",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-3-third-04-fourth-021.json",
+        "sha256": "3dfc4ee0f6b4e18a5f47ca795409c1f5aaa72879283a306bcdd4ef6ad7db8e02"
+      },
+      "remaining_children": 0,
+      "terminal_children": 293
+    },
+    {
+      "child_count": 145,
+      "parent_id": "intersection-3-third-04-fourth-022",
+      "parent_status": "CLOSED_BY_EXHAUSTIVE_CHILD_AGGREGATION",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-3-third-04-fourth-022.json",
+        "sha256": "eb1a64dd3052bfac2d06a25b2283ea3ebd6dee4e9cce7e8ff5266fdc45ec953a"
+      },
+      "remaining_children": 0,
+      "terminal_children": 145
+    },
+    {
+      "child_count": 143,
+      "parent_id": "intersection-3-third-04-fourth-023",
+      "parent_status": "CLOSED_BY_EXHAUSTIVE_CHILD_AGGREGATION",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-3-third-04-fourth-023.json",
+        "sha256": "9c577d0291e275e01a6ea1f224c41d5c60a9e09273740a1eb7c9450649f933cf"
+      },
+      "remaining_children": 0,
+      "terminal_children": 143
+    },
+    {
+      "child_count": 99,
+      "parent_id": "intersection-3-third-04-fourth-025",
+      "parent_status": "CLOSED_BY_EXHAUSTIVE_CHILD_AGGREGATION",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-3-third-04-fourth-025.json",
+        "sha256": "3a074c1bd3a1d3f0a82293641598e584b8fb02de9616af7ecb90cf490f0ec989"
+      },
+      "remaining_children": 0,
+      "terminal_children": 99
+    },
+    {
+      "child_count": 188,
+      "parent_id": "intersection-3-third-04-fourth-026",
+      "parent_status": "CLOSED_BY_EXHAUSTIVE_CHILD_AGGREGATION",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-3-third-04-fourth-026.json",
+        "sha256": "401991125cce6467b270d4bb4dc1c83e6220d2f5b70ab40394fe850eca258253"
+      },
+      "remaining_children": 0,
+      "terminal_children": 188
+    },
+    {
+      "child_count": 184,
+      "parent_id": "intersection-3-third-04-fourth-027",
+      "parent_status": "CLOSED_BY_EXHAUSTIVE_CHILD_AGGREGATION",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-3-third-04-fourth-027.json",
+        "sha256": "047ce0e60b0009b21a7d6dde61c479acf7cd18b80cb87b28ab77a80b45699aaf"
+      },
+      "remaining_children": 0,
+      "terminal_children": 184
+    },
+    {
+      "child_count": 93,
+      "parent_id": "intersection-3-third-04-fourth-028",
+      "parent_status": "CLOSED_BY_EXHAUSTIVE_CHILD_AGGREGATION",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-3-third-04-fourth-028.json",
+        "sha256": "0707ae3be7183d090f414abec89587949fc68df6a78a7db661e0f71cad7a28f5"
+      },
+      "remaining_children": 0,
+      "terminal_children": 93
+    },
+    {
+      "child_count": 178,
+      "parent_id": "intersection-3-third-04-fourth-029",
+      "parent_status": "CLOSED_BY_EXHAUSTIVE_CHILD_AGGREGATION",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-3-third-04-fourth-029.json",
+        "sha256": "4bc0a611f4cd4915ac18e156d939254f592e20e928863fafcc75215859fb9522"
+      },
+      "remaining_children": 0,
+      "terminal_children": 178
+    },
+    {
+      "child_count": 89,
+      "parent_id": "intersection-3-third-04-fourth-030",
+      "parent_status": "CLOSED_BY_EXHAUSTIVE_CHILD_AGGREGATION",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-3-third-04-fourth-030.json",
+        "sha256": "fc4f84237ea427273f4d908a113901a3c58b62ca28ebd67016f5d274017ec1d1"
+      },
+      "remaining_children": 0,
+      "terminal_children": 89
+    },
+    {
+      "child_count": 121,
+      "parent_id": "intersection-3-third-04-fourth-031",
+      "parent_status": "CLOSED_BY_EXHAUSTIVE_CHILD_AGGREGATION",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-3-third-04-fourth-031.json",
+        "sha256": "cc80c0c017aa7a3b538522ec11ed7085ea4a646350b7926b379b4a33a9b62086"
+      },
+      "remaining_children": 0,
+      "terminal_children": 121
+    },
+    {
+      "child_count": 119,
+      "parent_id": "intersection-3-third-04-fourth-032",
+      "parent_status": "CLOSED_BY_EXHAUSTIVE_CHILD_AGGREGATION",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-3-third-04-fourth-032.json",
+        "sha256": "c5c76156416e221a1c55d00d839c2c14b7f0ba0de9a640caf229bd4aa0c2ec39"
+      },
+      "remaining_children": 0,
+      "terminal_children": 119
+    },
+    {
+      "child_count": 117,
+      "parent_id": "intersection-3-third-04-fourth-033",
+      "parent_status": "CLOSED_BY_EXHAUSTIVE_CHILD_AGGREGATION",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-3-third-04-fourth-033.json",
+        "sha256": "6c781d034adbcccbc2ad99bb6912d5c9e228b8a2535baaa1373cd09c2912d6d5"
+      },
+      "remaining_children": 0,
+      "terminal_children": 117
+    },
+    {
+      "child_count": 223,
+      "parent_id": "intersection-3-third-04-fourth-034",
+      "parent_status": "CLOSED_BY_EXHAUSTIVE_CHILD_AGGREGATION",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-3-third-04-fourth-034.json",
+        "sha256": "f96e6f7a47402ec11cd4aacecfefcdac64dd38c9d2ae4c9ebfceab38b685bd34"
+      },
+      "remaining_children": 0,
+      "terminal_children": 223
+    },
+    {
+      "child_count": 109,
+      "parent_id": "intersection-3-third-04-fourth-035",
+      "parent_status": "CLOSED_BY_EXHAUSTIVE_CHILD_AGGREGATION",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-3-third-04-fourth-035.json",
+        "sha256": "0e406fe08244416a03cf7acf491936cd70eeedb76b0a95ba442bde895f862ddb"
+      },
+      "remaining_children": 0,
+      "terminal_children": 109
+    },
+    {
+      "child_count": 107,
+      "parent_id": "intersection-3-third-04-fourth-036",
+      "parent_status": "CLOSED_BY_EXHAUSTIVE_CHILD_AGGREGATION",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-3-third-04-fourth-036.json",
+        "sha256": "9728226e5822666cef9a8bb0aa9cb5785008fa997b6fb0e4ef2c039a69e0e3ab"
+      },
+      "remaining_children": 0,
+      "terminal_children": 107
+    },
+    {
+      "child_count": 105,
+      "parent_id": "intersection-3-third-04-fourth-037",
+      "parent_status": "CLOSED_BY_EXHAUSTIVE_CHILD_AGGREGATION",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-3-third-04-fourth-037.json",
+        "sha256": "f6f53b72b46aeac984923d6aa3100b1e72385d0b9a7cba69c83b4015457e0784"
+      },
+      "remaining_children": 0,
+      "terminal_children": 105
+    },
+    {
+      "child_count": 101,
+      "parent_id": "intersection-3-third-04-fourth-038",
+      "parent_status": "CLOSED_BY_EXHAUSTIVE_CHILD_AGGREGATION",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-3-third-04-fourth-038.json",
+        "sha256": "e2989e2a22297c7b91386238fa59253dbeeae556717747994122f46a03771d32"
+      },
+      "remaining_children": 0,
+      "terminal_children": 101
+    },
+    {
+      "child_count": 99,
+      "parent_id": "intersection-3-third-04-fourth-039",
+      "parent_status": "CLOSED_BY_EXHAUSTIVE_CHILD_AGGREGATION",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-3-third-04-fourth-039.json",
+        "sha256": "283e4cbe7b807a07361a6233492ab986069e22dca3e12bafc79f01420e76ce3d"
+      },
+      "remaining_children": 0,
+      "terminal_children": 99
+    },
+    {
+      "child_count": 97,
+      "parent_id": "intersection-3-third-04-fourth-040",
+      "parent_status": "CLOSED_BY_EXHAUSTIVE_CHILD_AGGREGATION",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-3-third-04-fourth-040.json",
+        "sha256": "b24120131e0fa99b37e048c6332bd3bddc453f93e90894e498d2da8b6e93c8f3"
+      },
+      "remaining_children": 0,
+      "terminal_children": 97
+    },
+    {
+      "child_count": 183,
+      "parent_id": "intersection-3-third-04-fourth-041",
+      "parent_status": "CLOSED_BY_EXHAUSTIVE_CHILD_AGGREGATION",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-3-third-04-fourth-041.json",
+        "sha256": "521eb36fec965c201b8a1179bb136f052b4a766d0b2ea43d7c660d15d6dbb7cd"
+      },
+      "remaining_children": 0,
+      "terminal_children": 183
+    },
+    {
+      "child_count": 89,
+      "parent_id": "intersection-3-third-04-fourth-042",
+      "parent_status": "CLOSED_BY_EXHAUSTIVE_CHILD_AGGREGATION",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-3-third-04-fourth-042.json",
+        "sha256": "ce0f633de084e746bf9a4dbb2ff475f6d7ec752cd1d72caae1c3e1c38dd6ebf2"
+      },
+      "remaining_children": 0,
+      "terminal_children": 89
+    },
+    {
+      "child_count": 87,
+      "parent_id": "intersection-3-third-04-fourth-043",
+      "parent_status": "CLOSED_BY_EXHAUSTIVE_CHILD_AGGREGATION",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-3-third-04-fourth-043.json",
+        "sha256": "b71eb901472c888c5f922fd95e55a6fa41b5a664c58464d7bd1661d674613740"
+      },
+      "remaining_children": 0,
+      "terminal_children": 87
+    },
+    {
+      "child_count": 85,
+      "parent_id": "intersection-3-third-04-fourth-044",
+      "parent_status": "CLOSED_BY_EXHAUSTIVE_CHILD_AGGREGATION",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-3-third-04-fourth-044.json",
+        "sha256": "4eaea0eade2ed5153996ecba3a3219d4d7d013389dacd571f542ed633f0ec73e"
+      },
+      "remaining_children": 0,
+      "terminal_children": 85
+    },
+    {
+      "child_count": 59,
+      "parent_id": "intersection-3-third-04-fourth-045",
+      "parent_status": "CLOSED_BY_EXHAUSTIVE_CHILD_AGGREGATION",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-3-third-04-fourth-045.json",
+        "sha256": "ed7a4b147c2d77eaea2bd3749f15e57b3523b5d251b970e447adc69e677244d0"
+      },
+      "remaining_children": 0,
+      "terminal_children": 59
+    },
+    {
+      "child_count": 110,
+      "parent_id": "intersection-3-third-04-fourth-046",
+      "parent_status": "CLOSED_BY_EXHAUSTIVE_CHILD_AGGREGATION",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-3-third-04-fourth-046.json",
+        "sha256": "af3906140f6feed775789f167801dd99fc1c58ca25dd88cc03b26df130420f44"
+      },
+      "remaining_children": 0,
+      "terminal_children": 110
+    },
+    {
+      "child_count": 55,
+      "parent_id": "intersection-3-third-04-fourth-047",
+      "parent_status": "CLOSED_BY_EXHAUSTIVE_CHILD_AGGREGATION",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-3-third-04-fourth-047.json",
+        "sha256": "200992bc3b1a6cc409a68085abb07b16f2f1b02342f49420bed30b7cac65dcb4"
+      },
+      "remaining_children": 0,
+      "terminal_children": 55
+    },
+    {
+      "child_count": 104,
+      "parent_id": "intersection-3-third-04-fourth-048",
+      "parent_status": "CLOSED_BY_EXHAUSTIVE_CHILD_AGGREGATION",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-3-third-04-fourth-048.json",
+        "sha256": "8406b06563ffdcff4064d74f7158d267283904fd75dc5cc4ca6c17d9a303e4b8"
+      },
+      "remaining_children": 0,
+      "terminal_children": 104
+    },
+    {
+      "child_count": 92,
+      "parent_id": "intersection-3-third-05-fourth-000",
+      "parent_status": "OPEN_CHILDREN_REMAIN",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-3-third-05-fourth-000.json",
+        "sha256": "f41f4d43bf6a71364debdadf035da846baf225422d8456561a49827e9e5bc096"
+      },
+      "remaining_children": 8,
+      "terminal_children": 84
+    },
+    {
+      "child_count": 126,
+      "parent_id": "intersection-3-third-05-fourth-001",
+      "parent_status": "OPEN_CHILDREN_REMAIN",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-3-third-05-fourth-001.json",
+        "sha256": "162ee3b85f37caa9f451a6ac38b71809743b34d5b42d854d9f900f0e2ec8bd95"
+      },
+      "remaining_children": 10,
+      "terminal_children": 116
+    },
+    {
+      "child_count": 122,
+      "parent_id": "intersection-3-third-05-fourth-002",
+      "parent_status": "OPEN_CHILDREN_REMAIN",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-3-third-05-fourth-002.json",
+        "sha256": "70c0dcb885ae6dbfd8f645f215d9da97bb0c2f7fbc918ed6ec74effef34f5f78"
+      },
+      "remaining_children": 6,
+      "terminal_children": 116
+    },
+    {
+      "child_count": 86,
+      "parent_id": "intersection-3-third-05-fourth-003",
+      "parent_status": "OPEN_CHILDREN_REMAIN",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-3-third-05-fourth-003.json",
+        "sha256": "c712606ee505c00985983af93e4a98ab41a9b917937a89dbe29641134f530562"
+      },
+      "remaining_children": 2,
+      "terminal_children": 84
+    },
+    {
+      "child_count": 52,
+      "parent_id": "intersection-3-third-05-fourth-004",
+      "parent_status": "OPEN_CHILDREN_REMAIN",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-3-third-05-fourth-004.json",
+        "sha256": "66e639e491ece9a005292a572853301d58da0165a216f2f67014634a70cbbb46"
+      },
+      "remaining_children": 5,
+      "terminal_children": 47
+    },
+    {
+      "child_count": 73,
+      "parent_id": "intersection-3-third-05-fourth-005",
+      "parent_status": "CLOSED_BY_EXHAUSTIVE_CHILD_AGGREGATION",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-3-third-05-fourth-005.json",
+        "sha256": "5e96007bf397ad290168e413f32ebdbb9aa6c31a011e0a1a03e3865d24fc446e"
+      },
+      "remaining_children": 0,
+      "terminal_children": 73
+    },
+    {
+      "child_count": 117,
+      "parent_id": "intersection-3-third-05-fourth-006",
+      "parent_status": "CLOSED_BY_EXHAUSTIVE_CHILD_AGGREGATION",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-3-third-05-fourth-006.json",
+        "sha256": "91cfbb38c6c68cfaff0616ef093e60b6c3c8fff3c7d131673474bc1c7ed09b72"
+      },
+      "remaining_children": 0,
+      "terminal_children": 117
+    },
+    {
+      "child_count": 159,
+      "parent_id": "intersection-3-third-05-fourth-007",
+      "parent_status": "CLOSED_BY_EXHAUSTIVE_CHILD_AGGREGATION",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-3-third-05-fourth-007.json",
+        "sha256": "54b0f762a30884771c813705eccc652f1c63c8c98ba3ad2312e001f7ce35e57e"
+      },
+      "remaining_children": 0,
+      "terminal_children": 159
+    },
+    {
+      "child_count": 151,
+      "parent_id": "intersection-3-third-05-fourth-008",
+      "parent_status": "CLOSED_BY_EXHAUSTIVE_CHILD_AGGREGATION",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-3-third-05-fourth-008.json",
+        "sha256": "22c3ee547615f1150e298e16bf89f9ed0387536f5b5a91984bebaf42fc70f590"
+      },
+      "remaining_children": 0,
+      "terminal_children": 151
+    },
+    {
+      "child_count": 105,
+      "parent_id": "intersection-3-third-05-fourth-009",
+      "parent_status": "CLOSED_BY_EXHAUSTIVE_CHILD_AGGREGATION",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-3-third-05-fourth-009.json",
+        "sha256": "a0dcec1698949a99653833918596abed320169b1472b0b820c1a167a2d4a86f9"
+      },
+      "remaining_children": 0,
+      "terminal_children": 105
+    },
+    {
+      "child_count": 63,
+      "parent_id": "intersection-3-third-05-fourth-010",
+      "parent_status": "CLOSED_BY_EXHAUSTIVE_CHILD_AGGREGATION",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-3-third-05-fourth-010.json",
+        "sha256": "519cf89d5aece6881a5d9abaa6ae224977106d0743b1a71c1a96feeea8d1b1e7"
+      },
+      "remaining_children": 0,
+      "terminal_children": 63
+    },
+    {
+      "child_count": 61,
+      "parent_id": "intersection-3-third-05-fourth-011",
+      "parent_status": "CLOSED_BY_EXHAUSTIVE_CHILD_AGGREGATION",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-3-third-05-fourth-011.json",
+        "sha256": "d45f2081d657c4bf4f2018dc222486165ecb99772aebd87d3d83e82b90cbbf77"
+      },
+      "remaining_children": 0,
+      "terminal_children": 61
+    },
+    {
+      "child_count": 82,
+      "parent_id": "intersection-3-third-05-fourth-012",
+      "parent_status": "CLOSED_BY_EXHAUSTIVE_CHILD_AGGREGATION",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-3-third-05-fourth-012.json",
+        "sha256": "6967772ad80477aa910bf9680b684b4c4bde045f3e594dd107f81d4d9dde3a21"
+      },
+      "remaining_children": 0,
+      "terminal_children": 82
+    },
+    {
+      "child_count": 131,
+      "parent_id": "intersection-3-third-05-fourth-013",
+      "parent_status": "CLOSED_BY_EXHAUSTIVE_CHILD_AGGREGATION",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-3-third-05-fourth-013.json",
+        "sha256": "03b601810d7dfee842454a85d73872703eb1520dc23bc1a44f2472099a1a63ef"
+      },
+      "remaining_children": 0,
+      "terminal_children": 131
+    },
+    {
+      "child_count": 87,
+      "parent_id": "intersection-3-third-05-fourth-015",
+      "parent_status": "CLOSED_BY_EXHAUSTIVE_CHILD_AGGREGATION",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-3-third-05-fourth-015.json",
+        "sha256": "762534c3bebce2e3c7e70706f3ca7ddb674960e45aa651dc38cadbe352f68920"
+      },
+      "remaining_children": 0,
+      "terminal_children": 87
+    },
+    {
+      "child_count": 74,
+      "parent_id": "intersection-3-third-05-fourth-016",
+      "parent_status": "CLOSED_BY_EXHAUSTIVE_CHILD_AGGREGATION",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-3-third-05-fourth-016.json",
+        "sha256": "9f30516696dc1c47bdccac4823a2a455d37a1a60930afda41c7f07da2d6e5c10"
+      },
+      "remaining_children": 0,
+      "terminal_children": 74
+    },
+    {
+      "child_count": 117,
+      "parent_id": "intersection-3-third-05-fourth-017",
+      "parent_status": "CLOSED_BY_EXHAUSTIVE_CHILD_AGGREGATION",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-3-third-05-fourth-017.json",
+        "sha256": "f8cc0bdaa88565136dbc63e80c93938677a1fa05a5ab414980bdc24b7e16698b"
+      },
+      "remaining_children": 0,
+      "terminal_children": 117
+    },
+    {
+      "child_count": 156,
+      "parent_id": "intersection-3-third-05-fourth-018",
+      "parent_status": "CLOSED_BY_EXHAUSTIVE_CHILD_AGGREGATION",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-3-third-05-fourth-018.json",
+        "sha256": "1b0fb8f059a760166bf6731f13d29edff6db0bc5d25570b6f6263495e6d62726"
+      },
+      "remaining_children": 0,
+      "terminal_children": 156
+    },
+    {
+      "child_count": 140,
+      "parent_id": "intersection-3-third-05-fourth-019",
+      "parent_status": "CLOSED_BY_EXHAUSTIVE_CHILD_AGGREGATION",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-3-third-05-fourth-019.json",
+        "sha256": "e062ff57eeb3ab11df6ecc5c0bdab0e746d01c90bc90e7dd9e868281d2d49964"
+      },
+      "remaining_children": 0,
+      "terminal_children": 140
+    },
+    {
+      "child_count": 93,
+      "parent_id": "intersection-3-third-05-fourth-020",
+      "parent_status": "CLOSED_BY_EXHAUSTIVE_CHILD_AGGREGATION",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-3-third-05-fourth-020.json",
+        "sha256": "5cd23188693264b68cd0b319dcf6ffe298e19c8eb2c1eacc51052a748e79ada7"
+      },
+      "remaining_children": 0,
+      "terminal_children": 93
+    },
+    {
+      "child_count": 54,
+      "parent_id": "intersection-3-third-05-fourth-021",
+      "parent_status": "CLOSED_BY_EXHAUSTIVE_CHILD_AGGREGATION",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-3-third-05-fourth-021.json",
+        "sha256": "3b00d5303023ab258f941fa4a579c412eb0fdc54f6bb8dc139c73c9dd5a792b8"
+      },
+      "remaining_children": 0,
+      "terminal_children": 54
+    },
+    {
+      "child_count": 63,
+      "parent_id": "intersection-3-third-05-fourth-022",
+      "parent_status": "CLOSED_BY_EXHAUSTIVE_CHILD_AGGREGATION",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-3-third-05-fourth-022.json",
+        "sha256": "ab8cadfb7976d6b0d736384c6731ae0048accd9de323f1cff68eb8983b0bdba5"
+      },
+      "remaining_children": 0,
+      "terminal_children": 63
+    },
+    {
+      "child_count": 59,
+      "parent_id": "intersection-3-third-05-fourth-023",
+      "parent_status": "CLOSED_BY_EXHAUSTIVE_CHILD_AGGREGATION",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-3-third-05-fourth-023.json",
+        "sha256": "f23d403782f55caf692fa0b88f6cca0fe2516639eb9266fb5fb4bcde9143a994"
+      },
+      "remaining_children": 0,
+      "terminal_children": 59
+    },
+    {
+      "child_count": 79,
+      "parent_id": "intersection-3-third-05-fourth-024",
+      "parent_status": "CLOSED_BY_EXHAUSTIVE_CHILD_AGGREGATION",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-3-third-05-fourth-024.json",
+        "sha256": "23ff8e1187e4170b340bcf6120ccc874c0f9a51976c29eb0334bd818489b206d"
+      },
+      "remaining_children": 0,
+      "terminal_children": 79
+    },
+    {
+      "child_count": 46,
+      "parent_id": "intersection-3-third-05-fourth-025",
+      "parent_status": "CLOSED_BY_EXHAUSTIVE_CHILD_AGGREGATION",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-3-third-05-fourth-025.json",
+        "sha256": "d9c3cba74696bc6c1177b60e46aac5c6bb8c64e358e16af1decc05d8bca2f854"
+      },
+      "remaining_children": 0,
+      "terminal_children": 46
+    },
+    {
+      "child_count": 31,
+      "parent_id": "intersection-3-third-05-fourth-026",
+      "parent_status": "CLOSED_BY_EXHAUSTIVE_CHILD_AGGREGATION",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-3-third-05-fourth-026.json",
+        "sha256": "8442dcbf4714822030f4acf35d986d8d3dbd97fd6c0e5ffbfd1eb4ba0406af4b"
+      },
+      "remaining_children": 0,
+      "terminal_children": 31
+    },
+    {
+      "child_count": 29,
+      "parent_id": "intersection-3-third-05-fourth-027",
+      "parent_status": "CLOSED_BY_EXHAUSTIVE_CHILD_AGGREGATION",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-3-third-05-fourth-027.json",
+        "sha256": "fd745d55ac97d05ddf7280647617417b706fa3d17a309001cac8246b6577539a"
+      },
+      "remaining_children": 0,
+      "terminal_children": 29
+    },
+    {
+      "child_count": 171,
+      "parent_id": "intersection-3-third-06-fourth-000",
+      "parent_status": "OPEN_CHILDREN_REMAIN",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-3-third-06-fourth-000.json",
+        "sha256": "71d4ff6a056022fc9301ab9f200e894e1176d864acceada04495996c21e3693e"
+      },
+      "remaining_children": 14,
+      "terminal_children": 157
+    },
+    {
+      "child_count": 87,
+      "parent_id": "intersection-3-third-06-fourth-001",
+      "parent_status": "OPEN_CHILDREN_REMAIN",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-3-third-06-fourth-001.json",
+        "sha256": "480754f056999935d7c6d6c6868b0ca5e9fe3654d36c6b7b9755baf15a801997"
+      },
+      "remaining_children": 13,
+      "terminal_children": 74
+    },
+    {
+      "child_count": 86,
+      "parent_id": "intersection-3-third-06-fourth-002",
+      "parent_status": "OPEN_CHILDREN_REMAIN",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-3-third-06-fourth-002.json",
+        "sha256": "57d1e8acb6f3a95fb8fbe40ad5b11dce3ed3185700dd1b99980a8cf764fcddde"
+      },
+      "remaining_children": 4,
+      "terminal_children": 82
+    },
+    {
+      "child_count": 165,
+      "parent_id": "intersection-3-third-06-fourth-003",
+      "parent_status": "OPEN_CHILDREN_REMAIN",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-3-third-06-fourth-003.json",
+        "sha256": "605303b6e9573222d38fe6e97e201d2b6198d0c5fab500918882920a0ced6101"
+      },
+      "remaining_children": 8,
+      "terminal_children": 157
+    },
+    {
+      "child_count": 84,
+      "parent_id": "intersection-3-third-06-fourth-004",
+      "parent_status": "OPEN_CHILDREN_REMAIN",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-3-third-06-fourth-004.json",
+        "sha256": "791c1a68a5e14320d056a163785a193b65a2c1d33ed2aa5aee709a2bf21a9932"
+      },
+      "remaining_children": 10,
+      "terminal_children": 74
+    },
+    {
+      "child_count": 115,
+      "parent_id": "intersection-3-third-06-fourth-005",
+      "parent_status": "OPEN_CHILDREN_REMAIN",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-3-third-06-fourth-005.json",
+        "sha256": "9f564f9f7b638631362601f1b7aa3575d851232ae27c80ea31c2ecfdc74583d4"
+      },
+      "remaining_children": 2,
+      "terminal_children": 113
+    },
+    {
+      "child_count": 114,
+      "parent_id": "intersection-3-third-06-fourth-006",
+      "parent_status": "OPEN_CHILDREN_REMAIN",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-3-third-06-fourth-006.json",
+        "sha256": "9a2bcf0a021df024967b0da8b3e232e1cd3a4c31de9a46d3557e985a1402ae1a"
+      },
+      "remaining_children": 11,
+      "terminal_children": 103
+    },
+    {
+      "child_count": 115,
+      "parent_id": "intersection-3-third-06-fourth-007",
+      "parent_status": "CLOSED_BY_EXHAUSTIVE_CHILD_AGGREGATION",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-3-third-06-fourth-007.json",
+        "sha256": "20b2ee9e84e98f9f47340cd3f8ebba2dc595e8216a1d76cb2ceda2aa0d222c78"
+      },
+      "remaining_children": 0,
+      "terminal_children": 115
+    },
+    {
+      "child_count": 220,
+      "parent_id": "intersection-3-third-06-fourth-008",
+      "parent_status": "CLOSED_BY_EXHAUSTIVE_CHILD_AGGREGATION",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-3-third-06-fourth-008.json",
+        "sha256": "a031bb2dc22ac2d2dc88bafac2ef58bf126a9a99c894f4f4ee4a3014e7334732"
+      },
+      "remaining_children": 0,
+      "terminal_children": 220
+    },
+    {
+      "child_count": 111,
+      "parent_id": "intersection-3-third-06-fourth-009",
+      "parent_status": "CLOSED_BY_EXHAUSTIVE_CHILD_AGGREGATION",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-3-third-06-fourth-009.json",
+        "sha256": "31fff1440022a411f9c6a3e0cd252e9761a0e63f48748edbb64b257b45d91f93"
+      },
+      "remaining_children": 0,
+      "terminal_children": 111
+    },
+    {
+      "child_count": 109,
+      "parent_id": "intersection-3-third-06-fourth-010",
+      "parent_status": "CLOSED_BY_EXHAUSTIVE_CHILD_AGGREGATION",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-3-third-06-fourth-010.json",
+        "sha256": "ebd14408c6a16c27b7c4de0478dba3962646ec5f1cd4a3e737caac0f49bfb2af"
+      },
+      "remaining_children": 0,
+      "terminal_children": 109
+    },
+    {
+      "child_count": 208,
+      "parent_id": "intersection-3-third-06-fourth-011",
+      "parent_status": "CLOSED_BY_EXHAUSTIVE_CHILD_AGGREGATION",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-3-third-06-fourth-011.json",
+        "sha256": "c0a572d71d38ca6e111dfff8e06c9fe49b2ae589044d52962e120bd99240ff38"
+      },
+      "remaining_children": 0,
+      "terminal_children": 208
+    },
+    {
+      "child_count": 105,
+      "parent_id": "intersection-3-third-06-fourth-012",
+      "parent_status": "CLOSED_BY_EXHAUSTIVE_CHILD_AGGREGATION",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-3-third-06-fourth-012.json",
+        "sha256": "429a0ad7231d0ae29e663aee9be9a21df7b274bd06170b4d8a68749f14f9ee16"
+      },
+      "remaining_children": 0,
+      "terminal_children": 105
+    },
+    {
+      "child_count": 143,
+      "parent_id": "intersection-3-third-06-fourth-013",
+      "parent_status": "CLOSED_BY_EXHAUSTIVE_CHILD_AGGREGATION",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-3-third-06-fourth-013.json",
+        "sha256": "bf31ea6e69172e89c565eeeb97055e95ea919a3ed7cbeb62569d292fb68d5b36"
+      },
+      "remaining_children": 0,
+      "terminal_children": 143
+    },
+    {
+      "child_count": 141,
+      "parent_id": "intersection-3-third-06-fourth-014",
+      "parent_status": "CLOSED_BY_EXHAUSTIVE_CHILD_AGGREGATION",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-3-third-06-fourth-014.json",
+        "sha256": "8feb73d7174962bc76eb44eb51b7e1facdac528bd8fd3590a76cd63840e373cb"
+      },
+      "remaining_children": 0,
+      "terminal_children": 141
+    },
+    {
+      "child_count": 99,
+      "parent_id": "intersection-3-third-06-fourth-015",
+      "parent_status": "CLOSED_BY_EXHAUSTIVE_CHILD_AGGREGATION",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-3-third-06-fourth-015.json",
+        "sha256": "faef0536e1911f3bb4b81a5049c99f4da82bfa6522d53f7d4aac7db8eeb604be"
+      },
+      "remaining_children": 0,
+      "terminal_children": 99
+    },
+    {
+      "child_count": 135,
+      "parent_id": "intersection-3-third-06-fourth-016",
+      "parent_status": "CLOSED_BY_EXHAUSTIVE_CHILD_AGGREGATION",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-3-third-06-fourth-016.json",
+        "sha256": "e94536d776d0cfb7ad7ca2771ecdb42390f2603eb98a77afdef65b9ac6810890"
+      },
+      "remaining_children": 0,
+      "terminal_children": 135
+    },
+    {
+      "child_count": 133,
+      "parent_id": "intersection-3-third-06-fourth-017",
+      "parent_status": "CLOSED_BY_EXHAUSTIVE_CHILD_AGGREGATION",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-3-third-06-fourth-017.json",
+        "sha256": "0d784caaa009bbe0ec3b70b54d7f112d0a39545f34237160ea584428a7b6595f"
+      },
+      "remaining_children": 0,
+      "terminal_children": 133
+    },
+    {
+      "child_count": 129,
+      "parent_id": "intersection-3-third-06-fourth-018",
+      "parent_status": "CLOSED_BY_EXHAUSTIVE_CHILD_AGGREGATION",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-3-third-06-fourth-018.json",
+        "sha256": "d5ce35864627d6eac2a3f5533dd9cca9da088cff8d27151b7e2b3ad9c46b1bd5"
+      },
+      "remaining_children": 0,
+      "terminal_children": 129
+    },
+    {
+      "child_count": 127,
+      "parent_id": "intersection-3-third-06-fourth-019",
+      "parent_status": "CLOSED_BY_EXHAUSTIVE_CHILD_AGGREGATION",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-3-third-06-fourth-019.json",
+        "sha256": "30c97789af2b119a5e0f1ee08e8273ec5efee4eccede8d326fc5c89e9eaf3145"
+      },
+      "remaining_children": 0,
+      "terminal_children": 127
+    },
+    {
+      "child_count": 89,
+      "parent_id": "intersection-3-third-06-fourth-020",
+      "parent_status": "CLOSED_BY_EXHAUSTIVE_CHILD_AGGREGATION",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-3-third-06-fourth-020.json",
+        "sha256": "135cb5ac63dbc346e872a1badce19e664596a36010fc66642a6073c30a64293a"
+      },
+      "remaining_children": 0,
+      "terminal_children": 89
+    },
+    {
+      "child_count": 170,
+      "parent_id": "intersection-3-third-06-fourth-021",
+      "parent_status": "CLOSED_BY_EXHAUSTIVE_CHILD_AGGREGATION",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-3-third-06-fourth-021.json",
+        "sha256": "ff5676e41fcc3c6428c42e02aa8e601fab505b4bdafab77b33e282644916a207"
+      },
+      "remaining_children": 0,
+      "terminal_children": 170
+    },
+    {
+      "child_count": 168,
+      "parent_id": "intersection-3-third-06-fourth-023",
+      "parent_status": "CLOSED_BY_EXHAUSTIVE_CHILD_AGGREGATION",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-3-third-06-fourth-023.json",
+        "sha256": "7b97837b5923dca9d23352a68b88da880602d7db3f74de29fdd60f799b560143"
+      },
+      "remaining_children": 0,
+      "terminal_children": 168
+    },
+    {
+      "child_count": 164,
+      "parent_id": "intersection-3-third-06-fourth-024",
+      "parent_status": "CLOSED_BY_EXHAUSTIVE_CHILD_AGGREGATION",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-3-third-06-fourth-024.json",
+        "sha256": "e9a4a07edbed8af46c276ec1e41cdfbda2d78a378c5746af929dae30a1be69ee"
+      },
+      "remaining_children": 0,
+      "terminal_children": 164
+    },
+    {
+      "child_count": 113,
+      "parent_id": "intersection-3-third-06-fourth-025",
+      "parent_status": "CLOSED_BY_EXHAUSTIVE_CHILD_AGGREGATION",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-3-third-06-fourth-025.json",
+        "sha256": "a6d78efec27d694e164c1a1ce3418e10709d6cc2afb38eade0c69c03519764f0"
+      },
+      "remaining_children": 0,
+      "terminal_children": 113
+    },
+    {
+      "child_count": 215,
+      "parent_id": "intersection-3-third-06-fourth-026",
+      "parent_status": "CLOSED_BY_EXHAUSTIVE_CHILD_AGGREGATION",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-3-third-06-fourth-026.json",
+        "sha256": "ff9bbe2857b5c2b1309603ff711cf876e1015938e9b9b358c325dc259a7cf2e6"
+      },
+      "remaining_children": 0,
+      "terminal_children": 215
+    },
+    {
+      "child_count": 105,
+      "parent_id": "intersection-3-third-06-fourth-027",
+      "parent_status": "CLOSED_BY_EXHAUSTIVE_CHILD_AGGREGATION",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-3-third-06-fourth-027.json",
+        "sha256": "3bf8f50a600afd963677952e8b00f8b05babe4ea7b221cbecbb42b6cb4e1e0e5"
+      },
+      "remaining_children": 0,
+      "terminal_children": 105
+    },
+    {
+      "child_count": 101,
+      "parent_id": "intersection-3-third-06-fourth-028",
+      "parent_status": "CLOSED_BY_EXHAUSTIVE_CHILD_AGGREGATION",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-3-third-06-fourth-028.json",
+        "sha256": "009de3e3b31cedb5e81aac7b86aba98ce912f85cbb6112aee9715f5a9eec68e6"
+      },
+      "remaining_children": 0,
+      "terminal_children": 101
+    },
+    {
+      "child_count": 191,
+      "parent_id": "intersection-3-third-06-fourth-029",
+      "parent_status": "CLOSED_BY_EXHAUSTIVE_CHILD_AGGREGATION",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-3-third-06-fourth-029.json",
+        "sha256": "621b390f85473338f6b67b2d4190cd8fd87045f32de59fb94129a4f874c675cf"
+      },
+      "remaining_children": 0,
+      "terminal_children": 191
+    },
+    {
+      "child_count": 93,
+      "parent_id": "intersection-3-third-06-fourth-030",
+      "parent_status": "CLOSED_BY_EXHAUSTIVE_CHILD_AGGREGATION",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-3-third-06-fourth-030.json",
+        "sha256": "70c7ad536072848c114d87372a5cee32d0ee7eae835265b0666e09602fbdd741"
+      },
+      "remaining_children": 0,
+      "terminal_children": 93
+    },
+    {
+      "child_count": 124,
+      "parent_id": "intersection-3-third-06-fourth-031",
+      "parent_status": "CLOSED_BY_EXHAUSTIVE_CHILD_AGGREGATION",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-3-third-06-fourth-031.json",
+        "sha256": "7b54bc7c5cdd93220a960ecd9d6c85ac90b41e8bd4877fa2902bc614b409b4c2"
+      },
+      "remaining_children": 0,
+      "terminal_children": 124
+    },
+    {
+      "child_count": 120,
+      "parent_id": "intersection-3-third-06-fourth-032",
+      "parent_status": "CLOSED_BY_EXHAUSTIVE_CHILD_AGGREGATION",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-3-third-06-fourth-032.json",
+        "sha256": "eb7460ff784512240202353000e3ab2b83e57d0f8ceaf9b61e3e17e3e7c3b255"
+      },
+      "remaining_children": 0,
+      "terminal_children": 120
+    },
+    {
+      "child_count": 63,
+      "parent_id": "intersection-3-third-06-fourth-033",
+      "parent_status": "CLOSED_BY_EXHAUSTIVE_CHILD_AGGREGATION",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-3-third-06-fourth-033.json",
+        "sha256": "f1698707ec5aaa8b188ac0efb70f16d79d46537fc1c506726268f6235c54e9b2"
+      },
+      "remaining_children": 0,
+      "terminal_children": 63
+    },
+    {
+      "child_count": 118,
+      "parent_id": "intersection-3-third-06-fourth-034",
+      "parent_status": "CLOSED_BY_EXHAUSTIVE_CHILD_AGGREGATION",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-3-third-06-fourth-034.json",
+        "sha256": "6aa3db8357775354b0b5011e5e4babd37a87bac03f0fc769dae48990bdab443e"
+      },
+      "remaining_children": 0,
+      "terminal_children": 118
+    },
+    {
+      "child_count": 59,
+      "parent_id": "intersection-3-third-06-fourth-035",
+      "parent_status": "CLOSED_BY_EXHAUSTIVE_CHILD_AGGREGATION",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-3-third-06-fourth-035.json",
+        "sha256": "ca67d53c0853b6260895e75a435cbe6cc3e6a1fdb616510168904971f37921f8"
+      },
+      "remaining_children": 0,
+      "terminal_children": 59
+    },
+    {
+      "child_count": 79,
+      "parent_id": "intersection-3-third-06-fourth-036",
+      "parent_status": "CLOSED_BY_EXHAUSTIVE_CHILD_AGGREGATION",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-3-third-06-fourth-036.json",
+        "sha256": "4ae5317fd87a0f6be7a82261c6625680fbda4317aad61af1748d1b3e1c56c8af"
+      },
+      "remaining_children": 0,
+      "terminal_children": 79
+    },
+    {
+      "child_count": 77,
+      "parent_id": "intersection-3-third-06-fourth-037",
+      "parent_status": "CLOSED_BY_EXHAUSTIVE_CHILD_AGGREGATION",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-3-third-06-fourth-037.json",
+        "sha256": "bd76050bf9e441ab17bc2d090f6994cb43905f5382b461febce46296796cbbbe"
+      },
+      "remaining_children": 0,
+      "terminal_children": 77
+    },
+    {
+      "child_count": 73,
+      "parent_id": "intersection-3-third-06-fourth-038",
+      "parent_status": "CLOSED_BY_EXHAUSTIVE_CHILD_AGGREGATION",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-3-third-06-fourth-038.json",
+        "sha256": "6ae24373ffe26f9556c6591b4ae071b1929ebcbc244ea4cde447cae7a432b47e"
+      },
+      "remaining_children": 0,
+      "terminal_children": 73
+    },
+    {
+      "child_count": 71,
+      "parent_id": "intersection-3-third-06-fourth-039",
+      "parent_status": "CLOSED_BY_EXHAUSTIVE_CHILD_AGGREGATION",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-3-third-06-fourth-039.json",
+        "sha256": "243e295beddecc65465545c11731164f22a1425565494489fb87ba05ef9a06f9"
+      },
+      "remaining_children": 0,
+      "terminal_children": 71
+    },
+    {
+      "child_count": 49,
+      "parent_id": "intersection-3-third-06-fourth-040",
+      "parent_status": "CLOSED_BY_EXHAUSTIVE_CHILD_AGGREGATION",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-3-third-06-fourth-040.json",
+        "sha256": "fcf5521052ece0d6f6a821a62f0aa6c47e48145188bd97d84e4f38043586e0b4"
+      },
+      "remaining_children": 0,
+      "terminal_children": 49
+    },
+    {
+      "child_count": 47,
+      "parent_id": "intersection-3-third-06-fourth-041",
+      "parent_status": "CLOSED_BY_EXHAUSTIVE_CHILD_AGGREGATION",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-3-third-06-fourth-041.json",
+        "sha256": "d2cd5d558893528a68600f8ee588d441a2fc220ea6bf395ecc1fdf941b693a84"
+      },
+      "remaining_children": 0,
+      "terminal_children": 47
+    },
+    {
+      "child_count": 64,
+      "parent_id": "intersection-3-third-06-fourth-042",
+      "parent_status": "CLOSED_BY_EXHAUSTIVE_CHILD_AGGREGATION",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-3-third-06-fourth-042.json",
+        "sha256": "c96d43153d77b59f7fa1bc3fa4b739cb4cc8b2f649be7af0951666a3529bda75"
+      },
+      "remaining_children": 0,
+      "terminal_children": 64
+    },
+    {
+      "child_count": 63,
+      "parent_id": "intersection-3-third-06-fourth-043",
+      "parent_status": "CLOSED_BY_EXHAUSTIVE_CHILD_AGGREGATION",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-3-third-06-fourth-043.json",
+        "sha256": "ac8302a5c76f78bfe2bbad778167a9615ab287226823f07b7ab20cc3717395dd"
+      },
+      "remaining_children": 0,
+      "terminal_children": 63
+    },
+    {
+      "child_count": 53,
+      "parent_id": "intersection-4-third-00-fourth-000",
+      "parent_status": "OPEN_CHILDREN_REMAIN",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-4-third-00-fourth-000.json",
+        "sha256": "af6e638d28edbf5e2c813ce89ef7b0b8ff68f14c51c2e1edd7935c270c90d37f"
+      },
+      "remaining_children": 17,
+      "terminal_children": 36
+    },
+    {
+      "child_count": 52,
+      "parent_id": "intersection-4-third-00-fourth-001",
+      "parent_status": "OPEN_CHILDREN_REMAIN",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-4-third-00-fourth-001.json",
+        "sha256": "57b19d3f821d629ae6f7a6191845f3e06cba84e0dc791fc1c3d010b0dc504b3d"
+      },
+      "remaining_children": 17,
+      "terminal_children": 35
+    },
+    {
+      "child_count": 50,
+      "parent_id": "intersection-4-third-00-fourth-002",
+      "parent_status": "OPEN_CHILDREN_REMAIN",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-4-third-00-fourth-002.json",
+        "sha256": "d24ac301b8db7f672c1068013eb216d0a161b0f95ba56d980bac208a40b1efd9"
+      },
+      "remaining_children": 17,
+      "terminal_children": 33
+    },
+    {
+      "child_count": 88,
+      "parent_id": "intersection-4-third-00-fourth-003",
+      "parent_status": "OPEN_CHILDREN_REMAIN",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-4-third-00-fourth-003.json",
+        "sha256": "5b4bacfa7cfd509b0a840f0965c0993609ed8873af8310e4ddd1c4b6cba4fa1a"
+      },
+      "remaining_children": 28,
+      "terminal_children": 60
+    },
+    {
+      "child_count": 46,
+      "parent_id": "intersection-4-third-00-fourth-004",
+      "parent_status": "OPEN_CHILDREN_REMAIN",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-4-third-00-fourth-004.json",
+        "sha256": "9c640a84fe0f3ff4f06f54bc6ca7c3f36c4c10fe58af0964c80ac36abdc8f01a"
+      },
+      "remaining_children": 12,
+      "terminal_children": 34
+    },
+    {
+      "child_count": 82,
+      "parent_id": "intersection-4-third-00-fourth-005",
+      "parent_status": "OPEN_CHILDREN_REMAIN",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-4-third-00-fourth-005.json",
+        "sha256": "7a6fa0cd37c1abdd775e9962748211ff36a868bef79358d7a55de8d64ba8ab55"
+      },
+      "remaining_children": 21,
+      "terminal_children": 61
+    },
+    {
+      "child_count": 78,
+      "parent_id": "intersection-4-third-00-fourth-006",
+      "parent_status": "OPEN_CHILDREN_REMAIN",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-4-third-00-fourth-006.json",
+        "sha256": "920ccd98504a358180fb0035329a5940ff8fb07b17cf4fc431143974da6f1e3d"
+      },
+      "remaining_children": 19,
+      "terminal_children": 59
+    },
+    {
+      "child_count": 89,
+      "parent_id": "intersection-4-third-00-fourth-007",
+      "parent_status": "OPEN_CHILDREN_REMAIN",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-4-third-00-fourth-007.json",
+        "sha256": "7b92eb97935aac7af141a9cfa5481b5263574227330fde892380b5036d4f404a"
+      },
+      "remaining_children": 22,
+      "terminal_children": 67
+    },
+    {
+      "child_count": 46,
+      "parent_id": "intersection-4-third-00-fourth-008",
+      "parent_status": "OPEN_CHILDREN_REMAIN",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-4-third-00-fourth-008.json",
+        "sha256": "337c6725d3763b6cfe352558d14919da222ee359b68ef559c48aaacf24be2f67"
+      },
+      "remaining_children": 7,
+      "terminal_children": 39
+    },
+    {
+      "child_count": 82,
+      "parent_id": "intersection-4-third-00-fourth-009",
+      "parent_status": "OPEN_CHILDREN_REMAIN",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-4-third-00-fourth-009.json",
+        "sha256": "4c1a7fea4c84e8a0bd2aa5bebabb1e25e5167e1a2ff074c10e27a7d79f83aa65"
+      },
+      "remaining_children": 13,
+      "terminal_children": 69
+    },
+    {
+      "child_count": 76,
+      "parent_id": "intersection-4-third-00-fourth-010",
+      "parent_status": "OPEN_CHILDREN_REMAIN",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-4-third-00-fourth-010.json",
+        "sha256": "f61ce77918b12320420c0a8203e11a9c0f724f34553e059e5ec9db7a52f4f3ac"
+      },
+      "remaining_children": 11,
+      "terminal_children": 65
+    },
+    {
+      "child_count": 86,
+      "parent_id": "intersection-4-third-00-fourth-011",
+      "parent_status": "OPEN_CHILDREN_REMAIN",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-4-third-00-fourth-011.json",
+        "sha256": "d9f2eb81a5e4c333c0e1bbab2fed663ae0f9c1fcdc2dc4bc25987804ad9523a0"
+      },
+      "remaining_children": 12,
+      "terminal_children": 74
+    },
+    {
+      "child_count": 64,
+      "parent_id": "intersection-4-third-00-fourth-012",
+      "parent_status": "OPEN_CHILDREN_REMAIN",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-4-third-00-fourth-012.json",
+        "sha256": "bec04749c3925568f27e15b831d8fa5e6244a2169a11de0b340b9967dc358c6b"
+      },
+      "remaining_children": 7,
+      "terminal_children": 57
+    },
+    {
+      "child_count": 71,
+      "parent_id": "intersection-4-third-00-fourth-013",
+      "parent_status": "OPEN_CHILDREN_REMAIN",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-4-third-00-fourth-013.json",
+        "sha256": "60d4c9f2b178040bd019376810293ff9ba295fd637cdc574541ff0d8e7a7718f"
+      },
+      "remaining_children": 7,
+      "terminal_children": 64
+    },
+    {
+      "child_count": 62,
+      "parent_id": "intersection-4-third-00-fourth-014",
+      "parent_status": "OPEN_CHILDREN_REMAIN",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-4-third-00-fourth-014.json",
+        "sha256": "60d553f939c71adc9deba24c4bb4287181a35c953f4bdf62ee7948d46856add7"
+      },
+      "remaining_children": 4,
+      "terminal_children": 58
+    },
+    {
+      "child_count": 51,
+      "parent_id": "intersection-4-third-01-fourth-000",
+      "parent_status": "OPEN_CHILDREN_REMAIN",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-4-third-01-fourth-000.json",
+        "sha256": "27dced3d0bfe8a3a8155dd8c28b9ae1bed5623f0247b0ba6636be87ed4814d4a"
+      },
+      "remaining_children": 17,
+      "terminal_children": 34
+    },
+    {
+      "child_count": 49,
+      "parent_id": "intersection-4-third-01-fourth-001",
+      "parent_status": "OPEN_CHILDREN_REMAIN",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-4-third-01-fourth-001.json",
+        "sha256": "83412582b1f3b69dcfd063ba70c9ed22cd47efbc2dc294ad93f6810d0c2fd4fc"
+      },
+      "remaining_children": 15,
+      "terminal_children": 34
+    },
+    {
+      "child_count": 62,
+      "parent_id": "intersection-4-third-01-fourth-002",
+      "parent_status": "OPEN_CHILDREN_REMAIN",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-4-third-01-fourth-002.json",
+        "sha256": "eb5f9b650a25dc33c505e3a64618c5610db40c311ca143f9ef1ea2d45f22292c"
+      },
+      "remaining_children": 15,
+      "terminal_children": 47
+    },
+    {
+      "child_count": 39,
+      "parent_id": "intersection-4-third-01-fourth-003",
+      "parent_status": "OPEN_CHILDREN_REMAIN",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-4-third-01-fourth-003.json",
+        "sha256": "04f1529f47237f1cfa6bd117a2ace2bc149fcfcd658922eca9f2538f5f722735"
+      },
+      "remaining_children": 7,
+      "terminal_children": 32
+    },
+    {
+      "child_count": 74,
+      "parent_id": "intersection-4-third-01-fourth-004",
+      "parent_status": "OPEN_CHILDREN_REMAIN",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-4-third-01-fourth-004.json",
+        "sha256": "edf98fd485b6a4b4a612a438d44ffec14470f2e0abec071035a11b7f28c65ecd"
+      },
+      "remaining_children": 13,
+      "terminal_children": 61
+    },
+    {
+      "child_count": 70,
+      "parent_id": "intersection-4-third-01-fourth-005",
+      "parent_status": "OPEN_CHILDREN_REMAIN",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-4-third-01-fourth-005.json",
+        "sha256": "edfdaaa1f8d6dc4f4b0a130777a44bc9f8ae35d426ffd99b157ff2458b24f834"
+      },
+      "remaining_children": 11,
+      "terminal_children": 59
+    },
+    {
+      "child_count": 90,
+      "parent_id": "intersection-4-third-01-fourth-006",
+      "parent_status": "OPEN_CHILDREN_REMAIN",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-4-third-01-fourth-006.json",
+        "sha256": "39257968cc93eecf09f17017b1c43fdc7b996a32348af1c1d7bdb59e3d9edac4"
+      },
+      "remaining_children": 13,
+      "terminal_children": 77
+    },
+    {
+      "child_count": 62,
+      "parent_id": "intersection-4-third-01-fourth-007",
+      "parent_status": "OPEN_CHILDREN_REMAIN",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-4-third-01-fourth-007.json",
+        "sha256": "5a2e6402bd101f8112b0857a880232042b916245c46d5f8a7865068dd9585366"
+      },
+      "remaining_children": 7,
+      "terminal_children": 55
+    },
+    {
+      "child_count": 80,
+      "parent_id": "intersection-4-third-01-fourth-008",
+      "parent_status": "OPEN_CHILDREN_REMAIN",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-4-third-01-fourth-008.json",
+        "sha256": "495dc4822f3f2165af069775e4fb4cecb9dc94ac3b049f8eb1bf9c3e5c299f7b"
+      },
+      "remaining_children": 8,
+      "terminal_children": 72
+    },
+    {
+      "child_count": 74,
+      "parent_id": "intersection-4-third-01-fourth-009",
+      "parent_status": "OPEN_CHILDREN_REMAIN",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-4-third-01-fourth-009.json",
+        "sha256": "237b3c3d9ef4bdd416d3326c85c96815e3d028b4fec3f1f17359b3f3cad278df"
+      },
+      "remaining_children": 5,
+      "terminal_children": 69
+    },
+    {
+      "child_count": 68,
+      "parent_id": "intersection-4-third-01-fourth-010",
+      "parent_status": "OPEN_CHILDREN_REMAIN",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-4-third-01-fourth-010.json",
+        "sha256": "7f122211be91f56f0522dc15e2b8d903e62f3db8a00d6e3eb8e2d4b81c32413b"
+      },
+      "remaining_children": 2,
+      "terminal_children": 66
+    },
+    {
+      "child_count": 46,
+      "parent_id": "intersection-4-third-01-fourth-011",
+      "parent_status": "CLOSED_BY_EXHAUSTIVE_CHILD_AGGREGATION",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-4-third-01-fourth-011.json",
+        "sha256": "d7e1f6310749412f490c0f7244cb912b35980a7a036475bf61a3ffa482569b81"
+      },
+      "remaining_children": 0,
+      "terminal_children": 46
+    },
+    {
+      "child_count": 58,
+      "parent_id": "intersection-4-third-01-fourth-012",
+      "parent_status": "CLOSED_BY_EXHAUSTIVE_CHILD_AGGREGATION",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-4-third-01-fourth-012.json",
+        "sha256": "dc817f57209ab82b312ae0fb22ef69e0dfb7ee01e45d00508f6a141743881cf0"
+      },
+      "remaining_children": 0,
+      "terminal_children": 58
+    },
+    {
+      "child_count": 89,
+      "parent_id": "intersection-4-third-02-fourth-000",
+      "parent_status": "OPEN_CHILDREN_REMAIN",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-4-third-02-fourth-000.json",
+        "sha256": "e9be5f664cb581472a2da3f120186e91ae060c14b3657dfe4a41bdb7f2f50f0a"
+      },
+      "remaining_children": 28,
+      "terminal_children": 61
+    },
+    {
+      "child_count": 48,
+      "parent_id": "intersection-4-third-02-fourth-001",
+      "parent_status": "OPEN_CHILDREN_REMAIN",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-4-third-02-fourth-001.json",
+        "sha256": "e6ef1faee5a90707a5754f0521d76675bbccfbdd953a70fa721eddfa597c7306"
+      },
+      "remaining_children": 15,
+      "terminal_children": 33
+    },
+    {
+      "child_count": 86,
+      "parent_id": "intersection-4-third-02-fourth-002",
+      "parent_status": "OPEN_CHILDREN_REMAIN",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-4-third-02-fourth-002.json",
+        "sha256": "4857661a9291a77ca0da637b3fbec92f6b0d58eba19ad680dbd240a40156fc1f"
+      },
+      "remaining_children": 25,
+      "terminal_children": 61
+    },
+    {
+      "child_count": 84,
+      "parent_id": "intersection-4-third-02-fourth-003",
+      "parent_status": "OPEN_CHILDREN_REMAIN",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-4-third-02-fourth-003.json",
+        "sha256": "ceee41827701d2659004aa2154dcd06ebc1992d46dea45eecedba40640474628"
+      },
+      "remaining_children": 23,
+      "terminal_children": 61
+    },
+    {
+      "child_count": 97,
+      "parent_id": "intersection-4-third-02-fourth-004",
+      "parent_status": "OPEN_CHILDREN_REMAIN",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-4-third-02-fourth-004.json",
+        "sha256": "38c4e38f006c4d2c7bf899a17626409d9ee55fc0c3781635d456def4bfde6023"
+      },
+      "remaining_children": 26,
+      "terminal_children": 71
+    },
+    {
+      "child_count": 74,
+      "parent_id": "intersection-4-third-02-fourth-005",
+      "parent_status": "OPEN_CHILDREN_REMAIN",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-4-third-02-fourth-005.json",
+        "sha256": "27c2e19105038a4b311a161cbcbd59872e8ec9eb1a40b987068807fd17cf073e"
+      },
+      "remaining_children": 13,
+      "terminal_children": 61
+    },
+    {
+      "child_count": 133,
+      "parent_id": "intersection-4-third-02-fourth-006",
+      "parent_status": "OPEN_CHILDREN_REMAIN",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-4-third-02-fourth-006.json",
+        "sha256": "6a7c7f687b158933bf36898e4bc91058b2312baddc8756f6aa199a09ba435d5e"
+      },
+      "remaining_children": 23,
+      "terminal_children": 110
+    },
+    {
+      "child_count": 70,
+      "parent_id": "intersection-4-third-02-fourth-007",
+      "parent_status": "OPEN_CHILDREN_REMAIN",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-4-third-02-fourth-007.json",
+        "sha256": "f6dc24dd67de94aa1b17dd18b96c7dec5d82cb126add8f519ea88dfa3047b544"
+      },
+      "remaining_children": 11,
+      "terminal_children": 59
+    },
+    {
+      "child_count": 127,
+      "parent_id": "intersection-4-third-02-fourth-008",
+      "parent_status": "OPEN_CHILDREN_REMAIN",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-4-third-02-fourth-008.json",
+        "sha256": "eb565b63524dccd49b8599b5653a6bb7ad4befa7134dacd66f2386265989c88e"
+      },
+      "remaining_children": 20,
+      "terminal_children": 107
+    },
+    {
+      "child_count": 123,
+      "parent_id": "intersection-4-third-02-fourth-009",
+      "parent_status": "OPEN_CHILDREN_REMAIN",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-4-third-02-fourth-009.json",
+        "sha256": "f527f12bdda2a689939215b6e19bee37160b59292451abd9911cd2a6b2b1f069"
+      },
+      "remaining_children": 18,
+      "terminal_children": 105
+    },
+    {
+      "child_count": 143,
+      "parent_id": "intersection-4-third-02-fourth-010",
+      "parent_status": "OPEN_CHILDREN_REMAIN",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-4-third-02-fourth-010.json",
+        "sha256": "d312cb51605303fcac5f4b50744e54dd3df64e67e5e76c93c48bc1eff99bad9e"
+      },
+      "remaining_children": 20,
+      "terminal_children": 123
+    },
+    {
+      "child_count": 62,
+      "parent_id": "intersection-4-third-02-fourth-011",
+      "parent_status": "OPEN_CHILDREN_REMAIN",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-4-third-02-fourth-011.json",
+        "sha256": "5a539511616d545197ec27fb1d3341a0664c9cfc3b2a126fa4f4713fe6c68882"
+      },
+      "remaining_children": 7,
+      "terminal_children": 55
+    },
+    {
+      "child_count": 113,
+      "parent_id": "intersection-4-third-02-fourth-012",
+      "parent_status": "OPEN_CHILDREN_REMAIN",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-4-third-02-fourth-012.json",
+        "sha256": "8eb3f6466484917df4b6f168658878ccc8124d1e7d414e1071e3cd98341cc4f7"
+      },
+      "remaining_children": 13,
+      "terminal_children": 100
+    },
+    {
+      "child_count": 109,
+      "parent_id": "intersection-4-third-02-fourth-013",
+      "parent_status": "OPEN_CHILDREN_REMAIN",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-4-third-02-fourth-013.json",
+        "sha256": "b9febe9367d07cb6b16759039cd8fae0a846d5e1b887f4c696687fa7f3a40ab8"
+      },
+      "remaining_children": 11,
+      "terminal_children": 98
+    },
+    {
+      "child_count": 127,
+      "parent_id": "intersection-4-third-02-fourth-014",
+      "parent_status": "OPEN_CHILDREN_REMAIN",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-4-third-02-fourth-014.json",
+        "sha256": "924975d72f782048006f86cb57de6ad93db7a196655560cdc1f2277d83590d53"
+      },
+      "remaining_children": 12,
+      "terminal_children": 115
+    },
+    {
+      "child_count": 101,
+      "parent_id": "intersection-4-third-02-fourth-015",
+      "parent_status": "OPEN_CHILDREN_REMAIN",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-4-third-02-fourth-015.json",
+        "sha256": "ca9fd3c2c1a0b28848ed6344e6de1a046940f8e50050f243bcbf8b4acaa53fe2"
+      },
+      "remaining_children": 7,
+      "terminal_children": 94
+    },
+    {
+      "child_count": 117,
+      "parent_id": "intersection-4-third-02-fourth-016",
+      "parent_status": "OPEN_CHILDREN_REMAIN",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-4-third-02-fourth-016.json",
+        "sha256": "cc68e5a1e17726b2d791cdd8e1e457c4409d795075f7b4ab0e9ee76b5a6d65cb"
+      },
+      "remaining_children": 6,
+      "terminal_children": 111
+    },
+    {
+      "child_count": 111,
+      "parent_id": "intersection-4-third-02-fourth-017",
+      "parent_status": "OPEN_CHILDREN_REMAIN",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-4-third-02-fourth-017.json",
+        "sha256": "6aadd7b242d6a19712b8768d684411cc46521f9f6ee0955161b3fa0eabd97c23"
+      },
+      "remaining_children": 4,
+      "terminal_children": 107
+    },
+    {
+      "child_count": 89,
+      "parent_id": "intersection-4-third-02-fourth-018",
+      "parent_status": "OPEN_CHILDREN_REMAIN",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-4-third-02-fourth-018.json",
+        "sha256": "ce3222692ca4b00a9b3eee9b7ab1bcfd1ef426b22444514432c78371e59464cd"
+      },
+      "remaining_children": 1,
+      "terminal_children": 88
+    },
+    {
+      "child_count": 46,
+      "parent_id": "intersection-4-third-02-fourth-019",
+      "parent_status": "CLOSED_BY_EXHAUSTIVE_CHILD_AGGREGATION",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-4-third-02-fourth-019.json",
+        "sha256": "da5b17fd7517d6606d42ddb3286fb91cbc6f1d44df96c28a74ce7434478fda81"
+      },
+      "remaining_children": 0,
+      "terminal_children": 46
+    },
+    {
+      "child_count": 83,
+      "parent_id": "intersection-4-third-02-fourth-020",
+      "parent_status": "CLOSED_BY_EXHAUSTIVE_CHILD_AGGREGATION",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-4-third-02-fourth-020.json",
+        "sha256": "d198ca7c2e1a638962de55d2d452f40859d3dac220374df46918ab60c8b7ffd9"
+      },
+      "remaining_children": 0,
+      "terminal_children": 83
+    },
+    {
+      "child_count": 79,
+      "parent_id": "intersection-4-third-02-fourth-021",
+      "parent_status": "CLOSED_BY_EXHAUSTIVE_CHILD_AGGREGATION",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-4-third-02-fourth-021.json",
+        "sha256": "bb8d828c6992349c85e59c15ca3c663ef68901a1f6a6b7d624d836d424b67364"
+      },
+      "remaining_children": 0,
+      "terminal_children": 79
+    },
+    {
+      "child_count": 91,
+      "parent_id": "intersection-4-third-02-fourth-022",
+      "parent_status": "CLOSED_BY_EXHAUSTIVE_CHILD_AGGREGATION",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-4-third-02-fourth-022.json",
+        "sha256": "a23c0eae19b6a440d1ada8d4403f46214cf8a84a3391c421f19cd9e77bd04602"
+      },
+      "remaining_children": 0,
+      "terminal_children": 91
+    },
+    {
+      "child_count": 71,
+      "parent_id": "intersection-4-third-02-fourth-023",
+      "parent_status": "CLOSED_BY_EXHAUSTIVE_CHILD_AGGREGATION",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-4-third-02-fourth-023.json",
+        "sha256": "d2889e03ab8e6f842c3f9d73fd36c11f917f96a873788cea32ec97d6f228c42d"
+      },
+      "remaining_children": 0,
+      "terminal_children": 71
+    },
+    {
+      "child_count": 81,
+      "parent_id": "intersection-4-third-02-fourth-024",
+      "parent_status": "CLOSED_BY_EXHAUSTIVE_CHILD_AGGREGATION",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-4-third-02-fourth-024.json",
+        "sha256": "52bf3598e1799e61558273bfffc048d6d948a8b5140fb39acb228204ba96e1e9"
+      },
+      "remaining_children": 0,
+      "terminal_children": 81
+    },
+    {
+      "child_count": 83,
+      "parent_id": "intersection-4-third-03-fourth-000",
+      "parent_status": "OPEN_CHILDREN_REMAIN",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-4-third-03-fourth-000.json",
+        "sha256": "34e5b743e57d5cd4b50233b5351a7cf1e9530adab50fc4b7d6c234d99a37f224"
+      },
+      "remaining_children": 20,
+      "terminal_children": 63
+    },
+    {
+      "child_count": 81,
+      "parent_id": "intersection-4-third-03-fourth-001",
+      "parent_status": "OPEN_CHILDREN_REMAIN",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-4-third-03-fourth-001.json",
+        "sha256": "8f63fadfba5f1a933ddd57cef2cbb5a5e6e9e42a3c67088821fec70785577a32"
+      },
+      "remaining_children": 20,
+      "terminal_children": 61
+    },
+    {
+      "child_count": 94,
+      "parent_id": "intersection-4-third-03-fourth-002",
+      "parent_status": "OPEN_CHILDREN_REMAIN",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-4-third-03-fourth-002.json",
+        "sha256": "46e993eae46c17c663128198ed44b16cddbd1131749cb259a07533a80ab0aae6"
+      },
+      "remaining_children": 23,
+      "terminal_children": 71
+    },
+    {
+      "child_count": 70,
+      "parent_id": "intersection-4-third-03-fourth-003",
+      "parent_status": "OPEN_CHILDREN_REMAIN",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-4-third-03-fourth-003.json",
+        "sha256": "5c74ea96eb3d846ec957695fb012613c4d6831b4857e601bca7b133d2bfef7d9"
+      },
+      "remaining_children": 11,
+      "terminal_children": 59
+    },
+    {
+      "child_count": 127,
+      "parent_id": "intersection-4-third-03-fourth-004",
+      "parent_status": "OPEN_CHILDREN_REMAIN",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-4-third-03-fourth-004.json",
+        "sha256": "5603208d451ca5a8aca0d0e3584400b05d3b2b1522ee130e145b7eb24469adf3"
+      },
+      "remaining_children": 20,
+      "terminal_children": 107
+    },
+    {
+      "child_count": 123,
+      "parent_id": "intersection-4-third-03-fourth-005",
+      "parent_status": "OPEN_CHILDREN_REMAIN",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-4-third-03-fourth-005.json",
+        "sha256": "4ea691b9f1b1ed4ff4c7bc185bd5e1674fd583f1b2d1b1bbc49f47a90e19c7b9"
+      },
+      "remaining_children": 18,
+      "terminal_children": 105
+    },
+    {
+      "child_count": 143,
+      "parent_id": "intersection-4-third-03-fourth-006",
+      "parent_status": "OPEN_CHILDREN_REMAIN",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-4-third-03-fourth-006.json",
+        "sha256": "9f7bbd1df97f7ca765a4840635ce14f5caa324fde16786bd039acde80729e8e2"
+      },
+      "remaining_children": 20,
+      "terminal_children": 123
+    },
+    {
+      "child_count": 62,
+      "parent_id": "intersection-4-third-03-fourth-007",
+      "parent_status": "OPEN_CHILDREN_REMAIN",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-4-third-03-fourth-007.json",
+        "sha256": "b1f249c1c30758dfaf49c6c86319ccfa61fc6b71d0f610d7d61f28e0d85fff19"
+      },
+      "remaining_children": 7,
+      "terminal_children": 55
+    },
+    {
+      "child_count": 113,
+      "parent_id": "intersection-4-third-03-fourth-008",
+      "parent_status": "OPEN_CHILDREN_REMAIN",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-4-third-03-fourth-008.json",
+        "sha256": "d6d68b5658692444746c156d3b16a5be3ff17c3b6003d90f65eabba07390f6ad"
+      },
+      "remaining_children": 13,
+      "terminal_children": 100
+    },
+    {
+      "child_count": 109,
+      "parent_id": "intersection-4-third-03-fourth-009",
+      "parent_status": "OPEN_CHILDREN_REMAIN",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-4-third-03-fourth-009.json",
+        "sha256": "feced73f2e981c886ee81d3d8884d0e628dc5ebbe19613c16a48fb426f0a9f02"
+      },
+      "remaining_children": 11,
+      "terminal_children": 98
+    },
+    {
+      "child_count": 127,
+      "parent_id": "intersection-4-third-03-fourth-010",
+      "parent_status": "OPEN_CHILDREN_REMAIN",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-4-third-03-fourth-010.json",
+        "sha256": "18bd9a4bd217a3894258a88ad37d8d76e10ec455e0380821eca0a1a97b939ad7"
+      },
+      "remaining_children": 12,
+      "terminal_children": 115
+    },
+    {
+      "child_count": 101,
+      "parent_id": "intersection-4-third-03-fourth-011",
+      "parent_status": "OPEN_CHILDREN_REMAIN",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-4-third-03-fourth-011.json",
+        "sha256": "67f8b3236ed259879c037d9f775a99480d54a8105c80e3c27d502b03bd9ea8e8"
+      },
+      "remaining_children": 7,
+      "terminal_children": 94
+    },
+    {
+      "child_count": 117,
+      "parent_id": "intersection-4-third-03-fourth-012",
+      "parent_status": "OPEN_CHILDREN_REMAIN",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-4-third-03-fourth-012.json",
+        "sha256": "9b1f9b42f9df9218553452f3b7c6d370dfc768648e3b3ba4a500c2449cb886c8"
+      },
+      "remaining_children": 7,
+      "terminal_children": 110
+    },
+    {
+      "child_count": 111,
+      "parent_id": "intersection-4-third-03-fourth-013",
+      "parent_status": "OPEN_CHILDREN_REMAIN",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-4-third-03-fourth-013.json",
+        "sha256": "fdaea19ec7f0d2773abaef7fca63568ac1929fd8982f9e620cef9806d05c7c1c"
+      },
+      "remaining_children": 4,
+      "terminal_children": 107
+    },
+    {
+      "child_count": 89,
+      "parent_id": "intersection-4-third-03-fourth-014",
+      "parent_status": "OPEN_CHILDREN_REMAIN",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-4-third-03-fourth-014.json",
+        "sha256": "cee73df6e61c89dbad2b66dded6c84bf5f569097af6009a9b00b4c2c102f1af9"
+      },
+      "remaining_children": 1,
+      "terminal_children": 88
+    },
+    {
+      "child_count": 46,
+      "parent_id": "intersection-4-third-03-fourth-015",
+      "parent_status": "CLOSED_BY_EXHAUSTIVE_CHILD_AGGREGATION",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-4-third-03-fourth-015.json",
+        "sha256": "a14f4a37e7be0c12ae6e9cc97c4803d8b84a85b72ec3399d7879c602cfbbfd9c"
+      },
+      "remaining_children": 0,
+      "terminal_children": 46
+    },
+    {
+      "child_count": 83,
+      "parent_id": "intersection-4-third-03-fourth-016",
+      "parent_status": "CLOSED_BY_EXHAUSTIVE_CHILD_AGGREGATION",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-4-third-03-fourth-016.json",
+        "sha256": "4a10392ce86dc3f7fa7f2bc85b2a003c88e4494be039a2eec17578d6125cb4ed"
+      },
+      "remaining_children": 0,
+      "terminal_children": 83
+    },
+    {
+      "child_count": 79,
+      "parent_id": "intersection-4-third-03-fourth-017",
+      "parent_status": "CLOSED_BY_EXHAUSTIVE_CHILD_AGGREGATION",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-4-third-03-fourth-017.json",
+        "sha256": "3d010ac2b6e3dde940b27ae97856e9e102fe027443af32719bb6b7ed3eca3c2b"
+      },
+      "remaining_children": 0,
+      "terminal_children": 79
+    },
+    {
+      "child_count": 91,
+      "parent_id": "intersection-4-third-03-fourth-018",
+      "parent_status": "CLOSED_BY_EXHAUSTIVE_CHILD_AGGREGATION",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-4-third-03-fourth-018.json",
+        "sha256": "a7e60abf8b22bee78879f603e68f6d454492c392d0981cfce4da0ac78ed4abdc"
+      },
+      "remaining_children": 0,
+      "terminal_children": 91
+    },
+    {
+      "child_count": 71,
+      "parent_id": "intersection-4-third-03-fourth-019",
+      "parent_status": "CLOSED_BY_EXHAUSTIVE_CHILD_AGGREGATION",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-4-third-03-fourth-019.json",
+        "sha256": "d8c27f0cdd53a77ded7d93c175d273ad29788820711aa443b45abf7f9c5f1554"
+      },
+      "remaining_children": 0,
+      "terminal_children": 71
+    },
+    {
+      "child_count": 81,
+      "parent_id": "intersection-4-third-03-fourth-020",
+      "parent_status": "CLOSED_BY_EXHAUSTIVE_CHILD_AGGREGATION",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-4-third-03-fourth-020.json",
+        "sha256": "9862eae3fc278af88de21ccfe039415073c80633a50314cacf6894b9cbefb103"
+      },
+      "remaining_children": 0,
+      "terminal_children": 81
+    },
+    {
+      "child_count": 75,
+      "parent_id": "intersection-4-third-03-fourth-021",
+      "parent_status": "CLOSED_BY_EXHAUSTIVE_CHILD_AGGREGATION",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-4-third-03-fourth-021.json",
+        "sha256": "92512001594ac4e27824c7e2eab6e1a54f3f9810646e04abdcb3fd6a6575e340"
+      },
+      "remaining_children": 0,
+      "terminal_children": 75
+    },
+    {
+      "child_count": 59,
+      "parent_id": "intersection-4-third-03-fourth-022",
+      "parent_status": "CLOSED_BY_EXHAUSTIVE_CHILD_AGGREGATION",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-4-third-03-fourth-022.json",
+        "sha256": "e31173c232d0eba0bbdd547bc1d59fcb1bc41662e65394b881f0686c1ce0bfcb"
+      },
+      "remaining_children": 0,
+      "terminal_children": 59
+    },
+    {
+      "child_count": 128,
+      "parent_id": "intersection-4-third-04-fourth-000",
+      "parent_status": "OPEN_CHILDREN_REMAIN",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-4-third-04-fourth-000.json",
+        "sha256": "98d93777dcf16984a62be335582538c113b91154a1c274b6c2c78dfd6bcfb9e1"
+      },
+      "remaining_children": 32,
+      "terminal_children": 96
+    },
+    {
+      "child_count": 90,
+      "parent_id": "intersection-4-third-04-fourth-001",
+      "parent_status": "OPEN_CHILDREN_REMAIN",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-4-third-04-fourth-001.json",
+        "sha256": "7f91db2e4751cd78338b9a9779812c3a79f8050ba560257517ddda2555c130db"
+      },
+      "remaining_children": 22,
+      "terminal_children": 68
+    },
+    {
+      "child_count": 90,
+      "parent_id": "intersection-4-third-04-fourth-002",
+      "parent_status": "OPEN_CHILDREN_REMAIN",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-4-third-04-fourth-002.json",
+        "sha256": "9c6a40ec8dbef08014d524ddcbfdb92fdc8fa53ac2fa42ba96a6106eddd8510c"
+      },
+      "remaining_children": 13,
+      "terminal_children": 77
+    },
+    {
+      "child_count": 202,
+      "parent_id": "intersection-4-third-04-fourth-003",
+      "parent_status": "OPEN_CHILDREN_REMAIN",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-4-third-04-fourth-003.json",
+        "sha256": "1d152a6afaa7aa0815107762da6878e5828858523de410a3a9fb2e721832f7f6"
+      },
+      "remaining_children": 30,
+      "terminal_children": 172
+    },
+    {
+      "child_count": 141,
+      "parent_id": "intersection-4-third-04-fourth-004",
+      "parent_status": "OPEN_CHILDREN_REMAIN",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-4-third-04-fourth-004.json",
+        "sha256": "c0e469f58b796143be7647fa2823fb44daad129a753ead4d682f0ff02519e42d"
+      },
+      "remaining_children": 19,
+      "terminal_children": 122
+    },
+    {
+      "child_count": 115,
+      "parent_id": "intersection-4-third-04-fourth-005",
+      "parent_status": "OPEN_CHILDREN_REMAIN",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-4-third-04-fourth-005.json",
+        "sha256": "5b62e55707565322ef8a38291921fb9b45d09b3a793f9a061a1eb2e254a8ab4a"
+      },
+      "remaining_children": 14,
+      "terminal_children": 101
+    },
+    {
+      "child_count": 135,
+      "parent_id": "intersection-4-third-04-fourth-006",
+      "parent_status": "OPEN_CHILDREN_REMAIN",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-4-third-04-fourth-006.json",
+        "sha256": "5332e1a7d167134ce7690f1599f94b0ee41c78010b0448eb149a5b6e9ab4b082"
+      },
+      "remaining_children": 16,
+      "terminal_children": 119
+    },
+    {
+      "child_count": 80,
+      "parent_id": "intersection-4-third-04-fourth-007",
+      "parent_status": "OPEN_CHILDREN_REMAIN",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-4-third-04-fourth-007.json",
+        "sha256": "098cad541f71f7a820c96ca08720beba774f3d2f71f1a5be12dca480944ad619"
+      },
+      "remaining_children": 8,
+      "terminal_children": 72
+    },
+    {
+      "child_count": 180,
+      "parent_id": "intersection-4-third-04-fourth-008",
+      "parent_status": "OPEN_CHILDREN_REMAIN",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-4-third-04-fourth-008.json",
+        "sha256": "759d093d01b25351510cf9a672ab069eb8cfc8813e1c1e735d7b846f35201a40"
+      },
+      "remaining_children": 19,
+      "terminal_children": 161
+    },
+    {
+      "child_count": 125,
+      "parent_id": "intersection-4-third-04-fourth-009",
+      "parent_status": "OPEN_CHILDREN_REMAIN",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-4-third-04-fourth-009.json",
+        "sha256": "8d6f6690e6b480d826ddf662770a742f06d15dee79cd5ea307f365221e131887"
+      },
+      "remaining_children": 11,
+      "terminal_children": 114
+    },
+    {
+      "child_count": 74,
+      "parent_id": "intersection-4-third-04-fourth-010",
+      "parent_status": "OPEN_CHILDREN_REMAIN",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-4-third-04-fourth-010.json",
+        "sha256": "3f1c6d1f6f48d2455d09f80079df9e856a211553cc865961ded79d6dd08be146"
+      },
+      "remaining_children": 5,
+      "terminal_children": 69
+    },
+    {
+      "child_count": 166,
+      "parent_id": "intersection-4-third-04-fourth-011",
+      "parent_status": "OPEN_CHILDREN_REMAIN",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-4-third-04-fourth-011.json",
+        "sha256": "91b408766a8ceb52a406cc8f6ca8df0ca7675acf775af9009ef4d0b8a88b72dd"
+      },
+      "remaining_children": 12,
+      "terminal_children": 154
+    },
+    {
+      "child_count": 115,
+      "parent_id": "intersection-4-third-04-fourth-012",
+      "parent_status": "OPEN_CHILDREN_REMAIN",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-4-third-04-fourth-012.json",
+        "sha256": "1c515fb18e614bbd8542faab9576e83658384ee402e86152b62020ed34b7c256"
+      },
+      "remaining_children": 6,
+      "terminal_children": 109
+    },
+    {
+      "child_count": 111,
+      "parent_id": "intersection-4-third-04-fourth-013",
+      "parent_status": "OPEN_CHILDREN_REMAIN",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-4-third-04-fourth-013.json",
+        "sha256": "d65208ad5f5a12d0a9ddfc15a54e90c8dd7d8808faf13ad6c3357c204e178484"
+      },
+      "remaining_children": 4,
+      "terminal_children": 107
+    },
+    {
+      "child_count": 64,
+      "parent_id": "intersection-4-third-04-fourth-015",
+      "parent_status": "OPEN_CHILDREN_REMAIN",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-4-third-04-fourth-015.json",
+        "sha256": "1357b94b3ca40e130c40420c01deeed6e98038495301f53d711a762f6933f36b"
+      },
+      "remaining_children": 1,
+      "terminal_children": 63
+    },
+    {
+      "child_count": 85,
+      "parent_id": "intersection-4-third-04-fourth-016",
+      "parent_status": "CLOSED_BY_EXHAUSTIVE_CHILD_AGGREGATION",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-4-third-04-fourth-016.json",
+        "sha256": "dfc04f43842794798e6b7f74a67f98c580682d86d55dc5fff308ae469a2c5437"
+      },
+      "remaining_children": 0,
+      "terminal_children": 85
+    },
+    {
+      "child_count": 99,
+      "parent_id": "intersection-4-third-04-fourth-017",
+      "parent_status": "CLOSED_BY_EXHAUSTIVE_CHILD_AGGREGATION",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-4-third-04-fourth-017.json",
+        "sha256": "214b6521ea6b30a6feb439fee5fd3ab07a795d3944461424a15ff294ab18c327"
+      },
+      "remaining_children": 0,
+      "terminal_children": 99
+    },
+    {
+      "child_count": 58,
+      "parent_id": "intersection-4-third-04-fourth-018",
+      "parent_status": "CLOSED_BY_EXHAUSTIVE_CHILD_AGGREGATION",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-4-third-04-fourth-018.json",
+        "sha256": "ab1bb89ee4d9955f5080dc5ce987a7f0764b5db9274017046a106cb09ad01a96"
+      },
+      "remaining_children": 0,
+      "terminal_children": 58
+    },
+    {
+      "child_count": 130,
+      "parent_id": "intersection-4-third-04-fourth-019",
+      "parent_status": "CLOSED_BY_EXHAUSTIVE_CHILD_AGGREGATION",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-4-third-04-fourth-019.json",
+        "sha256": "1a625eafa5bbfb797a8298c36d37f428b74a2db30c9d951ef8d14fe57332e195"
+      },
+      "remaining_children": 0,
+      "terminal_children": 130
+    },
+    {
+      "child_count": 89,
+      "parent_id": "intersection-4-third-04-fourth-020",
+      "parent_status": "CLOSED_BY_EXHAUSTIVE_CHILD_AGGREGATION",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-4-third-04-fourth-020.json",
+        "sha256": "a38933d336aa9269b203ec53c03b4a1720c85cbe4693f878776f5e5288122bb8"
+      },
+      "remaining_children": 0,
+      "terminal_children": 89
+    },
+    {
+      "child_count": 52,
+      "parent_id": "intersection-4-third-04-fourth-021",
+      "parent_status": "CLOSED_BY_EXHAUSTIVE_CHILD_AGGREGATION",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-4-third-04-fourth-021.json",
+        "sha256": "9aaeda768f4bdb6edc1bc5f52bb5940706ddc373d01c1bfe121b796451829750"
+      },
+      "remaining_children": 0,
+      "terminal_children": 52
+    },
+    {
+      "child_count": 116,
+      "parent_id": "intersection-4-third-04-fourth-022",
+      "parent_status": "CLOSED_BY_EXHAUSTIVE_CHILD_AGGREGATION",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-4-third-04-fourth-022.json",
+        "sha256": "f1faf9f05bedcc60c62378661f1645e2b686011ca356b5dbce5609a9f3c8fa6e"
+      },
+      "remaining_children": 0,
+      "terminal_children": 116
+    },
+    {
+      "child_count": 79,
+      "parent_id": "intersection-4-third-04-fourth-023",
+      "parent_status": "CLOSED_BY_EXHAUSTIVE_CHILD_AGGREGATION",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-4-third-04-fourth-023.json",
+        "sha256": "88772fb6c7629def3332c08d460c6f4e0610ee77c3592715f3d2f66fbdc480e1"
+      },
+      "remaining_children": 0,
+      "terminal_children": 79
+    },
+    {
+      "child_count": 75,
+      "parent_id": "intersection-4-third-04-fourth-024",
+      "parent_status": "CLOSED_BY_EXHAUSTIVE_CHILD_AGGREGATION",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-4-third-04-fourth-024.json",
+        "sha256": "8af9bae7db60f663cd43b80b96a07aaef38398dc43b277e78cfb4fdb76df5e36"
+      },
+      "remaining_children": 0,
+      "terminal_children": 75
+    },
+    {
+      "child_count": 100,
+      "parent_id": "intersection-4-third-04-fourth-025",
+      "parent_status": "CLOSED_BY_EXHAUSTIVE_CHILD_AGGREGATION",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-4-third-04-fourth-025.json",
+        "sha256": "880cd623d64dcc246b9239566e8f252c295c52fe5737bc0c35f9bf971c9194d6"
+      },
+      "remaining_children": 0,
+      "terminal_children": 100
+    },
+    {
+      "child_count": 42,
+      "parent_id": "intersection-4-third-04-fourth-026",
+      "parent_status": "CLOSED_BY_EXHAUSTIVE_CHILD_AGGREGATION",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-4-third-04-fourth-026.json",
+        "sha256": "ecb4956d7f8829f756e28d8494831c01a89c965f1ad05a2d67832f10819bce34"
+      },
+      "remaining_children": 0,
+      "terminal_children": 42
+    },
+    {
+      "child_count": 40,
+      "parent_id": "intersection-4-third-04-fourth-027",
+      "parent_status": "CLOSED_BY_EXHAUSTIVE_CHILD_AGGREGATION",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-4-third-04-fourth-027.json",
+        "sha256": "f84d5a1ad035ed27fe74b45c0c9e812218e5c5b6d2bc154cf966b20c787a1db5"
+      },
+      "remaining_children": 0,
+      "terminal_children": 40
+    },
+    {
+      "child_count": 84,
+      "parent_id": "intersection-4-third-05-fourth-000",
+      "parent_status": "OPEN_CHILDREN_REMAIN",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-4-third-05-fourth-000.json",
+        "sha256": "5d9b6171c575d8971537e89a3fa60b6702f6c10f513e177138f785468f853970"
+      },
+      "remaining_children": 13,
+      "terminal_children": 71
+    },
+    {
+      "child_count": 82,
+      "parent_id": "intersection-4-third-05-fourth-001",
+      "parent_status": "OPEN_CHILDREN_REMAIN",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-4-third-05-fourth-001.json",
+        "sha256": "0e69c24122741ebac4496a9971800fa63e260040649a3fc7500e4bc0d9846b3a"
+      },
+      "remaining_children": 11,
+      "terminal_children": 71
+    },
+    {
+      "child_count": 96,
+      "parent_id": "intersection-4-third-05-fourth-002",
+      "parent_status": "OPEN_CHILDREN_REMAIN",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-4-third-05-fourth-002.json",
+        "sha256": "7e9dc2dde628288eb5f0b47965b9796ee590b418bf25c036e3b065e21c8857e9"
+      },
+      "remaining_children": 12,
+      "terminal_children": 84
+    },
+    {
+      "child_count": 78,
+      "parent_id": "intersection-4-third-05-fourth-003",
+      "parent_status": "OPEN_CHILDREN_REMAIN",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-4-third-05-fourth-003.json",
+        "sha256": "fc6d8d84c734c9ba3f86220224853090841da0e21c6a5821703e972ab8f48abe"
+      },
+      "remaining_children": 7,
+      "terminal_children": 71
+    },
+    {
+      "child_count": 91,
+      "parent_id": "intersection-4-third-05-fourth-004",
+      "parent_status": "OPEN_CHILDREN_REMAIN",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-4-third-05-fourth-004.json",
+        "sha256": "c49d20e90ed47afed4b7e0aa131f8085de32bdb9a0f25bdac020f5a2abed4cad"
+      },
+      "remaining_children": 7,
+      "terminal_children": 84
+    },
+    {
+      "child_count": 88,
+      "parent_id": "intersection-4-third-05-fourth-005",
+      "parent_status": "OPEN_CHILDREN_REMAIN",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-4-third-05-fourth-005.json",
+        "sha256": "9129714207cfc27f817333eb9d32673d00669bcdded4d80fac08a12e1255e7ed"
+      },
+      "remaining_children": 4,
+      "terminal_children": 84
+    },
+    {
+      "child_count": 72,
+      "parent_id": "intersection-4-third-05-fourth-006",
+      "parent_status": "OPEN_CHILDREN_REMAIN",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-4-third-05-fourth-006.json",
+        "sha256": "e2714e2e10a25b544fa5c518faa8ac577814ac970e6bde332c8edd60277dea0f"
+      },
+      "remaining_children": 1,
+      "terminal_children": 71
+    },
+    {
+      "child_count": 78,
+      "parent_id": "intersection-4-third-05-fourth-007",
+      "parent_status": "CLOSED_BY_EXHAUSTIVE_CHILD_AGGREGATION",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-4-third-05-fourth-007.json",
+        "sha256": "8f39a06059e0a4f3daabb6e095bd49a6052f6c7de31e4b0a8460bfa8fa0dd31a"
+      },
+      "remaining_children": 0,
+      "terminal_children": 78
+    },
+    {
+      "child_count": 141,
+      "parent_id": "intersection-4-third-05-fourth-008",
+      "parent_status": "CLOSED_BY_EXHAUSTIVE_CHILD_AGGREGATION",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-4-third-05-fourth-008.json",
+        "sha256": "f0f723ece241ea138ef97d94fdbf99a096b112e2470a2b0b07df61cf2dff68aa"
+      },
+      "remaining_children": 0,
+      "terminal_children": 141
+    },
+    {
+      "child_count": 133,
+      "parent_id": "intersection-4-third-05-fourth-009",
+      "parent_status": "CLOSED_BY_EXHAUSTIVE_CHILD_AGGREGATION",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-4-third-05-fourth-009.json",
+        "sha256": "ca55643d1aab3a025cec9019efd95cdfbf7027f119ef1299b56b507137d891a6"
+      },
+      "remaining_children": 0,
+      "terminal_children": 133
+    },
+    {
+      "child_count": 153,
+      "parent_id": "intersection-4-third-05-fourth-010",
+      "parent_status": "CLOSED_BY_EXHAUSTIVE_CHILD_AGGREGATION",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-4-third-05-fourth-010.json",
+        "sha256": "8dad54ed39c103e3408c1685fdcf21f1bf64b88db3a73e313bd0521f62d49f99"
+      },
+      "remaining_children": 0,
+      "terminal_children": 153
+    },
+    {
+      "child_count": 133,
+      "parent_id": "intersection-4-third-05-fourth-012",
+      "parent_status": "CLOSED_BY_EXHAUSTIVE_CHILD_AGGREGATION",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-4-third-05-fourth-012.json",
+        "sha256": "357812a79fc77a4d2532fec861d708d56dd34983f2eae4c3b0cc17c2f0b6854d"
+      },
+      "remaining_children": 0,
+      "terminal_children": 133
+    },
+    {
+      "child_count": 121,
+      "parent_id": "intersection-4-third-05-fourth-013",
+      "parent_status": "CLOSED_BY_EXHAUSTIVE_CHILD_AGGREGATION",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-4-third-05-fourth-013.json",
+        "sha256": "7e870f8871cebbe8e9f7c9160b5380b0066c487105d8aff95826dd7f2d2b67d3"
+      },
+      "remaining_children": 0,
+      "terminal_children": 121
+    },
+    {
+      "child_count": 93,
+      "parent_id": "intersection-4-third-05-fourth-014",
+      "parent_status": "CLOSED_BY_EXHAUSTIVE_CHILD_AGGREGATION",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-4-third-05-fourth-014.json",
+        "sha256": "41eb87c179608a2c2d59b56b14943dc9919c791abf7bb1f72f6573b0749d4edd"
+      },
+      "remaining_children": 0,
+      "terminal_children": 93
+    },
+    {
+      "child_count": 70,
+      "parent_id": "intersection-4-third-05-fourth-015",
+      "parent_status": "CLOSED_BY_EXHAUSTIVE_CHILD_AGGREGATION",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-4-third-05-fourth-015.json",
+        "sha256": "e38d309bfe3ffd96fd810a4cb36335b16675434ca96ba2f00938310787c83ddd"
+      },
+      "remaining_children": 0,
+      "terminal_children": 70
+    },
+    {
+      "child_count": 79,
+      "parent_id": "intersection-4-third-05-fourth-016",
+      "parent_status": "CLOSED_BY_EXHAUSTIVE_CHILD_AGGREGATION",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-4-third-05-fourth-016.json",
+        "sha256": "1f66cee24680a28a257f0648f4954fd77eeb09cbcbafda06ac3bffd56399a7ee"
+      },
+      "remaining_children": 0,
+      "terminal_children": 79
+    },
+    {
+      "child_count": 73,
+      "parent_id": "intersection-4-third-05-fourth-017",
+      "parent_status": "CLOSED_BY_EXHAUSTIVE_CHILD_AGGREGATION",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-4-third-05-fourth-017.json",
+        "sha256": "fa10b1ab8ba5278d737642f6b3266836c868d9459c96c1df322981c3aec1c62c"
+      },
+      "remaining_children": 0,
+      "terminal_children": 73
+    },
+    {
+      "child_count": 58,
+      "parent_id": "intersection-4-third-05-fourth-018",
+      "parent_status": "CLOSED_BY_EXHAUSTIVE_CHILD_AGGREGATION",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-4-third-05-fourth-018.json",
+        "sha256": "8bdf9224e88b6ba594c514e0ae9d8ccf827186a648ebf5c8f4fb03df752b9b1f"
+      },
+      "remaining_children": 0,
+      "terminal_children": 58
+    },
+    {
+      "child_count": 63,
+      "parent_id": "intersection-4-third-05-fourth-019",
+      "parent_status": "CLOSED_BY_EXHAUSTIVE_CHILD_AGGREGATION",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-4-third-05-fourth-019.json",
+        "sha256": "91517c410350aa8f089c113b4f8c0fe9a2111a0752721252fd089525814f9cdd"
+      },
+      "remaining_children": 0,
+      "terminal_children": 63
+    },
+    {
+      "child_count": 50,
+      "parent_id": "intersection-4-third-05-fourth-020",
+      "parent_status": "CLOSED_BY_EXHAUSTIVE_CHILD_AGGREGATION",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-4-third-05-fourth-020.json",
+        "sha256": "99206615edd7e0a30e1a000fa5008650f583f6a064efb8d651e7fb56f51ab4c0"
+      },
+      "remaining_children": 0,
+      "terminal_children": 50
+    },
+    {
+      "child_count": 46,
+      "parent_id": "intersection-4-third-05-fourth-021",
+      "parent_status": "CLOSED_BY_EXHAUSTIVE_CHILD_AGGREGATION",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-4-third-05-fourth-021.json",
+        "sha256": "dc4e8de6482693e0680c7f00beef0f0b56424909d59fa01b68661bb8101547d9"
+      },
+      "remaining_children": 0,
+      "terminal_children": 46
+    },
+    {
+      "child_count": 24,
+      "parent_id": "intersection-4-third-05-fourth-022",
+      "parent_status": "CLOSED_BY_EXHAUSTIVE_CHILD_AGGREGATION",
+      "receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/fourth-parent-aggregation-v2/parents/intersection-4-third-05-fourth-022.json",
+        "sha256": "cb6463e653f702ee597fc243dca7cfbfe78bbc6c02cfbde23635540f8b224f3c"
+      },
+      "remaining_children": 0,
+      "terminal_children": 24
+    }
+  ],
+  "schema_version": 1,
+  "status": "BUILT_PENDING_INDEPENDENT_AUDIT",
+  "terminal_status_counts": {
+    "AUDITED_SEMANTIC_COVERAGE_CONTRADICTION": 8476,
+    "OPEN_FIXED_CAP_TIMEOUT": 82,
+    "OPEN_NEVER_MEASURED": 2150,
+    "REPLAY_CERTIFIED_UNSAT": 32611
+  }
+}

@@ -1,0 +1,513 @@
+{
+  "claim_limit": "Bounded structural discriminator only; no generic sixth sweep or parent closure.",
+  "decision_gate": "Support requires at least 18/24 replay-verified latter-position UNSAT closures and strictly more timeouts in the 24 early children than in the 24 latter children. Otherwise reject orbit-rank propagation as the primary hard-tail explanation.",
+  "fixed_protocol": {
+    "external_replay": "drat-trim",
+    "parallelism": 4,
+    "proof": "DRAT",
+    "seconds_cap": 5,
+    "solver": "CaDiCaL"
+  },
+  "hypothesis": {
+    "alternative": "Hardness is intrinsic to particular fixed-block incidence types and will persist across sixth-orbit rank rather than move to the earliest sixth prefix.",
+    "decisive_prediction": "After complete sixth-block splitting, at least 75% of children in the latter half of each selected sixth partition should solve at the unchanged five-second proof cap, and timeouts should remain concentrated in the first quarter. Failure of either condition rejects this explanation.",
+    "statement": "The fifth-level hard tail is mainly caused by insufficient accumulated first-present negative units: orbit-zero/orbit-one and the first suffix boundary retain broad residual choices, while later ranks collapse under propagation."
+  },
+  "partition_audit": {
+    "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-sixth-discriminator-final/independent-audit.json",
+    "sha256": "b5075d60d6d25711c729196c4ee2284bce684830d2c0ad2d92af33e3fa6918e5"
+  },
+  "partition_manifest": {
+    "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-sixth-discriminator-final/manifest.json",
+    "sha256": "0d9ed6a813c2b9c06673e4e34b0075e7cb200fa1719f1bf3fc7c6a2966e00964"
+  },
+  "sample": [
+    {
+      "fifth_case_id": "intersection-3-third-03-fourth-017-fifth-000",
+      "leaf_id": "intersection-3-third-03-fourth-017-fifth-000-sixth-000",
+      "sixth_branch_count": 246,
+      "sixth_index": 0,
+      "sixth_position": "early_orbit_zero",
+      "stabilizer_order": 2,
+      "stabilizer_tier": "low",
+      "top_parent": "intersection-3"
+    },
+    {
+      "fifth_case_id": "intersection-3-third-03-fourth-017-fifth-000",
+      "leaf_id": "intersection-3-third-03-fourth-017-fifth-000-sixth-184",
+      "sixth_branch_count": 246,
+      "sixth_index": 184,
+      "sixth_position": "latter_three_quarter",
+      "stabilizer_order": 2,
+      "stabilizer_tier": "low",
+      "top_parent": "intersection-3"
+    },
+    {
+      "fifth_case_id": "intersection-3-third-01-fourth-000-fifth-023",
+      "leaf_id": "intersection-3-third-01-fourth-000-fifth-023-sixth-000",
+      "sixth_branch_count": 156,
+      "sixth_index": 0,
+      "sixth_position": "early_orbit_zero",
+      "stabilizer_order": 4,
+      "stabilizer_tier": "low",
+      "top_parent": "intersection-3"
+    },
+    {
+      "fifth_case_id": "intersection-3-third-01-fourth-000-fifth-023",
+      "leaf_id": "intersection-3-third-01-fourth-000-fifth-023-sixth-117",
+      "sixth_branch_count": 156,
+      "sixth_index": 117,
+      "sixth_position": "latter_three_quarter",
+      "stabilizer_order": 4,
+      "stabilizer_tier": "low",
+      "top_parent": "intersection-3"
+    },
+    {
+      "fifth_case_id": "intersection-3-third-06-fourth-001-fifth-001",
+      "leaf_id": "intersection-3-third-06-fourth-001-fifth-001-sixth-000",
+      "sixth_branch_count": 165,
+      "sixth_index": 0,
+      "sixth_position": "early_orbit_zero",
+      "stabilizer_order": 4,
+      "stabilizer_tier": "low",
+      "top_parent": "intersection-3"
+    },
+    {
+      "fifth_case_id": "intersection-3-third-06-fourth-001-fifth-001",
+      "leaf_id": "intersection-3-third-06-fourth-001-fifth-001-sixth-123",
+      "sixth_branch_count": 165,
+      "sixth_index": 123,
+      "sixth_position": "latter_three_quarter",
+      "stabilizer_order": 4,
+      "stabilizer_tier": "low",
+      "top_parent": "intersection-3"
+    },
+    {
+      "fifth_case_id": "intersection-3-third-03-fourth-017-fifth-001",
+      "leaf_id": "intersection-3-third-03-fourth-017-fifth-001-sixth-000",
+      "sixth_branch_count": 175,
+      "sixth_index": 0,
+      "sixth_position": "early_orbit_zero",
+      "stabilizer_order": 4,
+      "stabilizer_tier": "low",
+      "top_parent": "intersection-3"
+    },
+    {
+      "fifth_case_id": "intersection-3-third-03-fourth-017-fifth-001",
+      "leaf_id": "intersection-3-third-03-fourth-017-fifth-001-sixth-131",
+      "sixth_branch_count": 175,
+      "sixth_index": 131,
+      "sixth_position": "latter_three_quarter",
+      "stabilizer_order": 4,
+      "stabilizer_tier": "low",
+      "top_parent": "intersection-3"
+    },
+    {
+      "fifth_case_id": "intersection-3-third-04-fourth-001-fifth-001",
+      "leaf_id": "intersection-3-third-04-fourth-001-fifth-001-sixth-000",
+      "sixth_branch_count": 185,
+      "sixth_index": 0,
+      "sixth_position": "early_orbit_zero",
+      "stabilizer_order": 4,
+      "stabilizer_tier": "mid",
+      "top_parent": "intersection-3"
+    },
+    {
+      "fifth_case_id": "intersection-3-third-04-fourth-001-fifth-001",
+      "leaf_id": "intersection-3-third-04-fourth-001-fifth-001-sixth-138",
+      "sixth_branch_count": 185,
+      "sixth_index": 138,
+      "sixth_position": "latter_three_quarter",
+      "stabilizer_order": 4,
+      "stabilizer_tier": "mid",
+      "top_parent": "intersection-3"
+    },
+    {
+      "fifth_case_id": "intersection-3-third-01-fourth-001-fifth-001",
+      "leaf_id": "intersection-3-third-01-fourth-001-fifth-001-sixth-000",
+      "sixth_branch_count": 208,
+      "sixth_index": 0,
+      "sixth_position": "early_orbit_zero",
+      "stabilizer_order": 4,
+      "stabilizer_tier": "mid",
+      "top_parent": "intersection-3"
+    },
+    {
+      "fifth_case_id": "intersection-3-third-01-fourth-001-fifth-001",
+      "leaf_id": "intersection-3-third-01-fourth-001-fifth-001-sixth-156",
+      "sixth_branch_count": 208,
+      "sixth_index": 156,
+      "sixth_position": "latter_three_quarter",
+      "stabilizer_order": 4,
+      "stabilizer_tier": "mid",
+      "top_parent": "intersection-3"
+    },
+    {
+      "fifth_case_id": "intersection-3-third-01-fourth-001-fifth-014",
+      "leaf_id": "intersection-3-third-01-fourth-001-fifth-014-sixth-000",
+      "sixth_branch_count": 99,
+      "sixth_index": 0,
+      "sixth_position": "early_orbit_zero",
+      "stabilizer_order": 8,
+      "stabilizer_tier": "mid",
+      "top_parent": "intersection-3"
+    },
+    {
+      "fifth_case_id": "intersection-3-third-01-fourth-001-fifth-014",
+      "leaf_id": "intersection-3-third-01-fourth-001-fifth-014-sixth-074",
+      "sixth_branch_count": 99,
+      "sixth_index": 74,
+      "sixth_position": "latter_three_quarter",
+      "stabilizer_order": 8,
+      "stabilizer_tier": "mid",
+      "top_parent": "intersection-3"
+    },
+    {
+      "fifth_case_id": "intersection-3-third-00-fourth-000-fifth-025",
+      "leaf_id": "intersection-3-third-00-fourth-000-fifth-025-sixth-000",
+      "sixth_branch_count": 117,
+      "sixth_index": 0,
+      "sixth_position": "early_orbit_zero",
+      "stabilizer_order": 8,
+      "stabilizer_tier": "mid",
+      "top_parent": "intersection-3"
+    },
+    {
+      "fifth_case_id": "intersection-3-third-00-fourth-000-fifth-025",
+      "leaf_id": "intersection-3-third-00-fourth-000-fifth-025-sixth-087",
+      "sixth_branch_count": 117,
+      "sixth_index": 87,
+      "sixth_position": "latter_three_quarter",
+      "stabilizer_order": 8,
+      "stabilizer_tier": "mid",
+      "top_parent": "intersection-3"
+    },
+    {
+      "fifth_case_id": "intersection-3-third-02-fourth-000-fifth-001",
+      "leaf_id": "intersection-3-third-02-fourth-000-fifth-001-sixth-000",
+      "sixth_branch_count": 126,
+      "sixth_index": 0,
+      "sixth_position": "early_orbit_zero",
+      "stabilizer_order": 12,
+      "stabilizer_tier": "high",
+      "top_parent": "intersection-3"
+    },
+    {
+      "fifth_case_id": "intersection-3-third-02-fourth-000-fifth-001",
+      "leaf_id": "intersection-3-third-02-fourth-000-fifth-001-sixth-094",
+      "sixth_branch_count": 126,
+      "sixth_index": 94,
+      "sixth_position": "latter_three_quarter",
+      "stabilizer_order": 12,
+      "stabilizer_tier": "high",
+      "top_parent": "intersection-3"
+    },
+    {
+      "fifth_case_id": "intersection-3-third-06-fourth-001-fifth-000",
+      "leaf_id": "intersection-3-third-06-fourth-001-fifth-000-sixth-000",
+      "sixth_branch_count": 86,
+      "sixth_index": 0,
+      "sixth_position": "early_orbit_zero",
+      "stabilizer_order": 16,
+      "stabilizer_tier": "high",
+      "top_parent": "intersection-3"
+    },
+    {
+      "fifth_case_id": "intersection-3-third-06-fourth-001-fifth-000",
+      "leaf_id": "intersection-3-third-06-fourth-001-fifth-000-sixth-064",
+      "sixth_branch_count": 86,
+      "sixth_index": 64,
+      "sixth_position": "latter_three_quarter",
+      "stabilizer_order": 16,
+      "stabilizer_tier": "high",
+      "top_parent": "intersection-3"
+    },
+    {
+      "fifth_case_id": "intersection-3-third-04-fourth-001-fifth-000",
+      "leaf_id": "intersection-3-third-04-fourth-001-fifth-000-sixth-000",
+      "sixth_branch_count": 96,
+      "sixth_index": 0,
+      "sixth_position": "early_orbit_zero",
+      "stabilizer_order": 16,
+      "stabilizer_tier": "high",
+      "top_parent": "intersection-3"
+    },
+    {
+      "fifth_case_id": "intersection-3-third-04-fourth-001-fifth-000",
+      "leaf_id": "intersection-3-third-04-fourth-001-fifth-000-sixth-072",
+      "sixth_branch_count": 96,
+      "sixth_index": 72,
+      "sixth_position": "latter_three_quarter",
+      "stabilizer_order": 16,
+      "stabilizer_tier": "high",
+      "top_parent": "intersection-3"
+    },
+    {
+      "fifth_case_id": "intersection-3-third-01-fourth-001-fifth-013",
+      "leaf_id": "intersection-3-third-01-fourth-001-fifth-013-sixth-000",
+      "sixth_branch_count": 53,
+      "sixth_index": 0,
+      "sixth_position": "early_orbit_zero",
+      "stabilizer_order": 32,
+      "stabilizer_tier": "high",
+      "top_parent": "intersection-3"
+    },
+    {
+      "fifth_case_id": "intersection-3-third-01-fourth-001-fifth-013",
+      "leaf_id": "intersection-3-third-01-fourth-001-fifth-013-sixth-039",
+      "sixth_branch_count": 53,
+      "sixth_index": 39,
+      "sixth_position": "latter_three_quarter",
+      "stabilizer_order": 32,
+      "stabilizer_tier": "high",
+      "top_parent": "intersection-3"
+    },
+    {
+      "fifth_case_id": "intersection-4-third-02-fourth-004-fifth-024",
+      "leaf_id": "intersection-4-third-02-fourth-004-fifth-024-sixth-000",
+      "sixth_branch_count": 225,
+      "sixth_index": 0,
+      "sixth_position": "early_orbit_zero",
+      "stabilizer_order": 2,
+      "stabilizer_tier": "low",
+      "top_parent": "intersection-4"
+    },
+    {
+      "fifth_case_id": "intersection-4-third-02-fourth-004-fifth-024",
+      "leaf_id": "intersection-4-third-02-fourth-004-fifth-024-sixth-168",
+      "sixth_branch_count": 225,
+      "sixth_index": 168,
+      "sixth_position": "latter_three_quarter",
+      "stabilizer_order": 2,
+      "stabilizer_tier": "low",
+      "top_parent": "intersection-4"
+    },
+    {
+      "fifth_case_id": "intersection-4-third-02-fourth-002-fifth-024",
+      "leaf_id": "intersection-4-third-02-fourth-002-fifth-024-sixth-000",
+      "sixth_branch_count": 162,
+      "sixth_index": 0,
+      "sixth_position": "early_orbit_zero",
+      "stabilizer_order": 4,
+      "stabilizer_tier": "low",
+      "top_parent": "intersection-4"
+    },
+    {
+      "fifth_case_id": "intersection-4-third-02-fourth-002-fifth-024",
+      "leaf_id": "intersection-4-third-02-fourth-002-fifth-024-sixth-121",
+      "sixth_branch_count": 162,
+      "sixth_index": 121,
+      "sixth_position": "latter_three_quarter",
+      "stabilizer_order": 4,
+      "stabilizer_tier": "low",
+      "top_parent": "intersection-4"
+    },
+    {
+      "fifth_case_id": "intersection-4-third-02-fourth-000-fifth-024",
+      "leaf_id": "intersection-4-third-02-fourth-000-fifth-024-sixth-000",
+      "sixth_branch_count": 172,
+      "sixth_index": 0,
+      "sixth_position": "early_orbit_zero",
+      "stabilizer_order": 4,
+      "stabilizer_tier": "low",
+      "top_parent": "intersection-4"
+    },
+    {
+      "fifth_case_id": "intersection-4-third-02-fourth-000-fifth-024",
+      "leaf_id": "intersection-4-third-02-fourth-000-fifth-024-sixth-129",
+      "sixth_branch_count": 172,
+      "sixth_index": 129,
+      "sixth_position": "latter_three_quarter",
+      "stabilizer_order": 4,
+      "stabilizer_tier": "low",
+      "top_parent": "intersection-4"
+    },
+    {
+      "fifth_case_id": "intersection-4-third-04-fourth-000-fifth-000",
+      "leaf_id": "intersection-4-third-04-fourth-000-fifth-000-sixth-000",
+      "sixth_branch_count": 178,
+      "sixth_index": 0,
+      "sixth_position": "early_orbit_zero",
+      "stabilizer_order": 6,
+      "stabilizer_tier": "low",
+      "top_parent": "intersection-4"
+    },
+    {
+      "fifth_case_id": "intersection-4-third-04-fourth-000-fifth-000",
+      "leaf_id": "intersection-4-third-04-fourth-000-fifth-000-sixth-133",
+      "sixth_branch_count": 178,
+      "sixth_index": 133,
+      "sixth_position": "latter_three_quarter",
+      "stabilizer_order": 6,
+      "stabilizer_tier": "low",
+      "top_parent": "intersection-4"
+    },
+    {
+      "fifth_case_id": "intersection-4-third-02-fourth-004-fifth-025",
+      "leaf_id": "intersection-4-third-02-fourth-004-fifth-025-sixth-000",
+      "sixth_branch_count": 113,
+      "sixth_index": 0,
+      "sixth_position": "early_orbit_zero",
+      "stabilizer_order": 8,
+      "stabilizer_tier": "mid",
+      "top_parent": "intersection-4"
+    },
+    {
+      "fifth_case_id": "intersection-4-third-02-fourth-004-fifth-025",
+      "leaf_id": "intersection-4-third-02-fourth-004-fifth-025-sixth-084",
+      "sixth_branch_count": 113,
+      "sixth_index": 84,
+      "sixth_position": "latter_three_quarter",
+      "stabilizer_order": 8,
+      "stabilizer_tier": "mid",
+      "top_parent": "intersection-4"
+    },
+    {
+      "fifth_case_id": "intersection-4-third-05-fourth-003-fifth-001",
+      "leaf_id": "intersection-4-third-05-fourth-003-fifth-001-sixth-000",
+      "sixth_branch_count": 126,
+      "sixth_index": 0,
+      "sixth_position": "early_orbit_zero",
+      "stabilizer_order": 8,
+      "stabilizer_tier": "mid",
+      "top_parent": "intersection-4"
+    },
+    {
+      "fifth_case_id": "intersection-4-third-05-fourth-003-fifth-001",
+      "leaf_id": "intersection-4-third-05-fourth-003-fifth-001-sixth-094",
+      "sixth_branch_count": 126,
+      "sixth_index": 94,
+      "sixth_position": "latter_three_quarter",
+      "stabilizer_order": 8,
+      "stabilizer_tier": "mid",
+      "top_parent": "intersection-4"
+    },
+    {
+      "fifth_case_id": "intersection-4-third-05-fourth-003-fifth-000",
+      "leaf_id": "intersection-4-third-05-fourth-003-fifth-000-sixth-000",
+      "sixth_branch_count": 128,
+      "sixth_index": 0,
+      "sixth_position": "early_orbit_zero",
+      "stabilizer_order": 8,
+      "stabilizer_tier": "mid",
+      "top_parent": "intersection-4"
+    },
+    {
+      "fifth_case_id": "intersection-4-third-05-fourth-003-fifth-000",
+      "leaf_id": "intersection-4-third-05-fourth-003-fifth-000-sixth-096",
+      "sixth_branch_count": 128,
+      "sixth_index": 96,
+      "sixth_position": "latter_three_quarter",
+      "stabilizer_order": 8,
+      "stabilizer_tier": "mid",
+      "top_parent": "intersection-4"
+    },
+    {
+      "fifth_case_id": "intersection-4-third-00-fourth-004-fifth-011",
+      "leaf_id": "intersection-4-third-00-fourth-004-fifth-011-sixth-000",
+      "sixth_branch_count": 101,
+      "sixth_index": 0,
+      "sixth_position": "early_orbit_zero",
+      "stabilizer_order": 12,
+      "stabilizer_tier": "mid",
+      "top_parent": "intersection-4"
+    },
+    {
+      "fifth_case_id": "intersection-4-third-00-fourth-004-fifth-011",
+      "leaf_id": "intersection-4-third-00-fourth-004-fifth-011-sixth-075",
+      "sixth_branch_count": 101,
+      "sixth_index": 75,
+      "sixth_position": "latter_three_quarter",
+      "stabilizer_order": 12,
+      "stabilizer_tier": "mid",
+      "top_parent": "intersection-4"
+    },
+    {
+      "fifth_case_id": "intersection-4-third-01-fourth-000-fifth-016",
+      "leaf_id": "intersection-4-third-01-fourth-000-fifth-016-sixth-000",
+      "sixth_branch_count": 101,
+      "sixth_index": 0,
+      "sixth_position": "early_orbit_zero",
+      "stabilizer_order": 12,
+      "stabilizer_tier": "high",
+      "top_parent": "intersection-4"
+    },
+    {
+      "fifth_case_id": "intersection-4-third-01-fourth-000-fifth-016",
+      "leaf_id": "intersection-4-third-01-fourth-000-fifth-016-sixth-075",
+      "sixth_branch_count": 101,
+      "sixth_index": 75,
+      "sixth_position": "latter_three_quarter",
+      "stabilizer_order": 12,
+      "stabilizer_tier": "high",
+      "top_parent": "intersection-4"
+    },
+    {
+      "fifth_case_id": "intersection-4-third-01-fourth-001-fifth-012",
+      "leaf_id": "intersection-4-third-01-fourth-001-fifth-012-sixth-000",
+      "sixth_branch_count": 109,
+      "sixth_index": 0,
+      "sixth_position": "early_orbit_zero",
+      "stabilizer_order": 12,
+      "stabilizer_tier": "high",
+      "top_parent": "intersection-4"
+    },
+    {
+      "fifth_case_id": "intersection-4-third-01-fourth-001-fifth-012",
+      "leaf_id": "intersection-4-third-01-fourth-001-fifth-012-sixth-081",
+      "sixth_branch_count": 109,
+      "sixth_index": 81,
+      "sixth_position": "latter_three_quarter",
+      "stabilizer_order": 12,
+      "stabilizer_tier": "high",
+      "top_parent": "intersection-4"
+    },
+    {
+      "fifth_case_id": "intersection-4-third-00-fourth-000-fifth-013",
+      "leaf_id": "intersection-4-third-00-fourth-000-fifth-013-sixth-000",
+      "sixth_branch_count": 82,
+      "sixth_index": 0,
+      "sixth_position": "early_orbit_zero",
+      "stabilizer_order": 24,
+      "stabilizer_tier": "high",
+      "top_parent": "intersection-4"
+    },
+    {
+      "fifth_case_id": "intersection-4-third-00-fourth-000-fifth-013",
+      "leaf_id": "intersection-4-third-00-fourth-000-fifth-013-sixth-061",
+      "sixth_branch_count": 82,
+      "sixth_index": 61,
+      "sixth_position": "latter_three_quarter",
+      "stabilizer_order": 24,
+      "stabilizer_tier": "high",
+      "top_parent": "intersection-4"
+    },
+    {
+      "fifth_case_id": "intersection-4-third-00-fourth-001-fifth-000",
+      "leaf_id": "intersection-4-third-00-fourth-001-fifth-000-sixth-000",
+      "sixth_branch_count": 51,
+      "sixth_index": 0,
+      "sixth_position": "early_orbit_zero",
+      "stabilizer_order": 144,
+      "stabilizer_tier": "high",
+      "top_parent": "intersection-4"
+    },
+    {
+      "fifth_case_id": "intersection-4-third-00-fourth-001-fifth-000",
+      "leaf_id": "intersection-4-third-00-fourth-001-fifth-000-sixth-038",
+      "sixth_branch_count": 51,
+      "sixth_index": 38,
+      "sixth_position": "latter_three_quarter",
+      "stabilizer_order": 144,
+      "stabilizer_tier": "high",
+      "top_parent": "intersection-4"
+    }
+  ],
+  "sample_sha256": "e9b8a6b51e7f4175c0a2c6eca980ca29d35dba0f7603867109bdf916747fc8ab",
+  "sample_size": 48,
+  "schema_version": 1,
+  "selection_rule": "Within each top-parent root class, sort by stabilizer order, branch count, and id; split into stabilizer-order terciles; choose four deterministic quantiles per tercile; test sixth orbit zero and floor(3*branch_count/4).",
+  "status": "FROZEN_NOT_RUN",
+  "storage_budget_bytes": 134217728,
+  "worst_solver_wall_seconds": 60.0
+}

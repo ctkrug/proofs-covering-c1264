@@ -1,0 +1,1028 @@
+{
+  "aggregation_claim": "This parent is not closed.",
+  "child_count": 39,
+  "children": [
+    {
+      "deficit_branch_count": 7,
+      "deficit_manifest_binding": {
+        "path": "artifacts/classification/ordinary-c1153-v1/open-fifth-deficit-partition-v2/manifest.json",
+        "sha256": "c1f615b51076145183df3f1d4676005f6617dcade442e8a75264a7044a574996"
+      },
+      "fifth_index": 0,
+      "leaf_id": "intersection-4-third-01-fourth-003-fifth-000",
+      "open_status": "NEVER_MEASURED",
+      "terminal": false,
+      "terminal_status": "OPEN_NEVER_MEASURED"
+    },
+    {
+      "deficit_branch_count": 7,
+      "deficit_manifest_binding": {
+        "path": "artifacts/classification/ordinary-c1153-v1/open-fifth-deficit-partition-v2/manifest.json",
+        "sha256": "c1f615b51076145183df3f1d4676005f6617dcade442e8a75264a7044a574996"
+      },
+      "fifth_index": 1,
+      "leaf_id": "intersection-4-third-01-fourth-003-fifth-001",
+      "open_status": "NEVER_MEASURED",
+      "terminal": false,
+      "terminal_status": "OPEN_NEVER_MEASURED"
+    },
+    {
+      "deficit_branch_count": 10,
+      "deficit_manifest_binding": {
+        "path": "artifacts/classification/ordinary-c1153-v1/open-fifth-deficit-partition-v2/manifest.json",
+        "sha256": "c1f615b51076145183df3f1d4676005f6617dcade442e8a75264a7044a574996"
+      },
+      "fifth_index": 2,
+      "leaf_id": "intersection-4-third-01-fourth-003-fifth-002",
+      "open_status": "NEVER_MEASURED",
+      "terminal": false,
+      "terminal_status": "OPEN_NEVER_MEASURED"
+    },
+    {
+      "deficit_branch_count": 7,
+      "deficit_manifest_binding": {
+        "path": "artifacts/classification/ordinary-c1153-v1/open-fifth-deficit-partition-v2/manifest.json",
+        "sha256": "c1f615b51076145183df3f1d4676005f6617dcade442e8a75264a7044a574996"
+      },
+      "fifth_index": 3,
+      "leaf_id": "intersection-4-third-01-fourth-003-fifth-003",
+      "open_status": "NEVER_MEASURED",
+      "terminal": false,
+      "terminal_status": "OPEN_NEVER_MEASURED"
+    },
+    {
+      "deficit_branch_count": 7,
+      "deficit_manifest_binding": {
+        "path": "artifacts/classification/ordinary-c1153-v1/open-fifth-deficit-partition-v2/manifest.json",
+        "sha256": "c1f615b51076145183df3f1d4676005f6617dcade442e8a75264a7044a574996"
+      },
+      "fifth_index": 4,
+      "leaf_id": "intersection-4-third-01-fourth-003-fifth-004",
+      "open_status": "NEVER_MEASURED",
+      "terminal": false,
+      "terminal_status": "OPEN_NEVER_MEASURED"
+    },
+    {
+      "deficit_branch_count": 5,
+      "deficit_manifest_binding": {
+        "path": "artifacts/classification/ordinary-c1153-v1/open-fifth-deficit-partition-v2/manifest.json",
+        "sha256": "c1f615b51076145183df3f1d4676005f6617dcade442e8a75264a7044a574996"
+      },
+      "fifth_index": 5,
+      "leaf_id": "intersection-4-third-01-fourth-003-fifth-005",
+      "open_status": "NEVER_MEASURED",
+      "terminal": false,
+      "terminal_status": "OPEN_NEVER_MEASURED"
+    },
+    {
+      "deficit_branch_count": 2,
+      "deficit_manifest_binding": {
+        "path": "artifacts/classification/ordinary-c1153-v1/open-fifth-deficit-partition-v2/manifest.json",
+        "sha256": "c1f615b51076145183df3f1d4676005f6617dcade442e8a75264a7044a574996"
+      },
+      "fifth_index": 6,
+      "leaf_id": "intersection-4-third-01-fourth-003-fifth-006",
+      "open_status": "NEVER_MEASURED",
+      "terminal": false,
+      "terminal_status": "OPEN_NEVER_MEASURED"
+    },
+    {
+      "certification_kind": "EMPTY_RESIDUAL_COVERAGE_CLAUSE",
+      "checker_receipt": {
+        "checker_result": "VALID",
+        "path": "artifacts/classification/ordinary-c1153-v1/open-fifth-deficit-partition-v2/independent-audit.json",
+        "sha256": "ba1487944532f6cd931e62c28c40a5822a2f68dd5f20cfc934f920a4b7d6dd36"
+      },
+      "fifth_index": 7,
+      "leaf_id": "intersection-4-third-01-fourth-003-fifth-007",
+      "manifest_binding": {
+        "path": "artifacts/classification/ordinary-c1153-v1/open-fifth-deficit-partition-v2/manifest.json",
+        "sha256": "c1f615b51076145183df3f1d4676005f6617dcade442e8a75264a7044a574996"
+      },
+      "semantic_receipt": {
+        "claim_limit": "Semantic contradiction receipt only; generate and externally replay the exact CNF proof before ledger closure.",
+        "coverage_clause_sha256": "eb2ad210c353946889d274e7210c47837b57cdd878160c3a9a78c5d2f9034a81",
+        "coverage_clause_variables": [
+          3,
+          9,
+          14,
+          19,
+          20,
+          21,
+          22,
+          30,
+          35,
+          40,
+          41,
+          42,
+          43,
+          50,
+          55,
+          56,
+          57,
+          58,
+          65,
+          66,
+          67,
+          68,
+          75,
+          76,
+          77,
+          78,
+          79,
+          80
+        ],
+        "empty_residual_clause_sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+        "forbidden_coverers": [
+          {
+            "reasons": [
+              "PARENT_CNF_NEGATIVE_UNIT"
+            ],
+            "variable": 3
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 9
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 14
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 19
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 20
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 21
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 22
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 30
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 35
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 40
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 41
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 42
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 43
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 50
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 55
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 56
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 57
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 58
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 65
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 66
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 67
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 68
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 75
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 76
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 77
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 78
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 79
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 80
+          }
+        ],
+        "residual_eligible_variables": [],
+        "selected_triple": [
+          1,
+          2,
+          7
+        ],
+        "semantic_status": "EMPTY_RESIDUAL_COVERAGE_CLAUSE_NOT_YET_SOLVER_CERTIFIED"
+      },
+      "semantic_receipt_sha256": "93d36acbe9f149ee1f4b1beecd9d776ae8d17cd0050fe8e9b99da20a88e1df76",
+      "terminal": true,
+      "terminal_status": "AUDITED_SEMANTIC_COVERAGE_CONTRADICTION"
+    },
+    {
+      "certification_kind": "EMPTY_RESIDUAL_COVERAGE_CLAUSE",
+      "checker_receipt": {
+        "checker_result": "VALID",
+        "path": "artifacts/classification/ordinary-c1153-v1/open-fifth-deficit-partition-v2/independent-audit.json",
+        "sha256": "ba1487944532f6cd931e62c28c40a5822a2f68dd5f20cfc934f920a4b7d6dd36"
+      },
+      "fifth_index": 8,
+      "leaf_id": "intersection-4-third-01-fourth-003-fifth-008",
+      "manifest_binding": {
+        "path": "artifacts/classification/ordinary-c1153-v1/open-fifth-deficit-partition-v2/manifest.json",
+        "sha256": "c1f615b51076145183df3f1d4676005f6617dcade442e8a75264a7044a574996"
+      },
+      "semantic_receipt": {
+        "claim_limit": "Semantic contradiction receipt only; generate and externally replay the exact CNF proof before ledger closure.",
+        "coverage_clause_sha256": "eb2ad210c353946889d274e7210c47837b57cdd878160c3a9a78c5d2f9034a81",
+        "coverage_clause_variables": [
+          3,
+          9,
+          14,
+          19,
+          20,
+          21,
+          22,
+          30,
+          35,
+          40,
+          41,
+          42,
+          43,
+          50,
+          55,
+          56,
+          57,
+          58,
+          65,
+          66,
+          67,
+          68,
+          75,
+          76,
+          77,
+          78,
+          79,
+          80
+        ],
+        "empty_residual_clause_sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+        "forbidden_coverers": [
+          {
+            "reasons": [
+              "PARENT_CNF_NEGATIVE_UNIT"
+            ],
+            "variable": 3
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 9
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 14
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 19
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 20
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 21
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 22
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 30
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 35
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 40
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 41
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 42
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 43
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 50
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 55
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 56
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 57
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 58
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 65
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 66
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 67
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 68
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 75
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 76
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 77
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 78
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 79
+          },
+          {
+            "reasons": [
+              "INHERITED_NEGATIVE_UNIT"
+            ],
+            "variable": 80
+          }
+        ],
+        "residual_eligible_variables": [],
+        "selected_triple": [
+          1,
+          2,
+          7
+        ],
+        "semantic_status": "EMPTY_RESIDUAL_COVERAGE_CLAUSE_NOT_YET_SOLVER_CERTIFIED"
+      },
+      "semantic_receipt_sha256": "93d36acbe9f149ee1f4b1beecd9d776ae8d17cd0050fe8e9b99da20a88e1df76",
+      "terminal": true,
+      "terminal_status": "AUDITED_SEMANTIC_COVERAGE_CONTRADICTION"
+    },
+    {
+      "certification_kind": "EXHAUSTIVE_BATCH_REPLAY",
+      "certification_receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-fifth-split/suffix-certification/batches/batch-0027/cases/intersection-4-third-01-fourth-003-fifth-009/receipt.json",
+        "sha256": "3f667525dc32cc3f38260e4a54b92f911e22aac1ec1c36efb9fa7996c4ea061d"
+      },
+      "checker_result": "VERIFIED",
+      "checker_sha256": "f58f63b0f76945d4c4c9ff6e87afaf870f579e67c0f7cca589492df8fc7ebd47",
+      "exact_cnf_sha256": "9291329cc433b954e57410ee8805f27726d2e27aaaf4d946d7322fae26c0d949",
+      "fifth_index": 9,
+      "leaf_id": "intersection-4-third-01-fourth-003-fifth-009",
+      "proof_sha256": "1c1850a82220b67f9647d38d42f87b03b9bf93964afa2956b2caec3e74db6e17",
+      "terminal": true,
+      "terminal_status": "REPLAY_CERTIFIED_UNSAT"
+    },
+    {
+      "certification_kind": "EXHAUSTIVE_BATCH_REPLAY",
+      "certification_receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-fifth-split/suffix-certification/batches/batch-0015/cases/intersection-4-third-01-fourth-003-fifth-010/receipt.json",
+        "sha256": "2cf7caf063088da2ef893e0d7e935fe44b8613817cda4e2f5492aec5d1e6047b"
+      },
+      "checker_result": "VERIFIED",
+      "checker_sha256": "f58f63b0f76945d4c4c9ff6e87afaf870f579e67c0f7cca589492df8fc7ebd47",
+      "exact_cnf_sha256": "284dec7b40805f04633a40ead2f918908d9afc56112e9184999c7b348562be87",
+      "fifth_index": 10,
+      "leaf_id": "intersection-4-third-01-fourth-003-fifth-010",
+      "proof_sha256": "8bf0c9f76fa132272da9aa0f21d3ee8a53c054db87a8c32dae4d469d36ce7d13",
+      "terminal": true,
+      "terminal_status": "REPLAY_CERTIFIED_UNSAT"
+    },
+    {
+      "certification_kind": "EXHAUSTIVE_BATCH_REPLAY",
+      "certification_receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-fifth-split/suffix-certification/batches/batch-0010/cases/intersection-4-third-01-fourth-003-fifth-011/receipt.json",
+        "sha256": "8d7c36d5cbb0919b3cf7ebcf0e095f1251a915da655706176d1fbc058a39fe60"
+      },
+      "checker_result": "VERIFIED",
+      "checker_sha256": "f58f63b0f76945d4c4c9ff6e87afaf870f579e67c0f7cca589492df8fc7ebd47",
+      "exact_cnf_sha256": "ececce6ad2853e28e2ff1cc63c1e81fb6cb1ca5cec28f6cb20f09282c653cbc0",
+      "fifth_index": 11,
+      "leaf_id": "intersection-4-third-01-fourth-003-fifth-011",
+      "proof_sha256": "df095679c839d156b4791ca24b64420a75b24ea657818977ba55df7315cfe23a",
+      "terminal": true,
+      "terminal_status": "REPLAY_CERTIFIED_UNSAT"
+    },
+    {
+      "certification_kind": "SEGMENT_SAMPLED_EXTERNAL_REPLAY",
+      "certification_receipt": {
+        "leaf_result_indexed_by": "intersection-4-third-01-fourth-003-fifth-012",
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-fifth-split/segments/segment-0086/independent-audit.json",
+        "sha256": "71f9249f12fa838273b37a66ed2373597e77546cc45f85883476559956d88033"
+      },
+      "checker_result": "VERIFIED",
+      "checker_sha256": "f58f63b0f76945d4c4c9ff6e87afaf870f579e67c0f7cca589492df8fc7ebd47",
+      "exact_cnf_sha256": "58084bfce729fc97eefdcbcca484b3082f886622b7695425f43264da69c1cde5",
+      "fifth_index": 12,
+      "leaf_id": "intersection-4-third-01-fourth-003-fifth-012",
+      "proof_sha256": "1c69201ab7ff7927f433f0d3021a086a8f92ce93bc9b50b39d866599643abebf",
+      "source_result": {
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-fifth-split/segments/segment-0086/intersection-4-third-01-fourth-003-fifth-012/result.json",
+        "sha256": "4ee0a2e82f26db17927eaa832427d20dcc8f6b11c0fc985ff2d09f386b6fd698"
+      },
+      "terminal": true,
+      "terminal_status": "REPLAY_CERTIFIED_UNSAT"
+    },
+    {
+      "certification_kind": "EXHAUSTIVE_BATCH_REPLAY",
+      "certification_receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-fifth-split/suffix-certification/batches/batch-0015/cases/intersection-4-third-01-fourth-003-fifth-013/receipt.json",
+        "sha256": "d2d280f72e31ad9a44bd0611f6960eacb03867844269752765713206c5fa4ca2"
+      },
+      "checker_result": "VERIFIED",
+      "checker_sha256": "f58f63b0f76945d4c4c9ff6e87afaf870f579e67c0f7cca589492df8fc7ebd47",
+      "exact_cnf_sha256": "d167fd0aa716a7818073c6579299b22e02da2afff7628050e545591641713809",
+      "fifth_index": 13,
+      "leaf_id": "intersection-4-third-01-fourth-003-fifth-013",
+      "proof_sha256": "57975131ca84915520cf9c91f08492cd7238c7230ce63fd8758c4ca0c4e8624c",
+      "terminal": true,
+      "terminal_status": "REPLAY_CERTIFIED_UNSAT"
+    },
+    {
+      "certification_kind": "SEGMENT_SAMPLED_EXTERNAL_REPLAY",
+      "certification_receipt": {
+        "leaf_result_indexed_by": "intersection-4-third-01-fourth-003-fifth-014",
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-fifth-split/segments/segment-0082/independent-audit.json",
+        "sha256": "0fc26b3eb4ee54dbfddcdd784af6748228e42de6b6986d9ff10277ed72e2b0ca"
+      },
+      "checker_result": "VERIFIED",
+      "checker_sha256": "f58f63b0f76945d4c4c9ff6e87afaf870f579e67c0f7cca589492df8fc7ebd47",
+      "exact_cnf_sha256": "0e9e67f11b3a6c1d9aa88518ee144bd41a901e9a4e90d8dba43c77b8601db040",
+      "fifth_index": 14,
+      "leaf_id": "intersection-4-third-01-fourth-003-fifth-014",
+      "proof_sha256": "76875297ce59de9c0d9d2eff40117ce48cab640920358834784ebc98dab7c9ff",
+      "source_result": {
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-fifth-split/segments/segment-0082/intersection-4-third-01-fourth-003-fifth-014/result.json",
+        "sha256": "cdfffb25f9d99a6ab1dea56a15b74ed261c9e222212e25e6ab5d9164c2613a77"
+      },
+      "terminal": true,
+      "terminal_status": "REPLAY_CERTIFIED_UNSAT"
+    },
+    {
+      "certification_kind": "EXHAUSTIVE_BATCH_REPLAY",
+      "certification_receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-fifth-split/suffix-certification/batches/batch-0007/cases/intersection-4-third-01-fourth-003-fifth-015/receipt.json",
+        "sha256": "b18037b25a6a34cba2f764899f7f04e1a7d6c091e2873c9a6aa6224afdef7fcf"
+      },
+      "checker_result": "VERIFIED",
+      "checker_sha256": "f58f63b0f76945d4c4c9ff6e87afaf870f579e67c0f7cca589492df8fc7ebd47",
+      "exact_cnf_sha256": "860a0ef511f1e770a4953a4544a60b143fae5cd214352837e48418224fe23599",
+      "fifth_index": 15,
+      "leaf_id": "intersection-4-third-01-fourth-003-fifth-015",
+      "proof_sha256": "36efc8295c3af5f51209ea17a7c8c4d5ac88c57ff90e50c5bfcfd84e0a4e40c0",
+      "terminal": true,
+      "terminal_status": "REPLAY_CERTIFIED_UNSAT"
+    },
+    {
+      "certification_kind": "EXHAUSTIVE_BATCH_REPLAY",
+      "certification_receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-fifth-split/suffix-certification/batches/batch-0027/cases/intersection-4-third-01-fourth-003-fifth-016/receipt.json",
+        "sha256": "711607da6a7e3a033116dc005d18ffa5b8c6754436592290475ab156b5be178c"
+      },
+      "checker_result": "VERIFIED",
+      "checker_sha256": "f58f63b0f76945d4c4c9ff6e87afaf870f579e67c0f7cca589492df8fc7ebd47",
+      "exact_cnf_sha256": "e4a3c8c4d514568c0fc3d2c0effa9cd667e20ecafafa0486c7e88d2ed1eded6c",
+      "fifth_index": 16,
+      "leaf_id": "intersection-4-third-01-fourth-003-fifth-016",
+      "proof_sha256": "9491a37a82db044eac33e28ff31d4120abcd612641319e3f8d9dfedef335c5f3",
+      "terminal": true,
+      "terminal_status": "REPLAY_CERTIFIED_UNSAT"
+    },
+    {
+      "certification_kind": "EXHAUSTIVE_BATCH_REPLAY",
+      "certification_receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-fifth-split/suffix-certification/batches/batch-0012/cases/intersection-4-third-01-fourth-003-fifth-017/receipt.json",
+        "sha256": "494d9b27f4db2dc1d4c4ad1e44cb14b6bbf08c21478ea285830676eba2d5a44f"
+      },
+      "checker_result": "VERIFIED",
+      "checker_sha256": "f58f63b0f76945d4c4c9ff6e87afaf870f579e67c0f7cca589492df8fc7ebd47",
+      "exact_cnf_sha256": "3f0c2e2d2fcde71d10555ceb90ccaa5d6c05e8cf79092917bc4a4dd57aea600a",
+      "fifth_index": 17,
+      "leaf_id": "intersection-4-third-01-fourth-003-fifth-017",
+      "proof_sha256": "9264fb3a9b30490f1aa7fbffdd948f6c11d7623ff82f2c5de305c62dde23724e",
+      "terminal": true,
+      "terminal_status": "REPLAY_CERTIFIED_UNSAT"
+    },
+    {
+      "certification_kind": "EXHAUSTIVE_BATCH_REPLAY",
+      "certification_receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-fifth-split/suffix-certification/batches/batch-0025/cases/intersection-4-third-01-fourth-003-fifth-018/receipt.json",
+        "sha256": "50debdbbc2d02e228829cd9a7e1bbf06c435356584480d11f8a2b52788fe9d7b"
+      },
+      "checker_result": "VERIFIED",
+      "checker_sha256": "f58f63b0f76945d4c4c9ff6e87afaf870f579e67c0f7cca589492df8fc7ebd47",
+      "exact_cnf_sha256": "0c89e307d0ce89c3a36916278e6d89a5d69d8c86a24af34edacc156ee187a11b",
+      "fifth_index": 18,
+      "leaf_id": "intersection-4-third-01-fourth-003-fifth-018",
+      "proof_sha256": "99c5db7972ab87557c5c8379b1202cf02992cc41f43aa5b8a872534d19d2ca00",
+      "terminal": true,
+      "terminal_status": "REPLAY_CERTIFIED_UNSAT"
+    },
+    {
+      "certification_kind": "SEGMENT_SAMPLED_EXTERNAL_REPLAY",
+      "certification_receipt": {
+        "leaf_result_indexed_by": "intersection-4-third-01-fourth-003-fifth-019",
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-fifth-split/segments/segment-0007/independent-audit.json",
+        "sha256": "ade2e584258c5dfee986d672fa254b9ac19437884ccff3facaf86356c3b9c4cf"
+      },
+      "checker_result": "VERIFIED",
+      "checker_sha256": "f58f63b0f76945d4c4c9ff6e87afaf870f579e67c0f7cca589492df8fc7ebd47",
+      "exact_cnf_sha256": "6515a6b6c8a1da6a478a22822318caa7b13bb017886ba886589393e2e511d84c",
+      "fifth_index": 19,
+      "leaf_id": "intersection-4-third-01-fourth-003-fifth-019",
+      "proof_sha256": "40a6893adf0421e6679d8191b8ff801bdb79d35d136a6b73306529f2654316ce",
+      "source_result": {
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-fifth-split/segments/segment-0007/intersection-4-third-01-fourth-003-fifth-019/result.json",
+        "sha256": "fc76218c57781dcbb282ade3b7db7b53c7617213316d5b751d517ec9ca2f2801"
+      },
+      "terminal": true,
+      "terminal_status": "REPLAY_CERTIFIED_UNSAT"
+    },
+    {
+      "certification_kind": "EXHAUSTIVE_BATCH_REPLAY",
+      "certification_receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-fifth-split/suffix-certification/batches/batch-0008/cases/intersection-4-third-01-fourth-003-fifth-020/receipt.json",
+        "sha256": "b0418a8c982d1ce900a008e8e590d96dd2a43087aba47c6096f5332b6c74c736"
+      },
+      "checker_result": "VERIFIED",
+      "checker_sha256": "f58f63b0f76945d4c4c9ff6e87afaf870f579e67c0f7cca589492df8fc7ebd47",
+      "exact_cnf_sha256": "97556501c2cc7ad1879f0824bb5faf4c1d234747202dbcd5cbe3e13c9f51b8c2",
+      "fifth_index": 20,
+      "leaf_id": "intersection-4-third-01-fourth-003-fifth-020",
+      "proof_sha256": "79e903bdc60a851b2331417b2415cdbdfe8465f6e41a6b9b3057319a68d13884",
+      "terminal": true,
+      "terminal_status": "REPLAY_CERTIFIED_UNSAT"
+    },
+    {
+      "certification_kind": "EXHAUSTIVE_BATCH_REPLAY",
+      "certification_receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-fifth-split/suffix-certification/batches/batch-0000/cases/intersection-4-third-01-fourth-003-fifth-021/receipt.json",
+        "sha256": "78c1784a993ec8c347050a1e3a2637a4a8819ca1774a64e256ffe9e39815aa38"
+      },
+      "checker_result": "VERIFIED",
+      "checker_sha256": "f58f63b0f76945d4c4c9ff6e87afaf870f579e67c0f7cca589492df8fc7ebd47",
+      "exact_cnf_sha256": "059bd874d87627bc3daf25d9e8678b2e4fdd7d97f1c3241b1ceba4954d1ed879",
+      "fifth_index": 21,
+      "leaf_id": "intersection-4-third-01-fourth-003-fifth-021",
+      "proof_sha256": "9899f5d04248bbace97eeba7d6ac81da425ac810378ee28a389e55a9ac743be5",
+      "terminal": true,
+      "terminal_status": "REPLAY_CERTIFIED_UNSAT"
+    },
+    {
+      "certification_kind": "EXHAUSTIVE_BATCH_REPLAY",
+      "certification_receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-fifth-split/suffix-certification/batches/batch-0010/cases/intersection-4-third-01-fourth-003-fifth-022/receipt.json",
+        "sha256": "80bc9ab923bc5339b401aedd38e77314dd0681b4a415d09016d763f4966ab149"
+      },
+      "checker_result": "VERIFIED",
+      "checker_sha256": "f58f63b0f76945d4c4c9ff6e87afaf870f579e67c0f7cca589492df8fc7ebd47",
+      "exact_cnf_sha256": "65d236ed9be5de40ada20001175af95570a48eb55a9e51a6e1d89d04c2a05368",
+      "fifth_index": 22,
+      "leaf_id": "intersection-4-third-01-fourth-003-fifth-022",
+      "proof_sha256": "f1c6873a66947aeacaa0f4b72329988ed2a53983d321be078c996562c4da1ade",
+      "terminal": true,
+      "terminal_status": "REPLAY_CERTIFIED_UNSAT"
+    },
+    {
+      "certification_kind": "EXHAUSTIVE_BATCH_REPLAY",
+      "certification_receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-fifth-split/suffix-certification/batches/batch-0002/cases/intersection-4-third-01-fourth-003-fifth-023/receipt.json",
+        "sha256": "e7d2f6a6e983af14b780dfbf4d97be92e43714cd59044760b511280054638d84"
+      },
+      "checker_result": "VERIFIED",
+      "checker_sha256": "f58f63b0f76945d4c4c9ff6e87afaf870f579e67c0f7cca589492df8fc7ebd47",
+      "exact_cnf_sha256": "e2e101754c4f6dbc6a6849096d406e5d6d06fc26784089efe2129642513c1a79",
+      "fifth_index": 23,
+      "leaf_id": "intersection-4-third-01-fourth-003-fifth-023",
+      "proof_sha256": "f62d80b0259f9c2dbd9b2a194b51a8d6aa3c8699e4e308134564e1f48a70a8f5",
+      "terminal": true,
+      "terminal_status": "REPLAY_CERTIFIED_UNSAT"
+    },
+    {
+      "certification_kind": "EXHAUSTIVE_BATCH_REPLAY",
+      "certification_receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-fifth-split/suffix-certification/batches/batch-0006/cases/intersection-4-third-01-fourth-003-fifth-024/receipt.json",
+        "sha256": "8d371106d55d32488747fa63a97edd7eb35ea9edfea40abc65bab77f55ae782a"
+      },
+      "checker_result": "VERIFIED",
+      "checker_sha256": "f58f63b0f76945d4c4c9ff6e87afaf870f579e67c0f7cca589492df8fc7ebd47",
+      "exact_cnf_sha256": "9bb7a9bca69d4a56354e33b1eeb53becacd540372031ae41d21aa2cd84dbf4fa",
+      "fifth_index": 24,
+      "leaf_id": "intersection-4-third-01-fourth-003-fifth-024",
+      "proof_sha256": "cbafe32aa94dc24ccb9341fe0decce58f8737e579d05cb132fb8f757b52aaad2",
+      "terminal": true,
+      "terminal_status": "REPLAY_CERTIFIED_UNSAT"
+    },
+    {
+      "certification_kind": "EXHAUSTIVE_BATCH_REPLAY",
+      "certification_receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-fifth-split/suffix-certification/batches/batch-0006/cases/intersection-4-third-01-fourth-003-fifth-025/receipt.json",
+        "sha256": "2cd6271a8d9161b3a882e9f883fabf8bf91fde992e897328991b7eb2af6fa146"
+      },
+      "checker_result": "VERIFIED",
+      "checker_sha256": "f58f63b0f76945d4c4c9ff6e87afaf870f579e67c0f7cca589492df8fc7ebd47",
+      "exact_cnf_sha256": "3c8296b64999e074fa91482df8d63ac284d9c4276be6f5c0354c8414cd32b917",
+      "fifth_index": 25,
+      "leaf_id": "intersection-4-third-01-fourth-003-fifth-025",
+      "proof_sha256": "d55f86ce880df81bc08ee4374d815d851cf47c4819c2d88d7c8c564f00f0fad3",
+      "terminal": true,
+      "terminal_status": "REPLAY_CERTIFIED_UNSAT"
+    },
+    {
+      "certification_kind": "EXHAUSTIVE_BATCH_REPLAY",
+      "certification_receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-fifth-split/suffix-certification/batches/batch-0010/cases/intersection-4-third-01-fourth-003-fifth-026/receipt.json",
+        "sha256": "e49b87bd079046488451317c4d72e4e6b817120d32211fd5dfaa78cc6bcc2f28"
+      },
+      "checker_result": "VERIFIED",
+      "checker_sha256": "f58f63b0f76945d4c4c9ff6e87afaf870f579e67c0f7cca589492df8fc7ebd47",
+      "exact_cnf_sha256": "b187763baa8bf5797dd3b117073bba09a31681e9ba1be74f737f9d30806210ab",
+      "fifth_index": 26,
+      "leaf_id": "intersection-4-third-01-fourth-003-fifth-026",
+      "proof_sha256": "ee97e772c145ed35c58609cb014e17f5bf2d9e2ca2f6a9e0954f17be8698cd45",
+      "terminal": true,
+      "terminal_status": "REPLAY_CERTIFIED_UNSAT"
+    },
+    {
+      "certification_kind": "EXHAUSTIVE_BATCH_REPLAY",
+      "certification_receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-fifth-split/suffix-certification/batches/batch-0017/cases/intersection-4-third-01-fourth-003-fifth-027/receipt.json",
+        "sha256": "c6e30769ca31efefa90da426ebd86efd35305fb0a4f547f7bdbe84b67fb73b19"
+      },
+      "checker_result": "VERIFIED",
+      "checker_sha256": "f58f63b0f76945d4c4c9ff6e87afaf870f579e67c0f7cca589492df8fc7ebd47",
+      "exact_cnf_sha256": "3bf6bdb39d56469ed0ee212f6737c07feeaf6c8c9183a38ec365877b0b295cdf",
+      "fifth_index": 27,
+      "leaf_id": "intersection-4-third-01-fourth-003-fifth-027",
+      "proof_sha256": "749834d5c862853d54e43627278fa337aa473388a8c9c5f130d4229a1391a846",
+      "terminal": true,
+      "terminal_status": "REPLAY_CERTIFIED_UNSAT"
+    },
+    {
+      "certification_kind": "EXHAUSTIVE_BATCH_REPLAY",
+      "certification_receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-fifth-split/suffix-certification/batches/batch-0013/cases/intersection-4-third-01-fourth-003-fifth-028/receipt.json",
+        "sha256": "39a7538e76908a1c5cc907b47c799109acad5f63aa4ed77bdc00ffc5500ca2ff"
+      },
+      "checker_result": "VERIFIED",
+      "checker_sha256": "f58f63b0f76945d4c4c9ff6e87afaf870f579e67c0f7cca589492df8fc7ebd47",
+      "exact_cnf_sha256": "77c753b45a60780ddf6901d0cb1b02b74e749364bfaeaaf768aac42cae1ddf5c",
+      "fifth_index": 28,
+      "leaf_id": "intersection-4-third-01-fourth-003-fifth-028",
+      "proof_sha256": "91180d300f2547cf8ee538eb6c487721388d192a1686b1679fd5c9a50a097f6f",
+      "terminal": true,
+      "terminal_status": "REPLAY_CERTIFIED_UNSAT"
+    },
+    {
+      "certification_kind": "EXHAUSTIVE_BATCH_REPLAY",
+      "certification_receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-fifth-split/suffix-certification/batches/batch-0001/cases/intersection-4-third-01-fourth-003-fifth-029/receipt.json",
+        "sha256": "f8f7894aed2708e6e0274f0abfc7986cdb1b1d61beffd92de343845fb5c3fd4b"
+      },
+      "checker_result": "VERIFIED",
+      "checker_sha256": "f58f63b0f76945d4c4c9ff6e87afaf870f579e67c0f7cca589492df8fc7ebd47",
+      "exact_cnf_sha256": "315646ff5e664826df6553a3ba9857573c9aa12665e97f715c64ff71ef676368",
+      "fifth_index": 29,
+      "leaf_id": "intersection-4-third-01-fourth-003-fifth-029",
+      "proof_sha256": "9f9a25fbd6784c91abd390cb774eaa6282767f4d30f5ee8a7467fd75ce4adeab",
+      "terminal": true,
+      "terminal_status": "REPLAY_CERTIFIED_UNSAT"
+    },
+    {
+      "certification_kind": "EXHAUSTIVE_BATCH_REPLAY",
+      "certification_receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-fifth-split/suffix-certification/batches/batch-0022/cases/intersection-4-third-01-fourth-003-fifth-030/receipt.json",
+        "sha256": "ae9e3426a9ca86f724473aaf10ccdc406e1ffa54dac19f03cfc57af20b581259"
+      },
+      "checker_result": "VERIFIED",
+      "checker_sha256": "f58f63b0f76945d4c4c9ff6e87afaf870f579e67c0f7cca589492df8fc7ebd47",
+      "exact_cnf_sha256": "e9df63165e374bea71f0fd3286f4cbe9a81149580579b19add38c49b0be113e6",
+      "fifth_index": 30,
+      "leaf_id": "intersection-4-third-01-fourth-003-fifth-030",
+      "proof_sha256": "f8127c6025aaf00d4491c732f9d2fbe85509158cdd6f4dd9cd5bb3a2fbe43631",
+      "terminal": true,
+      "terminal_status": "REPLAY_CERTIFIED_UNSAT"
+    },
+    {
+      "certification_kind": "EXHAUSTIVE_BATCH_REPLAY",
+      "certification_receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-fifth-split/suffix-certification/batches/batch-0011/cases/intersection-4-third-01-fourth-003-fifth-031/receipt.json",
+        "sha256": "c71f439bf97de4f6e9b456d344e4ddb27dd414eb6a0717ef39147e8386975304"
+      },
+      "checker_result": "VERIFIED",
+      "checker_sha256": "f58f63b0f76945d4c4c9ff6e87afaf870f579e67c0f7cca589492df8fc7ebd47",
+      "exact_cnf_sha256": "37b297cbea7d377fd4731e497a4bfd638a0f01a6189bf88b9c76c474cea0e8f5",
+      "fifth_index": 31,
+      "leaf_id": "intersection-4-third-01-fourth-003-fifth-031",
+      "proof_sha256": "530a50a3093a83566d5661a1d513d92108e5c4193e4d97d7b5315c69e55e8e13",
+      "terminal": true,
+      "terminal_status": "REPLAY_CERTIFIED_UNSAT"
+    },
+    {
+      "certification_kind": "EXHAUSTIVE_BATCH_REPLAY",
+      "certification_receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-fifth-split/suffix-certification/batches/batch-0015/cases/intersection-4-third-01-fourth-003-fifth-032/receipt.json",
+        "sha256": "f0afc5c65e8314a2c5d2c39c3425e35d8240f93a1e6c9f2773617159885495a5"
+      },
+      "checker_result": "VERIFIED",
+      "checker_sha256": "f58f63b0f76945d4c4c9ff6e87afaf870f579e67c0f7cca589492df8fc7ebd47",
+      "exact_cnf_sha256": "16a4101cc9e6c1a41fca4124e2290fdde1249e7f223a1e3776b84346a10d4ef1",
+      "fifth_index": 32,
+      "leaf_id": "intersection-4-third-01-fourth-003-fifth-032",
+      "proof_sha256": "986e68a38335776e66fc4f5251061ab3d1e487fee59af5e21856371dc5064210",
+      "terminal": true,
+      "terminal_status": "REPLAY_CERTIFIED_UNSAT"
+    },
+    {
+      "certification_kind": "EXHAUSTIVE_BATCH_REPLAY",
+      "certification_receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-fifth-split/suffix-certification/batches/batch-0002/cases/intersection-4-third-01-fourth-003-fifth-033/receipt.json",
+        "sha256": "57e666752b6a3fdc3c27bee3500fba2138e6c6c613b327b4fd1bbeba1d9ff65e"
+      },
+      "checker_result": "VERIFIED",
+      "checker_sha256": "f58f63b0f76945d4c4c9ff6e87afaf870f579e67c0f7cca589492df8fc7ebd47",
+      "exact_cnf_sha256": "d1a2aa3d8c89448b2447a7cf0ae59eb4f691c84199cb08b326e1df49d972d9f8",
+      "fifth_index": 33,
+      "leaf_id": "intersection-4-third-01-fourth-003-fifth-033",
+      "proof_sha256": "4b7f22ab3f82b1a21baf7910d578e30e0efcac81955241596986dd75e5cb64dd",
+      "terminal": true,
+      "terminal_status": "REPLAY_CERTIFIED_UNSAT"
+    },
+    {
+      "certification_kind": "EXHAUSTIVE_BATCH_REPLAY",
+      "certification_receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-fifth-split/suffix-certification/batches/batch-0014/cases/intersection-4-third-01-fourth-003-fifth-034/receipt.json",
+        "sha256": "7d5b083ff962717f64314c7935e2c4f848ae5ff53c308eb763149070d29d93e2"
+      },
+      "checker_result": "VERIFIED",
+      "checker_sha256": "f58f63b0f76945d4c4c9ff6e87afaf870f579e67c0f7cca589492df8fc7ebd47",
+      "exact_cnf_sha256": "0cc87e424631fc7a74573c89bace771805ac7e944b0c9c3b74e8f9cf7b17fef0",
+      "fifth_index": 34,
+      "leaf_id": "intersection-4-third-01-fourth-003-fifth-034",
+      "proof_sha256": "57d0a007cddc6db32c8adcafe0d36f14e0556953988129a60417fd1fd05a5b1f",
+      "terminal": true,
+      "terminal_status": "REPLAY_CERTIFIED_UNSAT"
+    },
+    {
+      "certification_kind": "EXHAUSTIVE_BATCH_REPLAY",
+      "certification_receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-fifth-split/suffix-certification/batches/batch-0016/cases/intersection-4-third-01-fourth-003-fifth-035/receipt.json",
+        "sha256": "8825e078fef89e3f8f3c564234c4945a5e38892f66b2b2697bf71ac34b539cd2"
+      },
+      "checker_result": "VERIFIED",
+      "checker_sha256": "f58f63b0f76945d4c4c9ff6e87afaf870f579e67c0f7cca589492df8fc7ebd47",
+      "exact_cnf_sha256": "4eb00b6da9b892738d51d05bbe16b1347bad401999f5142efedaa00f2794abcc",
+      "fifth_index": 35,
+      "leaf_id": "intersection-4-third-01-fourth-003-fifth-035",
+      "proof_sha256": "55732eb49052191c03c861c93464211bf395dbca73ca0dbb0a474006ea4f4147",
+      "terminal": true,
+      "terminal_status": "REPLAY_CERTIFIED_UNSAT"
+    },
+    {
+      "certification_kind": "EXHAUSTIVE_BATCH_REPLAY",
+      "certification_receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-fifth-split/suffix-certification/batches/batch-0016/cases/intersection-4-third-01-fourth-003-fifth-036/receipt.json",
+        "sha256": "99cfab0ad5591bbbde33081af982e1c10b99caf780e84132844ec2d36cc34891"
+      },
+      "checker_result": "VERIFIED",
+      "checker_sha256": "f58f63b0f76945d4c4c9ff6e87afaf870f579e67c0f7cca589492df8fc7ebd47",
+      "exact_cnf_sha256": "9e5fdc0d410aadcb6db708ca1620e6da0ad091536b0ecdd323d9d1eecbb01284",
+      "fifth_index": 36,
+      "leaf_id": "intersection-4-third-01-fourth-003-fifth-036",
+      "proof_sha256": "9ac14b88e1648c2f9d6e33a0eaad7e94e1961e54e8dc10652025546d4bc35efd",
+      "terminal": true,
+      "terminal_status": "REPLAY_CERTIFIED_UNSAT"
+    },
+    {
+      "certification_kind": "EXHAUSTIVE_BATCH_REPLAY",
+      "certification_receipt": {
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-fifth-split/suffix-certification/batches/batch-0005/cases/intersection-4-third-01-fourth-003-fifth-037/receipt.json",
+        "sha256": "9db74ba3115326ff3c0f1433791ecb237a3fb0146d02e6fe2817394841d3faf1"
+      },
+      "checker_result": "VERIFIED",
+      "checker_sha256": "f58f63b0f76945d4c4c9ff6e87afaf870f579e67c0f7cca589492df8fc7ebd47",
+      "exact_cnf_sha256": "86af7d657b3027177e9c96fc6416ce1c9044147d81e0e9b1cb137e2b6a62d9fc",
+      "fifth_index": 37,
+      "leaf_id": "intersection-4-third-01-fourth-003-fifth-037",
+      "proof_sha256": "1bde9dc3b580efcde458354bfdcf75463a7f74a2db6dd421679e4e3cd5c8d73a",
+      "terminal": true,
+      "terminal_status": "REPLAY_CERTIFIED_UNSAT"
+    },
+    {
+      "certification_kind": "SEGMENT_SAMPLED_EXTERNAL_REPLAY",
+      "certification_receipt": {
+        "leaf_result_indexed_by": "intersection-4-third-01-fourth-003-fifth-038",
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-fifth-split/segments/segment-0053/independent-audit.json",
+        "sha256": "458b42f29dcdb14c52ce6b6b40b4f2adbafc20a24f64355da5618a7ef8ba84e4"
+      },
+      "checker_result": "VERIFIED",
+      "checker_sha256": "f58f63b0f76945d4c4c9ff6e87afaf870f579e67c0f7cca589492df8fc7ebd47",
+      "exact_cnf_sha256": "0827ccf0be774608c51a9ca4bfcb2ba983a5fcffa0bf7c53b6d2bced5fd25817",
+      "fifth_index": 38,
+      "leaf_id": "intersection-4-third-01-fourth-003-fifth-038",
+      "proof_sha256": "6221bca494e5934d10731da107d9f222706ccf051f784c50e4d3e6cdfc3c9fe7",
+      "source_result": {
+        "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-fifth-split/segments/segment-0053/intersection-4-third-01-fourth-003-fifth-038/result.json",
+        "sha256": "dd85f8e42868000b19450978cf0734638aa0263863073c1ea46bb9d750748c65"
+      },
+      "terminal": true,
+      "terminal_status": "REPLAY_CERTIFIED_UNSAT"
+    }
+  ],
+  "fifth_manifest_binding": {
+    "path": "artifacts/classification/ordinary-c1153-v1/hard-tail-fifth-split/manifest.json",
+    "sha256": "02919771a97207014ae798610c6ed3c88e34965d91a44bbfd72cc2baa046decc"
+  },
+  "parent_id": "intersection-4-third-01-fourth-003",
+  "parent_status": "OPEN_CHILDREN_REMAIN",
+  "remaining_children": 7,
+  "schema_version": 1,
+  "terminal_children": 32,
+  "top_parent": "intersection-4"
+}

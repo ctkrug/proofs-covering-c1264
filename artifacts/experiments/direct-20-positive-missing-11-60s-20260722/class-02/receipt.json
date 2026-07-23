@@ -1,0 +1,53 @@
+{
+  "candidate_witness": null,
+  "claim_limit": "UNSAT is only a conditional fixed-link nonextension; SAT requires a separate direct cover audit.",
+  "class_index": 2,
+  "cnf": {
+    "bytes": 2402628,
+    "path": "artifacts/prior-art/c1153-direct-20/class-02/instance.cnf",
+    "sha256": "01b1af5aafdf6525bfac3c69687680c158347468890d0517e77a699bacc90ccc"
+  },
+  "command": [
+    "/Users/Krug/Desktop/ChatGPT/proofs/research/covering-c1264/workspace/.venv/sat-audit-tools/cadical/build/cadical",
+    "--sat",
+    "--seed=20260724",
+    "--no-binary",
+    "-t",
+    "60",
+    "-w",
+    "/Users/Krug/Desktop/ChatGPT/proofs/research/covering-c1264/workspace/artifacts/experiments/direct-20-positive-missing-11-60s-20260722/class-02/solution.txt",
+    "/Users/Krug/Desktop/ChatGPT/proofs/research/covering-c1264/workspace/artifacts/prior-art/c1153-direct-20/class-02/instance.cnf",
+    "/Users/Krug/Desktop/ChatGPT/proofs/research/covering-c1264/workspace/artifacts/experiments/direct-20-positive-missing-11-60s-20260722/class-02/proof.drat"
+  ],
+  "elapsed_seconds": 7.358600958999887,
+  "proof_gzip": {
+    "bytes": 2404866,
+    "path": "artifacts/experiments/direct-20-positive-missing-11-60s-20260722/class-02/proof.drat.gz",
+    "sha256": "6e1a8f912dabf62be1ac771d96438138650de3d4e6ace96754f8f4ccf07dd055"
+  },
+  "receipt_origin": "live_run",
+  "replay": {
+    "elapsed_seconds": 2.5452559579998706,
+    "log": {
+      "bytes": 390,
+      "path": "artifacts/experiments/direct-20-positive-missing-11-60s-20260722/class-02/drat-trim.log",
+      "sha256": "8814f75351a311bdde3458e20887ae8e841d476b0ddc832829ad224c0e0a59af"
+    },
+    "returncode": 0,
+    "status": "VERIFIED"
+  },
+  "returncode": 20,
+  "schema_version": 1,
+  "seed": 20260724,
+  "solution": {
+    "bytes": 16,
+    "path": "artifacts/experiments/direct-20-positive-missing-11-60s-20260722/class-02/solution.txt",
+    "sha256": "bde6e1eede96772c07c8ce29fd18088863815bd043aa59a06f11f5838cf8a162"
+  },
+  "solver_log": {
+    "bytes": 9157,
+    "path": "artifacts/experiments/direct-20-positive-missing-11-60s-20260722/class-02/solver.log",
+    "sha256": "84a9c9e26f4e0964667562c3fca881e8fda4f96a5474d01a6f5f9caccc838431"
+  },
+  "status": "UNSAT"
+}

@@ -20,7 +20,8 @@ ROOT = Path(__file__).resolve().parents[1]
 POINTS = tuple(range(1, 12))
 BLOCKS = tuple(itertools.combinations(POINTS, 5))
 BASE = ROOT / "artifacts/classification/ordinary-c1153-v1/hard-tail-fifth-split"
-TARGET = ROOT / "artifacts/classification/ordinary-c1153-v1/hard-tail-sixth-discriminator"
+PREDECESSOR = ROOT / "artifacts/classification/ordinary-c1153-v1/hard-tail-sixth-discriminator/manifest.json"
+TARGET = ROOT / "artifacts/classification/ordinary-c1153-v1/hard-tail-sixth-discriminator-final"
 
 
 def sha(path: Path) -> str:
@@ -196,9 +197,30 @@ def build() -> dict[str, object]:
         })
         total_children += len(orbit_rows)
 
+    predecessor = json.loads(PREDECESSOR.read_text())
+    predecessor_ids = {case["id"] for case in predecessor["cases"]}
+    final_ids = {case["id"] for case in cases}
+    if not predecessor_ids < final_ids:
+        raise ValueError("final timeout set must strictly extend the predecessor snapshot")
+    added_ids = sorted(final_ids - predecessor_ids)
+    if len(predecessor_ids) != 48 or len(added_ids) != 34 or len(final_ids) != 82:
+        raise ValueError("expected exact 48 + 34 = 82 final timeout decomposition")
     manifest = {
         "schema_version": 1,
-        "status": "BUILT_NOT_SOLVED_SNAPSHOT",
+        "status": "BUILT_NOT_SOLVED_FINAL_TIMEOUT_SET",
+        "predecessor": {
+            "path": str(PREDECESSOR.relative_to(ROOT)),
+            "sha256": sha(PREDECESSOR),
+            "case_count": len(predecessor_ids),
+            "case_ids_sha256": unit_sha(sorted(predecessor_ids)),
+        },
+        "final_timeout_decomposition": {
+            "predecessor_cases": len(predecessor_ids),
+            "added_cases": len(added_ids),
+            "final_cases": len(final_ids),
+            "added_case_ids": added_ids,
+            "added_case_ids_sha256": unit_sha(added_ids),
+        },
         "fifth_manifest": {"path": str(fifth_path.relative_to(ROOT)), "sha256": sha(fifth_path)},
         "source_snapshot": sources,
         "observed_outcome_counts": dict(Counter(row["status"] for row in rows)),
@@ -214,7 +236,7 @@ def build() -> dict[str, object]:
         "partition_rule": "Under the setwise stabilizer of all five fixed blocks, select the first present sixth-block orbit, force every earlier orbit absent, and map the selected block to the orbit's canonical representative.",
         "representation": "Reconstruct a sixth child from the bound third-level CNF, the recorded inherited fourth/fifth units, negative units for every member of earlier sixth orbits, and the current orbit canonical positive unit.",
         "exhaustiveness_reason": "Every ordinary cover has 20 distinct blocks. After five fixed blocks it has at least one additional available block. The five-block stabilizer partitions all available blocks, so the least occupied orbit is unique and yields exactly one child.",
-        "claim_limit": "This is an audited candidate partition for the observed timeout snapshot, not a solver result, branch closure, or final residual manifest.",
+        "claim_limit": "This is an audited candidate partition for the final fifth-level timeout set, not a solver result or branch closure.",
         "cases": cases,
     }
     TARGET.mkdir(parents=True, exist_ok=False)

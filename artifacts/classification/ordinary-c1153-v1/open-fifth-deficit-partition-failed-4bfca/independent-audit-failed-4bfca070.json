@@ -1,0 +1,28 @@
+{
+  "checked_case": "intersection-3-third-00-fourth-000-fifth-008",
+  "failure": {
+    "exact_residual_reconstruction": {
+      "branch_count": 15,
+      "chosen_uncovered_triple": [
+        3,
+        4,
+        6
+      ],
+      "eligible_covering_blocks": 25
+    },
+    "manifest_record": {
+      "branch_count": 16,
+      "chosen_uncovered_triple": [
+        3,
+        7,
+        8
+      ],
+      "eligible_covering_blocks": 27
+    },
+    "reason": "The manifest availability calculation omitted primary-variable negative unit clauses already present in the bound cached parent CNF."
+  },
+  "manifest_sha256": "4bfca0705e89faae3bbc24cc87a6a4b33841b7e7d5a773249578ef761443c47c",
+  "scope": "The audit stopped at the first deterministic residual-partition mismatch. No global count or coverage claim from this manifest was accepted.",
+  "schema_version": 1,
+  "status": "INVALID"
+}
