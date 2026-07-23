@@ -7,6 +7,7 @@ import argparse
 import gzip
 import hashlib
 import json
+import os
 import subprocess
 import sys
 from collections import Counter, defaultdict
@@ -32,7 +33,9 @@ BASE = Path(
     "artifacts/classification/ordinary-c1153-v1/open-fifth-deficit-partition-v2/"
     "second-live-triple-gate-v1/shallow-weighted-scale-v1"
 )
-TARGET = ROOT / BASE.parent / "gap-trim-v1"
+TARGET = Path(
+    os.environ.get("C1264_GAP_TRIM_OUTPUT", ROOT / BASE.parent / "gap-trim-v1")
+).resolve()
 CORPUS = TARGET / "corpus.jsonl.gz"
 MANIFEST = TARGET / "manifest.json"
 SOURCES = (
@@ -245,7 +248,7 @@ def build(sample_size: int) -> dict[str, object]:
             {row["features"]["isomorphism_sha256"] for row in gaps}
         ),
         "corpus": {
-            "path": str(CORPUS.relative_to(ROOT)),
+            "path": str(CORPUS),
             "sha256": sha_bytes(compressed),
             "uncompressed_sha256": sha_bytes(raw),
         },

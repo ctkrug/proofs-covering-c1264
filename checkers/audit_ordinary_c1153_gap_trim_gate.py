@@ -7,6 +7,7 @@ import gzip
 import hashlib
 import itertools
 import json
+import os
 import statistics
 import sys
 import time
@@ -27,7 +28,9 @@ BASE = (
     / "artifacts/classification/ordinary-c1153-v1/open-fifth-deficit-partition-v2/"
     "second-live-triple-gate-v1"
 )
-TARGET = BASE / "gap-trim-v1"
+TARGET = Path(
+    os.environ.get("C1264_GAP_TRIM_OUTPUT", BASE / "gap-trim-v1")
+).resolve()
 MANIFEST = TARGET / "manifest.json"
 CORPUS = TARGET / "corpus.jsonl.gz"
 PROTOCOL = TARGET / "gate-512-protocol.json"

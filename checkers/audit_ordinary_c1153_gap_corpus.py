@@ -7,6 +7,7 @@ import gzip
 import hashlib
 import itertools
 import json
+import os
 import subprocess
 import sys
 from pathlib import Path
@@ -24,7 +25,9 @@ BASE = Path(
     "artifacts/classification/ordinary-c1153-v1/open-fifth-deficit-partition-v2/"
     "second-live-triple-gate-v1/shallow-weighted-scale-v1"
 )
-TARGET = ROOT / BASE.parent / "gap-trim-v1"
+TARGET = Path(
+    os.environ.get("C1264_GAP_TRIM_OUTPUT", ROOT / BASE.parent / "gap-trim-v1")
+).resolve()
 MANIFEST = TARGET / "manifest.json"
 CORPUS = TARGET / "corpus.jsonl.gz"
 AUDIT = TARGET / "corpus-independent-audit.json"

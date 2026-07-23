@@ -8,6 +8,7 @@ import gzip
 import hashlib
 import json
 import multiprocessing
+import os
 import statistics
 import sys
 import time
@@ -38,7 +39,9 @@ BASE = (
     / "artifacts/classification/ordinary-c1153-v1/open-fifth-deficit-partition-v2/"
     "second-live-triple-gate-v1"
 )
-TARGET = BASE / "gap-trim-v1"
+TARGET = Path(
+    os.environ.get("C1264_GAP_TRIM_OUTPUT", BASE / "gap-trim-v1")
+).resolve()
 MANIFEST = TARGET / "manifest.json"
 CORPUS = TARGET / "corpus.jsonl.gz"
 PROTOCOL = TARGET / "gate-512-protocol.json"
@@ -65,11 +68,11 @@ def freeze_protocol(workers: int) -> dict[str, object]:
         "schema_version": 1,
         "status": "FROZEN_NOT_RUN",
         "corpus_manifest": {
-            "path": str(MANIFEST.relative_to(ROOT)),
+            "path": str(MANIFEST),
             "sha256": sha_bytes(manifest_raw),
         },
         "corpus": {
-            "path": str(CORPUS.relative_to(ROOT)),
+            "path": str(CORPUS),
             "sha256": sha_bytes(corpus_raw),
         },
         "sample_size": manifest["sample_size"],
@@ -327,7 +330,7 @@ def run(workers: int) -> dict[str, object]:
             row["certificate_payload_bytes"] for row in outcomes
         ),
         "results": {
-            "path": str(RESULTS.relative_to(ROOT)),
+            "path": str(RESULTS),
             "sha256": sha_bytes(compressed),
             "uncompressed_sha256": sha_bytes(raw),
             "bytes": len(compressed),
